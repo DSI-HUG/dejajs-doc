@@ -1,0 +1,1823 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>@deja-js/component</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	    <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">@deja-js/component</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="Type to search">
+            </div>
+            <nav>
+            
+                <ul class="list">
+            
+                    <li class="title">
+                        <a href="../index.html">@deja-js/component</a>
+                    </li>
+            
+                    <li class="divider"></li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                        <ul class="links">
+                                <li class="link">
+                                    <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
+                                <li class="link">
+                                    <a 
+                                        
+                                         href="../overview.html" 
+                                         href="../overview.html" 
+                                        >
+                                        <span class="fa fa-th"></span>Overview
+                                    </a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../modules.html" >
+                            <span class="fa fa-archive"></span>
+                            <span>Modules</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-modules-links"
+                            ></span>
+                        </a>
+                        <ul class="links collapse in"
+                                id="xs-modules-links"
+                            >
+                                <li class="link">
+                                    <a href="../modules/AppModule.html" >AppModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/CloningModule.html" >CloningModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaAccordionModule.html" >DejaAccordionModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaAutosizeTextAreaModule.html" >DejaAutosizeTextAreaModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaBackdropModule.html" >DejaBackdropModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaBoldQueryModule.html" >DejaBoldQueryModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaChildValidatorModule.html" >DejaChildValidatorModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaChipsModule.html" >DejaChipsModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaCircularPickerModule.html" >DejaCircularPickerModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaClipboardModule.html" >DejaClipboardModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaCodeViewerModule.html" >DejaCodeViewerModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaColorPickerModule.html" >DejaColorPickerModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaColorSelectorModule.html" >DejaColorSelectorModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaDatePickerModule.html" >DejaDatePickerModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaDateSelectorModule.html" >DejaDateSelectorModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaDialogModule.html" >DejaDialogModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaDragDropModule.html" >DejaDragDropModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaDropDownModule.html" >DejaDropDownModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaEditableModule.html" >DejaEditableModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaFormModule.html" >DejaFormModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaGridModule.html"  data-type="entity-link" class="active" >DejaGridModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaIFrameModule.html" >DejaIFrameModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaListLoaderModule.html" >DejaListLoaderModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaMarkdownModule.html" >DejaMarkdownModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaMenuModule.html" >DejaMenuModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaMessageBoxModule.html" >DejaMessageBoxModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaMonacoEditorModule.html" >DejaMonacoEditorModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaPipeModule.html" >DejaPipeModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaRangeModule.html" >DejaRangeModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaSelectModule.html" >DejaSelectModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaSortingModule.html" >DejaSortingModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaSplitterModule.html" >DejaSplitterModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaTextMetricsModule.html" >DejaTextMetricsModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaTilesModule.html" >DejaTilesModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaTooltipModule.html" >DejaTooltipModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaTreeListModule.html" >DejaTreeListModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaViewPortModule.html" >DejaViewPortModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/GroupingModule.html" >GroupingModule</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-cogs"></span>
+                            <span>Components</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-components-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-components-links"
+                            >
+                                <li class="link">
+                                    <a href="../components/AppComponent.html" >AppComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaAccordionBodyComponent.html" >DejaAccordionBodyComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaAccordionComponent.html" >DejaAccordionComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaAccordionDemoComponent.html" >DejaAccordionDemoComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaAccordionGroupComponent.html" >DejaAccordionGroupComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaAccordionHeaderComponent.html" >DejaAccordionHeaderComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaBackdropComponent.html" >DejaBackdropComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaBoldQueryComponent.html" >DejaBoldQueryComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaChipsComponent.html" >DejaChipsComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaCircularPickerComponent.html" >DejaCircularPickerComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaCircularPickerDemoComponent.html" >DejaCircularPickerDemoComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaCodeViewerComponent.html" >DejaCodeViewerComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaColorFabComponent.html" >DejaColorFabComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaColorPickerComponent.html" >DejaColorPickerComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaColorSelectorComponent.html" >DejaColorSelectorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaColorSelectorDemoComponent.html" >DejaColorSelectorDemoComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaContentEditableDemoComponent.html" >DejaContentEditableDemoComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaDatePickerComponent.html" >DejaDatePickerComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaDatePickerDemoComponent.html" >DejaDatePickerDemoComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaDateSelectorComponent.html" >DejaDateSelectorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaDialogComponent.html" >DejaDialogComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaDropDownComponent.html" >DejaDropDownComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaGridComponent.html" >DejaGridComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaGridGroupAreaComponent.html" >DejaGridGroupAreaComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaGridHeaderComponent.html" >DejaGridHeaderComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaGridParentRowComponent.html" >DejaGridParentRowComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaGridRowComponent.html" >DejaGridRowComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaIFrameComponent.html" >DejaIFrameComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaListLoaderComponent.html" >DejaListLoaderComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaMarkdownComponent.html" >DejaMarkdownComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaMenuComponent.html" >DejaMenuComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaMessageBoxComponent.html" >DejaMessageBoxComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaMonacoEditorComponent.html" >DejaMonacoEditorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaMonacoEditorDemoComponent.html" >DejaMonacoEditorDemoComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaRangeComponent.html" >DejaRangeComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaRangeDemoComponent.html" >DejaRangeDemoComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaSelectComponent.html" >DejaSelectComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaSnackbarComponent.html" >DejaSnackbarComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaSnackbarDemoComponent.html" >DejaSnackbarDemoComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaSortIndicatorComponent.html" >DejaSortIndicatorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaSplitterComponent.html" >DejaSplitterComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaSplitterDemoComponent.html" >DejaSplitterDemoComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaTileComponent.html" >DejaTileComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaTileGroupComponent.html" >DejaTileGroupComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaTilesComponent.html" >DejaTilesComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaTooltipComponent.html" >DejaTooltipComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaTreeListComponent.html" >DejaTreeListComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaTreeListDemoComponent.html" >DejaTreeListDemoComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaViewPortComponent.html" >DejaViewPortComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaViewPortDemoComponent.html" >DejaViewPortDemoComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/GlobalEventsDemoComponent.html" >GlobalEventsDemoComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/GridDemoComponent.html" >GridDemoComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/HomeComponent.html" >HomeComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/HomeComponentsComponent.html" >HomeComponentsComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/HomeGuidesComponent.html" >HomeGuidesComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/MenuDemoComponent.html" >MenuDemoComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/MessageBoxDemoComponent.html" >MessageBoxDemoComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/NewsCardComponent.html" >NewsCardComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/ProgressCircleDemoComponent.html" >ProgressCircleDemoComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/ReactiveFormDemoComponent.html" >ReactiveFormDemoComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/SelectDemoComponent.html" >SelectDemoComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/TextAreaDemoComponent.html" >TextAreaDemoComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/TilesDemoComponent.html" >TilesDemoComponent</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-code"></span>
+                            <span>Directives</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-directives-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-directives-links"
+                            >
+                                <li class="link">
+                                    <a href="../directives/DateValidatorDirective.html" >DateValidatorDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaAutosizeTextAreaDirective.html" >DejaAutosizeTextAreaDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaChildValidatorDirective.html" >DejaChildValidatorDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaDraggableDirective.html" >DejaDraggableDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaDroppableDirective.html" >DejaDroppableDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaEditableDirective.html" >DejaEditableDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaMouseDraggableDirective.html" >DejaMouseDraggableDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaMouseDroppableDirective.html" >DejaMouseDroppableDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaTooltipDirective.html" >DejaTooltipDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/PendingOnFocusDirective.html" >PendingOnFocusDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/SplitAreaDirective.html" >SplitAreaDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/SplitGutterDirective.html" >SplitGutterDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/ValidateOnBlurDirective.html" >ValidateOnBlurDirective</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-file-code-o"></span>
+                            <span>Classes</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-classes-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-classes-links"
+                            >
+                                <li class="link">
+                                    <a href="../classes/AccordionPage.html" >AccordionPage</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/AutoCompleteItem.html" >AutoCompleteItem</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Circle.html" >Circle</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Color.html" >Color</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/ColorEvent.html" >ColorEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DateUtils.html" >DateUtils</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaCancelableEvent.html" >DejaCancelableEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaColorFab.html" >DejaColorFab</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaGridColumnsLayoutInfos.html" >DejaGridColumnsLayoutInfos</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaGridRowEvent.html" >DejaGridRowEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaGridRowsEvent.html" >DejaGridRowsEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaItemEvent.html" >DejaItemEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaItemsEvent.html" >DejaItemsEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaTile.html" >DejaTile</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaTreeListScrollEvent.html" >DejaTreeListScrollEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Diacritics.html" >Diacritics</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/GlobalEventEmmitter.html" >GlobalEventEmmitter</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/GroupingService.html" >GroupingService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/HomePage.html" >HomePage</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/HtmlUtils.html" >HtmlUtils</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/IDejaGridColumnLayout.html" >IDejaGridColumnLayout</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/IDejaGridParentRow.html" >IDejaGridParentRow</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/IEditorLanguage.html" >IEditorLanguage</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/IEditorOptions.html" >IEditorOptions</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/IEditorTheme.html" >IEditorTheme</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/ItemListBase.html" >ItemListBase</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/ItemListService.html" >ItemListService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/JsonUtils.html" >JsonUtils</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/MaterialColor.html" >MaterialColor</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Message.html" >Message</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Message.html" >Message</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Position.html" >Position</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Range.html" >Range</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Rect.html" >Rect</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Size.html" >Size</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/SortingService.html" >SortingService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/UUID.html" >UUID</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/UnitValue.html" >UnitValue</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/ValidationMessages.html" >ValidationMessages</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/ValueAccessor.html" >ValueAccessor</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Weight.html" >Weight</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-injectables-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="../injectables/CloningService.html" >CloningService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/CountriesListService.html" >CountriesListService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/CountriesService.html" >CountriesService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/DejaClipboardService.html" >DejaClipboardService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/DejaMouseDragDropService.html" >DejaMouseDragDropService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/DejaTextMetricsService.html" >DejaTextMetricsService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/DejaTilesLayoutProvider.html" >DejaTilesLayoutProvider</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/DejaTooltipService.html" >DejaTooltipService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/DrugsService.html" >DrugsService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/GlobalEventService.html" >GlobalEventService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/MaterialColors.html" >MaterialColors</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/MonacoEditorDemoService.html" >MonacoEditorDemoService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/MonacoEditorJsonFileResolver.html" >MonacoEditorJsonFileResolver</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/MonacoEditorJsonToCompareFileResolver.html" >MonacoEditorJsonToCompareFileResolver</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/MonacoEditorService.html" >MonacoEditorService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/MonacoEditorXmlFileResolver.html" >MonacoEditorXmlFileResolver</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/MonacoEditorXmlToCompareFileResolver.html" >MonacoEditorXmlToCompareFileResolver</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/NewsService.html" >NewsService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/PeopleService.html" >PeopleService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/UserService.html" >UserService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/ViewPortService.html" >ViewPortService</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-plus"></span>
+                            <span>Pipes</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-pipes-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-pipes-links"
+                            >
+                                <li class="link">
+                                    <a href="../pipes/KeysPipe.html" >KeysPipe</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../pipes/SafeHTMLPipe.html" >SafeHTMLPipe</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../pipes/SafeStylePipe.html" >SafeStylePipe</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../pipes/StringToDateFormatPipe.html" >StringToDateFormatPipe</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../pipes/TimeAgoPipe.html" >TimeAgoPipe</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                    </li>
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                    </li>
+            
+            
+                </ul>
+            
+            </nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+                   
+                       <ul class="list">
+                   
+                           <li class="title">
+                               <a href="../index.html">@deja-js/component</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                   
+                               <div id="book-search-input" role="search">
+                                   <input type="text" placeholder="Type to search">
+                               </div>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                               <ul class="links">
+                                       <li class="link">
+                                           <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
+                                       <li class="link">
+                                           <a 
+                                               
+                                                href="../overview.html" 
+                                                href="../overview.html" 
+                                               >
+                                               <span class="fa fa-th"></span>Overview
+                                           </a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../modules.html" >
+                                   <span class="fa fa-archive"></span>
+                                   <span>Modules</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#modules-links"
+                                   ></span>
+                               </a>
+                               <ul class="links collapse in"
+                                       id="modules-links"
+                   >
+                                       <li class="link">
+                                           <a href="../modules/AppModule.html" >AppModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/CloningModule.html" >CloningModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaAccordionModule.html" >DejaAccordionModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaAutosizeTextAreaModule.html" >DejaAutosizeTextAreaModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaBackdropModule.html" >DejaBackdropModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaBoldQueryModule.html" >DejaBoldQueryModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaChildValidatorModule.html" >DejaChildValidatorModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaChipsModule.html" >DejaChipsModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaCircularPickerModule.html" >DejaCircularPickerModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaClipboardModule.html" >DejaClipboardModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaCodeViewerModule.html" >DejaCodeViewerModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaColorPickerModule.html" >DejaColorPickerModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaColorSelectorModule.html" >DejaColorSelectorModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaDatePickerModule.html" >DejaDatePickerModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaDateSelectorModule.html" >DejaDateSelectorModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaDialogModule.html" >DejaDialogModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaDragDropModule.html" >DejaDragDropModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaDropDownModule.html" >DejaDropDownModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaEditableModule.html" >DejaEditableModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaFormModule.html" >DejaFormModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaGridModule.html"  data-type="entity-link" class="active" >DejaGridModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaIFrameModule.html" >DejaIFrameModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaListLoaderModule.html" >DejaListLoaderModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaMarkdownModule.html" >DejaMarkdownModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaMenuModule.html" >DejaMenuModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaMessageBoxModule.html" >DejaMessageBoxModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaMonacoEditorModule.html" >DejaMonacoEditorModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaPipeModule.html" >DejaPipeModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaRangeModule.html" >DejaRangeModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaSelectModule.html" >DejaSelectModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaSortingModule.html" >DejaSortingModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaSplitterModule.html" >DejaSplitterModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaTextMetricsModule.html" >DejaTextMetricsModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaTilesModule.html" >DejaTilesModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaTooltipModule.html" >DejaTooltipModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaTreeListModule.html" >DejaTreeListModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaViewPortModule.html" >DejaViewPortModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/GroupingModule.html" >GroupingModule</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-cogs"></span>
+                                   <span>Components</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#components-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="components-links"
+                   >
+                                       <li class="link">
+                                           <a href="../components/AppComponent.html" >AppComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaAccordionBodyComponent.html" >DejaAccordionBodyComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaAccordionComponent.html" >DejaAccordionComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaAccordionDemoComponent.html" >DejaAccordionDemoComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaAccordionGroupComponent.html" >DejaAccordionGroupComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaAccordionHeaderComponent.html" >DejaAccordionHeaderComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaBackdropComponent.html" >DejaBackdropComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaBoldQueryComponent.html" >DejaBoldQueryComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaChipsComponent.html" >DejaChipsComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaCircularPickerComponent.html" >DejaCircularPickerComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaCircularPickerDemoComponent.html" >DejaCircularPickerDemoComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaCodeViewerComponent.html" >DejaCodeViewerComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaColorFabComponent.html" >DejaColorFabComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaColorPickerComponent.html" >DejaColorPickerComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaColorSelectorComponent.html" >DejaColorSelectorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaColorSelectorDemoComponent.html" >DejaColorSelectorDemoComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaContentEditableDemoComponent.html" >DejaContentEditableDemoComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaDatePickerComponent.html" >DejaDatePickerComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaDatePickerDemoComponent.html" >DejaDatePickerDemoComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaDateSelectorComponent.html" >DejaDateSelectorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaDialogComponent.html" >DejaDialogComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaDropDownComponent.html" >DejaDropDownComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaGridComponent.html" >DejaGridComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaGridGroupAreaComponent.html" >DejaGridGroupAreaComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaGridHeaderComponent.html" >DejaGridHeaderComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaGridParentRowComponent.html" >DejaGridParentRowComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaGridRowComponent.html" >DejaGridRowComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaIFrameComponent.html" >DejaIFrameComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaListLoaderComponent.html" >DejaListLoaderComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaMarkdownComponent.html" >DejaMarkdownComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaMenuComponent.html" >DejaMenuComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaMessageBoxComponent.html" >DejaMessageBoxComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaMonacoEditorComponent.html" >DejaMonacoEditorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaMonacoEditorDemoComponent.html" >DejaMonacoEditorDemoComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaRangeComponent.html" >DejaRangeComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaRangeDemoComponent.html" >DejaRangeDemoComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaSelectComponent.html" >DejaSelectComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaSnackbarComponent.html" >DejaSnackbarComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaSnackbarDemoComponent.html" >DejaSnackbarDemoComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaSortIndicatorComponent.html" >DejaSortIndicatorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaSplitterComponent.html" >DejaSplitterComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaSplitterDemoComponent.html" >DejaSplitterDemoComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaTileComponent.html" >DejaTileComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaTileGroupComponent.html" >DejaTileGroupComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaTilesComponent.html" >DejaTilesComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaTooltipComponent.html" >DejaTooltipComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaTreeListComponent.html" >DejaTreeListComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaTreeListDemoComponent.html" >DejaTreeListDemoComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaViewPortComponent.html" >DejaViewPortComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaViewPortDemoComponent.html" >DejaViewPortDemoComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/GlobalEventsDemoComponent.html" >GlobalEventsDemoComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/GridDemoComponent.html" >GridDemoComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/HomeComponent.html" >HomeComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/HomeComponentsComponent.html" >HomeComponentsComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/HomeGuidesComponent.html" >HomeGuidesComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/MenuDemoComponent.html" >MenuDemoComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/MessageBoxDemoComponent.html" >MessageBoxDemoComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/NewsCardComponent.html" >NewsCardComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/ProgressCircleDemoComponent.html" >ProgressCircleDemoComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/ReactiveFormDemoComponent.html" >ReactiveFormDemoComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/SelectDemoComponent.html" >SelectDemoComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/TextAreaDemoComponent.html" >TextAreaDemoComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/TilesDemoComponent.html" >TilesDemoComponent</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-code"></span>
+                                   <span>Directives</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#directives-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="directives-links"
+                   >
+                                       <li class="link">
+                                           <a href="../directives/DateValidatorDirective.html" >DateValidatorDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaAutosizeTextAreaDirective.html" >DejaAutosizeTextAreaDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaChildValidatorDirective.html" >DejaChildValidatorDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaDraggableDirective.html" >DejaDraggableDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaDroppableDirective.html" >DejaDroppableDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaEditableDirective.html" >DejaEditableDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaMouseDraggableDirective.html" >DejaMouseDraggableDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaMouseDroppableDirective.html" >DejaMouseDroppableDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaTooltipDirective.html" >DejaTooltipDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/PendingOnFocusDirective.html" >PendingOnFocusDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/SplitAreaDirective.html" >SplitAreaDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/SplitGutterDirective.html" >SplitGutterDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/ValidateOnBlurDirective.html" >ValidateOnBlurDirective</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-file-code-o"></span>
+                                   <span>Classes</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#classes-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="classes-links"
+                   >
+                                       <li class="link">
+                                           <a href="../classes/AccordionPage.html" >AccordionPage</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/AutoCompleteItem.html" >AutoCompleteItem</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Circle.html" >Circle</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Color.html" >Color</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/ColorEvent.html" >ColorEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DateUtils.html" >DateUtils</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaCancelableEvent.html" >DejaCancelableEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaColorFab.html" >DejaColorFab</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaGridColumnsLayoutInfos.html" >DejaGridColumnsLayoutInfos</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaGridRowEvent.html" >DejaGridRowEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaGridRowsEvent.html" >DejaGridRowsEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaItemEvent.html" >DejaItemEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaItemsEvent.html" >DejaItemsEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaTile.html" >DejaTile</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaTreeListScrollEvent.html" >DejaTreeListScrollEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Diacritics.html" >Diacritics</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/GlobalEventEmmitter.html" >GlobalEventEmmitter</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/GroupingService.html" >GroupingService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/HomePage.html" >HomePage</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/HtmlUtils.html" >HtmlUtils</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/IDejaGridColumnLayout.html" >IDejaGridColumnLayout</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/IDejaGridParentRow.html" >IDejaGridParentRow</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/IEditorLanguage.html" >IEditorLanguage</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/IEditorOptions.html" >IEditorOptions</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/IEditorTheme.html" >IEditorTheme</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/ItemListBase.html" >ItemListBase</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/ItemListService.html" >ItemListService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/JsonUtils.html" >JsonUtils</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/MaterialColor.html" >MaterialColor</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Message.html" >Message</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Message.html" >Message</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Position.html" >Position</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Range.html" >Range</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Rect.html" >Rect</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Size.html" >Size</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/SortingService.html" >SortingService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/UUID.html" >UUID</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/UnitValue.html" >UnitValue</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/ValidationMessages.html" >ValidationMessages</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/ValueAccessor.html" >ValueAccessor</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Weight.html" >Weight</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#injectables-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="../injectables/CloningService.html" >CloningService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/CountriesListService.html" >CountriesListService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/CountriesService.html" >CountriesService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/DejaClipboardService.html" >DejaClipboardService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/DejaMouseDragDropService.html" >DejaMouseDragDropService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/DejaTextMetricsService.html" >DejaTextMetricsService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/DejaTilesLayoutProvider.html" >DejaTilesLayoutProvider</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/DejaTooltipService.html" >DejaTooltipService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/DrugsService.html" >DrugsService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/GlobalEventService.html" >GlobalEventService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/MaterialColors.html" >MaterialColors</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/MonacoEditorDemoService.html" >MonacoEditorDemoService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/MonacoEditorJsonFileResolver.html" >MonacoEditorJsonFileResolver</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/MonacoEditorJsonToCompareFileResolver.html" >MonacoEditorJsonToCompareFileResolver</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/MonacoEditorService.html" >MonacoEditorService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/MonacoEditorXmlFileResolver.html" >MonacoEditorXmlFileResolver</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/MonacoEditorXmlToCompareFileResolver.html" >MonacoEditorXmlToCompareFileResolver</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/NewsService.html" >NewsService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/PeopleService.html" >PeopleService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/UserService.html" >UserService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/ViewPortService.html" >ViewPortService</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-plus"></span>
+                                   <span>Pipes</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#pipes-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="pipes-links"
+                   >
+                                       <li class="link">
+                                           <a href="../pipes/KeysPipe.html" >KeysPipe</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../pipes/SafeHTMLPipe.html" >SafeHTMLPipe</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../pipes/SafeStylePipe.html" >SafeStylePipe</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../pipes/StringToDateFormatPipe.html" >StringToDateFormatPipe</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../pipes/TimeAgoPipe.html" >TimeAgoPipe</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                           </li>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                           </li>
+                   
+                   
+                       </ul>
+                   
+                   </nav>
+               </div>
+               <div class="content module">
+                   <div class="content-data">
+
+<ol class="breadcrumb">
+  <li>Modules</li>
+  <li>DejaGridModule</li>
+</ol>
+
+<div class="text-center">
+    <div id="module-graph-svg">
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+ "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generated by graphviz version 2.40.1 (20161225.0304)
+ -->
+<!-- Title: dependencies Pages: 1 -->
+<svg width="1694pt" height="284pt"
+ viewBox="0.00 0.00 1694.00 284.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 280)">
+<title>dependencies</title>
+<polygon fill="#ffffff" stroke="transparent" points="-4,4 -4,-280 1690,-280 1690,4 -4,4"/>
+<text text-anchor="start" x="822.0091" y="-42.4" font-family="sans-serif" font-weight="bold" font-size="14.00" fill="#000000">Legend</text>
+<polygon fill="#ffffb3" stroke="transparent" points="609,-10 609,-30 629,-30 629,-10 609,-10"/>
+<text text-anchor="start" x="632.629" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Declarations</text>
+<polygon fill="#8dd3c7" stroke="transparent" points="722,-10 722,-30 742,-30 742,-10 722,-10"/>
+<text text-anchor="start" x="745.7251" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Module</text>
+<polygon fill="#80b1d3" stroke="transparent" points="808,-10 808,-30 828,-30 828,-10 808,-10"/>
+<text text-anchor="start" x="831.7812" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Bootstrap</text>
+<polygon fill="#fdb462" stroke="transparent" points="905,-10 905,-30 925,-30 925,-10 905,-10"/>
+<text text-anchor="start" x="928.6732" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Providers</text>
+<polygon fill="#fb8072" stroke="transparent" points="1001,-10 1001,-30 1021,-30 1021,-10 1001,-10"/>
+<text text-anchor="start" x="1024.7258" y="-15.4" font-family="sans-serif" font-size="14.00" fill="#000000"> &#160;Exports</text>
+<g id="clust1" class="cluster">
+<title>cluster_DejaGridModule</title>
+<polygon fill="none" stroke="#000000" stroke-dasharray="1,5" points="8,-70 8,-268 1678,-268 1678,-70 8,-70"/>
+</g>
+<g id="clust2" class="cluster">
+<title>cluster_DejaGridModule_declarations</title>
+<polygon fill="none" stroke="#000000" points="722,-78 722,-130 1670,-130 1670,-78 722,-78"/>
+</g>
+<g id="clust8" class="cluster">
+<title>cluster_DejaGridModule_imports</title>
+<polygon fill="none" stroke="#000000" points="16,-78 16,-130 714,-130 714,-78 16,-78"/>
+</g>
+<g id="clust9" class="cluster">
+<title>cluster_DejaGridModule_exports</title>
+<polygon fill="none" stroke="#000000" points="218,-208 218,-260 1182,-260 1182,-208 218,-208"/>
+</g>
+<!-- DejaGridComponent -->
+<g id="node1" class="node">
+<title>DejaGridComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="1661.9173,-122 1528.0827,-122 1528.0827,-86 1661.9173,-86 1661.9173,-122"/>
+<text text-anchor="middle" x="1595" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaGridComponent</text>
+</g>
+<!-- DejaGridModule -->
+<g id="node6" class="node">
+<title>DejaGridModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="794.6346,-187 791.6346,-191 770.6346,-191 767.6346,-187 683.3654,-187 683.3654,-151 794.6346,-151 794.6346,-187"/>
+<text text-anchor="middle" x="739" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaGridModule</text>
+</g>
+<!-- DejaGridComponent&#45;&gt;DejaGridModule -->
+<g id="edge1" class="edge">
+<title>DejaGridComponent&#45;&gt;DejaGridModule</title>
+<path fill="none" stroke="#000000" d="M1595,-122.2228C1595,-142.3652 1595,-172 1595,-172 1595,-172 804.8344,-172 804.8344,-172"/>
+<polygon fill="#000000" stroke="#000000" points="804.8344,-168.5001 794.8344,-172 804.8343,-175.5001 804.8344,-168.5001"/>
+</g>
+<!-- DejaGridRowComponent -->
+<g id="node2" class="node">
+<title>DejaGridRowComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="1509.8599,-122 1350.1401,-122 1350.1401,-86 1509.8599,-86 1509.8599,-122"/>
+<text text-anchor="middle" x="1430" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaGridRowComponent</text>
+</g>
+<!-- DejaGridRowComponent&#45;&gt;DejaGridModule -->
+<g id="edge2" class="edge">
+<title>DejaGridRowComponent&#45;&gt;DejaGridModule</title>
+<path fill="none" stroke="#000000" d="M1430,-122.2222C1430,-140.8285 1430,-167 1430,-167 1430,-167 804.6704,-167 804.6704,-167"/>
+<polygon fill="#000000" stroke="#000000" points="804.6704,-163.5001 794.6704,-167 804.6704,-170.5001 804.6704,-163.5001"/>
+</g>
+<!-- DejaGridParentRowComponent -->
+<g id="node3" class="node">
+<title>DejaGridParentRowComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="1331.6232,-122 1136.3768,-122 1136.3768,-86 1331.6232,-86 1331.6232,-122"/>
+<text text-anchor="middle" x="1234" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaGridParentRowComponent</text>
+</g>
+<!-- DejaGridParentRowComponent&#45;&gt;DejaGridModule -->
+<g id="edge3" class="edge">
+<title>DejaGridParentRowComponent&#45;&gt;DejaGridModule</title>
+<path fill="none" stroke="#000000" d="M1155.3234,-122.0336C1155.3234,-139.0597 1155.3234,-162 1155.3234,-162 1155.3234,-162 804.7152,-162 804.7152,-162"/>
+<polygon fill="#000000" stroke="#000000" points="804.7153,-158.5001 794.7152,-162 804.7152,-165.5001 804.7153,-158.5001"/>
+</g>
+<!-- DejaGridHeaderComponent -->
+<g id="node4" class="node">
+<title>DejaGridHeaderComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="1117.8277,-122 944.1723,-122 944.1723,-86 1117.8277,-86 1117.8277,-122"/>
+<text text-anchor="middle" x="1031" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaGridHeaderComponent</text>
+</g>
+<!-- DejaGridHeaderComponent&#45;&gt;DejaGridModule -->
+<g id="edge4" class="edge">
+<title>DejaGridHeaderComponent&#45;&gt;DejaGridModule</title>
+<path fill="none" stroke="#000000" d="M981.8831,-122.2396C981.8831,-137.5706 981.8831,-157 981.8831,-157 981.8831,-157 804.7223,-157 804.7223,-157"/>
+<polygon fill="#000000" stroke="#000000" points="804.7223,-153.5001 794.7223,-157 804.7222,-160.5001 804.7223,-153.5001"/>
+</g>
+<!-- DejaGridGroupAreaComponent -->
+<g id="node5" class="node">
+<title>DejaGridGroupAreaComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="926.3806,-122 729.6194,-122 729.6194,-86 926.3806,-86 926.3806,-122"/>
+<text text-anchor="middle" x="828" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaGridGroupAreaComponent</text>
+</g>
+<!-- DejaGridGroupAreaComponent&#45;&gt;DejaGridModule -->
+<g id="edge5" class="edge">
+<title>DejaGridGroupAreaComponent&#45;&gt;DejaGridModule</title>
+<path fill="none" stroke="#000000" d="M762.3135,-122.1061C762.3135,-122.1061 762.3135,-140.991 762.3135,-140.991"/>
+<polygon fill="#000000" stroke="#000000" points="758.8135,-140.9909 762.3135,-150.991 765.8135,-140.991 758.8135,-140.9909"/>
+</g>
+<!-- DejaGridComponent  -->
+<g id="node12" class="node">
+<title>DejaGridComponent </title>
+<polygon fill="#fb8072" stroke="#000000" points="1174.4166,-252 1037.5834,-252 1037.5834,-216 1174.4166,-216 1174.4166,-252"/>
+<text text-anchor="middle" x="1106" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaGridComponent </text>
+</g>
+<!-- DejaGridModule&#45;&gt;DejaGridComponent  -->
+<g id="edge11" class="edge">
+<title>DejaGridModule&#45;&gt;DejaGridComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M794.934,-177C891.1422,-177 1077.7278,-177 1077.7278,-177 1077.7278,-177 1077.7278,-205.9648 1077.7278,-205.9648"/>
+<polygon fill="#000000" stroke="#000000" points="1074.2278,-205.9648 1077.7278,-215.9648 1081.2278,-205.9649 1074.2278,-205.9648"/>
+</g>
+<!-- DejaGridRowComponent  -->
+<g id="node13" class="node">
+<title>DejaGridRowComponent </title>
+<polygon fill="#fb8072" stroke="#000000" points="1019.8602,-252 856.1398,-252 856.1398,-216 1019.8602,-216 1019.8602,-252"/>
+<text text-anchor="middle" x="938" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaGridRowComponent </text>
+</g>
+<!-- DejaGridModule&#45;&gt;DejaGridRowComponent  -->
+<g id="edge12" class="edge">
+<title>DejaGridModule&#45;&gt;DejaGridRowComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M794.8296,-182C838.2832,-182 891.2551,-182 891.2551,-182 891.2551,-182 891.2551,-205.8129 891.2551,-205.8129"/>
+<polygon fill="#000000" stroke="#000000" points="887.7552,-205.8129 891.2551,-215.8129 894.7552,-205.813 887.7552,-205.8129"/>
+</g>
+<!-- DejaGridParentRowComponent  -->
+<g id="node14" class="node">
+<title>DejaGridParentRowComponent </title>
+<polygon fill="#fb8072" stroke="#000000" points="838.6228,-252 639.3772,-252 639.3772,-216 838.6228,-216 838.6228,-252"/>
+<text text-anchor="middle" x="739" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaGridParentRowComponent </text>
+</g>
+<!-- DejaGridModule&#45;&gt;DejaGridParentRowComponent  -->
+<g id="edge13" class="edge">
+<title>DejaGridModule&#45;&gt;DejaGridParentRowComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M739,-187.1061C739,-187.1061 739,-205.991 739,-205.991"/>
+<polygon fill="#000000" stroke="#000000" points="735.5001,-205.9909 739,-215.991 742.5001,-205.991 735.5001,-205.9909"/>
+</g>
+<!-- DejaGridHeaderComponent  -->
+<g id="node15" class="node">
+<title>DejaGridHeaderComponent </title>
+<polygon fill="#fb8072" stroke="#000000" points="621.8279,-252 444.1721,-252 444.1721,-216 621.8279,-216 621.8279,-252"/>
+<text text-anchor="middle" x="533" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaGridHeaderComponent </text>
+</g>
+<!-- DejaGridModule&#45;&gt;DejaGridHeaderComponent  -->
+<g id="edge14" class="edge">
+<title>DejaGridModule&#45;&gt;DejaGridHeaderComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M683.0279,-182C647.3994,-182 607.915,-182 607.915,-182 607.915,-182 607.915,-205.8129 607.915,-205.8129"/>
+<polygon fill="#000000" stroke="#000000" points="604.4151,-205.8129 607.915,-215.8129 611.4151,-205.813 604.4151,-205.8129"/>
+</g>
+<!-- DejaGridGroupAreaComponent  -->
+<g id="node16" class="node">
+<title>DejaGridGroupAreaComponent </title>
+<polygon fill="#fb8072" stroke="#000000" points="425.8802,-252 226.1198,-252 226.1198,-216 425.8802,-216 425.8802,-252"/>
+<text text-anchor="middle" x="326" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaGridGroupAreaComponent </text>
+</g>
+<!-- DejaGridModule&#45;&gt;DejaGridGroupAreaComponent  -->
+<g id="edge15" class="edge">
+<title>DejaGridModule&#45;&gt;DejaGridGroupAreaComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M683.0086,-177C581.6443,-177 378.1208,-177 378.1208,-177 378.1208,-177 378.1208,-205.9648 378.1208,-205.9648"/>
+<polygon fill="#000000" stroke="#000000" points="374.6209,-205.9648 378.1208,-215.9648 381.6209,-205.9649 374.6209,-205.9648"/>
+</g>
+<!-- CommonModule -->
+<g id="node7" class="node">
+<title>CommonModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="705.6681,-122 702.6681,-126 681.6681,-126 678.6681,-122 594.3319,-122 594.3319,-86 705.6681,-86 705.6681,-122"/>
+<text text-anchor="middle" x="650" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">CommonModule</text>
+</g>
+<!-- CommonModule&#45;&gt;DejaGridModule -->
+<g id="edge6" class="edge">
+<title>CommonModule&#45;&gt;DejaGridModule</title>
+<path fill="none" stroke="#000000" d="M694.5084,-122.1061C694.5084,-122.1061 694.5084,-140.991 694.5084,-140.991"/>
+<polygon fill="#000000" stroke="#000000" points="691.0085,-140.9909 694.5084,-150.991 698.0085,-140.991 691.0085,-140.9909"/>
+</g>
+<!-- FormsModule -->
+<g id="node8" class="node">
+<title>FormsModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="576.8288,-122 573.8288,-126 552.8288,-126 549.8288,-122 481.1712,-122 481.1712,-86 576.8288,-86 576.8288,-122"/>
+<text text-anchor="middle" x="529" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">FormsModule</text>
+</g>
+<!-- FormsModule&#45;&gt;DejaGridModule -->
+<g id="edge7" class="edge">
+<title>FormsModule&#45;&gt;DejaGridModule</title>
+<path fill="none" stroke="#000000" d="M529,-122.2396C529,-137.5706 529,-157 529,-157 529,-157 673.2752,-157 673.2752,-157"/>
+<polygon fill="#000000" stroke="#000000" points="673.2752,-160.5001 683.2752,-157 673.2752,-153.5001 673.2752,-160.5001"/>
+</g>
+<!-- DejaTreeListModule -->
+<g id="node9" class="node">
+<title>DejaTreeListModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="463.8976,-122 460.8976,-126 439.8976,-126 436.8976,-122 330.1024,-122 330.1024,-86 463.8976,-86 463.8976,-122"/>
+<text text-anchor="middle" x="397" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaTreeListModule</text>
+</g>
+<!-- DejaTreeListModule&#45;&gt;DejaGridModule -->
+<g id="edge8" class="edge">
+<title>DejaTreeListModule&#45;&gt;DejaGridModule</title>
+<path fill="none" stroke="#000000" d="M454.0174,-122.0336C454.0174,-139.0597 454.0174,-162 454.0174,-162 454.0174,-162 673.0366,-162 673.0366,-162"/>
+<polygon fill="#000000" stroke="#000000" points="673.0367,-165.5001 683.0366,-162 673.0366,-158.5001 673.0367,-165.5001"/>
+</g>
+<!-- DejaDragDropModule -->
+<g id="node10" class="node">
+<title>DejaDragDropModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="312.2255,-122 309.2255,-126 288.2255,-126 285.2255,-122 169.7745,-122 169.7745,-86 312.2255,-86 312.2255,-122"/>
+<text text-anchor="middle" x="241" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaDragDropModule</text>
+</g>
+<!-- DejaDragDropModule&#45;&gt;DejaGridModule -->
+<g id="edge9" class="edge">
+<title>DejaDragDropModule&#45;&gt;DejaGridModule</title>
+<path fill="none" stroke="#000000" d="M269.2112,-122.2222C269.2112,-140.8285 269.2112,-167 269.2112,-167 269.2112,-167 673.2642,-167 673.2642,-167"/>
+<polygon fill="#000000" stroke="#000000" points="673.2643,-170.5001 683.2642,-167 673.2642,-163.5001 673.2643,-170.5001"/>
+</g>
+<!-- DejaSortingModule -->
+<g id="node11" class="node">
+<title>DejaSortingModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="151.7008,-122 148.7008,-126 127.7008,-126 124.7008,-122 24.2992,-122 24.2992,-86 151.7008,-86 151.7008,-122"/>
+<text text-anchor="middle" x="88" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaSortingModule</text>
+</g>
+<!-- DejaSortingModule&#45;&gt;DejaGridModule -->
+<g id="edge10" class="edge">
+<title>DejaSortingModule&#45;&gt;DejaGridModule</title>
+<path fill="none" stroke="#000000" d="M88,-122.2228C88,-142.3652 88,-172 88,-172 88,-172 673.2147,-172 673.2147,-172"/>
+<polygon fill="#000000" stroke="#000000" points="673.2147,-175.5001 683.2147,-172 673.2146,-168.5001 673.2147,-175.5001"/>
+</g>
+</g>
+</svg>
+
+    </div>
+    <div class="btn-group">
+        <button id="zoom-in" class="btn btn-default btn-sm">Zoom in</button>
+        <button id="reset" class="btn btn-default btn-sm">Reset</button>
+        <button id="zoom-out" class="btn btn-default btn-sm">Zoom out</button>
+    </div>
+</div>
+<script src="../js/libs/svg-pan-zoom.min.js"></script>
+<script src="../js/svg-pan-zoom.controls.js"></script>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active">
+        <a href="#infos" id="infos-tab" role="tab" data-toggle="tab">Infos</a>
+    </li>
+    <li>
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="infos">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/component/data-grid/index.ts</code>
+        </p>
+
+
+        <div class="container-fluid module">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3>Declarations<a href="https://angular.io/docs/ts/latest/api/core/index/NgModule-interface.html#!#declarations-anchor" target="_blank"><span class="fa fa-info-circle"></span></a></h3>
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="../components/DejaGridComponent.html">DejaGridComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../components/DejaGridRowComponent.html">DejaGridRowComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../components/DejaGridParentRowComponent.html">DejaGridParentRowComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../components/DejaGridHeaderComponent.html">DejaGridHeaderComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="../components/DejaGridGroupAreaComponent.html">DejaGridGroupAreaComponent</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3>Imports<a href="https://angular.io/docs/ts/latest/api/core/index/NgModule-interface.html#!#imports-anchor" target="_blank"><span class="fa fa-info-circle"></a></h3>
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                    <a href="../modules/DejaTreeListModule.html" >DejaTreeListModule</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../modules/DejaDragDropModule.html" >DejaDragDropModule</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../modules/DejaSortingModule.html" >DejaSortingModule</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3>Exports<a href="https://angular.io/docs/ts/latest/api/core/index/NgModule-interface.html#!#exports-anchor" target="_blank"><span class="fa fa-info-circle"></a></h3>
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                    <a href="../components/DejaGridComponent.html" >DejaGridComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../components/DejaGridRowComponent.html" >DejaGridRowComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../components/DejaGridParentRowComponent.html" >DejaGridParentRowComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../components/DejaGridHeaderComponent.html" >DejaGridHeaderComponent</a>
+                            </li>
+                            <li class="list-group-item">
+                                    <a href="../components/DejaGridGroupAreaComponent.html" >DejaGridGroupAreaComponent</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="tab-pane fade tab-source-code" id="source">
+        <pre class="line-numbers"><code class="language-typescript">import { CommonModule } from &#x27;@angular/common&#x27;;
+import { NgModule } from &#x27;@angular/core&#x27;;
+import { FormsModule  } from &#x27;@angular/forms&#x27;;
+import { DejaSortingModule } from &#x27;../../common/core/sorting/index&#x27;;
+import { DejaDragDropModule } from &#x27;../dragdrop/index&#x27;;
+import { DejaTreeListModule } from &#x27;../tree-list/index&#x27;;
+import { DejaGridGroupAreaComponent } from &#x27;./data-grid-grouparea/data-grid-grouparea.component&#x27;;
+import { DejaGridHeaderComponent } from &#x27;./data-grid-header/data-grid-header.component&#x27;;
+import { DejaGridParentRowComponent } from &#x27;./data-grid-parent-row/data-grid-parent-row.component&#x27;;
+import { DejaGridRowComponent } from &#x27;./data-grid-row/data-grid-row.component&#x27;;
+import { DejaGridComponent } from &#x27;./data-grid.component&#x27;;
+
+@NgModule({
+    declarations: [
+        DejaGridComponent,
+        DejaGridRowComponent,
+        DejaGridParentRowComponent,
+        DejaGridHeaderComponent,
+        DejaGridGroupAreaComponent,
+    ],
+    exports: [
+        DejaGridComponent,
+        DejaGridRowComponent,
+        DejaGridParentRowComponent,
+        DejaGridHeaderComponent,
+        DejaGridGroupAreaComponent,
+    ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        DejaTreeListModule,
+        DejaDragDropModule,
+        DejaSortingModule,
+    ],
+})
+export class DejaGridModule {}
+
+export * from &#x27;./data-grid-column/data-grid-column&#x27;;
+export * from &#x27;./data-grid-column/data-grid-column-layout&#x27;;
+export * from &#x27;./data-grid-column/data-grid-column-layout-infos&#x27;;
+export * from &#x27;./data-grid-row/data-grid-row-event&#x27;;
+export * from &#x27;./data-grid-row/data-grid-rows-event&#x27;;
+export * from &#x27;./data-grid-row/data-grid-row&#x27;;
+export * from &#x27;./data-grid-parent-row/data-grid-parent-row&#x27;;
+export * from &#x27;./data-grid-grouparea/data-grid-group&#x27;;
+export * from &#x27;./data-grid-grouparea/data-grid-grouparea.component&#x27;;
+export * from &#x27;./data-grid-header/data-grid-header.component&#x27;;
+export * from &#x27;./data-grid-parent-row/data-grid-parent-row.component&#x27;;
+export * from &#x27;./data-grid-row/data-grid-row.component&#x27;;
+export * from &#x27;./data-grid.component&#x27;;
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script>var COMPODOC_CURRENT_PAGE_DEPTH = 1;</script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
+
+    </body>
+</html>
