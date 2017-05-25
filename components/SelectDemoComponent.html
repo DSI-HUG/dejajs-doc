@@ -9,6 +9,7 @@
 
         <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
 	    <link rel="stylesheet" href="../styles/style.css">
+                 <link rel="stylesheet" href="../styles/vagrant.css">
     </head>
     <body>
 
@@ -618,9 +619,6 @@
                                 </li>
                                 <li class="link">
                                     <a href="../injectables/DejaTooltipService.html" >DejaTooltipService</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../injectables/DrugsService.html" >DrugsService</a>
                                 </li>
                                 <li class="link">
                                     <a href="../injectables/GlobalEventService.html" >GlobalEventService</a>
@@ -1309,9 +1307,6 @@
                                        </li>
                                        <li class="link">
                                            <a href="../injectables/DejaTooltipService.html" >DejaTooltipService</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../injectables/DrugsService.html" >DrugsService</a>
                                        </li>
                                        <li class="link">
                                            <a href="../injectables/GlobalEventService.html" >GlobalEventService</a>
@@ -2319,8 +2314,8 @@ export class SelectDemoComponent implements OnInit {
     constructor(private changeDetectorRef: ChangeDetectorRef, private countriesService: CountriesService, protected countriesListService: CountriesListService, newsService: NewsService) {
         this.multiselectModel &#x3D; JSON.parse(&#x27;[{&quot;naqme&quot;:&quot;ÅlandIslands&quot;,&quot;code&quot;:&quot;AX&quot;,&quot;displayName&quot;:&quot;ÅlandIslands&quot;,&quot;depth&quot;:0,&quot;odd&quot;:true,&quot;selected&quot;:true},{&quot;naqme&quot;:&quot;AmericanSamoa&quot;,&quot;code&quot;:&quot;AS&quot;,&quot;displayName&quot;:&quot;AmericanSamoa&quot;,&quot;depth&quot;:0,&quot;odd&quot;:false,&quot;selected&quot;:true},{&quot;naqme&quot;:&quot;Argentina&quot;,&quot;code&quot;:&quot;AR&quot;,&quot;displayName&quot;:&quot;Argentina&quot;,&quot;depth&quot;:0,&quot;odd&quot;:false,&quot;selected&quot;:true},{&quot;naqme&quot;:&quot;ChristmasIsland&quot;,&quot;code&quot;:&quot;CX&quot;,&quot;displayName&quot;:&quot;ChristmasIsland&quot;,&quot;depth&quot;:0,&quot;odd&quot;:false,&quot;selected&quot;:true},{&quot;naqme&quot;:&quot;Egypt&quot;,&quot;code&quot;:&quot;EG&quot;,&quot;displayName&quot;:&quot;Egypt&quot;,&quot;depth&quot;:0,&quot;odd&quot;:true,&quot;selected&quot;:true},{&quot;naqme&quot;:&quot;Dominica&quot;,&quot;code&quot;:&quot;DM&quot;,&quot;displayName&quot;:&quot;Dominica&quot;,&quot;depth&quot;:0,&quot;odd&quot;:false,&quot;selected&quot;:true}]&#x27;);
         this.news$ &#x3D; newsService.getNews$(50);
-        this.bigNews$ &#x3D; newsService.getNews$(100);
-        this.bigCountries$ &#x3D; countriesService.getCountries$(null, 10000);
+        this.bigNews$ &#x3D; newsService.getNews$(10000);
+        this.bigCountries$ &#x3D; countriesService.getCountries$(null, 100000);
     }
 
     public ngOnInit() {
