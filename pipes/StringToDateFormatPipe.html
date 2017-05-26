@@ -1180,7 +1180,8 @@
     </div>
     <div class="tab-pane fade tab-source-code" id="source">
         <pre class="line-numbers"><code class="language-typescript">import { Pipe, PipeTransform} from &#x27;@angular/core&#x27;;
-import moment from &#x27;moment&#x27;;
+import * as moment_ from &#x27;moment&#x27;;
+const moment: (value?: any, format?: string) &#x3D;&gt; moment_.Moment &#x3D; (&lt;any&gt;moment_).default || moment_;
 
 @Pipe({ name: &#x27;stringToDateFormat&#x27; })
 export class StringToDateFormatPipe implements PipeTransform {

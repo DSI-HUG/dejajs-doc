@@ -206,7 +206,7 @@
                                     <a href="../components/DejaAccordionComponent.html" >DejaAccordionComponent</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../components/DejaAccordionDemoComponent.html"  data-type="entity-link" class="active" >DejaAccordionDemoComponent</a>
+                                    <a href="../components/DejaAccordionDemoComponent.html" >DejaAccordionDemoComponent</a>
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaAccordionGroupComponent.html" >DejaAccordionGroupComponent</a>
@@ -620,7 +620,7 @@
                                     <a href="../injectables/DejaTooltipService.html" >DejaTooltipService</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../injectables/DrugsService.html" >DrugsService</a>
+                                    <a href="../injectables/DrugsService.html"  data-type="entity-link" class="active" >DrugsService</a>
                                 </li>
                                 <li class="link">
                                     <a href="../injectables/GlobalEventService.html" >GlobalEventService</a>
@@ -897,7 +897,7 @@
                                            <a href="../components/DejaAccordionComponent.html" >DejaAccordionComponent</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../components/DejaAccordionDemoComponent.html"  data-type="entity-link" class="active" >DejaAccordionDemoComponent</a>
+                                           <a href="../components/DejaAccordionDemoComponent.html" >DejaAccordionDemoComponent</a>
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaAccordionGroupComponent.html" >DejaAccordionGroupComponent</a>
@@ -1311,7 +1311,7 @@
                                            <a href="../injectables/DejaTooltipService.html" >DejaTooltipService</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../injectables/DrugsService.html" >DrugsService</a>
+                                           <a href="../injectables/DrugsService.html"  data-type="entity-link" class="active" >DrugsService</a>
                                        </li>
                                        <li class="link">
                                            <a href="../injectables/GlobalEventService.html" >GlobalEventService</a>
@@ -1396,266 +1396,205 @@
                    
                    </nav>
                </div>
-               <div class="content component">
+               <div class="content injectable">
                    <div class="content-data">
 
 
+
+
 <ol class="breadcrumb">
-  <li>Components</li>
-  <li>DejaAccordionDemoComponent</li>
+  <li>Injectables</li>
+  <li>DrugsService</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
     <li class="active">
-        <a href="#infos" id="infos-tab" role="tab" data-toggle="tab" data-link="infos">Infos</a>
+        <a href="#infos" id="infos-tab" role="tab" data-toggle="tab">Infos</a>
     </li>
-
     <li>
         <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
-    </li>
-
-    <li>
-        <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
-    </li>
-    <li>
-        <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
     </li>
 </ul>
 
 <div class="tab-content">
-    <div class="tab-pane fade active in" id="infos"><p class="comment">
-    <h3>File</h3>
-</p>
-<p class="comment">
-    <code>demo/app/accordion/accordion-demo.component.ts</code>
-</p>
+    <div class="tab-pane fade active in" id="infos">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>demo/app/services/drugs.service.ts</code>
+        </p>
 
 
+            <section>
+                <h3 id="constructor">Constructor</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <code>constructor(http: <a href="https://angular.io/docs/ts/latest/api/http/index/Http-class.html" target="_blank">Http</a>, groupingService: <a href="../classes/GroupingService.html">GroupingService</a>)</code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">demo/app/services/drugs.service.ts:17</a></div>
+                                    </td>
+                                </tr>
+            
+                        </tbody>
+                    </table>
+            </section>
 
+            <section>
+                
+                    <h3 id="methods">
+                        Methods
+                    </h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Static</span> getGroupedDrugs$</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play export">
+                                            <span class="fa fa-export"></span>
+                                        </span>
+                                    <code>getGroupedDrugs$(query: string)</code>
+                                </td>
+                            </tr>
+            
+            
+                                <tr>
+                                    <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">demo/app/services/drugs.service.ts:20</a></div>
+                                    </td>
+                                </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>Observable&lt;IDrug[]&gt;</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Static</span> getDrugs$</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play export">
+                                            <span class="fa fa-export"></span>
+                                        </span>
+                                    <code>getDrugs$(query: string, number: number)</code>
+                                </td>
+                            </tr>
+            
+            
+                                <tr>
+                                    <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">demo/app/services/drugs.service.ts:36</a></div>
+                                    </td>
+                                </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
 
-
-<section>
-    <h3>Metadata</h3>
-    <table class="table table-sm table-hover">
-        <tbody>
-
-
-
-
-
-
-
-
-
-
-
-
-            <tr>
-                <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>deja-accordion-demo</code></td>
-            </tr>
-
-            <tr>
-                <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>accordion-demo.component.scss</code></td>
-            </tr>
-
-
-
-            <tr>
-                <td class="col-md-3">templateUrl</td>
-                <td class="col-md-9"><code>./accordion-demo.component.html</code></td>
-            </tr>
-
-
-        </tbody>
-    </table>
-</section>
-
-
-
-    <section>
-        <h3 id="constructor">Constructor</h3>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <code>constructor()</code>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">demo/app/accordion/accordion-demo.component.ts:17</a></div>
-                            </td>
-                        </tr>
-    
-                </tbody>
-            </table>
-    </section>
-
-
-    <section>
-        
-            <h3 id="inputs">
-                Properties
-            </h3>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Public</span> tabIndex</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-circle"></span><code>tabIndex:     <code>number</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <i>Default value : </i><code>1</code>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">demo/app/accordion/accordion-demo.component.ts:17</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-    </section>
-</div>
-
-
+    </div>
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { Http, ResponseContentType } from &#x27;@angular/http&#x27;;
+import &#x27;rxjs/add/operator/repeat&#x27;;
+import { Observable } from &#x27;rxjs/Observable&#x27;;
+import { IGroupInfo } from &#x27;../../../src/common/core/grouping/group-infos&#x27;;
+import { GroupingService } from &#x27;../../../src/common/core/grouping/grouping.service&#x27;;
 
-@Component({
-    selector: &#x27;deja-accordion-demo&#x27;,
-    styleUrls: [&#x27;./accordion-demo.component.scss&#x27;],
-    templateUrl: &#x27;./accordion-demo.component.html&#x27;,
-})
-export class DejaAccordionDemoComponent {
-    protected tabIndex &#x3D; 1;
+@Injectable()
+export class DrugsService {
+    constructor(private http: Http, private groupingService: GroupingService) { }
 
-    constructor() {
+    public getGroupedDrugs$(query?: string): Observable&lt;IDrug[]&gt; {
+        return this.getDrugs$(query)
+            .switchMap((drugs) &#x3D;&gt; {
+                const groupInfos &#x3D; [
+                    {
+                        groupByField: &#x27;fulfillexpeditecriteria&#x27;,
+                    },
+                    {
+                        groupByField: &#x27;patientonsetageunit&#x27;,
+                    },
+                ] as IGroupInfo[];
+
+                return this.groupingService.group$(drugs, groupInfos);
+            });
     }
 
+    public getDrugs$(query?: string, number?: number) {
+        return this.http.get(&#x27;assets/datas/drugs.json&#x27;, { responseType: ResponseContentType.Json })
+            .map((response: any) &#x3D;&gt; {
+                const datas &#x3D; response.json();
+                const drugs &#x3D; datas.data as IDrug[];
+
+                drugs.forEach((drug) &#x3D;&gt; {
+                    Object.keys(drug).forEach((key) &#x3D;&gt; {
+                        if (drug[key] &amp;&amp; typeof drug[key] &#x3D;&#x3D;&#x3D; &#x27;object&#x27;) {
+                            Object.keys(drug[key]).forEach((skey) &#x3D;&gt; {
+                                drug[skey] &#x3D; drug[key][skey];
+                            });
+                            delete drug[key];
+                        }
+                    });
+                });
+
+                if (query) {
+                    const sr &#x3D; new RegExp(&#x27;^&#x27; + query, &#x27;i&#x27;);
+                    const sc &#x3D; new RegExp(&#x27;^(?!&#x27; + query + &#x27;).*(&#x27; + query + &#x27;)&#x27;, &#x27;i&#x27;);
+                    const result &#x3D; drugs.filter((z) &#x3D;&gt; sr.test(z.receivedate));
+                    drugs.forEach((z) &#x3D;&gt; {
+                        if (sc.test(z.receivedate)) {
+                            result.push(z);
+                        }
+                    });
+                    return result;
+                } else {
+                    drugs.forEach((drug) &#x3D;&gt; drug.indexedText &#x3D; drug.receivedate + &#x27; &#x27; + drug.companynumb + &#x27; &#x27; + drug.safetyreportid);
+
+                    return drugs;
+                }
+            })
+            .repeat(number || 1);
+    }
+}
+
+export interface IDrug {
+    indexedText: string;
+    receivedate: string;
+    companynumb: string;
+    safetyreportid: string;
 }
 </code></pre>
     </div>
-
-    <div class="tab-pane fade" id="templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;md-tab-group [selectedIndex]&#x3D;&quot;tabIndex&quot; (selectChange)&#x3D;&quot;tabIndex &#x3D; $event.index&quot;&gt;
-    &lt;!--&lt;md-tab label&#x3D;&quot;OVERVIEW&quot;&gt;
-        &lt;md-card class&#x3D;&quot;demo-card demo-basic&quot;&gt;
-            TODO
-        &lt;/md-card&gt;
-    &lt;/md-tab&gt;--&gt;
-    &lt;md-tab label&#x3D;&quot;API REFERENCE&quot;&gt;&lt;/md-tab&gt;
-    &lt;md-tab label&#x3D;&quot;EXAMPLES 2&quot;&gt;&lt;/md-tab&gt;
-&lt;/md-tab-group&gt;
-
-&lt;md-card class&#x3D;&quot;demo-card demo-basic&quot; *ngIf&#x3D;&quot;tabIndex &#x3D;&#x3D;&#x3D; 0&quot;&gt;
-    &lt;deja-markdown [url]&#x3D;&quot;&#x27;https://raw.githubusercontent.com/DSI-HUG/dejajs-components/dev/src/component/accordion/readme.md&#x27;&quot;&gt;&lt;/deja-markdown&gt;
-&lt;/md-card&gt;
-
-&lt;div *ngIf&#x3D;&quot;tabIndex &#x3D;&#x3D;&#x3D; 1&quot;&gt;
-    &lt;md-card class&#x3D;&quot;demo-card&quot;&gt;
-        &lt;md-toolbar color&#x3D;&quot;primary&quot;&gt;Default&lt;/md-toolbar&gt;
-        &lt;md-card-content&gt;
-            &lt;deja-accordion&gt;
-                &lt;deja-accordion-group&gt;
-                    &lt;deja-accordion-header&gt;Un titre&lt;/deja-accordion-header&gt;
-                    &lt;deja-accordion-body&gt;
-                        &lt;p&gt;
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;br /&gt; Mauris auctor sit amet odio et aliquet. Curabitur auctor eleifend mattis. &lt;br /&gt; Nullam sit amet quam tellus. Ut mattis tellus sed erat ultricies ornare. &lt;br /&gt; Nulla dictum nisi eu tortor lacinia porttitor. Donec eu arcu et enim cursus viverra. &lt;br /&gt; Praesent pulvinar dui nisi, a tincidunt arcu finibus sed.
-                        &lt;/p&gt;
-                        &lt;p&gt;
-                            &lt;button md-raised-button color&#x3D;&quot;primary&quot;&gt;Primary button&lt;/button&gt;
-                            &lt;button md-raised-button color&#x3D;&quot;accent&quot;&gt;Accent button&lt;/button&gt;
-                            &lt;button md-raised-button color&#x3D;&quot;warn&quot;&gt;Warn button&lt;/button&gt;
-                        &lt;/p&gt;
-                    &lt;/deja-accordion-body&gt;
-                &lt;/deja-accordion-group&gt;
-                &lt;deja-accordion-group&gt;
-                    &lt;deja-accordion-header&gt;Un second titre&lt;/deja-accordion-header&gt;
-                    &lt;deja-accordion-body&gt;
-                        &lt;p&gt;
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;br /&gt; Mauris auctor sit amet odio et aliquet. Curabitur auctor eleifend mattis. &lt;br /&gt; Nullam sit amet quam tellus. Ut mattis tellus sed erat ultricies ornare. &lt;br /&gt; Nulla dictum nisi eu tortor lacinia porttitor. Donec eu arcu et enim cursus viverra. &lt;br /&gt; Praesent pulvinar dui nisi, a tincidunt arcu finibus sed.
-                        &lt;/p&gt;
-                    &lt;/deja-accordion-body&gt;
-                &lt;/deja-accordion-group&gt;
-                &lt;deja-accordion-group&gt;
-                    &lt;deja-accordion-header&gt;Un troisieme titre&lt;/deja-accordion-header&gt;
-                    &lt;deja-accordion-body&gt;
-                        &lt;p&gt;
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;br /&gt; Mauris auctor sit amet odio et aliquet. Curabitur auctor eleifend mattis. &lt;br /&gt; Nullam sit amet quam tellus. Ut mattis tellus sed erat ultricies ornare. &lt;br /&gt; Nulla dictum nisi eu tortor lacinia porttitor. Donec eu arcu et enim cursus viverra. &lt;br /&gt; Praesent pulvinar dui nisi, a tincidunt arcu finibus sed.
-                        &lt;/p&gt;
-                    &lt;/deja-accordion-body&gt;
-                &lt;/deja-accordion-group&gt;
-            &lt;/deja-accordion&gt;
-        &lt;/md-card-content&gt;
-    &lt;/md-card&gt;
-
-    &lt;md-card class&#x3D;&quot;demo-card&quot;&gt;
-        &lt;md-toolbar color&#x3D;&quot;primary&quot;&gt;Primary&lt;/md-toolbar&gt;
-        &lt;md-card-content&gt;
-            &lt;deja-accordion&gt;
-                &lt;deja-accordion-group&gt;
-                    &lt;deja-accordion-header primary&gt;Un titre&lt;/deja-accordion-header&gt;
-                    &lt;deja-accordion-body&gt;
-                        &lt;p&gt;
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;br /&gt; Mauris auctor sit amet odio et aliquet. Curabitur auctor eleifend mattis. &lt;br /&gt; Nullam sit amet quam tellus. Ut mattis tellus sed erat ultricies ornare. &lt;br /&gt; Nulla dictum nisi eu tortor lacinia porttitor. Donec eu arcu et enim cursus viverra. &lt;br /&gt; Praesent pulvinar dui nisi, a tincidunt arcu finibus sed.
-                        &lt;/p&gt;
-                    &lt;/deja-accordion-body&gt;
-                &lt;/deja-accordion-group&gt;
-                &lt;deja-accordion-group&gt;
-                    &lt;deja-accordion-header primary&gt;&lt;b&gt;Un &lt;u&gt;second&lt;/u&gt; titre&lt;/b&gt;&lt;/deja-accordion-header&gt;
-                    &lt;deja-accordion-body&gt;
-                        &lt;p&gt;
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.&lt;br /&gt; Mauris auctor sit amet odio et aliquet. Curabitur auctor eleifend mattis. &lt;br /&gt; Nullam sit amet quam tellus. Ut mattis tellus sed erat ultricies ornare. &lt;br /&gt; Nulla dictum nisi eu tortor lacinia porttitor. Donec eu arcu et enim cursus viverra. &lt;br /&gt; Praesent pulvinar dui nisi, a tincidunt arcu finibus sed.
-                        &lt;/p&gt;
-                    &lt;/deja-accordion-body&gt;
-                &lt;/deja-accordion-group&gt;
-            &lt;/deja-accordion&gt;
-        &lt;/md-card-content&gt;
-    &lt;/md-card&gt;
-&lt;/div&gt;</code></pre>
-    </div>
-
-    <div class="tab-pane fade" id="tree">
-        <div id="tree-container"></div>
-        <div class="tree-legend">
-            <div class="title">
-                <b>Legend</b>
-            </div>
-            <div>
-                <div class="color htmlelement"></div><span>Html element</span>
-            </div>
-            <div>
-                <div class="color component"></div><span>Component</span>
-            </div>
-            <div>
-                <div class="color directive"></div><span>Html element with directive</span>
-            </div>
-        </div>
-    </div>
 </div>
-
-<script src="../js/libs/vis.min.js"></script>
-<script src="../js/libs/htmlparser.js"></script>
-<script src="../js/libs/deep-iterator.js"></script>
-<script>
-        var COMPONENT_TEMPLATE = '<div><md-tab-group [selectedIndex]="tabIndex" (selectChange)="tabIndex = $event.index">    <!--<md-tab label="OVERVIEW">        <md-card class="demo-card demo-basic">            TODO        </md-card>    </md-tab>-->    <md-tab label="API REFERENCE"></md-tab>    <md-tab label="EXAMPLES 2"></md-tab></md-tab-group><md-card class="demo-card demo-basic" *ngIf="tabIndex === 0">    <deja-markdown [url]="\'https://raw.githubusercontent.com/DSI-HUG/dejajs-components/dev/src/component/accordion/readme.md\'"></deja-markdown></md-card><div *ngIf="tabIndex === 1">    <md-card class="demo-card">        <md-toolbar color="primary">Default</md-toolbar>        <md-card-content>            <deja-accordion>                <deja-accordion-group>                    <deja-accordion-header>Un titre</deja-accordion-header>                    <deja-accordion-body>                        <p>                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /> Mauris auctor sit amet odio et aliquet. Curabitur auctor eleifend mattis. <br /> Nullam sit amet quam tellus. Ut mattis tellus sed erat ultricies ornare. <br /> Nulla dictum nisi eu tortor lacinia porttitor. Donec eu arcu et enim cursus viverra. <br /> Praesent pulvinar dui nisi, a tincidunt arcu finibus sed.                        </p>                        <p>                            <button md-raised-button color="primary">Primary button</button>                            <button md-raised-button color="accent">Accent button</button>                            <button md-raised-button color="warn">Warn button</button>                        </p>                    </deja-accordion-body>                </deja-accordion-group>                <deja-accordion-group>                    <deja-accordion-header>Un second titre</deja-accordion-header>                    <deja-accordion-body>                        <p>                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /> Mauris auctor sit amet odio et aliquet. Curabitur auctor eleifend mattis. <br /> Nullam sit amet quam tellus. Ut mattis tellus sed erat ultricies ornare. <br /> Nulla dictum nisi eu tortor lacinia porttitor. Donec eu arcu et enim cursus viverra. <br /> Praesent pulvinar dui nisi, a tincidunt arcu finibus sed.                        </p>                    </deja-accordion-body>                </deja-accordion-group>                <deja-accordion-group>                    <deja-accordion-header>Un troisieme titre</deja-accordion-header>                    <deja-accordion-body>                        <p>                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /> Mauris auctor sit amet odio et aliquet. Curabitur auctor eleifend mattis. <br /> Nullam sit amet quam tellus. Ut mattis tellus sed erat ultricies ornare. <br /> Nulla dictum nisi eu tortor lacinia porttitor. Donec eu arcu et enim cursus viverra. <br /> Praesent pulvinar dui nisi, a tincidunt arcu finibus sed.                        </p>                    </deja-accordion-body>                </deja-accordion-group>            </deja-accordion>        </md-card-content>    </md-card>    <md-card class="demo-card">        <md-toolbar color="primary">Primary</md-toolbar>        <md-card-content>            <deja-accordion>                <deja-accordion-group>                    <deja-accordion-header primary>Un titre</deja-accordion-header>                    <deja-accordion-body>                        <p>                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /> Mauris auctor sit amet odio et aliquet. Curabitur auctor eleifend mattis. <br /> Nullam sit amet quam tellus. Ut mattis tellus sed erat ultricies ornare. <br /> Nulla dictum nisi eu tortor lacinia porttitor. Donec eu arcu et enim cursus viverra. <br /> Praesent pulvinar dui nisi, a tincidunt arcu finibus sed.                        </p>                    </deja-accordion-body>                </deja-accordion-group>                <deja-accordion-group>                    <deja-accordion-header primary><b>Un <u>second</u> titre</b></deja-accordion-header>                    <deja-accordion-body>                        <p>                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br /> Mauris auctor sit amet odio et aliquet. Curabitur auctor eleifend mattis. <br /> Nullam sit amet quam tellus. Ut mattis tellus sed erat ultricies ornare. <br /> Nulla dictum nisi eu tortor lacinia porttitor. Donec eu arcu et enim cursus viverra. <br /> Praesent pulvinar dui nisi, a tincidunt arcu finibus sed.                        </p>                    </deja-accordion-body>                </deja-accordion-group>            </deja-accordion>        </md-card-content>    </md-card></div></div>'
-    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionDemoComponent', 'selector': 'deja-accordion-demo'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBackdropComponent', 'selector': 'deja-backdrop'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaCircularPickerDemoComponent', 'selector': 'deja-circular-picker-demo'},{'name': 'DejaCodeViewerComponent', 'selector': 'deja-code-viewer'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaColorSelectorDemoComponent', 'selector': 'deja-color-selector-demo'},{'name': 'DejaContentEditableDemoComponent', 'selector': 'deja-content-editable-demo'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDatePickerDemoComponent', 'selector': 'dejadate-picker-demo'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaDropDownComponent', 'selector': 'deja-dropdown'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMarkdownComponent', 'selector': 'deja-markdown'},{'name': 'DejaMenuComponent', 'selector': 'deja-menu'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMonacoEditorDemoComponent', 'selector': 'deja-monaco-editor-demo'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaRangeDemoComponent', 'selector': 'deja-range-demo'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSnackbarDemoComponent', 'selector': 'deja-snackbar-demo'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaSplitterDemoComponent', 'selector': 'deja-splitter-demo'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaTreeListDemoComponent', 'selector': 'deja-tree-list-demo'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'},{'name': 'DejaViewPortDemoComponent', 'selector': 'deja-viewport-demo'},{'name': 'GlobalEventsDemoComponent', 'selector': 'events-demo'},{'name': 'GridDemoComponent', 'selector': 'grid-demo'},{'name': 'HomeComponent', 'selector': 'home'},{'name': 'HomeComponentsComponent', 'selector': 'home-components'},{'name': 'HomeGuidesComponent', 'selector': 'home-guides'},{'name': 'MenuDemoComponent', 'selector': 'deja-menu-demo'},{'name': 'MessageBoxDemoComponent', 'selector': 'message-box-demo'},{'name': 'NewsCardComponent', 'selector': 'news-card'},{'name': 'ProgressCircleDemoComponent', 'selector': 'deja-progress-circle-demo'},{'name': 'ReactiveFormDemoComponent', 'selector': 'reactive-form-demo'},{'name': 'SelectDemoComponent', 'selector': 'deja-select-demo'},{'name': 'TextAreaDemoComponent', 'selector': 'textarea-demo'},{'name': 'TilesDemoComponent', 'selector': 'deja-tiles-demo'}];
-    var DIRECTIVES = [{'name': 'DateValidatorDirective', 'selector': '[date-validator][ngModel]'},{'name': 'DejaAutosizeTextAreaDirective', 'selector': 'textarea[deja-autosize]'},{'name': 'DejaChildValidatorDirective', 'selector': '[deja-child-validator]'},{'name': 'DejaDraggableDirective', 'selector': '[deja-draggable]'},{'name': 'DejaDroppableDirective', 'selector': '[deja-droppable]'},{'name': 'DejaEditableDirective', 'selector': '[deja-editable]'},{'name': 'DejaMouseDraggableDirective', 'selector': '[deja-mouse-draggable]'},{'name': 'DejaMouseDroppableDirective', 'selector': '[deja-mouse-droppable]'},{'name': 'DejaTilePositionDirective', 'selector': '[deja-tile-position]'},{'name': 'DejaTooltipDirective', 'selector': '[deja-tooltip]'},{'name': 'PendingOnFocusDirective', 'selector': '[pending-onfocus]'},{'name': 'SplitAreaDirective', 'selector': 'split-area'},{'name': 'SplitGutterDirective', 'selector': 'split-gutter'},{'name': 'ValidateOnBlurDirective', 'selector': '[validate-onblur]'}];
-    var ACTUAL_COMPONENT = {'name': 'DejaAccordionDemoComponent'};
-</script>
-<script src="../js/tree.js"></script>
-
-
 
 
 

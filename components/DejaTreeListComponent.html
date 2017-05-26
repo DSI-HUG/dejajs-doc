@@ -2449,7 +2449,7 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="878" class="link-to-prism">src/component/tree-list/tree-list.component.ts:878</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="881" class="link-to-prism">src/component/tree-list/tree-list.component.ts:881</a></div>
                             </td>
                         </tr>
     
@@ -2483,7 +2483,7 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="905" class="link-to-prism">src/component/tree-list/tree-list.component.ts:905</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="908" class="link-to-prism">src/component/tree-list/tree-list.component.ts:908</a></div>
                             </td>
                         </tr>
     
@@ -2517,7 +2517,7 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="952" class="link-to-prism">src/component/tree-list/tree-list.component.ts:952</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="955" class="link-to-prism">src/component/tree-list/tree-list.component.ts:955</a></div>
                             </td>
                         </tr>
     
@@ -2551,7 +2551,7 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="966" class="link-to-prism">src/component/tree-list/tree-list.component.ts:966</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="969" class="link-to-prism">src/component/tree-list/tree-list.component.ts:969</a></div>
                             </td>
                         </tr>
     
@@ -2585,7 +2585,7 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="977" class="link-to-prism">src/component/tree-list/tree-list.component.ts:977</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="980" class="link-to-prism">src/component/tree-list/tree-list.component.ts:980</a></div>
                             </td>
                         </tr>
     
@@ -2619,7 +2619,7 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="987" class="link-to-prism">src/component/tree-list/tree-list.component.ts:987</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="990" class="link-to-prism">src/component/tree-list/tree-list.component.ts:990</a></div>
                             </td>
                         </tr>
     
@@ -2653,7 +2653,7 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="999" class="link-to-prism">src/component/tree-list/tree-list.component.ts:999</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="1002" class="link-to-prism">src/component/tree-list/tree-list.component.ts:1002</a></div>
                             </td>
                         </tr>
     
@@ -5083,10 +5083,14 @@ export class DejaTreeListComponent extends ItemListBase implements OnDestroy, Af
             return;
         }
 
+        const isExpandButton &#x3D; (target: HTMLElement) &#x3D;&gt; {
+            return target.id &#x3D;&#x3D;&#x3D; &#x27;expandbtn&#x27; || target.parentElement.id &#x3D;&#x3D;&#x3D; &#x27;expandbtn&#x27;;
+        };
+
         const item &#x3D; this._itemList[itemIndex - this.vpStartRow];
         this.clickedItem &#x3D; item;
-        const isExpanButton &#x3D; (e.target as HTMLElement).id &#x3D;&#x3D;&#x3D; &#x27;expandbtn&#x27;;
-        if ((!isExpanButton || !this.isCollapsible(item)) &amp;&amp; this.isSelectable(item) &amp;&amp; (!e.ctrlKey || !this.multiSelect) &amp;&amp; (e.button &#x3D;&#x3D;&#x3D; 0 || !item.selected)) {
+
+        if ((!isExpandButton(e.target as HTMLElement) || !this.isCollapsible(item)) &amp;&amp; this.isSelectable(item) &amp;&amp; (!e.ctrlKey || !this.multiSelect) &amp;&amp; (e.button &#x3D;&#x3D;&#x3D; 0 || !item.selected)) {
             if (e.shiftKey &amp;&amp; this.multiSelect) {
                 // Select all from current to clicked
                 this.selectRange$(itemIndex, this.currentItemIndex)
@@ -5131,8 +5135,7 @@ export class DejaTreeListComponent extends ItemListBase implements OnDestroy, Af
                     return;
                 }
 
-                const isExpandButton &#x3D; (upevt.target as HTMLElement).id &#x3D;&#x3D;&#x3D; &#x27;expandbtn&#x27;;
-                if (this.isCollapsible(upItem) &amp;&amp; (isExpandButton || !this.isSelectable(upItem))) {
+                if (this.isCollapsible(upItem) &amp;&amp; (isExpandButton(upevt.target as HTMLElement) || !this.isSelectable(upItem))) {
                     const treeItem &#x3D; upItem as IItemTree;
                     this.toggleCollapse$(upIndex, !treeItem.collapsed).first().subscribe(() &#x3D;&gt; {
                         this.currentItemIndex &#x3D; upIndex;
