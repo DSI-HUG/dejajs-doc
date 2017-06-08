@@ -382,9 +382,6 @@
                                 id="xs-classes-links"
                             >
                                 <li class="link">
-                                    <a href="../classes/AutoCompleteItem.html" >AutoCompleteItem</a>
-                                </li>
-                                <li class="link">
                                     <a href="../classes/Circle.html" >Circle</a>
                                 </li>
                                 <li class="link">
@@ -427,6 +424,12 @@
                                     <a href="../classes/Diacritics.html" >Diacritics</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../classes/EditorOptions.html" >EditorOptions</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/EditorScrollbarOptions.html" >EditorScrollbarOptions</a>
+                                </li>
+                                <li class="link">
                                     <a href="../classes/GlobalEventEmmitter.html" >GlobalEventEmmitter</a>
                                 </li>
                                 <li class="link">
@@ -440,15 +443,6 @@
                                 </li>
                                 <li class="link">
                                     <a href="../classes/IDejaGridParentRow.html" >IDejaGridParentRow</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../classes/IEditorLanguage.html" >IEditorLanguage</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../classes/IEditorOptions.html" >IEditorOptions</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../classes/IEditorTheme.html" >IEditorTheme</a>
                                 </li>
                                 <li class="link">
                                     <a href="../classes/ItemListBase.html" >ItemListBase</a>
@@ -947,9 +941,6 @@
                                        id="classes-links"
                    >
                                        <li class="link">
-                                           <a href="../classes/AutoCompleteItem.html" >AutoCompleteItem</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="../classes/Circle.html" >Circle</a>
                                        </li>
                                        <li class="link">
@@ -992,6 +983,12 @@
                                            <a href="../classes/Diacritics.html" >Diacritics</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../classes/EditorOptions.html" >EditorOptions</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/EditorScrollbarOptions.html" >EditorScrollbarOptions</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../classes/GlobalEventEmmitter.html" >GlobalEventEmmitter</a>
                                        </li>
                                        <li class="link">
@@ -1005,15 +1002,6 @@
                                        </li>
                                        <li class="link">
                                            <a href="../classes/IDejaGridParentRow.html" >IDejaGridParentRow</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../classes/IEditorLanguage.html" >IEditorLanguage</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../classes/IEditorOptions.html" >IEditorOptions</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../classes/IEditorTheme.html" >IEditorTheme</a>
                                        </li>
                                        <li class="link">
                                            <a href="../classes/ItemListBase.html" >ItemListBase</a>
@@ -1179,6 +1167,12 @@
     <code>src/component/code-viewer/code-viewer.component.ts</code>
 </p>
 
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Experimental<br/>Code viewer component for angular2 using PrismJs</p><br/>
+    </p>
 
 
     <p class="comment">
@@ -1240,6 +1234,7 @@
                             <code>language</code>
                         </td>
                         <td class="col-md-10">
+                            <div><p>Language inside viewer @see <a href="http://prismjs.com/#languages-list">http://prismjs.com/#languages-list</a> - PrismJs documentation to know possibles values </p><br/></div>
                               <p>
                                 <em>Type:</em>    <code>string</code>
 
@@ -1248,7 +1243,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/component/code-viewer/code-viewer.component.ts:20</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/component/code-viewer/code-viewer.component.ts:25</a></div>
                             </td>
                         </tr>
                 </tbody>
@@ -1256,24 +1251,6 @@
     </section>
 
 
-    <section>
-        <h3 id="constructor">Constructor</h3>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <code>constructor()</code>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/component/code-viewer/code-viewer.component.ts:22</a></div>
-                            </td>
-                        </tr>
-    
-                </tbody>
-            </table>
-    </section>
 
     <section>
         
@@ -1299,12 +1276,13 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/component/code-viewer/code-viewer.component.ts:28</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/component/code-viewer/code-viewer.component.ts:33</a></div>
                             </td>
                         </tr>
     
                     <tr>
                         <td class="col-md-4">
+                                <div class="io-description"><p>Re-init prismjs afterViewChecked.<br/>It&#39;s a quick fix to bind this component in any cases.</p><br/></div>
     
                                 <div class="io-description">
                                     <b>Returns : </b>    <code>void</code>
@@ -1316,37 +1294,6 @@
             </table>
     </section>
 
-    <section>
-        
-            <h3 id="inputs">
-                Properties
-            </h3>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> initialised</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-lock"></span><code>initialised:     <code>boolean</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <i>Default value : </i><code>false</code>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/component/code-viewer/code-viewer.component.ts:22</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-    </section>
 </div>
 
 
@@ -1355,6 +1302,10 @@
 
 import * as Prism from &#x27;prismjs&#x27;;
 
+/**
+ * Experimental
+ * Code viewer component for angular2 using PrismJs
+ */
 @Component({
     encapsulation: ViewEncapsulation.None,
     selector: &#x27;deja-code-viewer&#x27;,
@@ -1362,14 +1313,15 @@ import * as Prism from &#x27;prismjs&#x27;;
     templateUrl: &#x27;./code-viewer.component.html&#x27;,
 })
 export class DejaCodeViewerComponent implements AfterViewChecked {
+    /** Language inside viewer @see http://prismjs.com/#languages-list - PrismJs documentation to know possibles values */
     @Input() public language: string;
 
     private initialised &#x3D; false;
 
-    constructor() {
-        // console.log(&#x27;ok&#x27;);
-    }
-
+    /**
+     * Re-init prismjs afterViewChecked.
+     * It&#x27;s a quick fix to bind this component in any cases.
+     */
     public ngAfterViewChecked() {
         // console.log(&#x27;ok&#x27;);
         if (!this.initialised) {

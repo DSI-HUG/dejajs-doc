@@ -382,9 +382,6 @@
                                 id="xs-classes-links"
                             >
                                 <li class="link">
-                                    <a href="../classes/AutoCompleteItem.html" >AutoCompleteItem</a>
-                                </li>
-                                <li class="link">
                                     <a href="../classes/Circle.html" >Circle</a>
                                 </li>
                                 <li class="link">
@@ -427,6 +424,12 @@
                                     <a href="../classes/Diacritics.html" >Diacritics</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../classes/EditorOptions.html" >EditorOptions</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/EditorScrollbarOptions.html" >EditorScrollbarOptions</a>
+                                </li>
+                                <li class="link">
                                     <a href="../classes/GlobalEventEmmitter.html" >GlobalEventEmmitter</a>
                                 </li>
                                 <li class="link">
@@ -440,15 +443,6 @@
                                 </li>
                                 <li class="link">
                                     <a href="../classes/IDejaGridParentRow.html" >IDejaGridParentRow</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../classes/IEditorLanguage.html" >IEditorLanguage</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../classes/IEditorOptions.html" >IEditorOptions</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../classes/IEditorTheme.html" >IEditorTheme</a>
                                 </li>
                                 <li class="link">
                                     <a href="../classes/ItemListBase.html" >ItemListBase</a>
@@ -947,9 +941,6 @@
                                        id="classes-links"
                    >
                                        <li class="link">
-                                           <a href="../classes/AutoCompleteItem.html" >AutoCompleteItem</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="../classes/Circle.html" >Circle</a>
                                        </li>
                                        <li class="link">
@@ -992,6 +983,12 @@
                                            <a href="../classes/Diacritics.html" >Diacritics</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../classes/EditorOptions.html" >EditorOptions</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/EditorScrollbarOptions.html" >EditorScrollbarOptions</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../classes/GlobalEventEmmitter.html" >GlobalEventEmmitter</a>
                                        </li>
                                        <li class="link">
@@ -1005,15 +1002,6 @@
                                        </li>
                                        <li class="link">
                                            <a href="../classes/IDejaGridParentRow.html" >IDejaGridParentRow</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../classes/IEditorLanguage.html" >IEditorLanguage</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../classes/IEditorOptions.html" >IEditorOptions</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../classes/IEditorTheme.html" >IEditorTheme</a>
                                        </li>
                                        <li class="link">
                                            <a href="../classes/ItemListBase.html" >ItemListBase</a>
@@ -1158,9 +1146,6 @@
     <li class="active">
         <a href="#infos" id="infos-tab" role="tab" data-toggle="tab" data-link="infos">Infos</a>
     </li>
-    <li>
-        <a href="#readme" role="tab" id="readme-tab" data-toggle="tab" data-link="readme">README</a>
-    </li>
 
     <li>
         <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
@@ -1182,6 +1167,12 @@
     <code>src/component/splitter/splitter.component.ts</code>
 </p>
 
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Splitter Component for Angular</p><br/><p>The splitter component allows to split horizontally or vertically, a container in N resizable part.</p><br/>
+    </p>
 
 
     <p class="comment">
@@ -1224,14 +1215,14 @@
 
             <tr>
                 <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>splitter.scss</code></td>
+                <td class="col-md-9"><code>splitter.component.scss</code></td>
             </tr>
 
 
 
             <tr>
                 <td class="col-md-3">templateUrl</td>
-                <td class="col-md-9"><code>./splitter.html</code></td>
+                <td class="col-md-9"><code>./splitter.component.html</code></td>
             </tr>
 
 
@@ -1248,6 +1239,7 @@
                             <code>direction</code>
                         </td>
                         <td class="col-md-10">
+                            <div><p>Direction of the split<br/>Can be <code>horizontal</code> or <code>vertical</code></p><br/></div>
                             <p>
                               <em>Default value: </em><code>horizontal</code>
                             </p>
@@ -1255,7 +1247,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/component/splitter/splitter.component.ts:28</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/component/splitter/splitter.component.ts:34</a></div>
                             </td>
                         </tr>
                 </tbody>
@@ -1267,6 +1259,7 @@
                             <code>disabled</code>
                         </td>
                         <td class="col-md-10">
+                            <div><p>Disable the component</p><br/></div>
                             <p>
                               <em>Default value: </em><code>false</code>
                             </p>
@@ -1274,7 +1267,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/component/splitter/splitter.component.ts:32</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/component/splitter/splitter.component.ts:52</a></div>
                             </td>
                         </tr>
                 </tbody>
@@ -1286,6 +1279,7 @@
                             <code>gutterSize</code>
                         </td>
                         <td class="col-md-10">
+                            <div><p>Separator width</p><br/></div>
                             <p>
                               <em>Default value: </em><code>10</code>
                             </p>
@@ -1293,7 +1287,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/component/splitter/splitter.component.ts:31</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/component/splitter/splitter.component.ts:48</a></div>
                             </td>
                         </tr>
                 </tbody>
@@ -1305,6 +1299,7 @@
                             <code>height</code>
                         </td>
                         <td class="col-md-10">
+                            <div><p>Height in percent of the component<br/>By default <code>100%</code></p><br/></div>
                               <p>
                                 <em>Type:</em>    <code>number</code>
 
@@ -1313,7 +1308,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/component/splitter/splitter.component.ts:30</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/component/splitter/splitter.component.ts:44</a></div>
                             </td>
                         </tr>
                 </tbody>
@@ -1325,6 +1320,7 @@
                             <code>width</code>
                         </td>
                         <td class="col-md-10">
+                            <div><p>Width in percent of the component<br/>By default <code>100%</code></p><br/></div>
                               <p>
                                 <em>Type:</em>    <code>number</code>
 
@@ -1333,7 +1329,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/component/splitter/splitter.component.ts:29</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/component/splitter/splitter.component.ts:39</a></div>
                             </td>
                         </tr>
                 </tbody>
@@ -1349,13 +1345,14 @@
                             <code>dragEnd</code>
                         </td>
                         <td class="col-md-10">
+                            <div><p>Event triggered when the user stop to drag the cursor</p><br/></div>
                             <em><code>$event</code> type:</em>    <code><a href="https://angular.io/docs/ts/latest/api/core/index/EventEmitter-class.html" target="_blank" >EventEmitter</a></code>
 
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/component/splitter/splitter.component.ts:36</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/component/splitter/splitter.component.ts:64</a></div>
                             </td>
                         </tr>
                 </tbody>
@@ -1367,13 +1364,14 @@
                             <code>dragProgress</code>
                         </td>
                         <td class="col-md-10">
+                            <div><p>Event triggered during the cursor&#39;s drag</p><br/></div>
                             <em><code>$event</code> type:</em>    <code><a href="https://angular.io/docs/ts/latest/api/core/index/EventEmitter-class.html" target="_blank" >EventEmitter</a></code>
 
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/component/splitter/splitter.component.ts:35</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/component/splitter/splitter.component.ts:60</a></div>
                             </td>
                         </tr>
                 </tbody>
@@ -1385,13 +1383,14 @@
                             <code>dragStart</code>
                         </td>
                         <td class="col-md-10">
+                            <div><p>Event triggered when the user start to drag the cursor</p><br/></div>
                             <em><code>$event</code> type:</em>    <code><a href="https://angular.io/docs/ts/latest/api/core/index/EventEmitter-class.html" target="_blank" >EventEmitter</a></code>
 
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/component/splitter/splitter.component.ts:34</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/component/splitter/splitter.component.ts:56</a></div>
                             </td>
                         </tr>
                 </tbody>
@@ -1409,10 +1408,15 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/component/splitter/splitter.component.ts:60</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/component/splitter/splitter.component.ts:97</a></div>
                             </td>
                         </tr>
     
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Constructor</p><br/></div>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
     </section>
@@ -1441,12 +1445,13 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/component/splitter/splitter.component.ts:67</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="110" class="link-to-prism">src/component/splitter/splitter.component.ts:110</a></div>
                             </td>
                         </tr>
     
                     <tr>
                         <td class="col-md-4">
+                                <div class="io-description"><p>Lifecycle hook that is called when any data-bound property of a directive changes.</p><br/></div>
     
                                 <div class="io-description">
                                     <b>Returns : </b>    <code>void</code>
@@ -1475,12 +1480,13 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/component/splitter/splitter.component.ts:73</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="119" class="link-to-prism">src/component/splitter/splitter.component.ts:119</a></div>
                             </td>
                         </tr>
     
                     <tr>
                         <td class="col-md-4">
+                                <div class="io-description"><p>Lifecycle hook that is called when a directive, pipe or service is destroyed.</p><br/></div>
     
                                 <div class="io-description">
                                     <b>Returns : </b>    <code>void</code>
@@ -1509,17 +1515,62 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="77" class="link-to-prism">src/component/splitter/splitter.component.ts:77</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="130" class="link-to-prism">src/component/splitter/splitter.component.ts:130</a></div>
                             </td>
                         </tr>
     
                     <tr>
                         <td class="col-md-4">
+                                <div class="io-description"><p>Add a new area into the component</p><br/></div>
     
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <ul class="jsdoc-params">
+                                                <li>
+                                                    <div>
+                                                        <b>component</b>
+                                                    </div>
+                                                    <div>
+                                                        <p>Area to add</p>
+    
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <b>orderUser</b>
+                                                    </div>
+                                                    <div>
+                                                        <p>Position of the new area into the component</p>
+    
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <b>sizeUser</b>
+                                                    </div>
+                                                    <div>
+                                                        <p>Size of the new area</p>
+    
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <b>minPixel</b>
+                                                    </div>
+                                                    <div>
+                                                        <p>Min size of the new area</p>
+    
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                </div>
                                 <div class="io-description">
                                     <b>Returns : </b>    <code>void</code>
     
                                 </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
                         </td>
                     </tr>
                 </tbody>
@@ -1543,17 +1594,62 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="90" class="link-to-prism">src/component/splitter/splitter.component.ts:90</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="150" class="link-to-prism">src/component/splitter/splitter.component.ts:150</a></div>
                             </td>
                         </tr>
     
                     <tr>
                         <td class="col-md-4">
+                                <div class="io-description"><p>Update an existing area into the component</p><br/></div>
     
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <ul class="jsdoc-params">
+                                                <li>
+                                                    <div>
+                                                        <b>component</b>
+                                                    </div>
+                                                    <div>
+                                                        <p>Area to update</p>
+    
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <b>orderUser</b>
+                                                    </div>
+                                                    <div>
+                                                        <p>Position of the area into the component</p>
+    
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <b>sizeUser</b>
+                                                    </div>
+                                                    <div>
+                                                        <p>Size of the area</p>
+    
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <b>minPixel</b>
+                                                    </div>
+                                                    <div>
+                                                        <p>Min size of the area</p>
+    
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                </div>
                                 <div class="io-description">
                                     <b>Returns : </b>    <code>void</code>
     
                                 </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
                         </td>
                     </tr>
                 </tbody>
@@ -1577,17 +1673,35 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="102" class="link-to-prism">src/component/splitter/splitter.component.ts:102</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="166" class="link-to-prism">src/component/splitter/splitter.component.ts:166</a></div>
                             </td>
                         </tr>
     
                     <tr>
                         <td class="col-md-4">
+                                <div class="io-description"><p>Delete an existing area into the component</p><br/></div>
     
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <ul class="jsdoc-params">
+                                                <li>
+                                                    <div>
+                                                        <b>area</b>
+                                                    </div>
+                                                    <div>
+                                                        <p>Area to delete</p>
+    
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                </div>
                                 <div class="io-description">
                                     <b>Returns : </b>    <code>void</code>
     
                                 </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
                         </td>
                     </tr>
                 </tbody>
@@ -1611,221 +1725,44 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="114" class="link-to-prism">src/component/splitter/splitter.component.ts:114</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="183" class="link-to-prism">src/component/splitter/splitter.component.ts:183</a></div>
                             </td>
                         </tr>
     
                     <tr>
                         <td class="col-md-4">
+                                <div class="io-description"><p>Function called when the user start to drag the cursor</p><br/></div>
     
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <ul class="jsdoc-params">
+                                                <li>
+                                                    <div>
+                                                        <b>startEvent</b>
+                                                    </div>
+                                                    <div>
+                                                        <p>drag event</p>
+    
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <b>gutterOrder</b>
+                                                    </div>
+                                                    <div>
+                                                        <p>separator number</p>
+    
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                </div>
                                 <div class="io-description">
                                     <b>Returns : </b>    <code>void</code>
     
                                 </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> refresh</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <span class="modifier-icon method fa fa-play lock">
-                                    <span class="fa fa-lock"></span>
-                                </span>
-                            <code>refresh()</code>
-                        </td>
-                    </tr>
-    
-    
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="150" class="link-to-prism">src/component/splitter/splitter.component.ts:150</a></div>
-                            </td>
-                        </tr>
-    
-                    <tr>
-                        <td class="col-md-4">
-    
-                                <div class="io-description">
-                                    <b>Returns : </b>    <code>void</code>
-    
-                                </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> refreshStyleSizes</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <span class="modifier-icon method fa fa-play lock">
-                                    <span class="fa fa-lock"></span>
-                                </span>
-                            <code>refreshStyleSizes()</code>
-                        </td>
-                    </tr>
-    
-    
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="179" class="link-to-prism">src/component/splitter/splitter.component.ts:179</a></div>
-                            </td>
-                        </tr>
-    
-                    <tr>
-                        <td class="col-md-4">
-    
-                                <div class="io-description">
-                                    <b>Returns : </b>    <code>void</code>
-    
-                                </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> dragEvent</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <span class="modifier-icon method fa fa-play lock">
-                                    <span class="fa fa-lock"></span>
-                                </span>
-                            <code>dragEvent(event: MouseEvent, start: Point, areaA: IAreaData, areaB: IAreaData)</code>
-                        </td>
-                    </tr>
-    
-    
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="184" class="link-to-prism">src/component/splitter/splitter.component.ts:184</a></div>
-                            </td>
-                        </tr>
-    
-                    <tr>
-                        <td class="col-md-4">
-    
-                                <div class="io-description">
-                                    <b>Returns : </b>    <code>void</code>
-    
-                                </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> drag</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <span class="modifier-icon method fa fa-play lock">
-                                    <span class="fa fa-lock"></span>
-                                </span>
-                            <code>drag(start: Point, end: Point, areaA: IAreaData, areaB: IAreaData)</code>
-                        </td>
-                    </tr>
-    
-    
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="197" class="link-to-prism">src/component/splitter/splitter.component.ts:197</a></div>
-                            </td>
-                        </tr>
-    
-                    <tr>
-                        <td class="col-md-4">
-    
-                                <div class="io-description">
-                                    <b>Returns : </b>    <code>void</code>
-    
-                                </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> stopDragging</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <span class="modifier-icon method fa fa-play lock">
-                                    <span class="fa fa-lock"></span>
-                                </span>
-                            <code>stopDragging()</code>
-                        </td>
-                    </tr>
-    
-    
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="228" class="link-to-prism">src/component/splitter/splitter.component.ts:228</a></div>
-                            </td>
-                        </tr>
-    
-                    <tr>
-                        <td class="col-md-4">
-    
-                                <div class="io-description">
-                                    <b>Returns : </b>    <code>void</code>
-    
-                                </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> notify</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <span class="modifier-icon method fa fa-play lock">
-                                    <span class="fa fa-lock"></span>
-                                </span>
-                            <code>notify(type: string)</code>
-                        </td>
-                    </tr>
-    
-    
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="250" class="link-to-prism">src/component/splitter/splitter.component.ts:250</a></div>
-                            </td>
-                        </tr>
-    
-                    <tr>
-                        <td class="col-md-4">
-    
-                                <div class="io-description">
-                                    <b>Returns : </b>    <code>void</code>
-    
-                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
                         </td>
                     </tr>
                 </tbody>
@@ -1837,191 +1774,6 @@
             <h3 id="inputs">
                 Properties
             </h3>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> areaASize</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-lock"></span><code>areaASize:     <code>number</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <i>Default value : </i><code>0</code>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/component/splitter/splitter.component.ts:58</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> areaBSize</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-lock"></span><code>areaBSize:     <code>number</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <i>Default value : </i><code>0</code>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/component/splitter/splitter.component.ts:59</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> areas</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-lock"></span><code>areas:     <code>IAreaData[]</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/component/splitter/splitter.component.ts:55</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> containerSize</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-lock"></span><code>containerSize:     <code>number</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <i>Default value : </i><code>0</code>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/component/splitter/splitter.component.ts:57</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> eventsDragFct</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-lock"></span><code>eventsDragFct:     <code>Function[]</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/component/splitter/splitter.component.ts:60</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> isDragging</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-lock"></span><code>isDragging:     <code>boolean</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <i>Default value : </i><code>false</code>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/component/splitter/splitter.component.ts:56</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> minPercent</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-lock"></span><code>minPercent:     <code>number</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <i>Default value : </i><code>0.3</code>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/component/splitter/splitter.component.ts:54</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> nbGutters</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-lock"></span><code>nbGutters:     <code>number</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/component/splitter/splitter.component.ts:50</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
@@ -2042,9 +1794,14 @@
                         </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/component/splitter/splitter.component.ts:38</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/component/splitter/splitter.component.ts:69</a></div>
                             </td>
                         </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-description"><p>Host Binding</p><br/></div>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
             <table class="table table-sm table-bordered">
@@ -2067,9 +1824,14 @@
                         </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/component/splitter/splitter.component.ts:46</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/component/splitter/splitter.component.ts:83</a></div>
                             </td>
                         </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-description"><p>Host Binding</p><br/></div>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
             <table class="table table-sm table-bordered">
@@ -2092,140 +1854,19 @@
                         </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/component/splitter/splitter.component.ts:42</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/component/splitter/splitter.component.ts:76</a></div>
                             </td>
                         </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-description"><p>Host Binding</p><br/></div>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
     </section>
 </div>
 
-    <div class="tab-pane fade" id="readme">
-        <p><h1 id="splitter">Splitter</h1>
-<p>Le composant splitter permet de découper horizontalement ou verticalement, un container en N partie redimensionnable.</p>
-<h3 id="informations-inportantes">Informations inportantes</h3>
-<blockquote>
-<p>Ne pas oublier d&#39;importer le <code>DejaSplitterModule</code> dans les <code>imports</code> de votre module concerné !</p>
-</blockquote>
-<h3 id="utilisation">Utilisation</h3>
-<p>####Splitter horizontal</p>
-<pre class="line-numbers"><code class="language-html">&lt;deja-splitter [direction]=&quot;&#39;horizontal&#39;&quot;&gt;
-    &lt;split-area [size]=&quot;50&quot;&gt;
-        &lt;p&gt;Lorem ipsum dolor sit amet...&lt;/p&gt;
-    &lt;/split-area&gt;
-    &lt;split-area [size]=&quot;50&quot;&gt;
-        &lt;p&gt;Sed ut perspiciatis unde omnis iste natus erro...&lt;/p&gt;
-    &lt;/split-area&gt;
-&lt;/deja-splitter&gt;</code></pre><p>####Splitter vertical</p>
-<pre class="line-numbers"><code class="language-html">&lt;deja-splitter [direction]=&quot;&#39;vertical&#39;&quot;&gt;
-    &lt;split-area [size]=&quot;25&quot;&gt;
-        &lt;p&gt;Lorem ipsum dolor sit amet...&lt;/p&gt;
-    &lt;/split-area&gt;
-    &lt;split-area [size]=&quot;75&quot;&gt;
-        &lt;p&gt;Sed ut perspiciatis unde omnis iste natus erro...&lt;/p&gt;
-    &lt;/split-area&gt;
-&lt;/deja-splitter&gt;</code></pre><p>####Splitter multiple</p>
-<pre class="line-numbers"><code class="language-html">&lt;deja-splitter [direction]=&quot;&#39;horizontal&#39;&quot;&gt;
-    &lt;split-area [size]=&quot;40&quot;&gt;
-        &lt;deja-splitter [direction]=&quot;&#39;vertical&#39;&quot;&gt;
-            &lt;split-area [size]=&quot;30&quot;&gt;
-                &lt;p&gt;Lorem ipsum dolor sit amet...&lt;/p&gt;
-            &lt;/split-area&gt;
-            &lt;split-area [size]=&quot;40&quot;&gt;
-                &lt;p&gt;Sed ut perspiciatis unde omnis iste natus erro...&lt;/p&gt;
-            &lt;/split-area&gt;
-            &lt;split-area [size]=&quot;30&quot;&gt;
-                &lt;p&gt;Lorem ipsum dolor sit amet...&lt;/p&gt;
-            &lt;/split-area&gt;
-        &lt;/deja-splitter&gt;
-    &lt;/split-area&gt;
-    &lt;split-area [size]=&quot;60&quot;&gt;
-        &lt;deja-splitter [direction]=&quot;&#39;vertical&#39;&quot;&gt;
-            &lt;split-area [size]=&quot;50&quot;&gt;
-                &lt;p&gt;Lorem ipsum dolor sit amet...&lt;/p&gt;
-            &lt;/split-area&gt;
-            &lt;split-area [size]=&quot;50&quot;&gt;
-                &lt;p&gt;Sed ut perspiciatis unde omnis iste natus erro...&lt;/p&gt;
-            &lt;/split-area&gt;
-        &lt;/deja-splitter&gt;
-    &lt;/split-area&gt;
-&lt;/deja-splitter&gt;</code></pre><h3 id="propri-t-s">Propriétés</h3>
-<h4 id="composant-deja-splitter-">Composant <strong>deja-splitter</strong></h4>
-<table>
-    <thead>
-    <tr>
-        <th>@Input()</th>
-        <th>Type</th>
-        <th>Default</th>
-        <th>Description</th>
-    </tr>
-    </thead>
-    <tbody>
-    <tr>
-        <td>direction</td>
-        <td>string</td>
-        <td>&#39;horizontal&#39;</td>
-        <td>Spécifi la direction du splitter (&#39;horizontal&#39; ou &#39;vertical&#39;)</td>
-    </tr>
-    <tr>
-        <td>width</td>
-        <td>number</td>
-        <td>null</td>
-        <td>Specifi la valeur de la largeur en pixel. Si null, prendra toute la place disponible</td>
-    </tr>
-    <tr>
-        <td>height</td>
-        <td>number</td>
-        <td>null</td>
-        <td>Specifi la valeur de la hauteur en pixel. Si null, prendra toute la place disponible</td>
-    </tr>
-    </tbody>
-</table>
-
-<table>
-    <thead>
-        <tr>
-            <th>@Output()</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>dragStart</td>
-            <td>Exécuté au démarrage du drag</td>
-        </tr>
-        <tr>
-            <td>drag</td>
-            <td>Exécuté lors du drag</td>
-        </tr>
-        <tr>
-            <td>dragEnd</td>
-            <td>Exécuté quand drag est stoppé</td>
-        </tr>
-    </tbody>
-</table>
-
-<h4 id="composant-split-area-">Composant <strong>split-area</strong></h4>
-<table>
-    <thead>
-        <tr>
-            <th>@Input()</th>
-            <th>Type</th>
-            <th>Default</th>
-            <th>Description</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>size</td>
-            <td>number</td>
-            <td>null</td>
-            <td>Pourcentage de la zone. Si null, chaque <split-area> aura la meme taille.</td>
-        </tr>
-    </tbody>
-</table>
-</p>
-    </div>
 
     <div class="tab-pane fade tab-source-code" id="source">
         <pre class="line-numbers"><code class="language-typescript">import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, EventEmitter, HostBinding, Input, OnChanges, OnDestroy, Output, Renderer, SimpleChanges, ViewEncapsulation } from &#x27;@angular/core&#x27;;
@@ -2236,32 +1877,72 @@ import {SplitAreaDirective} from &#x27;./split-area.directive&#x27;;
 const gutterSize &#x3D; &#x27;gutterSize&#x27;;
 const disabled &#x3D; &#x27;disabled&#x27;;
 
+/**
+ * Splitter Component for Angular
+ *
+ * The splitter component allows to split horizontally or vertically, a container in N resizable part.
+ */
 @Component({
     changeDetection: ChangeDetectionStrategy.OnPush,
     encapsulation: ViewEncapsulation.None,
     selector: &#x27;deja-splitter&#x27;,
-    styleUrls: [&#x27;./splitter.scss&#x27;],
-    templateUrl: &#x27;./splitter.html&#x27;,
+    styleUrls: [&#x27;./splitter.component.scss&#x27;],
+    templateUrl: &#x27;./splitter.component.html&#x27;,
 })
 export class DejaSplitterComponent implements OnChanges, OnDestroy {
+    /**
+     * Direction of the split
+     * Can be &#x60;horizontal&#x60; or &#x60;vertical&#x60;
+     */
     @Input() public direction &#x3D; &#x27;horizontal&#x27;;
+    /**
+     * Width in percent of the component
+     * By default &#x60;100%&#x60;
+     */
     @Input() public width: number;
+    /**
+     * Height in percent of the component
+     * By default &#x60;100%&#x60;
+     */
     @Input() public height: number;
+    /**
+     * Separator width
+     */
     @Input() public gutterSize &#x3D; 10;
+    /**
+     * Disable the component
+     */
     @Input() public disabled &#x3D; false;
-
+    /**
+     * Event triggered when the user start to drag the cursor
+     */
     @Output() public dragStart &#x3D; new EventEmitter&lt;number[]&gt;(false);
+    /**
+     * Event triggered during the cursor&#x27;s drag
+     */
     @Output() public dragProgress &#x3D; new EventEmitter&lt;number[]&gt;(false);
+    /**
+     * Event triggered when the user stop to drag the cursor
+     */
     @Output() public dragEnd &#x3D; new EventEmitter&lt;number[]&gt;(false);
 
+    /**
+     * Host Binding
+     */
     @HostBinding(&#x27;style.flex-direction&#x27;) get styleFlexDirection() {
         return this.direction &#x3D;&#x3D;&#x3D; &#x27;horizontal&#x27; ? &#x27;row&#x27; : &#x27;column&#x27;;
     }
 
+    /**
+     * Host Binding
+     */
     @HostBinding(&#x27;style.width&#x27;) get styleWidth() {
         return (this.width &amp;&amp; !isNaN(this.width) &amp;&amp; this.width &gt; 0) ? this.width + &#x27;px&#x27; : &#x27;100%&#x27;;
     }
 
+    /**
+     * Host Binding
+     */
     @HostBinding(&#x27;style.height&#x27;) get styleHeight() {
         return (this.height &amp;&amp; !isNaN(this.height) &amp;&amp; this.height &gt; 0) ? this.height + &#x27;px&#x27; : &#x27;100%&#x27;;
     }
@@ -2278,21 +1959,37 @@ export class DejaSplitterComponent implements OnChanges, OnDestroy {
     private areaBSize &#x3D; 0;
     private eventsDragFct: Function[] &#x3D; [];
 
+    /**
+     * Constructor
+     */
     constructor(private cdRef: ChangeDetectorRef,
                 private elementRef: ElementRef,
                 private renderer: Renderer) {
     }
 
+    /**
+     * Lifecycle hook that is called when any data-bound property of a directive changes.
+     */
     public ngOnChanges(changes: SimpleChanges) {
         if (changes[gutterSize] || changes[disabled]) {
             this.refresh();
         }
     }
 
+    /**
+     * Lifecycle hook that is called when a directive, pipe or service is destroyed.
+     */
     public ngOnDestroy() {
         this.stopDragging();
     }
 
+    /**
+     * Add a new area into the component
+     * @param component Area to add
+     * @param orderUser Position of the new area into the component
+     * @param sizeUser Size of the new area
+     * @param minPixel Min size of the new area
+     */
     public addArea(component: SplitAreaDirective, orderUser: number | null, sizeUser: number | null, minPixel: number) {
         this.areas.push({
             component,
@@ -2306,6 +2003,13 @@ export class DejaSplitterComponent implements OnChanges, OnDestroy {
         this.refresh();
     }
 
+    /**
+     * Update an existing area into the component
+     * @param component Area to update
+     * @param orderUser Position of the area into the component
+     * @param sizeUser Size of the area
+     * @param minPixel  Min size of the area
+     */
     public updateArea(component: SplitAreaDirective, orderUser: number | null, sizeUser: number | null, minPixel: number) {
         const item &#x3D; this.areas.find((a) &#x3D;&gt; a.component &#x3D;&#x3D;&#x3D; component);
 
@@ -2318,6 +2022,10 @@ export class DejaSplitterComponent implements OnChanges, OnDestroy {
         }
     }
 
+    /**
+     * Delete an existing area into the component
+     * @param area Area to delete
+     */
     public removeArea(area: SplitAreaDirective) {
         const item &#x3D; this.areas.find((a) &#x3D;&gt; a.component &#x3D;&#x3D;&#x3D; area);
 
@@ -2330,6 +2038,11 @@ export class DejaSplitterComponent implements OnChanges, OnDestroy {
         }
     }
 
+    /**
+     * Function called when the user start to drag the cursor
+     * @param startEvent drag event
+     * @param gutterOrder separator number
+     */
     public startDragging(startEvent: MouseEvent, gutterOrder: number) {
         startEvent.preventDefault();
 

@@ -382,9 +382,6 @@
                                 id="xs-classes-links"
                             >
                                 <li class="link">
-                                    <a href="../classes/AutoCompleteItem.html" >AutoCompleteItem</a>
-                                </li>
-                                <li class="link">
                                     <a href="../classes/Circle.html" >Circle</a>
                                 </li>
                                 <li class="link">
@@ -427,6 +424,12 @@
                                     <a href="../classes/Diacritics.html" >Diacritics</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../classes/EditorOptions.html" >EditorOptions</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/EditorScrollbarOptions.html" >EditorScrollbarOptions</a>
+                                </li>
+                                <li class="link">
                                     <a href="../classes/GlobalEventEmmitter.html" >GlobalEventEmmitter</a>
                                 </li>
                                 <li class="link">
@@ -440,15 +443,6 @@
                                 </li>
                                 <li class="link">
                                     <a href="../classes/IDejaGridParentRow.html" >IDejaGridParentRow</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../classes/IEditorLanguage.html" >IEditorLanguage</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../classes/IEditorOptions.html" >IEditorOptions</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../classes/IEditorTheme.html" >IEditorTheme</a>
                                 </li>
                                 <li class="link">
                                     <a href="../classes/ItemListBase.html" >ItemListBase</a>
@@ -947,9 +941,6 @@
                                        id="classes-links"
                    >
                                        <li class="link">
-                                           <a href="../classes/AutoCompleteItem.html" >AutoCompleteItem</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="../classes/Circle.html" >Circle</a>
                                        </li>
                                        <li class="link">
@@ -992,6 +983,12 @@
                                            <a href="../classes/Diacritics.html" >Diacritics</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../classes/EditorOptions.html" >EditorOptions</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/EditorScrollbarOptions.html" >EditorScrollbarOptions</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../classes/GlobalEventEmmitter.html" >GlobalEventEmmitter</a>
                                        </li>
                                        <li class="link">
@@ -1005,15 +1002,6 @@
                                        </li>
                                        <li class="link">
                                            <a href="../classes/IDejaGridParentRow.html" >IDejaGridParentRow</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../classes/IEditorLanguage.html" >IEditorLanguage</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../classes/IEditorOptions.html" >IEditorOptions</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../classes/IEditorTheme.html" >IEditorTheme</a>
                                        </li>
                                        <li class="link">
                                            <a href="../classes/ItemListBase.html" >ItemListBase</a>
@@ -1158,9 +1146,6 @@
     <li class="active">
         <a href="#infos" id="infos-tab" role="tab" data-toggle="tab" data-link="infos">Infos</a>
     </li>
-    <li>
-        <a href="#readme" role="tab" id="readme-tab" data-toggle="tab" data-link="readme">README</a>
-    </li>
 
     <li>
         <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
@@ -1182,6 +1167,12 @@
     <code>src/component/circular-picker/circular-picker.component.ts</code>
 </p>
 
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Circular-picker component for Angular</p><br/>
+    </p>
 
 
     <p class="comment">
@@ -1190,6 +1181,7 @@
     <p class="comment">
                 <code><a href="https://angular.io/docs/ts/latest/api/core/index/OnInit-interface.html" target="_blank" >OnInit</a></code>
                 <code><a href="../classes/ValueAccessor.html" target="_self" >ControlValueAccessor</a></code>
+                <code><a href="https://angular.io/docs/ts/latest/api/core/index/OnDestroy-interface.html" target="_blank" >OnDestroy</a></code>
     </p>
 
 
@@ -1244,6 +1236,7 @@
                             <code>clockwiseFactor</code>
                         </td>
                         <td class="col-md-10">
+                            <div><p>ClockwiseFactor allows user to choose rotation direction of picker </p><br/></div>
                               <p>
                                 <em>Type:</em>    <code>ClockwiseFactorEnum</code>
 
@@ -1252,7 +1245,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:39</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:44</a></div>
                             </td>
                         </tr>
                 </tbody>
@@ -1264,6 +1257,47 @@
                             <code>disabled</code>
                         </td>
                         <td class="col-md-10">
+                            <div><p>disabled property setter. Can be string or empty so you can use it like : <circular-picker disabled></circular-picker> <br/>To get disabled attribute. </p><br/></div>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:66</a></div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <code>fullDiameter</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Diameter of circular picker in pixels. Default 310px </p><br/></div>
+                            <p>
+                              <em>Default value: </em><code>310</code>
+                            </p>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:46</a></div>
+                            </td>
+                        </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <code>labelsDiameter</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Diameter of labels on circular picker </p><br/></div>
+                            <p>
+                              <em>Default value: </em><code>43</code>
+                            </p>
                         </td>
                     </tr>
                         <tr>
@@ -1277,47 +1311,10 @@
                 <tbody>
                     <tr>
                         <td class="col-md-2">
-                            <code>fullDiameter</code>
-                        </td>
-                        <td class="col-md-10">
-                            <p>
-                              <em>Default value: </em><code>310</code>
-                            </p>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-2" colspan="2">
-                                <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:40</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>labelsDiameter</code>
-                        </td>
-                        <td class="col-md-10">
-                            <p>
-                              <em>Default value: </em><code>43</code>
-                            </p>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-2" colspan="2">
-                                <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:41</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
                             <code>outerLabels</code>
                         </td>
                         <td class="col-md-10">
+                            <div><p>Allows user to choose labels position. If outerLabels is true, labels will come outside the circular picker</p><br/><p>With outerLabels = true, and ranges.length &gt; 1, labels will go outwards.<br/>With outerLabels = false, and ranges.length &gt; 1, labels will go inwards.</p><br/></div>
                             <p>
                               <em>Default value: </em><code>false</code>
                             </p>
@@ -1325,7 +1322,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:42</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:55</a></div>
                             </td>
                         </tr>
                 </tbody>
@@ -1337,6 +1334,7 @@
                             <code>ranges</code>
                         </td>
                         <td class="col-md-10">
+                            <div><p>Ranges of circular picker </p><br/></div>
                               <p>
                                 <em>Type:</em>    <code><a href="../classes/Range.html" target="_self" >ICircularRange[]</a></code>
 
@@ -1345,7 +1343,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:43</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:57</a></div>
                             </td>
                         </tr>
                 </tbody>
@@ -1364,10 +1362,15 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:76</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:97</a></div>
                             </td>
                         </tr>
     
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Constructor.<br/>Create MouseDown &amp; mouseMove Observables needed inside this control.</p><br/></div>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
     </section>
@@ -1377,6 +1380,41 @@
             <h3 id="methods">
                 Methods
             </h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Static</span> ngOnDestroy</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play export">
+                                    <span class="fa fa-export"></span>
+                                </span>
+                            <code>ngOnDestroy()</code>
+                        </td>
+                    </tr>
+    
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="191" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:191</a></div>
+                            </td>
+                        </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Unsubscribe to Observables when component is destroyed </p><br/></div>
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>void</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
@@ -1396,12 +1434,13 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="165" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:165</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="198" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:198</a></div>
                             </td>
                         </tr>
     
                     <tr>
                         <td class="col-md-4">
+                                <div class="io-description"><p>Init circular-picker configuration</p><br/></div>
     
                                 <div class="io-description">
                                     <b>Returns : </b>    <code>void</code>
@@ -1430,12 +1469,13 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="202" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:202</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="235" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:235</a></div>
                             </td>
                         </tr>
     
                     <tr>
                         <td class="col-md-4">
+                                <div class="io-description"><p>From ControlValueAccessor interface </p><br/></div>
     
                                 <div class="io-description">
                                     <b>Returns : </b>    <code>void</code>
@@ -1464,12 +1504,13 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="210" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:210</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="243" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:243</a></div>
                             </td>
                         </tr>
     
                     <tr>
                         <td class="col-md-4">
+                                <div class="io-description"><p>From ControlValueAccessor interface </p><br/></div>
     
                                 <div class="io-description">
                                     <b>Returns : </b>    <code>void</code>
@@ -1498,12 +1539,13 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="215" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:215</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="248" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:248</a></div>
                             </td>
                         </tr>
     
                     <tr>
                         <td class="col-md-4">
+                                <div class="io-description"><p>From ControlValueAccessor interface </p><br/></div>
     
                                 <div class="io-description">
                                     <b>Returns : </b>    <code>void</code>
@@ -1532,17 +1574,55 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="220" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:220</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="262" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:262</a></div>
                             </td>
                         </tr>
     
                     <tr>
                         <td class="col-md-4">
+                                <div class="io-description"><p>Take a point in parameter and return corresponding value</p><br/></div>
     
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <ul class="jsdoc-params">
+                                                <li>
+                                                    <div>
+                                                        <b>x</b>
+                                                    </div>
+                                                    <div>
+                                                        <p>xPos of point</p>
+    
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <b>y</b>
+                                                    </div>
+                                                    <div>
+                                                        <p>yPos of point</p>
+    
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <b>config</b>
+                                                            :     <code>IConfig</code>
+    
+                                                    </div>
+                                                    <div>
+                                                        <p>config where the point is located</p>
+    
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                </div>
                                 <div class="io-description">
                                     <b>Returns : </b>    <code>void</code>
     
                                 </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
                         </td>
                     </tr>
                 </tbody>
@@ -1566,187 +1646,54 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="234" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:234</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="284" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:284</a></div>
                             </td>
                         </tr>
     
                     <tr>
                         <td class="col-md-4">
+                                <div class="io-description"><p>Take velue and returns its position</p><br/></div>
     
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <ul class="jsdoc-params">
+                                                <li>
+                                                    <div>
+                                                        <b>value</b>
+                                                    </div>
+                                                    <div>
+                                                        <p>value to check</p>
+    
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <b>radiusOffset</b>
+                                                    </div>
+                                                    <div>
+                                                        <p>Radius to ckeck (if outerLabels are on, the radius offset = fullDiameter + labelsDiameter)</p>
+    
+                                                    </div>
+                                                </li>
+                                                <li>
+                                                    <div>
+                                                        <b>config</b>
+                                                    </div>
+                                                    <div>
+                                                        <p>the config where to check</p>
+    
+                                                    </div>
+                                                </li>
+                                        </ul>
+                                </div>
                                 <div class="io-description">
                                     <b>Returns : </b>    <code><a href="../classes/Position.html" target="_self" >Position</a></code>
     
                                 </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> pointToAngle</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <span class="modifier-icon method fa fa-play lock">
-                                    <span class="fa fa-lock"></span>
-                                </span>
-                            <code>pointToAngle(x: number, y: number, config: IConfig)</code>
-                        </td>
-                    </tr>
+                                    <div class="io-description">
+                                        <p>the position of value</p>
     
-    
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="244" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:244</a></div>
-                            </td>
-                        </tr>
-    
-                    <tr>
-                        <td class="col-md-4">
-    
-                                <div class="io-description">
-                                    <b>Returns : </b>    <code>number</code>
-    
-                                </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> valueToAngle</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <span class="modifier-icon method fa fa-play lock">
-                                    <span class="fa fa-lock"></span>
-                                </span>
-                            <code>valueToAngle(value: number, config: IConfig)</code>
-                        </td>
-                    </tr>
-    
-    
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="253" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:253</a></div>
-                            </td>
-                        </tr>
-    
-                    <tr>
-                        <td class="col-md-4">
-    
-                                <div class="io-description">
-                                    <b>Returns : </b>    <code>number</code>
-    
-                                </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> bind</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <span class="modifier-icon method fa fa-play lock">
-                                    <span class="fa fa-lock"></span>
-                                </span>
-                            <code>bind()</code>
-                        </td>
-                    </tr>
-    
-    
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="258" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:258</a></div>
-                            </td>
-                        </tr>
-    
-                    <tr>
-                        <td class="col-md-4">
-    
-                                <div class="io-description">
-                                    <b>Returns : </b>    <code>void</code>
-    
-                                </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> updateCursor</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <span class="modifier-icon method fa fa-play lock">
-                                    <span class="fa fa-lock"></span>
-                                </span>
-                            <code>updateCursor()</code>
-                        </td>
-                    </tr>
-    
-    
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="273" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:273</a></div>
-                            </td>
-                        </tr>
-    
-                    <tr>
-                        <td class="col-md-4">
-    
-                                <div class="io-description">
-                                    <b>Returns : </b>    <code>void</code>
-    
-                                </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> getHTMLElement</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                                <span class="modifier-icon method fa fa-play lock">
-                                    <span class="fa fa-lock"></span>
-                                </span>
-                            <code>getHTMLElement(element: HTMLElement, attr: string)</code>
-                        </td>
-                    </tr>
-    
-    
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="306" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:306</a></div>
-                            </td>
-                        </tr>
-    
-                    <tr>
-                        <td class="col-md-4">
-    
-                                <div class="io-description">
-                                    <b>Returns : </b>    <code>HTMLElement</code>
-    
-                                </div>
+                                    </div>
                         </td>
                     </tr>
                 </tbody>
@@ -1777,171 +1724,6 @@
                 <tbody>
                     <tr>
                         <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> _disabled</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-lock"></span><code>_disabled:     <code>boolean</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <i>Default value : </i><code>false</code>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:56</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> _value</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-lock"></span><code>_value:     <code>number</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:58</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> circularValues</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-lock"></span><code>circularValues:     <code>ICircularValue[]</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:65</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> clickedTime</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-lock"></span><code>clickedTime:     <code>number</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="71" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:71</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> configs</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-lock"></span><code>configs:     <code>IConfig[]</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:62</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> cursor</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-lock"></span><code>cursor:     <code>ICircularValue</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:67</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> cursorElement</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-lock"></span><code>cursorElement:     <code>HTMLElement</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:69</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> cursorHand</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-lock"></span><code>cursorHand:     <code>{ width: number; angle: number; }</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:68</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
                             <b><span class="modifier">Static</span> cursorTemplate</b>
                         </td>
                     </tr>
@@ -1958,9 +1740,14 @@
                         </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:45</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:62</a></div>
                             </td>
                         </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-description"><p>template for cursor inside picker. Use it to customize labels </p><br/></div>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
             <table class="table table-sm table-bordered">
@@ -1978,9 +1765,14 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:52</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="71" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:71</a></div>
                             </td>
                         </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-description"><p>disabled property setter. Can be string or empty so you can use it like : <circular-picker disabled></circular-picker> <br/>To get disabled attribute. </p><br/></div>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
             <table class="table table-sm table-bordered">
@@ -2003,149 +1795,14 @@
                         </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:44</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:60</a></div>
                             </td>
                         </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
                     <tr>
                         <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> onChangeCallback</b>
+                            <div class="io-description"><p>Template for labels inside picker. Use it to customize labels </p><br/></div>
                         </td>
                     </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-lock"></span><code>onChangeCallback:     <code>(_: any) &#x3D;&gt; void</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <i>Default value : </i><code>noop</code>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:74</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> onTouchedCallback</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-lock"></span><code>onTouchedCallback:     <code>() &#x3D;&gt; void</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <i>Default value : </i><code>noop</code>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:73</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> picker</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-lock"></span><code>picker:     <code><a href="https://angular.io/docs/ts/latest/api/core/index/ElementRef-class.html" target="_blank" >ElementRef</a></code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <i>Decorators : </i><code>ViewChild</code>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:76</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> radius</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-lock"></span><code>radius:     <code>number</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <i>Default value : </i><code>0</code>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:61</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> selectedConfig</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-lock"></span><code>selectedConfig:     <code>IConfig</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:63</a></div>
-                            </td>
-                        </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Protected</span> TwoPI</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-lock"></span><code>TwoPI:     <code>number</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:59</a></div>
-                            </td>
-                        </tr>
                 </tbody>
             </table>
             <table class="table table-sm table-bordered">
@@ -2163,92 +1820,22 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="197" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:197</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="230" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:230</a></div>
                             </td>
                         </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <div class="io-description"><p>set accessor including call the onchange callback <br/>get accessor </p><br/></div>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
     </section>
 </div>
 
-    <div class="tab-pane fade" id="readme">
-        <p><h1 id="circular-picker">Circular Picker</h1>
-<p>Composant pour séléctionner un nombre autours d&#39;un cercle. Implémente NgModel.  </p>
-<h3 id="utilisation">Utilisation</h3>
-<blockquote>
-<p>Ne pas oublier d&#39;importer le <code>DejaCircularPickerModule</code> dans les <code>imports</code> de votre module concerné !</p>
-</blockquote>
-<p>Ensuite utiliser le composant comme ceci dans votre template :</p>
-<ul>
-<li>implémentation :</li>
-</ul>
-<pre class="line-numbers"><code class="language-html">&lt;deja-circular-picker [(ngModel)]=&quot;test&quot; [ranges]=&quot;ranges&quot;&gt;&lt;/deja-circular-picker&gt;</code></pre><h3 id="propri-t-s">Propriétés</h3>
-<table>
-<thead>
-    <tr>
-        <th>Nom</th>
-        <th>Type</th>
-        <th>Defaut</th>
-        <th>Description</th>
-    </tr>
-</thead>
-<tbody>
-<tr>
-    <td>clockwiseFactor</td>
-    <td>ClockwiseFactorEnum <em></td>
-    <td>ClockwiseFactorEnum.clockwise</td>
-    <td>Sens dans lequel les valeurs tournent autours du cercle.</td>
-</tr>
-<tr>
-    <td>disabled</td>
-    <td>boolean</td>
-    <td>false</td>
-    <td>Pour désactiver le circular picker</td>
-</tr>
-<tr>
-    <td>fullDiameter</td>
-    <td>number</td>
-    <td>310</td>
-    <td>Diamètre du circular picker</td>
-</tr>
-<tr>
-    <td>labelsDiameter</td>
-    <td>number</td>
-    <td>43</td>
-    <td>Diamètre des labels</td>
-</tr>
-<tr>
-    <td>outerLabels</td>
-    <td>boolean</td>
-    <td>false</td>
-    <td>Les labels sont en dehors du cercle si cette valeur est à true</td>
-</tr>
-<tr>
-    <td>ranges</td>
-    <td>IRange[] *</em></td>
-    <td>null</td>
-    <td>Ranges a afficher sur le picker. Voir la demoApp pour plus de détails</td>
-</tr>
-</tbody>
-</table>
-
-<h3 id="notes-">Notes :</h3>
-<p><code>*</code> : ClockwiseFactorEnum : </p>
-<pre class="line-numbers"><code class="language-javascript">enum ClockwiseFactorEnum {
-    clockwise = -1,
-    counterClockwise = 1
-}</code></pre><p><code>**</code> : IRange : </p>
-<pre class="line-numbers"><code class="language-javascript">interface IRange {
-    min: number; 
-    max: number; 
-    interval?: number; 
-    labelInterval?: number; // x*interval
-    beginOffset?: number;
-}</code></pre></p>
-    </div>
 
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChild, ElementRef, Input, OnInit, Optional, Self, ViewChild } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers"><code class="language-typescript">import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChild, ElementRef, Input, OnDestroy, OnInit, Optional, Self, ViewChild } from &#x27;@angular/core&#x27;;
 import { ControlValueAccessor, NgControl } from &#x27;@angular/forms&#x27;;
 import &#x27;rxjs/add/observable/fromEvent&#x27;;
 import &#x27;rxjs/add/observable/merge&#x27;;
@@ -2256,6 +1843,7 @@ import &#x27;rxjs/add/operator/sampleTime&#x27;;
 import &#x27;rxjs/add/operator/takeUntil&#x27;;
 import { Observable } from &#x27;rxjs/Observable&#x27;;
 import { Subject } from &#x27;rxjs/Subject&#x27;;
+import { Subscription } from &#x27;rxjs/Subscription&#x27;;
 import { Circle } from &#x27;../../common/core/graphics/circle&#x27;;
 import { Position } from &#x27;../../common/core/graphics/position&#x27;;
 
@@ -2271,26 +1859,44 @@ interface ICircularValue {
     value: number;
 }
 
+/**
+ * Circular-picker component for Angular
+ */
 @Component({
     changeDetection: ChangeDetectionStrategy.OnPush,
     selector: &#x27;deja-circular-picker&#x27;,
     styleUrls: [&#x27;./circular-picker.component.scss&#x27;],
     templateUrl: &#x27;./circular-picker.component.html&#x27;,
 })
-export class DejaCircularPickerComponent implements OnInit, ControlValueAccessor {
+export class DejaCircularPickerComponent implements OnInit, ControlValueAccessor, OnDestroy {
+    /** ClockwiseFactor allows user to choose rotation direction of picker */
     @Input() public clockwiseFactor: ClockwiseFactorEnum &#x3D; ClockwiseFactorEnum.clockwise;
+    /** Diameter of circular picker in pixels. Default 310px */
     @Input() public fullDiameter &#x3D; 310;
+    /** Diameter of labels on circular picker */
     @Input() public labelsDiameter &#x3D; 43;
+    /**
+     * Allows user to choose labels position. If outerLabels is true, labels will come outside the circular picker
+     *
+     * With outerLabels &#x3D; true, and ranges.length &gt; 1, labels will go outwards.
+     * With outerLabels &#x3D; false, and ranges.length &gt; 1, labels will go inwards.
+     */
     @Input() public outerLabels &#x3D; false;
+    /** Ranges of circular picker */
     @Input() public ranges: ICircularRange[];
+
+    /** Template for labels inside picker. Use it to customize labels */
     @ContentChild(&#x27;labelTemplate&#x27;) public labelTemplate;
+    /** template for cursor inside picker. Use it to customize labels */
     @ContentChild(&#x27;cursorTemplate&#x27;) public cursorTemplate;
 
+    /** disabled property setter. Can be string or empty so you can use it like : &lt;circular-picker disabled&gt;&lt;/circular-picker&gt; */
     @Input()
     public set disabled(value: boolean | string) {
         this._disabled &#x3D; value !&#x3D; null &amp;&amp; &#x60;${value}&#x60; !&#x3D;&#x3D; &#x27;false&#x27;;
     }
 
+    /** To get disabled attribute. */
     public get disabled() {
         return this._disabled;
     }
@@ -2315,8 +1921,14 @@ export class DejaCircularPickerComponent implements OnInit, ControlValueAccessor
     private onTouchedCallback: () &#x3D;&gt; void &#x3D; noop;
     private onChangeCallback: (_: any) &#x3D;&gt; void &#x3D; noop;
 
+    private mousedown$sub: Subscription;
+
     @ViewChild(&#x27;picker&#x27;) private picker: ElementRef;
 
+    /**
+     * Constructor.
+     * Create MouseDown &amp; mouseMove Observables needed inside this control.
+     */
     constructor(elementRef: ElementRef, private changeDetectorRef: ChangeDetectorRef, @Self() @Optional() public _control: NgControl) {
         const element &#x3D; elementRef.nativeElement as HTMLElement;
 
@@ -2324,7 +1936,7 @@ export class DejaCircularPickerComponent implements OnInit, ControlValueAccessor
             this._control.valueAccessor &#x3D; this;
         }
 
-        Observable.fromEvent(element, &#x27;mousedown&#x27;)
+        this.mousedown$sub &#x3D; Observable.fromEvent(element, &#x27;mousedown&#x27;)
             .filter((event: MouseEvent) &#x3D;&gt; event.buttons &#x3D;&#x3D;&#x3D; 1)
             .debounceTime(100)
             .subscribe((mouseEvent: MouseEvent) &#x3D;&gt; {
@@ -2404,6 +2016,14 @@ export class DejaCircularPickerComponent implements OnInit, ControlValueAccessor
 
     }
 
+    /** Unsubscribe to Observables when component is destroyed */
+    public ngOnDestroy() {
+        this.mousedown$sub.unsubscribe();
+    }
+
+    /**
+     * Init circular-picker configuration
+     */
     public ngOnInit() {
         /* max - width */
         const diameter &#x3D; this.fullDiameter - this.labelsDiameter; // Material standard button size
@@ -2427,7 +2047,7 @@ export class DejaCircularPickerComponent implements OnInit, ControlValueAccessor
     }
 
     // ************* ControlValueAccessor Implementation **************
-    // set accessor including call the onchange callback
+    /** set accessor including call the onchange callback */
     set value(v: number) {
         if (v !&#x3D;&#x3D; this._value) {
             this.writeValue(v);
@@ -2435,12 +2055,12 @@ export class DejaCircularPickerComponent implements OnInit, ControlValueAccessor
         }
     }
 
-    // get accessor
+    /** get accessor */
     get value(): number {
         return this._value;
     }
 
-    // From ControlValueAccessor interface
+    /** From ControlValueAccessor interface */
     public writeValue(value: number) {
         if (value !&#x3D;&#x3D; this._value) {
             this._value &#x3D; value;
@@ -2448,17 +2068,26 @@ export class DejaCircularPickerComponent implements OnInit, ControlValueAccessor
         }
     }
 
-    // From ControlValueAccessor interface
+    /** From ControlValueAccessor interface */
     public registerOnChange(fn: any) {
         this.onChangeCallback &#x3D; fn;
     }
 
-    // From ControlValueAccessor interface
+    /** From ControlValueAccessor interface */
     public registerOnTouched(fn: any) {
         this.onTouchedCallback &#x3D; fn;
     }
     // ************* End of ControlValueAccessor Implementation **************
 
+    /**
+     * Take a point in parameter and return corresponding value
+     *
+     * @param {number} x xPos of point
+     * @param {number} y yPos of point
+     * @param {IConfig} config config where the point is located
+     *
+     * @return {number} value
+     */
     protected pointToValue(x: number, y: number, config: IConfig) {
         const angleAtPoint: number &#x3D; this.pointToAngle(x - this.radius, y - this.radius, config);
         let circleSegmentIndexAtPoint: number &#x3D; config.steps - Math.ceil(angleAtPoint / config.stepAngle);
@@ -2473,6 +2102,14 @@ export class DejaCircularPickerComponent implements OnInit, ControlValueAccessor
         return config.range.min + circleSegmentIndexAtPoint * config.range.interval;
     }
 
+    /**
+     * Take velue and returns its position
+     * @param value value to check
+     * @param radiusOffset Radius to ckeck (if outerLabels are on, the radius offset &#x3D; fullDiameter + labelsDiameter)
+     * @param config the config where to check
+     *
+     * @returns {Position} the position of value
+     */
     protected valueToPoint(value: number, radiusOffset: number, config: IConfig): Position {
         const position &#x3D; new Position();
         const valueAngle: number &#x3D; this.valueToAngle(value, config);
@@ -2516,11 +2153,11 @@ export class DejaCircularPickerComponent implements OnInit, ControlValueAccessor
         if (!this.circularValues || !this.circularValues.length) {
             return;
         }
-        if (this.value &#x3D;&#x3D;&#x3D; undefined || this.value &#x3D;&#x3D;&#x3D; null) {
-            this.value &#x3D; this.circularValues[0].value;
+        if (this._value &#x3D;&#x3D;&#x3D; undefined || this._value &#x3D;&#x3D;&#x3D; null) {
+            this._value &#x3D; this.circularValues[0].value;
         }
         this.selectedConfig &#x3D; this.configs.find((conf: IConfig) &#x3D;&gt; {
-            if (this.value &gt;&#x3D; conf.range.min &amp;&amp; this.value &lt;&#x3D; conf.range.max) {
+            if (this._value &gt;&#x3D; conf.range.min &amp;&amp; this._value &lt;&#x3D; conf.range.max) {
                 return true;
             }
         });
@@ -2531,14 +2168,14 @@ export class DejaCircularPickerComponent implements OnInit, ControlValueAccessor
         let cursorCenter: Position;
         const cursorRadius: number &#x3D; this.labelsDiameter / 2;
 
-        cursorCenter &#x3D; this.valueToPoint(this.value, (this.outerLabels ? cursorRadius + (this.labelsDiameter * selectedConfigIndex) : -cursorRadius - (this.labelsDiameter * selectedConfigIndex)), this.selectedConfig);
+        cursorCenter &#x3D; this.valueToPoint(this._value, (this.outerLabels ? cursorRadius + (this.labelsDiameter * selectedConfigIndex) : -cursorRadius - (this.labelsDiameter * selectedConfigIndex)), this.selectedConfig);
         this.cursor &#x3D; {
             position: new Position((cursorCenter.left - cursorRadius), (cursorCenter.top - cursorRadius)),
-            value: this.value,
+            value: this._value,
         };
 
         this.cursorHand &#x3D; {
-            angle: this.valueToAngle(this.value, this.selectedConfig),
+            angle: this.valueToAngle(this._value, this.selectedConfig),
             width: (this.outerLabels) ? this.radius + (this.labelsDiameter * selectedConfigIndex) : this.radius - this.labelsDiameter - (this.labelsDiameter * selectedConfigIndex),
         };
 

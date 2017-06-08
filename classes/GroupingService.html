@@ -382,9 +382,6 @@
                                 id="xs-classes-links"
                             >
                                 <li class="link">
-                                    <a href="../classes/AutoCompleteItem.html" >AutoCompleteItem</a>
-                                </li>
-                                <li class="link">
                                     <a href="../classes/Circle.html" >Circle</a>
                                 </li>
                                 <li class="link">
@@ -427,6 +424,12 @@
                                     <a href="../classes/Diacritics.html" >Diacritics</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../classes/EditorOptions.html" >EditorOptions</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/EditorScrollbarOptions.html" >EditorScrollbarOptions</a>
+                                </li>
+                                <li class="link">
                                     <a href="../classes/GlobalEventEmmitter.html" >GlobalEventEmmitter</a>
                                 </li>
                                 <li class="link">
@@ -440,15 +443,6 @@
                                 </li>
                                 <li class="link">
                                     <a href="../classes/IDejaGridParentRow.html" >IDejaGridParentRow</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../classes/IEditorLanguage.html" >IEditorLanguage</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../classes/IEditorOptions.html" >IEditorOptions</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../classes/IEditorTheme.html" >IEditorTheme</a>
                                 </li>
                                 <li class="link">
                                     <a href="../classes/ItemListBase.html" >ItemListBase</a>
@@ -947,9 +941,6 @@
                                        id="classes-links"
                    >
                                        <li class="link">
-                                           <a href="../classes/AutoCompleteItem.html" >AutoCompleteItem</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="../classes/Circle.html" >Circle</a>
                                        </li>
                                        <li class="link">
@@ -992,6 +983,12 @@
                                            <a href="../classes/Diacritics.html" >Diacritics</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../classes/EditorOptions.html" >EditorOptions</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/EditorScrollbarOptions.html" >EditorScrollbarOptions</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../classes/GlobalEventEmmitter.html" >GlobalEventEmmitter</a>
                                        </li>
                                        <li class="link">
@@ -1005,15 +1002,6 @@
                                        </li>
                                        <li class="link">
                                            <a href="../classes/IDejaGridParentRow.html" >IDejaGridParentRow</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../classes/IEditorLanguage.html" >IEditorLanguage</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../classes/IEditorOptions.html" >IEditorOptions</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../classes/IEditorTheme.html" >IEditorTheme</a>
                                        </li>
                                        <li class="link">
                                            <a href="../classes/ItemListBase.html" >ItemListBase</a>
@@ -1291,7 +1279,7 @@
             
                                 <tr>
                                     <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/common/core/grouping/grouping.service.ts:74</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/common/core/grouping/grouping.service.ts:70</a></div>
                                     </td>
                                 </tr>
             
@@ -1330,7 +1318,7 @@
             
                                 <tr>
                                     <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/common/core/grouping/grouping.service.ts:78</a></div>
+                                        <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/common/core/grouping/grouping.service.ts:74</a></div>
                                     </td>
                                 </tr>
             
@@ -1339,40 +1327,6 @@
             
                                         <div class="io-description">
                                             <b>Returns : </b>    <code>Observable&lt;any[]&gt;</code>
-            
-                                        </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <b><span class="modifier">Protected</span> getTextValue</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play lock">
-                                            <span class="fa fa-lock"></span>
-                                        </span>
-                                    <code>getTextValue(value: any)</code>
-                                </td>
-                            </tr>
-            
-            
-                                <tr>
-                                    <td class="col-md-4">
-                                        <div class="io-line">Defined in <a href="" data-line="123" class="link-to-prism">src/common/core/grouping/grouping.service.ts:123</a></div>
-                                    </td>
-                                </tr>
-            
-                            <tr>
-                                <td class="col-md-4">
-            
-                                        <div class="io-description">
-                                            <b>Returns : </b>    <code>void</code>
             
                                         </div>
                                 </td>
@@ -1417,32 +1371,28 @@ export class GroupingService {
                 return this.groupChildren$(tree, groupInfo, 0, childrenField);
             }
 
+            const groupTree$ &#x3D; (t: any[], curDepth: number) &#x3D;&gt; {
+                return Observable.from(t)
+                    .flatMap((treeItem) &#x3D;&gt; {
+                        const children &#x3D; treeItem[childrenField];
+                        if (children[0] &amp;&amp; children[0][childrenField]) {
+                            return groupTree$(children, curDepth + 1).map(() &#x3D;&gt; treeItem);
+                        } else {
+                            return this.groupChildren$(children, groupInfo, curDepth, childrenField).map((groupedChildren) &#x3D;&gt; {
+                                treeItem[childrenField] &#x3D; groupedChildren;
+                                return treeItem;
+                            });
+                        }
+                    })
+                    .reduce((acc: any[], cur) &#x3D;&gt; {
+                        // Return the array
+                        acc.push(cur);
+                        return acc;
+                    }, []);
+            };
+
             // If the tree has chidren, group only the last level items
-            return Observable.from(tree)
-                .flatMap((item) &#x3D;&gt; {
-                    let child &#x3D; item;
-                    let children &#x3D; item[childrenField];
-                    let curdepth &#x3D; 0;
-
-                    // For each items, search the last level
-                    while (childrenField[0] &amp;&amp; children[0][childrenField]) {
-                        child &#x3D; children[0];
-                        children &#x3D; child[childrenField];
-                        ++curdepth;
-                    }
-
-                    // Group the last level item children, but return the root item
-                    return this.groupChildren$(children, groupInfo, curdepth, childrenField)
-                        .map((groupedChildren) &#x3D;&gt; {
-                            child[childrenField] &#x3D; groupedChildren;
-                            return item;
-                        });
-                })
-                .reduce((acc: any[], cur) &#x3D;&gt; {
-                    // Return the array
-                    acc.push(cur);
-                    return acc;
-                }, []);
+            return groupTree$(tree, 1);
         }
     }
 
@@ -1479,6 +1429,7 @@ export class GroupingService {
                     parent &#x3D; groups[groupedBy] &#x3D; {
                         depth: _depth,
                         toString: () &#x3D;&gt; { return groupLabel; },
+                        $text: groupLabel,
                     } as IItemTree;
                     parent[childrenField] &#x3D; [];
                 }

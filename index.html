@@ -382,9 +382,6 @@
                                 id="xs-classes-links"
                             >
                                 <li class="link">
-                                    <a href="./classes/AutoCompleteItem.html" >AutoCompleteItem</a>
-                                </li>
-                                <li class="link">
                                     <a href="./classes/Circle.html" >Circle</a>
                                 </li>
                                 <li class="link">
@@ -427,6 +424,12 @@
                                     <a href="./classes/Diacritics.html" >Diacritics</a>
                                 </li>
                                 <li class="link">
+                                    <a href="./classes/EditorOptions.html" >EditorOptions</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/EditorScrollbarOptions.html" >EditorScrollbarOptions</a>
+                                </li>
+                                <li class="link">
                                     <a href="./classes/GlobalEventEmmitter.html" >GlobalEventEmmitter</a>
                                 </li>
                                 <li class="link">
@@ -440,15 +443,6 @@
                                 </li>
                                 <li class="link">
                                     <a href="./classes/IDejaGridParentRow.html" >IDejaGridParentRow</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/IEditorLanguage.html" >IEditorLanguage</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/IEditorOptions.html" >IEditorOptions</a>
-                                </li>
-                                <li class="link">
-                                    <a href="./classes/IEditorTheme.html" >IEditorTheme</a>
                                 </li>
                                 <li class="link">
                                     <a href="./classes/ItemListBase.html" >ItemListBase</a>
@@ -947,9 +941,6 @@
                                        id="classes-links"
                    >
                                        <li class="link">
-                                           <a href="./classes/AutoCompleteItem.html" >AutoCompleteItem</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="./classes/Circle.html" >Circle</a>
                                        </li>
                                        <li class="link">
@@ -992,6 +983,12 @@
                                            <a href="./classes/Diacritics.html" >Diacritics</a>
                                        </li>
                                        <li class="link">
+                                           <a href="./classes/EditorOptions.html" >EditorOptions</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/EditorScrollbarOptions.html" >EditorScrollbarOptions</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="./classes/GlobalEventEmmitter.html" >GlobalEventEmmitter</a>
                                        </li>
                                        <li class="link">
@@ -1005,15 +1002,6 @@
                                        </li>
                                        <li class="link">
                                            <a href="./classes/IDejaGridParentRow.html" >IDejaGridParentRow</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/IEditorLanguage.html" >IEditorLanguage</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/IEditorOptions.html" >IEditorOptions</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="./classes/IEditorTheme.html" >IEditorTheme</a>
                                        </li>
                                        <li class="link">
                                            <a href="./classes/ItemListBase.html" >ItemListBase</a>
@@ -1156,16 +1144,22 @@
 <p>Online demo : <a href="https://dsi-hug.github.io/dejajs-components">https://dsi-hug.github.io/dejajs-components</a></p>
 <h2 id="intro">Intro</h2>
 <p>This repository is a Angular2 components library and the the common utility functions, with a demo application to testing it.</p>
-<h3 id="node-js-and-npm">Node.js and npm</h3>
-<p>Node.js and Node&#39;s package manager, npm, are used for installing dependencies,
-running the build steps, and running tests.</p>
+<h3 id="requirement">Requirement</h3>
+<p>Before you can build this project, you must install and configure the following dependencies on your machine:</p>
+<ol>
+<li>[Node.js][]: We use Node to run a development web server and build the project.
+Depending on your system, you can install Node either from source or as a pre-packaged bundle.</li>
+<li>[Yarn][]: We use Yarn to manage Node dependencies.
+Depending on your system, you can install Yarn either from source or as a pre-packaged bundle.</li>
+</ol>
 <h3 id="getting-started">Getting started</h3>
 <p>Begin by cloning the repository.</p>
-<p>Use npm to get dependencies:</p>
-<p><code>npm install</code></p>
+<p>After cloning, you should be able to run the following command to install development tools.
+You will only need to run this command when dependencies change in <a href="package.json">package.json</a>.</p>
+<p><code>yarn install</code></p>
 <p>Take a look at the <code>src</code> folder. All components and demo application are placed here. </p>
 <h2 id="running-demo-app">Running demo app</h2>
-<p><code>npm start</code></p>
+<p><code>yarn start</code></p>
 <p>and navigate to <code>http://localhost:5100</code>.</p>
 <h2 id="feature-status-and-browsers-compatibility-">Feature status and browsers compatibility:</h2>
 <table class="table table-bordered compodoc-table">

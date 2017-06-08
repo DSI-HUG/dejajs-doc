@@ -382,9 +382,6 @@
                                 id="xs-classes-links"
                             >
                                 <li class="link">
-                                    <a href="../classes/AutoCompleteItem.html" >AutoCompleteItem</a>
-                                </li>
-                                <li class="link">
                                     <a href="../classes/Circle.html" >Circle</a>
                                 </li>
                                 <li class="link">
@@ -427,6 +424,12 @@
                                     <a href="../classes/Diacritics.html" >Diacritics</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../classes/EditorOptions.html" >EditorOptions</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/EditorScrollbarOptions.html" >EditorScrollbarOptions</a>
+                                </li>
+                                <li class="link">
                                     <a href="../classes/GlobalEventEmmitter.html" >GlobalEventEmmitter</a>
                                 </li>
                                 <li class="link">
@@ -440,15 +443,6 @@
                                 </li>
                                 <li class="link">
                                     <a href="../classes/IDejaGridParentRow.html" >IDejaGridParentRow</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../classes/IEditorLanguage.html" >IEditorLanguage</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../classes/IEditorOptions.html" >IEditorOptions</a>
-                                </li>
-                                <li class="link">
-                                    <a href="../classes/IEditorTheme.html" >IEditorTheme</a>
                                 </li>
                                 <li class="link">
                                     <a href="../classes/ItemListBase.html" >ItemListBase</a>
@@ -947,9 +941,6 @@
                                        id="classes-links"
                    >
                                        <li class="link">
-                                           <a href="../classes/AutoCompleteItem.html" >AutoCompleteItem</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="../classes/Circle.html" >Circle</a>
                                        </li>
                                        <li class="link">
@@ -992,6 +983,12 @@
                                            <a href="../classes/Diacritics.html" >Diacritics</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../classes/EditorOptions.html" >EditorOptions</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/EditorScrollbarOptions.html" >EditorScrollbarOptions</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../classes/GlobalEventEmmitter.html" >GlobalEventEmmitter</a>
                                        </li>
                                        <li class="link">
@@ -1005,15 +1002,6 @@
                                        </li>
                                        <li class="link">
                                            <a href="../classes/IDejaGridParentRow.html" >IDejaGridParentRow</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../classes/IEditorLanguage.html" >IEditorLanguage</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../classes/IEditorOptions.html" >IEditorOptions</a>
-                                       </li>
-                                       <li class="link">
-                                           <a href="../classes/IEditorTheme.html" >IEditorTheme</a>
                                        </li>
                                        <li class="link">
                                            <a href="../classes/ItemListBase.html" >ItemListBase</a>
@@ -1158,9 +1146,6 @@
     <li class="active">
         <a href="#infos" id="infos-tab" role="tab" data-toggle="tab" data-link="infos">Infos</a>
     </li>
-    <li>
-        <a href="#readme" role="tab" id="readme-tab" data-toggle="tab" data-link="readme">README</a>
-    </li>
 
     <li>
         <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
@@ -1233,22 +1218,6 @@
 
 </div>
 
-    <div class="tab-pane fade" id="readme">
-        <p><h1 id="backdrop">Backdrop</h1>
-<p>Simple composant à placer en arrière plan pour simuler un effet modale</p>
-<h3 id="utilisation">Utilisation</h3>
-<blockquote>
-<p>Ne pas oublier d&#39;importer le module <code>DejaBackdropModule</code> dans les <code>imports</code> de votre module concerné !</p>
-</blockquote>
-<ul>
-<li>Afficher le composant avec un *ngIf. Par defaut, le div affiché par le composant sera en pleine page avec un z-index de 10. Tous le contenu qui dois être accessible, en tant que contenu modale doit avoir un index supérieur à 10.</li>
-</ul>
-<pre class="line-numbers"><code class="language-html">&lt;deja-backdrop (click)=&quot;useBackdrop=false&quot; *ngIf=&quot;useBackdrop&quot;&gt;&lt;/deja-backdrop&gt;</code></pre><h3 id="propri-t-s">Propriétés</h3>
-<ul>
-<li>Aucune propriété n&#39;est définie dans ce composant</li>
-</ul>
-</p>
-    </div>
 
     <div class="tab-pane fade tab-source-code" id="source">
         <pre class="line-numbers"><code class="language-typescript">import { Component } from &#x27;@angular/core&#x27;;
