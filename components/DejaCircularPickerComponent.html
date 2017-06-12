@@ -1399,7 +1399,7 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="191" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:191</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="192" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:192</a></div>
                             </td>
                         </tr>
     
@@ -1434,7 +1434,7 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="198" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:198</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="199" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:199</a></div>
                             </td>
                         </tr>
     
@@ -1469,7 +1469,7 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="235" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:235</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="236" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:236</a></div>
                             </td>
                         </tr>
     
@@ -1504,7 +1504,7 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="243" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:243</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="244" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:244</a></div>
                             </td>
                         </tr>
     
@@ -1539,7 +1539,7 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="248" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:248</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="249" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:249</a></div>
                             </td>
                         </tr>
     
@@ -1574,7 +1574,7 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="262" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:262</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="263" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:263</a></div>
                             </td>
                         </tr>
     
@@ -1646,7 +1646,7 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="284" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:284</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="285" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:285</a></div>
                             </td>
                         </tr>
     
@@ -1820,7 +1820,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="230" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:230</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="231" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:231</a></div>
                             </td>
                         </tr>
                     <tr>
@@ -1937,6 +1937,7 @@ export class DejaCircularPickerComponent implements OnInit, ControlValueAccessor
         }
 
         this.mousedown$sub &#x3D; Observable.fromEvent(element, &#x27;mousedown&#x27;)
+            .filter(() &#x3D;&gt; !this.disabled)
             .filter((event: MouseEvent) &#x3D;&gt; event.buttons &#x3D;&#x3D;&#x3D; 1)
             .debounceTime(100)
             .subscribe((mouseEvent: MouseEvent) &#x3D;&gt; {
@@ -2215,7 +2216,7 @@ export interface ICircularRange {
     </div>
 
     <div class="tab-pane fade" id="templateData">
-        <pre class="line-numbers"><code class="language-html">	&lt;div class&#x3D;&quot;circular-picker&quot; #picker [style.width.px]&#x3D;&quot;radius*2&quot; [style.height.px]&#x3D;&quot;radius*2&quot;&gt;
+        <pre class="line-numbers"><code class="language-html">	&lt;div class&#x3D;&quot;circular-picker&quot; #picker [style.width.px]&#x3D;&quot;radius*2&quot; [style.height.px]&#x3D;&quot;radius*2&quot; [class.disabled]&#x3D;&quot;disabled&quot;&gt;
 		&lt;!--FOR TEST ONLY--&gt;
 		&lt;!-- div *ngIf&#x3D;&quot;circle&quot; class&#x3D;&quot;test&quot;
 				[style.position]&#x3D;&quot;&#x27;fixed&#x27;&quot;
@@ -2264,7 +2265,7 @@ export interface ICircularRange {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div>	<div class="circular-picker" #picker [style.width.px]="radius*2" [style.height.px]="radius*2">		<!--FOR TEST ONLY-->		<!-- div *ngIf="circle" class="test"				[style.position]="\'fixed\'"				[style.background]="\'red\'"				[style.opacity]="0.6"				[style.top.px]="circle.center.top - circle.radius"				[style.left.px]="circle.center.left - circle.radius"				[style.width.px]="circle.radius * 2"				[style.height.px]="circle.radius * 2"		></div-->		<div class="cursor-container">			<div class="cursor" cursor *ngIf="cursor.value !== undefined" [style.top.px]="cursor.position.top" [style.left.px]="cursor.position.left">				<ng-template *ngIf="cursorTemplate" [ngTemplateOutlet]="cursorTemplate" [ngTemplateOutletContext]="{ $implicit: cursor.value }"></ng-template>				<span *ngIf="!cursorTemplate">{{cursor.value}}</span>			</div>			<div class="cursorHand" [ngStyle]="{\'transform\':\'translateY(-50%) rotate(\'+(-cursorHand.angle)+\'rad)\'}" [style.width.px]="cursorHand.width+2"></div>		</div>		<div class="value" [attr.value]="val.value" *ngFor="let val of circularValues; let index=index" [style.top.px]="val.position.top" [style.left.px]="val.position.left">			<ng-template *ngIf="labelTemplate" [ngTemplateOutlet]="labelTemplate" [ngTemplateOutletContext]="{ $implicit: val.value, index: index }"></ng-template>			<span *ngIf="!labelTemplate">{{val.value}}</span>		</div>	</div></div>'
+        var COMPONENT_TEMPLATE = '<div>	<div class="circular-picker" #picker [style.width.px]="radius*2" [style.height.px]="radius*2" [class.disabled]="disabled">		<!--FOR TEST ONLY-->		<!-- div *ngIf="circle" class="test"				[style.position]="\'fixed\'"				[style.background]="\'red\'"				[style.opacity]="0.6"				[style.top.px]="circle.center.top - circle.radius"				[style.left.px]="circle.center.left - circle.radius"				[style.width.px]="circle.radius * 2"				[style.height.px]="circle.radius * 2"		></div-->		<div class="cursor-container">			<div class="cursor" cursor *ngIf="cursor.value !== undefined" [style.top.px]="cursor.position.top" [style.left.px]="cursor.position.left">				<ng-template *ngIf="cursorTemplate" [ngTemplateOutlet]="cursorTemplate" [ngTemplateOutletContext]="{ $implicit: cursor.value }"></ng-template>				<span *ngIf="!cursorTemplate">{{cursor.value}}</span>			</div>			<div class="cursorHand" [ngStyle]="{\'transform\':\'translateY(-50%) rotate(\'+(-cursorHand.angle)+\'rad)\'}" [style.width.px]="cursorHand.width+2"></div>		</div>		<div class="value" [attr.value]="val.value" *ngFor="let val of circularValues; let index=index" [style.top.px]="val.position.top" [style.left.px]="val.position.left">			<ng-template *ngIf="labelTemplate" [ngTemplateOutlet]="labelTemplate" [ngTemplateOutletContext]="{ $implicit: val.value, index: index }"></ng-template>			<span *ngIf="!labelTemplate">{{val.value}}</span>		</div>	</div></div>'
     var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBackdropComponent', 'selector': 'deja-backdrop'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaCodeViewerComponent', 'selector': 'deja-code-viewer'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaDropDownComponent', 'selector': 'deja-dropdown'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMarkdownComponent', 'selector': 'deja-markdown'},{'name': 'DejaMenuComponent', 'selector': 'deja-menu'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'}];
     var DIRECTIVES = [{'name': 'DateValidatorDirective', 'selector': '[date-validator][ngModel]'},{'name': 'DejaAutosizeTextAreaDirective', 'selector': 'textarea[deja-autosize]'},{'name': 'DejaChildValidatorDirective', 'selector': '[deja-child-validator]'},{'name': 'DejaDraggableDirective', 'selector': '[deja-draggable]'},{'name': 'DejaDroppableDirective', 'selector': '[deja-droppable]'},{'name': 'DejaEditableDirective', 'selector': '[deja-editable]'},{'name': 'DejaMouseDraggableDirective', 'selector': '[deja-mouse-draggable]'},{'name': 'DejaMouseDroppableDirective', 'selector': '[deja-mouse-droppable]'},{'name': 'DejaTilePositionDirective', 'selector': '[deja-tile-position]'},{'name': 'DejaTooltipDirective', 'selector': '[deja-tooltip]'},{'name': 'PendingOnFocusDirective', 'selector': '[pending-onfocus]'},{'name': 'SplitAreaDirective', 'selector': 'split-area'},{'name': 'SplitGutterDirective', 'selector': 'split-gutter'},{'name': 'ValidateOnBlurDirective', 'selector': '[validate-onblur]'}];
     var ACTUAL_COMPONENT = {'name': 'DejaCircularPickerComponent'};
