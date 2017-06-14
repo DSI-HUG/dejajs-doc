@@ -2431,7 +2431,7 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="969" class="link-to-prism">src/component/select/select.component.ts:969</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="973" class="link-to-prism">src/component/select/select.component.ts:973</a></div>
                             </td>
                         </tr>
     
@@ -2465,7 +2465,7 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="980" class="link-to-prism">src/component/select/select.component.ts:980</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="984" class="link-to-prism">src/component/select/select.component.ts:984</a></div>
                             </td>
                         </tr>
     
@@ -2499,7 +2499,7 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="986" class="link-to-prism">src/component/select/select.component.ts:986</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="990" class="link-to-prism">src/component/select/select.component.ts:990</a></div>
                             </td>
                         </tr>
     
@@ -2533,7 +2533,7 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="1013" class="link-to-prism">src/component/select/select.component.ts:1013</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="1017" class="link-to-prism">src/component/select/select.component.ts:1017</a></div>
                             </td>
                         </tr>
     
@@ -2567,7 +2567,7 @@
     
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="1020" class="link-to-prism">src/component/select/select.component.ts:1020</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="1024" class="link-to-prism">src/component/select/select.component.ts:1024</a></div>
                             </td>
                         </tr>
     
@@ -4389,7 +4389,11 @@ export class DejaSelectComponent extends ItemListBase implements ControlValueAcc
                     return;
                 }
 
-                if (this.isCollapsible(item)) {
+                const isExpandButton &#x3D; (target: HTMLElement) &#x3D;&gt; {
+                    return target.id &#x3D;&#x3D;&#x3D; &#x27;expandbtn&#x27; || target.parentElement.id &#x3D;&#x3D;&#x3D; &#x27;expandbtn&#x27;;
+                };
+
+                if (this.isCollapsible(item) &amp;&amp; (isExpandButton(e.target as HTMLElement) || !this.isSelectable(item))) {
                     if (upEvent.button &#x3D;&#x3D;&#x3D; 0) {
                         this.toggleCollapse$(itemIndex, !item.collapsed).first().subscribe(noop);
                     }
@@ -4493,7 +4497,7 @@ export class DejaSelectComponent extends ItemListBase implements ControlValueAcc
                 this.toggleSelect$([item], true)
                     .first()
                     .subscribe((selectedItems) &#x3D;&gt; {
-                        const selected &#x3D; [...selectedItems];
+                        const selected &#x3D; selectedItems ? [...selectedItems] : [];
                         this.setSelectedItems(selected);
                         this.onModelChange(selected);
                         this.query &#x3D; &#x27;&#x27;;

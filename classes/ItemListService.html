@@ -4397,8 +4397,8 @@ export class ItemListService {
             }
         }
 
-        const expandTree &#x3D; (regExp &amp;&amp; regExp.toString()) !&#x3D;&#x3D; (this.lastQuery &amp;&amp; this.lastQuery.toString());
-        ignoreCache &#x3D; ignoreCache || expandTree || !this.items || !this.items.length;
+        const queryChanged &#x3D; (regExp &amp;&amp; regExp.toString()) !&#x3D;&#x3D; (this.lastQuery &amp;&amp; this.lastQuery.toString());
+        ignoreCache &#x3D; ignoreCache || queryChanged || !this.items || !this.items.length;
         this.lastQuery &#x3D; regExp;
 
         const loadViewList &#x3D; () &#x3D;&gt; {
@@ -4451,7 +4451,7 @@ export class ItemListService {
             // console.log(&#x27;getItemList &#x27; + Date.now());
             this.waiter$.next(true);
 
-            if (!this.items || !this.items.length) {
+            if (queryChanged || !this.items || !this.items.length) {
                 this.internalQuery &#x3D; regExp;
             }
 
@@ -4472,10 +4472,10 @@ export class ItemListService {
                     delete this._cache.visibleList;
                     this.waiter$.next(this.items &#x3D;&#x3D;&#x3D; undefined);
                 })
-                .switchMap(() &#x3D;&gt; this.ensureVisibleListCache$(searchField, this.internalQuery, expandTree, multiSelect))
+                .switchMap(() &#x3D;&gt; this.ensureVisibleListCache$(searchField, this.internalQuery, queryChanged, multiSelect))
                 .map(() &#x3D;&gt; loadViewList());
         } else {
-            return this.ensureVisibleListCache$(searchField, this.internalQuery, expandTree, multiSelect)
+            return this.ensureVisibleListCache$(searchField, this.internalQuery, queryChanged, multiSelect)
                 .map(() &#x3D;&gt; loadViewList());
         }
     }
@@ -4719,8 +4719,14 @@ export class ItemListService {
                 item1 &#x3D; item1.model;
                 item2 &#x3D; item2.model;
             }
-            return item1[this._valueField] &#x3D;&#x3D;&#x3D; item2[this._valueField];
-        } else if (item1.equals) {
+            const value1 &#x3D; item1[this._valueField];
+            const value2 &#x3D; item2[this._valueField];
+            if (value1 !&#x3D;&#x3D; undefined || value2 !&#x3D;&#x3D; undefined) {
+                return item1[this._valueField] &#x3D;&#x3D;&#x3D; item2[this._valueField];
+            }
+        }
+
+        if (item1.equals) {
             return item1.equals(item2);
         } else if (item2.equals) {
             return item2.equals(item1);
