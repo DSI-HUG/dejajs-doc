@@ -2185,7 +2185,7 @@
                                 <span class="modifier-icon method fa fa-play export">
                                     <span class="fa fa-export"></span>
                                 </span>
-                            <code>toggleAll$()</code>
+                            <code>toggleAll$(collapsed: boolean)</code>
                         </td>
                     </tr>
     
@@ -2220,7 +2220,7 @@
                                 <span class="modifier-icon method fa fa-play export">
                                     <span class="fa fa-export"></span>
                                 </span>
-                            <code>toggleAll()</code>
+                            <code>toggleAll(collapsed: boolean)</code>
                         </td>
                     </tr>
     
@@ -3850,14 +3850,14 @@ export class DejaTreeListComponent extends ItemListBase implements OnDestroy, Af
     // ************* End of ControlValueAccessor Implementation **************
 
     /** Change l&#x27;état d&#x27;expansion de toute les lignes parentes */
-    public toggleAll$(): Observable&lt;IItemTree&gt; {
-        return super.toggleAll$()
+    public toggleAll$(collapsed?: boolean): Observable&lt;IItemTree&gt; {
+        return super.toggleAll$(collapsed)
             .switchMap(() &#x3D;&gt; this.calcViewList$().first());
     }
 
     /** Change l&#x27;état d&#x27;expansion de toute les lignes parentes */
-    public toggleAll() {
-        this.toggleAll$().first().subscribe(noop);
+    public toggleAll(collapsed?: boolean) {
+        this.toggleAll$(collapsed).first().subscribe(noop);
     }
 
     /** Positionne a scrollbar pour assurer que l&#x27;élément spécifié soit visible */

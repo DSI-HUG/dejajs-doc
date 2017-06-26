@@ -2018,7 +2018,7 @@
                                         <span class="modifier-icon method fa fa-play export">
                                             <span class="fa fa-export"></span>
                                         </span>
-                                    <code>toggleAll$()</code>
+                                    <code>toggleAll$(collapsed: boolean)</code>
                                 </td>
                             </tr>
             
@@ -4924,8 +4924,8 @@ export abstract class ItemListBase implements OnDestroy {
     /** Change l&#x27;état d&#x27;expansion de tous les éléments.
      * @return {Observable} Observable résolu par la fonction.
      */
-    public toggleAll$() {
-        this.allCollapsed &#x3D; !this.allCollapsed;
+    public toggleAll$(collapsed?: boolean) {
+        this.allCollapsed &#x3D; (collapsed !&#x3D;&#x3D; undefined) ? collapsed : !this.allCollapsed;
         if (this.viewPort.mode &#x3D;&#x3D;&#x3D; ViewportMode.disabled) {
             return Observable.from(this._itemList)
                 .filter((item: IItemTree) &#x3D;&gt; item.$items &amp;&amp; item.depth &#x3D;&#x3D;&#x3D; 0 &amp;&amp; item.collapsible !&#x3D;&#x3D; false)
