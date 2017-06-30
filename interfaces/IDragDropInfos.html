@@ -1,0 +1,3408 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>@deja-js/component</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	    <link rel="stylesheet" href="../styles/style.css">
+                 <link rel="stylesheet" href="../styles/vagrant.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">@deja-js/component</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="Type to search">
+            </div>
+            <nav>
+            
+                <ul class="list">
+            
+                    <li class="title">
+                        <a href="../index.html">@deja-js/component</a>
+                    </li>
+            
+                    <li class="divider"></li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                        <ul class="links">
+                                <li class="link">
+                                    <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
+                                <li class="link">
+                                    <a 
+                                        
+                                         href="../overview.html" 
+                                         href="../overview.html" 
+                                        >
+                                        <span class="fa fa-th"></span>Overview
+                                    </a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../modules.html" >
+                            <div class="menu-toggler linked" data-toggle="collapse"
+                                    data-target="#xs-modules-links"
+                            >
+                                <span class="fa fa-archive"></span>
+                                <span class="link-name">Modules</span>
+                                <span class="fa fa-angle-up"></span>
+                            </div>
+                        </a>
+                        <ul class="links collapse in"
+                                id="xs-modules-links"
+                            >
+                                <li class="link">
+                                    <a href="../modules/CloningModule.html" >CloningModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaAccordionModule.html" >DejaAccordionModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaAutosizeTextAreaModule.html" >DejaAutosizeTextAreaModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaBackdropModule.html" >DejaBackdropModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaBoldQueryModule.html" >DejaBoldQueryModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaChildValidatorModule.html" >DejaChildValidatorModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaChipsModule.html" >DejaChipsModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaCircularPickerModule.html" >DejaCircularPickerModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaClipboardModule.html" >DejaClipboardModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaCodeViewerModule.html" >DejaCodeViewerModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaColorPickerModule.html" >DejaColorPickerModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaColorSelectorModule.html" >DejaColorSelectorModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaDatePickerModule.html" >DejaDatePickerModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaDateSelectorModule.html" >DejaDateSelectorModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaDialogModule.html" >DejaDialogModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaDragDropModule.html" >DejaDragDropModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaDropDownModule.html" >DejaDropDownModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaEditableModule.html" >DejaEditableModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaFormModule.html" >DejaFormModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaGridModule.html" >DejaGridModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaIFrameModule.html" >DejaIFrameModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaListLoaderModule.html" >DejaListLoaderModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaMarkdownModule.html" >DejaMarkdownModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaMenuModule.html" >DejaMenuModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaMessageBoxModule.html" >DejaMessageBoxModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaMonacoEditorModule.html" >DejaMonacoEditorModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaPipeModule.html" >DejaPipeModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaRangeModule.html" >DejaRangeModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaSelectModule.html" >DejaSelectModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaSortingModule.html" >DejaSortingModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaSplitterModule.html" >DejaSplitterModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaTextMetricsModule.html" >DejaTextMetricsModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaTilesModule.html" >DejaTilesModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaTooltipModule.html" >DejaTooltipModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaTreeListModule.html" >DejaTreeListModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaViewPortModule.html" >DejaViewPortModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/GroupingModule.html" >GroupingModule</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-components-links"
+                            >
+                            <span class="fa fa-cogs"></span>
+                            <span>Components</span>
+                            <span class="fa fa-angle-up"></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-components-links"
+                            >
+                                <li class="link">
+                                    <a href="../components/DejaAccordionBodyComponent.html" >DejaAccordionBodyComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaAccordionComponent.html" >DejaAccordionComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaAccordionGroupComponent.html" >DejaAccordionGroupComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaAccordionHeaderComponent.html" >DejaAccordionHeaderComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaBackdropComponent.html" >DejaBackdropComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaBoldQueryComponent.html" >DejaBoldQueryComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaChipsComponent.html" >DejaChipsComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaCircularPickerComponent.html" >DejaCircularPickerComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaCodeViewerComponent.html" >DejaCodeViewerComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaColorFabComponent.html" >DejaColorFabComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaColorPickerComponent.html" >DejaColorPickerComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaColorSelectorComponent.html" >DejaColorSelectorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaDatePickerComponent.html" >DejaDatePickerComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaDateSelectorComponent.html" >DejaDateSelectorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaDialogComponent.html" >DejaDialogComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaDropDownComponent.html" >DejaDropDownComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaGridComponent.html" >DejaGridComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaGridGroupAreaComponent.html" >DejaGridGroupAreaComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaGridHeaderComponent.html" >DejaGridHeaderComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaGridParentRowComponent.html" >DejaGridParentRowComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaGridRowComponent.html" >DejaGridRowComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaIFrameComponent.html" >DejaIFrameComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaListLoaderComponent.html" >DejaListLoaderComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaMarkdownComponent.html" >DejaMarkdownComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaMenuComponent.html" >DejaMenuComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaMessageBoxComponent.html" >DejaMessageBoxComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaMonacoEditorComponent.html" >DejaMonacoEditorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaRangeComponent.html" >DejaRangeComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaSelectComponent.html" >DejaSelectComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaSnackbarComponent.html" >DejaSnackbarComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaSortIndicatorComponent.html" >DejaSortIndicatorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaSplitterComponent.html" >DejaSplitterComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaTileComponent.html" >DejaTileComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaTileGroupComponent.html" >DejaTileGroupComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaTilesComponent.html" >DejaTilesComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaTooltipComponent.html" >DejaTooltipComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaTreeListComponent.html" >DejaTreeListComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaViewPortComponent.html" >DejaViewPortComponent</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-directives-links"
+                            >
+                            <span class="fa fa-code"></span>
+                            <span>Directives</span>
+                            <span class="fa fa-angle-up"></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-directives-links"
+                            >
+                                <li class="link">
+                                    <a href="../directives/DateValidatorDirective.html" >DateValidatorDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaAutosizeTextAreaDirective.html" >DejaAutosizeTextAreaDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaChildValidatorDirective.html" >DejaChildValidatorDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaDraggableDirective.html" >DejaDraggableDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaDroppableDirective.html" >DejaDroppableDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaEditableDirective.html" >DejaEditableDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaMouseDraggableDirective.html" >DejaMouseDraggableDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaMouseDroppableDirective.html" >DejaMouseDroppableDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaTooltipDirective.html" >DejaTooltipDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/PendingOnFocusDirective.html" >PendingOnFocusDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/SplitAreaDirective.html" >SplitAreaDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/SplitGutterDirective.html" >SplitGutterDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/ValidateOnBlurDirective.html" >ValidateOnBlurDirective</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-classes-links"
+                            >
+                            <span class="fa fa-file-code-o"></span>
+                            <span>Classes</span>
+                            <span class="fa fa-angle-up"></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-classes-links"
+                            >
+                                <li class="link">
+                                    <a href="../classes/Circle.html" >Circle</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Color.html" >Color</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/ColorEvent.html" >ColorEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DateUtils.html" >DateUtils</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaCancelableEvent.html" >DejaCancelableEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaColorFab.html" >DejaColorFab</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaGridColumnsLayoutInfos.html" >DejaGridColumnsLayoutInfos</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaGridRowEvent.html" >DejaGridRowEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaGridRowsEvent.html" >DejaGridRowsEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaItemEvent.html" >DejaItemEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaItemsEvent.html" >DejaItemsEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaTile.html" >DejaTile</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaTreeListScrollEvent.html" >DejaTreeListScrollEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Diacritics.html" >Diacritics</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/EditorOptions.html" >EditorOptions</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/EditorScrollbarOptions.html" >EditorScrollbarOptions</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/GlobalEventEmmitter.html" >GlobalEventEmmitter</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/GroupingService.html" >GroupingService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/HtmlUtils.html" >HtmlUtils</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/IDejaGridColumnLayout.html" >IDejaGridColumnLayout</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/IDejaGridParentRow.html" >IDejaGridParentRow</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/ItemListBase.html" >ItemListBase</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/ItemListService.html" >ItemListService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/JsonUtils.html" >JsonUtils</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/MaterialColor.html" >MaterialColor</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Position.html" >Position</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Range.html" >Range</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Rect.html" >Rect</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Size.html" >Size</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/SortingService.html" >SortingService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/UUID.html" >UUID</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/UnitValue.html" >UnitValue</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/ValidationMessages.html" >ValidationMessages</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/ValueAccessor.html" >ValueAccessor</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-injectables-links"
+                            >
+                            <span class="fa fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="fa fa-angle-up"></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="../injectables/CloningService.html" >CloningService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/DejaClipboardService.html" >DejaClipboardService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/DejaMouseDragDropService.html" >DejaMouseDragDropService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/DejaTextMetricsService.html" >DejaTextMetricsService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/DejaTilesLayoutProvider.html" >DejaTilesLayoutProvider</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/DejaTooltipService.html" >DejaTooltipService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/GlobalEventService.html" >GlobalEventService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/MaterialColors.html" >MaterialColors</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/MonacoEditorService.html" >MonacoEditorService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/ViewPortService.html" >ViewPortService</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-interfaces-links"
+                            >
+                            <span class="fa fa-info"></span>
+                            <span>Interfaces</span>
+                            <span class="fa fa-angle-up"></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-interfaces-links"
+                            >
+                                <li class="link">
+                                    <a href="../interfaces/IAnimation.html" >IAnimation</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IAreaData.html" >IAreaData</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/ICircularRange.html" >ICircularRange</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/ICircularValue.html" >ICircularValue</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IConfig.html" >IConfig</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDateSelectorItem.html" >IDateSelectorItem</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaDragContext.html" >IDejaDragContext</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaDragEvent.html" >IDejaDragEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaDropContext.html" >IDejaDropContext</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaDropEvent.html" >IDejaDropEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaGridColumn.html" >IDejaGridColumn</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaGridColumnEvent.html" >IDejaGridColumnEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaGridColumnLayoutEvent.html" >IDejaGridColumnLayoutEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaGridColumnSizeEvent.html" >IDejaGridColumnSizeEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaGridGroupsEvent.html" >IDejaGridGroupsEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaGridParentRowColumnLayout.html" >IDejaGridParentRowColumnLayout</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaGridRow.html" >IDejaGridRow</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaMouseDraggableContext.html" >IDejaMouseDraggableContext</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaMouseDroppableContext.html" >IDejaMouseDroppableContext</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaTile.html" >IDejaTile</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaTileEffect.html" >IDejaTileEffect</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaTilesAddEvent.html" >IDejaTilesAddEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaTilesCancelableEvent.html" >IDejaTilesCancelableEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaTilesEvent.html" >IDejaTilesEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaTilesModelEvent.html" >IDejaTilesModelEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaTilesRefreshParams.html" >IDejaTilesRefreshParams</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaTilesRemoveEvent.html" >IDejaTilesRemoveEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaViewPortItem.html" >IDejaViewPortItem</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDragCursorInfos.html" >IDragCursorInfos</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDragDropContext.html" >IDragDropContext</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDragDropInfos.html"  data-type="entity-link" class="active" >IDragDropInfos</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDragSelection.html" >IDragSelection</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDropCursorInfos.html" >IDropCursorInfos</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDropDownPosition.html" >IDropDownPosition</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDropDownResetParams.html" >IDropDownResetParams</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IEnsureParams.html" >IEnsureParams</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IFindItemResult.html" >IFindItemResult</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IFindItemsResult.html" >IFindItemsResult</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IGroupInfo.html" >IGroupInfo</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IGroupParent.html" >IGroupParent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IItemBase.html" >IItemBase</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IItemTree.html" >IItemTree</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IItemTreeInfo.html" >IItemTreeInfo</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/ILayoutInfo.html" >ILayoutInfo</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/ILayoutInfos.html" >ILayoutInfos</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IParentListInfoResult.html" >IParentListInfoResult</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IRange.html" >IRange</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IRangeEvent.html" >IRangeEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IRectOverlapInfos.html" >IRectOverlapInfos</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/ISortInfos.html" >ISortInfos</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IStepRangeEvent.html" >IStepRangeEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/ITooltipParams.html" >ITooltipParams</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IValidationError.html" >IValidationError</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IViewListResult.html" >IViewListResult</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IViewPort.html" >IViewPort</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IViewPortItem.html" >IViewPortItem</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IViewPortRefreshParams.html" >IViewPortRefreshParams</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/Point.html" >Point</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-pipes-links"
+                            >
+                            <span class="fa fa-plus"></span>
+                            <span>Pipes</span>
+                            <span class="fa fa-angle-up"></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-pipes-links"
+                            >
+                                <li class="link">
+                                    <a href="../pipes/KeysPipe.html" >KeysPipe</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../pipes/SafeHTMLPipe.html" >SafeHTMLPipe</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../pipes/SafeStylePipe.html" >SafeStylePipe</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../pipes/StringToDateFormatPipe.html" >StringToDateFormatPipe</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../pipes/TimeAgoPipe.html" >TimeAgoPipe</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                    </li>
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                    </li>
+            
+            
+                </ul>
+            
+            </nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+                   
+                       <ul class="list">
+                   
+                           <li class="title">
+                               <a href="../index.html">@deja-js/component</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                   
+                               <div id="book-search-input" role="search">
+                                   <input type="text" placeholder="Type to search">
+                               </div>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                               <ul class="links">
+                                       <li class="link">
+                                           <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
+                                       <li class="link">
+                                           <a 
+                                               
+                                                href="../overview.html" 
+                                                href="../overview.html" 
+                                               >
+                                               <span class="fa fa-th"></span>Overview
+                                           </a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../modules.html" >
+                                   <div class="menu-toggler linked" data-toggle="collapse"
+                                           data-target="#modules-links"
+                                   >
+                                       <span class="fa fa-archive"></span>
+                                       <span class="link-name">Modules</span>
+                                       <span class="fa fa-angle-up"></span>
+                                   </div>
+                               </a>
+                               <ul class="links collapse in"
+                                       id="modules-links"
+                   >
+                                       <li class="link">
+                                           <a href="../modules/CloningModule.html" >CloningModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaAccordionModule.html" >DejaAccordionModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaAutosizeTextAreaModule.html" >DejaAutosizeTextAreaModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaBackdropModule.html" >DejaBackdropModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaBoldQueryModule.html" >DejaBoldQueryModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaChildValidatorModule.html" >DejaChildValidatorModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaChipsModule.html" >DejaChipsModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaCircularPickerModule.html" >DejaCircularPickerModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaClipboardModule.html" >DejaClipboardModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaCodeViewerModule.html" >DejaCodeViewerModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaColorPickerModule.html" >DejaColorPickerModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaColorSelectorModule.html" >DejaColorSelectorModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaDatePickerModule.html" >DejaDatePickerModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaDateSelectorModule.html" >DejaDateSelectorModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaDialogModule.html" >DejaDialogModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaDragDropModule.html" >DejaDragDropModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaDropDownModule.html" >DejaDropDownModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaEditableModule.html" >DejaEditableModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaFormModule.html" >DejaFormModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaGridModule.html" >DejaGridModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaIFrameModule.html" >DejaIFrameModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaListLoaderModule.html" >DejaListLoaderModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaMarkdownModule.html" >DejaMarkdownModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaMenuModule.html" >DejaMenuModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaMessageBoxModule.html" >DejaMessageBoxModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaMonacoEditorModule.html" >DejaMonacoEditorModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaPipeModule.html" >DejaPipeModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaRangeModule.html" >DejaRangeModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaSelectModule.html" >DejaSelectModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaSortingModule.html" >DejaSortingModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaSplitterModule.html" >DejaSplitterModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaTextMetricsModule.html" >DejaTextMetricsModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaTilesModule.html" >DejaTilesModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaTooltipModule.html" >DejaTooltipModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaTreeListModule.html" >DejaTreeListModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaViewPortModule.html" >DejaViewPortModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/GroupingModule.html" >GroupingModule</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#components-links"
+                   >
+                                   <span class="fa fa-cogs"></span>
+                                   <span>Components</span>
+                                   <span class="fa fa-angle-up"></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="components-links"
+                   >
+                                       <li class="link">
+                                           <a href="../components/DejaAccordionBodyComponent.html" >DejaAccordionBodyComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaAccordionComponent.html" >DejaAccordionComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaAccordionGroupComponent.html" >DejaAccordionGroupComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaAccordionHeaderComponent.html" >DejaAccordionHeaderComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaBackdropComponent.html" >DejaBackdropComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaBoldQueryComponent.html" >DejaBoldQueryComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaChipsComponent.html" >DejaChipsComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaCircularPickerComponent.html" >DejaCircularPickerComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaCodeViewerComponent.html" >DejaCodeViewerComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaColorFabComponent.html" >DejaColorFabComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaColorPickerComponent.html" >DejaColorPickerComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaColorSelectorComponent.html" >DejaColorSelectorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaDatePickerComponent.html" >DejaDatePickerComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaDateSelectorComponent.html" >DejaDateSelectorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaDialogComponent.html" >DejaDialogComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaDropDownComponent.html" >DejaDropDownComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaGridComponent.html" >DejaGridComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaGridGroupAreaComponent.html" >DejaGridGroupAreaComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaGridHeaderComponent.html" >DejaGridHeaderComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaGridParentRowComponent.html" >DejaGridParentRowComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaGridRowComponent.html" >DejaGridRowComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaIFrameComponent.html" >DejaIFrameComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaListLoaderComponent.html" >DejaListLoaderComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaMarkdownComponent.html" >DejaMarkdownComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaMenuComponent.html" >DejaMenuComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaMessageBoxComponent.html" >DejaMessageBoxComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaMonacoEditorComponent.html" >DejaMonacoEditorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaRangeComponent.html" >DejaRangeComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaSelectComponent.html" >DejaSelectComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaSnackbarComponent.html" >DejaSnackbarComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaSortIndicatorComponent.html" >DejaSortIndicatorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaSplitterComponent.html" >DejaSplitterComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaTileComponent.html" >DejaTileComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaTileGroupComponent.html" >DejaTileGroupComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaTilesComponent.html" >DejaTilesComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaTooltipComponent.html" >DejaTooltipComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaTreeListComponent.html" >DejaTreeListComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaViewPortComponent.html" >DejaViewPortComponent</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#directives-links"
+                   >
+                                   <span class="fa fa-code"></span>
+                                   <span>Directives</span>
+                                   <span class="fa fa-angle-up"></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="directives-links"
+                   >
+                                       <li class="link">
+                                           <a href="../directives/DateValidatorDirective.html" >DateValidatorDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaAutosizeTextAreaDirective.html" >DejaAutosizeTextAreaDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaChildValidatorDirective.html" >DejaChildValidatorDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaDraggableDirective.html" >DejaDraggableDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaDroppableDirective.html" >DejaDroppableDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaEditableDirective.html" >DejaEditableDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaMouseDraggableDirective.html" >DejaMouseDraggableDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaMouseDroppableDirective.html" >DejaMouseDroppableDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaTooltipDirective.html" >DejaTooltipDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/PendingOnFocusDirective.html" >PendingOnFocusDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/SplitAreaDirective.html" >SplitAreaDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/SplitGutterDirective.html" >SplitGutterDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/ValidateOnBlurDirective.html" >ValidateOnBlurDirective</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#classes-links"
+                   >
+                                   <span class="fa fa-file-code-o"></span>
+                                   <span>Classes</span>
+                                   <span class="fa fa-angle-up"></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="classes-links"
+                   >
+                                       <li class="link">
+                                           <a href="../classes/Circle.html" >Circle</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Color.html" >Color</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/ColorEvent.html" >ColorEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DateUtils.html" >DateUtils</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaCancelableEvent.html" >DejaCancelableEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaColorFab.html" >DejaColorFab</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaGridColumnsLayoutInfos.html" >DejaGridColumnsLayoutInfos</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaGridRowEvent.html" >DejaGridRowEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaGridRowsEvent.html" >DejaGridRowsEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaItemEvent.html" >DejaItemEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaItemsEvent.html" >DejaItemsEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaTile.html" >DejaTile</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaTreeListScrollEvent.html" >DejaTreeListScrollEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Diacritics.html" >Diacritics</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/EditorOptions.html" >EditorOptions</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/EditorScrollbarOptions.html" >EditorScrollbarOptions</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/GlobalEventEmmitter.html" >GlobalEventEmmitter</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/GroupingService.html" >GroupingService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/HtmlUtils.html" >HtmlUtils</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/IDejaGridColumnLayout.html" >IDejaGridColumnLayout</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/IDejaGridParentRow.html" >IDejaGridParentRow</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/ItemListBase.html" >ItemListBase</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/ItemListService.html" >ItemListService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/JsonUtils.html" >JsonUtils</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/MaterialColor.html" >MaterialColor</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Position.html" >Position</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Range.html" >Range</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Rect.html" >Rect</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Size.html" >Size</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/SortingService.html" >SortingService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/UUID.html" >UUID</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/UnitValue.html" >UnitValue</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/ValidationMessages.html" >ValidationMessages</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/ValueAccessor.html" >ValueAccessor</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#injectables-links"
+                   >
+                                   <span class="fa fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="fa fa-angle-up"></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="../injectables/CloningService.html" >CloningService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/DejaClipboardService.html" >DejaClipboardService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/DejaMouseDragDropService.html" >DejaMouseDragDropService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/DejaTextMetricsService.html" >DejaTextMetricsService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/DejaTilesLayoutProvider.html" >DejaTilesLayoutProvider</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/DejaTooltipService.html" >DejaTooltipService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/GlobalEventService.html" >GlobalEventService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/MaterialColors.html" >MaterialColors</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/MonacoEditorService.html" >MonacoEditorService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/ViewPortService.html" >ViewPortService</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#interfaces-links"
+                   >
+                                   <span class="fa fa-info"></span>
+                                   <span>Interfaces</span>
+                                   <span class="fa fa-angle-up"></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="interfaces-links"
+                   >
+                                       <li class="link">
+                                           <a href="../interfaces/IAnimation.html" >IAnimation</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IAreaData.html" >IAreaData</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/ICircularRange.html" >ICircularRange</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/ICircularValue.html" >ICircularValue</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IConfig.html" >IConfig</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDateSelectorItem.html" >IDateSelectorItem</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaDragContext.html" >IDejaDragContext</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaDragEvent.html" >IDejaDragEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaDropContext.html" >IDejaDropContext</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaDropEvent.html" >IDejaDropEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaGridColumn.html" >IDejaGridColumn</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaGridColumnEvent.html" >IDejaGridColumnEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaGridColumnLayoutEvent.html" >IDejaGridColumnLayoutEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaGridColumnSizeEvent.html" >IDejaGridColumnSizeEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaGridGroupsEvent.html" >IDejaGridGroupsEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaGridParentRowColumnLayout.html" >IDejaGridParentRowColumnLayout</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaGridRow.html" >IDejaGridRow</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaMouseDraggableContext.html" >IDejaMouseDraggableContext</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaMouseDroppableContext.html" >IDejaMouseDroppableContext</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaTile.html" >IDejaTile</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaTileEffect.html" >IDejaTileEffect</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaTilesAddEvent.html" >IDejaTilesAddEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaTilesCancelableEvent.html" >IDejaTilesCancelableEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaTilesEvent.html" >IDejaTilesEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaTilesModelEvent.html" >IDejaTilesModelEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaTilesRefreshParams.html" >IDejaTilesRefreshParams</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaTilesRemoveEvent.html" >IDejaTilesRemoveEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaViewPortItem.html" >IDejaViewPortItem</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDragCursorInfos.html" >IDragCursorInfos</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDragDropContext.html" >IDragDropContext</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDragDropInfos.html"  data-type="entity-link" class="active" >IDragDropInfos</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDragSelection.html" >IDragSelection</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDropCursorInfos.html" >IDropCursorInfos</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDropDownPosition.html" >IDropDownPosition</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDropDownResetParams.html" >IDropDownResetParams</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IEnsureParams.html" >IEnsureParams</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IFindItemResult.html" >IFindItemResult</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IFindItemsResult.html" >IFindItemsResult</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IGroupInfo.html" >IGroupInfo</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IGroupParent.html" >IGroupParent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IItemBase.html" >IItemBase</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IItemTree.html" >IItemTree</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IItemTreeInfo.html" >IItemTreeInfo</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/ILayoutInfo.html" >ILayoutInfo</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/ILayoutInfos.html" >ILayoutInfos</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IParentListInfoResult.html" >IParentListInfoResult</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IRange.html" >IRange</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IRangeEvent.html" >IRangeEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IRectOverlapInfos.html" >IRectOverlapInfos</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/ISortInfos.html" >ISortInfos</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IStepRangeEvent.html" >IStepRangeEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/ITooltipParams.html" >ITooltipParams</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IValidationError.html" >IValidationError</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IViewListResult.html" >IViewListResult</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IViewPort.html" >IViewPort</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IViewPortItem.html" >IViewPortItem</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IViewPortRefreshParams.html" >IViewPortRefreshParams</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/Point.html" >Point</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#pipes-links"
+                   >
+                                   <span class="fa fa-plus"></span>
+                                   <span>Pipes</span>
+                                   <span class="fa fa-angle-up"></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="pipes-links"
+                   >
+                                       <li class="link">
+                                           <a href="../pipes/KeysPipe.html" >KeysPipe</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../pipes/SafeHTMLPipe.html" >SafeHTMLPipe</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../pipes/SafeStylePipe.html" >SafeStylePipe</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../pipes/StringToDateFormatPipe.html" >StringToDateFormatPipe</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../pipes/TimeAgoPipe.html" >TimeAgoPipe</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                           </li>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                           </li>
+                   
+                   
+                       </ul>
+                   
+                   </nav>
+               </div>
+               <div class="content interface">
+                   <div class="content-data">
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Interfaces</li>
+  <li>IDragDropInfos</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active">
+        <a href="#infos" id="infos-tab" role="tab" data-toggle="tab">Infos</a>
+    </li>
+    <li>
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="infos">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/component/tiles/tiles-layout.provider.ts</code>
+        </p>
+
+
+
+
+
+            <section>
+                <h3 id="inputs">Properties</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>enabled</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>enabled:     <code>boolean</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>boolean</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/component/tiles/tiles-layout.provider.ts:44</a></div>
+                                        </td>
+                                    </tr>
+
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>startX</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>startX:     <code>number</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>number</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/component/tiles/tiles-layout.provider.ts:45</a></div>
+                                        </td>
+                                    </tr>
+
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>startY</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>startY:     <code>number</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>number</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/component/tiles/tiles-layout.provider.ts:46</a></div>
+                                        </td>
+                                    </tr>
+
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <b>tiles</b>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <code>tiles:     <code>{}</code>
+</bcode>
+                                    </td>
+                                </tr>
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <i>Type : </i>    <code>{}</code>
+
+                                        </td>
+                                    </tr>
+
+
+
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/component/tiles/tiles-layout.provider.ts:47</a></div>
+                                        </td>
+                                    </tr>
+
+                        </tbody>
+                    </table>
+            </section>
+    </div>
+    <div class="tab-pane fade tab-source-code" id="source">
+        <pre class="line-numbers"><code class="language-typescript">import { EventEmitter, Injectable, OnDestroy, Optional } from &#x27;@angular/core&#x27;;
+import &#x27;rxjs/add/operator/take&#x27;;
+import { BehaviorSubject } from &#x27;rxjs/BehaviorSubject&#x27;;
+import { Observable } from &#x27;rxjs/Observable&#x27;;
+import { Subject } from &#x27;rxjs/Subject&#x27;;
+import { Subscription } from &#x27;rxjs/Subscription&#x27;;
+import { DejaClipboardService } from &#x27;../../common/core/clipboard/clipboard.service&#x27;;
+import { Directions } from &#x27;../../common/core/graphics/directions&#x27;;
+import { Position } from &#x27;../../common/core/graphics/position&#x27;;
+import { Rect } from &#x27;../../common/core/graphics/rect&#x27;;
+import { Size } from &#x27;../../common/core/graphics/size&#x27;;
+import { KeyCodes } from &#x27;../../common/core/keycodes.enum&#x27;;
+import { IDragCursorInfos, IDragDropContext } from &#x27;../mouse-dragdrop/mouse-dragdrop.service&#x27;;
+import { DejaTile } from &#x27;./tile.class&#x27;;
+import { IDejaTile } from &#x27;./tile.interface&#x27;;
+import { IDejaTilesAddEvent, IDejaTilesEvent, IDejaTilesModelEvent, IDejaTilesRemoveEvent } from &#x27;./tiles.event&#x27;;
+
+interface ILayoutInfo {
+    id: string;
+    bounds: Rect;
+}
+
+interface ILayoutInfos {
+    infos: { [id: string]: ILayoutInfo };
+    height: number;
+    targetBounds: Rect;
+    validBounds: Rect;
+}
+
+export interface IDragSelection {
+    startPosition: Position;
+    selectedRect: Rect;
+}
+
+export interface IDragDropInfos {
+    enabled: boolean;
+    startX: number;
+    startY: number;
+    tiles: DejaTile[];
+}
+
+export interface IDejaTilesRefreshParams {
+    resetWidth?: boolean;
+    ensureVisible?: string; // Tile id
+    ensureBounds?: Rect;
+}
+
+@Injectable()
+export class DejaTilesLayoutProvider implements OnDestroy {
+    public refreshTiles$ &#x3D; new Subject&lt;IDejaTilesRefreshParams&gt;();
+    public ensureVisible$ &#x3D; new Subject&lt;string&gt;();
+    public ensureBounds$ &#x3D; new Subject&lt;Rect&gt;();
+    public dragging$ &#x3D; new BehaviorSubject&lt;boolean&gt;(false);
+    public dragSelection$ &#x3D; new Subject&lt;IDragSelection&gt;();
+    public dragDropInfos$ &#x3D; new Subject&lt;IDragDropInfos&gt;();
+    public selectionRect$ &#x3D; new Subject&lt;Rect&gt;();
+    public dragover$ &#x3D; new Subject&lt;IDragCursorInfos&gt;();
+    public dragleave$ &#x3D; new Subject();
+    public deleteTiles$ &#x3D; new Subject&lt;DejaTile[]&gt;();
+    public designMode &#x3D; false;
+
+    public layoutChanged &#x3D; new EventEmitter&lt;IDejaTilesEvent&gt;();
+    public modelChanged &#x3D; new EventEmitter&lt;IDejaTilesModelEvent&gt;();
+    public selectionChanged &#x3D; new EventEmitter&lt;IDejaTilesEvent&gt;();
+    public contentAdding &#x3D; new EventEmitter&lt;IDejaTilesAddEvent&gt;();
+    public contentRemoving &#x3D; new EventEmitter&lt;IDejaTilesRemoveEvent&gt;();
+
+    protected tileMinWidth &#x3D; 10;
+    protected tileMinWidthUnit &#x3D; &#x27;%&#x27;;
+    protected tileMaxWidth &#x3D; 100;
+    protected tileMaxWidthUnit &#x3D; &#x27;%&#x27;;
+    protected tileMinHeight &#x3D; 10;
+    protected tileMinHeightUnit &#x3D; &#x27;%&#x27;;
+    protected tileMaxHeight &#x3D; 100;
+    protected tileMaxHeightUnit &#x3D; &#x27;%&#x27;;
+    protected maxWidth &#x3D; 100;
+    protected maxWidthUnit &#x3D; &#x27;%&#x27;;
+
+    private tilesDic &#x3D; {} as { [id: string]: DejaTile };
+    private _tiles: DejaTile[];
+    private _cursor: string;
+    private _targetBounds &#x3D; {} as Rect;
+    private destination &#x3D; {} as Rect;
+    private lastTargetBounds: Rect;
+    private moveTimout: Subscription;
+    private originalLayout: ILayoutInfos;
+    private validLayout: ILayoutInfos;
+    private beforeSizeLayout: ILayoutInfos;
+    private dragPageOffset &#x3D; {} as Position;
+    private dragOriginalPosition &#x3D; {} as Position;
+    private dragRelativePosition: { [id: string]: Position };
+    private expandedTile: DejaTile;
+    private _container: HTMLElement;
+    private currentTile: DejaTile;
+    private hundredPercentWith: number;
+    private dragTarget: Rect;
+    private subscriptions: Subscription[] &#x3D; [];
+
+    private selectedIds &#x3D; [] as string[];
+
+    constructor( @Optional() private clipboardService: DejaClipboardService) {
+        this.subscriptions.push(Observable.from(this.refreshTiles$)
+            .debounceTime(30)
+            .do(() &#x3D;&gt; {
+                this.container.style.width &#x3D; &#x27;&#x27;;
+                this.container.style.height &#x3D; &#x27;&#x27;;
+            })
+            .delay(10)
+            .subscribe((params) &#x3D;&gt; {
+                const placeAtTheEnd &#x3D; [] as DejaTile[];
+
+                const containerBounds &#x3D; this.container.getBoundingClientRect();
+                if ((params &amp;&amp; params.resetWidth) || !this.hundredPercentWith) {
+                    this.hundredPercentWith &#x3D; containerBounds.width;
+                }
+                let height &#x3D; containerBounds.height - 20;
+                let width &#x3D; containerBounds.width - 20;
+                const tiles &#x3D; this.tiles || [];
+
+                const selectedTileIds &#x3D; [];
+
+                tiles.forEach((tile: DejaTile) &#x3D;&gt; {
+                    if (tile.percentBounds &amp;&amp; !tile.percentBounds.isEmpty()) {
+                        const bounds &#x3D; this.getPixelBounds(tile.percentBounds);
+                        if (bounds.bottom &gt; height) {
+                            height &#x3D; bounds.bottom;
+                        }
+                        if (bounds.right &gt; width) {
+                            width &#x3D; bounds.right;
+                        }
+                        if (!tile.isDragging) {
+                            tile.pixelBounds &#x3D; bounds;
+                        }
+                    } else {
+                        placeAtTheEnd.push(tile);
+                    }
+                    if (tile.isSelected &amp;&amp; !tile.isHidden) {
+                        selectedTileIds.push(tile.id);
+                    }
+                });
+
+                let top &#x3D; height;
+                let left &#x3D; 0;
+                placeAtTheEnd.forEach((tile) &#x3D;&gt; {
+                    tile.percentBounds &#x3D; tile.percentBounds || new Rect(left, this.getPercentSize(top), 3 * this.getTileMinPercentWidth(), this.getTileMinPercentHeight());
+                    const pixelBounds &#x3D; this.getPixelBounds(tile.percentBounds);
+
+                    if (pixelBounds.right &gt; width) {
+                        top +&#x3D; pixelBounds.top;
+                        tile.percentBounds.left &#x3D; 0;
+                        tile.percentBounds.top &#x3D; this.getPercentSize(pixelBounds.top);
+                    }
+
+                    if (pixelBounds.bottom &gt; height) {
+                        height &#x3D; pixelBounds.bottom;
+                    }
+
+                    tile.pixelBounds &#x3D; this.getPixelBounds(tile.percentBounds);
+                    left +&#x3D; pixelBounds.left;
+                });
+
+                if (this.dragTarget) {
+                    const dragBounds &#x3D; this.getPixelBounds(this.dragTarget);
+                    if (height &lt;&#x3D; dragBounds.bottom) {
+                        height &#x3D; dragBounds.bottom + dragBounds.height;
+                    }
+                    if (width &lt;&#x3D; dragBounds.right) {
+                        width &#x3D; dragBounds.right + dragBounds.width;
+                    }
+                }
+
+                const minHeight &#x3D; this.getPixelSize(2 * this.tileMinHeight, this.tileMinHeightUnit);
+                if (height &lt; minHeight) {
+                    height &#x3D; minHeight;
+                }
+
+                this.container.style.width &#x3D; &#x60;${width}px&#x60;;
+                this.container.style.height &#x3D; &#x60;${height}px&#x60;;
+
+                if (params) {
+                    if (params.ensureVisible) {
+                        this.ensureVisible$.next(params.ensureVisible);
+                    }
+                    if (params.ensureBounds) {
+                        this.ensureBounds$.next(params.ensureBounds);
+                    }
+                }
+
+                this.selectedTiles &#x3D; selectedTileIds;
+            }));
+
+        const ensureTile$ &#x3D; Observable.from(this.ensureVisible$)
+            .delay(1)
+            .map((id) &#x3D;&gt; this.tilesDic[id])
+            .filter((tile) &#x3D;&gt; !!tile)
+            .map((tile) &#x3D;&gt; tile.percentBounds);
+
+        this.subscriptions.push(Observable.merge(this.ensureBounds$, ensureTile$)
+            .subscribe((percentBounds) &#x3D;&gt; {
+                const { left, right, top, bottom } &#x3D; this.getPixelBounds(percentBounds);
+
+                const findScrollContainer &#x3D; (container: HTMLElement) &#x3D;&gt; {
+                    while (container &amp;&amp; container.scrollHeight &#x3D;&#x3D;&#x3D; container.clientHeight) {
+                        container &#x3D; container.parentElement;
+                    }
+
+                    return container;
+                };
+
+                const scrollContainer &#x3D; findScrollContainer(this.container);
+                if (!scrollContainer) {
+                    return;
+                }
+
+                const containerBounds &#x3D; this.container.getBoundingClientRect();
+                const scrollBounds &#x3D; scrollContainer.getBoundingClientRect();
+
+                if (left + containerBounds.left &lt; scrollBounds.bottom) {
+                    scrollContainer.scrollLeft +&#x3D; left + containerBounds.left - scrollBounds.bottom;
+                } else if (right + containerBounds.left &gt; scrollBounds.right) {
+                    scrollContainer.scrollLeft +&#x3D; right + containerBounds.left - scrollBounds.right;
+                }
+
+                if (top + containerBounds.top &lt; scrollBounds.top) {
+                    scrollContainer.scrollTop +&#x3D; top + containerBounds.top - scrollBounds.top;
+                } else if (bottom + containerBounds.top &gt; scrollBounds.bottom) {
+                    scrollContainer.scrollTop +&#x3D; bottom + containerBounds.top - scrollBounds.bottom;
+                }
+            }));
+
+        this.subscriptions.push(Observable.from(this.dragSelection$)
+            .subscribe((dragSelection) &#x3D;&gt; {
+                const mouseUp$ &#x3D; Observable
+                    .fromEvent(this._container.ownerDocument, &#x27;mouseup&#x27;)
+                    .do(() &#x3D;&gt; this.selectionRect$.next(null));
+
+                Observable
+                    .fromEvent(this._container, &#x27;mousemove&#x27;)
+                    .takeUntil(mouseUp$)
+                    .filter((event: MouseEvent) &#x3D;&gt; event.buttons &#x3D;&#x3D;&#x3D; 1)
+                    .subscribe((event: MouseEvent) &#x3D;&gt; {
+                        const containerBounds &#x3D; this._container.getBoundingClientRect();
+
+                        // Select all tiles between start position and current position
+                        dragSelection.selectedRect &#x3D; Rect.fromPoints(dragSelection.startPosition, new Position(event.pageX - containerBounds.left, event.pageY - containerBounds.top));
+                        this.selectionRect$.next(dragSelection.selectedRect);
+
+                        const selection &#x3D; this.HitTest(dragSelection.selectedRect);
+                        this.selectedTiles &#x3D; selection.map((tile) &#x3D;&gt; tile.id);
+                    });
+            }));
+
+        const leave$ &#x3D; Observable.from(this.dragleave$);
+
+        this.subscriptions.push(Observable.from(this.dragDropInfos$)
+            .subscribe((dragDropInfos) &#x3D;&gt; {
+                if (!dragDropInfos || !dragDropInfos.tiles || !dragDropInfos.tiles.length) {
+                    return;
+                }
+
+                const mousemove$ &#x3D; Observable.fromEvent(this._container, &#x27;mousemove&#x27;);
+                const mouseUp$ &#x3D; Observable.fromEvent(this._container.ownerDocument, &#x27;mouseup&#x27;);
+                const keyUp$ &#x3D; Observable.fromEvent(this._container.ownerDocument, &#x27;keyup&#x27;);
+                const escape$ &#x3D; keyUp$.filter((event: KeyboardEvent) &#x3D;&gt; event.keyCode &#x3D;&#x3D;&#x3D; KeyCodes.Escape);
+                const cancel$ &#x3D; Observable.merge(leave$, mousemove$.filter((event: MouseEvent) &#x3D;&gt; event.buttons !&#x3D;&#x3D; 1), escape$);
+
+                const kill$ &#x3D; Observable.merge(mouseUp$, cancel$);
+
+                let mouseUp$sub: Subscription;
+
+                const cancel$sub &#x3D; cancel$
+                    .take(1)
+                    .do(() &#x3D;&gt; mouseUp$sub.unsubscribe())
+                    .subscribe(() &#x3D;&gt; {
+                        this.removeTemporaryTile();
+                        this.cancelDrag(dragDropInfos.tiles);
+                    });
+
+                mouseUp$sub &#x3D; mouseUp$
+                    .take(1)
+                    .do(() &#x3D;&gt; cancel$sub.unsubscribe())
+                    .subscribe(() &#x3D;&gt; this.drop(dragDropInfos.tiles));
+
+                const dragover$ &#x3D; Observable.from(this.dragover$)
+                    .map((cursor) &#x3D;&gt; cursor.originalEvent);
+
+                Observable.merge(mousemove$, dragover$)
+                    .takeUntil(kill$)
+                    .subscribe((event: MouseEvent) &#x3D;&gt; {
+                        const containerBounds &#x3D; this._container.getBoundingClientRect();
+                        const x &#x3D; event.pageX - containerBounds.left;
+                        const y &#x3D; event.pageY - containerBounds.top;
+
+                        if (!dragDropInfos.enabled) {
+                            if (Math.abs(dragDropInfos.startX - x) &gt; 10 || Math.abs(dragDropInfos.startY - y) &gt; 10) {
+                                // Allow drag and drop of new tiles from outside the component
+                                if (dragDropInfos.tiles.length &#x3D;&#x3D;&#x3D; 1 &amp;&amp; !this.tiles.find((t) &#x3D;&gt; t &#x3D;&#x3D;&#x3D; dragDropInfos.tiles[0])) {
+                                    const tempTile &#x3D; dragDropInfos.tiles[0];
+
+                                    // Clear current selection
+                                    this.selectedTiles &#x3D; [tempTile.id];
+
+                                    let bounds &#x3D; tempTile.percentBounds;
+                                    if (!bounds || bounds.isEmpty()) {
+                                        bounds &#x3D; new Rect(0, 0, 15, 15);
+                                    }
+
+                                    const idealBounds &#x3D; this.getFreePlace(new Rect(this.getPercentSize(x) - bounds.width / 2, this.getPercentSize(y) - bounds.height / 2, bounds.width, bounds.height));
+                                    dragDropInfos.startX &#x3D; idealBounds.left - bounds.width / 2;
+                                    dragDropInfos.startY &#x3D; idealBounds.top - bounds.height / 2;
+
+                                    tempTile.percentBounds &#x3D; idealBounds;
+                                    tempTile.dragging$.next(true);
+
+                                    this._cursor &#x3D; &#x27;move&#x27;;
+
+                                    this.tiles.push(tempTile);
+                                    this.tilesDic[tempTile.id] &#x3D; tempTile;
+
+                                    // Start tile drag and drop
+                                    this.dragging$.next(true);
+                                    dragDropInfos.enabled &#x3D; true;
+                                    this.startDrag(dragDropInfos.tiles, this.getPixelSize(idealBounds.left + idealBounds.width / 2), this.getPixelSize(idealBounds.top + idealBounds.height / 2));
+
+                                } else {
+                                    // Start tile drag and drop
+                                    this.dragging$.next(true);
+                                    dragDropInfos.enabled &#x3D; true;
+                                    this.startDrag(dragDropInfos.tiles, x, y);
+                                }
+
+                            }
+                        } else {
+                            this.drag(dragDropInfos.tiles, x, y);
+                        }
+                    });
+            }));
+
+        // Delete stream for clipboard
+        this.subscriptions.push(Observable.from(this.deleteTiles$)
+            .subscribe((tilesToDelete) &#x3D;&gt; this.deleteTiles(tilesToDelete)));
+    }
+
+    public set container(container: HTMLElement) {
+        this._container &#x3D; container;
+
+        const leave$ &#x3D; Observable.fromEvent(container, &#x27;mouseleave&#x27;);
+        const mouseUp$ &#x3D; Observable.fromEvent(container.ownerDocument, &#x27;mouseup&#x27;);
+
+        Observable.fromEvent(container, &#x27;mouseenter&#x27;)
+            .subscribe(() &#x3D;&gt; {
+                // Cursor provider
+                if (this.designMode) {
+                    Observable.fromEvent(container, &#x27;mousemove&#x27;)
+                        .debounceTime(10)
+                        .takeUntil(leave$)
+                        .filter((event: MouseEvent) &#x3D;&gt; event.buttons &#x3D;&#x3D;&#x3D; 0)
+                        .subscribe((event: MouseEvent) &#x3D;&gt; {
+                            this._cursor &#x3D; this.getCursorFromHTMLElement(event.pageX, event.pageY, event.target as HTMLElement);
+                            this.container.style.cursor &#x3D; this._cursor;
+                        });
+                } else {
+                    this.container.style.cursor &#x3D; &#x27;&#x27;;
+                }
+
+                const mouseDown$ &#x3D; Observable
+                    .fromEvent(container, &#x27;mousedown&#x27;)
+                    .filter((event: MouseEvent) &#x3D;&gt; event.buttons &#x3D;&#x3D;&#x3D; 1)
+                    .map((event: MouseEvent) &#x3D;&gt; ({ event: event, target: event.target as HTMLElement, clickedTile: this.getTileComponentFromHTMLElement(event.target as HTMLElement) }));
+
+                // Pressed and selected tile observers
+                mouseDown$.takeUntil(leave$)
+                    .subscribe(({ event, target, clickedTile }) &#x3D;&gt; {
+                        if (this.currentTile) {
+                            this.currentTile.isPressed &#x3D; false;
+                        }
+                        this.currentTile &#x3D; clickedTile;
+                        if (this.currentTile) {
+                            this.currentTile.isPressed &#x3D; true;
+
+                            if (event.ctrlKey) {
+                                // Multi-selection is available in design mode, selection on the mouse up
+                            } else {
+                                if (!this.currentTile.isSelected || this._cursor !&#x3D;&#x3D; &#x27;move&#x27;) {
+                                    this.selectedTiles &#x3D; [this.currentTile.id];
+                                }
+
+                                if (this.designMode) {
+                                    const containerBounds &#x3D; this._container.getBoundingClientRect();
+                                    const x &#x3D; event.pageX - containerBounds.left;
+                                    const y &#x3D; event.pageY - containerBounds.top;
+
+                                    this.dragDropInfos$.next({
+                                        enabled: false,
+                                        startX: x,
+                                        startY: y,
+                                        tiles: this.tiles.filter((tile) &#x3D;&gt; tile.isSelected),
+                                    } as IDragDropInfos);
+                                }
+                            }
+
+                            Observable.merge(mouseUp$, leave$)
+                                .first()
+                                .filter(() &#x3D;&gt; !!this.currentTile)
+                                .subscribe((e: MouseEvent) &#x3D;&gt; {
+                                    if (this.currentTile.isPressed) {
+                                        this.currentTile.isPressed &#x3D; false;
+                                        // Multi-selection
+                                        if (e.ctrlKey) {
+                                            this.currentTile.isSelected &#x3D; !this.currentTile.isSelected;
+
+                                            this.selectedTiles &#x3D; this.tiles
+                                                .filter((tile) &#x3D;&gt; tile.isSelected)
+                                                .map((tile) &#x3D;&gt; tile.id);
+                                        }
+                                    }
+
+                                    this.currentTile &#x3D; undefined;
+                                });
+                        } else {
+                            if (target &#x3D;&#x3D;&#x3D; this.container || target.parentElement &#x3D;&#x3D;&#x3D; this.container) {
+                                if (event.buttons &#x3D;&#x3D;&#x3D; 1) {
+                                    // Start drag selection
+                                    const containerBounds &#x3D; this._container.getBoundingClientRect();
+                                    this.dragSelection$.next({ startPosition: new Position(event.pageX - containerBounds.left, event.pageY - containerBounds.top), selectedRect: new Rect(), } as IDragSelection);
+                                }
+
+                                // Unselect all tiles
+                                if (this.currentTile) {
+                                    this.currentTile.isPressed &#x3D; false;
+                                }
+                                this.selectedTiles &#x3D; [];
+                            }
+                        }
+                    });
+            });
+    }
+
+    public get container() {
+        return this._container;
+    }
+
+    public set tiles(tiles: DejaTile[]) {
+        this._tiles &#x3D; tiles;
+        this.tilesDic &#x3D; {};
+        tiles.forEach((t) &#x3D;&gt; this.tilesDic[t.id] &#x3D; t);
+        this.refreshTiles$.next({ resetWidth: true });
+    }
+
+    public get tiles() {
+        return this._tiles;
+    }
+
+    public set selectedTiles(selectedIds: string[]) {
+        const selectedTiles &#x3D; [];
+        let raiseEvent &#x3D; false;
+
+        const idsDic &#x3D; {};
+        selectedIds.forEach((id) &#x3D;&gt; idsDic[id] &#x3D; true);
+
+        const previousIdsDic &#x3D; {};
+        this.selectedIds.forEach((id) &#x3D;&gt; previousIdsDic[id] &#x3D; true);
+
+        this.tiles.forEach((tile: DejaTile) &#x3D;&gt; {
+            if (idsDic[tile.id] !&#x3D;&#x3D; previousIdsDic[tile.id]) {
+                raiseEvent &#x3D; true;
+            }
+            tile.isSelected &#x3D; idsDic[tile.id];
+            if (tile.isSelected) {
+                selectedTiles.push(tile);
+            }
+        });
+
+        this.selectedIds &#x3D; selectedIds;
+
+        if (raiseEvent) {
+            const event &#x3D; new CustomEvent(&#x27;DejaTilesAddEvent&#x27;, { cancelable: false }) as IDejaTilesEvent;
+            event.tiles &#x3D; selectedTiles;
+            this.selectionChanged.emit(event);
+        }
+    }
+
+    public set tileminwidth(value: string) {
+        this.extractValueAndUnit(&#x27;tileMinWidth&#x27;, value);
+    }
+
+    public set tilemaxwidth(value: string) {
+        this.extractValueAndUnit(&#x27;tileMaxWidth&#x27;, value);
+    }
+
+    public set tileminheight(value: string) {
+        this.extractValueAndUnit(&#x27;tileMinHeight&#x27;, value);
+    }
+
+    public set tilemaxheight(value: string) {
+        this.extractValueAndUnit(&#x27;tileMaxHeight&#x27;, value);
+    }
+
+    public set maxwidth(value: string) {
+        this.extractValueAndUnit(&#x27;maxWidth&#x27;, value);
+    }
+
+    private get targetBounds() {
+        return this._targetBounds;
+    }
+
+    private set targetBounds(targetBounds: Rect) {
+        this._targetBounds &#x3D; targetBounds;
+        if (targetBounds) {
+            this.selectionRect$.next(new Rect({
+                height: this.getPixelSize(targetBounds.height || 0),
+                left: this.getPixelSize(targetBounds.left || 0),
+                top: this.getPixelSize(targetBounds.top || 0),
+                width: this.getPixelSize(targetBounds.width || 0),
+            }));
+        } else {
+            this.selectionRect$.next(undefined);
+        }
+    }
+
+    public ngOnDestroy() {
+        this.subscriptions.forEach((subscription: Subscription) &#x3D;&gt; subscription.unsubscribe());
+    }
+
+    public copySelection() {
+        const selectedTiles &#x3D; this.tiles.filter((tile) &#x3D;&gt; tile.isSelected);
+        if (selectedTiles.length) {
+            this.copyTiles(selectedTiles, false);
+        }
+        return selectedTiles;
+    }
+
+    public cutSelection() {
+        const selectedTiles &#x3D; this.tiles.filter((tile) &#x3D;&gt; tile.isSelected);
+        if (selectedTiles.length) {
+            this.copyTiles(selectedTiles, true);
+        }
+        return selectedTiles;
+    }
+
+    public deleteSelection() {
+        const selectedTiles &#x3D; this.tiles.filter((tile) &#x3D;&gt; tile.isSelected);
+        if (selectedTiles.length) {
+            this.removeTiles(selectedTiles.map((tile) &#x3D;&gt; tile.id));
+        }
+        return selectedTiles;
+    }
+
+    public paste() {
+        if (!this.clipboardService || !this.clipboardService.isAvailable(&#x27;tiles&#x27;)) {
+            return [];
+        }
+
+        const sourceTiles &#x3D; this.clipboardService.get(&#x27;tiles&#x27;) as DejaTile[];
+
+        // Unselect all tiles
+        this.tiles.forEach((tile) &#x3D;&gt; tile.isSelected &#x3D; false);
+
+        // Get max rectangle
+        let bounds: Rect;
+        sourceTiles.forEach((tile) &#x3D;&gt; {
+            bounds &#x3D; bounds ? Rect.union(bounds, tile.percentBounds) : new Rect(tile.percentBounds);
+        });
+
+        const targetBounds &#x3D; this.getFreePlace(new Rect(0, 0, bounds.width, bounds.height));
+
+        const newTiles &#x3D; sourceTiles.map((tile) &#x3D;&gt; {
+            const newTile &#x3D; this.createTile({
+                type: tile.type,
+                bounds: new Rect(targetBounds.left + tile.percentBounds.left - bounds.left, targetBounds.top + tile.percentBounds.top - bounds.top, tile.percentBounds.width, tile.percentBounds.height, ),
+                templateModel: tile.templateModel,
+                color: tile.color,
+            } as IDejaTile);
+            newTile.isSelected &#x3D; true;
+            return newTile;
+        });
+
+        this.addTiles(newTiles);
+
+        return newTiles;
+    }
+
+    public getTileElementFromHTMLElement(element: HTMLElement) {
+        let tileElement &#x3D; element;
+
+        while (tileElement &amp;&amp; tileElement.tagName !&#x3D;&#x3D; &#x27;DEJA-TILE&#x27;) {
+            tileElement &#x3D; tileElement.parentElement;
+            if (tileElement &#x3D;&#x3D;&#x3D; this.container) {
+                return undefined;
+            }
+        }
+
+        return tileElement;
+    }
+
+    public getTileComponentFromHTMLElement(element: HTMLElement): DejaTile {
+        const tileElement &#x3D; this.getTileElementFromHTMLElement(element);
+        return tileElement &amp;&amp; this.tilesDic[tileElement.id];
+    }
+
+    public deleteTiles(tilesToDelete: DejaTile[]) {
+        if (!tilesToDelete || tilesToDelete.length &#x3D;&#x3D;&#x3D; 0) {
+            return;
+        }
+
+        // For event after removed finished
+        const event &#x3D; new CustomEvent(&#x27;DejaTilesModelEvent&#x27;, { cancelable: false }) as IDejaTilesModelEvent;
+        event.removed &#x3D; tilesToDelete.map((tile) &#x3D;&gt; tile.toTileModel());
+
+        tilesToDelete.forEach((tile) &#x3D;&gt; {
+            delete this.tilesDic[tile.id];
+            tile.delete();
+        });
+
+        let index &#x3D; this._tiles.length;
+        while (--index &gt;&#x3D; 0) {
+            const tile &#x3D; this._tiles[index];
+            if (!this.tilesDic[tile.id]) {
+                this._tiles.splice(index, 1);
+            }
+        }
+
+        this.refreshTiles$.next({ resetWidth: true });
+
+        event.tiles &#x3D; this._tiles.map((tile) &#x3D;&gt; tile.toTileModel());
+        this.modelChanged.emit(event);
+    }
+
+    public removeTiles(tileIdsToRemove: string[]) {
+        if (!tileIdsToRemove || tileIdsToRemove.length &#x3D;&#x3D;&#x3D; 0) {
+            return;
+        }
+
+        const tilesToRemove &#x3D; tileIdsToRemove.map((id) &#x3D;&gt; this.tilesDic[id]);
+
+        // Delete selected tiles components
+        tilesToRemove.forEach((tile) &#x3D;&gt; {
+            tile.isHidden &#x3D; true;
+        });
+
+        const event &#x3D; new CustomEvent(&#x27;DejaTilesRemoveEvent&#x27;, { cancelable: true }) as IDejaTilesRemoveEvent;
+        event.tiles &#x3D; this.tiles.map((tile) &#x3D;&gt; tile.toTileModel());
+        event.removed &#x3D; tilesToRemove.map((tile) &#x3D;&gt; tile.toTileModel());
+        event.cancel$ &#x3D; new Subject();
+
+        const cancelSubscription &#x3D; event.cancel$
+            .first()
+            .subscribe((value) &#x3D;&gt; {
+                if (value) {
+                    tilesToRemove.forEach((tile) &#x3D;&gt; tile.isHidden &#x3D; false);
+                } else {
+                    this.deleteTiles(tilesToRemove);
+                }
+            });
+
+        // Remove immediately
+        Observable.timer(1000)
+            .first()
+            .filter(() &#x3D;&gt; !event.defaultPrevented)
+            .subscribe(() &#x3D;&gt; {
+                cancelSubscription.unsubscribe();
+                this.deleteTiles(tilesToRemove);
+            });
+
+        // Forward event
+        this.contentRemoving.next(event);
+    }
+
+    public createTiles(tiles: IDejaTile[]) {
+        if (!tiles || tiles.length &#x3D;&#x3D;&#x3D; 0) {
+            return;
+        }
+
+        this.addTiles(tiles.map((tile) &#x3D;&gt; this.createTile(tile)));
+    }
+
+    public getFreePlace(idealBounds: Rect) {
+        const containerBounds &#x3D; this.container.getBoundingClientRect();
+        const percentHeight &#x3D; this.getPercentSize(containerBounds.height);
+        const freePlaces &#x3D; [] as Rect[];
+        for (let x &#x3D; 0; x &lt;&#x3D; this.maxWidth - idealBounds.width; x +&#x3D; this.tileMinWidth) {
+            for (let y &#x3D; 0; y &lt;&#x3D; percentHeight - idealBounds.height; y +&#x3D; this.tileMinHeight) {
+                const currentBounds &#x3D; new Rect(x, y, idealBounds.width, idealBounds.height);
+
+                if (this.tiles.filter((t) &#x3D;&gt; t.percentBounds.intersectWith(currentBounds)).length &#x3D;&#x3D;&#x3D; 0) {
+                    freePlaces.push(currentBounds);
+                }
+            }
+        }
+
+        if (freePlaces.length &gt; 0) {
+            // add at the nearest free place
+            freePlaces.sort((bounds1, bounds2) &#x3D;&gt; {
+                const calcDistance &#x3D; (bounds) &#x3D;&gt; { return Math.min(Math.abs(bounds.left - idealBounds.left), Math.abs(bounds.right - idealBounds.right)) + 2 * Math.min(Math.abs(bounds.top - idealBounds.top), Math.abs(bounds.bottom - idealBounds.bottom)); };
+                return calcDistance(bounds1) - calcDistance(bounds2);
+            });
+
+            return freePlaces[0];
+        }
+
+        let maxHeight &#x3D; 0;
+        this.tiles.forEach((t) &#x3D;&gt; {
+            if (t.percentBounds.bottom &gt; maxHeight) {
+                maxHeight &#x3D; t.percentBounds.bottom;
+            }
+        });
+
+        // Add at the end
+        return new Rect(0, maxHeight, idealBounds.width, idealBounds.height);
+    }
+
+    public moveTile(id: string, bounds: Rect) {
+        const tile &#x3D; this.tiles.find((t) &#x3D;&gt; t.id &#x3D;&#x3D;&#x3D; id);
+        if (tile) {
+            tile.percentBounds &#x3D; bounds;
+            this.refreshTiles$.next();
+        }
+    }
+
+    public HitTest(pixelBounds: Rect) {
+        const percentBounds &#x3D; new Rect(this.getPercentSize(pixelBounds.left), this.getPercentSize(pixelBounds.top), this.getPercentSize(pixelBounds.width), this.getPercentSize(pixelBounds.height));
+        return this.tiles.filter((t) &#x3D;&gt; t.percentBounds.intersectWith(percentBounds));
+    }
+
+    public getPercentSize(value: number): number {
+        return Math.round(value * 100 / this.hundredPercentWith);
+    }
+
+    // Drag and drop from outside provider
+    public dragEnter(dragContext: IDragDropContext, dragCursor: IDragCursorInfos) {
+        if (!this.designMode) {
+            return false;
+        }
+
+        const tile &#x3D; dragContext[&#x27;IDejaTile&#x27;] as IDejaTile;
+        if (!tile) {
+            return false;
+        }
+
+        const containerBounds &#x3D; this._container.getBoundingClientRect();
+        const { pageX, pageY } &#x3D; dragCursor.originalEvent;
+
+        const x &#x3D; pageX - containerBounds.left;
+        const y &#x3D; pageY - containerBounds.top;
+
+        // Create a temporary tile for drag and drop
+        tile.id &#x3D; &#x27;#temp&#x27;;
+        const tempTile &#x3D; new DejaTile(tile);
+        tempTile.isTemporary &#x3D; true;
+
+        this.dragDropInfos$.next({
+            enabled: false,
+            startX: x,
+            startY: y,
+            tiles: [tempTile],
+        } as IDragDropInfos);
+
+        return true;
+    }
+
+    public startDrag(tiles: DejaTile[], pageX: number, pageY: number) {
+        // Save layout
+        const savedLayout &#x3D; this.saveLayout();
+
+        // Bring all tiles together
+        let targetBounds: Rect;
+        tiles.forEach((tile) &#x3D;&gt; {
+            targetBounds &#x3D; targetBounds ? Rect.union
+                (targetBounds, tile.percentBounds) : tile.percentBounds;
+            tile.isDragging &#x3D; true;
+        });
+
+        this.dragRelativePosition &#x3D; {};
+        tiles.forEach((tile) &#x3D;&gt; { this.dragRelativePosition[tile.id] &#x3D; new Position(tile.percentBounds.left - targetBounds.left, tile.percentBounds.top - targetBounds.top); });
+
+        this.dragPageOffset &#x3D; new Position(pageX, pageY);
+
+        this.dragOriginalPosition &#x3D; new Position(targetBounds.left, targetBounds.top);
+
+        this.targetBounds &#x3D; savedLayout.targetBounds &#x3D; savedLayout.validBounds &#x3D; targetBounds;
+        this.originalLayout &#x3D; savedLayout;
+        this.validLayout &#x3D; undefined;
+    }
+
+    public expandTile(tile: IDejaTile, pixelheight: number) {
+        // Save layout
+        const t &#x3D; tile.id ? this.tilesDic[tile.id] : this.tiles.find((tt) &#x3D;&gt; tt.equalsTo(tile));
+
+        if (this.beforeSizeLayout) {
+            this.restoreLayout(this.beforeSizeLayout);
+        } else {
+            this.beforeSizeLayout &#x3D; this.saveLayout();
+        }
+        this.expandedTile &#x3D; t;
+        t.isExpanded &#x3D; true;
+        const percentHeight &#x3D; Math.ceil(pixelheight * 100 / this.hundredPercentWith);
+        const bottom &#x3D; t.percentBounds.top + percentHeight;
+        this.size(t, new Position(0, this.getPixelSize(bottom)), Directions.bottom);
+    }
+
+    public cancelExpand() {
+        if (this.beforeSizeLayout) {
+            this.expandedTile.isExpanded &#x3D; false;
+            this.restoreLayout(this.beforeSizeLayout);
+            this.refreshTiles$.next();
+            this.beforeSizeLayout &#x3D; undefined;
+        }
+    }
+
+    public cancelDrag(tiles: DejaTile[]) {
+        if (this.moveTimout) {
+            this.moveTimout.unsubscribe();
+            this.moveTimout &#x3D; undefined;
+        }
+
+        Observable.from(tiles)
+            .filter((tile) &#x3D;&gt; !!tile)
+            .do((tile) &#x3D;&gt; {
+                tile.isDragging &#x3D; false;
+                tile.isDropping &#x3D; true;
+            })
+            .delay(1000)
+            .subscribe((tile) &#x3D;&gt; { tile.isDropping &#x3D; false; });
+
+        // Restore original layout
+        if (this.originalLayout) {
+            this.restoreLayout(this.originalLayout);
+        }
+
+        this.endDrag();
+    }
+
+    public drop(tiles: DejaTile[]) {
+        let changed: DejaTile[];
+
+        if (this.moveTimout) {
+            this.moveTimout.unsubscribe();
+            this.moveTimout &#x3D; undefined;
+        }
+
+        if (this.validLayout) {
+            this.restoreLayout(this.validLayout);
+
+            if (this._cursor !&#x3D;&#x3D; &#x27;move&#x27;) {
+                // Only one tile can be resized at time
+                const tile &#x3D; tiles[0];
+                tile.percentBounds &#x3D; new Rect(this.validLayout.validBounds);
+                tile.isDragging &#x3D; false;
+            } else {
+                Observable.from(tiles)
+                    .filter((tile) &#x3D;&gt; !!tile)
+                    .do((tile) &#x3D;&gt; {
+                        const left &#x3D; this.validLayout.validBounds.left + this.dragRelativePosition[tile.id].left;
+                        const top &#x3D; this.validLayout.validBounds.top + this.dragRelativePosition[tile.id].top;
+                        tile.percentBounds &#x3D; new Rect(left, top, tile.percentBounds.width, tile.percentBounds.height);
+                        tile.isDragging &#x3D; false;
+                        tile.isDropping &#x3D; true;
+                        if (tile.id &#x3D;&#x3D;&#x3D; &#x27;#temp&#x27;) {
+                            tile.makeId();
+                            this.tilesDic[tile.id] &#x3D; tile;
+                            delete this.tilesDic[&#x27;#temp&#x27;];
+
+                            this.addTiles([tile]);
+                        }
+                    })
+                    .delay(1000)
+                    .subscribe((tile) &#x3D;&gt; { tile.isDropping &#x3D; false; });
+            }
+
+            changed &#x3D; this.tiles.filter((t) &#x3D;&gt; !Rect.equals(t.percentBounds, this.originalLayout[t.id] &amp;&amp; this.originalLayout[t.id].bounds));
+            this.endDrag();
+        } else {
+            this.removeTemporaryTile();
+            this.cancelDrag(tiles);
+        }
+
+        if (changed) {
+            const event &#x3D; new CustomEvent(&#x27;DejaTilesEvent&#x27;, { cancelable: true }) as IDejaTilesEvent;
+            event.tiles &#x3D; this.tiles.map((tile) &#x3D;&gt; tile.toTileModel());
+            this.layoutChanged.emit(event);
+        }
+
+        return changed;
+    }
+
+    public endDrag() {
+        this.originalLayout &#x3D; undefined;
+        this.validLayout &#x3D; undefined;
+        this.targetBounds &#x3D; undefined;
+        this.dragging$.next(false);
+        this.dragDropInfos$.next(null);
+        this.dragTarget &#x3D; undefined;
+        this.copyTiles(null);
+        this.refreshTiles$.next();
+    }
+
+    public drag(tiles: DejaTile[], pageX: number, pageY: number) {
+        // Search related coords
+        const offset &#x3D; new Position(pageX - this.dragPageOffset.left, pageY - this.dragPageOffset.top);
+        const offsetLeft &#x3D; offset.left + this.getPixelSize(this.dragOriginalPosition.left);
+        const offsetTop &#x3D; offset.top + this.getPixelSize(this.dragOriginalPosition.top);
+
+        const sizemin &#x3D; this.getTileMinPixelSize();
+        const sizemax &#x3D; this.getTileMaxPixelSize();
+
+        if (this._cursor !&#x3D;&#x3D; &#x27;move&#x27;) {
+            // Only one tile can be resized at time
+            const tile &#x3D; tiles[0];
+            const bounds &#x3D; this.getPixelBounds(tile.percentBounds);
+            const offsetRight &#x3D; offsetLeft + bounds.width;
+            const offsetBottom &#x3D; offsetTop + bounds.height;
+            const right &#x3D; bounds.right;
+            const bottom &#x3D; bounds.bottom;
+            switch (this._cursor) {
+                case &#x27;nw-resize&#x27;:
+                    bounds.left &#x3D; Math.max(Math.min(offsetLeft, bounds.right - sizemin.width), bounds.right - sizemax.width);
+                    bounds.right &#x3D; right;
+                    bounds.top &#x3D; Math.max(Math.min(offsetTop, bounds.bottom - sizemin.height), bounds.bottom - sizemax.height);
+                    bounds.bottom &#x3D; bottom;
+                    this.size(tile, new Position(offsetLeft, offsetTop), Directions.left + Directions.top);
+                    break;
+                case &#x27;sw-resize&#x27;:
+                    bounds.left &#x3D; Math.max(Math.min(offsetLeft, bounds.right - sizemin.width), bounds.right - sizemax.width);
+                    bounds.right &#x3D; right;
+                    bounds.bottom &#x3D; Math.max(Math.min(offsetBottom, bounds.top + sizemax.height), bounds.top + sizemin.height);
+                    this.size(tile, new Position(offsetLeft, offsetBottom), Directions.left + Directions.bottom);
+                    break;
+                case &#x27;w-resize&#x27;:
+                    bounds.left &#x3D; Math.max(Math.min(offsetLeft, bounds.right - sizemin.width), bounds.right - sizemax.width);
+                    bounds.right &#x3D; right;
+                    this.size(tile, new Position(offsetLeft, 0), Directions.left);
+                    break;
+                case &#x27;ne-resize&#x27;:
+                    bounds.right &#x3D; Math.max(Math.min(offsetRight, bounds.left + sizemax.width), bounds.left + sizemin.width);
+                    bounds.top &#x3D; Math.max(Math.min(offsetTop, bounds.bottom - sizemin.height), bounds.bottom - sizemax.height);
+                    bounds.bottom &#x3D; bottom;
+                    this.size(tile, new Position(offsetRight, offsetTop), Directions.right + Directions.top);
+                    break;
+                case &#x27;se-resize&#x27;:
+                    bounds.right &#x3D; Math.max(Math.min(offsetRight, bounds.left + sizemax.width), bounds.left + sizemin.width);
+                    bounds.bottom &#x3D; Math.max(Math.min(offsetBottom, bounds.top + sizemax.height), bounds.top + sizemin.height);
+                    this.size(tile, new Position(offsetRight, offsetBottom), Directions.right + Directions.bottom);
+                    break;
+                case &#x27;e-resize&#x27;:
+                    bounds.right &#x3D; Math.max(Math.min(offsetRight, bounds.left + sizemax.width), bounds.left + sizemin.width);
+                    this.size(tile, new Position(offsetRight, 0), Directions.right);
+                    break;
+                case &#x27;n-resize&#x27;:
+                    bounds.top &#x3D; Math.max(Math.min(offsetTop, bounds.bottom - sizemin.height), bounds.bottom - sizemax.height);
+                    bounds.bottom &#x3D; bottom;
+                    this.size(tile, new Position(0, offsetTop), Directions.top);
+                    break;
+                case &#x27;s-resize&#x27;:
+                    bounds.bottom &#x3D; Math.max(Math.min(offsetBottom, bounds.top + sizemax.height), bounds.top + sizemin.height);
+                    this.size(tile, new Position(0, offsetBottom), Directions.bottom);
+                    break;
+                default:
+                    throw new Error(&#x27;Invalid direction&#x27;);
+            }
+            tile.pixelBounds &#x3D; bounds;
+
+        } else {
+            tiles.forEach((tile) &#x3D;&gt; { tile.pixelBounds &#x3D; new Rect(offsetLeft + this.getPixelSize(this.dragRelativePosition[tile.id].left), offsetTop + this.getPixelSize(this.dragRelativePosition[tile.id].top), this.getPixelSize(tile.percentBounds.width), this.getPixelSize(tile.percentBounds.height)); });
+
+            // Assign new drag and drop rectangle
+            this.dragTarget &#x3D; new Rect(this.getPercentSize(offsetLeft), this.getPercentSize(offsetTop), this.targetBounds.width, this.targetBounds.height, );
+
+            this.move();
+        }
+    }
+
+    public addTiles(newTiles: DejaTile[]) {
+        if (!newTiles || newTiles.length &#x3D;&#x3D;&#x3D; 0) {
+            return;
+        }
+
+        newTiles.forEach((newTile) &#x3D;&gt; {
+            if (!this.tiles.find((t) &#x3D;&gt; t.id &#x3D;&#x3D;&#x3D; newTile.id)) {
+                newTile.percentBounds &#x3D; this.getFreePlace(newTile.percentBounds);
+                this._tiles.push(newTile);
+            }
+        });
+
+        const event &#x3D; new CustomEvent(&#x27;DejaTilesAddEvent&#x27;, { cancelable: true }) as IDejaTilesAddEvent;
+        event.tiles &#x3D; this.tiles.map((tile) &#x3D;&gt; tile.toTileModel());
+        event.added &#x3D; newTiles.map((tile) &#x3D;&gt; tile.toTileModel());
+        event.cancel$ &#x3D; new Subject();
+
+        // Delete provider if cut operation
+        const deleteSourceProvider$ &#x3D; this.clipboardService &amp;&amp; this.clipboardService.get(&#x27;tiles-provider&#x27;) as Subject&lt;DejaTile[]&gt;;
+
+        // Hide originals if cut
+        let sourceTiles: DejaTile[];
+        if (deleteSourceProvider$) {
+            sourceTiles &#x3D; this.clipboardService.get(&#x27;tiles&#x27;) as DejaTile[];
+            sourceTiles.forEach((tile) &#x3D;&gt; {
+                tile.isHidden &#x3D; true;
+            });
+        }
+
+        const deleteSourceTiles &#x3D; () &#x3D;&gt; {
+            if (sourceTiles) {
+                deleteSourceProvider$.next(sourceTiles);
+                this.clipboardService.clear();
+            }
+        };
+
+        newTiles.forEach((tile) &#x3D;&gt; {
+            tile.isPending &#x3D; true;
+        });
+
+        const validateNewTiles &#x3D; (tiles: DejaTile[]) &#x3D;&gt; {
+            tiles.forEach((tile) &#x3D;&gt; {
+                tile.isPending &#x3D; false;
+            });
+            // Remove original tiles if cut operation
+            deleteSourceTiles();
+
+            const e &#x3D; new CustomEvent(&#x27;DejaTilesModelEvent&#x27;, { cancelable: false }) as IDejaTilesModelEvent;
+            e.tiles &#x3D; this._tiles.map((tile) &#x3D;&gt; tile.toTileModel());
+            e.added &#x3D; tiles.map((tile) &#x3D;&gt; tile.toTileModel());
+            this.modelChanged.emit(e);
+        };
+
+        const cancelSubscription &#x3D; event.cancel$
+            .first()
+            .subscribe((value) &#x3D;&gt; {
+                if (value) {
+                    // Canceled, hide and remove added after effect
+                    Observable.from(newTiles)
+                        .do((tile) &#x3D;&gt; tile.isHidden &#x3D; true)
+                        .delay(1000)
+                        .reduce((acc, curr) &#x3D;&gt; {
+                            acc.push(curr);
+                            return acc;
+                        }, [])
+                        .first()
+                        .subscribe((tiles) &#x3D;&gt; this.deleteTiles(tiles));
+
+                    // Reshow original tiles if cut operation
+                    if (sourceTiles) {
+                        sourceTiles.forEach((tile) &#x3D;&gt; {
+                            tile.isHidden &#x3D; false;
+                            tile.isCutted &#x3D; true;
+                        });
+                    }
+                } else {
+                    validateNewTiles(newTiles);
+                }
+            });
+
+        // Add immediately
+        Observable.timer(1000)
+            .first()
+            .filter(() &#x3D;&gt; !event.defaultPrevented)
+            .subscribe(() &#x3D;&gt; {
+                cancelSubscription.unsubscribe();
+                validateNewTiles(newTiles);
+            });
+
+        // Get total rectangle
+        let bounds: Rect;
+        newTiles.forEach((tile) &#x3D;&gt; {
+            bounds &#x3D; bounds ? Rect.union(bounds, tile.percentBounds) : new Rect(tile.percentBounds);
+        });
+
+        this.refreshTiles$.next({ ensureBounds: bounds });
+
+        this.contentAdding.emit(event);
+    }
+
+    private size(tile: DejaTile, pixelpos: Position, directions: Directions) {
+        // Calc new tile bounds
+        const percentPos &#x3D; new Position(this.getPercentSize(pixelpos.left), this.getPercentSize(pixelpos.top));
+        const dragBounds &#x3D; tile.percentBounds.clone();
+        const newTargetBounds &#x3D; tile.percentBounds.clone();
+        let minWidth: number;
+        let minHeight: number;
+        let maxWidth: number;
+        let maxHeight: number;
+
+        // tslint:disable-next-line:no-bitwise
+        if (directions &amp; Directions.left) {
+            minWidth &#x3D; this.getTileMinPercentWidth();
+            maxWidth &#x3D; this.getTileMaxPercentWidth();
+            const dleft &#x3D; percentPos.left;
+            const tleft &#x3D; dragBounds.left &lt; dleft ? minWidth * Math.ceil(dleft / minWidth) : minWidth * Math.floor(dleft / minWidth);
+            const twidth &#x3D; Math.min(maxWidth, Math.max(minWidth, newTargetBounds.right - tleft));
+            dragBounds.width &#x3D; dragBounds.right - dleft;
+            dragBounds.left &#x3D; dleft;
+            newTargetBounds.left &#x3D; newTargetBounds.right - twidth;
+            newTargetBounds.width &#x3D; twidth;
+        }
+        // tslint:disable-next-line:no-bitwise
+        if (directions &amp; Directions.right) {
+            minWidth &#x3D; minWidth || this.getTileMinPercentWidth();
+            maxWidth &#x3D; maxWidth || this.getTileMaxPercentWidth();
+            const dright &#x3D; percentPos.left;
+            const tright &#x3D; dragBounds.right &lt; dright ? minWidth * Math.ceil(dright / minWidth) : minWidth * Math.floor(dright / minWidth);
+            dragBounds.width &#x3D; dright - dragBounds.left;
+            newTargetBounds.width &#x3D; Math.min(maxWidth, Math.max(minWidth, tright - newTargetBounds.left));
+        }
+        // tslint:disable-next-line:no-bitwise
+        if (directions &amp; Directions.top) {
+            minHeight &#x3D; this.getTileMinPercentHeight();
+            maxHeight &#x3D; this.getTileMaxPercentHeight();
+            const dtop &#x3D; percentPos.top;
+            const ttop &#x3D; dragBounds.top &lt; dtop ? minHeight * Math.ceil(dtop / minHeight) : minHeight * Math.floor(dtop / minHeight);
+            const theight &#x3D; Math.min(maxHeight, Math.max(minHeight, newTargetBounds.bottom - ttop));
+            dragBounds.height &#x3D; dragBounds.bottom - dtop;
+            dragBounds.top &#x3D; dtop;
+            newTargetBounds.top &#x3D; newTargetBounds.bottom - theight;
+            newTargetBounds.height &#x3D; theight;
+        }
+        // tslint:disable-next-line:no-bitwise
+        if (directions &amp; Directions.bottom) {
+            minHeight &#x3D; minHeight || this.getTileMinPercentHeight();
+            maxHeight &#x3D; maxHeight || this.getTileMaxPercentHeight();
+            const dbottom &#x3D; percentPos.top;
+            const tbottom &#x3D; dragBounds.bottom &lt; dbottom ? minHeight * Math.ceil(dbottom / minHeight) : minHeight * Math.floor(dbottom / minHeight);
+            dragBounds.height &#x3D; dbottom - dragBounds.top;
+            newTargetBounds.height &#x3D; Math.min(maxHeight, Math.max(minHeight, tbottom - newTargetBounds.top));
+        }
+
+        if (Rect.equals(newTargetBounds, this.destination)) {
+            // Nothing change, wait for timers
+            return;
+        }
+
+        // Restore a previous layout if exists for this position
+        if (tile.isExpanded) {
+            const ensureBounds &#x3D; this.ensureTarget(newTargetBounds, dragBounds, directions);
+            tile.percentBounds &#x3D; ensureBounds;
+            this.refreshTiles$.next();
+        } else {
+            // Restore the original layout before moving something
+            this.restoreLayout(this.originalLayout);
+
+            this.destination &#x3D; newTargetBounds.clone();
+
+            // Check if location is free without pushing tiles
+            const result &#x3D; this.tiles.find((t) &#x3D;&gt; !t.isDragging &amp;&amp; t.percentBounds.intersectWith(newTargetBounds));
+
+            if (!result) {
+                this.targetBounds &#x3D; newTargetBounds;
+
+                // Save layout
+                this.validLayout &#x3D; this.saveLayout();
+                this.validLayout.targetBounds &#x3D; this.validLayout.validBounds &#x3D; newTargetBounds;
+                this.refreshTiles$.next();
+            } else {
+                // Location must be freed
+                if (newTargetBounds) {
+                    // Ensure new destination
+                    const ensureBounds &#x3D; this.ensureTarget(newTargetBounds, dragBounds, directions);
+                    if (ensureBounds) {
+                        this.targetBounds &#x3D; ensureBounds;
+                        this.validLayout &#x3D; this.saveLayout();
+                        this.validLayout.targetBounds &#x3D; newTargetBounds;
+                        this.validLayout.validBounds &#x3D; ensureBounds;
+                        this.refreshTiles$.next();
+                    }
+                }
+            }
+        }
+    }
+
+    private move() {
+        const minWidth &#x3D; this.getTileMinPercentWidth();
+        const minHeight &#x3D; this.getTileMinPercentHeight();
+
+        // Search a new target
+        const newTargetBounds &#x3D; this.ensureContainer(new Rect(minWidth * Math.round(this.dragTarget.left / minWidth), minHeight * Math.round(this.dragTarget.top / minHeight), this.dragTarget.width, this.dragTarget.height, ));
+
+        if (this.lastTargetBounds &amp;&amp; Math.abs(newTargetBounds.left - this.lastTargetBounds.left) &lt; 3 &amp;&amp; Math.abs(newTargetBounds.top - this.lastTargetBounds.top) &lt; 3) {
+            // Nothing change, wait for timers
+            return;
+        }
+        this.lastTargetBounds &#x3D; newTargetBounds;
+
+        if (this.moveTimout) {
+            this.moveTimout.unsubscribe();
+            this.moveTimout &#x3D; undefined;
+        }
+
+        // Restore the original layout before moving something
+        this.restoreLayout(this.originalLayout);
+
+        // Check if location is free without pushing tiles
+        const result &#x3D; this.tiles.find((tile: DejaTile) &#x3D;&gt; !tile.isDragging &amp;&amp; tile.percentBounds.intersectWith(newTargetBounds));
+
+        if (!result) {
+            this.targetBounds &#x3D; newTargetBounds.clone();
+            this.destination &#x3D; newTargetBounds.clone();
+
+            // Save layout
+            this.validLayout &#x3D; this.saveLayout();
+            this.validLayout.targetBounds &#x3D; this.validLayout.validBounds &#x3D; newTargetBounds;
+            this.refreshTiles$.next();
+        } else {
+            // Location must be freed, timer
+            this.moveTimout &#x3D; Observable.timer(500)
+                .first()
+                .subscribe(() &#x3D;&gt; {
+                    // console.log(&#x27;moveTimer timer&#x27;);
+                    this.moveTimout &#x3D; undefined;
+
+                    this.destination &#x3D; newTargetBounds.clone();
+                    if (newTargetBounds) {
+                        // Ensure new destination
+                        const ensureBounds &#x3D; this.ensureTarget(newTargetBounds, this.dragTarget, Directions.all);
+                        if (ensureBounds) {
+                            this.targetBounds &#x3D; ensureBounds;
+                            this.validLayout &#x3D; this.saveLayout();
+                            this.validLayout.targetBounds &#x3D; newTargetBounds;
+                            this.validLayout.validBounds &#x3D; ensureBounds;
+                            this.refreshTiles$.next();
+                        }
+                    }
+                });
+        }
+    }
+
+    // Ensure that the specified bounds are inside the tiles area. Return the corrected rectangle.
+    private ensureContainer(percentBounds: Rect): Rect {
+        if (percentBounds.left &lt; 0) {
+            percentBounds &#x3D; percentBounds.offset(-percentBounds.left, 0);
+        }
+
+        if (percentBounds.top &lt; 0) {
+            percentBounds &#x3D; percentBounds.offset(0, -percentBounds.top);
+        }
+
+        const maxPercentWidth &#x3D; this.getMaxPercentWidth();
+        if (maxPercentWidth &amp;&amp; percentBounds.right &gt; maxPercentWidth) {
+            percentBounds &#x3D; percentBounds.offset(maxPercentWidth - percentBounds.right, 0);
+        }
+
+        const maxPercentHeight &#x3D; this.getMaxPercentHeight();
+        if (maxPercentHeight &amp;&amp; percentBounds.bottom &gt; maxPercentHeight) {
+            percentBounds &#x3D; percentBounds.offset(0, maxPercentHeight - percentBounds.bottom);
+        }
+
+        return percentBounds;
+    }
+
+    // Ensure that a tile can be dropped at the specified bounds. Return the corrected rectangle.
+    private ensureTarget(bounds: Rect, effectiveBounds?: Rect, directions?: Directions, originalBounds?: Rect): Rect {
+        if (!effectiveBounds) {
+            effectiveBounds &#x3D; bounds;
+        }
+
+        // Backup bounds
+        if (!originalBounds) {
+            originalBounds &#x3D; bounds.clone();
+        }
+
+        if (!directions) {
+            directions &#x3D; Directions.all;
+        } else {
+            // We always can escape to the bottom in case of
+            // tslint:disable-next-line:no-bitwise
+            directions |&#x3D; Directions.bottom;
+        }
+
+        const tilesToPush &#x3D; {} as { [direction: number]: DejaTile[] };
+        tilesToPush[Directions.left] &#x3D; [];
+        tilesToPush[Directions.right] &#x3D; [];
+        tilesToPush[Directions.top] &#x3D; [];
+        tilesToPush[Directions.bottom] &#x3D; [];
+
+        // tslint:disable-next-line:prefer-for-of
+        for (const id in this.tilesDic) {
+            if (this.tilesDic[id]) {
+                const tile &#x3D; this.tilesDic[id];
+                if (!tile.isDragging &amp;&amp; !tile.isExpanded) {
+                    if (tile.percentBounds.intersectWith(bounds)) {
+                        const swapTargetRect &#x3D; new Rect(this.dragOriginalPosition.left, this.dragOriginalPosition.top, bounds.width, bounds.height);
+                        if (tile.percentBounds.left &#x3D;&#x3D;&#x3D; effectiveBounds.left &amp;&amp; tile.percentBounds.top &#x3D;&#x3D;&#x3D; effectiveBounds.top &amp;&amp; tile.percentBounds.width &#x3D;&#x3D;&#x3D; effectiveBounds.width &amp;&amp; tile.percentBounds.height &#x3D;&#x3D;&#x3D; effectiveBounds.height &amp;&amp; effectiveBounds.adjacent(swapTargetRect)) {
+                            // swap
+                            tile.percentBounds &#x3D; swapTargetRect;
+                            return bounds;
+                        } else {
+                            const hol &#x3D; tile.percentBounds.left - effectiveBounds.left;      // Ce qui depasse a  gauche
+                            const hor &#x3D; effectiveBounds.right - tile.percentBounds.right;    // Ce qui depasse a  droite
+                            const vot &#x3D; tile.percentBounds.top - effectiveBounds.top;        // Ce qui depasse en haut
+                            const vob &#x3D; effectiveBounds.bottom - tile.percentBounds.bottom;  // Ce qui depasse en bas
+                            const hoe &#x3D; Math.max(0, Math.min(tile.percentBounds.right, effectiveBounds.right) - Math.max(tile.percentBounds.left, effectiveBounds.left)) / Math.min(tile.percentBounds.width, effectiveBounds.width);
+                            const voe &#x3D; Math.max(0, Math.min(tile.percentBounds.bottom, effectiveBounds.bottom) - Math.max(tile.percentBounds.top, effectiveBounds.top)) / Math.min(tile.percentBounds.height, effectiveBounds.height);
+
+                            // Calc prefered direction
+                            let preferedDirection: Directions;
+                            // tslint:disable-next-line:no-bitwise
+                            if (voe &gt;&#x3D; hoe &amp;&amp; directions &amp; Directions.horizontal) {
+                                // horizontal
+                                // tslint:disable-next-line:no-bitwise
+                                preferedDirection &#x3D; hor &gt;&#x3D; hol &amp;&amp; directions &amp; Directions.left ? Directions.left : Directions.right;
+                            } else {
+                                // vertical
+                                // tslint:disable-next-line:no-bitwise
+                                preferedDirection &#x3D; vob &gt;&#x3D; vot &amp;&amp; directions &amp; Directions.top ? Directions.top : Directions.bottom;
+                            }
+                            tilesToPush[preferedDirection].push(tile);
+                        }
+                    }
+                }
+            }
+        }
+
+        // try first horizontal move
+        let remain &#x3D; 0;
+        if (tilesToPush[Directions.left].length) {
+            remain &#x3D; this.pushHorizontal(bounds, -1, tilesToPush[Directions.left]);
+            if (remain) {
+                bounds &#x3D; this.ensureContainer(bounds.offset(remain, 0));
+                // tslint:disable-next-line:no-bitwise
+                return this.ensureTarget(bounds, effectiveBounds, directions &amp; ~Directions.left, originalBounds);
+            }
+        }
+
+        // Now try right
+        if (tilesToPush[Directions.right].length) {
+            remain &#x3D; this.pushHorizontal(bounds, 1, tilesToPush[Directions.right]);
+        }
+
+        if (remain &gt; 0) {
+            // No horizontal place, restore original position
+            this.restoreLayout(this.originalLayout);
+            // tslint:disable-next-line:no-bitwise
+            return this.ensureTarget(originalBounds, effectiveBounds, directions &amp; Directions.vertical);
+        } else {
+            // Try top
+            if (tilesToPush[Directions.top].length) {
+                remain &#x3D; this.pushVertical(bounds, -1, tilesToPush[Directions.top]);
+                if (remain) {
+                    bounds &#x3D; this.ensureContainer(bounds.offset(0, remain));
+                    return this.ensureTarget(bounds, effectiveBounds, Directions.bottom);
+                }
+            }
+
+            // And finally bottom
+            remain &#x3D; this.pushVertical(bounds, 1, tilesToPush[Directions.bottom]);
+            if (remain) {
+                // Destination is not available, keep tile at the original place
+                return null;
+            }
+        }
+
+        return bounds;
+    }
+
+    private saveLayout(): ILayoutInfos {
+        const layout &#x3D; {} as ILayoutInfos;
+        layout.height &#x3D; this.getTileMinPercentHeight();
+        this.tiles.forEach((tile) &#x3D;&gt; {
+            const y &#x3D; this.getPixelSize(tile.percentBounds.top || 0);
+            const h &#x3D; this.getPixelSize(tile.percentBounds.height || this.tileMinHeight);
+            if (y + h &gt; layout.height) {
+                layout.height &#x3D; y + h;
+            }
+            layout[tile.id] &#x3D; {
+                bounds: tile.percentBounds.clone(),
+                id: tile.id,
+            } as ILayoutInfo;
+        });
+
+        return layout;
+    }
+
+    private getPixelBounds(rect: Rect) { return Rect.fromLTRB(Math.round(rect.left * this.hundredPercentWith / 100), Math.round(rect.top * this.hundredPercentWith / 100), Math.round(rect.right * this.hundredPercentWith / 100), Math.round(rect.bottom * this.hundredPercentWith / 100)); }
+
+    private getPixelSize(value: number, unit?: string): number {
+        if (!unit || unit &#x3D;&#x3D;&#x3D; &#x27;%&#x27;) {
+            return Math.round(value * this.hundredPercentWith / 100);
+        } else {
+            return value;
+        }
+    }
+
+    private getSizePercentLimit(prop: string): number {
+        const unit &#x3D; this[prop + &#x27;Unit&#x27;];
+        if (!unit || unit &#x3D;&#x3D;&#x3D; &#x27;px&#x27;) {
+            return this.getPercentSize(this[prop]);
+        } else {
+            return this[prop];
+        }
+    }
+
+    private getSizePixelLimit(prop: string): number {
+        const unit &#x3D; this[prop + &#x27;Unit&#x27;];
+        if (!unit || unit &#x3D;&#x3D;&#x3D; &#x27;px&#x27;) {
+            return this[prop];
+        } else {
+            return this.getPixelSize(this[prop]);
+        }
+    }
+
+    private getTileMinPixelSize(): Size {
+        return new Size(this.getSizePixelLimit(&#x27;tileMinWidth&#x27;), this.getSizePixelLimit(&#x27;tileMinHeight&#x27;));
+    }
+
+    private getTileMaxPixelSize(): Size {
+        return new Size(this.getSizePixelLimit(&#x27;tileMaxWidth&#x27;), this.getSizePixelLimit(&#x27;tileMaxHeight&#x27;));
+    }
+
+    private getTileMinPercentWidth(): number {
+        return this.getSizePercentLimit(&#x27;tileMinWidth&#x27;);
+    }
+
+    private getTileMaxPercentWidth(): number {
+        return this.getSizePercentLimit(&#x27;tileMaxWidth&#x27;);
+    }
+
+    private getTileMinPercentHeight(): number {
+        return this.getSizePercentLimit(&#x27;tileMinHeight&#x27;);
+    }
+
+    private getTileMaxPercentHeight(): number {
+        return this.getSizePercentLimit(&#x27;tileMaxHeight&#x27;);
+    }
+
+    private getMaxPercentWidth(): number {
+        return this.getSizePercentLimit(&#x27;maxWidth&#x27;);
+    }
+
+    private getMaxPercentHeight(): number {
+        return this.getSizePercentLimit(&#x27;maxHeight&#x27;);
+    }
+
+    private getCursorFromHTMLElement(x: number, y: number, element: HTMLElement) {
+        const tileElement &#x3D; this.getTileElementFromHTMLElement(element);
+        if (!tileElement) {
+            return null;
+        }
+
+        const bounds &#x3D; tileElement.getBoundingClientRect();
+
+        if (x &lt; bounds.left + 10) {
+            if (y &lt; bounds.top + 10) {
+                return &#x27;nw-resize&#x27;;
+            } else if (y &gt; bounds.bottom - 10) {
+                return &#x27;sw-resize&#x27;;
+            } else {
+                return &#x27;w-resize&#x27;;
+            }
+        } else if (x &gt; bounds.right - 10) {
+            if (y &lt; bounds.top + 10) {
+                return &#x27;ne-resize&#x27;;
+            } else if (y &gt; bounds.bottom - 10) {
+                return &#x27;se-resize&#x27;;
+            } else {
+                return &#x27;e-resize&#x27;;
+            }
+        } else {
+            if (y &lt; bounds.top + 10) {
+                return &#x27;n-resize&#x27;;
+            } else if (y &gt; bounds.bottom - 10) {
+                return &#x27;s-resize&#x27;;
+            } else {
+                return &#x27;move&#x27;;
+            }
+        }
+    }
+
+    private extractValueAndUnit(prop: string, value: string) {
+        const regexp &#x3D; /(\d+)(.*)/i;
+        const matches &#x3D; regexp.exec(value);
+
+        if (matches &amp;&amp; matches.length &gt;&#x3D; 1) {
+            this[prop] &#x3D; parseInt(matches[1], 10);
+            if (matches.length &gt;&#x3D; 2) {
+                this[prop + &#x27;Unit&#x27;] &#x3D; matches[2];
+            } else {
+                this[prop + &#x27;Unit&#x27;] &#x3D; &#x27;px&#x27;;
+            }
+        }
+    }
+
+    private restoreLayout(layout: ILayoutInfos) {
+        this.tiles.forEach((tile) &#x3D;&gt; {
+            const config &#x3D; layout[tile.id] as ILayoutInfo;
+            tile.percentBounds &#x3D; config.bounds.clone();
+        });
+    }
+
+    private calcHorizontalOverflow(direction: number, tiles: DejaTile[], offset: number, blackList?: Object): number {
+        let overflow &#x3D; 0;
+        blackList &#x3D; blackList || {};
+
+        tiles.forEach((t) &#x3D;&gt; {
+            if (!blackList[t.id]) {
+                blackList[t.id] &#x3D; t.id;
+
+                const tryBounds &#x3D; t.percentBounds.offset(direction * offset, 0);
+                let roffset &#x3D; 0;
+                const maxWidth &#x3D; this.getMaxPercentWidth();
+                if (tryBounds.left &lt; 0) {
+                    roffset &#x3D; -tryBounds.left;
+                } else if (maxWidth &amp;&amp; tryBounds.right &gt; maxWidth) {
+                    roffset &#x3D; tryBounds.right - maxWidth;
+                }
+
+                const adjacentTiles &#x3D; this.tiles.filter((tile: DejaTile) &#x3D;&gt; !tile.isDragging &amp;&amp; !tile.equalsTo(t) &amp;&amp; tile.percentBounds.intersectWith(tryBounds));
+
+                if (adjacentTiles.length) {
+                    roffset +&#x3D; this.calcHorizontalOverflow(direction, adjacentTiles, offset, blackList);
+                }
+
+                if (roffset &gt; overflow) {
+                    overflow &#x3D; roffset;
+                }
+            }
+        });
+
+        return overflow;
+    }
+
+    private moveHorizontal(direction: number, tiles: DejaTile[], offset: number, targetBounds: { [id: number]: Rect }) {
+        tiles.forEach((t) &#x3D;&gt; {
+            if (!targetBounds[t.id]) {
+                // Offset tile
+                const newBounds &#x3D; targetBounds[t.id] &#x3D; t.percentBounds.offset(direction * offset, 0);
+                const adjacentTiles &#x3D; this.tiles.filter((tile: DejaTile) &#x3D;&gt; !tile.isDragging &amp;&amp; !tile.equalsTo(t) &amp;&amp; tile.percentBounds.intersectWith(newBounds));
+
+                if (adjacentTiles.length) {
+                    this.moveHorizontal(direction, adjacentTiles, offset, targetBounds);
+                }
+            }
+        });
+    }
+
+    private pushHorizontal(bounds: Rect, direction: number, tiles?: DejaTile[], offset?: number): number {
+        let overflow &#x3D; 0;
+        const targetBounds &#x3D; {} as { [id: number]: Rect };
+
+        if (!offset) {
+            offset &#x3D; 0;
+            tiles.forEach((t) &#x3D;&gt; {
+                const ho &#x3D; direction &gt; 0 ? Math.max(0, bounds.right - t.percentBounds.left) : Math.max(0, t.percentBounds.right - bounds.left);
+                if (ho &gt; offset) {
+                    offset &#x3D; ho;
+                }
+            });
+        }
+
+        if (offset &gt; 0) {
+            // Calc overflow space if all specified tiles are moved
+            overflow &#x3D; this.calcHorizontalOverflow(direction, tiles, offset);
+            offset -&#x3D; overflow;
+            if (offset &gt; 0) {
+                this.moveHorizontal(direction, tiles, offset, targetBounds);
+
+                //  bounds array to tiles
+                this.tiles.forEach((t) &#x3D;&gt; {
+                    if (targetBounds[t.id]) {
+                        t.percentBounds &#x3D; targetBounds[t.id];
+                    }
+                });
+            }
+        }
+
+        return overflow;
+    }
+
+    private calcVerticalOverflow(direction: number, tiles: DejaTile[], offset: number, blackList?: Object): number {
+        let overflow &#x3D; 0;
+        blackList &#x3D; blackList || {};
+
+        tiles.forEach((t) &#x3D;&gt; {
+            if (!blackList[t.id]) {
+                blackList[t.id] &#x3D; t.id;
+
+                // Offset tile
+                const tryBounds &#x3D; t.percentBounds.offset(0, direction * offset);
+                let roffset &#x3D; 0;
+                const maxHeight &#x3D; this.getMaxPercentHeight();
+                if (tryBounds.top &lt; 0) {
+                    roffset &#x3D; -tryBounds.top;
+                } else if (maxHeight &amp;&amp; tryBounds.bottom &gt; maxHeight) {
+                    roffset &#x3D; tryBounds.bottom - maxHeight;
+                }
+
+                const adjacentTiles &#x3D; this.tiles.filter((tile: DejaTile) &#x3D;&gt; !tile.isDragging &amp;&amp; !tile.equalsTo(t) &amp;&amp; tile.percentBounds.intersectWith(tryBounds));
+
+                if (adjacentTiles.length) {
+                    roffset +&#x3D; this.calcVerticalOverflow(direction, adjacentTiles, offset, blackList);
+                }
+
+                if (roffset &gt; overflow) {
+                    overflow &#x3D; roffset;
+                }
+            }
+        });
+
+        return overflow;
+    }
+
+    private moveVertical(direction: number, tiles: DejaTile[], offset: number, targetBounds: { [id: number]: Rect }) {
+        tiles.forEach((t) &#x3D;&gt; {
+            if (!targetBounds[t.id]) {
+                // Offset tile
+                const newBounds &#x3D; targetBounds[t.id] &#x3D; t.percentBounds.offset(0, direction * offset);
+                const adjacentTiles &#x3D; this.tiles.filter((tile: DejaTile) &#x3D;&gt; !tile.isDragging &amp;&amp; !tile.equalsTo(t) &amp;&amp; tile.percentBounds.intersectWith(newBounds));
+
+                if (adjacentTiles.length) {
+                    this.moveVertical(direction, adjacentTiles, offset, targetBounds);
+                }
+            }
+        });
+    }
+
+    private pushVertical(bounds: Rect, direction: number, tiles: DejaTile[], offset?: number): number {
+        let overflow &#x3D; 0;
+        const targetBounds &#x3D; {} as { [id: number]: Rect };
+
+        if (!offset) {
+            offset &#x3D; 0;
+            tiles.forEach((t) &#x3D;&gt; {
+                const vo &#x3D; direction &gt; 0 ? Math.max(0, bounds.bottom - t.percentBounds.top) : Math.max(0, t.percentBounds.bottom - bounds.top);
+                if (vo &gt; offset) {
+                    offset &#x3D; vo;
+                }
+            });
+        }
+
+        if (offset &gt; 0) {
+            // Calc overflow space if all specified tiles are moved
+            overflow &#x3D; this.calcVerticalOverflow(direction, tiles, offset);
+            offset -&#x3D; overflow;
+            if (offset &gt; 0) {
+                this.moveVertical(direction, tiles, offset, targetBounds);
+
+                //  bounds array to tiles
+                this._tiles.forEach((t) &#x3D;&gt; {
+                    if (targetBounds[t.id]) {
+                        t.percentBounds &#x3D; targetBounds[t.id];
+                    }
+                });
+            }
+        }
+
+        return overflow;
+    }
+
+    private createTile(tile: IDejaTile) {
+        const newTile &#x3D; new DejaTile(tile);
+        this.tiles.push(newTile);
+        this.tilesDic[newTile.id] &#x3D; newTile;
+        return newTile;
+    }
+
+    private copyTiles(tiles: DejaTile[], isCut?: boolean) {
+        if (!this.clipboardService) {
+            if (!tiles) {
+                return;
+            }
+            throw new Error(&#x27;DejaClipboardService must be imported by your application to use the copyTiles methode of DejaTilesComponent.&#x27;);
+        }
+
+        const tt &#x3D; this.clipboardService.get(&#x27;tiles&#x27;) as DejaTile[];
+        if (tt) {
+            tt.forEach((tile) &#x3D;&gt; tile.isCutted &#x3D; false);
+        }
+        this.clipboardService.set(&#x27;tiles&#x27;, tiles);
+        if (isCut) {
+            tiles.forEach((tile) &#x3D;&gt; tile.isCutted &#x3D; true);
+            this.clipboardService.set(&#x27;tiles-provider&#x27;, this.deleteTiles$);
+        } else {
+            this.clipboardService.set(&#x27;tiles-provider&#x27;, undefined);
+        }
+    }
+
+    private removeTemporaryTile() {
+        let index &#x3D; this.tiles.length;
+        while (--index &gt;&#x3D; 0) {
+            const tile &#x3D; this.tiles[index];
+            if (tile.id &#x3D;&#x3D;&#x3D; &#x27;#temp&#x27;) {
+                this.tiles.splice(index, 1);
+            }
+        }
+        delete this.tilesDic[&#x27;#temp&#x27;];
+    }
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script>var COMPODOC_CURRENT_PAGE_DEPTH = 1;</script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
+
+    </body>
+</html>
