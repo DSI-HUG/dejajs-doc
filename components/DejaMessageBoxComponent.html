@@ -1561,6 +1561,10 @@
         <tbody>
 
 
+            <tr>
+                <td class="col-md-3">encapsulation</td>
+                <td class="col-md-9"><code>ViewEncapsulation.None</code></td>
+            </tr>
 
 
 
@@ -1610,7 +1614,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/component/message-box/message-box.component.ts:20</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/component/message-box/message-box.component.ts:21</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -1626,7 +1630,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/component/message-box/message-box.component.ts:26</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/component/message-box/message-box.component.ts:27</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -1646,7 +1650,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/component/message-box/message-box.component.ts:19</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/component/message-box/message-box.component.ts:20</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -1666,7 +1670,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/component/message-box/message-box.component.ts:18</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/component/message-box/message-box.component.ts:19</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -1686,7 +1690,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/component/message-box/message-box.component.ts:17</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/component/message-box/message-box.component.ts:18</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -1705,7 +1709,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/component/message-box/message-box.component.ts:32</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/component/message-box/message-box.component.ts:33</a></div>
                                 </td>
                             </tr>
     
@@ -1739,7 +1743,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="21" class="link-to-prism">src/component/message-box/message-box.component.ts:21</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/component/message-box/message-box.component.ts:22</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -1759,7 +1763,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/component/message-box/message-box.component.ts:30</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/component/message-box/message-box.component.ts:31</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -1769,9 +1773,10 @@
 
 
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">import { Component, ContentChild, Input, OnInit } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers"><code class="language-typescript">import { Component, ContentChild, Input, OnInit, ViewEncapsulation } from &#x27;@angular/core&#x27;;
 
 @Component({
+    encapsulation: ViewEncapsulation.None,
     selector: &#x27;deja-message-box&#x27;,
     styleUrls: [&#x27;./message-box.component.scss&#x27;],
     templateUrl: &#x27;./message-box.component.html&#x27;,
@@ -1831,7 +1836,7 @@ export class DejaMessageBoxComponent implements OnInit {
     </div>
 
     <div class="tab-pane fade" id="templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;md-card class&#x3D;&quot;{{type}}&quot;&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;md-card id&#x3D;&quot;msgbox&quot; class&#x3D;&quot;{{type}}&quot;&gt;
     &lt;md-card-title *ngIf&#x3D;&quot;icon&quot;&gt;
         &lt;md-icon *ngIf&#x3D;&quot;icon&quot;&gt;{{icon}}&lt;/md-icon&gt;&lt;span *ngIf&#x3D;&quot;!horizontal&quot;&gt;{{title}}&lt;/span&gt;
     &lt;/md-card-title&gt;
@@ -1882,7 +1887,7 @@ export class DejaMessageBoxComponent implements OnInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><md-card class="{{type}}">    <md-card-title *ngIf="icon">        <md-icon *ngIf="icon">{{icon}}</md-icon><span *ngIf="!horizontal">{{title}}</span>    </md-card-title>    <md-card-content>        <h2 *ngIf="horizontal && title">{{title}}</h2>        <ng-content></ng-content>    </md-card-content>    <md-card-actions *ngIf="actions">        <span *ngFor="let action of actions">            <button md-raised-button *ngIf="action.icon && action.text" (click)="action.action()" class="with-icon" [attr.data-icon]="action.icon" [color]="action.type">                {{action.text}}            </button>            <button md-raised-button *ngIf="!action.icon && action.text" (click)="action.action()" [color]="action.type">                {{action.text}}            </button>            <button md-mini-fab *ngIf="action.icon && !action.text" [color]="action.type || \'blank\'" [class.close]="!action.type" (click)="action.action()">                <md-icon>{{action.icon}}</md-icon>            </button>        </span>    </md-card-actions>    <md-card-actions *ngIf="!actions && actionsTemplate">		<ng-template [ngTemplateOutlet]="actionsTemplate"></ng-template>	</md-card-actions></md-card></div>'
+        var COMPONENT_TEMPLATE = '<div><md-card id="msgbox" class="{{type}}">    <md-card-title *ngIf="icon">        <md-icon *ngIf="icon">{{icon}}</md-icon><span *ngIf="!horizontal">{{title}}</span>    </md-card-title>    <md-card-content>        <h2 *ngIf="horizontal && title">{{title}}</h2>        <ng-content></ng-content>    </md-card-content>    <md-card-actions *ngIf="actions">        <span *ngFor="let action of actions">            <button md-raised-button *ngIf="action.icon && action.text" (click)="action.action()" class="with-icon" [attr.data-icon]="action.icon" [color]="action.type">                {{action.text}}            </button>            <button md-raised-button *ngIf="!action.icon && action.text" (click)="action.action()" [color]="action.type">                {{action.text}}            </button>            <button md-mini-fab *ngIf="action.icon && !action.text" [color]="action.type || \'blank\'" [class.close]="!action.type" (click)="action.action()">                <md-icon>{{action.icon}}</md-icon>            </button>        </span>    </md-card-actions>    <md-card-actions *ngIf="!actions && actionsTemplate">		<ng-template [ngTemplateOutlet]="actionsTemplate"></ng-template>	</md-card-actions></md-card></div>'
     var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBackdropComponent', 'selector': 'deja-backdrop'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaCodeViewerComponent', 'selector': 'deja-code-viewer'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaDropDownComponent', 'selector': 'deja-dropdown'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMarkdownComponent', 'selector': 'deja-markdown'},{'name': 'DejaMenuComponent', 'selector': 'deja-menu'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'}];
     var DIRECTIVES = [{'name': 'DateValidatorDirective', 'selector': '[date-validator][ngModel]'},{'name': 'DejaAutosizeTextAreaDirective', 'selector': 'textarea[deja-autosize]'},{'name': 'DejaChildValidatorDirective', 'selector': '[deja-child-validator]'},{'name': 'DejaDraggableDirective', 'selector': '[deja-draggable]'},{'name': 'DejaDroppableDirective', 'selector': '[deja-droppable]'},{'name': 'DejaEditableDirective', 'selector': '[deja-editable]'},{'name': 'DejaMouseDraggableDirective', 'selector': '[deja-mouse-draggable]'},{'name': 'DejaMouseDroppableDirective', 'selector': '[deja-mouse-droppable]'},{'name': 'DejaTilePositionDirective', 'selector': '[deja-tile-position]'},{'name': 'DejaTooltipDirective', 'selector': '[deja-tooltip]'},{'name': 'PendingOnFocusDirective', 'selector': '[pending-onfocus]'},{'name': 'SplitAreaDirective', 'selector': 'split-area'},{'name': 'SplitGutterDirective', 'selector': 'split-gutter'},{'name': 'ValidateOnBlurDirective', 'selector': '[validate-onblur]'}];
     var ACTUAL_COMPONENT = {'name': 'DejaMessageBoxComponent'};

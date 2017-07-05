@@ -1558,26 +1558,26 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
-                                    <b><span class="modifier">Public</span> cloneSyncWithPrototype</b>
+                                    <b><span class="modifier">Public</span> clone$</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                         <span class="modifier-icon method fa fa-play "></span>
-                                    <code>cloneSyncWithPrototype(object: any)</code>
+                                    <code>clone$(object: any, type: object | (new () => T))</code>
                                 </td>
                             </tr>
             
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/common/core/cloning/cloning.service.ts:24</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/common/core/cloning/cloning.service.ts:25</a></div>
                                         </td>
                                     </tr>
             
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-description"><p>Clone an object and his prototype</p>
+                                        <div class="io-description"><p>Sync cloning of an object</p>
             </div>
             
                                         <div class="io-description">
@@ -1592,7 +1592,113 @@
             
                                                             </div>
                                                         </li>
+                                                        <li>
+                                                            <div>
+                                                                <b>type</b>
+                                                            </div>
+                                                            <div>
+                                                                <p>The type of object to clone</p>
+            
+                                                            </div>
+                                                        </li>
                                                 </ul>
+                                        </div>
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>any</code>
+            
+                                        </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Public</span> cloneSync</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play "></span>
+                                    <code>cloneSync(obj: object, target: object | (new () => T))</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/common/core/cloning/cloning.service.ts:36</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>Clone an object or a class</p>
+            </div>
+            
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <ul class="jsdoc-params">
+                                                        <li>
+                                                            <div>
+                                                                <b>object</b>
+                                                            </div>
+                                                            <div>
+                                                                <p>The object to clone.</p>
+            
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <div>
+                                                                <b>target</b>
+                                                            </div>
+                                                            <div>
+                                                                <p>The type or an instance of the target</p>
+            
+                                                            </div>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>T</code>
+            
+                                        </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Public</span> cloneSyncWithPrototype</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play "></span>
+                                    <code>cloneSyncWithPrototype(object: any)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="89" class="link-to-prism">src/common/core/cloning/cloning.service.ts:89</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
                                         </div>
                                         <div class="io-description">
                                             <b>Returns : </b>    <code>void</code>
@@ -1622,82 +1728,17 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/common/core/cloning/cloning.service.ts:50</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="112" class="link-to-prism">src/common/core/cloning/cloning.service.ts:112</a></div>
                                         </td>
                                     </tr>
             
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-description"><p>Async Clone of an object and his prototype</p>
-            </div>
             
                                         <div class="io-description">
-                                                <b>Parameters :</b>
-                                                <ul class="jsdoc-params">
-                                                        <li>
-                                                            <div>
-                                                                <b>object</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>The object to clone.</p>
-            
-                                                            </div>
-                                                        </li>
-                                                </ul>
                                         </div>
                                         <div class="io-description">
                                             <b>Returns : </b>    <code>void</code>
-            
-                                        </div>
-                                            <div class="io-description">
-                                                
-                                            </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <b><span class="modifier">Public</span> cloneSync</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>cloneSync(object: any)</code>
-                                </td>
-                            </tr>
-            
-            
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/common/core/cloning/cloning.service.ts:60</a></div>
-                                        </td>
-                                    </tr>
-            
-                            <tr>
-                                <td class="col-md-4">
-                                        <div class="io-description"><p>Clone an object without the prototype</p>
-            </div>
-            
-                                        <div class="io-description">
-                                                <b>Parameters :</b>
-                                                <ul class="jsdoc-params">
-                                                        <li>
-                                                            <div>
-                                                                <b>object</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>The object to clone.</p>
-            
-                                                            </div>
-                                                        </li>
-                                                </ul>
-                                        </div>
-                                        <div class="io-description">
-                                            <b>Returns : </b>    <code>any</code>
             
                                         </div>
                                             <div class="io-description">
@@ -1724,7 +1765,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="71" class="link-to-prism">src/common/core/cloning/cloning.service.ts:71</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="119" class="link-to-prism">src/common/core/cloning/cloning.service.ts:119</a></div>
                                         </td>
                                     </tr>
             
@@ -1732,57 +1773,6 @@
                                 <td class="col-md-4">
             
                                         <div class="io-description">
-                                        </div>
-                                        <div class="io-description">
-                                            <b>Returns : </b>    <code>void</code>
-            
-                                        </div>
-                                            <div class="io-description">
-                                                
-                                            </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <b><span class="modifier">Public</span> clone$</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>clone$(object: any)</code>
-                                </td>
-                            </tr>
-            
-            
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/common/core/cloning/cloning.service.ts:81</a></div>
-                                        </td>
-                                    </tr>
-            
-                            <tr>
-                                <td class="col-md-4">
-                                        <div class="io-description"><p>Sync cloning of an object</p>
-            </div>
-            
-                                        <div class="io-description">
-                                                <b>Parameters :</b>
-                                                <ul class="jsdoc-params">
-                                                        <li>
-                                                            <div>
-                                                                <b>object</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>The object to clone.</p>
-            
-                                                            </div>
-                                                        </li>
-                                                </ul>
                                         </div>
                                         <div class="io-description">
                                             <b>Returns : </b>    <code>void</code>
@@ -1812,23 +1802,22 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="94" class="link-to-prism">src/common/core/cloning/cloning.service.ts:94</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="126" class="link-to-prism">src/common/core/cloning/cloning.service.ts:126</a></div>
                                         </td>
                                     </tr>
             
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-description"><p>Extening object that entered in first argument.</p>
-            <p>Returns extended object or false if have no target object or incorrect type.</p>
-            <p>If you wish to clone source object (without modify it), just use empty new
-            object as first argument, like this:
-               deepCopy({}, yourObj_1, [yourObj_N]);</p>
-            </div>
             
+                                        <div class="io-description">
+                                        </div>
                                         <div class="io-description">
                                             <b>Returns : </b>    <code>void</code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -1837,9 +1826,9 @@
 
     </div>
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">import {Injectable} from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
 import &#x27;rxjs/add/operator/toPromise&#x27;;
-import {Observable} from &#x27;rxjs/Observable&#x27;;
+import { Observable } from &#x27;rxjs/Observable&#x27;;
 
 /**
  * Service for cloning or copying an object
@@ -1847,11 +1836,76 @@ import {Observable} from &#x27;rxjs/Observable&#x27;;
 @Injectable()
 export class CloningService {
     /**
-     * Clone an object and his prototype
+     * Sync cloning of an object
      *
      * @param object  The object to clone.
-     * @return A new instance of the passed object and cloned
+     * @param type The type of object to clone
+     * @return Observable resolving to the cloned object.
      */
+    public clone$&lt;T&gt;(object: any, type?: { new (): T } | object): Observable&lt;T&gt; {
+        return Observable.of(this.cloneSync(object, type));
+    }
+
+    /**
+     * Clone an object or a class
+     *
+     * @param object  The object to clone.
+     * @param target The type or an instance of the target
+     * @return The cloned object.
+     */
+    public cloneSync&lt;T&gt;(obj: object, target?: { new (): T } | object): T {
+        if (!target) {
+            return JSON.parse(JSON.stringify(obj));
+        } else {
+            const cloneInternal &#x3D; (src: any, tgt?: any) &#x3D;&gt; {
+                if (!src || typeof src !&#x3D;&#x3D; &#x27;object&#x27;) {
+                    return src;
+                }
+
+                if (!tgt) {
+                    tgt &#x3D; new src.constructor();
+                }
+
+                Object.keys(src).forEach((key) &#x3D;&gt; {
+                    const val &#x3D; src[key];
+
+                    if (typeof val !&#x3D;&#x3D; &#x27;object&#x27; || val &#x3D;&#x3D;&#x3D; null) {
+                        tgt[key] &#x3D; val;
+
+                    } else if (Array.isArray(val)) {
+                        // just clone arrays (and recursive clone objects inside)
+                        const clone &#x3D; [];
+                        val.forEach((item, index) &#x3D;&gt; {
+                            clone[index] &#x3D; cloneInternal(item);
+                        });
+                        tgt[key] &#x3D; clone;
+
+                    } else if (val instanceof Date) {
+                        tgt[key] &#x3D; new Date(val.getTime());
+
+                    } else if (val instanceof RegExp) {
+                        tgt[key] &#x3D; new RegExp(val);
+
+                    } else {
+                        tgt[key] &#x3D; cloneInternal(val);
+
+                    }
+                });
+
+                return tgt;
+            };
+
+            if (obj &amp;&amp; Array.isArray(obj)) {
+                throw new Error(&#x27;Only objects can be cloned. Please map the array and clone each elements.&#x27;);
+            }
+
+            return cloneInternal(obj, typeof target &#x3D;&#x3D;&#x3D; &#x27;object&#x27; ? target : new target());
+        }
+    }
+
+    /**
+     * @deprecated 03.07.2017 Use cloneSync with the parameter type specified instead
+    */
     public cloneSyncWithPrototype(object: any) {
         if (!object || typeof object !&#x3D;&#x3D; &#x27;object&#x27;) {
             return object;
@@ -1873,54 +1927,21 @@ export class CloningService {
     }
 
     /**
-     * Async Clone of an object and his prototype
-     *
-     * @param object  The object to clone.
-     * @return An observable completed with the cloned object
+     * @deprecated 03.07.2017 Use clone$ with the parameter type specified instead
      */
     public cloneWithPrototype$(object: any) {
         return Observable.of(this.cloneSyncWithPrototype(object));
     }
 
     /**
-     * Clone an object without the prototype
-     *
-     * @param object  The object to clone.
-     * @return A new instance of the passed object and cloned.
-     */
-    public cloneSync(object: any): any {
-        try {
-            return JSON.parse(JSON.stringify(object));
-        } catch (err) {
-            return null;
-        }
-    }
-
-    /**
-     * @deprecated
+     * @deprecated 01.03.2017
      */
     public clone(object: any) {
         return this.clone$(object).toPromise();
     }
 
     /**
-     * Sync cloning of an object
-     *
-     * @param object  The object to clone.
-     * @return Observable resolving to the cloned object.
-     */
-    public clone$(object: any) {
-        return Observable.of(this.cloneSync(object));
-    }
-
-    /**
-     * Extening object that entered in first argument.
-     *
-     * Returns extended object or false if have no target object or incorrect type.
-     *
-     * If you wish to clone source object (without modify it), just use empty new
-     * object as first argument, like this:
-     *   deepCopy({}, yourObj_1, [yourObj_N]);
+     * @deprecated 03.07.2017 Use cloneSync with the parameter type specified instead
      */
     public deepCopy(...objects: any[]) {
         if (objects.length &lt; 1 || typeof objects[0] !&#x3D;&#x3D; &#x27;object&#x27;) {
@@ -1988,8 +2009,8 @@ export class CloningService {
     }
 
     /**
-     * Recursive cloning array.
-     */
+     * @deprecated 03.07.2017
+    */
     private deepCloneArray(arr) {
         const clone &#x3D; [];
         const that &#x3D; this;
@@ -2009,6 +2030,9 @@ export class CloningService {
         return clone;
     }
 
+    /**
+     * @deprecated 03.07.2017
+    */
     private isSpecificValue(val) {
         return (
             val instanceof Date
@@ -2016,6 +2040,9 @@ export class CloningService {
         ) ? true : false;
     }
 
+    /**
+     * @deprecated 03.07.2017
+    */
     private cloneSpecificValue(val): any {
         if (val instanceof Date) {
             return new Date(val.getTime());
