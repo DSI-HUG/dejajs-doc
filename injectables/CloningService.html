@@ -1896,7 +1896,7 @@ export class CloningService {
             };
 
             if (obj &amp;&amp; Array.isArray(obj)) {
-                throw new Error(&#x27;Only objects can be cloned. Please map the array and clone each elements.&#x27;);
+                return obj.map((o) &#x3D;&gt; this.cloneSync(o, target)) as any;
             }
 
             return cloneInternal(obj, typeof target &#x3D;&#x3D;&#x3D; &#x27;object&#x27; ? target : new target());

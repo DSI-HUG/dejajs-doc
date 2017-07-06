@@ -1918,9 +1918,9 @@ By default <code>100%</code></p>
 
     <div class="tab-pane fade tab-source-code" id="source">
         <pre class="line-numbers"><code class="language-typescript">import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, EventEmitter, HostBinding, Input, OnChanges, OnDestroy, Output, Renderer, SimpleChanges, ViewEncapsulation } from &#x27;@angular/core&#x27;;
-import {IAreaData} from &#x27;./area-data.model&#x27;;
-import {Point} from &#x27;./point.model&#x27;;
-import {SplitAreaDirective} from &#x27;./split-area.directive&#x27;;
+import { IAreaData } from &#x27;./area-data.model&#x27;;
+import { Point } from &#x27;./point.model&#x27;;
+import { SplitAreaDirective } from &#x27;./split-area.directive&#x27;;
 
 const gutterSize &#x3D; &#x27;gutterSize&#x27;;
 const disabled &#x3D; &#x27;disabled&#x27;;
@@ -2011,8 +2011,8 @@ export class DejaSplitterComponent implements OnChanges, OnDestroy {
      * Constructor
      */
     constructor(private cdRef: ChangeDetectorRef,
-                private elementRef: ElementRef,
-                private renderer: Renderer) {
+        private elementRef: ElementRef,
+        private renderer: Renderer) {
     }
 
     /**
@@ -2143,11 +2143,28 @@ export class DejaSplitterComponent implements OnChanges, OnDestroy {
 
         // SIZES: Set css &#x27;flex-basis&#x27; property depending on user input or equal sizes
         const totalSize &#x3D; this.areas.map((a) &#x3D;&gt; a.sizeUser).reduce((acc, s) &#x3D;&gt; acc + s, 0);
-        const nbCorrectSize &#x3D; this.areas.filter((a) &#x3D;&gt; a.sizeUser &amp;&amp; !isNaN(a.sizeUser) &amp;&amp; a.sizeUser &gt;&#x3D; this.minPercent).length;
+        const toBeDefined &#x3D; this.areas.filter((a) &#x3D;&gt; !a.sizeUser || isNaN(a.sizeUser));
 
-        if (totalSize &lt; 99.99 || totalSize &gt; 100.01 || nbCorrectSize !&#x3D;&#x3D; this.areas.length) {
-            const size &#x3D; Number((100 / this.areas.length).toFixed(3));
-            this.areas.forEach((a) &#x3D;&gt; a.size &#x3D; size);
+        if ((totalSize &lt; 99.99 || totalSize &gt; 100.01) &amp;&amp; this.areas.length &gt; 1) {
+            if (toBeDefined.length &#x3D;&#x3D;&#x3D; 0) {
+                // Map to 100%
+                this.areas.forEach((a) &#x3D;&gt; {
+                    const adjustedSize &#x3D; a.size * 100 / totalSize;
+                    a.size &#x3D; adjustedSize;
+                });
+            } else if (totalSize &lt; 99.99) {
+                // Share the remaining size to the undefined areas
+                let remain &#x3D; (100 - totalSize);
+                let toBeDefinedLength &#x3D; toBeDefined.length;
+                toBeDefined.forEach((a) &#x3D;&gt; {
+                    const size &#x3D; remain / toBeDefinedLength--;
+                    a.size &#x3D; size;
+                    remain -&#x3D; size;
+                });
+            } else {
+                const size &#x3D; Number((100 / this.areas.length).toFixed(3));
+                this.areas.forEach((a) &#x3D;&gt; a.size &#x3D; size);
+            }
         } else {
             this.areas.forEach((a) &#x3D;&gt; a.size &#x3D; Number(a.sizeUser));
         }
@@ -2158,7 +2175,7 @@ export class DejaSplitterComponent implements OnChanges, OnDestroy {
 
     private refreshStyleSizes() {
         const f &#x3D; this.gutterSize * this.nbGutters / this.areas.length;
-        this.areas.forEach((a) &#x3D;&gt; a.component.setStyle(&#x27;flex-basis&#x27;, &#x60;calc( ${ a.size }% - ${ f }px )&#x60;));
+        this.areas.forEach((a) &#x3D;&gt; a.component.setStyle(&#x27;flex-basis&#x27;, &#x60;calc( ${a.size}% - ${f}px )&#x60;));
     }
 
     private dragEvent(event: MouseEvent, start: Point, areaA: IAreaData, areaB: IAreaData) {
