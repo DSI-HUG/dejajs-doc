@@ -263,6 +263,9 @@
                                     <a href="../components/DejaIFrameComponent.html" >DejaIFrameComponent</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../components/DejaItemComponent.html" >DejaItemComponent</a>
+                                </li>
+                                <li class="link">
                                     <a href="../components/DejaListLoaderComponent.html" >DejaListLoaderComponent</a>
                                 </li>
                                 <li class="link">
@@ -1009,6 +1012,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaIFrameComponent.html" >DejaIFrameComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaItemComponent.html" >DejaItemComponent</a>
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaListLoaderComponent.html" >DejaListLoaderComponent</a>
@@ -3413,6 +3419,38 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <b><span class="modifier">Public</span> ensureSelection</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play "></span>
+                                    <code>ensureSelection()</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="931" class="link-to-prism">src/common/core/item-list/item-list.service.ts:931</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
                                     <b><span class="modifier">Protected</span> getItemList$</b>
                                 </td>
                             </tr>
@@ -3426,7 +3464,7 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="937" class="link-to-prism">src/common/core/item-list/item-list.service.ts:937</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="941" class="link-to-prism">src/common/core/item-list/item-list.service.ts:941</a></div>
                                         </td>
                                     </tr>
             
@@ -3487,7 +3525,7 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="947" class="link-to-prism">src/common/core/item-list/item-list.service.ts:947</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="951" class="link-to-prism">src/common/core/item-list/item-list.service.ts:951</a></div>
                                         </td>
                                     </tr>
             
@@ -3560,7 +3598,7 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="965" class="link-to-prism">src/common/core/item-list/item-list.service.ts:965</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="969" class="link-to-prism">src/common/core/item-list/item-list.service.ts:969</a></div>
                                         </td>
                                     </tr>
             
@@ -3612,7 +3650,7 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="977" class="link-to-prism">src/common/core/item-list/item-list.service.ts:977</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="981" class="link-to-prism">src/common/core/item-list/item-list.service.ts:981</a></div>
                                         </td>
                                     </tr>
             
@@ -3695,7 +3733,7 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="1089" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1089</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="1093" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1093</a></div>
                                         </td>
                                     </tr>
             
@@ -3747,7 +3785,7 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="1153" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1153</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="1157" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1157</a></div>
                                         </td>
                                     </tr>
             
@@ -4823,6 +4861,10 @@ export class ItemListService {
         }
     }
 
+    public ensureSelection() {
+        return this.ensureSelectedItems(this.items);
+    }
+
     /** Retourne la liste à utilise pour la création des caches. Surcharger cetee méthode pour fournir une liste de façon lazy.
      * En cas de surcharge, retourner une nouvelle instance de la liste originale pour que le service regénère ses caches.
      * @param {string} query Texte ou regular expression par laquelle la liste doit être filtrée.
@@ -5052,8 +5094,45 @@ export class ItemListService {
         this._cache.rowsCount &#x3D; 0;
     }
 
+    private ensureSelectedItems(items: IItemBase[]) {
+        if (!items || !this.selectedList || this.selectedList.length &#x3D;&#x3D;&#x3D; 0) {
+            return [];
+        }
+
+        // Ensure selected flag
+        this.selectedList.forEach((item) &#x3D;&gt; item.selected &#x3D; true);
+
+        const newSelectedList &#x3D; [] as IItemBase[];
+        const ensureSelectedChildren &#x3D; (children: IItemTree[]) &#x3D;&gt; {
+            children.forEach((item) &#x3D;&gt; {
+                const selectedItem &#x3D; this.selectedList.find((selected) &#x3D;&gt; this.compareItems(selected, item));
+                if (selectedItem) {
+                    selectedItem.selected &#x3D; false;
+                    newSelectedList.push(item);
+                }
+                if (item.$items) {
+                    ensureSelectedChildren(item.$items);
+                }
+            });
+        };
+
+        ensureSelectedChildren(items);
+
+        // Add not found selected items
+        this.selectedList.filter((item) &#x3D;&gt; item.selected).forEach((item) &#x3D;&gt; newSelectedList.push(item));
+
+        this.selectedList &#x3D; newSelectedList;
+
+        // Ensure selected flag for the new items
+        this.selectedList.forEach((item) &#x3D;&gt; item.selected &#x3D; true);
+
+        return this.selectedList;
+    }
+
     private compareItems &#x3D; (item1: IItemBase, item2: IItemBase) &#x3D;&gt; {
-        if (item1.model &amp;&amp; !item2.model) {
+        if (!item1 || !item2) {
+            return false;
+        } else if (item1.model &amp;&amp; !item2.model) {
             return false;
         } else if (!item1.model &amp;&amp; item2.model) {
             return false;
@@ -5084,39 +5163,6 @@ export class ItemListService {
             }
             return item1 &#x3D;&#x3D;&#x3D; item2;
         }
-    }
-
-    private ensureSelectedItems(items: IItemBase[]) {
-        if (!items || !this.selectedList || this.selectedList.length &#x3D;&#x3D;&#x3D; 0) {
-            return;
-        }
-
-        // Ensure selected flag
-        this.selectedList.forEach((item) &#x3D;&gt; item.selected &#x3D; true);
-
-        const newSelectedList &#x3D; [] as IItemBase[];
-        const ensureSelectedChildren &#x3D; (children: IItemTree[]) &#x3D;&gt; {
-            children.forEach((item) &#x3D;&gt; {
-                const selectedItem &#x3D; this.selectedList.find((selected) &#x3D;&gt; this.compareItems(selected, item));
-                if (selectedItem) {
-                    selectedItem.selected &#x3D; false;
-                    newSelectedList.push(item);
-                }
-                if (item.$items) {
-                    ensureSelectedChildren(item.$items);
-                }
-            });
-        };
-
-        ensureSelectedChildren(items);
-
-        // Add not found selected items
-        this.selectedList.filter((item) &#x3D;&gt; item.selected).forEach((item) &#x3D;&gt; newSelectedList.push(item));
-
-        this.selectedList &#x3D; newSelectedList;
-
-        // Ensure selected flag for the new items
-        this.selectedList.forEach((item) &#x3D;&gt; item.selected &#x3D; true);
     }
 
     private ensureVisibleListCache$(searchField: string, regExp: RegExp, expandTree: boolean, multiSelect: boolean) {

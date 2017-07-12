@@ -263,6 +263,9 @@
                                     <a href="../components/DejaIFrameComponent.html" >DejaIFrameComponent</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../components/DejaItemComponent.html" >DejaItemComponent</a>
+                                </li>
+                                <li class="link">
                                     <a href="../components/DejaListLoaderComponent.html" >DejaListLoaderComponent</a>
                                 </li>
                                 <li class="link">
@@ -1011,6 +1014,9 @@
                                            <a href="../components/DejaIFrameComponent.html" >DejaIFrameComponent</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../components/DejaItemComponent.html" >DejaItemComponent</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../components/DejaListLoaderComponent.html" >DejaListLoaderComponent</a>
                                        </li>
                                        <li class="link">
@@ -1554,6 +1560,13 @@
     </p>
 
 
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/docs/ts/latest/api/core/index/OnInit-interface.html" target="_blank" >OnInit</a></code>
+                <code><a href="https://angular.io/docs/ts/latest/api/core/index/OnDestroy-interface.html" target="_blank" >OnDestroy</a></code>
+    </p>
 
 
 <section>
@@ -1561,6 +1574,10 @@
     <table class="table table-sm table-hover">
         <tbody>
 
+            <tr>
+                <td class="col-md-3">changeDetection</td>
+                <td class="col-md-9"><code>ChangeDetectionStrategy.OnPush</code></td>
+            </tr>
 
             <tr>
                 <td class="col-md-3">encapsulation</td>
@@ -1616,7 +1633,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/component/menu/menu.component.ts:25</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/component/menu/menu.component.ts:31</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -1638,7 +1655,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/component/menu/menu.component.ts:23</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/component/menu/menu.component.ts:29</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -1659,7 +1676,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/component/menu/menu.component.ts:29</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/component/menu/menu.component.ts:35</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -1680,7 +1697,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/component/menu/menu.component.ts:27</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/component/menu/menu.component.ts:33</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -1702,13 +1719,34 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/component/menu/menu.component.ts:31</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/component/menu/menu.component.ts:37</a></div>
                                 </td>
                             </tr>
                 </tbody>
             </table>
     </section>
 
+    <section>
+        <h3 id="outputs">Outputs</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <code>visibleChange</code>
+                        </td>
+                        <td class="col-md-10">
+                            <em><code>$event</code> type:</em>    <code><a href="https://angular.io/docs/ts/latest/api/core/index/EventEmitter-class.html" target="_blank" >EventEmitter</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/component/menu/menu.component.ts:39</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+    </section>
 
     <section>
         <h3 id="constructor">Constructor</h3>
@@ -1716,12 +1754,12 @@
                 <tbody>
                     <tr>
                         <td class="col-md-4">
-                            <code>constructor(elementRef: any)</code>
+                            <code>constructor(changeDetectorRef: any, elementRef: any, media: any)</code>
                         </td>
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/component/menu/menu.component.ts:33</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/component/menu/menu.component.ts:45</a></div>
                                 </td>
                             </tr>
     
@@ -1750,7 +1788,32 @@
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/component/menu/menu.component.ts:33</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/component/menu/menu.component.ts:41</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b><span class="modifier">Protected</span> isMobile</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-circle"></span><code>isMobile:     <code>boolean</code>
+    </bcode>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Default value : </i><code>false</code>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/component/menu/menu.component.ts:42</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -1760,11 +1823,17 @@
 
 
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">import { Component, ElementRef, Input, ViewEncapsulation } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers"><code class="language-typescript">import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, Input, OnDestroy, OnInit, Output, ViewEncapsulation } from &#x27;@angular/core&#x27;;
+import { EventEmitter } from &#x27;@angular/core&#x27;;
+import { ObservableMedia } from &#x27;@angular/flex-layout&#x27;;
+import { Observable } from &#x27;rxjs/Observable&#x27;;
+import { Subject } from &#x27;rxjs/Subject&#x27;;
+import { Subscription } from &#x27;rxjs/Subscription&#x27;;
 import { Position } from &#x27;../../common/core/graphics/position&#x27;;
 
 /** Menu avec placement optimisé (Voir DejaDropDownComponent) */
 @Component({
+    changeDetection: ChangeDetectionStrategy.OnPush,
     encapsulation: ViewEncapsulation.None,
     selector: &#x27;deja-menu&#x27;,
     styleUrls: [
@@ -1772,7 +1841,7 @@ import { Position } from &#x27;../../common/core/graphics/position&#x27;;
     ],
     templateUrl: &#x27;./menu.component.html&#x27;,
 })
-export class DejaMenuComponent {
+export class DejaMenuComponent implements OnInit, OnDestroy {
     /** ID de l&#x27;élement dans lequel le menu doit s&#x27;afficher (le menu ne peut dépasser de l&#x27;élement spécifié ici) */
     @Input() public dropdownContainerId: string;
     /** Point de référence du bouton pour l&#x27;alignement du menu. Valeurs possible: top, bottom, right, left. Une combinaison des ces valeurs peut également être utilisée, par exemple &#x27;top left&#x27;. */
@@ -1784,14 +1853,36 @@ export class DejaMenuComponent {
     /** Renvoie ou définit l&#x27;élement du DOM sur lequel le menu devra s&#x27;aligner */
     @Input() public ownerElement: HTMLElement;
 
-    protected dropDownPosition: Position;
+    @Output() visibleChange &#x3D; new EventEmitter&lt;boolean&gt;();
 
-    constructor(private elementRef: ElementRef) {
+    protected dropDownPosition: Position;
+    protected isMobile &#x3D; false;
+
+    private contentInitialized$ &#x3D; new Subject();
+    private media$sub: Subscription;
+
+    constructor(private changeDetectorRef: ChangeDetectorRef, private elementRef: ElementRef, media: ObservableMedia) {
         this.ownerElement &#x3D; this.elementRef.nativeElement;
+
+        this.media$sub &#x3D; Observable.merge(this.contentInitialized$, media.asObservable())
+            .subscribe(() &#x3D;&gt; {
+                this.isMobile &#x3D; media.isActive(&#x27;xs&#x27;) || media.isActive(&#x27;sm&#x27;);
+                this.changeDetectorRef.markForCheck();
+            });
     }
 
     private get containerElement() {
         return this.dropdownContainerId &amp;&amp; this.elementRef.nativeElement.ownerDocument.getElementById(this.dropdownContainerId);
+    }
+
+    public ngOnDestroy() {
+        if (this.media$sub) {
+            this.media$sub.unsubscribe();
+        }
+    }
+
+    public ngOnInit() {
+        this.contentInitialized$.next();
     }
 
     /** Affiche le menu. */
@@ -1801,19 +1892,23 @@ export class DejaMenuComponent {
         }
         this.ownerElement &#x3D; (event &amp;&amp; event.target) || this.elementRef.nativeElement;
         this.isVisible &#x3D; true;
+        this.visibleChange.emit(this.isVisible);
+        this.changeDetectorRef.markForCheck();
     }
 
     /** Ferme le menu. */
     public close() {
         this.isVisible &#x3D; false;
+        this.visibleChange.emit(this.isVisible);
+        this.changeDetectorRef.markForCheck();
     }
 }
 </code></pre>
     </div>
 
     <div class="tab-pane fade" id="templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;deja-backdrop *ngIf&#x3D;&quot;isVisible&quot; id&#x3D;&quot;menubackdrop&quot; (mousedown)&#x3D;&quot;isVisible&#x3D;false&quot;&gt;&lt;/deja-backdrop&gt;
-&lt;deja-dropdown *ngIf&#x3D;&quot;isVisible&quot; id&#x3D;&quot;menudropdown&quot; [position]&#x3D;&quot;dropDownPosition&quot; [avoidOnwerOverflow]&#x3D;&quot;!dropDownPosition&quot; [dropdownAlignment]&#x3D;&quot;menuAlignment&quot; [ownerAlignment]&#x3D;&quot;buttonAlignment&quot; [containerElement]&#x3D;&quot;containerElement&quot; [ownerElement]&#x3D;&quot;ownerElement&quot;&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;deja-backdrop *ngIf&#x3D;&quot;isVisible&quot; id&#x3D;&quot;menubackdrop&quot; [attr.mobile]&#x3D;&quot;isMobile||null&quot; (mousedown)&#x3D;&quot;close()&quot;&gt;&lt;/deja-backdrop&gt;
+&lt;deja-dropdown *ngIf&#x3D;&quot;isVisible&quot; id&#x3D;&quot;menudropdown&quot; [mobile]&#x3D;&quot;isMobile||null&quot; [position]&#x3D;&quot;dropDownPosition&quot; [avoidOnwerOverflow]&#x3D;&quot;!dropDownPosition&quot; [dropdownAlignment]&#x3D;&quot;menuAlignment&quot; [ownerAlignment]&#x3D;&quot;buttonAlignment&quot; [containerElement]&#x3D;&quot;containerElement&quot; [ownerElement]&#x3D;&quot;ownerElement&quot;&gt;
 	&lt;div id&#x3D;&quot;menucontent&quot;&gt;
 		&lt;ng-content&gt;&lt;/ng-content&gt;
 	&lt;/div&gt;
@@ -1843,8 +1938,8 @@ export class DejaMenuComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><deja-backdrop *ngIf="isVisible" id="menubackdrop" (mousedown)="isVisible=false"></deja-backdrop><deja-dropdown *ngIf="isVisible" id="menudropdown" [position]="dropDownPosition" [avoidOnwerOverflow]="!dropDownPosition" [dropdownAlignment]="menuAlignment" [ownerAlignment]="buttonAlignment" [containerElement]="containerElement" [ownerElement]="ownerElement">	<div id="menucontent">		<ng-content></ng-content>	</div></deja-dropdown></div>'
-    var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBackdropComponent', 'selector': 'deja-backdrop'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaCodeViewerComponent', 'selector': 'deja-code-viewer'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaDropDownComponent', 'selector': 'deja-dropdown'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMarkdownComponent', 'selector': 'deja-markdown'},{'name': 'DejaMenuComponent', 'selector': 'deja-menu'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'}];
+        var COMPONENT_TEMPLATE = '<div><deja-backdrop *ngIf="isVisible" id="menubackdrop" [attr.mobile]="isMobile||null" (mousedown)="close()"></deja-backdrop><deja-dropdown *ngIf="isVisible" id="menudropdown" [mobile]="isMobile||null" [position]="dropDownPosition" [avoidOnwerOverflow]="!dropDownPosition" [dropdownAlignment]="menuAlignment" [ownerAlignment]="buttonAlignment" [containerElement]="containerElement" [ownerElement]="ownerElement">	<div id="menucontent">		<ng-content></ng-content>	</div></deja-dropdown></div>'
+    var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBackdropComponent', 'selector': 'deja-backdrop'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaCodeViewerComponent', 'selector': 'deja-code-viewer'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaDropDownComponent', 'selector': 'deja-dropdown'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaItemComponent', 'selector': 'deja-item'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMarkdownComponent', 'selector': 'deja-markdown'},{'name': 'DejaMenuComponent', 'selector': 'deja-menu'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'}];
     var DIRECTIVES = [{'name': 'DateValidatorDirective', 'selector': '[date-validator][ngModel]'},{'name': 'DejaAutosizeTextAreaDirective', 'selector': 'textarea[deja-autosize]'},{'name': 'DejaChildValidatorDirective', 'selector': '[deja-child-validator]'},{'name': 'DejaDraggableDirective', 'selector': '[deja-draggable]'},{'name': 'DejaDroppableDirective', 'selector': '[deja-droppable]'},{'name': 'DejaEditableDirective', 'selector': '[deja-editable]'},{'name': 'DejaMouseDraggableDirective', 'selector': '[deja-mouse-draggable]'},{'name': 'DejaMouseDroppableDirective', 'selector': '[deja-mouse-droppable]'},{'name': 'DejaTilePositionDirective', 'selector': '[deja-tile-position]'},{'name': 'DejaTooltipDirective', 'selector': '[deja-tooltip]'},{'name': 'PendingOnFocusDirective', 'selector': '[pending-onfocus]'},{'name': 'SplitAreaDirective', 'selector': 'split-area'},{'name': 'SplitGutterDirective', 'selector': 'split-gutter'},{'name': 'ValidateOnBlurDirective', 'selector': '[validate-onblur]'}];
     var ACTUAL_COMPONENT = {'name': 'DejaMenuComponent'};
 </script>

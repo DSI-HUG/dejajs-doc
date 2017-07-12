@@ -218,7 +218,7 @@
                                     <a href="../components/DejaChipsComponent.html" >DejaChipsComponent</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../components/DejaCircularPickerComponent.html"  data-type="entity-link" class="active" >DejaCircularPickerComponent</a>
+                                    <a href="../components/DejaCircularPickerComponent.html" >DejaCircularPickerComponent</a>
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaCodeViewerComponent.html" >DejaCodeViewerComponent</a>
@@ -263,7 +263,7 @@
                                     <a href="../components/DejaIFrameComponent.html" >DejaIFrameComponent</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../components/DejaItemComponent.html" >DejaItemComponent</a>
+                                    <a href="../components/DejaItemComponent.html"  data-type="entity-link" class="active" >DejaItemComponent</a>
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaListLoaderComponent.html" >DejaListLoaderComponent</a>
@@ -969,7 +969,7 @@
                                            <a href="../components/DejaChipsComponent.html" >DejaChipsComponent</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../components/DejaCircularPickerComponent.html"  data-type="entity-link" class="active" >DejaCircularPickerComponent</a>
+                                           <a href="../components/DejaCircularPickerComponent.html" >DejaCircularPickerComponent</a>
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaCodeViewerComponent.html" >DejaCodeViewerComponent</a>
@@ -1014,7 +1014,7 @@
                                            <a href="../components/DejaIFrameComponent.html" >DejaIFrameComponent</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../components/DejaItemComponent.html" >DejaItemComponent</a>
+                                           <a href="../components/DejaItemComponent.html"  data-type="entity-link" class="active" >DejaItemComponent</a>
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaListLoaderComponent.html" >DejaListLoaderComponent</a>
@@ -1523,21 +1523,21 @@
 
 <ol class="breadcrumb">
   <li>Components</li>
-  <li>DejaCircularPickerComponent</li>
+  <li>DejaItemComponent</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
     <li class="active">
         <a href="#infos" id="infos-tab" role="tab" data-toggle="tab" data-link="infos">Infos</a>
     </li>
+    <li>
+        <a href="#readme" role="tab" id="readme-tab" data-toggle="tab" data-link="readme">README</a>
+    </li>
 
     <li>
         <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
     </li>
 
-    <li>
-        <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
-    </li>
     <li>
         <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
     </li>
@@ -1548,26 +1548,11 @@
     <h3>File</h3>
 </p>
 <p class="comment">
-    <code>src/component/circular-picker/circular-picker.component.ts</code>
+    <code>src/common/core/item-list/item.component.ts</code>
 </p>
 
-    <p class="comment">
-        <h3>Description</h3>
-    </p>
-    <p class="comment">
-        <p>Circular-picker component for Angular</p>
-
-    </p>
 
 
-    <p class="comment">
-        <h3>Implements</h3>
-    </p>
-    <p class="comment">
-                <code><a href="https://angular.io/docs/ts/latest/api/core/index/OnInit-interface.html" target="_blank" >OnInit</a></code>
-                <code><a href="../classes/ValueAccessor.html" target="_self" >ControlValueAccessor</a></code>
-                <code><a href="https://angular.io/docs/ts/latest/api/core/index/OnDestroy-interface.html" target="_blank" >OnDestroy</a></code>
-    </p>
 
 
 <section>
@@ -1575,10 +1560,6 @@
     <table class="table table-sm table-hover">
         <tbody>
 
-            <tr>
-                <td class="col-md-3">changeDetection</td>
-                <td class="col-md-9"><code>ChangeDetectionStrategy.OnPush</code></td>
-            </tr>
 
 
 
@@ -1592,20 +1573,12 @@
 
             <tr>
                 <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>deja-circular-picker</code></td>
-            </tr>
-
-            <tr>
-                <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>circular-picker.component.scss</code></td>
+                <td class="col-md-9"><code>deja-item</code></td>
             </tr>
 
 
 
-            <tr>
-                <td class="col-md-3">templateUrl</td>
-                <td class="col-md-9"><code>./circular-picker.component.html</code></td>
-            </tr>
+
 
 
         </tbody>
@@ -1618,20 +1591,18 @@
                 <tbody>
                     <tr>
                         <td class="col-md-2">
-                            <code>clockwiseFactor</code>
+                            <code>text</code>
                         </td>
                         <td class="col-md-10">
-                            <div><p>ClockwiseFactor allows user to choose rotation direction of picker </p>
-</div>
                               <p>
-                                <em>Type:</em>    <code>ClockwiseFactorEnum</code>
+                                <em>Type:</em>    <code>any</code>
 
                               </p>
                         </td>
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:44</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/common/core/item-list/item.component.ts:17</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -1640,104 +1611,18 @@
                 <tbody>
                     <tr>
                         <td class="col-md-2">
-                            <code>disabled</code>
+                            <code>value</code>
                         </td>
                         <td class="col-md-10">
-                            <div><p>disabled property setter. Can be string or empty so you can use it like : <circular-picker disabled></circular-picker> 
-To get disabled attribute. </p>
-</div>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:66</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>fullDiameter</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Diameter of circular picker in pixels. Default 310px </p>
-</div>
-                            <p>
-                              <em>Default value: </em><code>310</code>
-                            </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:46</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>labelsDiameter</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Diameter of labels on circular picker </p>
-</div>
-                            <p>
-                              <em>Default value: </em><code>43</code>
-                            </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:48</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>outerLabels</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Allows user to choose labels position. If outerLabels is true, labels will come outside the circular picker</p>
-<p>With outerLabels = true, and ranges.length &gt; 1, labels will go outwards.
-With outerLabels = false, and ranges.length &gt; 1, labels will go inwards.</p>
-</div>
-                            <p>
-                              <em>Default value: </em><code>false</code>
-                            </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:55</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>ranges</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Ranges of circular picker </p>
-</div>
                               <p>
-                                <em>Type:</em>    <code>{}</code>
+                                <em>Type:</em>    <code>string</code>
 
                               </p>
                         </td>
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:57</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/common/core/item-list/item.component.ts:16</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -1745,580 +1630,87 @@ With outerLabels = false, and ranges.length &gt; 1, labels will go inwards.</p>
     </section>
 
 
-    <section>
-        <h3 id="constructor">Constructor</h3>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <code>constructor(elementRef: any, changeDetectorRef: any, _control: any)</code>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:97</a></div>
-                                </td>
-                            </tr>
-    
-                    <tr>
-                        <td class="col-md-4">
-                                <div class="io-description"><p>Constructor.
-    Create MouseDown &amp; mouseMove Observables needed inside this control.</p>
-    </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-    </section>
 
 
-    <section>
-        
-            <h3 id="inputs">
-                Properties
-            </h3>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b> _control</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <code>_control:     <code>any</code>
-    </bcode>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Public</span> cursorTemplate</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-"></span><code>cursorTemplate:     <code>any</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <i>Decorators : </i><code>ContentChild</code>
-                            </td>
-                        </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:62</a></div>
-                                </td>
-                            </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <div class="io-description"><p>template for cursor inside picker. Use it to customize labels </p>
-    </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Public</span> disabled</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-"></span><code>disabled:     <code>string | boolean</code>
-    </bcode>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="71" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:71</a></div>
-                                </td>
-                            </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <div class="io-description"><p>disabled property setter. Can be string or empty so you can use it like : <circular-picker disabled></circular-picker> 
-    To get disabled attribute. </p>
-    </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b><span class="modifier">Public</span> labelTemplate</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <span class="modifier-icon fa fa-"></span><code>labelTemplate:     <code>any</code>
-    </bcode>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <i>Decorators : </i><code>ContentChild</code>
-                            </td>
-                        </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:60</a></div>
-                                </td>
-                            </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <div class="io-description"><p>Template for labels inside picker. Use it to customize labels </p>
-    </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <b> value</b>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <code>value:     <code>number</code>
-    </bcode>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="231" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:231</a></div>
-                                </td>
-                            </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <div class="io-description"><p>set accessor including call the onchange callback 
-    get accessor </p>
-    </div>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-    </section>
 </div>
 
+    <div class="tab-pane fade" id="readme">
+        <p><h1 id="-deja-js-component-itemlist">@deja-js/component   ItemList</h1>
+<p>This documents the list management in deja-js/component.</p>
+<h2 id="intro">Intro</h2>
+<p>The list management is done mainly by the service <code>ItemListService</code>
+and the models <code>IItemBase</code>, for simple lists, and <code>IItemTree</code>, for hierarchic lists.
+These models are consdered as mutable and can be updated by the <code>ItemListService</code>.</p>
+<p>The components using the <code>ItemListService</code> are <code>DejaSelect</code>, <code>DejaTreeList</code> and <code>DejaGrid</code>.</p>
+<h3 id="entry-points">Entry points</h3>
+<p>To provide a list to components <code>DejaSelect</code> or <code>DejaTreeList</code> there are two possible entry points:</p>
+<ul>
+<li><code>items</code>: entry point for an array of elements implementing <code>IItemBase</code> or <code>IItemTree</code>.</li>
+<li><code>models</code>: entry point for an array of elements of any type.</li>
+</ul>
+<p>When using <code>items</code> you will keep the control on the display properties of the elements
+available in <code>IItemBase</code> et <code>IItemTree</code>.
+But your model will be mutable and can be modified by the components.</p>
+<p>When using <code>models</code> you will not have access to the element&#39;s internal properties
+but your model will be immutable and will not be affected by the list controls.</p>
+<p>Note that you have the possibility to use <code>items</code> and store your business model in <code>item.model</code>.
+That property will not be modified.</p>
+<h3 id="correspondences">Correspondences</h3>
+<table class="table table-bordered compodoc-table">
+<thead>
+<tr>
+<th>List entry</th>
+<th>Selection entry (I/O)</th>
+<th>selectedChange event</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>models (Single Select)</td>
+<td>selectedModel</td>
+<td>(event as DejaItemEvent).model</td>
+</tr>
+<tr>
+<td>models (Multi Select)</td>
+<td>selectedModels</td>
+<td>(event as DejaItemsEvent).models</td>
+</tr>
+<tr>
+<td>items (Single Select)</td>
+<td>selectedItem</td>
+<td>(event as DejaItemEvent).item</td>
+</tr>
+<tr>
+<td>items (Multi Select)</td>
+<td>selectedItems</td>
+<td>(event as DejaItemsEvent).items</td>
+</tr>
+</tbody>
+</table>
+<h3 id="ngmodel-and-reactiveforms">ngModel and ReactiveForms</h3>
+<p>If you use <code>models</code> or use <code>items</code>, but all your items have a <code>models</code> property,
+<code>ngModel</code> or <code>formControlName</code> will be bound on the model in immutable mode.</p>
+<h3 id="textfield-and-valuefield">textField and valueField</h3>
+<p>The properties <code>textField</code> and <code>valueField</code> specify respectively the field used for display
+and the field used as a unique key in comparisons.
+These must refer to a property of the model if it exists or a property of the item otherwise.</p>
+</p>
+    </div>
 
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChild, ElementRef, Input, OnDestroy, OnInit, Optional, Self, ViewChild } from &#x27;@angular/core&#x27;;
-import { ControlValueAccessor, NgControl } from &#x27;@angular/forms&#x27;;
-import &#x27;rxjs/add/observable/fromEvent&#x27;;
-import &#x27;rxjs/add/observable/merge&#x27;;
-import &#x27;rxjs/add/operator/sampleTime&#x27;;
-import &#x27;rxjs/add/operator/takeUntil&#x27;;
-import { Observable } from &#x27;rxjs/Observable&#x27;;
-import { Subject } from &#x27;rxjs/Subject&#x27;;
-import { Subscription } from &#x27;rxjs/Subscription&#x27;;
-import { Circle } from &#x27;../../common/core/graphics/circle&#x27;;
-import { Position } from &#x27;../../common/core/graphics/position&#x27;;
+        <pre class="line-numbers"><code class="language-typescript">import { Component, Input } from &#x27;@angular/core&#x27;;
 
-const noop &#x3D; () &#x3D;&gt; { };
-
-export enum ClockwiseFactorEnum {
-    clockwise &#x3D; -1,
-    counterClockwise &#x3D; 1,
-}
-
-interface ICircularValue {
-    position: Position;
-    value: number;
-}
-
-/**
- * Circular-picker component for Angular
- */
 @Component({
-    changeDetection: ChangeDetectionStrategy.OnPush,
-    selector: &#x27;deja-circular-picker&#x27;,
-    styleUrls: [&#x27;./circular-picker.component.scss&#x27;],
-    templateUrl: &#x27;./circular-picker.component.html&#x27;,
+    selector: &#x27;deja-item&#x27;,
+    template: &#x27;&#x27;,
 })
-export class DejaCircularPickerComponent implements OnInit, ControlValueAccessor, OnDestroy {
-    /** ClockwiseFactor allows user to choose rotation direction of picker */
-    @Input() public clockwiseFactor: ClockwiseFactorEnum &#x3D; ClockwiseFactorEnum.clockwise;
-    /** Diameter of circular picker in pixels. Default 310px */
-    @Input() public fullDiameter &#x3D; 310;
-    /** Diameter of labels on circular picker */
-    @Input() public labelsDiameter &#x3D; 43;
-    /**
-     * Allows user to choose labels position. If outerLabels is true, labels will come outside the circular picker
-     *
-     * With outerLabels &#x3D; true, and ranges.length &gt; 1, labels will go outwards.
-     * With outerLabels &#x3D; false, and ranges.length &gt; 1, labels will go inwards.
-     */
-    @Input() public outerLabels &#x3D; false;
-    /** Ranges of circular picker */
-    @Input() public ranges: ICircularRange[];
-
-    /** Template for labels inside picker. Use it to customize labels */
-    @ContentChild(&#x27;labelTemplate&#x27;) public labelTemplate;
-    /** template for cursor inside picker. Use it to customize labels */
-    @ContentChild(&#x27;cursorTemplate&#x27;) public cursorTemplate;
-
-    /** disabled property setter. Can be string or empty so you can use it like : &lt;circular-picker disabled&gt;&lt;/circular-picker&gt; */
-    @Input()
-    public set disabled(value: boolean | string) {
-        this._disabled &#x3D; value !&#x3D; null &amp;&amp; &#x60;${value}&#x60; !&#x3D;&#x3D; &#x27;false&#x27;;
-    }
-
-    /** To get disabled attribute. */
-    public get disabled() {
-        return this._disabled;
-    }
-
-    private _disabled &#x3D; false;
-
-    private _value: number;
-    private TwoPI &#x3D; Math.PI * 2;
-
-    private radius &#x3D; 0;
-    private configs: IConfig[] &#x3D; [];
-    private selectedConfig: IConfig;
-
-    private circularValues: ICircularValue[] &#x3D; [];
-
-    private cursor: ICircularValue;
-    private cursorHand: { width: number, angle: number };
-    private cursorElement: HTMLElement;
-
-    private clickedTime: number;
-
-    private onTouchedCallback: () &#x3D;&gt; void &#x3D; noop;
-    private onChangeCallback: (_: any) &#x3D;&gt; void &#x3D; noop;
-
-    private mousedown$sub: Subscription;
-
-    @ViewChild(&#x27;picker&#x27;) private picker: ElementRef;
-
-    /**
-     * Constructor.
-     * Create MouseDown &amp; mouseMove Observables needed inside this control.
-     */
-    constructor(elementRef: ElementRef, private changeDetectorRef: ChangeDetectorRef, @Self() @Optional() public _control: NgControl) {
-        const element &#x3D; elementRef.nativeElement as HTMLElement;
-
-        if (this._control) {
-            this._control.valueAccessor &#x3D; this;
-        }
-
-        this.mousedown$sub &#x3D; Observable.fromEvent(element, &#x27;mousedown&#x27;)
-            .filter(() &#x3D;&gt; !this.disabled)
-            .filter((event: MouseEvent) &#x3D;&gt; event.buttons &#x3D;&#x3D;&#x3D; 1)
-            .debounceTime(100)
-            .subscribe((mouseEvent: MouseEvent) &#x3D;&gt; {
-                this.clickedTime &#x3D; Date.now();
-                const cursorElement &#x3D; this.getHTMLElement(mouseEvent.target as HTMLElement, &#x27;cursor&#x27;);
-                const valueElement &#x3D; this.getHTMLElement(mouseEvent.target as HTMLElement, &#x27;value&#x27;);
-                if (cursorElement) {
-                    this.cursorElement &#x3D; cursorElement;
-                } else if (valueElement) {
-                    this.value &#x3D; +valueElement.getAttribute(&#x27;value&#x27;);
-                }
-
-                if (cursorElement || valueElement) {
-                    const kill$ &#x3D; new Subject();
-
-                    if (!element.ownerDocument.body.className.match(/noselect/)) {
-                        element.ownerDocument.body.className +&#x3D; &#x27;noselect&#x27;;
-                    }
-
-                    const cancelMouse$ &#x3D; Observable.merge(kill$, Observable
-                        .fromEvent(element.ownerDocument, &#x27;mouseup&#x27;))
-                        .first()
-                        .do(() &#x3D;&gt; {
-                            delete this.cursorElement;
-                            delete this.clickedTime;
-                            element.ownerDocument.body.className &#x3D; element.ownerDocument.body.className.replace(/\bnoselect\b/, &#x27;&#x27;);
-                        });
-
-                    const pickerElem &#x3D; this.picker.nativeElement as HTMLElement;
-                    const clientRect &#x3D; pickerElem.getBoundingClientRect();
-
-                    Observable
-                        .fromEvent(element.ownerDocument, &#x27;mousemove&#x27;)
-                        .takeUntil(cancelMouse$)
-                        .sampleTime(10)
-                        .subscribe((event: MouseEvent) &#x3D;&gt; {
-                            if (event.buttons !&#x3D;&#x3D; 1) {
-                                kill$.next();
-                                return;
-                            }
-
-                            let circle &#x3D; Circle.fromOuterRect(clientRect);
-                            let contains &#x3D; false;
-                            if (this.outerLabels) {
-                                circle &#x3D; circle.inflate(this.labelsDiameter);
-
-                                for (let i &#x3D; 0; i &lt; this.configs.length; i++) {
-                                    contains &#x3D; circle.containsPoint(new Position(event.pageX, event.pageY));
-                                    if (contains) {
-                                        this.selectedConfig &#x3D; this.configs[i];
-                                        break;
-                                    } else {
-                                        circle &#x3D; circle.inflate(this.labelsDiameter);
-                                    }
-                                }
-                            } else {
-                                const x &#x3D; this.labelsDiameter * (this.configs.length - 1);
-                                circle &#x3D; circle.inflate(-x);
-                                for (let i &#x3D; this.configs.length; i &gt; 0; i--) {
-                                    contains &#x3D; circle.containsPoint(new Position(event.pageX, event.pageY));
-                                    if (contains) {
-                                        this.selectedConfig &#x3D; this.configs[i - 1];
-                                        break;
-                                    } else {
-                                        circle &#x3D; circle.inflate(this.labelsDiameter);
-                                    }
-                                }
-                            }
-
-                            const newValue &#x3D; this.pointToValue(event.pageX - clientRect.left, event.pageY - clientRect.top, this.selectedConfig);
-                            if (newValue !&#x3D;&#x3D; this.value) {
-                                this.value &#x3D; newValue;
-                            }
-                        });
-                }
-            });
-
-    }
-
-    /** Unsubscribe to Observables when component is destroyed */
-    public ngOnDestroy() {
-        this.mousedown$sub.unsubscribe();
-    }
-
-    /**
-     * Init circular-picker configuration
-     */
-    public ngOnInit() {
-        /* max - width */
-        const diameter &#x3D; this.fullDiameter - this.labelsDiameter; // Material standard button size
-        this.radius &#x3D; diameter / 2;
-
-        this.ranges.forEach((range) &#x3D;&gt; {
-            range.interval &#x3D; (range.interval) ? range.interval : 1;
-            range.labelInterval &#x3D; (range.labelInterval) ? range.labelInterval : 1;
-            range.beginOffset &#x3D; (range.beginOffset) ? range.beginOffset : Math.PI / 2;
-            this.configs.push({
-                range: range,
-                stepAngle: this.TwoPI / Math.floor((range.max - range.min + 1) / range.interval),
-                steps: Math.floor((range.max - range.min + 1) / range.interval),
-            });
-        });
-
-        this.selectedConfig &#x3D; this.configs[0];
-
-        this.bind();
-        this.updateCursor();
-    }
-
-    // ************* ControlValueAccessor Implementation **************
-    /** set accessor including call the onchange callback */
-    set value(v: number) {
-        if (v !&#x3D;&#x3D; this._value) {
-            this.writeValue(v);
-            this.onChangeCallback(v);
-        }
-    }
-
-    /** get accessor */
-    get value(): number {
-        return this._value;
-    }
-
-    /** From ControlValueAccessor interface */
-    public writeValue(value: number) {
-        if (value !&#x3D;&#x3D; this._value) {
-            this._value &#x3D; value;
-            this.updateCursor();
-        }
-    }
-
-    /** From ControlValueAccessor interface */
-    public registerOnChange(fn: any) {
-        this.onChangeCallback &#x3D; fn;
-    }
-
-    /** From ControlValueAccessor interface */
-    public registerOnTouched(fn: any) {
-        this.onTouchedCallback &#x3D; fn;
-    }
-    // ************* End of ControlValueAccessor Implementation **************
-
-    /**
-     * Take a point in parameter and return corresponding value
-     *
-     * @param {number} x xPos of point
-     * @param {number} y yPos of point
-     * @param {IConfig} config config where the point is located
-     *
-     * @return {number} value
-     */
-    protected pointToValue(x: number, y: number, config: IConfig) {
-        const angleAtPoint: number &#x3D; this.pointToAngle(x - this.radius, y - this.radius, config);
-        let circleSegmentIndexAtPoint: number &#x3D; config.steps - Math.ceil(angleAtPoint / config.stepAngle);
-        // By having pointToAngle() to compute using a half step below the actual angle,
-        // we can use Math.ceil() to get the upper circleSegmentIndex. We&#x27;re working in
-        // counter-clockwise direction, thus we finally get a -1 index when we&#x27;re just
-        // below the first circle segment. We can now simply wrap it to the 0 index,
-        // resulting in the user-expected behavior.
-        if (circleSegmentIndexAtPoint &lt; 0) {
-            circleSegmentIndexAtPoint &#x3D; config.steps;
-        }
-        return config.range.min + circleSegmentIndexAtPoint * config.range.interval;
-    }
-
-    /**
-     * Take velue and returns its position
-     * @param value value to check
-     * @param radiusOffset Radius to ckeck (if outerLabels are on, the radius offset &#x3D; fullDiameter + labelsDiameter)
-     * @param config the config where to check
-     *
-     * @returns {Position} the position of value
-     */
-    protected valueToPoint(value: number, radiusOffset: number, config: IConfig): Position {
-        const position &#x3D; new Position();
-        const valueAngle: number &#x3D; this.valueToAngle(value, config);
-
-        position.left &#x3D; this.radius + (this.radius + radiusOffset) * Math.cos(valueAngle);
-        position.top &#x3D; this.radius - (this.radius + radiusOffset) * Math.sin(valueAngle); // y axis is reversed in display
-
-        return position;
-    }
-
-    private pointToAngle(x: number, y: number, config: IConfig): number {
-        return (
-            -Math.atan2(y, x)		    // Math.atan2() returns between -Ï€ and +Ï€, but in inverted trigonometrical order...
-            - config.range.beginOffset	// Correct the configured offset to compute in &#x27;natural&#x27; trigonometrical circle
-            - (config.stepAngle / 2)	// Remove half a step angle to match value from both sides
-            + this.TwoPI			    // We want the returned value to be between 0 and 2Ï€ &#x3D;&gt; (x + 2Ï€) % 2Ï€
-        ) % this.TwoPI;
-    }
-
-    private valueToAngle(value: number, config: IConfig): number {
-        const circleSegmentIndex: number &#x3D; Math.floor((value - config.range.min) / config.range.interval);
-        return (circleSegmentIndex * config.stepAngle * this.clockwiseFactor) + config.range.beginOffset;
-    }
-
-    private bind() {
-        this.circularValues &#x3D; [];
-        this.configs.forEach((config: IConfig, configNumber: number) &#x3D;&gt; {
-            for (let i &#x3D; config.range.min; i &lt;&#x3D; config.range.max; i +&#x3D; (config.range.labelInterval * config.range.interval)) {
-                const val &#x3D; { value: i } as ICircularValue;
-                const labelRadius &#x3D; this.labelsDiameter / 2;
-                const configOffset &#x3D; this.labelsDiameter * configNumber;
-                const labelPosition &#x3D; this.valueToPoint(i, (this.outerLabels ? labelRadius + configOffset : -labelRadius - configOffset), config);
-
-                val.position &#x3D; new Position((labelPosition.left - labelRadius), (labelPosition.top - labelRadius));
-                this.circularValues.push(val);
-            }
-        });
-    }
-
-    private updateCursor() {
-        if (!this.circularValues || !this.circularValues.length) {
-            return;
-        }
-        if (this._value &#x3D;&#x3D;&#x3D; undefined || this._value &#x3D;&#x3D;&#x3D; null) {
-            this._value &#x3D; this.circularValues[0].value;
-        }
-        this.selectedConfig &#x3D; this.configs.find((conf: IConfig) &#x3D;&gt; {
-            if (this._value &gt;&#x3D; conf.range.min &amp;&amp; this._value &lt;&#x3D; conf.range.max) {
-                return true;
-            }
-        });
-        if (!this.selectedConfig) {
-            this.selectedConfig &#x3D; this.configs[0];
-        }
-        const selectedConfigIndex &#x3D; this.configs.indexOf(this.selectedConfig);
-        let cursorCenter: Position;
-        const cursorRadius: number &#x3D; this.labelsDiameter / 2;
-
-        cursorCenter &#x3D; this.valueToPoint(this._value, (this.outerLabels ? cursorRadius + (this.labelsDiameter * selectedConfigIndex) : -cursorRadius - (this.labelsDiameter * selectedConfigIndex)), this.selectedConfig);
-        this.cursor &#x3D; {
-            position: new Position((cursorCenter.left - cursorRadius), (cursorCenter.top - cursorRadius)),
-            value: this._value,
-        };
-
-        this.cursorHand &#x3D; {
-            angle: this.valueToAngle(this._value, this.selectedConfig),
-            width: (this.outerLabels) ? this.radius + (this.labelsDiameter * selectedConfigIndex) : this.radius - this.labelsDiameter - (this.labelsDiameter * selectedConfigIndex),
-        };
-
-        this.changeDetectorRef.markForCheck();
-    }
-
-    private getHTMLElement(element: HTMLElement, attr: string): HTMLElement {
-        let parentElement &#x3D; element;
-
-        while (parentElement &amp;&amp; !parentElement.hasAttribute(attr)) {
-            element &#x3D; parentElement;
-            parentElement &#x3D; parentElement.parentElement;
-        }
-
-        if (!parentElement) {
-            return undefined;
-        }
-
-        return parentElement;
-    }
-}
-
-export interface IConfig {
-    range: ICircularRange;
-    steps: number;
-    stepAngle: number;
-}
-
-export interface ICircularRange {
-    min: number;
-    max: number;
-    interval?: number;
-    labelInterval?: number; // x*interval
-    beginOffset?: number;
+export class DejaItemComponent {
+    @Input() value: string;
+    @Input() text: String;
 }
 </code></pre>
     </div>
 
-    <div class="tab-pane fade" id="templateData">
-        <pre class="line-numbers"><code class="language-html">	&lt;div class&#x3D;&quot;circular-picker&quot; #picker [style.width.px]&#x3D;&quot;radius*2&quot; [style.height.px]&#x3D;&quot;radius*2&quot; [class.disabled]&#x3D;&quot;disabled&quot;&gt;
-		&lt;!--FOR TEST ONLY--&gt;
-		&lt;!-- div *ngIf&#x3D;&quot;circle&quot; class&#x3D;&quot;test&quot;
-				[style.position]&#x3D;&quot;&#x27;fixed&#x27;&quot;
-				[style.background]&#x3D;&quot;&#x27;red&#x27;&quot;
-				[style.opacity]&#x3D;&quot;0.6&quot;
-				[style.top.px]&#x3D;&quot;circle.center.top - circle.radius&quot;
-				[style.left.px]&#x3D;&quot;circle.center.left - circle.radius&quot;
-				[style.width.px]&#x3D;&quot;circle.radius * 2&quot;
-				[style.height.px]&#x3D;&quot;circle.radius * 2&quot;
-		&gt;&lt;/div--&gt;
-		&lt;div class&#x3D;&quot;cursor-container&quot;&gt;
-			&lt;div class&#x3D;&quot;cursor&quot; cursor *ngIf&#x3D;&quot;cursor.value !&#x3D;&#x3D; undefined&quot; [style.top.px]&#x3D;&quot;cursor.position.top&quot; [style.left.px]&#x3D;&quot;cursor.position.left&quot;&gt;
-				&lt;ng-template *ngIf&#x3D;&quot;cursorTemplate&quot; [ngTemplateOutlet]&#x3D;&quot;cursorTemplate&quot; [ngTemplateOutletContext]&#x3D;&quot;{ $implicit: cursor.value }&quot;&gt;&lt;/ng-template&gt;
-				&lt;span *ngIf&#x3D;&quot;!cursorTemplate&quot;&gt;{{cursor.value}}&lt;/span&gt;
-			&lt;/div&gt;
-			&lt;div class&#x3D;&quot;cursorHand&quot; [ngStyle]&#x3D;&quot;{&#x27;transform&#x27;:&#x27;translateY(-50%) rotate(&#x27;+(-cursorHand.angle)+&#x27;rad)&#x27;}&quot; [style.width.px]&#x3D;&quot;cursorHand.width+2&quot;&gt;&lt;/div&gt;
-		&lt;/div&gt;
-		&lt;div class&#x3D;&quot;value&quot; [attr.value]&#x3D;&quot;val.value&quot; *ngFor&#x3D;&quot;let val of circularValues; let index&#x3D;index&quot; [style.top.px]&#x3D;&quot;val.position.top&quot; [style.left.px]&#x3D;&quot;val.position.left&quot;&gt;
-			&lt;ng-template *ngIf&#x3D;&quot;labelTemplate&quot; [ngTemplateOutlet]&#x3D;&quot;labelTemplate&quot; [ngTemplateOutletContext]&#x3D;&quot;{ $implicit: val.value, index: index }&quot;&gt;&lt;/ng-template&gt;
-			&lt;span *ngIf&#x3D;&quot;!labelTemplate&quot;&gt;{{val.value}}&lt;/span&gt;
-		&lt;/div&gt;
-	&lt;/div&gt;
-</code></pre>
-    </div>
 
     <div class="tab-pane fade" id="tree">
         <div id="tree-container"></div>
@@ -2343,10 +1735,10 @@ export interface ICircularRange {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div>	<div class="circular-picker" #picker [style.width.px]="radius*2" [style.height.px]="radius*2" [class.disabled]="disabled">		<!--FOR TEST ONLY-->		<!-- div *ngIf="circle" class="test"				[style.position]="\'fixed\'"				[style.background]="\'red\'"				[style.opacity]="0.6"				[style.top.px]="circle.center.top - circle.radius"				[style.left.px]="circle.center.left - circle.radius"				[style.width.px]="circle.radius * 2"				[style.height.px]="circle.radius * 2"		></div-->		<div class="cursor-container">			<div class="cursor" cursor *ngIf="cursor.value !== undefined" [style.top.px]="cursor.position.top" [style.left.px]="cursor.position.left">				<ng-template *ngIf="cursorTemplate" [ngTemplateOutlet]="cursorTemplate" [ngTemplateOutletContext]="{ $implicit: cursor.value }"></ng-template>				<span *ngIf="!cursorTemplate">{{cursor.value}}</span>			</div>			<div class="cursorHand" [ngStyle]="{\'transform\':\'translateY(-50%) rotate(\'+(-cursorHand.angle)+\'rad)\'}" [style.width.px]="cursorHand.width+2"></div>		</div>		<div class="value" [attr.value]="val.value" *ngFor="let val of circularValues; let index=index" [style.top.px]="val.position.top" [style.left.px]="val.position.left">			<ng-template *ngIf="labelTemplate" [ngTemplateOutlet]="labelTemplate" [ngTemplateOutletContext]="{ $implicit: val.value, index: index }"></ng-template>			<span *ngIf="!labelTemplate">{{val.value}}</span>		</div>	</div></div>'
+        var COMPONENT_TEMPLATE = '<div></div>'
     var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBackdropComponent', 'selector': 'deja-backdrop'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaCodeViewerComponent', 'selector': 'deja-code-viewer'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaDropDownComponent', 'selector': 'deja-dropdown'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaItemComponent', 'selector': 'deja-item'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMarkdownComponent', 'selector': 'deja-markdown'},{'name': 'DejaMenuComponent', 'selector': 'deja-menu'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'}];
     var DIRECTIVES = [{'name': 'DateValidatorDirective', 'selector': '[date-validator][ngModel]'},{'name': 'DejaAutosizeTextAreaDirective', 'selector': 'textarea[deja-autosize]'},{'name': 'DejaChildValidatorDirective', 'selector': '[deja-child-validator]'},{'name': 'DejaDraggableDirective', 'selector': '[deja-draggable]'},{'name': 'DejaDroppableDirective', 'selector': '[deja-droppable]'},{'name': 'DejaEditableDirective', 'selector': '[deja-editable]'},{'name': 'DejaMouseDraggableDirective', 'selector': '[deja-mouse-draggable]'},{'name': 'DejaMouseDroppableDirective', 'selector': '[deja-mouse-droppable]'},{'name': 'DejaTilePositionDirective', 'selector': '[deja-tile-position]'},{'name': 'DejaTooltipDirective', 'selector': '[deja-tooltip]'},{'name': 'PendingOnFocusDirective', 'selector': '[pending-onfocus]'},{'name': 'SplitAreaDirective', 'selector': 'split-area'},{'name': 'SplitGutterDirective', 'selector': 'split-gutter'},{'name': 'ValidateOnBlurDirective', 'selector': '[validate-onblur]'}];
-    var ACTUAL_COMPONENT = {'name': 'DejaCircularPickerComponent'};
+    var ACTUAL_COMPONENT = {'name': 'DejaItemComponent'};
 </script>
 <script src="../js/tree.js"></script>
 

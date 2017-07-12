@@ -263,6 +263,9 @@
                                     <a href="../components/DejaIFrameComponent.html" >DejaIFrameComponent</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../components/DejaItemComponent.html" >DejaItemComponent</a>
+                                </li>
+                                <li class="link">
                                     <a href="../components/DejaListLoaderComponent.html" >DejaListLoaderComponent</a>
                                 </li>
                                 <li class="link">
@@ -1011,6 +1014,9 @@
                                            <a href="../components/DejaIFrameComponent.html" >DejaIFrameComponent</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../components/DejaItemComponent.html" >DejaItemComponent</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../components/DejaListLoaderComponent.html" >DejaListLoaderComponent</a>
                                        </li>
                                        <li class="link">
@@ -1575,7 +1581,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="735" class="link-to-prism">src/common/core/item-list/item-list-base.ts:735</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="746" class="link-to-prism">src/common/core/item-list/item-list-base.ts:746</a></div>
                                         </td>
                                     </tr>
 
@@ -1607,7 +1613,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="734" class="link-to-prism">src/common/core/item-list/item-list-base.ts:734</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="745" class="link-to-prism">src/common/core/item-list/item-list-base.ts:745</a></div>
                                         </td>
                                     </tr>
 
@@ -1639,7 +1645,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="737" class="link-to-prism">src/common/core/item-list/item-list-base.ts:737</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="748" class="link-to-prism">src/common/core/item-list/item-list-base.ts:748</a></div>
                                         </td>
                                     </tr>
 
@@ -1671,7 +1677,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="736" class="link-to-prism">src/common/core/item-list/item-list-base.ts:736</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="747" class="link-to-prism">src/common/core/item-list/item-list-base.ts:747</a></div>
                                         </td>
                                     </tr>
 
@@ -2271,6 +2277,11 @@ export abstract class ItemListBase implements OnDestroy {
         this._textField &#x3D; value;
     }
 
+    /** Retourne le champ utilisé comme valeur d&#x27;affichage.*/
+    protected getTextField() {
+        return this._textField;
+    }
+
     /** Définit le champ à utiliser comme valeur de comparaison.
      * @param {string} value Champ à utiliser comme valeur de comparaison.
      */
@@ -2279,6 +2290,11 @@ export abstract class ItemListBase implements OnDestroy {
         if (this._itemListService) {
             this._itemListService.valueField &#x3D; value;
         }
+    }
+
+    /** Retourne le champ utilisé comme valeur de comparaison.*/
+    protected getValueField() {
+        return this._valueField;
     }
 
     /** Définit le champ à utiliser comme champ de recherche.
@@ -2367,6 +2383,7 @@ export abstract class ItemListBase implements OnDestroy {
     protected mapToIItemBase(modls: any[], selected?: boolean): IItemBase[] {
         return modls.map((model) &#x3D;&gt; {
             const itemBase: IItemBase &#x3D; {};
+
             itemBase.model &#x3D; model;
 
             const displayField &#x3D; this._textField || &#x27;displayName&#x27;;

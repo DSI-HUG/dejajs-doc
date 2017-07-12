@@ -263,6 +263,9 @@
                                     <a href="../components/DejaIFrameComponent.html" >DejaIFrameComponent</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../components/DejaItemComponent.html" >DejaItemComponent</a>
+                                </li>
+                                <li class="link">
                                     <a href="../components/DejaListLoaderComponent.html" >DejaListLoaderComponent</a>
                                 </li>
                                 <li class="link">
@@ -1011,6 +1014,9 @@
                                            <a href="../components/DejaIFrameComponent.html" >DejaIFrameComponent</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../components/DejaItemComponent.html" >DejaItemComponent</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../components/DejaListLoaderComponent.html" >DejaListLoaderComponent</a>
                                        </li>
                                        <li class="link">
@@ -1575,7 +1581,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="440" class="link-to-prism">src/component/dropdown/dropdown.component.ts:440</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="460" class="link-to-prism">src/component/dropdown/dropdown.component.ts:460</a></div>
                                         </td>
                                     </tr>
 
@@ -1607,7 +1613,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="438" class="link-to-prism">src/component/dropdown/dropdown.component.ts:438</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="458" class="link-to-prism">src/component/dropdown/dropdown.component.ts:458</a></div>
                                         </td>
                                     </tr>
 
@@ -1639,7 +1645,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="435" class="link-to-prism">src/component/dropdown/dropdown.component.ts:435</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="455" class="link-to-prism">src/component/dropdown/dropdown.component.ts:455</a></div>
                                         </td>
                                     </tr>
 
@@ -1671,7 +1677,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="436" class="link-to-prism">src/component/dropdown/dropdown.component.ts:436</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="456" class="link-to-prism">src/component/dropdown/dropdown.component.ts:456</a></div>
                                         </td>
                                     </tr>
 
@@ -1703,7 +1709,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="439" class="link-to-prism">src/component/dropdown/dropdown.component.ts:439</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="459" class="link-to-prism">src/component/dropdown/dropdown.component.ts:459</a></div>
                                         </td>
                                     </tr>
 
@@ -1735,7 +1741,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="437" class="link-to-prism">src/component/dropdown/dropdown.component.ts:437</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="457" class="link-to-prism">src/component/dropdown/dropdown.component.ts:457</a></div>
                                         </td>
                                     </tr>
 
@@ -1795,6 +1801,9 @@ export class DejaDropDownComponent implements AfterViewInit, OnDestroy {
 
     /** Permet de définir la position du dropdown manuellement */
     @Input() public position: Position;
+
+    /** Permet de définir si le dropdown doit ètre affiché pour un mobile */
+    @Input() public mobile: boolean;
 
     /** Renvoie ou définit une valeur indiquant si le conteneur déroulant se ferme sur pression de la touche Echap */
     @Input()
@@ -1865,7 +1874,8 @@ export class DejaDropDownComponent implements AfterViewInit, OnDestroy {
         const element &#x3D; elementRef.nativeElement as HTMLElement;
 
         const setDropDownPosition &#x3D; (dropDownPosition: IDropDownPosition) &#x3D;&gt; {
-            const { left, top, width, height, valign, halign } &#x3D; dropDownPosition;
+            const { mobile, left, top, width, height, valign, halign } &#x3D; dropDownPosition;
+
             if (left !&#x3D;&#x3D; undefined) {
                 element.style.left &#x3D; left !&#x3D;&#x3D; null ? &#x60;${left}px&#x60; : &#x27;&#x27;;
             }
@@ -1892,6 +1902,11 @@ export class DejaDropDownComponent implements AfterViewInit, OnDestroy {
                     element.removeAttribute(&#x27;halign&#x27;);
                 }
             }
+
+            if (mobile) {
+                element.style.position &#x3D; &#x27;fixed&#x27;;
+                element.setAttribute(&#x27;valign&#x27;, &#x27;&#x27;);
+            }
         };
 
         const unRregisterEscape$ &#x3D; Observable.from(this.closeOnEscape$)
@@ -1912,7 +1927,7 @@ export class DejaDropDownComponent implements AfterViewInit, OnDestroy {
                 setDropDownPosition({
                     left: resetParams.left ? -1000 : undefined,
                     top: resetParams.top ? -1000 : undefined,
-                    width: resetParams.width ? (resetParams.width !&#x3D;&#x3D; true ? resetParams.width || null : null) : undefined,
+                    width: resetParams.width ? (resetParams.width !&#x3D;&#x3D; true ? resetParams.width || null : null) : (this.mobile ? &#x27;90%&#x27; : undefined),
                     height: resetParams.height ? (resetParams.height !&#x3D;&#x3D; true ? resetParams.height || null : null) : undefined,
                     valign: resetParams.valign ? null : undefined,
                     halign: resetParams.halign ? null : undefined,
@@ -1923,22 +1938,12 @@ export class DejaDropDownComponent implements AfterViewInit, OnDestroy {
             })
             .debounce((reshow) &#x3D;&gt; Observable.timer(reshow ? 0 : 100))
             .do(() &#x3D;&gt; {
-                // Calc owner screen position
-                const ownerElement &#x3D; (this.ownerElement as ElementRef).nativeElement || this.ownerElement;
-                const ownerRect &#x3D; ownerElement.getBoundingClientRect();
-                const ownerBounds &#x3D; Rect.fromLTRB(ownerRect.left + +this.ownerLeftMargin, ownerRect.top + +this.ownerTopMargin, ownerRect.right - +this.ownerRightMargin, ownerRect.bottom - +this.ownerBottomMargin);
-
                 // Calc container screen position
                 const body &#x3D; this.elementRef.nativeElement.ownerDocument.body;
                 const bodyRect &#x3D; body.getBoundingClientRect();
-                const containerElement &#x3D; this.containerElement &amp;&amp; (this.containerElement as ElementRef).nativeElement || this.containerElement;
-                const containerRect &#x3D; !containerElement ? bodyRect : containerElement.getBoundingClientRect();
 
-                // Calc min max relative to screen
-                const minLeft &#x3D; Math.max(bodyRect.left, containerRect.left);
-                const maxRight &#x3D; Math.min(bodyRect.right, containerRect.right);
-                const minTop &#x3D; Math.max(bodyRect.top, containerRect.top);
-                const maxBottom &#x3D; Math.min(bodyRect.bottom, containerRect.bottom);
+                const dropDownPosition &#x3D; {} as IDropDownPosition;
+                dropDownPosition.mobile &#x3D; this.mobile &#x3D;&#x3D;&#x3D; true;
 
                 // Calc dropdown screen position
                 const dropdownContElement &#x3D; this.elementRef.nativeElement as HTMLElement;
@@ -1948,206 +1953,227 @@ export class DejaDropDownComponent implements AfterViewInit, OnDestroy {
                 let width &#x3D; dropdownRect.width;
                 let height &#x3D; dropdownRect.height;
 
-                // If position specified, align to the position
-                if (this.position) {
-                    left &#x3D; this.position.left;
-                    top &#x3D; this.position.top;
+                // If mobile, center on the body
+                if (dropDownPosition.mobile) {
+                    dropDownPosition.left &#x3D; bodyRect.width * 0.1;
+                    dropDownPosition.width &#x3D; bodyRect.width * 0.8;
+                    dropDownPosition.height &#x3D; height &lt;&#x3D; bodyRect.height * 0.85 ? height : bodyRect.height * 0.85;
+                    dropDownPosition.top &#x3D; (bodyRect.height - dropDownPosition.height) / 2;
+
                 } else {
-                    // Otherwise, calc container absolute alignment
-                    if (this.ownerAlignents.left) {
-                        if (this.dropdownAlignments.left) {
-                            left &#x3D; ownerBounds.left;
-                        } else if (this.dropdownAlignments.right) {
-                            left &#x3D; ownerBounds.left - width;
-                        } else {
-                            left &#x3D; ownerBounds.left - width / 2;
-                        }
-                    }
+                    const containerElement &#x3D; this.containerElement &amp;&amp; (this.containerElement as ElementRef).nativeElement || this.containerElement;
+                    const containerRect &#x3D; !containerElement ? bodyRect : containerElement.getBoundingClientRect();
 
-                    if (this.ownerAlignents.top) {
-                        if (this.dropdownAlignments.top) {
-                            top &#x3D; ownerBounds.top;
-                        } else if (this.dropdownAlignments.bottom) {
-                            top &#x3D; ownerBounds.top - height;
-                        } else {
-                            top &#x3D; ownerBounds.top + ownerBounds.height / 2 - height / 2;
-                        }
-                    }
+                    // Calc owner screen position
+                    const ownerElement &#x3D; (this.ownerElement as ElementRef).nativeElement || this.ownerElement;
+                    const ownerRect &#x3D; ownerElement.getBoundingClientRect();
+                    const ownerBounds &#x3D; Rect.fromLTRB(ownerRect.left + +this.ownerLeftMargin, ownerRect.top + +this.ownerTopMargin, ownerRect.right - +this.ownerRightMargin, ownerRect.bottom - +this.ownerBottomMargin);
 
-                    if (this.ownerAlignents.right) {
+                    // Calc min max relative to screen
+                    const minLeft &#x3D; Math.max(bodyRect.left, containerRect.left);
+                    const maxRight &#x3D; Math.min(bodyRect.right, containerRect.right);
+                    const minTop &#x3D; Math.max(bodyRect.top, containerRect.top);
+                    const maxBottom &#x3D; Math.min(bodyRect.bottom, containerRect.bottom);
+
+                    if (this.position) {
+                        const position &#x3D; this.position as Position;
+                        left &#x3D; position.left;
+                        top &#x3D; position.top;
+                    } else {
+                        // Otherwise, calc container absolute alignment
                         if (this.ownerAlignents.left) {
-                            width &#x3D; ownerBounds.width;
-                        } else if (this.dropdownAlignments.left) {
-                            left &#x3D; ownerBounds.right;
-                        } else if (this.dropdownAlignments.right) {
-                            left &#x3D; ownerBounds.right - width;
-                        } else {
-                            left &#x3D; ownerBounds.right - width / 2;
-                        }
-                    }
-
-                    if (this.ownerAlignents.bottom) {
-                        if (this.ownerAlignents.top) {
-                            height &#x3D; ownerBounds.height;
-                        } else if (this.dropdownAlignments.top) {
-                            top &#x3D; ownerBounds.bottom;
-                        } else if (this.dropdownAlignments.bottom) {
-                            top &#x3D; ownerBounds.bottom - height;
-                        } else {
-                            top &#x3D; ownerBounds.bottom - height / 2;
-                        }
-                    }
-                }
-
-                if (top &#x3D;&#x3D;&#x3D; undefined) {
-                    top &#x3D; ownerBounds.top + ownerBounds.height / 2 - height / 2;
-                }
-
-                if (left &#x3D;&#x3D;&#x3D; undefined) {
-                    left &#x3D; ownerBounds.left + ownerBounds.width / 2 - width / 2;
-                }
-
-                const dropdownBounds &#x3D; new Rect(left, top, width, height);
-
-                // Ensure container bounds
-                if (minLeft &gt; dropdownBounds.left) {
-                    dropdownBounds.left &#x3D; minLeft;
-                }
-
-                if (minTop &gt; dropdownBounds.top) {
-                    dropdownBounds.top &#x3D; minTop;
-                }
-
-                if (dropdownBounds.right &gt; maxRight &amp;&amp; (this.dropdownAlignments.right || !!this.position)) {
-                    dropdownBounds.left &#x3D; Math.max(maxRight - dropdownBounds.width, minLeft);
-                }
-
-                if (dropdownBounds.bottom &gt; maxBottom &amp;&amp; (this.dropdownAlignments.bottom || !!this.position)) {
-                    dropdownBounds.top &#x3D; Math.max(maxBottom - dropdownBounds.height, minTop);
-                }
-
-                if (dropdownBounds.intersectWith(ownerBounds) &amp;&amp; this.avoidOnwerOverflow) {
-                    // Try a better aligment
-                    if (dropdownBounds.left &lt; ownerBounds.right &amp;&amp; dropdownBounds.right &gt; ownerBounds.left) {
-                        const overflowTop &#x3D; dropdownBounds.bottom - ownerBounds.top;
-                        const overflowBottom &#x3D; ownerBounds.bottom - dropdownBounds.top;
-                        if (overflowTop &gt; 0 &amp;&amp; overflowBottom &gt; 0) {
-                            const topHeight &#x3D; Math.min(ownerBounds.top - minTop, dropdownBounds.height);
-                            const bottomHeight &#x3D; Math.min(maxBottom - ownerBounds.bottom, dropdownBounds.height);
-                            if (overflowBottom &gt; 0 &amp;&amp; bottomHeight &lt; topHeight) {
-                                dropdownBounds.top &#x3D; ownerBounds.top - topHeight;
-                                if (dropdownBounds.height &gt; topHeight) {
-                                    dropdownBounds.height &#x3D; topHeight;
-                                }
+                            if (this.dropdownAlignments.left) {
+                                left &#x3D; ownerBounds.left;
+                            } else if (this.dropdownAlignments.right) {
+                                left &#x3D; ownerBounds.left - width;
                             } else {
-                                dropdownBounds.top &#x3D; ownerBounds.bottom;
-                                if (dropdownBounds.height &gt; bottomHeight) {
-                                    dropdownBounds.height &#x3D; bottomHeight;
-                                }
+                                left &#x3D; ownerBounds.left - width / 2;
+                            }
+                        }
+
+                        if (this.ownerAlignents.top) {
+                            if (this.dropdownAlignments.top) {
+                                top &#x3D; ownerBounds.top;
+                            } else if (this.dropdownAlignments.bottom) {
+                                top &#x3D; ownerBounds.top - height;
+                            } else {
+                                top &#x3D; ownerBounds.top + ownerBounds.height / 2 - height / 2;
+                            }
+                        }
+
+                        if (this.ownerAlignents.right) {
+                            if (this.ownerAlignents.left) {
+                                width &#x3D; ownerBounds.width;
+                            } else if (this.dropdownAlignments.left) {
+                                left &#x3D; ownerBounds.right;
+                            } else if (this.dropdownAlignments.right) {
+                                left &#x3D; ownerBounds.right - width;
+                            } else {
+                                left &#x3D; ownerBounds.right - width / 2;
+                            }
+                        }
+
+                        if (this.ownerAlignents.bottom) {
+                            if (this.ownerAlignents.top) {
+                                height &#x3D; ownerBounds.height;
+                            } else if (this.dropdownAlignments.top) {
+                                top &#x3D; ownerBounds.bottom;
+                            } else if (this.dropdownAlignments.bottom) {
+                                top &#x3D; ownerBounds.bottom - height;
+                            } else {
+                                top &#x3D; ownerBounds.bottom - height / 2;
                             }
                         }
                     }
 
-                    if (dropdownBounds.top &lt; ownerBounds.bottom &amp;&amp; dropdownBounds.bottom &gt; ownerBounds.top) {
-                        const overflowLeft &#x3D; dropdownBounds.right - ownerBounds.left;
-                        const overflowRight &#x3D; ownerBounds.right - dropdownBounds.left;
-                        if (overflowLeft &gt; 0 &amp;&amp; overflowRight &gt; 0) {
-                            const leftWidth &#x3D; Math.min(ownerBounds.left - minLeft, dropdownBounds.width);
-                            const rightWidth &#x3D; Math.min(maxRight - ownerBounds.right, dropdownBounds.width);
-                            if (overflowRight &gt; 0 &amp;&amp; rightWidth &lt; leftWidth) {
-                                dropdownBounds.left &#x3D; ownerBounds.left - leftWidth;
-                                if (dropdownBounds.width &gt; leftWidth) {
-                                    dropdownBounds.width &#x3D; leftWidth;
-                                }
-                            } else {
-                                dropdownBounds.left &#x3D; ownerBounds.right;
-                                if (dropdownBounds.width &gt; rightWidth) {
-                                    dropdownBounds.width &#x3D; rightWidth;
-                                }
-                            }
-                        }
+                    if (top &#x3D;&#x3D;&#x3D; undefined) {
+                        top &#x3D; ownerBounds.top + ownerBounds.height / 2 - height / 2;
                     }
-                }
 
-                // Ensure container bounds
-                if (minLeft &gt; dropdownBounds.left) {
-                    // Recalc new position
-                    dropdownBounds.left &#x3D; minLeft;
-                    if (this.dropdownAlignments.right) {
-                        // Right blocked
-                        if (this.ownerAlignents.left) {
-                            dropdownBounds.width &#x3D; Math.max(5, ownerBounds.left - minLeft);
-                        } else if (this.ownerAlignents.right) {
-                            dropdownBounds.width &#x3D; ownerBounds.right - minLeft;
-                        }
+                    if (left &#x3D;&#x3D;&#x3D; undefined) {
+                        left &#x3D; ownerBounds.left + ownerBounds.width / 2 - width / 2;
                     }
-                }
 
-                if (minTop &gt; dropdownBounds.top) {
-                    dropdownBounds.top &#x3D; minTop;
-                    if (this.dropdownAlignments.bottom) {
-                        // Bottom blocked
-                        if (this.ownerAlignents.top) {
-                            dropdownBounds.height &#x3D; Math.max(5, ownerBounds.top - minTop);
-                        } else if (this.ownerAlignents.bottom) {
-                            dropdownBounds.height &#x3D; ownerBounds.bottom - minTop;
-                        }
-                    }
-                }
+                    const dropdownBounds &#x3D; new Rect(left, top, width, height);
 
-                if (dropdownBounds.right &gt; maxRight) {
-                    if (this.dropdownAlignments.left) {
-                        // Left blocked
-                        dropdownBounds.width &#x3D; maxRight - dropdownBounds.left;
-                    } else if (maxRight - dropdownBounds.width &lt; minLeft) {
-                        // Limited width
+                    // Ensure container bounds
+                    if (minLeft &gt; dropdownBounds.left) {
                         dropdownBounds.left &#x3D; minLeft;
-                        dropdownBounds.width &#x3D; maxRight - minLeft;
-                    } else {
-                        dropdownBounds.left &#x3D; maxRight - dropdownBounds.width;
                     }
-                }
 
-                if (dropdownBounds.bottom &gt; maxBottom) {
-                    if (this.dropdownAlignments.top) {
-                        // Top blocked
-                        dropdownBounds.height &#x3D; maxBottom - dropdownBounds.top;
-                    } else if (maxBottom - dropdownBounds.height &lt; minTop) {
-                        // Limited height
+                    if (minTop &gt; dropdownBounds.top) {
                         dropdownBounds.top &#x3D; minTop;
-                        dropdownBounds.height &#x3D; maxBottom - minTop;
-                    } else {
-                        dropdownBounds.top &#x3D; maxBottom - dropdownBounds.height;
                     }
+
+                    if (dropdownBounds.right &gt; maxRight &amp;&amp; (this.dropdownAlignments.right || !!this.position)) {
+                        dropdownBounds.left &#x3D; Math.max(maxRight - dropdownBounds.width, minLeft);
+                    }
+
+                    if (dropdownBounds.bottom &gt; maxBottom &amp;&amp; (this.dropdownAlignments.bottom || !!this.position)) {
+                        dropdownBounds.top &#x3D; Math.max(maxBottom - dropdownBounds.height, minTop);
+                    }
+
+                    if (dropdownBounds.intersectWith(ownerBounds) &amp;&amp; this.avoidOnwerOverflow) {
+                        // Try a better aligment
+                        if (dropdownBounds.left &lt; ownerBounds.right &amp;&amp; dropdownBounds.right &gt; ownerBounds.left) {
+                            const overflowTop &#x3D; dropdownBounds.bottom - ownerBounds.top;
+                            const overflowBottom &#x3D; ownerBounds.bottom - dropdownBounds.top;
+                            if (overflowTop &gt; 0 &amp;&amp; overflowBottom &gt; 0) {
+                                const topHeight &#x3D; Math.min(ownerBounds.top - minTop, dropdownBounds.height);
+                                const bottomHeight &#x3D; Math.min(maxBottom - ownerBounds.bottom, dropdownBounds.height);
+                                if (overflowBottom &gt; 0 &amp;&amp; bottomHeight &lt; topHeight) {
+                                    dropdownBounds.top &#x3D; ownerBounds.top - topHeight;
+                                    if (dropdownBounds.height &gt; topHeight) {
+                                        dropdownBounds.height &#x3D; topHeight;
+                                    }
+                                } else {
+                                    dropdownBounds.top &#x3D; ownerBounds.bottom;
+                                    if (dropdownBounds.height &gt; bottomHeight) {
+                                        dropdownBounds.height &#x3D; bottomHeight;
+                                    }
+                                }
+                            }
+                        }
+
+                        if (dropdownBounds.top &lt; ownerBounds.bottom &amp;&amp; dropdownBounds.bottom &gt; ownerBounds.top) {
+                            const overflowLeft &#x3D; dropdownBounds.right - ownerBounds.left;
+                            const overflowRight &#x3D; ownerBounds.right - dropdownBounds.left;
+                            if (overflowLeft &gt; 0 &amp;&amp; overflowRight &gt; 0) {
+                                const leftWidth &#x3D; Math.min(ownerBounds.left - minLeft, dropdownBounds.width);
+                                const rightWidth &#x3D; Math.min(maxRight - ownerBounds.right, dropdownBounds.width);
+                                if (overflowRight &gt; 0 &amp;&amp; rightWidth &lt; leftWidth) {
+                                    dropdownBounds.left &#x3D; ownerBounds.left - leftWidth;
+                                    if (dropdownBounds.width &gt; leftWidth) {
+                                        dropdownBounds.width &#x3D; leftWidth;
+                                    }
+                                } else {
+                                    dropdownBounds.left &#x3D; ownerBounds.right;
+                                    if (dropdownBounds.width &gt; rightWidth) {
+                                        dropdownBounds.width &#x3D; rightWidth;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    // Ensure container bounds
+                    if (minLeft &gt; dropdownBounds.left) {
+                        // Recalc new position
+                        dropdownBounds.left &#x3D; minLeft;
+                        if (this.dropdownAlignments.right) {
+                            // Right blocked
+                            if (this.ownerAlignents.left) {
+                                dropdownBounds.width &#x3D; Math.max(5, ownerBounds.left - minLeft);
+                            } else if (this.ownerAlignents.right) {
+                                dropdownBounds.width &#x3D; ownerBounds.right - minLeft;
+                            }
+                        }
+                    }
+
+                    if (minTop &gt; dropdownBounds.top) {
+                        dropdownBounds.top &#x3D; minTop;
+                        if (this.dropdownAlignments.bottom) {
+                            // Bottom blocked
+                            if (this.ownerAlignents.top) {
+                                dropdownBounds.height &#x3D; Math.max(5, ownerBounds.top - minTop);
+                            } else if (this.ownerAlignents.bottom) {
+                                dropdownBounds.height &#x3D; ownerBounds.bottom - minTop;
+                            }
+                        }
+                    }
+
+                    if (dropdownBounds.right &gt; maxRight) {
+                        if (this.dropdownAlignments.left) {
+                            // Left blocked
+                            dropdownBounds.width &#x3D; maxRight - dropdownBounds.left;
+                        } else if (maxRight - dropdownBounds.width &lt; minLeft) {
+                            // Limited width
+                            dropdownBounds.left &#x3D; minLeft;
+                            dropdownBounds.width &#x3D; maxRight - minLeft;
+                        } else {
+                            dropdownBounds.left &#x3D; maxRight - dropdownBounds.width;
+                        }
+                    }
+
+                    if (dropdownBounds.bottom &gt; maxBottom) {
+                        if (this.dropdownAlignments.top) {
+                            // Top blocked
+                            dropdownBounds.height &#x3D; maxBottom - dropdownBounds.top;
+                        } else if (maxBottom - dropdownBounds.height &lt; minTop) {
+                            // Limited height
+                            dropdownBounds.top &#x3D; minTop;
+                            dropdownBounds.height &#x3D; maxBottom - minTop;
+                        } else {
+                            dropdownBounds.top &#x3D; maxBottom - dropdownBounds.height;
+                        }
+                    }
+
+                    if (dropdownBounds.top &gt;&#x3D; ownerBounds.bottom) {
+                        dropDownPosition.valign &#x3D; &#x27;bottom&#x27;;
+                    } else if (dropdownBounds.bottom &lt;&#x3D; ownerBounds.top) {
+                        dropDownPosition.valign &#x3D; &#x27;top&#x27;;
+                    } else {
+                        dropDownPosition.valign &#x3D; &#x27;center&#x27;;
+                    }
+
+                    if (dropdownBounds.left &gt;&#x3D; ownerBounds.right) {
+                        dropDownPosition.halign &#x3D; &#x27;right&#x27;;
+                    } else if (dropdownBounds.right &lt;&#x3D; ownerBounds.left) {
+                        dropDownPosition.halign &#x3D; &#x27;left&#x27;;
+                    } else {
+                        dropDownPosition.halign &#x3D; &#x27;center&#x27;;
+                    }
+
+                    // Convert to relative
+                    const parentElement &#x3D; dropdownContElement.offsetParent as HTMLElement;
+                    const parentRect &#x3D; parentElement &amp;&amp; parentElement.getBoundingClientRect();
+                    const relativeBounds &#x3D; (parentRect &amp;&amp; dropdownBounds.offset(- parentRect.left, - parentRect.top)) || dropdownBounds;
+
+                    dropDownPosition.left &#x3D; relativeBounds.left;
+                    dropDownPosition.top &#x3D; relativeBounds.top;
+                    dropDownPosition.width &#x3D; relativeBounds.width;
+                    dropDownPosition.height &#x3D; relativeBounds.height;
                 }
-
-                const dropDownPosition &#x3D; {} as IDropDownPosition;
-
-                if (dropdownBounds.top &gt;&#x3D; ownerBounds.bottom) {
-                    dropDownPosition.valign &#x3D; &#x27;bottom&#x27;;
-                } else if (dropdownBounds.bottom &lt;&#x3D; ownerBounds.top) {
-                    dropDownPosition.valign &#x3D; &#x27;top&#x27;;
-                } else {
-                    dropDownPosition.valign &#x3D; &#x27;center&#x27;;
-                }
-
-                if (dropdownBounds.left &gt;&#x3D; ownerBounds.right) {
-                    dropDownPosition.halign &#x3D; &#x27;right&#x27;;
-                } else if (dropdownBounds.right &lt;&#x3D; ownerBounds.left) {
-                    dropDownPosition.halign &#x3D; &#x27;left&#x27;;
-                } else {
-                    dropDownPosition.halign &#x3D; &#x27;center&#x27;;
-                }
-
-                // Convert to relative
-                const parentElement &#x3D; dropdownContElement.offsetParent as HTMLElement;
-                const parentRect &#x3D; parentElement &amp;&amp; parentElement.getBoundingClientRect();
-                const relativeBounds &#x3D; (parentRect &amp;&amp; dropdownBounds.offset(- parentRect.left, - parentRect.top)) || dropdownBounds;
-
-                dropDownPosition.left &#x3D; relativeBounds.left;
-                dropDownPosition.top &#x3D; relativeBounds.top;
-                dropDownPosition.width &#x3D; relativeBounds.width;
-                dropDownPosition.height &#x3D; relativeBounds.height;
 
                 setDropDownPosition(dropDownPosition);
             })
@@ -2185,6 +2211,7 @@ interface IDropDownPosition {
     height: number;
     valign: string;
     halign: string;
+    mobile: boolean;
 }
 </code></pre>
     </div>
