@@ -1581,7 +1581,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="374" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:374</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="377" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:377</a></div>
                                         </td>
                                     </tr>
 
@@ -1613,7 +1613,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="376" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:376</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="379" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:379</a></div>
                                         </td>
                                     </tr>
 
@@ -1645,7 +1645,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="375" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:375</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="378" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:378</a></div>
                                         </td>
                                     </tr>
 
@@ -1732,7 +1732,10 @@ export class DejaCircularPickerComponent implements OnInit, ControlValueAccessor
     private circularValues: ICircularValue[] &#x3D; [];
 
     private cursor: ICircularValue;
-    private cursorHand: { width: number, angle: number };
+    private cursorHand: {
+        width: number;
+        angle: number;
+    };
     private cursorElement: HTMLElement;
 
     private clickedTime: number;

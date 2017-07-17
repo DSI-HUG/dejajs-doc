@@ -1756,7 +1756,7 @@ With outerLabels = false, and ranges.length &gt; 1, labels will go inwards.</p>
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:97</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="100" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:100</a></div>
                                 </td>
                             </tr>
     
@@ -1896,7 +1896,7 @@ With outerLabels = false, and ranges.length &gt; 1, labels will go inwards.</p>
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="231" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:231</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="234" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:234</a></div>
                                 </td>
                             </tr>
                     <tr>
@@ -1991,7 +1991,10 @@ export class DejaCircularPickerComponent implements OnInit, ControlValueAccessor
     private circularValues: ICircularValue[] &#x3D; [];
 
     private cursor: ICircularValue;
-    private cursorHand: { width: number, angle: number };
+    private cursorHand: {
+        width: number;
+        angle: number;
+    };
     private cursorElement: HTMLElement;
 
     private clickedTime: number;

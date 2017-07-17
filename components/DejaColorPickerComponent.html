@@ -2035,12 +2035,12 @@ export class DejaColorPickerComponent implements ControlValueAccessor {
 
     protected onClick(event: Event) {
         if (this.disabled) {
-            return;
+            return undefined;
         }
 
         const target &#x3D; event.currentTarget as HTMLElement;
         if (target.id !&#x3D;&#x3D; &#x27;colorbtn&#x27; || target.ownerDocument.activeElement.id !&#x3D;&#x3D; &#x27;colorbtn&#x27;) {
-            return;
+            return undefined;
         }
 
         this.isOpen &#x3D; !this.isOpen;

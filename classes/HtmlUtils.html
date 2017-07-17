@@ -1601,7 +1601,7 @@
             const params: string[] &#x3D; [];
             for (const p in jsonObjParameters) {
                 if (jsonObjParameters.hasOwnProperty(p)) {
-                    params.push(encodeURIComponent(p) + &#x27;&#x3D;&#x27; + encodeURIComponent(jsonObjParameters[p]));
+                    params.push(&#x60;${encodeURIComponent(p)}&#x3D;${encodeURIComponent(jsonObjParameters[p])}&#x60;);
                 }
             }
             return params.join(&#x27;&amp;&#x27;);

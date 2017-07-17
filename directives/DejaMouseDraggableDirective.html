@@ -1803,7 +1803,7 @@ export class DejaMouseDraggableDirective implements OnDestroy {
 export interface IDejaMouseDraggableContext {
     target?: string; // Tagname or #id or [attribute]
     className?: string;
-    dragStart?: (HTMLElement) &#x3D;&gt; any; // Return object or observable&lt;object&gt;
+    dragStart?(HTMLElement): any; // Return object or observable&lt;object&gt;
 }
 </code></pre>
     </div>

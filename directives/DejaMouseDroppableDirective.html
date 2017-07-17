@@ -1773,10 +1773,10 @@ export class DejaMouseDroppableDirective implements OnDestroy {
 }
 
 export interface IDejaMouseDroppableContext {
-    dragEnter?: (dragContext: IDragDropContext, dragCursor: IDragCursorInfos) &#x3D;&gt; IDropCursorInfos | Observable&lt;IDropCursorInfos&gt;; // Return object or observable&lt;object&gt;
-    dragOver?: (dragContext: IDragDropContext, dragCursor: IDragCursorInfos) &#x3D;&gt; IDropCursorInfos;
-    dragLeave?: (dragContext: IDragDropContext) &#x3D;&gt; void;
-    drop?: (dragContext: IDragDropContext) &#x3D;&gt; void;
+    dragEnter?(dragContext: IDragDropContext, dragCursor: IDragCursorInfos): IDropCursorInfos | Observable&lt;IDropCursorInfos&gt;; // Return object or observable&lt;object&gt;
+    dragOver?(dragContext: IDragDropContext, dragCursor: IDragCursorInfos): IDropCursorInfos;
+    dragLeave?(dragContext: IDragDropContext): void;
+    drop?(dragContext: IDragDropContext): void;
 }
 </code></pre>
     </div>

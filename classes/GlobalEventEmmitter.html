@@ -1802,14 +1802,14 @@
         }
 
         // specific event
-        const callbacks &#x3D; this._callbacks[&#x27;$&#x27; + event];
+        const callbacks &#x3D; this._callbacks[&#x60;$${event}&#x60;];
         if (!callbacks) {
             return this;
         }
 
         // remove all handlers
         if (!fn) {
-            delete this._callbacks[&#x27;$&#x27; + event];
+            delete this._callbacks[&#x60;$${event}&#x60;];
             return this;
         }
 
@@ -1827,12 +1827,12 @@
 
     public emit &#x3D; (event: string, ...params) &#x3D;&gt; {
         this._callbacks &#x3D; this._callbacks || {};
-        let callbacks &#x3D; this._callbacks[&#x27;$&#x27; + event];
+        let callbacks &#x3D; this._callbacks[&#x60;$${event}&#x60;];
 
         if (callbacks) {
             callbacks &#x3D; callbacks.slice(0);
-            // tslint:disable-next-line:prefer-const
-            for (let i &#x3D; 0, len &#x3D; callbacks.length; i &lt; len; ++i) {
+            // tslint:disable-next-line:prefer-for-of
+            for (let i &#x3D; 0; i &lt; callbacks.length; ++i) {
                 callbacks[i].apply(this, params);
             }
         }
@@ -1842,7 +1842,7 @@
 
     public listeners &#x3D; (event) &#x3D;&gt; {
         this._callbacks &#x3D; this._callbacks || {};
-        return this._callbacks[&#x27;$&#x27; + event] || [];
+        return this._callbacks[&#x60;$${event}&#x60;] || [];
     }
 
     public hasListeners &#x3D; (event) &#x3D;&gt; {
@@ -1855,7 +1855,7 @@
 
     public addEventListener &#x3D; (event: string, fn: (params: any[]) &#x3D;&gt; void) &#x3D;&gt; {
         this._callbacks &#x3D; this._callbacks || {};
-        (this._callbacks[&#x27;$&#x27; + event] &#x3D; this._callbacks[&#x27;$&#x27; + event] || []).push(fn);
+        (this._callbacks[&#x60;$${event}&#x60;] &#x3D; this._callbacks[&#x60;$${event}&#x60;] || []).push(fn);
         return this;
     }
 }

@@ -1822,7 +1822,7 @@ export class DejaTextMetricsService {
      */
     public getTextWidth(text: string, elem: HTMLElement): number {
         this.computedStyles &#x3D; window.getComputedStyle(elem);
-        const font &#x3D; this.computedStyles.fontSize + &#x27; &#x27; + this.computedStyles.fontFamily;
+        const font &#x3D; &#x60;${this.computedStyles.fontSize} ${this.computedStyles.fontFamily}&#x60;;
 
         const canvas &#x3D; this.canvas || (this.canvas &#x3D; document.createElement(&#x27;canvas&#x27;));
         const context &#x3D; canvas.getContext(&#x27;2d&#x27;);

@@ -1599,7 +1599,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/common/core/UUID.ts:28</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/common/core/UUID.ts:30</a></div>
                                         </td>
                                     </tr>
             
@@ -1626,8 +1626,10 @@
 
     constructor() {
         let d &#x3D; new Date().getTime();
-        if (window.performance &amp;&amp; typeof window.performance.now &#x3D;&#x3D;&#x3D; &#x27;function&#x27;) {
-            d +&#x3D; performance.now();
+        if (window.performance !&#x3D;&#x3D; undefined) {
+            if (typeof window.performance.now &#x3D;&#x3D;&#x3D; &#x27;function&#x27;) {
+                d +&#x3D; performance.now();
+            }
         }
         this.uuid &#x3D; &#x27;xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx&#x27;.replace(/[xy]/g, (c) &#x3D;&gt; {
             // tslint:disable-next-line:no-bitwise

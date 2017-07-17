@@ -1800,15 +1800,10 @@ export class GroupingService {
                 let parent &#x3D; groups[groupedBy];
 
                 if (!parent) {
-                    let groupLabel: string;
-                    if (groupInfo.groupTextField) {
-                        groupLabel &#x3D; typeof groupInfo.groupTextField &#x3D;&#x3D;&#x3D; &#x27;function&#x27; ? groupInfo.groupTextField(item) : item[groupInfo.groupTextField];
-                    } else {
-                        groupLabel &#x3D; groupedBy;
-                    }
+                    const groupLabel &#x3D; groupInfo.groupTextField ? (typeof groupInfo.groupTextField &#x3D;&#x3D;&#x3D; &#x27;function&#x27; ? groupInfo.groupTextField(item) : item[groupInfo.groupTextField]) : groupedBy;
                     parent &#x3D; groups[groupedBy] &#x3D; {
                         depth: _depth,
-                        toString: () &#x3D;&gt; { return groupLabel; },
+                        toString: () &#x3D;&gt; groupLabel,
                         $text: groupLabel,
                     } as IItemTree;
                     parent[childrenField] &#x3D; [];

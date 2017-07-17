@@ -1749,7 +1749,7 @@ export class DejaAutosizeTextAreaDirective implements AfterViewInit, Validator, 
             .debounceTime(5)
             .do(() &#x3D;&gt; textAreaElement.style.height &#x3D; &#x27;18px&#x27;)
             .subscribe(() &#x3D;&gt; {
-                textAreaElement.style.height &#x3D; textAreaElement.scrollHeight + &#x27;px&#x27;;
+                textAreaElement.style.height &#x3D; &#x60;${textAreaElement.scrollHeight}px&#x60;;
             });
     }
 

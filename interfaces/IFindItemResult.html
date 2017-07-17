@@ -1588,7 +1588,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="1325" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1325</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="1305" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1305</a></div>
                                         </td>
                                     </tr>
 
@@ -1626,7 +1626,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="1323" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1323</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="1303" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1303</a></div>
                                         </td>
                                     </tr>
 
@@ -1816,7 +1816,7 @@ export class ItemListService {
             this.items &#x3D; undefined;
             this._waiter$.next(true);
             let observable &#x3D; items as Observable&lt;IItemBase[]&gt;;
-            if (!observable.subscribe) {
+            if (observable.subscribe &#x3D;&#x3D;&#x3D; undefined) {
                 const promise &#x3D; items as Promise&lt;IItemBase[]&gt;;
                 observable &#x3D; Observable.fromPromise(promise);
             }
@@ -1931,7 +1931,7 @@ export class ItemListService {
         return new Observable&lt;boolean&gt;((subscriber: Subscriber&lt;boolean&gt;) &#x3D;&gt; {
             if (!this._ddList || !this.items) {
                 subscriber.next(false);
-                return;
+                return undefined;
             }
 
             const listIndex &#x3D; this._ddCurrentIndex;
@@ -2011,7 +2011,7 @@ export class ItemListService {
             const startIndex &#x3D; this._ddCurrentIndex !&#x3D;&#x3D; undefined ? this._ddCurrentIndex : index;
             if (startIndex &gt;&#x3D; currentList.length) {
                 subscriber.next(currentList.length - 1);
-                return;
+                return undefined;
             }
 
             const item &#x3D; currentList[startIndex] as IItemTree;
@@ -2034,10 +2034,10 @@ export class ItemListService {
                             const targetItem &#x3D; currentList[a] as IItemTree;
                             if (targetItem.depth &#x3D;&#x3D;&#x3D; item.depth) {
                                 subscriber.next(a);
-                                return;
+                                return undefined;
                             } else if (targetItem.depth &#x3D;&#x3D;&#x3D; item.depth - 1) {
                                 subscriber.next(a + 1);
-                                return;
+                                return undefined;
                             }
                         }
                     }
@@ -2056,20 +2056,20 @@ export class ItemListService {
                     if (targetIndex &gt;&#x3D; afterIndex) {
                         // Descend jusqu&#x27;au premier élément avec la même profondeur
                         for (let a &#x3D; targetIndex + 1; a &lt; currentList.length; a++) {
-                            const targetItem &#x3D; currentList[a] as IItemTree;
-                            if (targetItem.depth &#x3D;&#x3D;&#x3D; item.depth) {
+                            const itm &#x3D; currentList[a] as IItemTree;
+                            if (itm.depth &#x3D;&#x3D;&#x3D; item.depth) {
                                 subscriber.next(a);
-                                return;
-                            } else if (targetItem.depth &#x3D;&#x3D;&#x3D; item.depth - 1) {
+                                return undefined;
+                            } else if (itm.depth &#x3D;&#x3D;&#x3D; item.depth - 1) {
                                 subscriber.next(a - 1);
-                                return;
+                                return undefined;
                             }
                         }
                         // Not found
                         const targetItem &#x3D; currentList[afterIndex] as IItemTree;
                         if (targetItem.depth &#x3D;&#x3D;&#x3D; item.depth) {
                             subscriber.next(afterIndex);
-                            return;
+                            return undefined;
                         }
                     }
                 }
@@ -2441,7 +2441,7 @@ export class ItemListService {
         };
 
         return this.ensureFlatListCache$(true, multiSelect)
-            .switchMap((flatList) &#x3D;&gt; search$(flatList));
+            .switchMap(search$);
     }
 
     /** Supprime tous les caches internes. Ils seront recréés à la première demande de la portion de la liste à afficher. */
@@ -2474,7 +2474,7 @@ export class ItemListService {
                 }
             } else {
                 regExp &#x3D; query as RegExp;
-                if (!regExp.test) {
+                if (regExp.test &#x3D;&#x3D;&#x3D; undefined) {
                     regExp &#x3D; undefined;
                 }
             }
@@ -2556,10 +2556,10 @@ export class ItemListService {
                     this.waiter$.next(this.items &#x3D;&#x3D;&#x3D; undefined);
                 })
                 .switchMap(() &#x3D;&gt; this.ensureVisibleListCache$(searchField, this.internalQuery, queryChanged, multiSelect))
-                .map(() &#x3D;&gt; loadViewList());
+                .map(loadViewList);
         } else {
             return this.ensureVisibleListCache$(searchField, this.internalQuery, queryChanged, multiSelect)
-                .map(() &#x3D;&gt; loadViewList());
+                .map(loadViewList);
         }
     }
 
@@ -2584,16 +2584,8 @@ export class ItemListService {
      * @return {boolean} True si l&#x27;élément correspond aux critères de recherche.
      */
     protected itemMatch(item: IItemBase, searchField: string, regExp: RegExp) {
-        let value;
-        if (typeof item[searchField] &#x3D;&#x3D;&#x3D; &#x27;function&#x27;) {
-            value &#x3D; item[searchField]();
-        } else if (item[searchField]) {
-            value &#x3D; item[searchField];
-        } else {
-            value &#x3D; this.getTextValue(item);
-        }
-        value &#x3D; Diacritics.remove(value);
-        return value &amp;&amp; regExp.test(value);
+        const value &#x3D; typeof item[searchField] &#x3D;&#x3D;&#x3D; &#x27;function&#x27; ? item[searchField]() : (item[searchField] ? item[searchField] : this.getTextValue(item));
+        return value &amp;&amp; regExp.test(Diacritics.remove(value));
     }
 
     /** Retourne une liste groupée si un modèle de groupe interne est spécifié.
@@ -2636,19 +2628,7 @@ export class ItemListService {
                                 if (itmTree.collapsed &amp;&amp; expandTree) {
                                     itmTree.collapsed &#x3D; false;
                                 }
-                                if (!filteredItems) {
-                                    if (itmTree.collapsed) {
-                                        filteredItems &#x3D; [itmTree];
-                                    } else {
-                                        filteredItems &#x3D; [itmTree, ...filteredChildren];
-                                    }
-                                } else {
-                                    if (itmTree.collapsed) {
-                                        filteredItems &#x3D; [...filteredItems, itmTree];
-                                    } else {
-                                        filteredItems &#x3D; [...filteredItems, itmTree, ...filteredChildren];
-                                    }
-                                }
+                                filteredItems &#x3D; !filteredItems ? (itmTree.collapsed ? [itmTree] : [itmTree, ...filteredChildren]) : (itmTree.collapsed ? [...filteredItems, itmTree] : [...filteredItems, itmTree, ...filteredChildren]);
                                 if (itmTree.selected) {
                                     selectedList.push(itmTree);
                                 }

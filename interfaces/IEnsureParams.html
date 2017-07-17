@@ -1581,7 +1581,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="591" class="link-to-prism">src/common/core/item-list/viewport.service.ts:591</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="592" class="link-to-prism">src/common/core/item-list/viewport.service.ts:592</a></div>
                                         </td>
                                     </tr>
 
@@ -1613,7 +1613,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="590" class="link-to-prism">src/common/core/item-list/viewport.service.ts:590</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="591" class="link-to-prism">src/common/core/item-list/viewport.service.ts:591</a></div>
                                         </td>
                                     </tr>
 
@@ -1890,6 +1890,7 @@ export class ViewPortService implements OnDestroy {
                         return Observable.timer(1)
                             .do(() &#x3D;&gt; {
                                 const elements &#x3D; element.getElementsByClassName(&#x27;listitem&#x27;);
+                                // tslint:disable-next-line:prefer-for-of
                                 for (let i &#x3D; 0; i &lt; elements.length; i++) {
                                     const itemElement &#x3D; elements[i] as HTMLElement;
                                     const index &#x3D; +itemElement.getAttribute(&#x27;flat&#x27;);
@@ -2103,7 +2104,7 @@ export class ViewPortService implements OnDestroy {
             .filter(() &#x3D;&gt; {
                 if (this.ignoreScrollCount &gt; 0) {
                     this.ignoreScrollCount--;
-                    console.log(&#x27;ignoreScrollCount &#x27; + this.ignoreScrollCount);
+                    console.log(&#x60;ignoreScrollCount ${this.ignoreScrollCount}&#x60;);
                     return false;
                 } else {
                     return true;

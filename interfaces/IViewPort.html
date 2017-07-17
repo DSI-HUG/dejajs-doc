@@ -1581,7 +1581,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="596" class="link-to-prism">src/common/core/item-list/viewport.service.ts:596</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="597" class="link-to-prism">src/common/core/item-list/viewport.service.ts:597</a></div>
                                         </td>
                                     </tr>
 
@@ -1613,7 +1613,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="595" class="link-to-prism">src/common/core/item-list/viewport.service.ts:595</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="596" class="link-to-prism">src/common/core/item-list/viewport.service.ts:596</a></div>
                                         </td>
                                     </tr>
 
@@ -1645,7 +1645,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="599" class="link-to-prism">src/common/core/item-list/viewport.service.ts:599</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="600" class="link-to-prism">src/common/core/item-list/viewport.service.ts:600</a></div>
                                         </td>
                                     </tr>
 
@@ -1677,7 +1677,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="603" class="link-to-prism">src/common/core/item-list/viewport.service.ts:603</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="604" class="link-to-prism">src/common/core/item-list/viewport.service.ts:604</a></div>
                                         </td>
                                     </tr>
 
@@ -1709,7 +1709,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="601" class="link-to-prism">src/common/core/item-list/viewport.service.ts:601</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="602" class="link-to-prism">src/common/core/item-list/viewport.service.ts:602</a></div>
                                         </td>
                                     </tr>
 
@@ -1741,7 +1741,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="602" class="link-to-prism">src/common/core/item-list/viewport.service.ts:602</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="603" class="link-to-prism">src/common/core/item-list/viewport.service.ts:603</a></div>
                                         </td>
                                     </tr>
 
@@ -1773,7 +1773,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="598" class="link-to-prism">src/common/core/item-list/viewport.service.ts:598</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="599" class="link-to-prism">src/common/core/item-list/viewport.service.ts:599</a></div>
                                         </td>
                                     </tr>
 
@@ -1805,7 +1805,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="600" class="link-to-prism">src/common/core/item-list/viewport.service.ts:600</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="601" class="link-to-prism">src/common/core/item-list/viewport.service.ts:601</a></div>
                                         </td>
                                     </tr>
 
@@ -1837,7 +1837,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="597" class="link-to-prism">src/common/core/item-list/viewport.service.ts:597</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="598" class="link-to-prism">src/common/core/item-list/viewport.service.ts:598</a></div>
                                         </td>
                                     </tr>
 
@@ -2114,6 +2114,7 @@ export class ViewPortService implements OnDestroy {
                         return Observable.timer(1)
                             .do(() &#x3D;&gt; {
                                 const elements &#x3D; element.getElementsByClassName(&#x27;listitem&#x27;);
+                                // tslint:disable-next-line:prefer-for-of
                                 for (let i &#x3D; 0; i &lt; elements.length; i++) {
                                     const itemElement &#x3D; elements[i] as HTMLElement;
                                     const index &#x3D; +itemElement.getAttribute(&#x27;flat&#x27;);
@@ -2327,7 +2328,7 @@ export class ViewPortService implements OnDestroy {
             .filter(() &#x3D;&gt; {
                 if (this.ignoreScrollCount &gt; 0) {
                     this.ignoreScrollCount--;
-                    console.log(&#x27;ignoreScrollCount &#x27; + this.ignoreScrollCount);
+                    console.log(&#x60;ignoreScrollCount ${this.ignoreScrollCount}&#x60;);
                     return false;
                 } else {
                     return true;

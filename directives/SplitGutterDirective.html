@@ -1708,7 +1708,7 @@ export class SplitGutterDirective {
      * Separator size in pixel
      */
     @Input() set size(v) {
-        this.setStyle(&#x27;flex-basis&#x27;, v + &#x27;px&#x27;);
+        this.setStyle(&#x27;flex-basis&#x27;, &#x60;${v}px&#x60;);
     }
 
     private _disabled &#x3D; false;

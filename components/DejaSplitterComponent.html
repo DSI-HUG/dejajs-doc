@@ -1991,14 +1991,14 @@ export class DejaSplitterComponent implements OnChanges, OnDestroy {
      * Host Binding
      */
     @HostBinding(&#x27;style.width&#x27;) get styleWidth() {
-        return (this.width &amp;&amp; !isNaN(this.width) &amp;&amp; this.width &gt; 0) ? this.width + &#x27;px&#x27; : &#x27;100%&#x27;;
+        return (this.width &amp;&amp; !isNaN(this.width) &amp;&amp; this.width &gt; 0) ? &#x60;${this.width}px&#x60; : &#x27;100%&#x27;;
     }
 
     /**
      * Host Binding
      */
     @HostBinding(&#x27;style.height&#x27;) get styleHeight() {
-        return (this.height &amp;&amp; !isNaN(this.height) &amp;&amp; this.height &gt; 0) ? this.height + &#x27;px&#x27; : &#x27;100%&#x27;;
+        return (this.height &amp;&amp; !isNaN(this.height) &amp;&amp; this.height &gt; 0) ? &#x60;${this.height}px&#x60; : &#x27;100%&#x27;;
     }
 
     private get nbGutters(): number {
@@ -2155,7 +2155,7 @@ export class DejaSplitterComponent implements OnChanges, OnDestroy {
             if (toBeDefined.length &#x3D;&#x3D;&#x3D; 0) {
                 // Map to 100%
                 this.areas.forEach((a) &#x3D;&gt; {
-                    const adjustedSize &#x3D;  Number(a.sizeUser) * 100 / totalSize;
+                    const adjustedSize &#x3D; Number(a.sizeUser) * 100 / totalSize;
                     a.size &#x3D; adjustedSize;
                 });
             } else if (totalSize &lt; 99.99) {

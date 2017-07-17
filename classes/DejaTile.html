@@ -2381,7 +2381,7 @@ export class DejaTile implements IDejaTile {
             this.fading &#x3D; tile.effects.fading;
         }
         if (!this._id) {
-            this._id &#x3D; &#x27;#&#x27; + DejaTile.currentId++;
+            this._id &#x3D; &#x60;#${DejaTile.currentId++}&#x60;;
         }
     }
 
@@ -2517,7 +2517,7 @@ export class DejaTile implements IDejaTile {
     }
 
     public makeId() {
-        this._id &#x3D; &#x27;#&#x27; + DejaTile.currentId++;
+        this._id &#x3D; &#x60;#${DejaTile.currentId++}&#x60;;
     }
 
     public refreshBounds() {

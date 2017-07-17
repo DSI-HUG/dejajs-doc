@@ -1717,8 +1717,8 @@
         <pre class="line-numbers"><code class="language-typescript">import { Directive, forwardRef, Input, OnInit } from &#x27;@angular/core&#x27;;
 import { FormControl, NG_VALIDATORS } from &#x27;@angular/forms&#x27;;
 
-function validateDateFactory(dateMin, dateMax) {
-   return (c: FormControl) &#x3D;&gt; {
+const validateDateFactory &#x3D; (dateMin, dateMax) &#x3D;&gt; {
+    return (c: FormControl) &#x3D;&gt; {
         const bad &#x3D; {
             invalideDate: true,
         };
@@ -1734,7 +1734,7 @@ function validateDateFactory(dateMin, dateMax) {
         }
         return null;
     };
-}
+};
 
 @Directive({
     providers: [

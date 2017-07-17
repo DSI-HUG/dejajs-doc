@@ -2031,7 +2031,8 @@
 
     public toHex() {
         const toHex &#x3D; (d) &#x3D;&gt; {
-            return (&#x27;0&#x27; + (Number(d).toString(16))).slice(-2).toUpperCase();
+            const s &#x3D; Number(d).toString(16);
+            return &#x60;0${s}&#x60;.slice(-2).toUpperCase();
         };
 
         if (this.isEmpty()) {
