@@ -402,6 +402,9 @@
                                     <a href="../classes/DejaCancelableEvent.html" >DejaCancelableEvent</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../classes/DejaChipsCloseEvent.html" >DejaChipsCloseEvent</a>
+                                </li>
+                                <li class="link">
                                     <a href="../classes/DejaColorFab.html" >DejaColorFab</a>
                                 </li>
                                 <li class="link">
@@ -1153,6 +1156,9 @@
                                            <a href="../classes/DejaCancelableEvent.html" >DejaCancelableEvent</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../classes/DejaChipsCloseEvent.html" >DejaChipsCloseEvent</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../classes/DejaColorFab.html" >DejaColorFab</a>
                                        </li>
                                        <li class="link">
@@ -1619,7 +1625,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/component/data-grid/data-grid-grouparea/data-grid-grouparea.component.ts:39</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/component/data-grid/data-grid-grouparea/data-grid-grouparea.component.ts:40</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -1643,7 +1649,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/component/data-grid/data-grid-grouparea/data-grid-grouparea.component.ts:27</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/component/data-grid/data-grid-grouparea/data-grid-grouparea.component.ts:28</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -1663,7 +1669,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/component/data-grid/data-grid-grouparea/data-grid-grouparea.component.ts:25</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/component/data-grid/data-grid-grouparea/data-grid-grouparea.component.ts:26</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -1681,7 +1687,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/component/data-grid/data-grid-grouparea/data-grid-grouparea.component.ts:41</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/component/data-grid/data-grid-grouparea/data-grid-grouparea.component.ts:42</a></div>
                                 </td>
                             </tr>
     
@@ -1710,7 +1716,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/component/data-grid/data-grid-grouparea/data-grid-grouparea.component.ts:33</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/component/data-grid/data-grid-grouparea/data-grid-grouparea.component.ts:34</a></div>
                                 </td>
                             </tr>
                     <tr>
@@ -1728,6 +1734,7 @@
     <div class="tab-pane fade tab-source-code" id="source">
         <pre class="line-numbers"><code class="language-typescript">import { ChangeDetectionStrategy, ChangeDetectorRef, Component, EventEmitter, Input, Optional, Output } from &#x27;@angular/core&#x27;;
 import { DejaClipboardService } from &#x27;../../../common/core/clipboard/clipboard.service&#x27;;
+import { DejaChipsCloseEvent } from &#x27;../../chips/chips.component&#x27;;
 import { IDejaDragEvent } from &#x27;../../dragdrop/draggable.directive&#x27;;
 import { IDejaDropEvent } from &#x27;../../dragdrop/droppable.directive&#x27;;
 import { IDejaGridColumn } from &#x27;../data-grid-column/data-grid-column&#x27;;
@@ -1744,7 +1751,7 @@ export class DejaGridGroupAreaComponent {
     /** Cet évenement est levé lorsque le model de groupe est modifié */
     @Output() public groupsChanged &#x3D; new EventEmitter&lt;IDejaGridGroupsEvent&gt;();
     /** Cet évenement est levé lorsqu&#x27;un group est supprimé du model */
-    @Output() public groupRemoved &#x3D; new EventEmitter&lt;number&gt;();
+    @Output() public groupRemoved &#x3D; new EventEmitter&lt;DejaChipsCloseEvent&gt;();
     private _groups &#x3D; [] as IDejaGridColumn[];
     private columnGroupKey &#x3D; &#x27;deja-grid-column&#x27;;
     private groupGroupKey &#x3D; &#x27;deja-grid-group&#x27;;
@@ -1794,12 +1801,11 @@ export class DejaGridGroupAreaComponent {
 
             } else if (event.dragInfo.hasOwnProperty(this.groupGroupKey)) {
                 const targetElement &#x3D; this.getGroupElementFromHTMLElement(event.target as HTMLElement);
-                const targetIndex &#x3D; targetElement &amp;&amp; +targetElement.getAttribute(&#x27;index&#x27;);
-                if (targetIndex &#x3D;&#x3D;&#x3D; undefined) {
+                const attrIndex &#x3D; (targetElement &amp;&amp; targetElement.getAttribute(&#x27;index&#x27;)) || null;
+                const targetIndex &#x3D; attrIndex !&#x3D;&#x3D; null ? +attrIndex : null;
+                if (targetIndex &#x3D;&#x3D;&#x3D; null) {
                     return;
                 }
-
-                const targetBounds &#x3D; targetElement.getBoundingClientRect();
 
                 const sourceColumn &#x3D; event.dragInfo[this.groupGroupKey] as IDejaGridColumn;
                 const sourceIndex &#x3D; this.groups.findIndex((column) &#x3D;&gt; column &#x3D;&#x3D;&#x3D; sourceColumn);
@@ -1808,16 +1814,6 @@ export class DejaGridGroupAreaComponent {
                 if (sourceIndex &#x3D;&#x3D;&#x3D; targetIndex) {
                     event.preventDefault();
                     return;
-                } else if (targetIndex &#x3D;&#x3D;&#x3D; sourceIndex + 1) {
-                    if (event.x &lt;&#x3D; targetBounds.left + targetBounds.width / 2) {
-                        event.preventDefault();
-                        return;
-                    }
-                } else if (targetIndex &#x3D;&#x3D;&#x3D; sourceIndex - 1) {
-                    if (event.x &gt;&#x3D; targetBounds.left + targetBounds.width / 2) {
-                        event.preventDefault();
-                        return;
-                    }
                 }
 
                 this.groups.splice(sourceIndex, 1);
@@ -1851,9 +1847,10 @@ export class DejaGridGroupAreaComponent {
                     const sourceColumn &#x3D; event.dragInfo[this.columnGroupKey] as IDejaGridColumn;
 
                     const targetElement &#x3D; this.getGroupElementFromHTMLElement(event.target as HTMLElement);
-                    const targetIndex &#x3D; targetElement &amp;&amp; +targetElement.getAttribute(&#x27;index&#x27;);
+                    const attrIndex &#x3D; (targetElement &amp;&amp; targetElement.getAttribute(&#x27;index&#x27;)) || null;
+                    const targetIndex &#x3D; attrIndex !&#x3D;&#x3D; null ? +attrIndex : null;
 
-                    if (targetIndex !&#x3D;&#x3D; undefined) {
+                    if (targetIndex !&#x3D;&#x3D; null) {
                         const targetBounds &#x3D; targetElement.getBoundingClientRect();
                         if (event.x &lt;&#x3D; targetBounds.left + targetBounds.width / 2) {
                             this.groups.splice(targetIndex, 0, sourceColumn);
@@ -1878,8 +1875,8 @@ export class DejaGridGroupAreaComponent {
         };
     }
 
-    protected removeGroup(event: Event, index: number) {
-        this.groupRemoved.emit(index);
+    protected removeGroup(event: DejaChipsCloseEvent) {
+        this.groupRemoved.emit(event);
         event.stopPropagation();
         return false;
     }
@@ -1911,10 +1908,9 @@ export class DejaGridGroupAreaComponent {
     <div class="tab-pane fade" id="templateData">
         <pre class="line-numbers"><code class="language-html">&lt;div #groupAreaElement id&#x3D;&quot;deja-grid-grouparea&quot; [deja-droppable]&#x3D;&quot;getDropContext()&quot;&gt;
 	&lt;label id&#x3D;&quot;placeholder&quot; *ngIf&#x3D;&quot;groups.length &#x3D;&#x3D;&#x3D; 0&quot;&gt;Drag one column here to group by this column&lt;/label&gt;
-	&lt;span *ngFor&#x3D;&quot;let column of groups; let index&#x3D;index&quot; [deja-draggable]&#x3D;&quot;getDragContext(column)&quot; [attr.index]&#x3D;&quot;index&quot; [attr.groupname]&#x3D;&quot;column.name&quot; class&#x3D;&quot;group-wrapper&quot;&gt;
-		&lt;span&gt;{{ column.label }}&lt;/span&gt;
-		&lt;i id&#x3D;&quot;close-button&quot; (click)&#x3D;&quot;removeGroup($event, index)&quot; class&#x3D;&quot;material-icons&quot;&gt;close&lt;/i&gt;
-	&lt;/span&gt;
+	&lt;deja-chips [items]&#x3D;&quot;groups&quot; (close)&#x3D;&quot;removeGroup($event)&quot;&gt;
+		&lt;ng-template #itemTemplate let-item let-index&#x3D;&quot;index&quot;&gt;&lt;span class&#x3D;&quot;label&quot; [attr.groupname]&#x3D;&quot;item.name&quot; [attr.index]&#x3D;&quot;index&quot; [deja-draggable]&#x3D;&quot;getDragContext(item)&quot;&gt;{{ item.label }}&lt;/span&gt;&lt;/ng-template&gt;
+	&lt;/deja-chips&gt;
 &lt;/div&gt;</code></pre>
     </div>
 
@@ -1941,7 +1937,7 @@ export class DejaGridGroupAreaComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div #groupAreaElement id="deja-grid-grouparea" [deja-droppable]="getDropContext()">	<label id="placeholder" *ngIf="groups.length === 0">Drag one column here to group by this column</label>	<span *ngFor="let column of groups; let index=index" [deja-draggable]="getDragContext(column)" [attr.index]="index" [attr.groupname]="column.name" class="group-wrapper">		<span>{{ column.label }}</span>		<i id="close-button" (click)="removeGroup($event, index)" class="material-icons">close</i>	</span></div></div>'
+        var COMPONENT_TEMPLATE = '<div><div #groupAreaElement id="deja-grid-grouparea" [deja-droppable]="getDropContext()">	<label id="placeholder" *ngIf="groups.length === 0">Drag one column here to group by this column</label>	<deja-chips [items]="groups" (close)="removeGroup($event)">		<ng-template #itemTemplate let-item let-index="index"><span class="label" [attr.groupname]="item.name" [attr.index]="index" [deja-draggable]="getDragContext(item)">{{ item.label }}</span></ng-template>	</deja-chips></div></div>'
     var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBackdropComponent', 'selector': 'deja-backdrop'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaCodeViewerComponent', 'selector': 'deja-code-viewer'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaDropDownComponent', 'selector': 'deja-dropdown'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaItemComponent', 'selector': 'deja-item'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMarkdownComponent', 'selector': 'deja-markdown'},{'name': 'DejaMenuComponent', 'selector': 'deja-menu'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'}];
     var DIRECTIVES = [{'name': 'DateValidatorDirective', 'selector': '[date-validator][ngModel]'},{'name': 'DejaAutosizeTextAreaDirective', 'selector': 'textarea[deja-autosize]'},{'name': 'DejaChildValidatorDirective', 'selector': '[deja-child-validator]'},{'name': 'DejaDraggableDirective', 'selector': '[deja-draggable]'},{'name': 'DejaDroppableDirective', 'selector': '[deja-droppable]'},{'name': 'DejaEditableDirective', 'selector': '[deja-editable]'},{'name': 'DejaMouseDraggableDirective', 'selector': '[deja-mouse-draggable]'},{'name': 'DejaMouseDroppableDirective', 'selector': '[deja-mouse-droppable]'},{'name': 'DejaTilePositionDirective', 'selector': '[deja-tile-position]'},{'name': 'DejaTooltipDirective', 'selector': '[deja-tooltip]'},{'name': 'PendingOnFocusDirective', 'selector': '[pending-onfocus]'},{'name': 'SplitAreaDirective', 'selector': 'split-area'},{'name': 'SplitGutterDirective', 'selector': 'split-gutter'},{'name': 'ValidateOnBlurDirective', 'selector': '[validate-onblur]'}];
     var ACTUAL_COMPONENT = {'name': 'DejaGridGroupAreaComponent'};

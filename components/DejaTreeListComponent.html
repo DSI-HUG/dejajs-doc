@@ -402,6 +402,9 @@
                                     <a href="../classes/DejaCancelableEvent.html" >DejaCancelableEvent</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../classes/DejaChipsCloseEvent.html" >DejaChipsCloseEvent</a>
+                                </li>
+                                <li class="link">
                                     <a href="../classes/DejaColorFab.html" >DejaColorFab</a>
                                 </li>
                                 <li class="link">
@@ -1151,6 +1154,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../classes/DejaCancelableEvent.html" >DejaCancelableEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaChipsCloseEvent.html" >DejaChipsCloseEvent</a>
                                        </li>
                                        <li class="link">
                                            <a href="../classes/DejaColorFab.html" >DejaColorFab</a>
@@ -3283,7 +3289,7 @@ import { GroupingService } from &#x27;../../common/core/grouping&#x27;;
 import { IItemBase } from &#x27;../../common/core/item-list/item-base&#x27;;
 import { DejaItemEvent } from &#x27;../../common/core/item-list/item-event&#x27;;
 import { ItemListBase } from &#x27;../../common/core/item-list/item-list-base&#x27;;
-import { ItemListService } from &#x27;../../common/core/item-list/item-list.service&#x27;;
+import { ItemListService, IViewListResult } from &#x27;../../common/core/item-list/item-list.service&#x27;;
 import { IItemTree } from &#x27;../../common/core/item-list/item-tree&#x27;;
 import { DejaItemsEvent } from &#x27;../../common/core/item-list/items-event&#x27;;
 import { ViewportMode } from &#x27;../../common/core/item-list/viewport.service&#x27;;
@@ -3697,7 +3703,7 @@ export class DejaTreeListComponent extends ItemListBase implements OnDestroy, Af
      * Set a observable called before the list will be displayed
      */
     @Input()
-    public set loadingItems(fn: (query: string | RegExp, selectedItems: IItemBase[]) &#x3D;&gt; Observable&lt;IItemBase&gt;) {
+    public set loadingItems(fn: (query: string | RegExp, selectedItems: IItemBase[]) &#x3D;&gt; Observable&lt;IItemBase[]&gt;) {
         this.hasLoadingEvent &#x3D; !!fn;
         super.setLoadingItems(fn);
     }
@@ -3841,9 +3847,9 @@ export class DejaTreeListComponent extends ItemListBase implements OnDestroy, Af
     // ************* End of ControlValueAccessor Implementation **************
 
     /** Change l&#x27;état d&#x27;expansion de toute les lignes parentes */
-    public toggleAll$(collapsed?: boolean): Observable&lt;IItemTree&gt; {
+    public toggleAll$(collapsed?: boolean): Observable&lt;IItemTree[]&gt; {
         return super.toggleAll$(collapsed)
-            .switchMap(() &#x3D;&gt; this.calcViewList$().first());
+            .switchMap((items) &#x3D;&gt; this.calcViewList$().first().map(() &#x3D;&gt; items));
     }
 
     /** Change l&#x27;état d&#x27;expansion de toute les lignes parentes */
@@ -4324,7 +4330,7 @@ export class DejaTreeListComponent extends ItemListBase implements OnDestroy, Af
         }
     }
 
-    protected calcViewList$(): Observable&lt;IViewPort&gt; {
+    protected calcViewList$(): Observable&lt;IViewListResult&gt; {
         return super.calcViewList$(this.query)
             .do(() &#x3D;&gt; this.changeDetectorRef.markForCheck());
     }

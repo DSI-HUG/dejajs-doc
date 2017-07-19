@@ -402,6 +402,9 @@
                                     <a href="../classes/DejaCancelableEvent.html" >DejaCancelableEvent</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../classes/DejaChipsCloseEvent.html" >DejaChipsCloseEvent</a>
+                                </li>
+                                <li class="link">
                                     <a href="../classes/DejaColorFab.html" >DejaColorFab</a>
                                 </li>
                                 <li class="link">
@@ -1153,6 +1156,9 @@
                                            <a href="../classes/DejaCancelableEvent.html" >DejaCancelableEvent</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../classes/DejaChipsCloseEvent.html" >DejaChipsCloseEvent</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../classes/DejaColorFab.html" >DejaColorFab</a>
                                        </li>
                                        <li class="link">
@@ -1581,7 +1587,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="597" class="link-to-prism">src/common/core/item-list/viewport.service.ts:597</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="598" class="link-to-prism">src/common/core/item-list/viewport.service.ts:598</a></div>
                                         </td>
                                     </tr>
 
@@ -1613,7 +1619,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="596" class="link-to-prism">src/common/core/item-list/viewport.service.ts:596</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="597" class="link-to-prism">src/common/core/item-list/viewport.service.ts:597</a></div>
                                         </td>
                                     </tr>
 
@@ -1645,7 +1651,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="600" class="link-to-prism">src/common/core/item-list/viewport.service.ts:600</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="601" class="link-to-prism">src/common/core/item-list/viewport.service.ts:601</a></div>
                                         </td>
                                     </tr>
 
@@ -1677,7 +1683,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="604" class="link-to-prism">src/common/core/item-list/viewport.service.ts:604</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="605" class="link-to-prism">src/common/core/item-list/viewport.service.ts:605</a></div>
                                         </td>
                                     </tr>
 
@@ -1709,7 +1715,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="602" class="link-to-prism">src/common/core/item-list/viewport.service.ts:602</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="603" class="link-to-prism">src/common/core/item-list/viewport.service.ts:603</a></div>
                                         </td>
                                     </tr>
 
@@ -1741,7 +1747,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="603" class="link-to-prism">src/common/core/item-list/viewport.service.ts:603</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="604" class="link-to-prism">src/common/core/item-list/viewport.service.ts:604</a></div>
                                         </td>
                                     </tr>
 
@@ -1773,7 +1779,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="599" class="link-to-prism">src/common/core/item-list/viewport.service.ts:599</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="600" class="link-to-prism">src/common/core/item-list/viewport.service.ts:600</a></div>
                                         </td>
                                     </tr>
 
@@ -1805,7 +1811,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="601" class="link-to-prism">src/common/core/item-list/viewport.service.ts:601</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="602" class="link-to-prism">src/common/core/item-list/viewport.service.ts:602</a></div>
                                         </td>
                                     </tr>
 
@@ -1837,7 +1843,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="598" class="link-to-prism">src/common/core/item-list/viewport.service.ts:598</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="599" class="link-to-prism">src/common/core/item-list/viewport.service.ts:599</a></div>
                                         </td>
                                     </tr>
 
@@ -2377,12 +2383,13 @@ export class ViewPortService implements OnDestroy {
             }));
 
         // Calc view port observable
-        this.subscriptions.push(Observable.combineLatest(items$, maxSize$, itemsSize$, ensureParams$, direction$, mode$, refresh$, element$)
+        this.subscriptions.push(Observable.combineLatest(items$, maxSize$, itemsSize$, ensureParams$)
+            .combineLatest(direction$, mode$, refresh$, element$)
             .debounceTime(1)
             .combineLatest(scrollPos$)
-            .filter(([[_items, _maxSize, _itemDefaultSize, _ensureParams, _direction, _mode, _refresh, element], _scrollPos]: [[IViewPortItem[], number | string, number, IEnsureParams, ViewportDirection, ViewportMode, IViewPortItem, HTMLElement], number]) &#x3D;&gt; !!element)
+            .filter(([[[_items, _maxSize, _itemDefaultSize, _ensureParams], _direction, _mode, _refresh, element], _scrollPos]) &#x3D;&gt; !!element)
             .do(() &#x3D;&gt; consoleLog(&#x60;combineLatest&#x60;))
-            .switchMap(([[items, maxSize, itemDefaultSize, ensureParams, _direction, _mode, _refresh, element], _scrollPos]: [[IViewPortItem[], number | string, number, IEnsureParams, ViewportDirection, ViewportMode, IViewPortItem, HTMLElement], number]) &#x3D;&gt; {
+            .switchMap(([[[items, maxSize, itemDefaultSize, ensureParams], _direction, _mode, _refresh, element], _scrollPos]) &#x3D;&gt; {
                 const listSize &#x3D; this.lastCalculatedSize || maxSize || clientSize(element);
                 const scrollPos &#x3D; this._scrollPosition;
                 let maxSizeValue &#x3D; maxSize &#x3D;&#x3D;&#x3D; &#x27;auto&#x27; ? 0 : +maxSize;

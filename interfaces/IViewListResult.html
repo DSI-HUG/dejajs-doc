@@ -402,6 +402,9 @@
                                     <a href="../classes/DejaCancelableEvent.html" >DejaCancelableEvent</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../classes/DejaChipsCloseEvent.html" >DejaChipsCloseEvent</a>
+                                </li>
+                                <li class="link">
                                     <a href="../classes/DejaColorFab.html" >DejaColorFab</a>
                                 </li>
                                 <li class="link">
@@ -1153,6 +1156,9 @@
                                            <a href="../classes/DejaCancelableEvent.html" >DejaCancelableEvent</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../classes/DejaChipsCloseEvent.html" >DejaChipsCloseEvent</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../classes/DejaColorFab.html" >DejaColorFab</a>
                                        </li>
                                        <li class="link">
@@ -1700,7 +1706,7 @@ export class ItemListService {
     /**
      * Set a observable called before the list will be displayed
      */
-    public setLoadingItems(fn: (query: string, selectedItems: IItemBase[]) &#x3D;&gt; Observable&lt;IItemBase&gt;) {
+    public setLoadingItems(fn: (query: string | RegExp, selectedItems: IItemBase[]) &#x3D;&gt; Observable&lt;IItemBase[]&gt;) {
         this.loadingItems$ &#x3D; fn;
     }
 
@@ -2071,7 +2077,7 @@ export class ItemListService {
      * @param {boolean} collapsed  True si les éléments doivent être réduits.
      * @return {Observable} Observable résolu par la fonction.
      */
-    public toggleAll$(collapsed: boolean): Observable&lt;IItemBase[]&gt; {
+    public toggleAll$(collapsed: boolean): Observable&lt;IItemTree[]&gt; {
         return Observable.of(this._cache.flatList)
             .map((items: IItemTree[]) &#x3D;&gt; items.filter((item) &#x3D;&gt; item.$items &amp;&amp; item.collapsible !&#x3D;&#x3D; false))
             .do(() &#x3D;&gt; delete this._cache.visibleList) // Invalidate view cache
@@ -2083,7 +2089,7 @@ export class ItemListService {
      * @param {boolean} collapse  Etat de l&#x27;élément. True pour réduire l&#x27;élément.
      * @return {Observable} Observable résolu par la fonction.
      */
-    public toggleCollapse$(index: number, collapse?: boolean): Observable&lt;IItemBase[]&gt; {
+    public toggleCollapse$(index: number, collapse?: boolean): Observable&lt;IItemTree&gt; {
         const visibleList &#x3D; this._cache.visibleList;
         if (!visibleList || !visibleList.length) {
             throw new Error(&#x27;Empty cache on toggleCollapse&#x27;);

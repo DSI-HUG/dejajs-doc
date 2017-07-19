@@ -402,6 +402,9 @@
                                     <a href="../classes/DejaCancelableEvent.html" >DejaCancelableEvent</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../classes/DejaChipsCloseEvent.html" >DejaChipsCloseEvent</a>
+                                </li>
+                                <li class="link">
                                     <a href="../classes/DejaColorFab.html" >DejaColorFab</a>
                                 </li>
                                 <li class="link">
@@ -1153,6 +1156,9 @@
                                            <a href="../classes/DejaCancelableEvent.html" >DejaCancelableEvent</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../classes/DejaChipsCloseEvent.html" >DejaChipsCloseEvent</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../classes/DejaColorFab.html" >DejaColorFab</a>
                                        </li>
                                        <li class="link">
@@ -1581,7 +1587,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="746" class="link-to-prism">src/common/core/item-list/item-list-base.ts:746</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="750" class="link-to-prism">src/common/core/item-list/item-list-base.ts:750</a></div>
                                         </td>
                                     </tr>
 
@@ -1613,7 +1619,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="745" class="link-to-prism">src/common/core/item-list/item-list-base.ts:745</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="749" class="link-to-prism">src/common/core/item-list/item-list-base.ts:749</a></div>
                                         </td>
                                     </tr>
 
@@ -1645,7 +1651,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="748" class="link-to-prism">src/common/core/item-list/item-list-base.ts:748</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="752" class="link-to-prism">src/common/core/item-list/item-list-base.ts:752</a></div>
                                         </td>
                                     </tr>
 
@@ -1677,7 +1683,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="747" class="link-to-prism">src/common/core/item-list/item-list-base.ts:747</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="751" class="link-to-prism">src/common/core/item-list/item-list-base.ts:751</a></div>
                                         </td>
                                     </tr>
 
@@ -1882,7 +1888,7 @@ export abstract class ItemListBase implements OnDestroy {
     /**
      * Set a promise or an observable called before an item selection
      */
-    public setLoadingItems(fn: (query: string | RegExp, selectedItems: IItemBase[]) &#x3D;&gt; Observable&lt;IItemBase&gt;) {
+    public setLoadingItems(fn: (query: string | RegExp, selectedItems: IItemBase[]) &#x3D;&gt; Observable&lt;IItemBase[]&gt;) {
         this.getItemListService().setLoadingItems(fn);
     }
 
@@ -1977,12 +1983,16 @@ export abstract class ItemListBase implements OnDestroy {
     /** Change l&#x27;état d&#x27;expansion de tous les éléments.
      * @return {Observable} Observable résolu par la fonction.
      */
-    public toggleAll$(collapsed?: boolean) {
+    public toggleAll$(collapsed?: boolean): Observable&lt;IItemTree[]&gt; {
         this.allCollapsed &#x3D; (collapsed !&#x3D;&#x3D; undefined) ? collapsed : !this.allCollapsed;
         if (this.viewPort.mode &#x3D;&#x3D;&#x3D; ViewportMode.disabled) {
             return Observable.from(this._itemList)
                 .filter((item: IItemTree) &#x3D;&gt; item.$items &amp;&amp; item.depth &#x3D;&#x3D;&#x3D; 0 &amp;&amp; item.collapsible !&#x3D;&#x3D; false)
-                .switchMap((_item: IItemTree, index: number) &#x3D;&gt; this.toggleCollapse$(index + this.vpStartRow, this.allCollapsed));
+                .switchMap((_item: IItemTree, index: number) &#x3D;&gt; this.toggleCollapse$(index + this.vpStartRow, this.allCollapsed))
+                .reduce((acc, item) &#x3D;&gt; {
+                    acc.push(item);
+                    return acc;
+                }, [] as IItemTree[]);
         } else {
             return this.getItemListService().toggleAll$(this.allCollapsed);
         }
@@ -1993,7 +2003,7 @@ export abstract class ItemListBase implements OnDestroy {
      * @param {boolean} collapse  Etat de l&#x27;élément. True pour réduire l&#x27;élément.
      * @return {Observable} Observable résolu par la fonction.
      */
-    public toggleCollapse$(index: number, collapsed: boolean): Observable&lt;IItemTree[]&gt; {
+    public toggleCollapse$(index: number, collapsed: boolean): Observable&lt;IItemTree&gt; {
         return this.getItemListService().toggleCollapse$(index, collapsed)
             .switchMap((toogleResult) &#x3D;&gt; this.calcViewList$().first().map(() &#x3D;&gt; toogleResult));
     }
