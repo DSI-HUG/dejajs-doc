@@ -1626,7 +1626,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="750" class="link-to-prism">src/common/core/item-list/item-list-base.ts:750</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="762" class="link-to-prism">src/common/core/item-list/item-list-base.ts:762</a></div>
                                         </td>
                                     </tr>
 
@@ -1658,7 +1658,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="749" class="link-to-prism">src/common/core/item-list/item-list-base.ts:749</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="761" class="link-to-prism">src/common/core/item-list/item-list-base.ts:761</a></div>
                                         </td>
                                     </tr>
 
@@ -1690,7 +1690,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="752" class="link-to-prism">src/common/core/item-list/item-list-base.ts:752</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="764" class="link-to-prism">src/common/core/item-list/item-list-base.ts:764</a></div>
                                         </td>
                                     </tr>
 
@@ -1722,7 +1722,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="751" class="link-to-prism">src/common/core/item-list/item-list-base.ts:751</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="763" class="link-to-prism">src/common/core/item-list/item-list-base.ts:763</a></div>
                                         </td>
                                     </tr>
 
@@ -2438,14 +2438,26 @@ export abstract class ItemListBase implements OnDestroy {
             itemBase.model &#x3D; model;
 
             const displayField &#x3D; this._textField || &#x27;displayName&#x27;;
-            itemBase[displayField] &#x3D; this.getTextValue(model);
+            if (typeof model &#x3D;&#x3D;&#x3D; &#x27;string&#x27;) {
+                itemBase[displayField] &#x3D; model;
 
-            if (this._searchField) {
-                itemBase[this._searchField] &#x3D; model[this._searchField];
-            }
+                if (this._searchField) {
+                    itemBase[this._searchField] &#x3D; model;
+                }
 
-            if (this._valueField) {
-                itemBase[this._valueField] &#x3D; model[this._valueField];
+                if (this._valueField) {
+                    itemBase[this._valueField] &#x3D; model;
+                }
+            } else {
+                itemBase[displayField] &#x3D; this.getTextValue(model);
+
+                if (this._searchField) {
+                    itemBase[this._searchField] &#x3D; model[this._searchField];
+                }
+
+                if (this._valueField) {
+                    itemBase[this._valueField] &#x3D; model[this._valueField];
+                }
             }
 
             const childrenField &#x3D; this.getItemListService().childrenField;

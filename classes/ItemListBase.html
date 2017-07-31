@@ -4419,7 +4419,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="735" class="link-to-prism">src/common/core/item-list/item-list-base.ts:735</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="747" class="link-to-prism">src/common/core/item-list/item-list-base.ts:747</a></div>
                                         </td>
                                     </tr>
             
@@ -5904,14 +5904,26 @@ export abstract class ItemListBase implements OnDestroy {
             itemBase.model &#x3D; model;
 
             const displayField &#x3D; this._textField || &#x27;displayName&#x27;;
-            itemBase[displayField] &#x3D; this.getTextValue(model);
+            if (typeof model &#x3D;&#x3D;&#x3D; &#x27;string&#x27;) {
+                itemBase[displayField] &#x3D; model;
 
-            if (this._searchField) {
-                itemBase[this._searchField] &#x3D; model[this._searchField];
-            }
+                if (this._searchField) {
+                    itemBase[this._searchField] &#x3D; model;
+                }
 
-            if (this._valueField) {
-                itemBase[this._valueField] &#x3D; model[this._valueField];
+                if (this._valueField) {
+                    itemBase[this._valueField] &#x3D; model;
+                }
+            } else {
+                itemBase[displayField] &#x3D; this.getTextValue(model);
+
+                if (this._searchField) {
+                    itemBase[this._searchField] &#x3D; model[this._searchField];
+                }
+
+                if (this._valueField) {
+                    itemBase[this._valueField] &#x3D; model[this._valueField];
+                }
             }
 
             const childrenField &#x3D; this.getItemListService().childrenField;
