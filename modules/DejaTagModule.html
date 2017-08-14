@@ -183,7 +183,7 @@
                                     <a href="../modules/DejaSplitterModule.html" >DejaSplitterModule</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../modules/DejaTagModule.html" >DejaTagModule</a>
+                                    <a href="../modules/DejaTagModule.html"  data-type="entity-link" class="active" >DejaTagModule</a>
                                 </li>
                                 <li class="link">
                                     <a href="../modules/DejaTextMetricsModule.html" >DejaTextMetricsModule</a>
@@ -233,7 +233,7 @@
                                     <a href="../components/DejaBackdropComponent.html" >DejaBackdropComponent</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../components/DejaBoldQueryComponent.html"  data-type="entity-link" class="active" >DejaBoldQueryComponent</a>
+                                    <a href="../components/DejaBoldQueryComponent.html" >DejaBoldQueryComponent</a>
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaChipsComponent.html" >DejaChipsComponent</a>
@@ -961,7 +961,7 @@
                                            <a href="../modules/DejaSplitterModule.html" >DejaSplitterModule</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../modules/DejaTagModule.html" >DejaTagModule</a>
+                                           <a href="../modules/DejaTagModule.html"  data-type="entity-link" class="active" >DejaTagModule</a>
                                        </li>
                                        <li class="link">
                                            <a href="../modules/DejaTextMetricsModule.html" >DejaTextMetricsModule</a>
@@ -1011,7 +1011,7 @@
                                            <a href="../components/DejaBackdropComponent.html" >DejaBackdropComponent</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../components/DejaBoldQueryComponent.html"  data-type="entity-link" class="active" >DejaBoldQueryComponent</a>
+                                           <a href="../components/DejaBoldQueryComponent.html" >DejaBoldQueryComponent</a>
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaChipsComponent.html" >DejaChipsComponent</a>
@@ -1571,214 +1571,100 @@
                    
                    </nav>
                </div>
-               <div class="content component">
+               <div class="content module">
                    <div class="content-data">
 
 
 
-
 <ol class="breadcrumb">
-  <li>Components</li>
-  <li>DejaBoldQueryComponent</li>
+  <li>Modules</li>
+  <li>DejaTagModule</li>
 </ol>
+
 
 <ul class="nav nav-tabs" role="tablist">
     <li class="active">
         <a href="#info" id="info-tab" role="tab" data-toggle="tab" data-link="info">Info</a>
     </li>
+    
 
     <li>
         <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
     </li>
-
-    <li>
-        <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
-    </li>
 </ul>
 
 <div class="tab-content">
-    <div class="tab-pane fade active in" id="info"><p class="comment">
-    <h3>File</h3>
-</p>
-<p class="comment">
-    <code>src/component/templates/bold-query.component.ts</code>
-</p>
+    <div class="tab-pane fade active in" id="info">
+
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/component/tag/index.ts</code>
+        </p>
 
 
-
-
-
-<section>
-    <h3>Metadata</h3>
-    <table class="table table-sm table-hover">
-        <tbody>
-
-
-
-
-
-
-
-
-
-
-
-
-            <tr>
-                <td class="col-md-3">selector</td>
-                <td class="col-md-9"><code>deja-bold-query</code></td>
-            </tr>
-
-            <tr>
-                <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>bold-query.component.scss</code></td>
-            </tr>
-
-
-            <tr>
-                <td class="col-md-3">template</td>
-                <td class="col-md-9"><pre class="line-numbers"><code class="language-html">&lt;span [innerHTML]&#x3D;&quot;content&quot;&gt;&lt;/span&gt;</code></pre></td>
-            </tr>
-
-
-
-        </tbody>
-    </table>
-</section>
-
-    <section>
-        <h3 id="inputs">Inputs</h3>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>query</code>
-                        </td>
-                        <td class="col-md-10">
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/component/templates/bold-query.component.ts:25</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>value</code>
-                        </td>
-                        <td class="col-md-10">
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/component/templates/bold-query.component.ts:34</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-    </section>
-
-
-
-
-</div>
-
-
-    <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">import { Component, Input } from &#x27;@angular/core&#x27;;
-import { Diacritics } from &#x27;../../common/core/diacritics/diacritics&#x27;;
-
-@Component({
-    selector: &#x27;deja-bold-query&#x27;,
-    styleUrls: [
-        &#x27;./bold-query.component.scss&#x27;,
-    ],
-    template: &#x60;&lt;span [innerHTML]&#x3D;&quot;content&quot;&gt;&lt;/span&gt;&#x60;,
-})
-export class DejaBoldQueryComponent {
-    private _query: string;
-    private _value: any;
-    private content: string;
-
-    @Input()
-    set query(value) {
-        value &#x3D; Diacritics.remove(value);
-        if (this._query !&#x3D;&#x3D; value) {
-            this._query &#x3D; value;
-            this.refresh();
-        }
-    }
-
-    @Input()
-    public set value(value: any) {
-        this._value &#x3D; value;
-        this.refresh();
-    }
-
-    private refresh() {
-        if (this._value &amp;&amp; this._query &amp;&amp; this._query.length) {
-            const sc &#x3D; new RegExp(this._query, &#x27;i&#x27;);
-            const value &#x3D; this._value.toString() as string;
-            const search &#x3D; Diacritics.remove(value);
-            const splitted &#x3D; search.split(sc);
-            let position &#x3D; 0;
-            const queryLength &#x3D; this._query.length;
-            const contents &#x3D; [] as string[];
-            splitted.forEach((text) &#x3D;&gt; {
-                if (text) {
-                    contents.push(value.slice(position, position + text.length));
-                    position +&#x3D; text.length;
-                }
-                if (position + queryLength &lt;&#x3D; value.length) {
-                    contents.push(&#x27;&lt;b&gt;&#x27;);
-                    contents.push(value.slice(position, position + queryLength));
-                    contents.push(&#x27;&lt;/b&gt;&#x27;);
-                    position +&#x3D; queryLength;
-                }
-            });
-            this.content &#x3D; contents.join(&#x27;&#x27;);
-        } else {
-            this.content &#x3D; this._value;
-        }
-    }
-}
-</code></pre>
-    </div>
-
-
-    <div class="tab-pane fade" id="tree">
-        <div id="tree-container"></div>
-        <div class="tree-legend">
-            <div class="title">
-                <b>Legend</b>
-            </div>
-            <div>
-                <div class="color htmlelement"></div><span>Html element</span>
-            </div>
-            <div>
-                <div class="color component"></div><span>Component</span>
-            </div>
-            <div>
-                <div class="color directive"></div><span>Html element with directive</span>
+        <div class="container-fluid module">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3>Declarations<a href="https://angular.io/docs/ts/latest/api/core/index/NgModule-interface.html#!#declarations-anchor" target="_blank"><span class="fa fa-info-circle"></span></a></h3>
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="../components/DejaTagComponent.html">DejaTagComponent</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3>Imports<a href="https://angular.io/docs/ts/latest/api/core/index/NgModule-interface.html#!#imports-anchor" target="_blank"><span class="fa fa-info-circle"></a></h3>
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                    <a href="../modules/DejaChipsModule.html" >DejaChipsModule</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3>Exports<a href="https://angular.io/docs/ts/latest/api/core/index/NgModule-interface.html#!#exports-anchor" target="_blank"><span class="fa fa-info-circle"></a></h3>
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                    <a href="../components/DejaTagComponent.html" >DejaTagComponent</a>
+                            </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
+
+
+    <div class="tab-pane fade tab-source-code" id="source">
+        <pre class="line-numbers"><code class="language-typescript">import { CommonModule } from &#x27;@angular/common&#x27;;
+import { NgModule } from &#x27;@angular/core&#x27;;
+import { FlexLayoutModule } from &#x27;@angular/flex-layout&#x27;;
+import { FormsModule } from &#x27;@angular/forms&#x27;;
+import { MdIconModule, MdInputModule} from &#x27;@angular/material&#x27;;
+import { DejaChipsModule } from &#x27;../chips/index&#x27;;
+import { DejaTagComponent } from &#x27;./tag.component&#x27;;
+
+@NgModule({
+    declarations: [DejaTagComponent],
+    exports: [DejaTagComponent],
+    imports: [
+        CommonModule,
+        FlexLayoutModule,
+        FormsModule,
+        MdIconModule,
+        MdInputModule,
+        FlexLayoutModule,
+        DejaChipsModule,
+    ],
+    providers: [],
+})
+export class DejaTagModule { }
+
+export * from &#x27;./tag.component&#x27;;
+</code></pre>
+    </div>
 </div>
 
-<script src="../js/libs/vis.min.js"></script>
-<script src="../js/libs/htmlparser.js"></script>
-<script src="../js/libs/deep-iterator.js"></script>
-<script>
-        var COMPONENT_TEMPLATE = '<div><span [innerHTML]="content"></span></div>'
-    var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBackdropComponent', 'selector': 'deja-backdrop'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaCodeViewerComponent', 'selector': 'deja-code-viewer'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaDropDownComponent', 'selector': 'deja-dropdown'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaItemComponent', 'selector': 'deja-item'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMarkdownComponent', 'selector': 'deja-markdown'},{'name': 'DejaMenuComponent', 'selector': 'deja-menu'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTagComponent', 'selector': 'deja-tag'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'}];
-    var DIRECTIVES = [{'name': 'DateValidatorDirective', 'selector': '[date-validator][ngModel]'},{'name': 'DejaAutosizeTextAreaDirective', 'selector': 'textarea[deja-autosize]'},{'name': 'DejaChildValidatorDirective', 'selector': '[deja-child-validator]'},{'name': 'DejaDraggableDirective', 'selector': '[deja-draggable]'},{'name': 'DejaDroppableDirective', 'selector': '[deja-droppable]'},{'name': 'DejaEditableDirective', 'selector': '[deja-editable]'},{'name': 'DejaMouseDraggableDirective', 'selector': '[deja-mouse-draggable]'},{'name': 'DejaMouseDroppableDirective', 'selector': '[deja-mouse-droppable]'},{'name': 'DejaTilePositionDirective', 'selector': '[deja-tile-position]'},{'name': 'DejaTooltipDirective', 'selector': '[deja-tooltip]'},{'name': 'PendingOnFocusDirective', 'selector': '[pending-onfocus]'},{'name': 'SplitAreaDirective', 'selector': 'split-area'},{'name': 'SplitGutterDirective', 'selector': 'split-gutter'},{'name': 'ValidateOnBlurDirective', 'selector': '[validate-onblur]'}];
-    var ACTUAL_COMPONENT = {'name': 'DejaBoldQueryComponent'};
-</script>
-<script src="../js/tree.js"></script>
 
 
 

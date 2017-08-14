@@ -183,6 +183,9 @@
                                     <a href="../modules/DejaSplitterModule.html" >DejaSplitterModule</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../modules/DejaTagModule.html" >DejaTagModule</a>
+                                </li>
+                                <li class="link">
                                     <a href="../modules/DejaTextMetricsModule.html" >DejaTextMetricsModule</a>
                                 </li>
                                 <li class="link">
@@ -315,6 +318,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaSplitterComponent.html" >DejaSplitterComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaTagComponent.html" >DejaTagComponent</a>
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaTileComponent.html" >DejaTileComponent</a>
@@ -955,6 +961,9 @@
                                            <a href="../modules/DejaSplitterModule.html" >DejaSplitterModule</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../modules/DejaTagModule.html" >DejaTagModule</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../modules/DejaTextMetricsModule.html" >DejaTextMetricsModule</a>
                                        </li>
                                        <li class="link">
@@ -1087,6 +1096,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaSplitterComponent.html" >DejaSplitterComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaTagComponent.html" >DejaTagComponent</a>
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaTileComponent.html" >DejaTileComponent</a>
@@ -1780,7 +1792,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="112" class="link-to-prism">src/common/core/cloning/cloning.service.ts:112</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="114" class="link-to-prism">src/common/core/cloning/cloning.service.ts:114</a></div>
                                         </td>
                                     </tr>
             
@@ -1817,7 +1829,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="119" class="link-to-prism">src/common/core/cloning/cloning.service.ts:119</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="121" class="link-to-prism">src/common/core/cloning/cloning.service.ts:121</a></div>
                                         </td>
                                     </tr>
             
@@ -1854,7 +1866,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="126" class="link-to-prism">src/common/core/cloning/cloning.service.ts:126</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="128" class="link-to-prism">src/common/core/cloning/cloning.service.ts:128</a></div>
                                         </td>
                                     </tr>
             
@@ -1963,6 +1975,8 @@ export class CloningService {
     public cloneSyncWithPrototype(object: any) {
         if (!object || typeof object !&#x3D;&#x3D; &#x27;object&#x27;) {
             return object;
+        } else if (object instanceof Date) {
+            return new Date(object);
         }
 
         const target &#x3D; new object.constructor();
