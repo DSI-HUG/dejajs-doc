@@ -779,10 +779,26 @@
                         </ul>
                     </li>
             
-            
                     <li class="chapter">
-                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                </li>
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
                     </li>
+            
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1557,10 +1573,26 @@
                                </ul>
                            </li>
                    
-                   
                            <li class="chapter">
-                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
                            </li>
+                   
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1661,11 +1693,107 @@
 </section>
 
     <section>
+        <h3 id="index">Index</h3>
+        <table class="table table-sm table-bordered index-table">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <span class="modifier">Public</span> <a href="#groups">groups</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <span class="modifier">Protected</span> <a href="#getDragContext">getDragContext</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Protected</span> <a href="#getDropContext">getDropContext</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Protected</span> <a href="#getGroupColumnFromHTMLElement">getGroupColumnFromHTMLElement</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Protected</span> <a href="#removeGroup">removeGroup</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#groups">groups</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#groupRemoved">groupRemoved</a>
+                            </li>
+                            <li>
+                                <a href="#groupsChanged">groupsChanged</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3 id="constructor">Constructor</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>constructor(changeDetectorRef: <a href="https://angular.io/docs/ts/latest/api/core/index/ChangeDetectorRef-class.html" target="_blank">ChangeDetectorRef</a>, clipboardService: <a href="../injectables/DejaClipboardService.html">DejaClipboardService</a>)</code>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/component/data-grid/data-grid-grouparea/data-grid-grouparea.component.ts:42</a></div>
+                                </td>
+                            </tr>
+    
+                </tbody>
+            </table>
+    </section>
+
+    <section>
         <h3 id="inputs">Inputs</h3>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
                         <td class="col-md-2">
+                            <a name="groups"></a>
                             <code>groups</code>
                         </td>
                         <td class="col-md-10">
@@ -1688,6 +1816,7 @@
                 <tbody>
                     <tr>
                         <td class="col-md-2">
+                            <a name="groupRemoved"></a>
                             <code>groupRemoved</code>
                         </td>
                         <td class="col-md-10">
@@ -1708,6 +1837,7 @@
                 <tbody>
                     <tr>
                         <td class="col-md-2">
+                            <a name="groupsChanged"></a>
                             <code>groupsChanged</code>
                         </td>
                         <td class="col-md-10">
@@ -1727,24 +1857,143 @@
     </section>
 
     <section>
-        <h3 id="constructor">Constructor</h3>
+        
+            <h3 id="methods">
+                Methods
+            </h3>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
                         <td class="col-md-4">
-                            <code>constructor(changeDetectorRef: <a href="https://angular.io/docs/ts/latest/api/core/index/ChangeDetectorRef-class.html" target="_blank">ChangeDetectorRef</a>, clipboardService: <a href="../injectables/DejaClipboardService.html">DejaClipboardService</a>)</code>
+                            <a name="getDragContext"></a>
+                            <b><span class="modifier">Protected</span> getDragContext</b>
                         </td>
                     </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle"></span>
+                            <code>getDragContext(group: <a href="../interfaces/IDejaGridColumn.html">IDejaGridColumn</a>)</code>
+                        </td>
+                    </tr>
+    
+    
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/component/data-grid/data-grid-grouparea/data-grid-grouparea.component.ts:42</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/component/data-grid/data-grid-grouparea/data-grid-grouparea.component.ts:46</a></div>
                                 </td>
                             </tr>
     
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>{ dragendcallback: (event: any) &#x3D;&gt; void; dragstartcallback: (event: any) &#x3D;&gt; void; }</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="getDropContext"></a>
+                            <b><span class="modifier">Protected</span> getDropContext</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle"></span>
+                            <code>getDropContext()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/component/data-grid/data-grid-grouparea/data-grid-grouparea.component.ts:64</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>{ dragentercallback: (event: any) &#x3D;&gt; void; dragovercallback: (event: any) &#x3D;&gt; void; dropcallback: ...</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="getGroupColumnFromHTMLElement"></a>
+                            <b><span class="modifier">Protected</span> getGroupColumnFromHTMLElement</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle"></span>
+                            <code>getGroupColumnFromHTMLElement(element: HTMLElement)</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="158" class="link-to-prism">src/component/data-grid/data-grid-grouparea/data-grid-grouparea.component.ts:158</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="../interfaces/IDejaGridColumn.html" target="_self" >IDejaGridColumn</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="removeGroup"></a>
+                            <b><span class="modifier">Protected</span> removeGroup</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle"></span>
+                            <code>removeGroup(event: <a href="../classes/DejaChipsCloseEvent.html">DejaChipsCloseEvent</a>)</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="152" class="link-to-prism">src/component/data-grid/data-grid-grouparea/data-grid-grouparea.component.ts:152</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
     </section>
-
 
     <section>
         
@@ -1755,13 +2004,14 @@
                 <tbody>
                     <tr>
                         <td class="col-md-4">
+                            <a name="groups"></a>
                             <b><span class="modifier">Public</span> groups</b>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
                             <span class="modifier-icon fa fa-"></span><code>groups:     <code></code>
-    </bcode>
+    </code>
                         </td>
                     </tr>
                             <tr>
@@ -1769,12 +2019,14 @@
                                     <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/component/data-grid/data-grid-grouparea/data-grid-grouparea.component.ts:34</a></div>
                                 </td>
                             </tr>
+    
                     <tr>
                         <td class="col-md-4">
                             <div class="io-description"><p>Revoie le modèle de groupe qui représente l&#39;ensemble des colonnes déposées dans le composant </p>
     </div>
                         </td>
                     </tr>
+    
                 </tbody>
             </table>
     </section>

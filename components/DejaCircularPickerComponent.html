@@ -779,10 +779,26 @@
                         </ul>
                     </li>
             
-            
                     <li class="chapter">
-                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                </li>
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
                     </li>
+            
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1557,10 +1573,26 @@
                                </ul>
                            </li>
                    
-                   
                            <li class="chapter">
-                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
                            </li>
+                   
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1669,137 +1701,93 @@
 </section>
 
     <section>
-        <h3 id="inputs">Inputs</h3>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>clockwiseFactor</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>ClockwiseFactor allows user to choose rotation direction of picker </p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>ClockwiseFactorEnum</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:44</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>disabled</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>disabled property setter. Can be string or empty so you can use it like : <circular-picker disabled></circular-picker> 
-To get disabled attribute. </p>
-</div>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:66</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>fullDiameter</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Diameter of circular picker in pixels. Default 310px </p>
-</div>
-                            <p>
-                              <em>Default value: </em><code>310</code>
-                            </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:46</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>labelsDiameter</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Diameter of labels on circular picker </p>
-</div>
-                            <p>
-                              <em>Default value: </em><code>43</code>
-                            </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:48</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>outerLabels</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Allows user to choose labels position. If outerLabels is true, labels will come outside the circular picker</p>
-<p>With outerLabels = true, and ranges.length &gt; 1, labels will go outwards.
-With outerLabels = false, and ranges.length &gt; 1, labels will go inwards.</p>
-</div>
-                            <p>
-                              <em>Default value: </em><code>false</code>
-                            </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:55</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>ranges</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Ranges of circular picker </p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>[]</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:57</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
+        <h3 id="index">Index</h3>
+        <table class="table table-sm table-bordered index-table">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <span class="modifier">Public</span> <a href="#_control">_control</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Public</span> <a href="#cursorTemplate">cursorTemplate</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Public</span> <a href="#disabled">disabled</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Public</span> <a href="#labelTemplate">labelTemplate</a>
+                            </li>
+                            <li>
+                                 <a href="#value">value</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <span class="modifier">Protected</span> <a href="#pointToValue">pointToValue</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Public</span> <a href="#registerOnChange">registerOnChange</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Public</span> <a href="#registerOnTouched">registerOnTouched</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Protected</span> <a href="#valueToPoint">valueToPoint</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Public</span> <a href="#writeValue">writeValue</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#clockwiseFactor">clockwiseFactor</a>
+                            </li>
+                            <li>
+                                <a href="#disabled">disabled</a>
+                            </li>
+                            <li>
+                                <a href="#fullDiameter">fullDiameter</a>
+                            </li>
+                            <li>
+                                <a href="#labelsDiameter">labelsDiameter</a>
+                            </li>
+                            <li>
+                                <a href="#outerLabels">outerLabels</a>
+                            </li>
+                            <li>
+                                <a href="#ranges">ranges</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </section>
-
 
     <section>
         <h3 id="constructor">Constructor</h3>
@@ -1827,6 +1815,410 @@ With outerLabels = false, and ranges.length &gt; 1, labels will go inwards.</p>
             </table>
     </section>
 
+    <section>
+        <h3 id="inputs">Inputs</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="clockwiseFactor"></a>
+                            <code>clockwiseFactor</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>ClockwiseFactor allows user to choose rotation direction of picker </p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="../miscellaneous/enumerations.html" target="_self" >ClockwiseFactorEnum</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:44</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="disabled"></a>
+                            <code>disabled</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>disabled property setter. Can be string or empty so you can use it like : <circular-picker disabled></circular-picker> 
+To get disabled attribute. </p>
+</div>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:66</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="fullDiameter"></a>
+                            <code>fullDiameter</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Diameter of circular picker in pixels. Default 310px </p>
+</div>
+                            <p>
+                              <em>Default value: </em><code>310</code>
+                            </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:46</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="labelsDiameter"></a>
+                            <code>labelsDiameter</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Diameter of labels on circular picker </p>
+</div>
+                            <p>
+                              <em>Default value: </em><code>43</code>
+                            </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:48</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="outerLabels"></a>
+                            <code>outerLabels</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Allows user to choose labels position. If outerLabels is true, labels will come outside the circular picker</p>
+<p>With outerLabels = true, and ranges.length &gt; 1, labels will go outwards.
+With outerLabels = false, and ranges.length &gt; 1, labels will go inwards.</p>
+</div>
+                            <p>
+                              <em>Default value: </em><code>false</code>
+                            </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:55</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="ranges"></a>
+                            <code>ranges</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Ranges of circular picker </p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code>[]</code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:57</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+    </section>
+
+
+    <section>
+        
+            <h3 id="methods">
+                Methods
+            </h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="pointToValue"></a>
+                            <b><span class="modifier">Protected</span> pointToValue</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle"></span>
+                            <code>pointToValue(x: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, y: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, config: <a href="../interfaces/IConfig.html">IConfig</a>)</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="266" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:266</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Take a point in parameter and return corresponding value</p>
+    </div>
+    
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Type</td>
+                                                    <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                      <td>x</td>
+                                                      <td>
+                                                              <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                      </td>
+                                                      <td><p>xPos of point</p>
+    </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>y</td>
+                                                      <td>
+                                                              <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                      </td>
+                                                      <td><p>yPos of point</p>
+    </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>config</td>
+                                                      <td>
+                                                              <code><a href="../interfaces/IConfig.html" target="_self" >IConfig</a></code>
+                                                      </td>
+                                                      <td><p>config where the point is located</p>
+    </td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="registerOnChange"></a>
+                            <b><span class="modifier">Public</span> registerOnChange</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play "></span>
+                            <code>registerOnChange(fn: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="247" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:247</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>From ControlValueAccessor interface </p>
+    </div>
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="registerOnTouched"></a>
+                            <b><span class="modifier">Public</span> registerOnTouched</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play "></span>
+                            <code>registerOnTouched(fn: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="252" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:252</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>From ControlValueAccessor interface </p>
+    </div>
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="valueToPoint"></a>
+                            <b><span class="modifier">Protected</span> valueToPoint</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle"></span>
+                            <code>valueToPoint(value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, radiusOffset: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, config: <a href="../interfaces/IConfig.html">IConfig</a>)</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="288" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:288</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Take velue and returns its position</p>
+    </div>
+    
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Type</td>
+                                                    <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                      <td>value</td>
+                                                      <td>
+                                                      </td>
+                                                      <td><p>value to check</p>
+    </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>radiusOffset</td>
+                                                      <td>
+                                                      </td>
+                                                      <td><p>Radius to ckeck (if outerLabels are on, the radius offset = fullDiameter + labelsDiameter)</p>
+    </td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>config</td>
+                                                      <td>
+                                                      </td>
+                                                      <td><p>the config where to check</p>
+    </td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="../classes/Position.html" target="_self" >Position</a></code>
+    
+                                </div>
+                                    <div class="io-description">
+                                        <p>the position of value</p>
+    
+                                    </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="writeValue"></a>
+                            <b><span class="modifier">Public</span> writeValue</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play "></span>
+                            <code>writeValue(value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="239" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:239</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>From ControlValueAccessor interface </p>
+    </div>
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
 
     <section>
         
@@ -1837,13 +2229,14 @@ With outerLabels = false, and ranges.length &gt; 1, labels will go inwards.</p>
                 <tbody>
                     <tr>
                         <td class="col-md-4">
-                            <b> _control</b>
+                            <a name="_control"></a>
+                            <b><span class="modifier">Public</span> _control</b>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <code>_control:     <code><a href="https://angular.io/docs/ts/latest/api/forms/index/NgControl-class.html" target="_blank" >NgControl</a></code>
-    </bcode>
+                            <span class="modifier-icon fa fa-"></span><code>_control:     <code><a href="https://angular.io/docs/ts/latest/api/forms/index/NgControl-class.html" target="_blank" >NgControl</a></code>
+    </code>
                         </td>
                     </tr>
                         <tr>
@@ -1852,19 +2245,32 @@ With outerLabels = false, and ranges.length &gt; 1, labels will go inwards.</p>
     
                             </td>
                         </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Decorators : </i><code>SelfOptional</code>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="106" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:106</a></div>
+                                </td>
+                            </tr>
+    
+    
                 </tbody>
             </table>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
                         <td class="col-md-4">
+                            <a name="cursorTemplate"></a>
                             <b><span class="modifier">Public</span> cursorTemplate</b>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
                             <span class="modifier-icon fa fa-"></span><code>cursorTemplate:     <code></code>
-    </bcode>
+    </code>
                         </td>
                     </tr>
                         <tr>
@@ -1877,25 +2283,28 @@ With outerLabels = false, and ranges.length &gt; 1, labels will go inwards.</p>
                                     <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:62</a></div>
                                 </td>
                             </tr>
+    
                     <tr>
                         <td class="col-md-4">
                             <div class="io-description"><p>template for cursor inside picker. Use it to customize labels </p>
     </div>
                         </td>
                     </tr>
+    
                 </tbody>
             </table>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
                         <td class="col-md-4">
+                            <a name="disabled"></a>
                             <b><span class="modifier">Public</span> disabled</b>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
                             <span class="modifier-icon fa fa-"></span><code>disabled:     <code></code>
-    </bcode>
+    </code>
                         </td>
                     </tr>
                             <tr>
@@ -1903,6 +2312,7 @@ With outerLabels = false, and ranges.length &gt; 1, labels will go inwards.</p>
                                     <div class="io-line">Defined in <a href="" data-line="71" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:71</a></div>
                                 </td>
                             </tr>
+    
                     <tr>
                         <td class="col-md-4">
                             <div class="io-description"><p>disabled property setter. Can be string or empty so you can use it like : <circular-picker disabled></circular-picker> 
@@ -1910,19 +2320,21 @@ With outerLabels = false, and ranges.length &gt; 1, labels will go inwards.</p>
     </div>
                         </td>
                     </tr>
+    
                 </tbody>
             </table>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
                         <td class="col-md-4">
+                            <a name="labelTemplate"></a>
                             <b><span class="modifier">Public</span> labelTemplate</b>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
                             <span class="modifier-icon fa fa-"></span><code>labelTemplate:     <code></code>
-    </bcode>
+    </code>
                         </td>
                     </tr>
                         <tr>
@@ -1935,30 +2347,33 @@ With outerLabels = false, and ranges.length &gt; 1, labels will go inwards.</p>
                                     <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:60</a></div>
                                 </td>
                             </tr>
+    
                     <tr>
                         <td class="col-md-4">
                             <div class="io-description"><p>Template for labels inside picker. Use it to customize labels </p>
     </div>
                         </td>
                     </tr>
+    
                 </tbody>
             </table>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
                         <td class="col-md-4">
+                            <a name="value"></a>
                             <b> value</b>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <code>value:     <code>number</code>
-    </bcode>
+                            <code>value:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+    </code>
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                <i>Type : </i>    <code>number</code>
+                                <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
     
                             </td>
                         </tr>
@@ -1967,6 +2382,7 @@ With outerLabels = false, and ranges.length &gt; 1, labels will go inwards.</p>
                                     <div class="io-line">Defined in <a href="" data-line="234" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:234</a></div>
                                 </td>
                             </tr>
+    
                     <tr>
                         <td class="col-md-4">
                             <div class="io-description"><p>set accessor including call the onchange callback 
@@ -1974,6 +2390,7 @@ With outerLabels = false, and ranges.length &gt; 1, labels will go inwards.</p>
     </div>
                         </td>
                     </tr>
+    
                 </tbody>
             </table>
     </section>
@@ -2133,10 +2550,10 @@ export class DejaCircularPickerComponent implements OnInit, ControlValueAccessor
                             if (this.outerLabels) {
                                 circle &#x3D; circle.inflate(this.labelsDiameter);
 
-                                for (let i &#x3D; 0; i &lt; this.configs.length; i++) {
+                                for (const conf of this.configs) {
                                     contains &#x3D; circle.containsPoint(new Position(event.pageX, event.pageY));
                                     if (contains) {
-                                        this.selectedConfig &#x3D; this.configs[i];
+                                        this.selectedConfig &#x3D; conf;
                                         break;
                                     } else {
                                         circle &#x3D; circle.inflate(this.labelsDiameter);

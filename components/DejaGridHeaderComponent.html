@@ -779,10 +779,26 @@
                         </ul>
                     </li>
             
-            
                     <li class="chapter">
-                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                </li>
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
                     </li>
+            
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1557,10 +1573,26 @@
                                </ul>
                            </li>
                    
-                   
                            <li class="chapter">
-                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
                            </li>
+                   
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1660,11 +1692,143 @@
 </section>
 
     <section>
+        <h3 id="index">Index</h3>
+        <table class="table table-sm table-bordered index-table">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <span class="modifier">Protected</span> <a href="#columnHeaderTemplate">columnHeaderTemplate</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Protected</span> <a href="#columnHeaderTemplateInternal">columnHeaderTemplateInternal</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Public</span> <a href="#columnLayout">columnLayout</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Public</span> <a href="#columnsDraggable">columnsDraggable</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Public</span> <a href="#columnsSizable">columnsSizable</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Public</span> <a href="#columnsSortable">columnsSortable</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Protected</span> <a href="#sizedColumn">sizedColumn</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <span class="modifier">Protected</span> <a href="#getDragContext">getDragContext</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Protected</span> <a href="#getDropContext">getDropContext</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Public</span> <a href="#refresh">refresh</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#columnHeaderTemplateExternal">columnHeaderTemplateExternal</a>
+                            </li>
+                            <li>
+                                <a href="#columnLayout">columnLayout</a>
+                            </li>
+                            <li>
+                                <a href="#columnsDraggable">columnsDraggable</a>
+                            </li>
+                            <li>
+                                <a href="#columnsSizable">columnsSizable</a>
+                            </li>
+                            <li>
+                                <a href="#columnsSortable">columnsSortable</a>
+                            </li>
+                            <li>
+                                <a href="#sortInfos">sortInfos</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#columnDragEnd">columnDragEnd</a>
+                            </li>
+                            <li>
+                                <a href="#columnHeaderClicked">columnHeaderClicked</a>
+                            </li>
+                            <li>
+                                <a href="#columnLayoutChanged">columnLayoutChanged</a>
+                            </li>
+                            <li>
+                                <a href="#columnSizeChanged">columnSizeChanged</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3 id="constructor">Constructor</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>constructor(elementRef: <a href="https://angular.io/docs/ts/latest/api/core/index/ElementRef-class.html" target="_blank">ElementRef</a>, changeDetectorRef: <a href="https://angular.io/docs/ts/latest/api/core/index/ChangeDetectorRef-class.html" target="_blank">ChangeDetectorRef</a>, clipboardService: <a href="../injectables/DejaClipboardService.html">DejaClipboardService</a>)</code>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="123" class="link-to-prism">src/component/data-grid/data-grid-header/data-grid-header.component.ts:123</a></div>
+                                </td>
+                            </tr>
+    
+                </tbody>
+            </table>
+    </section>
+
+    <section>
         <h3 id="inputs">Inputs</h3>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
                         <td class="col-md-2">
+                            <a name="columnHeaderTemplateExternal"></a>
                             <code>columnHeaderTemplateExternal</code>
                         </td>
                         <td class="col-md-10">
@@ -1683,6 +1847,7 @@
                 <tbody>
                     <tr>
                         <td class="col-md-2">
+                            <a name="columnLayout"></a>
                             <code>columnLayout</code>
                         </td>
                         <td class="col-md-10">
@@ -1701,6 +1866,7 @@
                 <tbody>
                     <tr>
                         <td class="col-md-2">
+                            <a name="columnsDraggable"></a>
                             <code>columnsDraggable</code>
                         </td>
                         <td class="col-md-10">
@@ -1722,6 +1888,7 @@ Si une valeur spécifique à une colonne est spécifiée dans le modèle de la c
                 <tbody>
                     <tr>
                         <td class="col-md-2">
+                            <a name="columnsSizable"></a>
                             <code>columnsSizable</code>
                         </td>
                         <td class="col-md-10">
@@ -1743,6 +1910,7 @@ Si une valeur spécifique à une colonne est spécifiée dans le modèle de la c
                 <tbody>
                     <tr>
                         <td class="col-md-2">
+                            <a name="columnsSortable"></a>
                             <code>columnsSortable</code>
                         </td>
                         <td class="col-md-10">
@@ -1764,6 +1932,7 @@ Si une valeur spécifique à une colonne est spécifiée dans le modèle de la c
                 <tbody>
                     <tr>
                         <td class="col-md-2">
+                            <a name="sortInfos"></a>
                             <code>sortInfos</code>
                         </td>
                         <td class="col-md-10">
@@ -1790,6 +1959,7 @@ Si une valeur spécifique à une colonne est spécifiée dans le modèle de la c
                 <tbody>
                     <tr>
                         <td class="col-md-2">
+                            <a name="columnDragEnd"></a>
                             <code>columnDragEnd</code>
                         </td>
                         <td class="col-md-10">
@@ -1810,6 +1980,7 @@ Si une valeur spécifique à une colonne est spécifiée dans le modèle de la c
                 <tbody>
                     <tr>
                         <td class="col-md-2">
+                            <a name="columnHeaderClicked"></a>
                             <code>columnHeaderClicked</code>
                         </td>
                         <td class="col-md-10">
@@ -1830,6 +2001,7 @@ Si une valeur spécifique à une colonne est spécifiée dans le modèle de la c
                 <tbody>
                     <tr>
                         <td class="col-md-2">
+                            <a name="columnLayoutChanged"></a>
                             <code>columnLayoutChanged</code>
                         </td>
                         <td class="col-md-10">
@@ -1850,6 +2022,7 @@ Si une valeur spécifique à une colonne est spécifiée dans le modèle de la c
                 <tbody>
                     <tr>
                         <td class="col-md-2">
+                            <a name="columnSizeChanged"></a>
                             <code>columnSizeChanged</code>
                         </td>
                         <td class="col-md-10">
@@ -1869,24 +2042,110 @@ Si une valeur spécifique à une colonne est spécifiée dans le modèle de la c
     </section>
 
     <section>
-        <h3 id="constructor">Constructor</h3>
+        
+            <h3 id="methods">
+                Methods
+            </h3>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
                         <td class="col-md-4">
-                            <code>constructor(elementRef: <a href="https://angular.io/docs/ts/latest/api/core/index/ElementRef-class.html" target="_blank">ElementRef</a>, changeDetectorRef: <a href="https://angular.io/docs/ts/latest/api/core/index/ChangeDetectorRef-class.html" target="_blank">ChangeDetectorRef</a>, clipboardService: <a href="../injectables/DejaClipboardService.html">DejaClipboardService</a>)</code>
+                            <a name="getDragContext"></a>
+                            <b><span class="modifier">Protected</span> getDragContext</b>
                         </td>
                     </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle"></span>
+                            <code>getDragContext(column: <a href="../interfaces/IDejaGridColumn.html">IDejaGridColumn</a>)</code>
+                        </td>
+                    </tr>
+    
+    
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="123" class="link-to-prism">src/component/data-grid/data-grid-header/data-grid-header.component.ts:123</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="203" class="link-to-prism">src/component/data-grid/data-grid-header/data-grid-header.component.ts:203</a></div>
                                 </td>
                             </tr>
     
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>{ dragendcallback: (event: any) &#x3D;&gt; void; dragstartcallback: (event: any) &#x3D;&gt; void; }</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="getDropContext"></a>
+                            <b><span class="modifier">Protected</span> getDropContext</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle"></span>
+                            <code>getDropContext()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="234" class="link-to-prism">src/component/data-grid/data-grid-header/data-grid-header.component.ts:234</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>{ dragleavecallback: () &#x3D;&gt; void; dragentercallback: (event: any) &#x3D;&gt; void; dragovercallback: (even...</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="refresh"></a>
+                            <b><span class="modifier">Public</span> refresh</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play "></span>
+                            <code>refresh()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="199" class="link-to-prism">src/component/data-grid/data-grid-header/data-grid-header.component.ts:199</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
     </section>
-
 
     <section>
         
@@ -1897,13 +2156,14 @@ Si une valeur spécifique à une colonne est spécifiée dans le modèle de la c
                 <tbody>
                     <tr>
                         <td class="col-md-4">
+                            <a name="columnHeaderTemplate"></a>
                             <b><span class="modifier">Protected</span> columnHeaderTemplate</b>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
                             <span class="modifier-icon fa fa-circle"></span><code>columnHeaderTemplate:     <code></code>
-    </bcode>
+    </code>
                         </td>
                     </tr>
                             <tr>
@@ -1911,19 +2171,22 @@ Si une valeur spécifique à une colonne est spécifiée dans le modèle de la c
                                     <div class="io-line">Defined in <a href="" data-line="121" class="link-to-prism">src/component/data-grid/data-grid-header/data-grid-header.component.ts:121</a></div>
                                 </td>
                             </tr>
+    
+    
                 </tbody>
             </table>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
                         <td class="col-md-4">
+                            <a name="columnHeaderTemplateInternal"></a>
                             <b><span class="modifier">Protected</span> columnHeaderTemplateInternal</b>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
                             <span class="modifier-icon fa fa-circle"></span><code>columnHeaderTemplateInternal:     <code></code>
-    </bcode>
+    </code>
                         </td>
                     </tr>
                         <tr>
@@ -1936,25 +2199,28 @@ Si une valeur spécifique à une colonne est spécifiée dans le modèle de la c
                                     <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/component/data-grid/data-grid-header/data-grid-header.component.ts:47</a></div>
                                 </td>
                             </tr>
+    
                     <tr>
                         <td class="col-md-4">
                             <div class="io-description"><p>Template d&#39;entête de colonne par defaut définit dans le HTML de la grille </p>
     </div>
                         </td>
                     </tr>
+    
                 </tbody>
             </table>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
                         <td class="col-md-4">
+                            <a name="columnLayout"></a>
                             <b><span class="modifier">Public</span> columnLayout</b>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
                             <span class="modifier-icon fa fa-"></span><code>columnLayout:     <code></code>
-    </bcode>
+    </code>
                         </td>
                     </tr>
                             <tr>
@@ -1962,25 +2228,28 @@ Si une valeur spécifique à une colonne est spécifiée dans le modèle de la c
                                     <div class="io-line">Defined in <a href="" data-line="117" class="link-to-prism">src/component/data-grid/data-grid-header/data-grid-header.component.ts:117</a></div>
                                 </td>
                             </tr>
+    
                     <tr>
                         <td class="col-md-4">
                             <div class="io-description"><p>Retourne la structire de colonnes associée aux entêtes </p>
     </div>
                         </td>
                     </tr>
+    
                 </tbody>
             </table>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
                         <td class="col-md-4">
+                            <a name="columnsDraggable"></a>
                             <b><span class="modifier">Public</span> columnsDraggable</b>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
                             <span class="modifier-icon fa fa-"></span><code>columnsDraggable:     <code></code>
-    </bcode>
+    </code>
                         </td>
                     </tr>
                             <tr>
@@ -1988,6 +2257,7 @@ Si une valeur spécifique à une colonne est spécifiée dans le modèle de la c
                                     <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/component/data-grid/data-grid-header/data-grid-header.component.ts:69</a></div>
                                 </td>
                             </tr>
+    
                     <tr>
                         <td class="col-md-4">
                             <div class="io-description"><p>Définit si toutes les colonnes peuvent être draggable vers un autre composant.
@@ -1997,19 +2267,21 @@ Si une valeur spécifique à une colonne est spécifiée dans le modèle de la c
     </div>
                         </td>
                     </tr>
+    
                 </tbody>
             </table>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
                         <td class="col-md-4">
+                            <a name="columnsSizable"></a>
                             <b><span class="modifier">Public</span> columnsSizable</b>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
                             <span class="modifier-icon fa fa-"></span><code>columnsSizable:     <code></code>
-    </bcode>
+    </code>
                         </td>
                     </tr>
                             <tr>
@@ -2017,6 +2289,7 @@ Si une valeur spécifique à une colonne est spécifiée dans le modèle de la c
                                     <div class="io-line">Defined in <a href="" data-line="99" class="link-to-prism">src/component/data-grid/data-grid-header/data-grid-header.component.ts:99</a></div>
                                 </td>
                             </tr>
+    
                     <tr>
                         <td class="col-md-4">
                             <div class="io-description"><p>Définit si toutes les colonnes peuvent être redimensionées
@@ -2026,19 +2299,21 @@ Si une valeur spécifique à une colonne est spécifiée dans le modèle de la c
     </div>
                         </td>
                     </tr>
+    
                 </tbody>
             </table>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
                         <td class="col-md-4">
+                            <a name="columnsSortable"></a>
                             <b><span class="modifier">Public</span> columnsSortable</b>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
                             <span class="modifier-icon fa fa-"></span><code>columnsSortable:     <code></code>
-    </bcode>
+    </code>
                         </td>
                     </tr>
                             <tr>
@@ -2046,6 +2321,7 @@ Si une valeur spécifique à une colonne est spécifiée dans le modèle de la c
                                     <div class="io-line">Defined in <a href="" data-line="84" class="link-to-prism">src/component/data-grid/data-grid-header/data-grid-header.component.ts:84</a></div>
                                 </td>
                             </tr>
+    
                     <tr>
                         <td class="col-md-4">
                             <div class="io-description"><p>Définit si toutes les colonnes peuvent être déplacées parmis les autres colonnes.
@@ -2055,19 +2331,21 @@ Si une valeur spécifique à une colonne est spécifiée dans le modèle de la c
     </div>
                         </td>
                     </tr>
+    
                 </tbody>
             </table>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
                         <td class="col-md-4">
+                            <a name="sizedColumn"></a>
                             <b><span class="modifier">Protected</span> sizedColumn</b>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
                             <span class="modifier-icon fa fa-circle"></span><code>sizedColumn:     <code><a href="../interfaces/IDejaGridColumn.html" target="_self" >IDejaGridColumn</a></code>
-    </bcode>
+    </code>
                         </td>
                     </tr>
                         <tr>
@@ -2081,6 +2359,8 @@ Si une valeur spécifique à une colonne est spécifiée dans le modèle de la c
                                     <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/component/data-grid/data-grid-header/data-grid-header.component.ts:49</a></div>
                                 </td>
                             </tr>
+    
+    
                 </tbody>
             </table>
     </section>

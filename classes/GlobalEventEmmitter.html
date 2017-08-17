@@ -779,10 +779,26 @@
                         </ul>
                     </li>
             
-            
                     <li class="chapter">
-                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                </li>
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
                     </li>
+            
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1557,10 +1573,26 @@
                                </ul>
                            </li>
                    
-                   
                            <li class="chapter">
-                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
                            </li>
+                   
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1616,6 +1648,56 @@
             </p>
 
 
+            <section>
+                <h3 id="index">Index</h3>
+                <table class="table table-sm table-bordered index-table">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <h6><b>Properties</b></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <ul class="index-list">
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#addEventListener">addEventListener</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#emit">emit</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#hasListeners">hasListeners</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#instance">instance</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#listeners">listeners</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#off">off</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#on">on</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#removeAllListeners">removeAllListeners</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#removeEventListener">removeEventListener</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#removeListener">removeListener</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+
 
 
             <section>
@@ -1627,13 +1709,14 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="addEventListener"></a>
                                     <b><span class="modifier">Public</span> addEventListener</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>addEventListener:     <code></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                     <tr>
@@ -1641,19 +1724,22 @@
                                             <div class="io-line">Defined in <a href="" data-line="96" class="link-to-prism">src/common/global-event/global-event-emmitter.ts:96</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="emit"></a>
                                     <b><span class="modifier">Public</span> emit</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>emit:     <code></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                     <tr>
@@ -1661,19 +1747,22 @@
                                             <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/common/global-event/global-event-emmitter.ts:68</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="hasListeners"></a>
                                     <b><span class="modifier">Public</span> hasListeners</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>hasListeners:     <code></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                     <tr>
@@ -1681,19 +1770,22 @@
                                             <div class="io-line">Defined in <a href="" data-line="88" class="link-to-prism">src/common/global-event/global-event-emmitter.ts:88</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="instance"></a>
                                     <b><span class="modifier">Public</span> instance</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>instance:     <code></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                     <tr>
@@ -1701,19 +1793,22 @@
                                             <div class="io-line">Defined in <a href="" data-line="14" class="link-to-prism">src/common/global-event/global-event-emmitter.ts:14</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="listeners"></a>
                                     <b><span class="modifier">Public</span> listeners</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>listeners:     <code></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                     <tr>
@@ -1721,19 +1816,22 @@
                                             <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/common/global-event/global-event-emmitter.ts:83</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="off"></a>
                                     <b><span class="modifier">Public</span> off</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>off:     <code></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                     <tr>
@@ -1741,19 +1839,22 @@
                                             <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/common/global-event/global-event-emmitter.ts:23</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="on"></a>
                                     <b><span class="modifier">Public</span> on</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>on:     <code></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                     <tr>
@@ -1761,19 +1862,22 @@
                                             <div class="io-line">Defined in <a href="" data-line="92" class="link-to-prism">src/common/global-event/global-event-emmitter.ts:92</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="removeAllListeners"></a>
                                     <b><span class="modifier">Public</span> removeAllListeners</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>removeAllListeners:     <code></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                     <tr>
@@ -1781,19 +1885,22 @@
                                             <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/common/global-event/global-event-emmitter.ts:31</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="removeEventListener"></a>
                                     <b><span class="modifier">Public</span> removeEventListener</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>removeEventListener:     <code></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                     <tr>
@@ -1801,19 +1908,22 @@
                                             <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/common/global-event/global-event-emmitter.ts:35</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="removeListener"></a>
                                     <b><span class="modifier">Public</span> removeListener</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>removeListener:     <code></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                     <tr>
@@ -1821,6 +1931,8 @@
                                             <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/common/global-event/global-event-emmitter.ts:27</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
             </section>

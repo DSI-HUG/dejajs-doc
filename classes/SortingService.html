@@ -779,10 +779,26 @@
                         </ul>
                     </li>
             
-            
                     <li class="chapter">
-                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                </li>
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
                     </li>
+            
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1557,10 +1573,26 @@
                                </ul>
                            </li>
                    
-                   
                            <li class="chapter">
-                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
                            </li>
+                   
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1618,6 +1650,41 @@
 
 
             <section>
+                <h3 id="index">Index</h3>
+                <table class="table table-sm table-bordered index-table">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <h6><b>Methods</b></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <ul class="index-list">
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#compare">compare</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#sort">sort</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#sort$">sort$</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#sortTree">sortTree</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#sortTree$">sortTree$</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+
+            <section>
                 
                     <h3 id="methods">
                         Methods
@@ -1626,13 +1693,14 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="compare"></a>
                                     <b><span class="modifier">Public</span> compare</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                         <span class="modifier-icon method fa fa-play "></span>
-                                    <code>compare(a: any, b: any, sortInfo: <a href="../interfaces/ISortInfos.html">ISortInfos</a>)</code>
+                                    <code>compare(a: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, b: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, sortInfo: <a href="../interfaces/ISortInfos.html">ISortInfos</a>)</code>
                                 </td>
                             </tr>
             
@@ -1650,40 +1718,46 @@
             
                                         <div class="io-description">
                                                 <b>Parameters :</b>
-                                                <ul class="jsdoc-params">
-                                                        <li>
-                                                            <div>
-                                                                <b>a</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>Objet 1.</p>
-            
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div>
-                                                                <b>b</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>Objet 2.</p>
-            
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div>
-                                                                <b>sortInfos</b>
-                                                                    :     <code><a href="../interfaces/ISortInfos.html" target="_self" >ISortInfos</a></code>
-            
-                                                            </div>
-                                                            <div>
-                                                                <p>Modèle de tri à appliquer pour la comparaison.</p>
-            
-                                                            </div>
-                                                        </li>
-                                                </ul>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>a</td>
+                                                              <td>
+                                                                      <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                              </td>
+                                                              <td><p>Objet 1.</p>
+            </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>b</td>
+                                                              <td>
+                                                                      <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                              </td>
+                                                              <td><p>Objet 2.</p>
+            </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>sortInfos</td>
+                                                              <td>
+                                                                      <code><a href="../interfaces/ISortInfos.html" target="_self" >ISortInfos</a></code>
+                                                              </td>
+                                                              <td><p>Modèle de tri à appliquer pour la comparaison.</p>
+            </td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
                                         </div>
                                         <div class="io-description">
-                                            <b>Returns : </b>    <code>void</code>
+                                            <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
             
                                         </div>
                                             <div class="io-description">
@@ -1697,13 +1771,52 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="sort"></a>
+                                    <b><span class="modifier">Public</span> sort</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play "></span>
+                                    <code>sort(list: any[], sortInfo: |[])</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="130" class="link-to-prism">src/common/core/sorting/sorting.service.ts:130</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+            
+                                        </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="sort$"></a>
                                     <b><span class="modifier">Public</span> sort$</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                         <span class="modifier-icon method fa fa-play "></span>
-                                    <code>sort$(list: [], sortInfo: )</code>
+                                    <code>sort$(list: any[], sortInfo: |[])</code>
                                 </td>
                             </tr>
             
@@ -1721,31 +1834,37 @@
             
                                         <div class="io-description">
                                                 <b>Parameters :</b>
-                                                <ul class="jsdoc-params">
-                                                        <li>
-                                                            <div>
-                                                                <b>list</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>Liste à trier.</p>
-            
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div>
-                                                                <b>sortInfos</b>
-                                                                    :     <code><a href="../interfaces/ISortInfos.html" target="_self" >ISortInfos</a></code>
-            
-                                                            </div>
-                                                            <div>
-                                                                <p>Modèle de tri à appliquer.</p>
-            
-                                                            </div>
-                                                        </li>
-                                                </ul>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>list</td>
+                                                              <td>
+                                                              </td>
+                                                              <td><p>Liste à trier.</p>
+            </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>sortInfos</td>
+                                                              <td>
+                                                                      <code><a href="../interfaces/ISortInfos.html" target="_self" >ISortInfos</a></code>
+                                                              </td>
+                                                              <td><p>Modèle de tri à appliquer.</p>
+            </td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
                                         </div>
                                         <div class="io-description">
-                                            <b>Returns : </b>    <code>void</code>
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
             
                                         </div>
                                             <div class="io-description">
@@ -1759,30 +1878,31 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
-                                    <b><span class="modifier">Public</span> sort</b>
+                                    <a name="sortTree"></a>
+                                    <b><span class="modifier">Public</span> sortTree</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                         <span class="modifier-icon method fa fa-play "></span>
-                                    <code>sort(list: [], sortInfo: )</code>
+                                    <code>sortTree(tree: any[], sortInfo: |[], childrenField: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                                 </td>
                             </tr>
             
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="130" class="link-to-prism">src/common/core/sorting/sorting.service.ts:130</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="163" class="link-to-prism">src/common/core/sorting/sorting.service.ts:163</a></div>
                                         </td>
                                     </tr>
             
                             <tr>
                                 <td class="col-md-4">
             
-                                        <div class="io-description">
+                                        <div>
                                         </div>
                                         <div class="io-description">
-                                            <b>Returns : </b>    <code>void</code>
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
             
                                         </div>
                                             <div class="io-description">
@@ -1796,13 +1916,14 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="sortTree$"></a>
                                     <b><span class="modifier">Public</span> sortTree$</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                         <span class="modifier-icon method fa fa-play "></span>
-                                    <code>sortTree$(tree: [], sortInfo: , childrenField: string)</code>
+                                    <code>sortTree$(tree: any[], sortInfo: |[], childrenField: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                                 </td>
                             </tr>
             
@@ -1820,77 +1941,45 @@
             
                                         <div class="io-description">
                                                 <b>Parameters :</b>
-                                                <ul class="jsdoc-params">
-                                                        <li>
-                                                            <div>
-                                                                <b>tree</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>Liste à trier.</p>
-            
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div>
-                                                                <b>sortInfos</b>
-                                                                    :     <code><a href="../interfaces/ISortInfos.html" target="_self" >ISortInfos</a></code>
-            
-                                                            </div>
-                                                            <div>
-                                                                <p>Modèle de tri à appliquer.</p>
-            
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div>
-                                                                <b>childrenField</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>Champ à utiliser pour la recherche dans les enfants d&#39;un parent.</p>
-            
-                                                            </div>
-                                                        </li>
-                                                </ul>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>tree</td>
+                                                              <td>
+                                                              </td>
+                                                              <td><p>Liste à trier.</p>
+            </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>sortInfos</td>
+                                                              <td>
+                                                                      <code><a href="../interfaces/ISortInfos.html" target="_self" >ISortInfos</a></code>
+                                                              </td>
+                                                              <td><p>Modèle de tri à appliquer.</p>
+            </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>childrenField</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                              </td>
+                                                              <td><p>Champ à utiliser pour la recherche dans les enfants d&#39;un parent.</p>
+            </td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
                                         </div>
                                         <div class="io-description">
-                                            <b>Returns : </b>    <code>void</code>
-            
-                                        </div>
-                                            <div class="io-description">
-                                                
-                                            </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <b><span class="modifier">Public</span> sortTree</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>sortTree(tree: [], sortInfo: , childrenField: string)</code>
-                                </td>
-                            </tr>
-            
-            
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="163" class="link-to-prism">src/common/core/sorting/sorting.service.ts:163</a></div>
-                                        </td>
-                                    </tr>
-            
-                            <tr>
-                                <td class="col-md-4">
-            
-                                        <div class="io-description">
-                                        </div>
-                                        <div class="io-description">
-                                            <b>Returns : </b>    <code>void</code>
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
             
                                         </div>
                                             <div class="io-description">

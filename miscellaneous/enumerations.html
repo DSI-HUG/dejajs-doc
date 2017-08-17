@@ -1,0 +1,3003 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>@deja-js/component</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	    <link rel="stylesheet" href="../styles/style.css">
+                 <link rel="stylesheet" href="../styles/vagrant.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">@deja-js/component</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="Type to search">
+            </div>
+            <nav>
+            
+                <ul class="list">
+            
+                    <li class="title">
+                        <a href="../index.html">@deja-js/component</a>
+                    </li>
+            
+                    <li class="divider"></li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                        <ul class="links">
+                                <li class="link">
+                                    <a 
+                                        
+                                         href="../overview.html" 
+                                         href="../overview.html" 
+                                        >
+                                        <span class="fa fa-th"></span>Overview
+                                    </a>
+                                </li>
+                                <li class="link">
+                                  <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./changelog.html"
+                                        >
+                                        <span class="fa fa-file-text-o"></span>CHANGELOG
+                                    </a>
+                                </li>
+                                <li class="link">
+                                    <a href="./contributing.html"
+                                        >
+                                        <span class="fa fa-file-text-o"></span>CONTRIBUTING
+                                    </a>
+                                </li>
+                                <li class="link">
+                                    <a href="./license.html"
+                                        >
+                                        <span class="fa fa-file-text-o"></span>LICENSE
+                                    </a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../modules.html" >
+                            <div class="menu-toggler linked" data-toggle="collapse"
+                                    data-target="#xs-modules-links"
+                            >
+                                <span class="fa fa-archive"></span>
+                                <span class="link-name">Modules</span>
+                                <span class="fa fa-angle-down"></span>
+                            </div>
+                        </a>
+                        <ul class="links collapse "
+                                id="xs-modules-links"
+                            >
+                                <li class="link">
+                                    <a href="../modules/CloningModule.html" >CloningModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaAccordionModule.html" >DejaAccordionModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaAutosizeTextAreaModule.html" >DejaAutosizeTextAreaModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaBackdropModule.html" >DejaBackdropModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaBoldQueryModule.html" >DejaBoldQueryModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaChildValidatorModule.html" >DejaChildValidatorModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaChipsModule.html" >DejaChipsModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaCircularPickerModule.html" >DejaCircularPickerModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaClipboardModule.html" >DejaClipboardModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaCodeViewerModule.html" >DejaCodeViewerModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaColorPickerModule.html" >DejaColorPickerModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaColorSelectorModule.html" >DejaColorSelectorModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaDatePickerModule.html" >DejaDatePickerModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaDateSelectorModule.html" >DejaDateSelectorModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaDialogModule.html" >DejaDialogModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaDragDropModule.html" >DejaDragDropModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaDropDownModule.html" >DejaDropDownModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaEditableModule.html" >DejaEditableModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaFormModule.html" >DejaFormModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaGridModule.html" >DejaGridModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaIFrameModule.html" >DejaIFrameModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaListLoaderModule.html" >DejaListLoaderModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaMarkdownModule.html" >DejaMarkdownModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaMenuModule.html" >DejaMenuModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaMessageBoxModule.html" >DejaMessageBoxModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaMonacoEditorModule.html" >DejaMonacoEditorModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaPipeModule.html" >DejaPipeModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaRangeModule.html" >DejaRangeModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaSelectModule.html" >DejaSelectModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaSortingModule.html" >DejaSortingModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaSplitterModule.html" >DejaSplitterModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaTagModule.html" >DejaTagModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaTextMetricsModule.html" >DejaTextMetricsModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaTilesModule.html" >DejaTilesModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaTooltipModule.html" >DejaTooltipModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaTreeListModule.html" >DejaTreeListModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaViewPortModule.html" >DejaViewPortModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/GroupingModule.html" >GroupingModule</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-components-links"
+                            >
+                            <span class="fa fa-cogs"></span>
+                            <span>Components</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-components-links"
+                            >
+                                <li class="link">
+                                    <a href="../components/DejaAccordionBodyComponent.html" >DejaAccordionBodyComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaAccordionComponent.html" >DejaAccordionComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaAccordionGroupComponent.html" >DejaAccordionGroupComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaAccordionHeaderComponent.html" >DejaAccordionHeaderComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaBackdropComponent.html" >DejaBackdropComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaBoldQueryComponent.html" >DejaBoldQueryComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaChipsComponent.html" >DejaChipsComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaCircularPickerComponent.html" >DejaCircularPickerComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaCodeViewerComponent.html" >DejaCodeViewerComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaColorFabComponent.html" >DejaColorFabComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaColorPickerComponent.html" >DejaColorPickerComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaColorSelectorComponent.html" >DejaColorSelectorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaDatePickerComponent.html" >DejaDatePickerComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaDateSelectorComponent.html" >DejaDateSelectorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaDialogComponent.html" >DejaDialogComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaDropDownComponent.html" >DejaDropDownComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaGridComponent.html" >DejaGridComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaGridGroupAreaComponent.html" >DejaGridGroupAreaComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaGridHeaderComponent.html" >DejaGridHeaderComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaGridParentRowComponent.html" >DejaGridParentRowComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaGridRowComponent.html" >DejaGridRowComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaIFrameComponent.html" >DejaIFrameComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaItemComponent.html" >DejaItemComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaListLoaderComponent.html" >DejaListLoaderComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaMarkdownComponent.html" >DejaMarkdownComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaMenuComponent.html" >DejaMenuComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaMessageBoxComponent.html" >DejaMessageBoxComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaMonacoEditorComponent.html" >DejaMonacoEditorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaRangeComponent.html" >DejaRangeComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaSelectComponent.html" >DejaSelectComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaSnackbarComponent.html" >DejaSnackbarComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaSortIndicatorComponent.html" >DejaSortIndicatorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaSplitterComponent.html" >DejaSplitterComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaTagComponent.html" >DejaTagComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaTileComponent.html" >DejaTileComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaTileGroupComponent.html" >DejaTileGroupComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaTilesComponent.html" >DejaTilesComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaTooltipComponent.html" >DejaTooltipComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaTreeListComponent.html" >DejaTreeListComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaViewPortComponent.html" >DejaViewPortComponent</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-directives-links"
+                            >
+                            <span class="fa fa-code"></span>
+                            <span>Directives</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-directives-links"
+                            >
+                                <li class="link">
+                                    <a href="../directives/DateValidatorDirective.html" >DateValidatorDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaAutosizeTextAreaDirective.html" >DejaAutosizeTextAreaDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaChildValidatorDirective.html" >DejaChildValidatorDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaDraggableDirective.html" >DejaDraggableDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaDroppableDirective.html" >DejaDroppableDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaEditableDirective.html" >DejaEditableDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaMouseDraggableDirective.html" >DejaMouseDraggableDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaMouseDroppableDirective.html" >DejaMouseDroppableDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaTooltipDirective.html" >DejaTooltipDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/PendingOnFocusDirective.html" >PendingOnFocusDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/SplitAreaDirective.html" >SplitAreaDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/SplitGutterDirective.html" >SplitGutterDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/ValidateOnBlurDirective.html" >ValidateOnBlurDirective</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-classes-links"
+                            >
+                            <span class="fa fa-file-code-o"></span>
+                            <span>Classes</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-classes-links"
+                            >
+                                <li class="link">
+                                    <a href="../classes/Circle.html" >Circle</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Color.html" >Color</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/ColorEvent.html" >ColorEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DateUtils.html" >DateUtils</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaCancelableEvent.html" >DejaCancelableEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaChipsCloseEvent.html" >DejaChipsCloseEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaColorFab.html" >DejaColorFab</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaGridColumnsLayoutInfos.html" >DejaGridColumnsLayoutInfos</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaGridRowEvent.html" >DejaGridRowEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaGridRowsEvent.html" >DejaGridRowsEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaItemEvent.html" >DejaItemEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaItemsEvent.html" >DejaItemsEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaTile.html" >DejaTile</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/DejaTreeListScrollEvent.html" >DejaTreeListScrollEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Diacritics.html" >Diacritics</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/EditorOptions.html" >EditorOptions</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/EditorScrollbarOptions.html" >EditorScrollbarOptions</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/GlobalEventEmmitter.html" >GlobalEventEmmitter</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/GroupingService.html" >GroupingService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/HtmlUtils.html" >HtmlUtils</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/IDejaGridColumnLayout.html" >IDejaGridColumnLayout</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/IDejaGridParentRow.html" >IDejaGridParentRow</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/ItemListBase.html" >ItemListBase</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/ItemListService.html" >ItemListService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/JsonUtils.html" >JsonUtils</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/MaterialColor.html" >MaterialColor</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Position.html" >Position</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Range.html" >Range</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Rect.html" >Rect</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/Size.html" >Size</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/SortingService.html" >SortingService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/UUID.html" >UUID</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/UnitValue.html" >UnitValue</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/ValidationMessages.html" >ValidationMessages</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/ValueAccessor.html" >ValueAccessor</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-injectables-links"
+                            >
+                            <span class="fa fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="../injectables/CloningService.html" >CloningService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/DejaClipboardService.html" >DejaClipboardService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/DejaMouseDragDropService.html" >DejaMouseDragDropService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/DejaTextMetricsService.html" >DejaTextMetricsService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/DejaTilesLayoutProvider.html" >DejaTilesLayoutProvider</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/DejaTooltipService.html" >DejaTooltipService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/GlobalEventService.html" >GlobalEventService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/MaterialColors.html" >MaterialColors</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/MonacoEditorService.html" >MonacoEditorService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/ViewPortService.html" >ViewPortService</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-interfaces-links"
+                            >
+                            <span class="fa fa-info"></span>
+                            <span>Interfaces</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-interfaces-links"
+                            >
+                                <li class="link">
+                                    <a href="../interfaces/IAnimation.html" >IAnimation</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IAreaData.html" >IAreaData</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/ICircularRange.html" >ICircularRange</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/ICircularValue.html" >ICircularValue</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IConfig.html" >IConfig</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDateSelectorItem.html" >IDateSelectorItem</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaDragContext.html" >IDejaDragContext</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaDragEvent.html" >IDejaDragEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaDropContext.html" >IDejaDropContext</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaDropEvent.html" >IDejaDropEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaGridColumn.html" >IDejaGridColumn</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaGridColumnEvent.html" >IDejaGridColumnEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaGridColumnLayoutEvent.html" >IDejaGridColumnLayoutEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaGridColumnSizeEvent.html" >IDejaGridColumnSizeEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaGridGroupsEvent.html" >IDejaGridGroupsEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaGridParentRowColumnLayout.html" >IDejaGridParentRowColumnLayout</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaGridRow.html" >IDejaGridRow</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaMouseDraggableContext.html" >IDejaMouseDraggableContext</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaMouseDroppableContext.html" >IDejaMouseDroppableContext</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaTile.html" >IDejaTile</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaTileEffect.html" >IDejaTileEffect</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaTilesAddEvent.html" >IDejaTilesAddEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaTilesCancelableEvent.html" >IDejaTilesCancelableEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaTilesEvent.html" >IDejaTilesEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaTilesModelEvent.html" >IDejaTilesModelEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaTilesRefreshParams.html" >IDejaTilesRefreshParams</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaTilesRemoveEvent.html" >IDejaTilesRemoveEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaViewPortItem.html" >IDejaViewPortItem</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDragCursorInfos.html" >IDragCursorInfos</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDragDropContext.html" >IDragDropContext</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDragDropInfos.html" >IDragDropInfos</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDragSelection.html" >IDragSelection</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDropCursorInfos.html" >IDropCursorInfos</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDropDownPosition.html" >IDropDownPosition</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDropDownResetParams.html" >IDropDownResetParams</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IEnsureParams.html" >IEnsureParams</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IFindItemResult.html" >IFindItemResult</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IFindItemsResult.html" >IFindItemsResult</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IGroupInfo.html" >IGroupInfo</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IGroupParent.html" >IGroupParent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IItemBase.html" >IItemBase</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IItemTree.html" >IItemTree</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IItemTreeInfo.html" >IItemTreeInfo</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/ILayoutInfo.html" >ILayoutInfo</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/ILayoutInfos.html" >ILayoutInfos</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IParentListInfoResult.html" >IParentListInfoResult</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IRange.html" >IRange</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IRangeEvent.html" >IRangeEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IRectOverlapInfos.html" >IRectOverlapInfos</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/ISortInfos.html" >ISortInfos</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IStepRangeEvent.html" >IStepRangeEvent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/ITooltipParams.html" >ITooltipParams</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IValidationError.html" >IValidationError</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IViewListResult.html" >IViewListResult</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IViewPort.html" >IViewPort</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IViewPortItem.html" >IViewPortItem</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IViewPortRefreshParams.html" >IViewPortRefreshParams</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/Point.html" >Point</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-pipes-links"
+                            >
+                            <span class="fa fa-plus"></span>
+                            <span>Pipes</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-pipes-links"
+                            >
+                                <li class="link">
+                                    <a href="../pipes/KeysPipe.html" >KeysPipe</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../pipes/SafeHTMLPipe.html" >SafeHTMLPipe</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../pipes/SafeStylePipe.html" >SafeStylePipe</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../pipes/StringToDateFormatPipe.html" >StringToDateFormatPipe</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../pipes/TimeAgoPipe.html" >TimeAgoPipe</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/enumerations.html" data-type="entity-link"  class="active" >Enums</a>
+                                </li>
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                    </li>
+            
+            
+                </ul>
+            
+            </nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+                   
+                       <ul class="list">
+                   
+                           <li class="title">
+                               <a href="../index.html">@deja-js/component</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                   
+                               <div id="book-search-input" role="search">
+                                   <input type="text" placeholder="Type to search">
+                               </div>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                               <ul class="links">
+                                       <li class="link">
+                                           <a 
+                                               
+                                                href="../overview.html" 
+                                                href="../overview.html" 
+                                               >
+                                               <span class="fa fa-th"></span>Overview
+                                           </a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./changelog.html"
+                                               >
+                                               <span class="fa fa-file-text-o"></span>CHANGELOG
+                                           </a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./contributing.html"
+                                               >
+                                               <span class="fa fa-file-text-o"></span>CONTRIBUTING
+                                           </a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./license.html"
+                                               >
+                                               <span class="fa fa-file-text-o"></span>LICENSE
+                                           </a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../modules.html" >
+                                   <div class="menu-toggler linked" data-toggle="collapse"
+                                           data-target="#modules-links"
+                                   >
+                                       <span class="fa fa-archive"></span>
+                                       <span class="link-name">Modules</span>
+                                       <span class="fa fa-angle-down"></span>
+                                   </div>
+                               </a>
+                               <ul class="links collapse "
+                                       id="modules-links"
+                   >
+                                       <li class="link">
+                                           <a href="../modules/CloningModule.html" >CloningModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaAccordionModule.html" >DejaAccordionModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaAutosizeTextAreaModule.html" >DejaAutosizeTextAreaModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaBackdropModule.html" >DejaBackdropModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaBoldQueryModule.html" >DejaBoldQueryModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaChildValidatorModule.html" >DejaChildValidatorModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaChipsModule.html" >DejaChipsModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaCircularPickerModule.html" >DejaCircularPickerModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaClipboardModule.html" >DejaClipboardModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaCodeViewerModule.html" >DejaCodeViewerModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaColorPickerModule.html" >DejaColorPickerModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaColorSelectorModule.html" >DejaColorSelectorModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaDatePickerModule.html" >DejaDatePickerModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaDateSelectorModule.html" >DejaDateSelectorModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaDialogModule.html" >DejaDialogModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaDragDropModule.html" >DejaDragDropModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaDropDownModule.html" >DejaDropDownModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaEditableModule.html" >DejaEditableModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaFormModule.html" >DejaFormModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaGridModule.html" >DejaGridModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaIFrameModule.html" >DejaIFrameModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaListLoaderModule.html" >DejaListLoaderModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaMarkdownModule.html" >DejaMarkdownModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaMenuModule.html" >DejaMenuModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaMessageBoxModule.html" >DejaMessageBoxModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaMonacoEditorModule.html" >DejaMonacoEditorModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaPipeModule.html" >DejaPipeModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaRangeModule.html" >DejaRangeModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaSelectModule.html" >DejaSelectModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaSortingModule.html" >DejaSortingModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaSplitterModule.html" >DejaSplitterModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaTagModule.html" >DejaTagModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaTextMetricsModule.html" >DejaTextMetricsModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaTilesModule.html" >DejaTilesModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaTooltipModule.html" >DejaTooltipModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaTreeListModule.html" >DejaTreeListModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaViewPortModule.html" >DejaViewPortModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/GroupingModule.html" >GroupingModule</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#components-links"
+                   >
+                                   <span class="fa fa-cogs"></span>
+                                   <span>Components</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="components-links"
+                   >
+                                       <li class="link">
+                                           <a href="../components/DejaAccordionBodyComponent.html" >DejaAccordionBodyComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaAccordionComponent.html" >DejaAccordionComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaAccordionGroupComponent.html" >DejaAccordionGroupComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaAccordionHeaderComponent.html" >DejaAccordionHeaderComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaBackdropComponent.html" >DejaBackdropComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaBoldQueryComponent.html" >DejaBoldQueryComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaChipsComponent.html" >DejaChipsComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaCircularPickerComponent.html" >DejaCircularPickerComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaCodeViewerComponent.html" >DejaCodeViewerComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaColorFabComponent.html" >DejaColorFabComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaColorPickerComponent.html" >DejaColorPickerComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaColorSelectorComponent.html" >DejaColorSelectorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaDatePickerComponent.html" >DejaDatePickerComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaDateSelectorComponent.html" >DejaDateSelectorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaDialogComponent.html" >DejaDialogComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaDropDownComponent.html" >DejaDropDownComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaGridComponent.html" >DejaGridComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaGridGroupAreaComponent.html" >DejaGridGroupAreaComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaGridHeaderComponent.html" >DejaGridHeaderComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaGridParentRowComponent.html" >DejaGridParentRowComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaGridRowComponent.html" >DejaGridRowComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaIFrameComponent.html" >DejaIFrameComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaItemComponent.html" >DejaItemComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaListLoaderComponent.html" >DejaListLoaderComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaMarkdownComponent.html" >DejaMarkdownComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaMenuComponent.html" >DejaMenuComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaMessageBoxComponent.html" >DejaMessageBoxComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaMonacoEditorComponent.html" >DejaMonacoEditorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaRangeComponent.html" >DejaRangeComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaSelectComponent.html" >DejaSelectComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaSnackbarComponent.html" >DejaSnackbarComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaSortIndicatorComponent.html" >DejaSortIndicatorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaSplitterComponent.html" >DejaSplitterComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaTagComponent.html" >DejaTagComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaTileComponent.html" >DejaTileComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaTileGroupComponent.html" >DejaTileGroupComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaTilesComponent.html" >DejaTilesComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaTooltipComponent.html" >DejaTooltipComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaTreeListComponent.html" >DejaTreeListComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaViewPortComponent.html" >DejaViewPortComponent</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#directives-links"
+                   >
+                                   <span class="fa fa-code"></span>
+                                   <span>Directives</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="directives-links"
+                   >
+                                       <li class="link">
+                                           <a href="../directives/DateValidatorDirective.html" >DateValidatorDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaAutosizeTextAreaDirective.html" >DejaAutosizeTextAreaDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaChildValidatorDirective.html" >DejaChildValidatorDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaDraggableDirective.html" >DejaDraggableDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaDroppableDirective.html" >DejaDroppableDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaEditableDirective.html" >DejaEditableDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaMouseDraggableDirective.html" >DejaMouseDraggableDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaMouseDroppableDirective.html" >DejaMouseDroppableDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaTooltipDirective.html" >DejaTooltipDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/PendingOnFocusDirective.html" >PendingOnFocusDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/SplitAreaDirective.html" >SplitAreaDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/SplitGutterDirective.html" >SplitGutterDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/ValidateOnBlurDirective.html" >ValidateOnBlurDirective</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#classes-links"
+                   >
+                                   <span class="fa fa-file-code-o"></span>
+                                   <span>Classes</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="classes-links"
+                   >
+                                       <li class="link">
+                                           <a href="../classes/Circle.html" >Circle</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Color.html" >Color</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/ColorEvent.html" >ColorEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DateUtils.html" >DateUtils</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaCancelableEvent.html" >DejaCancelableEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaChipsCloseEvent.html" >DejaChipsCloseEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaColorFab.html" >DejaColorFab</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaGridColumnsLayoutInfos.html" >DejaGridColumnsLayoutInfos</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaGridRowEvent.html" >DejaGridRowEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaGridRowsEvent.html" >DejaGridRowsEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaItemEvent.html" >DejaItemEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaItemsEvent.html" >DejaItemsEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaTile.html" >DejaTile</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/DejaTreeListScrollEvent.html" >DejaTreeListScrollEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Diacritics.html" >Diacritics</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/EditorOptions.html" >EditorOptions</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/EditorScrollbarOptions.html" >EditorScrollbarOptions</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/GlobalEventEmmitter.html" >GlobalEventEmmitter</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/GroupingService.html" >GroupingService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/HtmlUtils.html" >HtmlUtils</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/IDejaGridColumnLayout.html" >IDejaGridColumnLayout</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/IDejaGridParentRow.html" >IDejaGridParentRow</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/ItemListBase.html" >ItemListBase</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/ItemListService.html" >ItemListService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/JsonUtils.html" >JsonUtils</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/MaterialColor.html" >MaterialColor</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Position.html" >Position</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Range.html" >Range</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Rect.html" >Rect</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/Size.html" >Size</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/SortingService.html" >SortingService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/UUID.html" >UUID</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/UnitValue.html" >UnitValue</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/ValidationMessages.html" >ValidationMessages</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/ValueAccessor.html" >ValueAccessor</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#injectables-links"
+                   >
+                                   <span class="fa fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="../injectables/CloningService.html" >CloningService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/DejaClipboardService.html" >DejaClipboardService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/DejaMouseDragDropService.html" >DejaMouseDragDropService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/DejaTextMetricsService.html" >DejaTextMetricsService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/DejaTilesLayoutProvider.html" >DejaTilesLayoutProvider</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/DejaTooltipService.html" >DejaTooltipService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/GlobalEventService.html" >GlobalEventService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/MaterialColors.html" >MaterialColors</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/MonacoEditorService.html" >MonacoEditorService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/ViewPortService.html" >ViewPortService</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#interfaces-links"
+                   >
+                                   <span class="fa fa-info"></span>
+                                   <span>Interfaces</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="interfaces-links"
+                   >
+                                       <li class="link">
+                                           <a href="../interfaces/IAnimation.html" >IAnimation</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IAreaData.html" >IAreaData</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/ICircularRange.html" >ICircularRange</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/ICircularValue.html" >ICircularValue</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IConfig.html" >IConfig</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDateSelectorItem.html" >IDateSelectorItem</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaDragContext.html" >IDejaDragContext</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaDragEvent.html" >IDejaDragEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaDropContext.html" >IDejaDropContext</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaDropEvent.html" >IDejaDropEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaGridColumn.html" >IDejaGridColumn</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaGridColumnEvent.html" >IDejaGridColumnEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaGridColumnLayoutEvent.html" >IDejaGridColumnLayoutEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaGridColumnSizeEvent.html" >IDejaGridColumnSizeEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaGridGroupsEvent.html" >IDejaGridGroupsEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaGridParentRowColumnLayout.html" >IDejaGridParentRowColumnLayout</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaGridRow.html" >IDejaGridRow</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaMouseDraggableContext.html" >IDejaMouseDraggableContext</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaMouseDroppableContext.html" >IDejaMouseDroppableContext</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaTile.html" >IDejaTile</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaTileEffect.html" >IDejaTileEffect</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaTilesAddEvent.html" >IDejaTilesAddEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaTilesCancelableEvent.html" >IDejaTilesCancelableEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaTilesEvent.html" >IDejaTilesEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaTilesModelEvent.html" >IDejaTilesModelEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaTilesRefreshParams.html" >IDejaTilesRefreshParams</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaTilesRemoveEvent.html" >IDejaTilesRemoveEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaViewPortItem.html" >IDejaViewPortItem</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDragCursorInfos.html" >IDragCursorInfos</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDragDropContext.html" >IDragDropContext</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDragDropInfos.html" >IDragDropInfos</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDragSelection.html" >IDragSelection</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDropCursorInfos.html" >IDropCursorInfos</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDropDownPosition.html" >IDropDownPosition</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDropDownResetParams.html" >IDropDownResetParams</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IEnsureParams.html" >IEnsureParams</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IFindItemResult.html" >IFindItemResult</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IFindItemsResult.html" >IFindItemsResult</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IGroupInfo.html" >IGroupInfo</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IGroupParent.html" >IGroupParent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IItemBase.html" >IItemBase</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IItemTree.html" >IItemTree</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IItemTreeInfo.html" >IItemTreeInfo</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/ILayoutInfo.html" >ILayoutInfo</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/ILayoutInfos.html" >ILayoutInfos</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IParentListInfoResult.html" >IParentListInfoResult</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IRange.html" >IRange</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IRangeEvent.html" >IRangeEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IRectOverlapInfos.html" >IRectOverlapInfos</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/ISortInfos.html" >ISortInfos</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IStepRangeEvent.html" >IStepRangeEvent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/ITooltipParams.html" >ITooltipParams</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IValidationError.html" >IValidationError</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IViewListResult.html" >IViewListResult</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IViewPort.html" >IViewPort</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IViewPortItem.html" >IViewPortItem</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IViewPortRefreshParams.html" >IViewPortRefreshParams</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/Point.html" >Point</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#pipes-links"
+                   >
+                                   <span class="fa fa-plus"></span>
+                                   <span>Pipes</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="pipes-links"
+                   >
+                                       <li class="link">
+                                           <a href="../pipes/KeysPipe.html" >KeysPipe</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../pipes/SafeHTMLPipe.html" >SafeHTMLPipe</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../pipes/SafeStylePipe.html" >SafeStylePipe</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../pipes/StringToDateFormatPipe.html" >StringToDateFormatPipe</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../pipes/TimeAgoPipe.html" >TimeAgoPipe</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/enumerations.html" data-type="entity-link"  class="active" >Enums</a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                           </li>
+                   
+                   
+                       </ul>
+                   
+                   </nav>
+               </div>
+               <div class="content miscellaneous-enumerations">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Miscellaneous - Enumerations</li>
+</ol>
+
+    <h3>src/common/core/keycodes.enum.ts</h3>
+    <section>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>KeyCodes</b>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Backspace
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>8</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Tab
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>9</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Enter
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>13</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Shift
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>16</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Ctrl
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>17</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Alt
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>18</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Pause
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>19</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;CapsLock
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>20</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Escape
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>27</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Space
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>32</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;PageUp
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>33</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;PageDown
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>34</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;End
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>35</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Home
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>36</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;LeftArrow
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>37</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;UpArrow
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>38</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;RightArrow
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>39</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;DownArrow
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>40</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Insert
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>45</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Delete
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>46</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Key0
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>48</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Key1
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>49</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Key2
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>50</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Key3
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>51</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Key4
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>52</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Key5
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>53</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Key6
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>54</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Key7
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>55</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Key8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>56</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Key9
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>57</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyA
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>65</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyB
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>66</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyC
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>67</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyD
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>68</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyE
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>69</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyF
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>70</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyG
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>71</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyH
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>72</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyI
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>73</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyJ
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>74</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyK
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>75</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyL
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>76</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyM
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>77</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyN
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>78</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyO
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>79</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyP
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>80</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyQ
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>81</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyR
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>82</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyS
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>83</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyT
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>84</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyU
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>85</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyV
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>86</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyW
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>87</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyX
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>88</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyY
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>89</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;KeyZ
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>90</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;LeftMeta
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>91</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;RightMeta
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>92</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Select
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>93</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Numpad0
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>96</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Numpad1
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>97</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Numpad2
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>98</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Numpad3
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>99</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Numpad4
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>100</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Numpad5
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>101</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Numpad6
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>102</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Numpad7
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>103</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Numpad8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>104</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Numpad9
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>105</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Multiply
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>106</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Add
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>107</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Subtract
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>109</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Decimal
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>110</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Divide
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>111</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;F1
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>112</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;F2
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>113</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;F3
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>114</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;F4
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>115</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;F5
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>116</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;F6
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>117</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;F7
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>118</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;F8
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>119</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;F9
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>120</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;F10
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>121</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;F11
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>122</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;F12
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>123</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;NumLock
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>144</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;ScrollLock
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>145</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Semicolon
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>186</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Equals
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>187</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Comma
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>188</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Dash
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>189</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Period
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>190</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;ForwardSlash
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>191</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;GraveAccent
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>192</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;OpenBracket
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>219</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;BackSlash
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>220</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;CloseBracket
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>221</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;SingleQuote
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>222</code>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+    </section>
+    <h3>src/component/circular-picker/circular-picker.component.ts</h3>
+    <section>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>ClockwiseFactorEnum</b>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;clockwise
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;counterClockwise
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>1</code>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+    </section>
+    <h3>src/component/date-selector/date-selector.component.ts</h3>
+    <section>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>DaysOfWeek</b>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Sunday
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>0</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Monday
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>1</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Tuesday
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>2</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Wednesday
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>3</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Thursday
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>4</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Friday
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>5</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;Saturday
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>6</code>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+    </section>
+    <h3>src/component/select/select.component.ts</h3>
+    <section>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>DejaSelectSelectionPosition</b>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;above
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>0</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;below
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>1</code>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+    </section>
+    <h3>src/component/viewport/viewport.component.ts</h3>
+    <section>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>DejaViewPortScrollStyle</b>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;scrollbar
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;buttons
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+    </section>
+    <h3>src/common/core/graphics/directions.ts</h3>
+    <section>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Directions</b>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;none
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>0</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;left
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>1</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;right
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>2</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;top
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>4</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;bottom
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <i>Value: </i><code>8</code>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;horizontal
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;vertical
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;all
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+    </section>
+    <h3>src/common/core/graphics/rect.ts</h3>
+    <section>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>RectOverlapDirection</b>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;horizontal
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;vertical
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+    </section>
+    <h3>src/common/core/item-list/viewport.service.ts</h3>
+    <section>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>ViewportMode</b>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;disabled
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;fixed
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;variable
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;auto
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>ViewportDirection</b>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;vertical
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;horizontal
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+    </section>
+    <h3>src/common/core/sorting/sort-order.model.ts</h3>
+    <section>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>SortOrder</b>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-description"><p>Ordres de tri possibles </p>
+    </div>
+                            </td>
+                        </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;ascending
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    &nbsp;descending
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+    </section>
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script>var COMPODOC_CURRENT_PAGE_DEPTH = 1;</script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
+
+    </body>
+</html>

@@ -779,10 +779,26 @@
                         </ul>
                     </li>
             
-            
                     <li class="chapter">
-                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                </li>
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
                     </li>
+            
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1557,10 +1573,26 @@
                                </ul>
                            </li>
                    
-                   
                            <li class="chapter">
-                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
                            </li>
+                   
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1614,6 +1646,44 @@
 
 
             <section>
+                <h3 id="index">Index</h3>
+                <table class="table table-sm table-bordered index-table">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <h6><b>Methods</b></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <ul class="index-list">
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#clone">clone</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#clone$">clone$</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#cloneSync">cloneSync</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#cloneSyncWithPrototype">cloneSyncWithPrototype</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#cloneWithPrototype$">cloneWithPrototype$</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#deepCopy">deepCopy</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+
+            <section>
                 
                     <h3 id="methods">
                         Methods
@@ -1622,13 +1692,52 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="clone"></a>
+                                    <b><span class="modifier">Public</span> clone</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play "></span>
+                                    <code>clone(object: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="121" class="link-to-prism">src/common/core/cloning/cloning.service.ts:121</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+            
+                                        </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="clone$"></a>
                                     <b><span class="modifier">Public</span> clone$</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                         <span class="modifier-icon method fa fa-play "></span>
-                                    <code>clone$(object: any, type: )</code>
+                                    <code>clone$(object: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, type: literal type|object)</code>
                                 </td>
                             </tr>
             
@@ -1646,26 +1755,33 @@
             
                                         <div class="io-description">
                                                 <b>Parameters :</b>
-                                                <ul class="jsdoc-params">
-                                                        <li>
-                                                            <div>
-                                                                <b>object</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>The object to clone.</p>
-            
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div>
-                                                                <b>type</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>The type of object to clone</p>
-            
-                                                            </div>
-                                                        </li>
-                                                </ul>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>object</td>
+                                                              <td>
+                                                              </td>
+                                                              <td><p>The object to clone.</p>
+            </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>type</td>
+                                                              <td>
+                                                              </td>
+                                                              <td><p>The type of object to clone</p>
+            </td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
                                         </div>
                                         <div class="io-description">
                                             <b>Returns : </b>    <code>Observable&lt;&gt;</code>
@@ -1682,13 +1798,14 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="cloneSync"></a>
                                     <b><span class="modifier">Public</span> cloneSync</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                         <span class="modifier-icon method fa fa-play "></span>
-                                    <code>cloneSync(obj: object, target: )</code>
+                                    <code>cloneSync(obj: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/object" target="_blank">object</a>, target: literal type|object)</code>
                                 </td>
                             </tr>
             
@@ -1706,26 +1823,33 @@
             
                                         <div class="io-description">
                                                 <b>Parameters :</b>
-                                                <ul class="jsdoc-params">
-                                                        <li>
-                                                            <div>
-                                                                <b>object</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>The object to clone.</p>
-            
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div>
-                                                                <b>target</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>The type or an instance of the target</p>
-            
-                                                            </div>
-                                                        </li>
-                                                </ul>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>object</td>
+                                                              <td>
+                                                              </td>
+                                                              <td><p>The object to clone.</p>
+            </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>target</td>
+                                                              <td>
+                                                              </td>
+                                                              <td><p>The type or an instance of the target</p>
+            </td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
                                         </div>
                                         <div class="io-description">
                                             <b>Returns : </b>    <code>T</code>
@@ -1742,13 +1866,14 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="cloneSyncWithPrototype"></a>
                                     <b><span class="modifier">Public</span> cloneSyncWithPrototype</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                         <span class="modifier-icon method fa fa-play "></span>
-                                    <code>cloneSyncWithPrototype(object: any)</code>
+                                    <code>cloneSyncWithPrototype(object: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
                                 </td>
                             </tr>
             
@@ -1762,10 +1887,10 @@
                             <tr>
                                 <td class="col-md-4">
             
-                                        <div class="io-description">
+                                        <div>
                                         </div>
                                         <div class="io-description">
-                                            <b>Returns : </b>    <code>void</code>
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
             
                                         </div>
                                             <div class="io-description">
@@ -1779,13 +1904,14 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="cloneWithPrototype$"></a>
                                     <b><span class="modifier">Public</span> cloneWithPrototype$</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                         <span class="modifier-icon method fa fa-play "></span>
-                                    <code>cloneWithPrototype$(object: any)</code>
+                                    <code>cloneWithPrototype$(object: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
                                 </td>
                             </tr>
             
@@ -1799,47 +1925,10 @@
                             <tr>
                                 <td class="col-md-4">
             
-                                        <div class="io-description">
+                                        <div>
                                         </div>
                                         <div class="io-description">
-                                            <b>Returns : </b>    <code>void</code>
-            
-                                        </div>
-                                            <div class="io-description">
-                                                
-                                            </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <b><span class="modifier">Public</span> clone</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>clone(object: any)</code>
-                                </td>
-                            </tr>
-            
-            
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="121" class="link-to-prism">src/common/core/cloning/cloning.service.ts:121</a></div>
-                                        </td>
-                                    </tr>
-            
-                            <tr>
-                                <td class="col-md-4">
-            
-                                        <div class="io-description">
-                                        </div>
-                                        <div class="io-description">
-                                            <b>Returns : </b>    <code>void</code>
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
             
                                         </div>
                                             <div class="io-description">
@@ -1853,13 +1942,14 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="deepCopy"></a>
                                     <b><span class="modifier">Public</span> deepCopy</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                         <span class="modifier-icon method fa fa-play "></span>
-                                    <code>deepCopy(...objects: [])</code>
+                                    <code>deepCopy(...objects: any[])</code>
                                 </td>
                             </tr>
             
@@ -1873,10 +1963,10 @@
                             <tr>
                                 <td class="col-md-4">
             
-                                        <div class="io-description">
+                                        <div>
                                         </div>
                                         <div class="io-description">
-                                            <b>Returns : </b>    <code>void</code>
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
             
                                         </div>
                                             <div class="io-description">

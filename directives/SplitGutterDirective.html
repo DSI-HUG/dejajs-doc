@@ -779,10 +779,26 @@
                         </ul>
                     </li>
             
-            
                     <li class="chapter">
-                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                </li>
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
                     </li>
+            
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1557,10 +1573,26 @@
                                </ul>
                            </li>
                    
-                   
                            <li class="chapter">
-                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
                            </li>
+                   
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1629,83 +1661,35 @@
         </section>
 
             <section>
-                <h3 id="inputs">Inputs</h3>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-2">
-                                    <code>direction</code>
-                                </td>
-                                <td class="col-md-10">
-                                    <div><p>Direction of the separator
-Can be <code>horizontal</code> or <code>vertical</code></p>
-</div>
-                                </td>
-                            </tr>
-                                    <tr>
-                                        <td class="col-md-2" colspan="2">
-                                            <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/component/splitter/split-gutter.directive.ts:31</a></div>
-                                        </td>
-                                    </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-2">
-                                    <code>disabled</code>
-                                </td>
-                                <td class="col-md-10">
-                                    <div><p>Disable the separator
-By default <code>false</code></p>
-</div>
-                                </td>
-                            </tr>
-                                    <tr>
-                                        <td class="col-md-2" colspan="2">
-                                            <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/component/splitter/split-gutter.directive.ts:48</a></div>
-                                        </td>
-                                    </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-2">
-                                    <code>order</code>
-                                </td>
-                                <td class="col-md-10">
-                                    <div><p>Order of the seperator</p>
-</div>
-                                </td>
-                            </tr>
-                                    <tr>
-                                        <td class="col-md-2" colspan="2">
-                                            <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/component/splitter/split-gutter.directive.ts:22</a></div>
-                                        </td>
-                                    </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-2">
-                                    <code>size</code>
-                                </td>
-                                <td class="col-md-10">
-                                    <div><p>Separator size in pixel</p>
-</div>
-                                </td>
-                            </tr>
-                                    <tr>
-                                        <td class="col-md-2" colspan="2">
-                                            <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/component/splitter/split-gutter.directive.ts:39</a></div>
-                                        </td>
-                                    </tr>
-                        </tbody>
-                    </table>
+                <h3 id="index">Index</h3>
+                <table class="table table-sm table-bordered index-table">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <h6><b>Inputs</b></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <ul class="index-list">
+                                    <li>
+                                        <a href="#direction">direction</a>
+                                    </li>
+                                    <li>
+                                        <a href="#disabled">disabled</a>
+                                    </li>
+                                    <li>
+                                        <a href="#order">order</a>
+                                    </li>
+                                    <li>
+                                        <a href="#size">size</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
-
 
             <section>
                 <h3 id="constructor">Constructor</h3>
@@ -1731,6 +1715,89 @@ By default <code>false</code></p>
                         </tbody>
                     </table>
             </section>
+
+            <section>
+                <h3 id="inputs">Inputs</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <a name="direction"></a>
+                                    <code>direction</code>
+                                </td>
+                                <td class="col-md-10">
+                                    <div><p>Direction of the separator
+Can be <code>horizontal</code> or <code>vertical</code></p>
+</div>
+                                </td>
+                            </tr>
+                                    <tr>
+                                        <td class="col-md-2" colspan="2">
+                                            <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/component/splitter/split-gutter.directive.ts:31</a></div>
+                                        </td>
+                                    </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <a name="disabled"></a>
+                                    <code>disabled</code>
+                                </td>
+                                <td class="col-md-10">
+                                    <div><p>Disable the separator
+By default <code>false</code></p>
+</div>
+                                </td>
+                            </tr>
+                                    <tr>
+                                        <td class="col-md-2" colspan="2">
+                                            <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/component/splitter/split-gutter.directive.ts:48</a></div>
+                                        </td>
+                                    </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <a name="order"></a>
+                                    <code>order</code>
+                                </td>
+                                <td class="col-md-10">
+                                    <div><p>Order of the seperator</p>
+</div>
+                                </td>
+                            </tr>
+                                    <tr>
+                                        <td class="col-md-2" colspan="2">
+                                            <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/component/splitter/split-gutter.directive.ts:22</a></div>
+                                        </td>
+                                    </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <a name="size"></a>
+                                    <code>size</code>
+                                </td>
+                                <td class="col-md-10">
+                                    <div><p>Separator size in pixel</p>
+</div>
+                                </td>
+                            </tr>
+                                    <tr>
+                                        <td class="col-md-2" colspan="2">
+                                            <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/component/splitter/split-gutter.directive.ts:39</a></div>
+                                        </td>
+                                    </tr>
+                        </tbody>
+                    </table>
+            </section>
+
 
 
 
@@ -1833,7 +1900,7 @@ export class SplitGutterDirective {
 }
 </code></pre>
     </div>
-    
+
 </div>
 
 

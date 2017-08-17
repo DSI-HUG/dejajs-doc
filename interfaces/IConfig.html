@@ -779,10 +779,26 @@
                         </ul>
                     </li>
             
-            
                     <li class="chapter">
-                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                </li>
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
                     </li>
+            
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1557,10 +1573,26 @@
                                </ul>
                            </li>
                    
-                   
                            <li class="chapter">
-                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
                            </li>
+                   
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1608,6 +1640,34 @@
         </p>
 
 
+        <section>
+            <h3 id="index">Index</h3>
+            <table class="table table-sm table-bordered index-table">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Properties</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                        <a href="#range">range</a>
+                                </li>
+                                <li>
+                                        <a href="#stepAngle">stepAngle</a>
+                                </li>
+                                <li>
+                                        <a href="#steps">steps</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
 
 
             <section>
@@ -1616,13 +1676,14 @@
                         <tbody>
                                 <tr>
                                     <td class="col-md-4">
+                                        <a name="range"></a>
                                         <b>range</b>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="col-md-4">
                                         <code>range:     <code><a href="../interfaces/ICircularRange.html" target="_self" >ICircularRange</a></code>
-</bcode>
+</code>
                                     </td>
                                 </tr>
 
@@ -1648,20 +1709,21 @@
                         <tbody>
                                 <tr>
                                     <td class="col-md-4">
+                                        <a name="stepAngle"></a>
                                         <b>stepAngle</b>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="col-md-4">
-                                        <code>stepAngle:     <code>number</code>
-</bcode>
+                                        <code>stepAngle:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
                                     </td>
                                 </tr>
 
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <i>Type : </i>    <code>number</code>
+                                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
 
                                         </td>
                                     </tr>
@@ -1680,20 +1742,21 @@
                         <tbody>
                                 <tr>
                                     <td class="col-md-4">
+                                        <a name="steps"></a>
                                         <b>steps</b>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td class="col-md-4">
-                                        <code>steps:     <code>number</code>
-</bcode>
+                                        <code>steps:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
                                     </td>
                                 </tr>
 
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <i>Type : </i>    <code>number</code>
+                                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
 
                                         </td>
                                     </tr>
@@ -1865,10 +1928,10 @@ export class DejaCircularPickerComponent implements OnInit, ControlValueAccessor
                             if (this.outerLabels) {
                                 circle &#x3D; circle.inflate(this.labelsDiameter);
 
-                                for (let i &#x3D; 0; i &lt; this.configs.length; i++) {
+                                for (const conf of this.configs) {
                                     contains &#x3D; circle.containsPoint(new Position(event.pageX, event.pageY));
                                     if (contains) {
-                                        this.selectedConfig &#x3D; this.configs[i];
+                                        this.selectedConfig &#x3D; conf;
                                         break;
                                     } else {
                                         circle &#x3D; circle.inflate(this.labelsDiameter);

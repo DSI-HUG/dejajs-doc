@@ -779,10 +779,26 @@
                         </ul>
                     </li>
             
-            
                     <li class="chapter">
-                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                </li>
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
                     </li>
+            
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1557,10 +1573,26 @@
                                </ul>
                            </li>
                    
-                   
                            <li class="chapter">
-                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
                            </li>
+                   
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1672,11 +1704,113 @@
 </section>
 
     <section>
+        <h3 id="index">Index</h3>
+        <table class="table table-sm table-bordered index-table">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <span class="modifier">Protected</span> <a href="#dropDownPosition">dropDownPosition</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Protected</span> <a href="#isMobile">isMobile</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <span class="modifier">Public</span> <a href="#close">close</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Public</span> <a href="#show">show</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#buttonAlignment">buttonAlignment</a>
+                            </li>
+                            <li>
+                                <a href="#dropdownContainerId">dropdownContainerId</a>
+                            </li>
+                            <li>
+                                <a href="#isVisible">isVisible</a>
+                            </li>
+                            <li>
+                                <a href="#menuAlignment">menuAlignment</a>
+                            </li>
+                            <li>
+                                <a href="#ownerElement">ownerElement</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#visibleChange">visibleChange</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3 id="constructor">Constructor</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>constructor(changeDetectorRef: <a href="https://angular.io/docs/ts/latest/api/core/index/ChangeDetectorRef-class.html" target="_blank">ChangeDetectorRef</a>, elementRef: <a href="https://angular.io/docs/ts/latest/api/core/index/ElementRef-class.html" target="_blank">ElementRef</a>, media: ObservableMedia)</code>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/component/menu/menu.component.ts:45</a></div>
+                                </td>
+                            </tr>
+    
+                </tbody>
+            </table>
+    </section>
+
+    <section>
         <h3 id="inputs">Inputs</h3>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
                         <td class="col-md-2">
+                            <a name="buttonAlignment"></a>
                             <code>buttonAlignment</code>
                         </td>
                         <td class="col-md-10">
@@ -1698,13 +1832,14 @@
                 <tbody>
                     <tr>
                         <td class="col-md-2">
+                            <a name="dropdownContainerId"></a>
                             <code>dropdownContainerId</code>
                         </td>
                         <td class="col-md-10">
                             <div><p>ID de l&#39;élement dans lequel le menu doit s&#39;afficher (le menu ne peut dépasser de l&#39;élement spécifié ici) </p>
 </div>
                               <p>
-                                <em>Type:</em>    <code>string</code>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
 
                               </p>
                         </td>
@@ -1720,6 +1855,7 @@
                 <tbody>
                     <tr>
                         <td class="col-md-2">
+                            <a name="isVisible"></a>
                             <code>isVisible</code>
                         </td>
                         <td class="col-md-10">
@@ -1741,6 +1877,7 @@
                 <tbody>
                     <tr>
                         <td class="col-md-2">
+                            <a name="menuAlignment"></a>
                             <code>menuAlignment</code>
                         </td>
                         <td class="col-md-10">
@@ -1762,6 +1899,7 @@
                 <tbody>
                     <tr>
                         <td class="col-md-2">
+                            <a name="ownerElement"></a>
                             <code>ownerElement</code>
                         </td>
                         <td class="col-md-10">
@@ -1788,6 +1926,7 @@
                 <tbody>
                     <tr>
                         <td class="col-md-2">
+                            <a name="visibleChange"></a>
                             <code>visibleChange</code>
                         </td>
                         <td class="col-md-10">
@@ -1805,24 +1944,81 @@
     </section>
 
     <section>
-        <h3 id="constructor">Constructor</h3>
+        
+            <h3 id="methods">
+                Methods
+            </h3>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
                         <td class="col-md-4">
-                            <code>constructor(changeDetectorRef: <a href="https://angular.io/docs/ts/latest/api/core/index/ChangeDetectorRef-class.html" target="_blank">ChangeDetectorRef</a>, elementRef: <a href="https://angular.io/docs/ts/latest/api/core/index/ElementRef-class.html" target="_blank">ElementRef</a>, media: ObservableMedia)</code>
+                            <a name="close"></a>
+                            <b><span class="modifier">Public</span> close</b>
                         </td>
                     </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play "></span>
+                            <code>close()</code>
+                        </td>
+                    </tr>
+    
+    
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/component/menu/menu.component.ts:45</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/component/menu/menu.component.ts:83</a></div>
                                 </td>
                             </tr>
     
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Ferme le menu. </p>
+    </div>
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="show"></a>
+                            <b><span class="modifier">Public</span> show</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play "></span>
+                            <code>show(event: MouseEvent)</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="72" class="link-to-prism">src/component/menu/menu.component.ts:72</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Affiche le menu. </p>
+    </div>
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
     </section>
-
 
     <section>
         
@@ -1833,13 +2029,14 @@
                 <tbody>
                     <tr>
                         <td class="col-md-4">
+                            <a name="dropDownPosition"></a>
                             <b><span class="modifier">Protected</span> dropDownPosition</b>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
                             <span class="modifier-icon fa fa-circle"></span><code>dropDownPosition:     <code><a href="../classes/Position.html" target="_self" >Position</a></code>
-    </bcode>
+    </code>
                         </td>
                     </tr>
                         <tr>
@@ -1853,19 +2050,22 @@
                                     <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/component/menu/menu.component.ts:41</a></div>
                                 </td>
                             </tr>
+    
+    
                 </tbody>
             </table>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
                         <td class="col-md-4">
+                            <a name="isMobile"></a>
                             <b><span class="modifier">Protected</span> isMobile</b>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
                             <span class="modifier-icon fa fa-circle"></span><code>isMobile:     <code></code>
-    </bcode>
+    </code>
                         </td>
                     </tr>
                         <tr>
@@ -1878,6 +2078,8 @@
                                     <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/component/menu/menu.component.ts:42</a></div>
                                 </td>
                             </tr>
+    
+    
                 </tbody>
             </table>
     </section>

@@ -779,10 +779,26 @@
                         </ul>
                     </li>
             
-            
                     <li class="chapter">
-                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                </li>
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
                     </li>
+            
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1557,10 +1573,26 @@
                                </ul>
                            </li>
                    
-                   
                            <li class="chapter">
-                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
                            </li>
+                   
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1622,16 +1654,67 @@
         </section>
 
             <section>
+                <h3 id="index">Index</h3>
+                <table class="table table-sm table-bordered index-table">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <h6><b>Inputs</b></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <ul class="index-list">
+                                    <li>
+                                        <a href="#deja-tooltip">deja-tooltip</a>
+                                    </li>
+                                    <li>
+                                        <a href="#tooltip-alignment">tooltip-alignment</a>
+                                    </li>
+                                    <li>
+                                        <a href="#tooltip-model">tooltip-model</a>
+                                    </li>
+                                    <li>
+                                        <a href="#tooltip-owner-alignment">tooltip-owner-alignment</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+            <section>
+                <h3 id="constructor">Constructor</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <code>constructor(elementRef: <a href="https://angular.io/docs/ts/latest/api/core/index/ElementRef-class.html" target="_blank">ElementRef</a>, tooltipService: <a href="../injectables/DejaTooltipService.html">DejaTooltipService</a>)</code>
+                                </td>
+                            </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/component/tooltip/tooltip.directive.ts:24</a></div>
+                                        </td>
+                                    </tr>
+            
+                        </tbody>
+                    </table>
+            </section>
+
+            <section>
                 <h3 id="inputs">Inputs</h3>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr>
                                 <td class="col-md-2">
+                                    <a name="deja-tooltip"></a>
                                     <code>deja-tooltip</code>
                                 </td>
                                 <td class="col-md-10">
                                       <p>
-                                        <em>Type:</em>    <code>string</code>
+                                        <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
 
                                       </p>
                                 </td>
@@ -1647,6 +1730,7 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-2">
+                                    <a name="tooltip-alignment"></a>
                                     <code>tooltip-alignment</code>
                                 </td>
                                 <td class="col-md-10">
@@ -1663,11 +1747,12 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-2">
+                                    <a name="tooltip-model"></a>
                                     <code>tooltip-model</code>
                                 </td>
                                 <td class="col-md-10">
                                       <p>
-                                        <em>Type:</em>    <code>any</code>
+                                        <em>Type:</em>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
 
                                       </p>
                                 </td>
@@ -1683,6 +1768,7 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-2">
+                                    <a name="tooltip-owner-alignment"></a>
                                     <code>tooltip-owner-alignment</code>
                                 </td>
                                 <td class="col-md-10">
@@ -1703,6 +1789,7 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-2">
+                                    <a name="tooltip-show"></a>
                                     <code>tooltip-show</code>
                                 </td>
                                 <td class="col-md-10">
@@ -1715,25 +1802,6 @@
                                             <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/component/tooltip/tooltip.directive.ts:24</a></div>
                                         </td>
                                     </tr>
-                        </tbody>
-                    </table>
-            </section>
-
-            <section>
-                <h3 id="constructor">Constructor</h3>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <code>constructor(elementRef: <a href="https://angular.io/docs/ts/latest/api/core/index/ElementRef-class.html" target="_blank">ElementRef</a>, tooltipService: <a href="../injectables/DejaTooltipService.html">DejaTooltipService</a>)</code>
-                                </td>
-                            </tr>
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/component/tooltip/tooltip.directive.ts:24</a></div>
-                                        </td>
-                                    </tr>
-            
                         </tbody>
                     </table>
             </section>
@@ -1782,7 +1850,7 @@ export class DejaTooltipDirective {
 }
 </code></pre>
     </div>
-    
+
 </div>
 
 

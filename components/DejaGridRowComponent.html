@@ -779,10 +779,26 @@
                         </ul>
                     </li>
             
-            
                     <li class="chapter">
-                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                </li>
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
                     </li>
+            
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1557,10 +1573,26 @@
                                </ul>
                            </li>
                    
-                   
                            <li class="chapter">
-                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
                            </li>
+                   
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1667,11 +1699,82 @@
 </section>
 
     <section>
+        <h3 id="index">Index</h3>
+        <table class="table table-sm table-bordered index-table">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <span class="modifier">Protected</span> <a href="#cellTemplate">cellTemplate</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Protected</span> <a href="#cellTemplateInternal">cellTemplateInternal</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Public</span> <a href="#columnLayout">columnLayout</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#cellTemplateExternal">cellTemplateExternal</a>
+                            </li>
+                            <li>
+                                <a href="#columnLayout">columnLayout</a>
+                            </li>
+                            <li>
+                                <a href="#flatIndex">flatIndex</a>
+                            </li>
+                            <li>
+                                <a href="#row">row</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h3 id="constructor">Constructor</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <code>constructor(changeDetectorRef: <a href="https://angular.io/docs/ts/latest/api/core/index/ChangeDetectorRef-class.html" target="_blank">ChangeDetectorRef</a>)</code>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/component/data-grid/data-grid-row/data-grid-row.component.ts:65</a></div>
+                                </td>
+                            </tr>
+    
+                </tbody>
+            </table>
+    </section>
+
+    <section>
         <h3 id="inputs">Inputs</h3>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
                         <td class="col-md-2">
+                            <a name="cellTemplateExternal"></a>
                             <code>cellTemplateExternal</code>
                         </td>
                         <td class="col-md-10">
@@ -1690,6 +1793,7 @@
                 <tbody>
                     <tr>
                         <td class="col-md-2">
+                            <a name="columnLayout"></a>
                             <code>columnLayout</code>
                         </td>
                         <td class="col-md-10">
@@ -1706,13 +1810,14 @@
                 <tbody>
                     <tr>
                         <td class="col-md-2">
+                            <a name="flatIndex"></a>
                             <code>flatIndex</code>
                         </td>
                         <td class="col-md-10">
                             <div><p>Index de la ligne sur la liste plate de ItemListService </p>
 </div>
                               <p>
-                                <em>Type:</em>    <code>number</code>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
 
                               </p>
                         </td>
@@ -1728,6 +1833,7 @@
                 <tbody>
                     <tr>
                         <td class="col-md-2">
+                            <a name="row"></a>
                             <code>row</code>
                         </td>
                         <td class="col-md-10">
@@ -1749,25 +1855,6 @@
     </section>
 
 
-    <section>
-        <h3 id="constructor">Constructor</h3>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-4">
-                            <code>constructor(changeDetectorRef: <a href="https://angular.io/docs/ts/latest/api/core/index/ChangeDetectorRef-class.html" target="_blank">ChangeDetectorRef</a>)</code>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/component/data-grid/data-grid-row/data-grid-row.component.ts:65</a></div>
-                                </td>
-                            </tr>
-    
-                </tbody>
-            </table>
-    </section>
-
 
     <section>
         
@@ -1778,13 +1865,14 @@
                 <tbody>
                     <tr>
                         <td class="col-md-4">
+                            <a name="cellTemplate"></a>
                             <b><span class="modifier">Protected</span> cellTemplate</b>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
                             <span class="modifier-icon fa fa-circle"></span><code>cellTemplate:     <code></code>
-    </bcode>
+    </code>
                         </td>
                     </tr>
                             <tr>
@@ -1792,19 +1880,22 @@
                                     <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/component/data-grid/data-grid-row/data-grid-row.component.ts:63</a></div>
                                 </td>
                             </tr>
+    
+    
                 </tbody>
             </table>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
                         <td class="col-md-4">
+                            <a name="cellTemplateInternal"></a>
                             <b><span class="modifier">Protected</span> cellTemplateInternal</b>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
                             <span class="modifier-icon fa fa-circle"></span><code>cellTemplateInternal:     <code></code>
-    </bcode>
+    </code>
                         </td>
                     </tr>
                         <tr>
@@ -1817,25 +1908,28 @@
                                     <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/component/data-grid/data-grid-row/data-grid-row.component.ts:33</a></div>
                                 </td>
                             </tr>
+    
                     <tr>
                         <td class="col-md-4">
                             <div class="io-description"><p>Template de cellule par defaut  définit dans le HTML de la grille </p>
     </div>
                         </td>
                     </tr>
+    
                 </tbody>
             </table>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
                         <td class="col-md-4">
+                            <a name="columnLayout"></a>
                             <b><span class="modifier">Public</span> columnLayout</b>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
                             <span class="modifier-icon fa fa-"></span><code>columnLayout:     <code></code>
-    </bcode>
+    </code>
                         </td>
                     </tr>
                             <tr>
@@ -1843,6 +1937,8 @@
                                     <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/component/data-grid/data-grid-row/data-grid-row.component.ts:59</a></div>
                                 </td>
                             </tr>
+    
+    
                 </tbody>
             </table>
     </section>

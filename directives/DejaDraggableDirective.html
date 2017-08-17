@@ -779,10 +779,26 @@
                         </ul>
                     </li>
             
-            
                     <li class="chapter">
-                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                </li>
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
                     </li>
+            
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1557,10 +1573,26 @@
                                </ul>
                            </li>
                    
-                   
                            <li class="chapter">
-                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
                            </li>
+                   
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1628,25 +1660,54 @@
         </section>
 
             <section>
-                <h3 id="inputs">Inputs</h3>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-2">
-                                    <code>deja-draggable</code>
-                                </td>
-                                <td class="col-md-10">
-                                </td>
-                            </tr>
-                                    <tr>
-                                        <td class="col-md-2" colspan="2">
-                                            <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/component/dragdrop/draggable.directive.ts:31</a></div>
-                                        </td>
-                                    </tr>
-                        </tbody>
-                    </table>
+                <h3 id="index">Index</h3>
+                <table class="table table-sm table-bordered index-table">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <h6><b>Properties</b></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <ul class="index-list">
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#context">context</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <h6><b>Methods</b></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <ul class="index-list">
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#ngOnDestroy">ngOnDestroy</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <h6><b>Inputs</b></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <ul class="index-list">
+                                    <li>
+                                        <a href="#deja-draggable">deja-draggable</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
-
 
             <section>
                 <h3 id="constructor">Constructor</h3>
@@ -1668,6 +1729,28 @@
             </section>
 
             <section>
+                <h3 id="inputs">Inputs</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-2">
+                                    <a name="deja-draggable"></a>
+                                    <code>deja-draggable</code>
+                                </td>
+                                <td class="col-md-10">
+                                </td>
+                            </tr>
+                                    <tr>
+                                        <td class="col-md-2" colspan="2">
+                                            <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/component/dragdrop/draggable.directive.ts:31</a></div>
+                                        </td>
+                                    </tr>
+                        </tbody>
+                    </table>
+            </section>
+
+
+            <section>
                 
                     <h3 id="methods">
                         Methods
@@ -1676,6 +1759,7 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="ngOnDestroy"></a>
                                     <b><span class="modifier">Public</span> ngOnDestroy</b>
                                 </td>
                             </tr>
@@ -1697,7 +1781,7 @@
                                 <td class="col-md-4">
             
                                         <div class="io-description">
-                                            <b>Returns : </b>    <code>void</code>
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
                                 </td>
@@ -1715,13 +1799,14 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="context"></a>
                                     <b><span class="modifier">Public</span> context</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>context:     <code></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                     <tr>
@@ -1729,6 +1814,8 @@
                                             <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/component/dragdrop/draggable.directive.ts:36</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
             </section>
@@ -1853,7 +1940,7 @@ export interface IDejaDragContext {
 }
 </code></pre>
     </div>
-    
+
 </div>
 
 

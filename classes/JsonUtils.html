@@ -779,10 +779,26 @@
                         </ul>
                     </li>
             
-            
                     <li class="chapter">
-                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                </li>
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
                     </li>
+            
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1557,10 +1573,26 @@
                                </ul>
                            </li>
                    
-                   
                            <li class="chapter">
-                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
                            </li>
+                   
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1611,6 +1643,41 @@
 
 
             <section>
+                <h3 id="index">Index</h3>
+                <table class="table table-sm table-bordered index-table">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <h6><b>Methods</b></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <ul class="index-list">
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#deserializeJson">deserializeJson</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#deserializeJson2">deserializeJson2</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#deserializeJsonList">deserializeJsonList</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#getOneFrom">getOneFrom</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#toMap">toMap</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
+
+            <section>
                 
                     <h3 id="methods">
                         Methods
@@ -1619,13 +1686,14 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="deserializeJson"></a>
                                     <b><span class="modifier">Public</span> deserializeJson</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                         <span class="modifier-icon method fa fa-play "></span>
-                                    <code>deserializeJson(obj: T, jsonObj: any)</code>
+                                    <code>deserializeJson(obj: T, jsonObj: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
                                 </td>
                             </tr>
             
@@ -1652,28 +1720,34 @@
             
                                         <div class="io-description">
                                                 <b>Parameters :</b>
-                                                <ul class="jsdoc-params">
-                                                        <li>
-                                                            <div>
-                                                                <b>obj</b>
-                                                                    :     <code>Object</code>
-            
-                                                            </div>
-                                                            <div>
-                                                                <p>: Object to deserialize into</p>
-            
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div>
-                                                                <b>jsonObj</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>: a JSON;</p>
-            
-                                                            </div>
-                                                        </li>
-                                                </ul>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>obj</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank" >Object</a></code>
+                                                              </td>
+                                                              <td><p>: Object to deserialize into</p>
+            </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>jsonObj</td>
+                                                              <td>
+                                                              </td>
+                                                              <td><p>: a JSON;</p>
+            </td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
                                         </div>
                                         <div class="io-description">
                                             <b>Returns : </b>    <code>T</code>
@@ -1690,13 +1764,14 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="deserializeJson2"></a>
                                     <b><span class="modifier">Public</span> deserializeJson2</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                         <span class="modifier-icon method fa fa-play "></span>
-                                    <code>deserializeJson2(clazz: , sourceObj: any, caseTransform: )</code>
+                                    <code>deserializeJson2(clazz: literal type, sourceObj: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, caseTransform: )</code>
                                 </td>
                             </tr>
             
@@ -1719,34 +1794,39 @@
             
                                         <div class="io-description">
                                                 <b>Parameters :</b>
-                                                <ul class="jsdoc-params">
-                                                        <li>
-                                                            <div>
-                                                                <b>clazz</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>The class of the object created</p>
-            
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div>
-                                                                <b>sourceObj</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>The JSON object</p>
-            
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div>
-                                                                <b>caseTransform</b>
-                                                            </div>
-                                                            <div>
-                                                                
-                                                            </div>
-                                                        </li>
-                                                </ul>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>clazz</td>
+                                                              <td>
+                                                              </td>
+                                                              <td><p>The class of the object created</p>
+            </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>sourceObj</td>
+                                                              <td>
+                                                              </td>
+                                                              <td><p>The JSON object</p>
+            </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>caseTransform</td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
                                         </div>
                                         <div class="io-description">
                                             <b>Returns : </b>    <code>T</code>
@@ -1764,13 +1844,14 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="deserializeJsonList"></a>
                                     <b><span class="modifier">Public</span> deserializeJsonList</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                         <span class="modifier-icon method fa fa-play "></span>
-                                    <code>deserializeJsonList(clazz: , sourceList: [], caseTransform: )</code>
+                                    <code>deserializeJsonList(clazz: literal type, sourceList: any[], caseTransform: )</code>
                                 </td>
                             </tr>
             
@@ -1788,32 +1869,37 @@
             
                                         <div class="io-description">
                                                 <b>Parameters :</b>
-                                                <ul class="jsdoc-params">
-                                                        <li>
-                                                            <div>
-                                                                <b>clazz</b>
-                                                            </div>
-                                                            <div>
-                                                                
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div>
-                                                                <b>sourceList</b>
-                                                            </div>
-                                                            <div>
-                                                                
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div>
-                                                                <b>caseTransform</b>
-                                                            </div>
-                                                            <div>
-                                                                
-                                                            </div>
-                                                        </li>
-                                                </ul>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>clazz</td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>sourceList</td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>caseTransform</td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
                                         </div>
                                         <div class="io-description">
                                             <b>Returns : </b>    <code>[]</code>
@@ -1830,73 +1916,14 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
-                                    <b><span class="modifier">Public</span> toMap</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>toMap(objList: [], idFieldName: string)</code>
-                                </td>
-                            </tr>
-            
-            
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="99" class="link-to-prism">src/common/util/JsonUtils.ts:99</a></div>
-                                        </td>
-                                    </tr>
-            
-                            <tr>
-                                <td class="col-md-4">
-                                        <div class="io-description"><p>Convert a list of object into a &quot;Map Object&quot; where attributes name are IDs and values are the objects</p>
-            </div>
-            
-                                        <div class="io-description">
-                                                <b>Parameters :</b>
-                                                <ul class="jsdoc-params">
-                                                        <li>
-                                                            <div>
-                                                                <b>objList</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>: List of object with an attribute &quot;id&quot; or &quot;ID&quot; or &quot;Id&quot;</p>
-            
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div>
-                                                                <b>idFieldName</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>: Field name to use insetead of id.</p>
-            
-                                                            </div>
-                                                        </li>
-                                                </ul>
-                                        </div>
-                                        <div class="io-description">
-                                            <b>Returns : </b>    <code>any</code>
-            
-                                        </div>
-                                            <div class="io-description">
-                                                
-                                            </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
+                                    <a name="getOneFrom"></a>
                                     <b><span class="modifier">Public</span> getOneFrom</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                         <span class="modifier-icon method fa fa-play "></span>
-                                    <code>getOneFrom(listPromise: Promise<any>, id: string, cacheName: string, idFieldName: string)</code>
+                                    <code>getOneFrom(listPromise: Promise<any>, id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, cacheName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, idFieldName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                                 </td>
                             </tr>
             
@@ -1914,44 +1941,47 @@
             
                                         <div class="io-description">
                                                 <b>Parameters :</b>
-                                                <ul class="jsdoc-params">
-                                                        <li>
-                                                            <div>
-                                                                <b>listPromise</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>Promise that returns a array of objects. Object can have an an attribute &quot;id&quot; or &quot;ID&quot; or &quot;Id&quot; or field named by the &#39;idFieldName&#39; param.</p>
-            
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div>
-                                                                <b>id</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>: The ID we want to get</p>
-            
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div>
-                                                                <b>cacheName</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>: The cache key to store it</p>
-            
-                                                            </div>
-                                                        </li>
-                                                        <li>
-                                                            <div>
-                                                                <b>idFieldName</b>
-                                                            </div>
-                                                            <div>
-                                                                <p>: Field name to use insetead of id.</p>
-            
-                                                            </div>
-                                                        </li>
-                                                </ul>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>listPromise</td>
+                                                              <td>
+                                                              </td>
+                                                              <td><p>Promise that returns a array of objects. Object can have an an attribute &quot;id&quot; or &quot;ID&quot; or &quot;Id&quot; or field named by the &#39;idFieldName&#39; param.</p>
+            </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>id</td>
+                                                              <td>
+                                                              </td>
+                                                              <td><p>: The ID we want to get</p>
+            </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>cacheName</td>
+                                                              <td>
+                                                              </td>
+                                                              <td><p>: The cache key to store it</p>
+            </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>idFieldName</td>
+                                                              <td>
+                                                              </td>
+                                                              <td><p>: Field name to use insetead of id.</p>
+            </td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
                                         </div>
                                         <div class="io-description">
                                             <b>Returns : </b>    <code>Promise&lt;any&gt;</code>
@@ -1960,6 +1990,74 @@
                                             <div class="io-description">
                                                 <p>One Promise with the selected element</p>
             
+                                            </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="toMap"></a>
+                                    <b><span class="modifier">Public</span> toMap</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play "></span>
+                                    <code>toMap(objList: any[], idFieldName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="99" class="link-to-prism">src/common/util/JsonUtils.ts:99</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>Convert a list of object into a &quot;Map Object&quot; where attributes name are IDs and values are the objects</p>
+            </div>
+            
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>objList</td>
+                                                              <td>
+                                                              </td>
+                                                              <td><p>: List of object with an attribute &quot;id&quot; or &quot;ID&quot; or &quot;Id&quot;</p>
+            </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>idFieldName</td>
+                                                              <td>
+                                                              </td>
+                                                              <td><p>: Field name to use insetead of id.</p>
+            </td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+            
+                                        </div>
+                                            <div class="io-description">
+                                                
                                             </div>
                                 </td>
                             </tr>

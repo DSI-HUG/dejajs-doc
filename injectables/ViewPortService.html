@@ -779,10 +779,26 @@
                         </ul>
                     </li>
             
-            
                     <li class="chapter">
-                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                </li>
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
                     </li>
+            
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1557,10 +1573,26 @@
                                </ul>
                            </li>
                    
-                   
                            <li class="chapter">
-                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
                            </li>
+                   
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1613,6 +1645,91 @@ Ce service permet la gestion du viewport verticalement ou horizontalement.</p>
 
             </p>
 
+
+            <section>
+                <h3 id="index">Index</h3>
+                <table class="table table-sm table-bordered index-table">
+                    <tbody>
+                        <tr>
+                            <td class="col-md-4">
+                                <h6><b>Properties</b></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <ul class="index-list">
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#direction">direction</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#direction$">direction$</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#element$">element$</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#ensureItem$">ensureItem$</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#itemDefaultSize">itemDefaultSize</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#items$">items$</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#itemsSize">itemsSize</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#itemsSize$">itemsSize$</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#maxSize$">maxSize$</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#mode">mode</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#mode$">mode$</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#scrollPosition$">scrollPosition$</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#viewPort$">viewPort$</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#viewPortResult$">viewPortResult$</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <h6><b>Methods</b></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <ul class="index-list">
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#clear">clear</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#deleteSizeCache">deleteSizeCache</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#ngOnDestroy">ngOnDestroy</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#refresh">refresh</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+
             <section>
                 <h3 id="constructor">Constructor</h3>
                     <table class="table table-sm table-bordered">
@@ -1641,70 +1758,7 @@ Ce service permet la gestion du viewport verticalement ou horizontalement.</p>
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
-                                    <b><span class="modifier">Public</span> ngOnDestroy</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>ngOnDestroy()</code>
-                                </td>
-                            </tr>
-            
-            
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="589" class="link-to-prism">src/common/core/item-list/viewport.service.ts:589</a></div>
-                                        </td>
-                                    </tr>
-            
-                            <tr>
-                                <td class="col-md-4">
-            
-                                        <div class="io-description">
-                                            <b>Returns : </b>    <code>void</code>
-            
-                                        </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <b><span class="modifier">Public</span> deleteSizeCache</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>deleteSizeCache()</code>
-                                </td>
-                            </tr>
-            
-            
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="593" class="link-to-prism">src/common/core/item-list/viewport.service.ts:593</a></div>
-                                        </td>
-                                    </tr>
-            
-                            <tr>
-                                <td class="col-md-4">
-            
-                                        <div class="io-description">
-                                            <b>Returns : </b>    <code>void</code>
-            
-                                        </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
+                                    <a name="clear"></a>
                                     <b><span class="modifier">Public</span> clear</b>
                                 </td>
                             </tr>
@@ -1726,7 +1780,7 @@ Ce service permet la gestion du viewport verticalement ou horizontalement.</p>
                                 <td class="col-md-4">
             
                                         <div class="io-description">
-                                            <b>Returns : </b>    <code>void</code>
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
                                 </td>
@@ -1737,6 +1791,73 @@ Ce service permet la gestion du viewport verticalement ou horizontalement.</p>
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="deleteSizeCache"></a>
+                                    <b><span class="modifier">Public</span> deleteSizeCache</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play "></span>
+                                    <code>deleteSizeCache()</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="593" class="link-to-prism">src/common/core/item-list/viewport.service.ts:593</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="ngOnDestroy"></a>
+                                    <b><span class="modifier">Public</span> ngOnDestroy</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play "></span>
+                                    <code>ngOnDestroy()</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="589" class="link-to-prism">src/common/core/item-list/viewport.service.ts:589</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="refresh"></a>
                                     <b><span class="modifier">Public</span> refresh</b>
                                 </td>
                             </tr>
@@ -1758,7 +1879,7 @@ Ce service permet la gestion du viewport verticalement ou horizontalement.</p>
                                 <td class="col-md-4">
             
                                         <div class="io-description">
-                                            <b>Returns : </b>    <code>void</code>
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
                                 </td>
@@ -1776,13 +1897,14 @@ Ce service permet la gestion du viewport verticalement ou horizontalement.</p>
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="direction"></a>
                                     <b><span class="modifier">Public</span> direction</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>direction:     <code></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                     <tr>
@@ -1790,19 +1912,22 @@ Ce service permet la gestion du viewport verticalement ou horizontalement.</p>
                                             <div class="io-line">Defined in <a href="" data-line="99" class="link-to-prism">src/common/core/item-list/viewport.service.ts:99</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="direction$"></a>
                                     <b><span class="modifier">Public</span> direction$</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>direction$:     <code></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                     <tr>
@@ -1810,19 +1935,22 @@ Ce service permet la gestion du viewport verticalement ou horizontalement.</p>
                                             <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/common/core/item-list/viewport.service.ts:51</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="element$"></a>
                                     <b><span class="modifier">Public</span> element$</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>element$:     <code></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                     <tr>
@@ -1830,19 +1958,22 @@ Ce service permet la gestion du viewport verticalement ou horizontalement.</p>
                                             <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/common/core/item-list/viewport.service.ts:49</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="ensureItem$"></a>
                                     <b><span class="modifier">Public</span> ensureItem$</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>ensureItem$:     <code></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                     <tr>
@@ -1850,19 +1981,22 @@ Ce service permet la gestion du viewport verticalement ou horizontalement.</p>
                                             <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/common/core/item-list/viewport.service.ts:47</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="itemDefaultSize"></a>
                                     <b><span class="modifier">Public</span> itemDefaultSize</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>itemDefaultSize:     <code></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                 <tr>
@@ -1875,19 +2009,22 @@ Ce service permet la gestion du viewport verticalement ou horizontalement.</p>
                                             <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/common/core/item-list/viewport.service.ts:40</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="items$"></a>
                                     <b><span class="modifier">Public</span> items$</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>items$:     <code></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                     <tr>
@@ -1895,19 +2032,22 @@ Ce service permet la gestion du viewport verticalement ou horizontalement.</p>
                                             <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/common/core/item-list/viewport.service.ts:45</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="itemsSize"></a>
                                     <b><span class="modifier">Public</span> itemsSize</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>itemsSize:     <code></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                     <tr>
@@ -1915,19 +2055,22 @@ Ce service permet la gestion du viewport verticalement ou horizontalement.</p>
                                             <div class="io-line">Defined in <a href="" data-line="95" class="link-to-prism">src/common/core/item-list/viewport.service.ts:95</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="itemsSize$"></a>
                                     <b><span class="modifier">Public</span> itemsSize$</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>itemsSize$:     <code></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                     <tr>
@@ -1935,19 +2078,22 @@ Ce service permet la gestion du viewport verticalement ou horizontalement.</p>
                                             <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/common/core/item-list/viewport.service.ts:50</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="maxSize$"></a>
                                     <b><span class="modifier">Public</span> maxSize$</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>maxSize$:     <code></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                     <tr>
@@ -1955,19 +2101,22 @@ Ce service permet la gestion du viewport verticalement ou horizontalement.</p>
                                             <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/common/core/item-list/viewport.service.ts:46</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="mode"></a>
                                     <b><span class="modifier">Public</span> mode</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>mode:     <code></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                     <tr>
@@ -1975,19 +2124,22 @@ Ce service permet la gestion du viewport verticalement ou horizontalement.</p>
                                             <div class="io-line">Defined in <a href="" data-line="91" class="link-to-prism">src/common/core/item-list/viewport.service.ts:91</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="mode$"></a>
                                     <b><span class="modifier">Public</span> mode$</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>mode$:     <code></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                     <tr>
@@ -1995,19 +2147,22 @@ Ce service permet la gestion du viewport verticalement ou horizontalement.</p>
                                             <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/common/core/item-list/viewport.service.ts:44</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="scrollPosition$"></a>
                                     <b><span class="modifier">Public</span> scrollPosition$</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>scrollPosition$:     <code></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                     <tr>
@@ -2015,19 +2170,22 @@ Ce service permet la gestion du viewport verticalement ou horizontalement.</p>
                                             <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/common/core/item-list/viewport.service.ts:48</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="viewPort$"></a>
                                     <b><span class="modifier">Public</span> viewPort$</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>viewPort$:     <code><a href="../interfaces/IViewPort.html" target="_self" >Observable&lt;IViewPort&gt;</a></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                 <tr>
@@ -2041,19 +2199,22 @@ Ce service permet la gestion du viewport verticalement ou horizontalement.</p>
                                             <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/common/core/item-list/viewport.service.ts:42</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="viewPortResult$"></a>
                                     <b><span class="modifier">Public</span> viewPortResult$</b>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                     <span class="modifier-icon fa fa-"></span><code>viewPortResult$:     <code></code>
-            </bcode>
+            </code>
                                 </td>
                             </tr>
                                     <tr>
@@ -2061,6 +2222,8 @@ Ce service permet la gestion du viewport verticalement ou horizontalement.</p>
                                             <div class="io-line">Defined in <a href="" data-line="82" class="link-to-prism">src/common/core/item-list/viewport.service.ts:82</a></div>
                                         </td>
                                     </tr>
+            
+            
                         </tbody>
                     </table>
             </section>

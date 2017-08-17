@@ -779,10 +779,26 @@
                         </ul>
                     </li>
             
-            
                     <li class="chapter">
-                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                        <div class="simple menu-toggler" data-toggle="collapse"
+                                data-target="#xs-miscellaneous-links"
+                            >
+                            <span class="fa fa-cubes"></span>
+                            <span>Miscellaneous</span>
+                            <span class="fa fa-angle-down"></span>
+                        </div>
+                        <ul class="links collapse "
+                                id="xs-miscellaneous-links"
+                            >
+                                <li class="link">
+                                  <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                </li>
+                                <li class="link">
+                                  <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                </li>
+                        </ul>
                     </li>
+            
             
                     <li class="chapter">
                         <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1557,10 +1573,26 @@
                                </ul>
                            </li>
                    
-                   
                            <li class="chapter">
-                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                               <div class="simple menu-toggler" data-toggle="collapse"
+                                       data-target="#miscellaneous-links"
+                   >
+                                   <span class="fa fa-cubes"></span>
+                                   <span>Miscellaneous</span>
+                                   <span class="fa fa-angle-down"></span>
+                               </div>
+                               <ul class="links collapse "
+                                       id="miscellaneous-links"
+                   >
+                                       <li class="link">
+                                         <a href="../miscellaneous/enumerations.html" data-type="entity-link" >Enums</a>
+                                       </li>
+                                       <li class="link">
+                                         <a href="../miscellaneous/variables.html" data-type="entity-link" >Variables</a>
+                                       </li>
+                               </ul>
                            </li>
+                   
                    
                            <li class="chapter">
                                <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
@@ -1667,1581 +1699,260 @@
 </section>
 
     <section>
-        <h3 id="inputs">Inputs</h3>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>acceptSuggestionOnCommitCharacter</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Accept suggestions on provider defined characters.
-Defaults to true.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="269" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:269</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>acceptSuggestionOnEnter</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Accept suggestions on ENTER.
-Defaults to true.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="264" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:264</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>ariaLabel</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>The aria label for the editor&#39;s textarea (when it is focused).</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>string</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:38</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>autoClosingBrackets</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Enable auto closing brackets.
-Defaults to true.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="244" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:244</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>automaticLayout</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Enable that the editor will install an interval to check if its container dom node size has changed.
-Enabling this might have a severe performance impact.
-Defaults to false.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="165" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:165</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>codeLens</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Show code lens
-Defaults to true.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="305" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:305</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>contextmenu</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Enable custom contextmenu.
-Defaults to true.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="215" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:215</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>cursorBlinking</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Control the cursor animation style, possible values are &#39;blink&#39;, &#39;smooth&#39;, &#39;phase&#39;, &#39;expand&#39; and &#39;solid&#39;.
-Defaults to &#39;blink&#39;.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>string</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="124" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:124</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>cursorStyle</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Control the cursor style, either &#39;block&#39; or &#39;line&#39;.
-Defaults to &#39;line&#39;.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>string</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="134" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:134</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>disableMonospaceOptimizations</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Disable the optimizations for monospace fonts.
-Defaults to false.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="149" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:149</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>disableTranslate3d</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Disable the use of <code>translate3d</code>.
-Defaults to false.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="144" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:144</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>emptySelectionClipboard</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Copying without a selection copies the current line.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="277" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:277</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>experimentalScreenReader</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Enable experimental screen reader support.
-Defaults to <code>true</code>.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:34</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>fixedOverflowWidgets</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Display overflow widgets as <code>fixed</code>.
-Defaults to <code>false</code>.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="114" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:114</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>folding</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Enable code folding
-Defaults to true in vscode and to false in monaco-editor.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="310" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:310</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>fontFamily</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>The font family</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>string</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="338" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:338</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>fontLigatures</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Enable font ligatures.
-Defaults to false.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="139" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:139</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>fontSize</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>The font size</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>number</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="346" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:346</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>fontWeight</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>The font weight</p>
-</div>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="342" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:342</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>formatOnPaste</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Enable format on paste.
-Defaults to false.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="254" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:254</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>formatOnType</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Enable format on type.
-Defaults to false.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="249" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:249</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>glyphMargin</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Enable the rendering of the glyph margin.
-Defaults to true in vscode and to false in monaco-editor.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:76</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>hideCursorInOverviewRuler</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Should the cursor be hidden in the overview ruler.
-Defaults to false.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="154" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:154</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>hover</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Enable hover.
-Defaults to true.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="210" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:210</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>iconsInSuggestions</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Render icons in suggestions box.
-Defaults to true.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="239" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:239</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>isDiffEditor</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Enable the diff editor mode</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="354" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:354</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>language</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Content language</p>
-</div>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="358" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:358</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>lineDecorationsWidth</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>The width reserved for line decorations (in px).
-Line decorations are placed between line numbers and the editor content.
-You can pass in a string in the format floating point followed by &quot;ch&quot;. e.g. 1.3ch.
-Defaults to 10.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>number</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:83</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>lineHeight</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>The line height</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>number</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="350" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:350</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>lineNumbers</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Control the rendering of line numbers.
-If it is a function, it will be invoked when rendering a line number and the return value will be rendered.
-Otherwise, if it is a truey, line numbers will be rendered normally (equivalent of using an identity function).
-Otherwise, line numbers will not be rendered.
-Defaults to <code>true</code>.</p>
-</div>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:61</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>lineNumbersMinChars</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Control the width of line numbers, by reserving horizontal space for rendering at least an amount of digits.
-Defaults to 5.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>number</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="71" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:71</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>mouseWheelScrollSensitivity</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>A multiplier to be used on the <code>deltaX</code> and <code>deltaY</code> of mouse wheel scroll events.
-Defaults to 1.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>number</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="220" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:220</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>mouseWheelZoom</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Zoom the font in the editor when using the mouse wheel in combination with holding Ctrl.
-Defaults to false.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="129" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:129</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>overviewRulerLanes</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>The number of vertical lanes the overview ruler should render.
-Defaults to 2.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>number</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="119" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:119</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>parameterHints</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Enables parameter hints</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="234" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:234</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>quickSuggestions</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Enable quick suggestions (shadow suggestions)
-Defaults to true.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="225" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:225</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>quickSuggestionsDelay</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Quick suggestions show delay (in ms)
-Defaults to 500 (ms)</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>number</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="230" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:230</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>readOnly</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Should the editor be read only.
-Defaults to false.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="105" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:105</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>renderControlCharacters</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Enable rendering of control characters.
-Defaults to false.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="320" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:320</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>renderIndentGuides</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Enable rendering of indent guides.
-Defaults to false.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="325" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:325</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>renderLineHighlight</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Enable rendering of current line highlight.
-Defaults to all.</p>
-</div>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="330" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:330</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>renderWhitespace</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Enable rendering of whitespace.
-Defaults to none.</p>
-</div>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="315" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:315</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>revealHorizontalRightPadding</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>When revealing the cursor, a virtual padding (px) is added to the cursor, turning it into a rectangle.
-This virtual padding ensures that the cursor gets revealed before hitting the edge of the viewport.
-Defaults to 30 (px).</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>number</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="89" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:89</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>roundedSelection</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Render the editor selection with rounded borders.
-Defaults to true.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="94" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:94</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>rulers</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Render vertical lines at the specified columns.
-Defaults to empty array.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>[]</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:43</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>scrollbar</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Control the behavior and rendering of the scrollbars.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code><a href="../classes/EditorScrollbarOptions.html" target="_self" >EditorScrollbarOptions</a></code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="109" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:109</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>scrollBeyondLastLine</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Enable that scrolling can go one screen size after the last line.
-Defaults to true.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="159" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:159</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>selectionClipboard</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Enable Linux primary clipboard.
-Defaults to <code>true</code>.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:53</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>selectionHighlight</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Enable selection highlight.
-Defaults to true.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="300" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:300</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>selectOnLineNumbers</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Should the corresponding line be selected when clicking on the line number?
-Defaults to <code>true</code>.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:66</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>snippetSuggestions</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Enable snippet suggestions. Default to &#39;true&#39;.</p>
-</div>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="273" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:273</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>stopRenderingLineAfter</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Performance guard: Stop rendering a line after x characters.
-Defaults to 10000 if wrappingColumn is -1. Defaults to -1 if wrappingColumn is &gt;= 0.
-Use -1 to never stop rendering</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>number</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="205" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:205</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>suggestFontSize</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>The font size for the suggest widget.
-Defaults to the editor font size.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>number</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="290" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:290</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>suggestLineHeight</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>The line height for the suggest widget.
-Defaults to the editor line height.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>number</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="295" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:295</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>suggestOnTriggerCharacters</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Enable the suggestion box to pop-up on trigger characters.
-Defaults to true.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="259" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:259</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>tabCompletion</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Enable tab completion. Defaults to &#39;false&#39;</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="281" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:281</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>theme</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Theme to be used for rendering.
-The current out-of-the-box available themes are: &#39;vs&#39; (default), &#39;vs-dark&#39;, &#39;hc-black&#39;.
-You can create custom themes via <code>monaco.editor.defineTheme</code>.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>string</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="100" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:100</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>useTabStops</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Inserting and deleting whitespace follows tab stops.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="334" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:334</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>value</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Value to show in the editor</p>
-</div>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="379" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:379</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>valueToCompare</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Value to compare with the Value input
-Used only when <code>isDiffEditor</code> is set to <code>true</code></p>
-</div>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="363" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:363</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>wordBasedSuggestions</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Enable word based suggestions. Defaults to &#39;true&#39;</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="285" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:285</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>wordSeparators</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>A string containing the word separators used when doing word navigation.
-Defaults to `~!@#$%^&amp;*()-=+[{]}\|;:\&#39;&quot;,.&lt;&gt;/?</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>string</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:48</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>wordWrap</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Control the alternate style of viewport wrapping.
-When set to true viewport wrapping is used only when the window width is less than the number of columns specified in the wrappingColumn property. Has no effect if wrappingColumn is not a positive number.
-Defaults to false.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>boolean</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="179" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:179</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>wordWrapBreakAfterCharacters</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Configure word wrapping characters. A break will be introduced after these characters.
-Defaults to &#39; \t})]?|&amp;,;&#39;.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>string</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="194" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:194</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>wordWrapBreakBeforeCharacters</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Configure word wrapping characters. A break will be introduced before these characters.
-Defaults to &#39;{([+&#39;.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>string</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="189" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:189</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>wordWrapBreakObtrusiveCharacters</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Configure word wrapping characters. A break will be introduced after these characters only if no <code>wordWrapBreakBeforeCharacters</code> or <code>wordWrapBreakAfterCharacters</code> were found.
-Defaults to &#39;.&#39;.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>string</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="199" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:199</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>wrappingColumn</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Control the wrapping strategy of the editor.
-Using -1 means no wrapping whatsoever.
-Using 0 means viewport width wrapping (ajusts with the resizing of the editor).
-Using a positive number means wrapping after a fixed number of characters.
-Defaults to 300.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>number</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="173" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:173</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>wrappingIndent</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Control indentation of wrapped lines. Can be: &#39;none&#39;, &#39;same&#39; or &#39;indent&#39;.
-Defaults to &#39;same&#39; in vscode and to &#39;none&#39; in monaco-editor.</p>
-</div>
-                              <p>
-                                <em>Type:</em>    <code>string</code>
-
-                              </p>
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="184" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:184</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-    </section>
-
-    <section>
-        <h3 id="outputs">Outputs</h3>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>valueChange</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Event triggered when value change</p>
-</div>
-                            <em><code>$event</code> type:</em>    <code><a href="https://angular.io/docs/ts/latest/api/core/index/EventEmitter-class.html" target="_blank" >EventEmitter</a></code>
-
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="397" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:397</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
-            <table class="table table-sm table-bordered">
-                <tbody>
-                    <tr>
-                        <td class="col-md-2">
-                            <code>valueToCompareChange</code>
-                        </td>
-                        <td class="col-md-10">
-                            <div><p>Event triggered when valueToCompare change</p>
-</div>
-                            <em><code>$event</code> type:</em>    <code><a href="https://angular.io/docs/ts/latest/api/core/index/EventEmitter-class.html" target="_blank" >EventEmitter</a></code>
-
-                        </td>
-                    </tr>
-                            <tr>
-                                <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="401" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:401</a></div>
-                                </td>
-                            </tr>
-                </tbody>
-            </table>
+        <h3 id="index">Index</h3>
+        <table class="table table-sm table-bordered index-table">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <span class="modifier">Public</span> <a href="#dispose">dispose</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Protected</span> <a href="#onResize">onResize</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#acceptSuggestionOnCommitCharacter">acceptSuggestionOnCommitCharacter</a>
+                            </li>
+                            <li>
+                                <a href="#acceptSuggestionOnEnter">acceptSuggestionOnEnter</a>
+                            </li>
+                            <li>
+                                <a href="#ariaLabel">ariaLabel</a>
+                            </li>
+                            <li>
+                                <a href="#autoClosingBrackets">autoClosingBrackets</a>
+                            </li>
+                            <li>
+                                <a href="#automaticLayout">automaticLayout</a>
+                            </li>
+                            <li>
+                                <a href="#codeLens">codeLens</a>
+                            </li>
+                            <li>
+                                <a href="#contextmenu">contextmenu</a>
+                            </li>
+                            <li>
+                                <a href="#cursorBlinking">cursorBlinking</a>
+                            </li>
+                            <li>
+                                <a href="#cursorStyle">cursorStyle</a>
+                            </li>
+                            <li>
+                                <a href="#disableMonospaceOptimizations">disableMonospaceOptimizations</a>
+                            </li>
+                            <li>
+                                <a href="#disableTranslate3d">disableTranslate3d</a>
+                            </li>
+                            <li>
+                                <a href="#emptySelectionClipboard">emptySelectionClipboard</a>
+                            </li>
+                            <li>
+                                <a href="#experimentalScreenReader">experimentalScreenReader</a>
+                            </li>
+                            <li>
+                                <a href="#fixedOverflowWidgets">fixedOverflowWidgets</a>
+                            </li>
+                            <li>
+                                <a href="#folding">folding</a>
+                            </li>
+                            <li>
+                                <a href="#fontFamily">fontFamily</a>
+                            </li>
+                            <li>
+                                <a href="#fontLigatures">fontLigatures</a>
+                            </li>
+                            <li>
+                                <a href="#fontSize">fontSize</a>
+                            </li>
+                            <li>
+                                <a href="#fontWeight">fontWeight</a>
+                            </li>
+                            <li>
+                                <a href="#formatOnPaste">formatOnPaste</a>
+                            </li>
+                            <li>
+                                <a href="#formatOnType">formatOnType</a>
+                            </li>
+                            <li>
+                                <a href="#glyphMargin">glyphMargin</a>
+                            </li>
+                            <li>
+                                <a href="#hideCursorInOverviewRuler">hideCursorInOverviewRuler</a>
+                            </li>
+                            <li>
+                                <a href="#hover">hover</a>
+                            </li>
+                            <li>
+                                <a href="#iconsInSuggestions">iconsInSuggestions</a>
+                            </li>
+                            <li>
+                                <a href="#isDiffEditor">isDiffEditor</a>
+                            </li>
+                            <li>
+                                <a href="#language">language</a>
+                            </li>
+                            <li>
+                                <a href="#lineDecorationsWidth">lineDecorationsWidth</a>
+                            </li>
+                            <li>
+                                <a href="#lineHeight">lineHeight</a>
+                            </li>
+                            <li>
+                                <a href="#lineNumbers">lineNumbers</a>
+                            </li>
+                            <li>
+                                <a href="#lineNumbersMinChars">lineNumbersMinChars</a>
+                            </li>
+                            <li>
+                                <a href="#mouseWheelScrollSensitivity">mouseWheelScrollSensitivity</a>
+                            </li>
+                            <li>
+                                <a href="#mouseWheelZoom">mouseWheelZoom</a>
+                            </li>
+                            <li>
+                                <a href="#overviewRulerLanes">overviewRulerLanes</a>
+                            </li>
+                            <li>
+                                <a href="#parameterHints">parameterHints</a>
+                            </li>
+                            <li>
+                                <a href="#quickSuggestions">quickSuggestions</a>
+                            </li>
+                            <li>
+                                <a href="#quickSuggestionsDelay">quickSuggestionsDelay</a>
+                            </li>
+                            <li>
+                                <a href="#readOnly">readOnly</a>
+                            </li>
+                            <li>
+                                <a href="#renderControlCharacters">renderControlCharacters</a>
+                            </li>
+                            <li>
+                                <a href="#renderIndentGuides">renderIndentGuides</a>
+                            </li>
+                            <li>
+                                <a href="#renderLineHighlight">renderLineHighlight</a>
+                            </li>
+                            <li>
+                                <a href="#renderWhitespace">renderWhitespace</a>
+                            </li>
+                            <li>
+                                <a href="#revealHorizontalRightPadding">revealHorizontalRightPadding</a>
+                            </li>
+                            <li>
+                                <a href="#roundedSelection">roundedSelection</a>
+                            </li>
+                            <li>
+                                <a href="#rulers">rulers</a>
+                            </li>
+                            <li>
+                                <a href="#scrollbar">scrollbar</a>
+                            </li>
+                            <li>
+                                <a href="#scrollBeyondLastLine">scrollBeyondLastLine</a>
+                            </li>
+                            <li>
+                                <a href="#selectionClipboard">selectionClipboard</a>
+                            </li>
+                            <li>
+                                <a href="#selectionHighlight">selectionHighlight</a>
+                            </li>
+                            <li>
+                                <a href="#selectOnLineNumbers">selectOnLineNumbers</a>
+                            </li>
+                            <li>
+                                <a href="#snippetSuggestions">snippetSuggestions</a>
+                            </li>
+                            <li>
+                                <a href="#stopRenderingLineAfter">stopRenderingLineAfter</a>
+                            </li>
+                            <li>
+                                <a href="#suggestFontSize">suggestFontSize</a>
+                            </li>
+                            <li>
+                                <a href="#suggestLineHeight">suggestLineHeight</a>
+                            </li>
+                            <li>
+                                <a href="#suggestOnTriggerCharacters">suggestOnTriggerCharacters</a>
+                            </li>
+                            <li>
+                                <a href="#tabCompletion">tabCompletion</a>
+                            </li>
+                            <li>
+                                <a href="#theme">theme</a>
+                            </li>
+                            <li>
+                                <a href="#useTabStops">useTabStops</a>
+                            </li>
+                            <li>
+                                <a href="#value">value</a>
+                            </li>
+                            <li>
+                                <a href="#valueToCompare">valueToCompare</a>
+                            </li>
+                            <li>
+                                <a href="#wordBasedSuggestions">wordBasedSuggestions</a>
+                            </li>
+                            <li>
+                                <a href="#wordSeparators">wordSeparators</a>
+                            </li>
+                            <li>
+                                <a href="#wordWrap">wordWrap</a>
+                            </li>
+                            <li>
+                                <a href="#wordWrapBreakAfterCharacters">wordWrapBreakAfterCharacters</a>
+                            </li>
+                            <li>
+                                <a href="#wordWrapBreakBeforeCharacters">wordWrapBreakBeforeCharacters</a>
+                            </li>
+                            <li>
+                                <a href="#wordWrapBreakObtrusiveCharacters">wordWrapBreakObtrusiveCharacters</a>
+                            </li>
+                            <li>
+                                <a href="#wrappingColumn">wrappingColumn</a>
+                            </li>
+                            <li>
+                                <a href="#wrappingIndent">wrappingIndent</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#valueChange">valueChange</a>
+                            </li>
+                            <li>
+                                <a href="#valueToCompareChange">valueToCompareChange</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
     </section>
 
     <section>
@@ -3269,6 +1980,1760 @@ Defaults to &#39;same&#39; in vscode and to &#39;none&#39; in monaco-editor.</p>
             </table>
     </section>
 
+    <section>
+        <h3 id="inputs">Inputs</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="acceptSuggestionOnCommitCharacter"></a>
+                            <code>acceptSuggestionOnCommitCharacter</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Accept suggestions on provider defined characters.
+Defaults to true.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="269" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:269</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="acceptSuggestionOnEnter"></a>
+                            <code>acceptSuggestionOnEnter</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Accept suggestions on ENTER.
+Defaults to true.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="264" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:264</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="ariaLabel"></a>
+                            <code>ariaLabel</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>The aria label for the editor&#39;s textarea (when it is focused).</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:38</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="autoClosingBrackets"></a>
+                            <code>autoClosingBrackets</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Enable auto closing brackets.
+Defaults to true.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="244" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:244</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="automaticLayout"></a>
+                            <code>automaticLayout</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Enable that the editor will install an interval to check if its container dom node size has changed.
+Enabling this might have a severe performance impact.
+Defaults to false.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="165" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:165</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="codeLens"></a>
+                            <code>codeLens</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Show code lens
+Defaults to true.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="305" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:305</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="contextmenu"></a>
+                            <code>contextmenu</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Enable custom contextmenu.
+Defaults to true.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="215" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:215</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="cursorBlinking"></a>
+                            <code>cursorBlinking</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Control the cursor animation style, possible values are &#39;blink&#39;, &#39;smooth&#39;, &#39;phase&#39;, &#39;expand&#39; and &#39;solid&#39;.
+Defaults to &#39;blink&#39;.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="124" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:124</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="cursorStyle"></a>
+                            <code>cursorStyle</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Control the cursor style, either &#39;block&#39; or &#39;line&#39;.
+Defaults to &#39;line&#39;.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="134" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:134</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="disableMonospaceOptimizations"></a>
+                            <code>disableMonospaceOptimizations</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Disable the optimizations for monospace fonts.
+Defaults to false.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="149" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:149</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="disableTranslate3d"></a>
+                            <code>disableTranslate3d</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Disable the use of <code>translate3d</code>.
+Defaults to false.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="144" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:144</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="emptySelectionClipboard"></a>
+                            <code>emptySelectionClipboard</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Copying without a selection copies the current line.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="277" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:277</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="experimentalScreenReader"></a>
+                            <code>experimentalScreenReader</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Enable experimental screen reader support.
+Defaults to <code>true</code>.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:34</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="fixedOverflowWidgets"></a>
+                            <code>fixedOverflowWidgets</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Display overflow widgets as <code>fixed</code>.
+Defaults to <code>false</code>.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="114" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:114</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="folding"></a>
+                            <code>folding</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Enable code folding
+Defaults to true in vscode and to false in monaco-editor.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="310" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:310</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="fontFamily"></a>
+                            <code>fontFamily</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>The font family</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="338" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:338</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="fontLigatures"></a>
+                            <code>fontLigatures</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Enable font ligatures.
+Defaults to false.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="139" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:139</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="fontSize"></a>
+                            <code>fontSize</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>The font size</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="346" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:346</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="fontWeight"></a>
+                            <code>fontWeight</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>The font weight</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code>||||||||||||||</code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="342" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:342</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="formatOnPaste"></a>
+                            <code>formatOnPaste</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Enable format on paste.
+Defaults to false.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="254" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:254</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="formatOnType"></a>
+                            <code>formatOnType</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Enable format on type.
+Defaults to false.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="249" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:249</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="glyphMargin"></a>
+                            <code>glyphMargin</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Enable the rendering of the glyph margin.
+Defaults to true in vscode and to false in monaco-editor.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:76</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="hideCursorInOverviewRuler"></a>
+                            <code>hideCursorInOverviewRuler</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Should the cursor be hidden in the overview ruler.
+Defaults to false.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="154" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:154</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="hover"></a>
+                            <code>hover</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Enable hover.
+Defaults to true.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="210" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:210</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="iconsInSuggestions"></a>
+                            <code>iconsInSuggestions</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Render icons in suggestions box.
+Defaults to true.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="239" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:239</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="isDiffEditor"></a>
+                            <code>isDiffEditor</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Enable the diff editor mode</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="354" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:354</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="language"></a>
+                            <code>language</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Content language</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code>|||||||||||||||||||||||||||||||||</code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="358" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:358</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="lineDecorationsWidth"></a>
+                            <code>lineDecorationsWidth</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>The width reserved for line decorations (in px).
+Line decorations are placed between line numbers and the editor content.
+You can pass in a string in the format floating point followed by &quot;ch&quot;. e.g. 1.3ch.
+Defaults to 10.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:83</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="lineHeight"></a>
+                            <code>lineHeight</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>The line height</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="350" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:350</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="lineNumbers"></a>
+                            <code>lineNumbers</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Control the rendering of line numbers.
+If it is a function, it will be invoked when rendering a line number and the return value will be rendered.
+Otherwise, if it is a truey, line numbers will be rendered normally (equivalent of using an identity function).
+Otherwise, line numbers will not be rendered.
+Defaults to <code>true</code>.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code>|||</code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:61</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="lineNumbersMinChars"></a>
+                            <code>lineNumbersMinChars</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Control the width of line numbers, by reserving horizontal space for rendering at least an amount of digits.
+Defaults to 5.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="71" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:71</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="mouseWheelScrollSensitivity"></a>
+                            <code>mouseWheelScrollSensitivity</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>A multiplier to be used on the <code>deltaX</code> and <code>deltaY</code> of mouse wheel scroll events.
+Defaults to 1.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="220" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:220</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="mouseWheelZoom"></a>
+                            <code>mouseWheelZoom</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Zoom the font in the editor when using the mouse wheel in combination with holding Ctrl.
+Defaults to false.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="129" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:129</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="overviewRulerLanes"></a>
+                            <code>overviewRulerLanes</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>The number of vertical lanes the overview ruler should render.
+Defaults to 2.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="119" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:119</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="parameterHints"></a>
+                            <code>parameterHints</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Enables parameter hints</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="234" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:234</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="quickSuggestions"></a>
+                            <code>quickSuggestions</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Enable quick suggestions (shadow suggestions)
+Defaults to true.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="225" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:225</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="quickSuggestionsDelay"></a>
+                            <code>quickSuggestionsDelay</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Quick suggestions show delay (in ms)
+Defaults to 500 (ms)</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="230" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:230</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="readOnly"></a>
+                            <code>readOnly</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Should the editor be read only.
+Defaults to false.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="105" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:105</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="renderControlCharacters"></a>
+                            <code>renderControlCharacters</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Enable rendering of control characters.
+Defaults to false.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="320" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:320</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="renderIndentGuides"></a>
+                            <code>renderIndentGuides</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Enable rendering of indent guides.
+Defaults to false.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="325" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:325</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="renderLineHighlight"></a>
+                            <code>renderLineHighlight</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Enable rendering of current line highlight.
+Defaults to all.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code>|||</code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="330" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:330</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="renderWhitespace"></a>
+                            <code>renderWhitespace</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Enable rendering of whitespace.
+Defaults to none.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code>||</code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="315" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:315</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="revealHorizontalRightPadding"></a>
+                            <code>revealHorizontalRightPadding</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>When revealing the cursor, a virtual padding (px) is added to the cursor, turning it into a rectangle.
+This virtual padding ensures that the cursor gets revealed before hitting the edge of the viewport.
+Defaults to 30 (px).</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="89" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:89</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="roundedSelection"></a>
+                            <code>roundedSelection</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Render the editor selection with rounded borders.
+Defaults to true.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="94" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:94</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="rulers"></a>
+                            <code>rulers</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Render vertical lines at the specified columns.
+Defaults to empty array.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code>number[]</code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:43</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="scrollbar"></a>
+                            <code>scrollbar</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Control the behavior and rendering of the scrollbars.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="../classes/EditorScrollbarOptions.html" target="_self" >EditorScrollbarOptions</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="109" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:109</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="scrollBeyondLastLine"></a>
+                            <code>scrollBeyondLastLine</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Enable that scrolling can go one screen size after the last line.
+Defaults to true.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="159" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:159</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="selectionClipboard"></a>
+                            <code>selectionClipboard</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Enable Linux primary clipboard.
+Defaults to <code>true</code>.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:53</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="selectionHighlight"></a>
+                            <code>selectionHighlight</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Enable selection highlight.
+Defaults to true.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="300" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:300</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="selectOnLineNumbers"></a>
+                            <code>selectOnLineNumbers</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Should the corresponding line be selected when clicking on the line number?
+Defaults to <code>true</code>.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:66</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="snippetSuggestions"></a>
+                            <code>snippetSuggestions</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Enable snippet suggestions. Default to &#39;true&#39;.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code>|||</code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="273" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:273</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="stopRenderingLineAfter"></a>
+                            <code>stopRenderingLineAfter</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Performance guard: Stop rendering a line after x characters.
+Defaults to 10000 if wrappingColumn is -1. Defaults to -1 if wrappingColumn is &gt;= 0.
+Use -1 to never stop rendering</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="205" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:205</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="suggestFontSize"></a>
+                            <code>suggestFontSize</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>The font size for the suggest widget.
+Defaults to the editor font size.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="290" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:290</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="suggestLineHeight"></a>
+                            <code>suggestLineHeight</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>The line height for the suggest widget.
+Defaults to the editor line height.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="295" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:295</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="suggestOnTriggerCharacters"></a>
+                            <code>suggestOnTriggerCharacters</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Enable the suggestion box to pop-up on trigger characters.
+Defaults to true.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="259" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:259</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="tabCompletion"></a>
+                            <code>tabCompletion</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Enable tab completion. Defaults to &#39;false&#39;</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="281" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:281</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="theme"></a>
+                            <code>theme</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Theme to be used for rendering.
+The current out-of-the-box available themes are: &#39;vs&#39; (default), &#39;vs-dark&#39;, &#39;hc-black&#39;.
+You can create custom themes via <code>monaco.editor.defineTheme</code>.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="100" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:100</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="useTabStops"></a>
+                            <code>useTabStops</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Inserting and deleting whitespace follows tab stops.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="334" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:334</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="value"></a>
+                            <code>value</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Value to show in the editor</p>
+</div>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="379" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:379</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="valueToCompare"></a>
+                            <code>valueToCompare</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Value to compare with the Value input
+Used only when <code>isDiffEditor</code> is set to <code>true</code></p>
+</div>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="363" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:363</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="wordBasedSuggestions"></a>
+                            <code>wordBasedSuggestions</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Enable word based suggestions. Defaults to &#39;true&#39;</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="285" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:285</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="wordSeparators"></a>
+                            <code>wordSeparators</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>A string containing the word separators used when doing word navigation.
+Defaults to `~!@#$%^&amp;*()-=+[{]}\|;:\&#39;&quot;,.&lt;&gt;/?</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:48</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="wordWrap"></a>
+                            <code>wordWrap</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Control the alternate style of viewport wrapping.
+When set to true viewport wrapping is used only when the window width is less than the number of columns specified in the wrappingColumn property. Has no effect if wrappingColumn is not a positive number.
+Defaults to false.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="179" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:179</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="wordWrapBreakAfterCharacters"></a>
+                            <code>wordWrapBreakAfterCharacters</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Configure word wrapping characters. A break will be introduced after these characters.
+Defaults to &#39; \t})]?|&amp;,;&#39;.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="194" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:194</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="wordWrapBreakBeforeCharacters"></a>
+                            <code>wordWrapBreakBeforeCharacters</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Configure word wrapping characters. A break will be introduced before these characters.
+Defaults to &#39;{([+&#39;.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="189" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:189</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="wordWrapBreakObtrusiveCharacters"></a>
+                            <code>wordWrapBreakObtrusiveCharacters</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Configure word wrapping characters. A break will be introduced after these characters only if no <code>wordWrapBreakBeforeCharacters</code> or <code>wordWrapBreakAfterCharacters</code> were found.
+Defaults to &#39;.&#39;.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="199" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:199</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="wrappingColumn"></a>
+                            <code>wrappingColumn</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Control the wrapping strategy of the editor.
+Using -1 means no wrapping whatsoever.
+Using 0 means viewport width wrapping (ajusts with the resizing of the editor).
+Using a positive number means wrapping after a fixed number of characters.
+Defaults to 300.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="173" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:173</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="wrappingIndent"></a>
+                            <code>wrappingIndent</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Control indentation of wrapped lines. Can be: &#39;none&#39;, &#39;same&#39; or &#39;indent&#39;.
+Defaults to &#39;same&#39; in vscode and to &#39;none&#39; in monaco-editor.</p>
+</div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="184" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:184</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+    </section>
+
+    <section>
+        <h3 id="outputs">Outputs</h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="valueChange"></a>
+                            <code>valueChange</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Event triggered when value change</p>
+</div>
+                            <em><code>$event</code> type:</em>    <code><a href="https://angular.io/docs/ts/latest/api/core/index/EventEmitter-class.html" target="_blank" >EventEmitter</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="397" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:397</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-2">
+                            <a name="valueToCompareChange"></a>
+                            <code>valueToCompareChange</code>
+                        </td>
+                        <td class="col-md-10">
+                            <div><p>Event triggered when valueToCompare change</p>
+</div>
+                            <em><code>$event</code> type:</em>    <code><a href="https://angular.io/docs/ts/latest/api/core/index/EventEmitter-class.html" target="_blank" >EventEmitter</a></code>
+
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="401" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:401</a></div>
+                                </td>
+                            </tr>
+                </tbody>
+            </table>
+    </section>
+
+    <section>
+        
+            <h3 id="methods">
+                Methods
+            </h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="dispose"></a>
+                            <b><span class="modifier">Public</span> dispose</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play "></span>
+                            <code>dispose()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="444" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:444</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Destroy the monaco component</p>
+    </div>
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="onResize"></a>
+                            <b><span class="modifier">Protected</span> onResize</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play circle"></span>
+                            <code>onResize()</code>
+                        </td>
+                    </tr>
+    
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Decorators : </i><code>HostListener</code>
+                            </td>
+                        </tr>
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="460" class="link-to-prism">src/component/monaco-editor/monaco-editor.component.ts:460</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Triggered when windows is resized
+    Resize the component</p>
+    </div>
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
 
 </div>
 
