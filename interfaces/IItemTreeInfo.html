@@ -1702,7 +1702,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="762" class="link-to-prism">src/common/core/item-list/item-list-base.ts:762</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="789" class="link-to-prism">src/common/core/item-list/item-list-base.ts:789</a></div>
                                         </td>
                                     </tr>
 
@@ -1735,7 +1735,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="761" class="link-to-prism">src/common/core/item-list/item-list-base.ts:761</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="788" class="link-to-prism">src/common/core/item-list/item-list-base.ts:788</a></div>
                                         </td>
                                     </tr>
 
@@ -1768,7 +1768,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="764" class="link-to-prism">src/common/core/item-list/item-list-base.ts:764</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="791" class="link-to-prism">src/common/core/item-list/item-list-base.ts:791</a></div>
                                         </td>
                                     </tr>
 
@@ -1801,7 +1801,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="763" class="link-to-prism">src/common/core/item-list/item-list-base.ts:763</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="790" class="link-to-prism">src/common/core/item-list/item-list-base.ts:790</a></div>
                                         </td>
                                     </tr>
 
@@ -1836,8 +1836,6 @@ export abstract class ItemListBase implements OnDestroy {
     protected _multiSelect &#x3D; false;
     protected _searchField: string;
     protected _maxHeight: number;
-    protected _textField: string;
-    protected _valueField: string;
     protected _currentItemIndex &#x3D; -1;
     protected _currentItem: IItemBase;
     protected _hintLabel: string;
@@ -1863,6 +1861,9 @@ export abstract class ItemListBase implements OnDestroy {
     // Drag drop
     protected _ddStartIndex: number;
     protected _ddTargetIndex: number;
+
+    private _textField: string;
+    private _valueField: string;
 
     private waiter$sub: Subscription;
     private viewPort$sub: Subscription;
@@ -2222,7 +2223,7 @@ export abstract class ItemListBase implements OnDestroy {
         if (this._itemListService) {
             this._itemListService.hideSelected &#x3D; this._hideSelected;
             this._itemListService.childrenField &#x3D; this._childrenField;
-            this._itemListService.valueField &#x3D; this._valueField;
+            this._itemListService.valueField &#x3D; this.getValueField();
             this.waiter$sub &#x3D; Observable.from(this._itemListService.waiter$)
                 .subscribe((status: boolean) &#x3D;&gt; {
                     this._waiter &#x3D; status;
@@ -2409,7 +2410,7 @@ export abstract class ItemListBase implements OnDestroy {
 
     /** Retourne le champ utilisé comme valeur d&#x27;affichage.*/
     protected getTextField() {
-        return this._textField;
+        return this._textField || &#x27;displayName&#x27;;
     }
 
     /** Définit le champ à utiliser comme valeur de comparaison.
@@ -2424,7 +2425,7 @@ export abstract class ItemListBase implements OnDestroy {
 
     /** Retourne le champ utilisé comme valeur de comparaison.*/
     protected getValueField() {
-        return this._valueField;
+        return this._valueField || &#x27;value&#x27;;
     }
 
     /** Définit le champ à utiliser comme champ de recherche.
@@ -2516,26 +2517,23 @@ export abstract class ItemListBase implements OnDestroy {
 
             itemBase.model &#x3D; model;
 
-            const displayField &#x3D; this._textField || &#x27;displayName&#x27;;
+            const displayField &#x3D; this.getTextField();
+            const valueField &#x3D; this.getValueField();
+
             if (typeof model &#x3D;&#x3D;&#x3D; &#x27;string&#x27;) {
                 itemBase[displayField] &#x3D; model;
+                itemBase[valueField] &#x3D; model;
 
                 if (this._searchField) {
                     itemBase[this._searchField] &#x3D; model;
                 }
 
-                if (this._valueField) {
-                    itemBase[this._valueField] &#x3D; model;
-                }
             } else {
                 itemBase[displayField] &#x3D; this.getTextValue(model);
+                itemBase[valueField] &#x3D; model[this._valueField];
 
                 if (this._searchField) {
                     itemBase[this._searchField] &#x3D; model[this._searchField];
-                }
-
-                if (this._valueField) {
-                    itemBase[this._valueField] &#x3D; model[this._valueField];
                 }
             }
 
@@ -2560,6 +2558,35 @@ export abstract class ItemListBase implements OnDestroy {
         } else {
             return (item.size &amp;&amp; item.size &gt; ViewPortService.itemDefaultSize) ? item.size : this.getViewPortRowHeight();
         }
+    }
+
+    protected getVirtualSelectedEntities(value) {
+        if (value) {
+            const modelType &#x3D; typeof value;
+            if (modelType &#x3D;&#x3D;&#x3D; &#x27;string&#x27; || modelType &#x3D;&#x3D;&#x3D; &#x27;number&#x27;) {
+                if (this._multiSelect) {
+                    value &#x3D; value.split(&#x27;,&#x27;)
+                        .map((v) &#x3D;&gt; v.trim())
+                        .map((v) &#x3D;&gt; {
+                            const model &#x3D; {};
+                            const textField &#x3D; this.getTextField();
+                            const valueField &#x3D; this.getValueField();
+                            model[textField] &#x3D; v;
+                            model[valueField] &#x3D; v;
+                            return model;
+                        });
+                } else {
+                    const v &#x3D; value.trim();
+                    value &#x3D; {};
+                    const textField &#x3D; this.getTextField();
+                    const valueField &#x3D; this.getValueField();
+                    value[textField] &#x3D; v;
+                    value[valueField] &#x3D; v;
+                }
+            }
+        }
+
+        return value;
     }
 }
 

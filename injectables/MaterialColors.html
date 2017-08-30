@@ -1665,6 +1665,9 @@
                             <td class="col-md-4">
                                 <ul class="index-list">
                                     <li>
+                                        <span class="modifier">Public</span> <a href="#getColorFromText">getColorFromText</a>
+                                    </li>
+                                    <li>
                                         <span class="modifier">Public</span> <a href="#getPalet">getPalet</a>
                                     </li>
                                 </ul>
@@ -1680,6 +1683,39 @@
                     <h3 id="methods">
                         Methods
                     </h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="getColorFromText"></a>
+                                    <b><span class="modifier">Public</span> getColorFromText</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play "></span>
+                                    <code>getColorFromText(text: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="287" class="link-to-prism">src/common/core/style/material-colors.ts:287</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                     <table class="table table-sm table-bordered">
                         <tbody>
                             <tr>
@@ -2024,6 +2060,16 @@ export class MaterialColors {
             });
         }
         return this.palettes[subColor];
+    }
+
+    public getColorFromText(text: string) {
+        let sum &#x3D; 0;
+        for (let i &#x3D; 0; i &lt; text.length; i++) {
+            sum +&#x3D; text.charCodeAt(i);
+        }
+        const colors &#x3D; this.colors;
+        const subColors &#x3D; (colors[sum % colors.length]).subColors;
+        return subColors[sum % subColors.length];
     }
 }
 </code></pre>

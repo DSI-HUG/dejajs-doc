@@ -1606,6 +1606,49 @@
                <div class="content getting-started">
                    <div class="content-data">
 
+<h3 id="2-8-0-2017-08-30-">2.8.0 (2017-08-30)</h3>
+<h5 id="breaking-changes">BREAKING CHANGES</h5>
+<ul>
+<li><strong>MaterialColor:</strong> Removed circular dependency warnings (<a href="https://github.com/DSI-HUG/dejajs-components/commit/57c9715e7771198319e6953d1c02dfd3827f313b">57c9715e</a>)</li>
+</ul>
+<h5 id="build-system-dependencies">Build System / Dependencies</h5>
+<ul>
+<li><strong>Dependencies:</strong> Update all dependencies in latest version (<a href="https://github.com/DSI-HUG/dejajs-components/commit/e2f166234a83eb835f27603ffdf095cdc8765262">e2f16623</a>)</li>
+</ul>
+<h5 id="continuous-integration">Continuous Integration</h5>
+<ul>
+<li><strong>Travis:</strong> Upgrade to node 8 (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1875c980b11d079820feae86e5728572ff14c17e">1875c980</a>)</li>
+</ul>
+<h5 id="new-features">New Features</h5>
+<ul>
+<li><strong>DejaGridDemo:</strong> Added pre-selection demo feat(DejaTreeListDemo): Added pre-selection demo (<a href="https://github.com/DSI-HUG/dejajs-components/commit/74a62d6e391743977bae5d028954532f8bcf3f3c">74a62d6e</a>)</li>
+<li><strong>DejaGrid:</strong> Map selectedModel, selectedModels and selectedItem to the internal tree list (<a href="https://github.com/DSI-HUG/dejajs-components/commit/6ecac951c6d7eac752dcd7ae524d3b8e046a72d8">6ecac951</a>)</li>
+</ul>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>ItemListService:</strong> Improvement of the comparison to pre-select one or more elements of a list (<a href="https://github.com/DSI-HUG/dejajs-components/commit/7ede9515f88532ee136bdebead1befaa2b631d9b">7ede9515</a>)</li>
+<li><strong>Select:</strong><ul>
+<li>Remove position relative on select (<a href="https://github.com/DSI-HUG/dejajs-components/commit/e900d1ba70d17c6402f09a13e8a97791d6162b77">e900d1ba</a>)</li>
+<li>Remove autocomplete on select search input (<a href="https://github.com/DSI-HUG/dejajs-components/commit/cc4ec9ff8659b9b09356e4ba3d47abb151b8ee25">cc4ec9ff</a>)</li>
+</ul>
+</li>
+<li><strong>DejaGrid:</strong><ul>
+<li>Assign an empty array to the columns collection, clear columns and remove header component (<a href="https://github.com/DSI-HUG/dejajs-components/commit/05c0b083278ee9a921475b1adad6594509a837f5">05c0b083</a>)</li>
+<li>Row observable was subscribed two times (<a href="https://github.com/DSI-HUG/dejajs-components/commit/36f51182ee849fbdabcbc8021c522930321f6bbb">36f51182</a>)</li>
+</ul>
+</li>
+<li><strong>CircularPicker:</strong> Update for to for...of to remove tslint error (<a href="https://github.com/DSI-HUG/dejajs-components/commit/ad23fc17e9e8a37a497b56ddf66cb4f70d3a5d25">ad23fc17</a>)</li>
+</ul>
+<h5 id="other-changes">Other Changes</h5>
+<ul>
+<li><strong>Travis:</strong> Remove npm prune (<a href="https://github.com/DSI-HUG/dejajs-components/commit/6afc69c5da505f2e61becc377f269c02bbcb2813">6afc69c5</a>)</li>
+<li><strong>DemoApp:</strong> Add list loader demo (<a href="https://github.com/DSI-HUG/dejajs-components/commit/66eaaeaa5bab1111229a6fa92541ace69c2c87f4">66eaaeaa</a>)</li>
+<li><strong>Changelog:</strong><ul>
+<li>Fix changelog...... (<a href="https://github.com/DSI-HUG/dejajs-components/commit/707ff2ac149fab1f69a972eecff976fe5f36e858">707ff2ac</a>)</li>
+<li>fix duplicate commit info (<a href="https://github.com/DSI-HUG/dejajs-components/commit/0e8ea9c484c02c00976ec345f89b5bc438ee007c">0e8ea9c4</a>)</li>
+</ul>
+</li>
+</ul>
 <h3 id="2-7-0-2017-08-17-">2.7.0 (2017-08-17)</h3>
 <h5 id="build-system-dependencies">Build System / Dependencies</h5>
 <ul>
@@ -1712,7 +1755,7 @@
 <ul>
 <li><strong>DatePicker:</strong> Fix reactive form implementation (<a href="https://github.com/DSI-HUG/dejajs-components/commit/7b2a9185a1cb6fdfeaf7fb158fb31943d5a5b216">7b2a9185</a>)</li>
 <li><strong>Demo:</strong> add scrollbar to menu (<a href="https://github.com/DSI-HUG/dejajs-components/commit/4bb32496b0ef7ba9cc9d3ab7af6f6ad4805f8c64">4bb32496</a>)</li>
-<li><strong>Grid:</strong> Add debounce to calcColumnLayout (<a href="https://github.com/DSI-HUG/dejajs-components/commit/00fa4c93732cc068ccdfb35555f2b9cbb658ee9f">00fa4c93</a>)</li>
+<li><strong>Grid:</strong> Add debounce to calcColumnsLayout (<a href="https://github.com/DSI-HUG/dejajs-components/commit/00fa4c93732cc068ccdfb35555f2b9cbb658ee9f">00fa4c93</a>)</li>
 </ul>
 <h5 id="other-changes">Other Changes</h5>
 <ul>
@@ -1726,7 +1769,7 @@
 <h5 id="bug-fixes">Bug Fixes</h5>
 <ul>
 <li><strong>Demo:</strong> add scrollbar to menu (<a href="https://github.com/DSI-HUG/dejajs-components/commit/4bb32496b0ef7ba9cc9d3ab7af6f6ad4805f8c64">4bb32496</a>)</li>
-<li><strong>Grid:</strong> Add debounce to calcColumnLayout (<a href="https://github.com/DSI-HUG/dejajs-components/commit/00fa4c93732cc068ccdfb35555f2b9cbb658ee9f">00fa4c93</a>)</li>
+<li><strong>Grid:</strong> Add debounce to calcColumnsLayout (<a href="https://github.com/DSI-HUG/dejajs-components/commit/00fa4c93732cc068ccdfb35555f2b9cbb658ee9f">00fa4c93</a>)</li>
 <li><strong>DemoApp:</strong> Fix datepicker demo (<a href="https://github.com/DSI-HUG/dejajs-components/commit/4d9716b7f3772b31900c798b83444f061f5bc795">4d9716b7</a>)</li>
 </ul>
 <h5 id="other-changes">Other Changes</h5>

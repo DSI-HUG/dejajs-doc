@@ -1703,7 +1703,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="1311" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1311</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="1316" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1316</a></div>
                                         </td>
                                     </tr>
 
@@ -1742,7 +1742,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="1309" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1309</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="1314" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1314</a></div>
                                         </td>
                                     </tr>
 
@@ -2033,9 +2033,11 @@ export class ItemListService {
             return &#x27;&#x27;;
         } else {
             if (textField &amp;&amp; value.model &amp;&amp; value.model[textField] !&#x3D;&#x3D; undefined) {
-                return value.model[textField];
+                const displayName &#x3D; value.model[textField];
+                return typeof displayName &#x3D;&#x3D;&#x3D; &#x27;string&#x27; ? displayName : displayName();
             } else if (textField &amp;&amp; value[textField] !&#x3D;&#x3D; undefined) {
-                return value[textField];
+                const displayName &#x3D; value[textField];
+                return typeof displayName &#x3D;&#x3D;&#x3D; &#x27;string&#x27; ? displayName : displayName();
             } else if (value.displayName) {
                 return typeof value.displayName &#x3D;&#x3D;&#x3D; &#x27;string&#x27; ? value.displayName : value.displayName();
             } else if (typeof value.toString &#x3D;&#x3D;&#x3D; &#x27;function&#x27;) {
@@ -2895,12 +2897,16 @@ export class ItemListService {
     }
 
     private ensureSelectedItems(items: IItemBase[]) {
-        if (!items || !this.selectedList || this.selectedList.length &#x3D;&#x3D;&#x3D; 0) {
+        if (!this.selectedList || this.selectedList.length &#x3D;&#x3D;&#x3D; 0) {
             return [];
         }
 
         // Ensure selected flag
         this.selectedList.forEach((item) &#x3D;&gt; item.selected &#x3D; true);
+
+        if (!items) {
+            return this.selectedList;
+        }
 
         const newSelectedList &#x3D; [] as IItemBase[];
         const ensureSelectedChildren &#x3D; (children: IItemTree[]) &#x3D;&gt; {
@@ -2947,17 +2953,16 @@ export class ItemListService {
                 return item2.model.equals(item1.model);
             } else {
                 const getValue &#x3D; (item: any) &#x3D;&gt; {
-                    if (item.model) {
-                        item &#x3D; item.model;
-                    }
                     const valueField &#x3D; this._valueField || &#x27;value&#x27;;
+                    if (item.model &amp;&amp; item.model[valueField] !&#x3D;&#x3D; undefined) {
+                        return item.model[valueField];
+                    }
                     if (item[valueField] !&#x3D;&#x3D; undefined) {
                         return item[valueField];
                     } else {
-                        return item;
+                        return item.model || item;
                     }
                 };
-
                 return getValue(item1) &#x3D;&#x3D;&#x3D; getValue(item2);
             }
         }
