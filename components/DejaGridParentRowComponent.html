@@ -1721,6 +1721,23 @@
                 </tr>
                 <tr>
                     <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <span class="modifier">Public</span> <a href="#columnLayoutOfColumn0">columnLayoutOfColumn0</a>
+                            </li>
+                            <li>
+                                <span class="modifier">Public</span> <a href="#columnLayoutOfColumns">columnLayoutOfColumns</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
                         <h6><b>Inputs</b></h6>
                     </td>
                 </tr>
@@ -1760,7 +1777,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="68" class="link-to-prism">src/component/data-grid/data-grid-parent-row/data-grid-parent-row.component.ts:68</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/component/data-grid/data-grid-parent-row/data-grid-parent-row.component.ts:76</a></div>
                                 </td>
                             </tr>
     
@@ -1803,7 +1820,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/component/data-grid/data-grid-parent-row/data-grid-parent-row.component.ts:43</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/component/data-grid/data-grid-parent-row/data-grid-parent-row.component.ts:51</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -1876,6 +1893,78 @@
     </section>
 
 
+    <section>
+        
+            <h3 id="methods">
+                Methods
+            </h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="columnLayoutOfColumn0"></a>
+                            <b><span class="modifier">Public</span> columnLayoutOfColumn0</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play "></span>
+                            <code>columnLayoutOfColumn0()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/component/data-grid/data-grid-parent-row/data-grid-parent-row.component.ts:41</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="columnLayoutOfColumns"></a>
+                            <b><span class="modifier">Public</span> columnLayoutOfColumns</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon method fa fa-play "></span>
+                            <code>columnLayoutOfColumns()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/component/data-grid/data-grid-parent-row/data-grid-parent-row.component.ts:45</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code>{}</code>
+    
+                                </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </section>
 
     <section>
         
@@ -1898,7 +1987,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/component/data-grid/data-grid-parent-row/data-grid-parent-row.component.ts:62</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/component/data-grid/data-grid-parent-row/data-grid-parent-row.component.ts:70</a></div>
                                 </td>
                             </tr>
     
@@ -1955,7 +2044,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/component/data-grid/data-grid-parent-row/data-grid-parent-row.component.ts:66</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/component/data-grid/data-grid-parent-row/data-grid-parent-row.component.ts:74</a></div>
                                 </td>
                             </tr>
     
@@ -2031,26 +2120,34 @@ export class DejaGridParentRowComponent {
     /** Template de cellule par defaut  définit dans le HTML de la grille */
     @ContentChild(&#x27;cellTemplate&#x27;) protected cellTemplateInternal;
 
-    private columnLayout &#x3D; {} as IDejaGridParentRowColumnLayout;
+    private _columnLayout &#x3D; {} as IDejaGridParentRowColumnLayout;
+
+    public columnLayoutOfColumn0() {
+        return this._columnLayout.column0;
+    }
+
+    public columnLayoutOfColumns() {
+        return this._columnLayout.columns;
+    }
 
     /** Définit la structure de colonnes a appliquer sur cette ligne */
     @Input()
     public set columns(columns: IDejaGridColumn[]) {
         let left &#x3D; 0;
-        this.columnLayout.columns &#x3D; [];
+        this._columnLayout.columns &#x3D; [];
         columns.forEach((column) &#x3D;&gt; {
             if (this.row[column.name]) {
-                if (this.columnLayout.column0 &#x3D;&#x3D;&#x3D; 0) {
-                    this.columnLayout.column0 &#x3D; left;
+                if (this._columnLayout.column0 &#x3D;&#x3D;&#x3D; 0) {
+                    this._columnLayout.column0 &#x3D; left;
                 }
-                this.columnLayout.columns.push({
+                this._columnLayout.columns.push({
                     column: column,
                     left: left,
                 });
             }
             left +&#x3D; column.w;
         });
-        this.columnLayout.column0 &#x3D; left;
+        this._columnLayout.column0 &#x3D; left;
         this.changeDetectorRef.markForCheck();
     }
 
@@ -2076,11 +2173,11 @@ export interface IDejaGridParentRowColumnLayout {
     </div>
 
     <div class="tab-pane fade" id="templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;div *ngIf&#x3D;&quot;columnLayout.column0&quot; [style.width.px]&#x3D;&quot;columnLayout.column0&quot; id&#x3D;&quot;parent-title&quot; class&#x3D;&quot;cell-wrapper&quot;&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;div *ngIf&#x3D;&quot;columnLayoutOfColumn0&quot; [style.width.px]&#x3D;&quot;columnLayoutOfColumn0&quot; id&#x3D;&quot;parent-title&quot; class&#x3D;&quot;cell-wrapper&quot;&gt;
 	&lt;div *ngIf&#x3D;&quot;!parentTitleTemplate&quot; class&#x3D;&quot;cell&quot;&gt;{{ row.toString() }}&lt;/div&gt;
 	&lt;ng-template [ngTemplateOutlet]&#x3D;&quot;parentTitleTemplate&quot; *ngIf&#x3D;&quot;parentTitleTemplate&quot;  [ngTemplateOutletContext]&#x3D;&quot;{ $implicit: row }&quot;&gt;&lt;/ng-template&gt;
 &lt;/div&gt;
-&lt;span *ngFor&#x3D;&quot;let colinfo of columnLayout.columns; let index&#x3D;index&quot; class&#x3D;&quot;cell-wrapper&quot; [attr.colindex]&#x3D;&quot;index&quot; [attr.colname]&#x3D;&quot;colinfo.column.name&quot; [class.dragged]&#x3D;&quot;colinfo.column.dragged&quot; [style.left.px]&#x3D;&quot;colinfo.left&quot; [style.width.px]&#x3D;&quot;colinfo.column.w&quot;&gt;
+&lt;span *ngFor&#x3D;&quot;let colinfo of columnLayoutOfColumns; let index&#x3D;index&quot; class&#x3D;&quot;cell-wrapper&quot; [attr.colindex]&#x3D;&quot;index&quot; [attr.colname]&#x3D;&quot;colinfo.column.name&quot; [class.dragged]&#x3D;&quot;colinfo.column.dragged&quot; [style.left.px]&#x3D;&quot;colinfo.left&quot; [style.width.px]&#x3D;&quot;colinfo.column.w&quot;&gt;
 	&lt;div *ngIf&#x3D;&quot;!cellTemplate || !colinfo.column.useCellTemplate&quot; class&#x3D;&quot;cell&quot;&gt;{{ row[colinfo.column.name] }}&lt;/div&gt;
 	&lt;ng-template [ngTemplateOutlet]&#x3D;&quot;cellTemplate&quot; *ngIf&#x3D;&quot;cellTemplate &amp;&amp; colinfo.column.useCellTemplate&quot; [ngTemplateOutletContext]&#x3D;&quot;{ $implicit: row, flatIndex: flatIndex, column: column }&quot;&gt;&lt;/ng-template&gt;
 &lt;/span&gt;</code></pre>
@@ -2109,7 +2206,7 @@ export interface IDejaGridParentRowColumnLayout {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div *ngIf="columnLayout.column0" [style.width.px]="columnLayout.column0" id="parent-title" class="cell-wrapper">	<div *ngIf="!parentTitleTemplate" class="cell">{{ row.toString() }}</div>	<ng-template [ngTemplateOutlet]="parentTitleTemplate" *ngIf="parentTitleTemplate"  [ngTemplateOutletContext]="{ $implicit: row }"></ng-template></div><span *ngFor="let colinfo of columnLayout.columns; let index=index" class="cell-wrapper" [attr.colindex]="index" [attr.colname]="colinfo.column.name" [class.dragged]="colinfo.column.dragged" [style.left.px]="colinfo.left" [style.width.px]="colinfo.column.w">	<div *ngIf="!cellTemplate || !colinfo.column.useCellTemplate" class="cell">{{ row[colinfo.column.name] }}</div>	<ng-template [ngTemplateOutlet]="cellTemplate" *ngIf="cellTemplate && colinfo.column.useCellTemplate" [ngTemplateOutletContext]="{ $implicit: row, flatIndex: flatIndex, column: column }"></ng-template></span></div>'
+        var COMPONENT_TEMPLATE = '<div><div *ngIf="columnLayoutOfColumn0" [style.width.px]="columnLayoutOfColumn0" id="parent-title" class="cell-wrapper">	<div *ngIf="!parentTitleTemplate" class="cell">{{ row.toString() }}</div>	<ng-template [ngTemplateOutlet]="parentTitleTemplate" *ngIf="parentTitleTemplate"  [ngTemplateOutletContext]="{ $implicit: row }"></ng-template></div><span *ngFor="let colinfo of columnLayoutOfColumns; let index=index" class="cell-wrapper" [attr.colindex]="index" [attr.colname]="colinfo.column.name" [class.dragged]="colinfo.column.dragged" [style.left.px]="colinfo.left" [style.width.px]="colinfo.column.w">	<div *ngIf="!cellTemplate || !colinfo.column.useCellTemplate" class="cell">{{ row[colinfo.column.name] }}</div>	<ng-template [ngTemplateOutlet]="cellTemplate" *ngIf="cellTemplate && colinfo.column.useCellTemplate" [ngTemplateOutletContext]="{ $implicit: row, flatIndex: flatIndex, column: column }"></ng-template></span></div>'
     var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBackdropComponent', 'selector': 'deja-backdrop'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaCodeViewerComponent', 'selector': 'deja-code-viewer'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaDropDownComponent', 'selector': 'deja-dropdown'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaItemComponent', 'selector': 'deja-item'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMarkdownComponent', 'selector': 'deja-markdown'},{'name': 'DejaMenuComponent', 'selector': 'deja-menu'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTagComponent', 'selector': 'deja-tag'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'}];
     var DIRECTIVES = [{'name': 'DateValidatorDirective', 'selector': '[date-validator][ngModel]'},{'name': 'DejaAutosizeTextAreaDirective', 'selector': 'textarea[deja-autosize]'},{'name': 'DejaChildValidatorDirective', 'selector': '[deja-child-validator]'},{'name': 'DejaDraggableDirective', 'selector': '[deja-draggable]'},{'name': 'DejaDroppableDirective', 'selector': '[deja-droppable]'},{'name': 'DejaEditableDirective', 'selector': '[deja-editable]'},{'name': 'DejaMouseDraggableDirective', 'selector': '[deja-mouse-draggable]'},{'name': 'DejaMouseDroppableDirective', 'selector': '[deja-mouse-droppable]'},{'name': 'DejaTilePositionDirective', 'selector': '[deja-tile-position]'},{'name': 'DejaTooltipDirective', 'selector': '[deja-tooltip]'},{'name': 'PendingOnFocusDirective', 'selector': '[pending-onfocus]'},{'name': 'SplitAreaDirective', 'selector': 'split-area'},{'name': 'SplitGutterDirective', 'selector': 'split-gutter'},{'name': 'ValidateOnBlurDirective', 'selector': '[validate-onblur]'}];
     var ACTUAL_COMPONENT = {'name': 'DejaGridParentRowComponent'};

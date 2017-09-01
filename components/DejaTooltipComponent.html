@@ -1710,6 +1710,9 @@
                                 <span class="modifier">Public</span> <a href="#dropdown">dropdown</a>
                             </li>
                             <li>
+                                <span class="modifier">Public</span> <a href="#model">model</a>
+                            </li>
+                            <li>
                                 <span class="modifier">Public</span> <a href="#params">params</a>
                             </li>
                             <li>
@@ -1764,7 +1767,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/component/tooltip/tooltip.component.ts:41</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/component/tooltip/tooltip.component.ts:45</a></div>
                                 </td>
                             </tr>
     
@@ -1904,6 +1907,29 @@
                 <tbody>
                     <tr>
                         <td class="col-md-4">
+                            <a name="model"></a>
+                            <b><span class="modifier">Public</span> model</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-"></span><code>model:     <code></code>
+    </code>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/component/tooltip/tooltip.component.ts:43</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
                             <a name="params"></a>
                             <b><span class="modifier">Public</span> params</b>
                         </td>
@@ -2006,7 +2032,11 @@ export class DejaTooltipComponent implements OnInit {
 
     /** Parameters of the tooltip */
     public params: ITooltipParams;
-    private model: any;
+    private _model: any;
+
+    public get model() {
+        return this._model;
+    }
 
     /**
      * Constructor
@@ -2016,12 +2046,12 @@ export class DejaTooltipComponent implements OnInit {
         const element &#x3D; elementRef.nativeElement as HTMLElement;
 
         const hide$ &#x3D; Observable.from(this.hide)
-            .do(() &#x3D;&gt; this.model &#x3D; undefined);
+            .do(() &#x3D;&gt; this._model &#x3D; undefined);
 
         Observable.fromEvent(element.ownerDocument, &#x27;mousemove&#x27;)
             .takeUntil(hide$)
             .debounceTime(20)
-            .filter(() &#x3D;&gt; this.model)
+            .filter(() &#x3D;&gt; this._model)
             .map((event: MouseEvent) &#x3D;&gt; new Position(event.pageX, event.pageY))
             .filter((position) &#x3D;&gt; {
                 const containerElement &#x3D; this.dropdown.dropdownElement;
@@ -2049,17 +2079,17 @@ export class DejaTooltipComponent implements OnInit {
 
         const model$ &#x3D; this.params.model as Observable&lt;any&gt;;
         if (!model$) {
-            this.model &#x3D; undefined;
+            this._model &#x3D; undefined;
         } else if (model$.subscribe) {
-            model$.subscribe((model) &#x3D;&gt; this.model &#x3D; model, () &#x3D;&gt; this.hide.emit());
+            model$.subscribe((model) &#x3D;&gt; this._model &#x3D; model, () &#x3D;&gt; this.hide.emit());
         } else {
             const promise &#x3D; this.params.model as Promise&lt;any&gt;;
             if (promise.then) {
                 promise
-                    .then((model) &#x3D;&gt; this.model &#x3D; model)
+                    .then((model) &#x3D;&gt; this._model &#x3D; model)
                     .catch(() &#x3D;&gt; this.hide.emit());
             } else {
-                this.model &#x3D; this.params.model;
+                this._model &#x3D; this.params.model;
             }
         }
     }

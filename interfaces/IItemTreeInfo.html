@@ -1702,7 +1702,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="789" class="link-to-prism">src/common/core/item-list/item-list-base.ts:789</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="817" class="link-to-prism">src/common/core/item-list/item-list-base.ts:817</a></div>
                                         </td>
                                     </tr>
 
@@ -1735,7 +1735,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="788" class="link-to-prism">src/common/core/item-list/item-list-base.ts:788</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="816" class="link-to-prism">src/common/core/item-list/item-list-base.ts:816</a></div>
                                         </td>
                                     </tr>
 
@@ -1768,7 +1768,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="791" class="link-to-prism">src/common/core/item-list/item-list-base.ts:791</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="819" class="link-to-prism">src/common/core/item-list/item-list-base.ts:819</a></div>
                                         </td>
                                     </tr>
 
@@ -1801,7 +1801,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="790" class="link-to-prism">src/common/core/item-list/item-list-base.ts:790</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="818" class="link-to-prism">src/common/core/item-list/item-list-base.ts:818</a></div>
                                         </td>
                                     </tr>
 
@@ -1845,10 +1845,10 @@ export abstract class ItemListBase implements OnDestroy {
     protected _minSearchLength &#x3D; 0;
 
     // Viewport
-    protected vpBeforeHeight &#x3D; 0;
-    protected vpAfterHeight &#x3D; 0;
-    protected vpStartRow &#x3D; 0;
-    protected vpEndRow &#x3D; 0;
+    protected _vpBeforeHeight &#x3D; 0;
+    protected _vpAfterHeight &#x3D; 0;
+    protected _vpStartRow &#x3D; 0;
+    protected _vpEndRow &#x3D; 0;
     protected _pageSize &#x3D; 0;
     protected _depthMax &#x3D; 0;
     protected rowsCount &#x3D; 0;
@@ -1878,16 +1878,16 @@ export abstract class ItemListBase implements OnDestroy {
                 delete this._hintLabel;
                 if (viewPort.mode &#x3D;&#x3D;&#x3D; ViewportMode.disabled) {
                     this._itemList &#x3D; viewPortResult.items;
-                    this.vpStartRow &#x3D; 0;
-                    this.vpEndRow &#x3D; 0;
-                    this.vpBeforeHeight &#x3D; 0;
-                    this.vpAfterHeight &#x3D; 0;
+                    this._vpStartRow &#x3D; 0;
+                    this._vpEndRow &#x3D; 0;
+                    this._vpBeforeHeight &#x3D; 0;
+                    this._vpAfterHeight &#x3D; 0;
                 } else {
                     this._itemList &#x3D; viewPortResult.visibleItems;
-                    this.vpStartRow &#x3D; viewPortResult.startIndex;
-                    this.vpEndRow &#x3D; viewPortResult.endIndex;
-                    this.vpBeforeHeight &#x3D; viewPortResult.beforeSize;
-                    this.vpAfterHeight &#x3D; viewPortResult.afterSize;
+                    this._vpStartRow &#x3D; viewPortResult.startIndex;
+                    this._vpEndRow &#x3D; viewPortResult.endIndex;
+                    this._vpBeforeHeight &#x3D; viewPortResult.beforeSize;
+                    this._vpAfterHeight &#x3D; viewPortResult.afterSize;
                 }
 
                 if (viewPortResult.scrollPos !&#x3D;&#x3D; undefined) {
@@ -1912,6 +1912,34 @@ export abstract class ItemListBase implements OnDestroy {
                     this._viewPortChanged.emit(viewPortResult);
                 }
             });
+    }
+
+    public get isMultiSelect(){
+        return this._multiSelect;
+    }
+
+    public get itemList(){
+        return this._itemList;
+    }
+
+    public get ddStartIndex(){
+        return this._ddStartIndex;
+    }
+
+    public get vpBeforeHeight() {
+       return this._vpBeforeHeight;
+    }
+
+    public get vpAfterHeight() {
+        return this._vpAfterHeight;
+    }
+
+    public get vpStartRow() {
+        return this._vpStartRow;
+    }
+
+    public get vpEndRow(){
+        return this._vpEndRow;
     }
 
     /** Renvoie le modèle de tri appliqué à la liste.
@@ -2207,7 +2235,7 @@ export abstract class ItemListBase implements OnDestroy {
         }
     }
 
-    protected getViewPortRowHeight() {
+    public getViewPortRowHeight() {
         return this._viewPortRowHeight || ViewPortService.itemDefaultSize;
     }
 

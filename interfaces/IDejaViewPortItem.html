@@ -1693,7 +1693,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="335" class="link-to-prism">src/component/viewport/viewport.component.ts:335</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="343" class="link-to-prism">src/component/viewport/viewport.component.ts:343</a></div>
                                         </td>
                                     </tr>
 
@@ -1738,8 +1738,16 @@ export class DejaViewPortComponent implements OnDestroy {
     protected startOffset: number;  // Buttons mode only
     @HostBinding(&#x27;attr.hasUpBtn&#x27;) protected hasUpButton &#x3D; false;
     @HostBinding(&#x27;attr.hasDownBtn&#x27;) protected hasDownButton &#x3D; false;
-    @HostBinding(&#x27;attr.horizontal&#x27;) protected isHorizontal &#x3D; false;
-    @HostBinding(&#x27;attr.buttons&#x27;) protected hasButtons &#x3D; false;
+    @HostBinding(&#x27;attr.horizontal&#x27;) protected _isHorizontal &#x3D; false;
+    @HostBinding(&#x27;attr.buttons&#x27;) protected _hasButtons &#x3D; false;
+
+    public get hasButtons() {
+        return this._hasButtons;
+    }
+
+    public get isHorizontal() {
+        return this._isHorizontal;
+    }
 
     private _items: IDejaViewPortItem[];
     private element: HTMLElement;
@@ -1788,7 +1796,7 @@ export class DejaViewPortComponent implements OnDestroy {
     public set direction(value: ViewportDirection | string) {
         const direction &#x3D; typeof value &#x3D;&#x3D;&#x3D; &#x27;string&#x27; ? ViewportDirection[value] : value;
         this.viewPort.direction$.next(direction);
-        this.isHorizontal &#x3D; direction &#x3D;&#x3D;&#x3D; ViewportDirection.horizontal;
+        this._isHorizontal &#x3D; direction &#x3D;&#x3D;&#x3D; ViewportDirection.horizontal;
         this.changeDetectorRef.markForCheck();
     }
 
@@ -1810,7 +1818,7 @@ export class DejaViewPortComponent implements OnDestroy {
         this.viewPort.element$.next(this.element);
         this.subscriptions.push(this.scroll$Sub &#x3D; Observable.fromEvent(this.element, &#x27;scroll&#x27;)
             .map((event: Event) &#x3D;&gt; event.target as HTMLElement)
-            .map((target) &#x3D;&gt; Math.round(this.isHorizontal ? target.scrollLeft : target.scrollTop))
+            .map((target) &#x3D;&gt; Math.round(this._isHorizontal ? target.scrollLeft : target.scrollTop))
             .subscribe((scrollPos) &#x3D;&gt; {
                 this.viewPort.scrollPosition$.next(scrollPos);
             }));
@@ -1822,7 +1830,7 @@ export class DejaViewPortComponent implements OnDestroy {
         if (!this.element) {
             return 0;
         }
-        return this.isHorizontal ? this.element.clientWidth : this.element.clientHeight;
+        return this._isHorizontal ? this.element.clientWidth : this.element.clientHeight;
     }
 
     private set scrollPos(value: number) {
@@ -1889,7 +1897,7 @@ export class DejaViewPortComponent implements OnDestroy {
                 const scroll &#x3D; (vp: IViewPort) &#x3D;&gt; {
                     if (!this.hasButtons) {
                         if (this.element) {
-                            if (this.isHorizontal) {
+                            if (this._isHorizontal) {
                                 this.element.scrollLeft &#x3D; vp.scrollPos;
                             } else {
                                 this.element.scrollTop &#x3D; vp.scrollPos;
@@ -1920,8 +1928,8 @@ export class DejaViewPortComponent implements OnDestroy {
             }));
 
         this.subscriptions.push(Observable.from(this.hasButtons$)
-            .filter((value) &#x3D;&gt; this.hasButtons !&#x3D;&#x3D; value)
-            .do((value) &#x3D;&gt; this.hasButtons &#x3D; value)
+            .filter((value) &#x3D;&gt; this._hasButtons !&#x3D;&#x3D; value)
+            .do((value) &#x3D;&gt; this._hasButtons &#x3D; value)
             .delay(1)
             .do((value) &#x3D;&gt; {
                 if (value) {

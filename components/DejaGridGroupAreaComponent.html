@@ -1722,13 +1722,13 @@
                                 <span class="modifier">Protected</span> <a href="#getDragContext">getDragContext</a>
                             </li>
                             <li>
-                                <span class="modifier">Protected</span> <a href="#getDropContext">getDropContext</a>
+                                <span class="modifier">Public</span> <a href="#getDropContext">getDropContext</a>
                             </li>
                             <li>
                                 <span class="modifier">Protected</span> <a href="#getGroupColumnFromHTMLElement">getGroupColumnFromHTMLElement</a>
                             </li>
                             <li>
-                                <span class="modifier">Protected</span> <a href="#removeGroup">removeGroup</a>
+                                <span class="modifier">Public</span> <a href="#removeGroup">removeGroup</a>
                             </li>
                         </ul>
                     </td>
@@ -1899,12 +1899,12 @@
                     <tr>
                         <td class="col-md-4">
                             <a name="getDropContext"></a>
-                            <b><span class="modifier">Protected</span> getDropContext</b>
+                            <b><span class="modifier">Public</span> getDropContext</b>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                                <span class="modifier-icon method fa fa-play circle"></span>
+                                <span class="modifier-icon method fa fa-play "></span>
                             <code>getDropContext()</code>
                         </td>
                     </tr>
@@ -1965,12 +1965,12 @@
                     <tr>
                         <td class="col-md-4">
                             <a name="removeGroup"></a>
-                            <b><span class="modifier">Protected</span> removeGroup</b>
+                            <b><span class="modifier">Public</span> removeGroup</b>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                                <span class="modifier-icon method fa fa-play circle"></span>
+                                <span class="modifier-icon method fa fa-play "></span>
                             <code>removeGroup(event: <a href="../classes/DejaChipsCloseEvent.html">DejaChipsCloseEvent</a>)</code>
                         </td>
                     </tr>
@@ -2089,7 +2089,7 @@ export class DejaGridGroupAreaComponent {
         };
     }
 
-    protected getDropContext() {
+    public getDropContext() {
         if (!this.clipboardService) {
             return null;
         }
@@ -2177,7 +2177,7 @@ export class DejaGridGroupAreaComponent {
         };
     }
 
-    protected removeGroup(event: DejaChipsCloseEvent) {
+    public removeGroup(event: DejaChipsCloseEvent) {
         this.groupRemoved.emit(event);
         event.stopPropagation();
         return false;

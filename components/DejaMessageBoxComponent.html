@@ -1704,7 +1704,7 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <span class="modifier">Protected</span> <a href="#actionsTemplate">actionsTemplate</a>
+                                <span class="modifier">Public</span> <a href="#actionsTemplate">actionsTemplate</a>
                             </li>
                             <li>
                                 <span class="modifier">Public</span> <a href="#horizontal">horizontal</a>
@@ -1878,12 +1878,12 @@
                     <tr>
                         <td class="col-md-4">
                             <a name="actionsTemplate"></a>
-                            <b><span class="modifier">Protected</span> actionsTemplate</b>
+                            <b><span class="modifier">Public</span> actionsTemplate</b>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <span class="modifier-icon fa fa-circle"></span><code>actionsTemplate:     <code></code>
+                            <span class="modifier-icon fa fa-"></span><code>actionsTemplate:     <code></code>
     </code>
                         </td>
                     </tr>
@@ -1942,7 +1942,7 @@ export class DejaMessageBoxComponent implements OnInit {
     @Input() public title: string;
     @Input() public icon: string;
     @Input() public actions: Array&lt;{text?: string; type?: &#x27;info&#x27; | &#x27;primary&#x27; | &#x27;success&#x27; | &#x27;warn&#x27; | &#x27;danger&#x27;; icon?: string; action(): any}&gt;;
-    @ContentChild(&#x27;actionsTemplate&#x27;) protected actionsTemplate;
+    @ContentChild(&#x27;actionsTemplate&#x27;) public actionsTemplate;
 
     private _horizontal: boolean;
 

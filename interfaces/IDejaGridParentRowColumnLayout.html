@@ -1696,7 +1696,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/component/data-grid/data-grid-parent-row/data-grid-parent-row.component.ts:74</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="82" class="link-to-prism">src/component/data-grid/data-grid-parent-row/data-grid-parent-row.component.ts:82</a></div>
                                         </td>
                                     </tr>
 
@@ -1729,7 +1729,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="75" class="link-to-prism">src/component/data-grid/data-grid-parent-row/data-grid-parent-row.component.ts:75</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/component/data-grid/data-grid-parent-row/data-grid-parent-row.component.ts:83</a></div>
                                         </td>
                                     </tr>
 
@@ -1770,26 +1770,34 @@ export class DejaGridParentRowComponent {
     /** Template de cellule par defaut  définit dans le HTML de la grille */
     @ContentChild(&#x27;cellTemplate&#x27;) protected cellTemplateInternal;
 
-    private columnLayout &#x3D; {} as IDejaGridParentRowColumnLayout;
+    private _columnLayout &#x3D; {} as IDejaGridParentRowColumnLayout;
+
+    public columnLayoutOfColumn0() {
+        return this._columnLayout.column0;
+    }
+
+    public columnLayoutOfColumns() {
+        return this._columnLayout.columns;
+    }
 
     /** Définit la structure de colonnes a appliquer sur cette ligne */
     @Input()
     public set columns(columns: IDejaGridColumn[]) {
         let left &#x3D; 0;
-        this.columnLayout.columns &#x3D; [];
+        this._columnLayout.columns &#x3D; [];
         columns.forEach((column) &#x3D;&gt; {
             if (this.row[column.name]) {
-                if (this.columnLayout.column0 &#x3D;&#x3D;&#x3D; 0) {
-                    this.columnLayout.column0 &#x3D; left;
+                if (this._columnLayout.column0 &#x3D;&#x3D;&#x3D; 0) {
+                    this._columnLayout.column0 &#x3D; left;
                 }
-                this.columnLayout.columns.push({
+                this._columnLayout.columns.push({
                     column: column,
                     left: left,
                 });
             }
             left +&#x3D; column.w;
         });
-        this.columnLayout.column0 &#x3D; left;
+        this._columnLayout.column0 &#x3D; left;
         this.changeDetectorRef.markForCheck();
     }
 

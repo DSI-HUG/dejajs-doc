@@ -1717,6 +1717,9 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                <span class="modifier">Public</span> <a href="#areas">areas</a>
+                            </li>
+                            <li>
                                  <a href="#styleFlexDirection">styleFlexDirection</a>
                             </li>
                             <li>
@@ -1815,7 +1818,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/component/splitter/splitter.component.ts:97</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="101" class="link-to-prism">src/component/splitter/splitter.component.ts:101</a></div>
                                 </td>
                             </tr>
     
@@ -2038,7 +2041,7 @@ By default <code>100%</code></p>
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="130" class="link-to-prism">src/component/splitter/splitter.component.ts:130</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="134" class="link-to-prism">src/component/splitter/splitter.component.ts:134</a></div>
                                 </td>
                             </tr>
     
@@ -2120,7 +2123,7 @@ By default <code>100%</code></p>
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="219" class="link-to-prism">src/component/splitter/splitter.component.ts:219</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="223" class="link-to-prism">src/component/splitter/splitter.component.ts:223</a></div>
                                 </td>
                             </tr>
     
@@ -2153,7 +2156,7 @@ By default <code>100%</code></p>
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="166" class="link-to-prism">src/component/splitter/splitter.component.ts:166</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="170" class="link-to-prism">src/component/splitter/splitter.component.ts:170</a></div>
                                 </td>
                             </tr>
     
@@ -2214,7 +2217,7 @@ By default <code>100%</code></p>
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="183" class="link-to-prism">src/component/splitter/splitter.component.ts:183</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="187" class="link-to-prism">src/component/splitter/splitter.component.ts:187</a></div>
                                 </td>
                             </tr>
     
@@ -2282,7 +2285,7 @@ By default <code>100%</code></p>
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="150" class="link-to-prism">src/component/splitter/splitter.component.ts:150</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="154" class="link-to-prism">src/component/splitter/splitter.component.ts:154</a></div>
                                 </td>
                             </tr>
     
@@ -2353,6 +2356,29 @@ By default <code>100%</code></p>
             <h3 id="inputs">
                 Properties
             </h3>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="areas"></a>
+                            <b><span class="modifier">Public</span> areas</b>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <span class="modifier-icon fa fa-"></span><code>areas:     <code></code>
+    </code>
+                        </td>
+                    </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="99" class="link-to-prism">src/component/splitter/splitter.component.ts:99</a></div>
+                                </td>
+                            </tr>
+    
+    
+                </tbody>
+            </table>
             <table class="table table-sm table-bordered">
                 <tbody>
                     <tr>
@@ -2539,16 +2565,20 @@ export class DejaSplitterComponent implements OnChanges, OnDestroy {
     }
 
     private get nbGutters(): number {
-        return this.areas.length - 1;
+        return this._areas.length - 1;
     }
 
     private minPercent &#x3D; 0.3;
-    private areas: IAreaData[] &#x3D; [];
+    private _areas: IAreaData[] &#x3D; [];
     private isDragging &#x3D; false;
     private containerSize &#x3D; 0;
     private areaASize &#x3D; 0;
     private areaBSize &#x3D; 0;
     private eventsDragFct: Function[] &#x3D; [];
+
+    public get areas() {
+        return this._areas;
+    }
 
     /**
      * Constructor
@@ -2582,7 +2612,7 @@ export class DejaSplitterComponent implements OnChanges, OnDestroy {
      * @param minPixel Min size of the new area
      */
     public addArea(component: SplitAreaDirective, orderUser: number | null, sizeUser: number | null, minPixel: number) {
-        this.areas.push({
+        this._areas.push({
             component,
             orderUser,
             order: -1,
@@ -2602,7 +2632,7 @@ export class DejaSplitterComponent implements OnChanges, OnDestroy {
      * @param minPixel  Min size of the area
      */
     public updateArea(component: SplitAreaDirective, orderUser: number | null, sizeUser: number | null, minPixel: number) {
-        const item &#x3D; this.areas.find((a) &#x3D;&gt; a.component &#x3D;&#x3D;&#x3D; component);
+        const item &#x3D; this._areas.find((a) &#x3D;&gt; a.component &#x3D;&#x3D;&#x3D; component);
 
         if (item) {
             item.orderUser &#x3D; orderUser;
@@ -2618,12 +2648,12 @@ export class DejaSplitterComponent implements OnChanges, OnDestroy {
      * @param area Area to delete
      */
     public removeArea(area: SplitAreaDirective) {
-        const item &#x3D; this.areas.find((a) &#x3D;&gt; a.component &#x3D;&#x3D;&#x3D; area);
+        const item &#x3D; this._areas.find((a) &#x3D;&gt; a.component &#x3D;&#x3D;&#x3D; area);
 
         if (item) {
-            const index &#x3D; this.areas.indexOf(item);
-            this.areas.splice(index, 1);
-            this.areas.forEach((a, i) &#x3D;&gt; a.order &#x3D; i * 2);
+            const index &#x3D; this._areas.indexOf(item);
+            this._areas.splice(index, 1);
+            this._areas.forEach((a, i) &#x3D;&gt; a.order &#x3D; i * 2);
 
             this.refresh();
         }
@@ -2641,8 +2671,8 @@ export class DejaSplitterComponent implements OnChanges, OnDestroy {
             return;
         }
 
-        const areaA &#x3D; this.areas.find((a) &#x3D;&gt; a.order &#x3D;&#x3D;&#x3D; gutterOrder - 1);
-        const areaB &#x3D; this.areas.find((a) &#x3D;&gt; a.order &#x3D;&#x3D;&#x3D; gutterOrder + 1);
+        const areaA &#x3D; this._areas.find((a) &#x3D;&gt; a.order &#x3D;&#x3D;&#x3D; gutterOrder - 1);
+        const areaB &#x3D; this._areas.find((a) &#x3D;&gt; a.order &#x3D;&#x3D;&#x3D; gutterOrder + 1);
         if (!areaA || !areaB) {
             return;
         }
@@ -2674,24 +2704,24 @@ export class DejaSplitterComponent implements OnChanges, OnDestroy {
         this.stopDragging();
 
         // ORDERS: Set css &#x27;order&#x27; property depending on user input or added order
-        const nbCorrectOrder &#x3D; this.areas.filter((a) &#x3D;&gt; a.orderUser !&#x3D;&#x3D; null &amp;&amp; !isNaN(a.orderUser)).length;
-        if (nbCorrectOrder &#x3D;&#x3D;&#x3D; this.areas.length) {
-            this.areas.sort((a, b) &#x3D;&gt; +a.orderUser - +b.orderUser);
+        const nbCorrectOrder &#x3D; this._areas.filter((a) &#x3D;&gt; a.orderUser !&#x3D;&#x3D; null &amp;&amp; !isNaN(a.orderUser)).length;
+        if (nbCorrectOrder &#x3D;&#x3D;&#x3D; this._areas.length) {
+            this._areas.sort((a, b) &#x3D;&gt; +a.orderUser - +b.orderUser);
         }
 
-        this.areas.forEach((a, i) &#x3D;&gt; {
+        this._areas.forEach((a, i) &#x3D;&gt; {
             a.order &#x3D; i * 2;
             a.component.setStyle(&#x27;order&#x27;, a.order);
         });
 
         // SIZES: Set css &#x27;flex-basis&#x27; property depending on user input or equal sizes
-        const totalSize &#x3D; this.areas.map((a) &#x3D;&gt; a.sizeUser).reduce((acc, s) &#x3D;&gt; acc + s, 0);
-        const toBeDefined &#x3D; this.areas.filter((a) &#x3D;&gt; !a.sizeUser || isNaN(a.sizeUser));
+        const totalSize &#x3D; this._areas.map((a) &#x3D;&gt; a.sizeUser).reduce((acc, s) &#x3D;&gt; acc + s, 0);
+        const toBeDefined &#x3D; this._areas.filter((a) &#x3D;&gt; !a.sizeUser || isNaN(a.sizeUser));
 
-        if ((totalSize &lt; 99.99 || totalSize &gt; 100.01) &amp;&amp; this.areas.length &gt; 1) {
+        if ((totalSize &lt; 99.99 || totalSize &gt; 100.01) &amp;&amp; this._areas.length &gt; 1) {
             if (toBeDefined.length &#x3D;&#x3D;&#x3D; 0) {
                 // Map to 100%
-                this.areas.forEach((a) &#x3D;&gt; {
+                this._areas.forEach((a) &#x3D;&gt; {
                     const adjustedSize &#x3D; Number(a.sizeUser) * 100 / totalSize;
                     a.size &#x3D; adjustedSize;
                 });
@@ -2704,17 +2734,17 @@ export class DejaSplitterComponent implements OnChanges, OnDestroy {
                     a.size &#x3D; size;
                     remain -&#x3D; size;
                 });
-                this.areas
+                this._areas
                     .filter((a) &#x3D;&gt; a.sizeUser &amp;&amp; !isNaN(a.sizeUser))
                     .forEach((a) &#x3D;&gt; a.size &#x3D; Number(a.sizeUser));
             } else {
-                const size &#x3D; Number((100 / this.areas.length).toFixed(3));
-                this.areas.forEach((a) &#x3D;&gt; a.size &#x3D; size);
+                const size &#x3D; Number((100 / this._areas.length).toFixed(3));
+                this._areas.forEach((a) &#x3D;&gt; a.size &#x3D; size);
             }
-        } else if (totalSize &#x3D;&#x3D;&#x3D; 0 &amp;&amp; this.areas.length &#x3D;&#x3D;&#x3D; 1) {
-            this.areas[0].size &#x3D; 100;
+        } else if (totalSize &#x3D;&#x3D;&#x3D; 0 &amp;&amp; this._areas.length &#x3D;&#x3D;&#x3D; 1) {
+            this._areas[0].size &#x3D; 100;
         } else {
-            this.areas.forEach((a) &#x3D;&gt; a.size &#x3D; Number(a.sizeUser));
+            this._areas.forEach((a) &#x3D;&gt; a.size &#x3D; Number(a.sizeUser));
         }
 
         this.refreshStyleSizes();
@@ -2722,8 +2752,8 @@ export class DejaSplitterComponent implements OnChanges, OnDestroy {
     }
 
     private refreshStyleSizes() {
-        const f &#x3D; this.gutterSize * this.nbGutters / this.areas.length;
-        this.areas.forEach((a) &#x3D;&gt; a.component.setStyle(&#x27;flex-basis&#x27;, &#x60;calc( ${a.size}% - ${f}px )&#x60;));
+        const f &#x3D; this.gutterSize * this.nbGutters / this._areas.length;
+        this._areas.forEach((a) &#x3D;&gt; a.component.setStyle(&#x27;flex-basis&#x27;, &#x60;calc( ${a.size}% - ${f}px )&#x60;));
     }
 
     private dragEvent(event: MouseEvent, start: Point, areaA: IAreaData, areaB: IAreaData) {
@@ -2775,7 +2805,7 @@ export class DejaSplitterComponent implements OnChanges, OnDestroy {
             return;
         }
 
-        this.areas.forEach((a) &#x3D;&gt; a.component.unlockEvents());
+        this._areas.forEach((a) &#x3D;&gt; a.component.unlockEvents());
 
         while (this.eventsDragFct.length &gt; 0) {
             const fct &#x3D; this.eventsDragFct.pop();
@@ -2793,7 +2823,7 @@ export class DejaSplitterComponent implements OnChanges, OnDestroy {
     }
 
     private notify(type: string) {
-        const data: number[] &#x3D; this.areas.map((a) &#x3D;&gt; a.size);
+        const data: number[] &#x3D; this._areas.map((a) &#x3D;&gt; a.size);
 
         switch (type) {
             case &#x27;start&#x27;:
