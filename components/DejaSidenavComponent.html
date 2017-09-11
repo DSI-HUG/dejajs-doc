@@ -177,6 +177,9 @@
                                     <a href="../modules/DejaSidenavModule.html" >DejaSidenavModule</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../modules/DejaSlimScrollModule.html" >DejaSlimScrollModule</a>
+                                </li>
+                                <li class="link">
                                     <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
                                 </li>
                                 <li class="link">
@@ -395,6 +398,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../directives/DejaSidenavMenuSeparatorDirective.html" >DejaSidenavMenuSeparatorDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaSlimScrollDirective.html" >DejaSlimScrollDirective</a>
                                 </li>
                                 <li class="link">
                                     <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
@@ -765,6 +771,9 @@
                                 <li class="link">
                                     <a href="../interfaces/Point.html" >Point</a>
                                 </li>
+                                <li class="link">
+                                    <a href="../interfaces/SlimScrollOptions.html" >SlimScrollOptions</a>
+                                </li>
                         </ul>
                     </li>
             
@@ -989,6 +998,9 @@
                                            <a href="../modules/DejaSidenavModule.html" >DejaSidenavModule</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../modules/DejaSlimScrollModule.html" >DejaSlimScrollModule</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
                                        </li>
                                        <li class="link">
@@ -1207,6 +1219,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../directives/DejaSidenavMenuSeparatorDirective.html" >DejaSidenavMenuSeparatorDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaSlimScrollDirective.html" >DejaSlimScrollDirective</a>
                                        </li>
                                        <li class="link">
                                            <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
@@ -1577,6 +1592,9 @@
                                        <li class="link">
                                            <a href="../interfaces/Point.html" >Point</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="../interfaces/SlimScrollOptions.html" >SlimScrollOptions</a>
+                                       </li>
                                </ul>
                            </li>
                    
@@ -1693,6 +1711,10 @@
         <tbody>
 
 
+            <tr>
+                <td class="col-md-3">encapsulation</td>
+                <td class="col-md-9"><code>ViewEncapsulation.None</code></td>
+            </tr>
 
 
 
@@ -1772,10 +1794,65 @@
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/component/sidenav/sidenav.component.ts:35</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/component/sidenav/sidenav.component.ts:36</a></div>
                                 </td>
                             </tr>
     
+                    <tr>
+                        <td class="col-md-4">
+                                <div>
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Type</td>
+                                                    <td>Optional</td>
+                                                    <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                      <td>zone</td>
+                                                      <td>
+                                                                <code><a href="https://angular.io/docs/ts/latest/api/core/index/NgZone-class.html" target="_blank" >NgZone</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>router</td>
+                                                      <td>
+                                                                <code><a href="https://angular.io/docs/ts/latest/api/router/index/Router-class.html" target="_blank" >Router</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>activatedRoute</td>
+                                                      <td>
+                                                                <code><a href="https://angular.io/docs/ts/latest/api/router/index/ActivatedRoute-interface.html" target="_blank" >ActivatedRoute</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>changeDetectorRef</td>
+                                                      <td>
+                                                                <code><a href="https://angular.io/docs/ts/latest/api/core/index/ChangeDetectorRef-class.html" target="_blank" >ChangeDetectorRef</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
     </section>
@@ -1797,12 +1874,14 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/component/sidenav/sidenav.component.ts:27</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/component/sidenav/sidenav.component.ts:28</a></div>
                                 </td>
                             </tr>
                 </tbody>
             </table>
     </section>
+
+
 
 
 
@@ -1816,12 +1895,12 @@
                     <tr>
                         <td class="col-md-4">
                             <a name="sidenav"></a>
-                            <b><span class="modifier">Public</span> sidenav</b>
+                            <span class="name"><b><span class="modifier">Public</span> sidenav</b><a href="#sidenav"><span class="fa fa-link"></span></a></span>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <span class="modifier-icon fa fa-"></span><code>sidenav:     <code>MdSidenav</code>
+                            <span class="modifier-icon fa fa-reset"></span><code>sidenav:     <code>MdSidenav</code>
     </code>
                         </td>
                     </tr>
@@ -1838,7 +1917,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/component/sidenav/sidenav.component.ts:24</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/component/sidenav/sidenav.component.ts:25</a></div>
                                 </td>
                             </tr>
     
@@ -1850,7 +1929,7 @@
 
 
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">import { AfterViewInit, ChangeDetectorRef, Component, Input, NgZone, OnDestroy, OnInit, ViewChild } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers"><code class="language-typescript">import { AfterViewInit, ChangeDetectorRef, Component, Input, NgZone, OnDestroy, OnInit, ViewChild, ViewEncapsulation } from &#x27;@angular/core&#x27;;
 import { MdSidenav } from &#x27;@angular/material&#x27;;
 import { ActivatedRoute, ActivatedRouteSnapshot, NavigationEnd, Router } from &#x27;@angular/router&#x27;;
 import &#x27;rxjs/add/operator/filter&#x27;;
@@ -1860,6 +1939,7 @@ import &#x27;rxjs/add/operator/takeWhile&#x27;;
 import { Subject } from &#x27;rxjs/Subject&#x27;;
 
 @Component({
+    encapsulation: ViewEncapsulation.None,
     selector: &#x27;deja-sidenav&#x27;,
     templateUrl: &#x27;./sidenav.component.html&#x27;,
     styleUrls: [&#x27;./sidenav.component.scss&#x27;]
@@ -2030,7 +2110,7 @@ export class DejaSidenavComponent implements AfterViewInit, OnInit, OnDestroy {
 <script>
         var COMPONENT_TEMPLATE = '<div><md-sidenav-container fxFlex [class.sidenav-hidden]="hidden" [class.sidenav-light]="!hidden && !sidenav.opened">    <md-sidenav #sidenav mode="side" fxLayout="column" opened>        <md-toolbar class="header">            <md-icon class="header-icon">face</md-icon>            <span class="header-text">{{headerText}}</span>            <span fxFlex></span>            <button md-icon-button class="header-menu-btn" (click)="sidenav.toggle()">                <md-icon></md-icon>            </button>        </md-toolbar>        <ng-content select="deja-sidenav-menu"></ng-content>    </md-sidenav>    <div fxLayout="column" fxFlex>        <md-toolbar color="primary">            <button md-icon-button class="menu-btn" *ngIf="!sidenav.opened" (click)="sidenav.open()">                <md-icon>menu</md-icon>            </button>            <span>{{ title }}</span>            <span fxFlex></span>            <ng-content select="deja-sidenav-header"></ng-content>                    </md-toolbar>        <ng-content select="deja-sidenav-content"></ng-content>    </div></md-sidenav-container></div>'
     var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBackdropComponent', 'selector': 'deja-backdrop'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaCodeViewerComponent', 'selector': 'deja-code-viewer'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaDropDownComponent', 'selector': 'deja-dropdown'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaItemComponent', 'selector': 'deja-item'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMarkdownComponent', 'selector': 'deja-markdown'},{'name': 'DejaMenuComponent', 'selector': 'deja-menu'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSidenavComponent', 'selector': 'deja-sidenav'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTagComponent', 'selector': 'deja-tag'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'}];
-    var DIRECTIVES = [{'name': 'DateValidatorDirective', 'selector': '[date-validator][ngModel]'},{'name': 'DejaAutosizeTextAreaDirective', 'selector': 'textarea[deja-autosize]'},{'name': 'DejaChildValidatorDirective', 'selector': '[deja-child-validator]'},{'name': 'DejaDraggableDirective', 'selector': '[deja-draggable]'},{'name': 'DejaDroppableDirective', 'selector': '[deja-droppable]'},{'name': 'DejaEditableDirective', 'selector': '[deja-editable]'},{'name': 'DejaMouseDraggableDirective', 'selector': '[deja-mouse-draggable]'},{'name': 'DejaMouseDroppableDirective', 'selector': '[deja-mouse-droppable]'},{'name': 'DejaSidenavContentDirective', 'selector': 'deja-sidenav-content, [deja-sidenav-content]'},{'name': 'DejaSidenavHeaderDirective', 'selector': 'deja-sidenav-header, [deja-sidenav-header]'},{'name': 'DejaSidenavMenuDirective', 'selector': 'deja-sidenav-menu, [deja-sidenav-menu]'},{'name': 'DejaSidenavMenuSeparatorDirective', 'selector': 'deja-sidenav-menu-separator, [deja-sidenav-menu-separator]'},{'name': 'DejaTilePositionDirective', 'selector': '[deja-tile-position]'},{'name': 'DejaTooltipDirective', 'selector': '[deja-tooltip]'},{'name': 'PendingOnFocusDirective', 'selector': '[pending-onfocus]'},{'name': 'SplitAreaDirective', 'selector': 'split-area'},{'name': 'SplitGutterDirective', 'selector': 'split-gutter'},{'name': 'ValidateOnBlurDirective', 'selector': '[validate-onblur]'}];
+    var DIRECTIVES = [{'name': 'DateValidatorDirective', 'selector': '[date-validator][ngModel]'},{'name': 'DejaAutosizeTextAreaDirective', 'selector': 'textarea[deja-autosize]'},{'name': 'DejaChildValidatorDirective', 'selector': '[deja-child-validator]'},{'name': 'DejaDraggableDirective', 'selector': '[deja-draggable]'},{'name': 'DejaDroppableDirective', 'selector': '[deja-droppable]'},{'name': 'DejaEditableDirective', 'selector': '[deja-editable]'},{'name': 'DejaMouseDraggableDirective', 'selector': '[deja-mouse-draggable]'},{'name': 'DejaMouseDroppableDirective', 'selector': '[deja-mouse-droppable]'},{'name': 'DejaSidenavContentDirective', 'selector': 'deja-sidenav-content, [deja-sidenav-content]'},{'name': 'DejaSidenavHeaderDirective', 'selector': 'deja-sidenav-header, [deja-sidenav-header]'},{'name': 'DejaSidenavMenuDirective', 'selector': 'deja-sidenav-menu, [deja-sidenav-menu]'},{'name': 'DejaSidenavMenuSeparatorDirective', 'selector': 'deja-sidenav-menu-separator, [deja-sidenav-menu-separator]'},{'name': 'DejaSlimScrollDirective', 'selector': '[slimScroll]'},{'name': 'DejaTilePositionDirective', 'selector': '[deja-tile-position]'},{'name': 'DejaTooltipDirective', 'selector': '[deja-tooltip]'},{'name': 'PendingOnFocusDirective', 'selector': '[pending-onfocus]'},{'name': 'SplitAreaDirective', 'selector': 'split-area'},{'name': 'SplitGutterDirective', 'selector': 'split-gutter'},{'name': 'ValidateOnBlurDirective', 'selector': '[validate-onblur]'}];
     var ACTUAL_COMPONENT = {'name': 'DejaSidenavComponent'};
 </script>
 <script src="../js/tree.js"></script>

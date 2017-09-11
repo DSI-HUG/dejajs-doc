@@ -177,6 +177,9 @@
                                     <a href="../modules/DejaSidenavModule.html" >DejaSidenavModule</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../modules/DejaSlimScrollModule.html" >DejaSlimScrollModule</a>
+                                </li>
+                                <li class="link">
                                     <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
                                 </li>
                                 <li class="link">
@@ -395,6 +398,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../directives/DejaSidenavMenuSeparatorDirective.html" >DejaSidenavMenuSeparatorDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaSlimScrollDirective.html" >DejaSlimScrollDirective</a>
                                 </li>
                                 <li class="link">
                                     <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
@@ -765,6 +771,9 @@
                                 <li class="link">
                                     <a href="../interfaces/Point.html" >Point</a>
                                 </li>
+                                <li class="link">
+                                    <a href="../interfaces/SlimScrollOptions.html" >SlimScrollOptions</a>
+                                </li>
                         </ul>
                     </li>
             
@@ -989,6 +998,9 @@
                                            <a href="../modules/DejaSidenavModule.html" >DejaSidenavModule</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../modules/DejaSlimScrollModule.html" >DejaSlimScrollModule</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
                                        </li>
                                        <li class="link">
@@ -1207,6 +1219,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../directives/DejaSidenavMenuSeparatorDirective.html" >DejaSidenavMenuSeparatorDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaSlimScrollDirective.html" >DejaSlimScrollDirective</a>
                                        </li>
                                        <li class="link">
                                            <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
@@ -1577,6 +1592,9 @@
                                        <li class="link">
                                            <a href="../interfaces/Point.html" >Point</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="../interfaces/SlimScrollOptions.html" >SlimScrollOptions</a>
+                                       </li>
                                </ul>
                            </li>
                    
@@ -1884,12 +1902,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="calcDragTargetIndex$"></a>
-                                    <b><span class="modifier">Public</span> calcDragTargetIndex$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> calcDragTargetIndex$</b><a href="#calcDragTargetIndex$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>calcDragTargetIndex$(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, targetIndex: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
                                 </td>
                             </tr>
@@ -1907,9 +1925,47 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
             </div>
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>index</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>targetIndex</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code>Observable&lt;number&gt;</code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -1919,12 +1975,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="collapseItem$"></a>
-                                    <b><span class="modifier">Public</span> collapseItem$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> collapseItem$</b><a href="#collapseItem$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>collapseItem$(item: <a href="../interfaces/IItemTree.html">IItemTree</a>)</code>
                                 </td>
                             </tr>
@@ -1948,16 +2004,19 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                             <tr>
-                                                              <td>items</td>
+                                                              <td>item</td>
+                                                              <td>
+                                                                      <code><a href="../interfaces/IItemTree.html" target="_self" >IItemTree</a></code>
+                                                              </td>
                                                               <td>
                                                               </td>
-                                                              <td><p>Eléments à réduire.</p>
-            </td>
+                                                              <td></td>
                                                             </tr>
                                                     </tbody>
                                                 </table>
@@ -1980,13 +2039,13 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="collapseItems$"></a>
-                                    <b><span class="modifier">Public</span> collapseItems$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> collapseItems$</b><a href="#collapseItems$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>collapseItems$(items: [])</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>collapseItems$(items: <a href="../interfaces/IItemBase.html">IItemBase[]</a>)</code>
                                 </td>
                             </tr>
             
@@ -2009,12 +2068,16 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                             <tr>
                                                               <td>items</td>
+                                                              <td>
+                                                                      <code><a href="../interfaces/IItemBase.html" target="_self" >IItemBase[]</a></code>
+                                                              </td>
                                                               <td>
                                                               </td>
                                                               <td><p>Liste des éléments à réduire.</p>
@@ -2041,12 +2104,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="drop$"></a>
-                                    <b><span class="modifier">Public</span> drop$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> drop$</b><a href="#drop$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>drop$()</code>
                                 </td>
                             </tr>
@@ -2076,12 +2139,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="ensureSelection"></a>
-                                    <b><span class="modifier">Public</span> ensureSelection</b>
+                                    <span class="name"><b><span class="modifier">Public</span> ensureSelection</b><a href="#ensureSelection"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>ensureSelection()</code>
                                 </td>
                             </tr>
@@ -2109,12 +2172,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="expandItem$"></a>
-                                    <b><span class="modifier">Public</span> expandItem$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> expandItem$</b><a href="#expandItem$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>expandItem$(item: <a href="../interfaces/IItemTree.html">IItemTree</a>)</code>
                                 </td>
                             </tr>
@@ -2138,16 +2201,19 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                             <tr>
-                                                              <td>items</td>
+                                                              <td>item</td>
+                                                              <td>
+                                                                      <code><a href="../interfaces/IItemTree.html" target="_self" >IItemTree</a></code>
+                                                              </td>
                                                               <td>
                                                               </td>
-                                                              <td><p>Eléments à étendre.</p>
-            </td>
+                                                              <td></td>
                                                             </tr>
                                                     </tbody>
                                                 </table>
@@ -2170,13 +2236,13 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="expandItems$"></a>
-                                    <b><span class="modifier">Public</span> expandItems$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> expandItems$</b><a href="#expandItems$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>expandItems$(items: [])</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>expandItems$(items: <a href="../interfaces/IItemBase.html">IItemBase[]</a>)</code>
                                 </td>
                             </tr>
             
@@ -2199,12 +2265,16 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                             <tr>
                                                               <td>items</td>
+                                                              <td>
+                                                                      <code><a href="../interfaces/IItemBase.html" target="_self" >IItemBase[]</a></code>
+                                                              </td>
                                                               <td>
                                                               </td>
                                                               <td><p>Liste des éléments à étendre.</p>
@@ -2231,13 +2301,13 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="findNextMatch$"></a>
-                                    <b><span class="modifier">Public</span> findNextMatch$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> findNextMatch$</b><a href="#findNextMatch$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>findNextMatch$(compare: (item: <a href="../interfaces/IItemBase.html">IItemBase</a>,index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>) => void, startIndex: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>findNextMatch$(compare?: (item?: <a href="../interfaces/IItemBase.html">IItemBase</a>,index?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>) => void, startIndex?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
                                 </td>
                             </tr>
             
@@ -2260,6 +2330,7 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -2267,7 +2338,10 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                             <tr>
                                                               <td>compare</td>
                                                               <td>
-                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function" target="_blank" >Function</a></code>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+                                                              </td>
+                                                              <td>
+                                                                  true
                                                               </td>
                                                               <td><p>Function de comparaison pour la recherche de l&#39;élément.</p>
             </td>
@@ -2276,6 +2350,9 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                               <td>startIndex</td>
                                                               <td>
                                                                       <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                              </td>
+                                                              <td>
+                                                                  true
                                                               </td>
                                                               <td><p>Index de départ sur la liste des éléments visibles.</p>
             </td>
@@ -2301,13 +2378,13 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="getFlatList$"></a>
-                                    <b><span class="modifier">Protected</span> getFlatList$</b>
+                                    <span class="name"><b><span class="modifier">Protected</span> getFlatList$</b><a href="#getFlatList$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play circle"></span>
-                                    <code>getFlatList$(items: [], isFiltered: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, multiSelect: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                                        <span class="modifier-icon fa fa-lock"></span>
+                                    <code>getFlatList$(items: <a href="../interfaces/IItemBase.html">IItemBase[]</a>, isFiltered: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, multiSelect: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
                                 </td>
                             </tr>
             
@@ -2331,6 +2408,7 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -2338,9 +2416,30 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                             <tr>
                                                               <td>items</td>
                                                               <td>
+                                                                      <code><a href="../interfaces/IItemBase.html" target="_self" >IItemBase[]</a></code>
+                                                              </td>
+                                                              <td>
                                                               </td>
                                                               <td><p>Liste des éléments hierarchique.</p>
             </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>isFiltered</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>multiSelect</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
                                                             </tr>
                                                     </tbody>
                                                 </table>
@@ -2363,13 +2462,13 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="getGroupedList$"></a>
-                                    <b><span class="modifier">Protected</span> getGroupedList$</b>
+                                    <span class="name"><b><span class="modifier">Protected</span> getGroupedList$</b><a href="#getGroupedList$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play circle"></span>
-                                    <code>getGroupedList$(items: [])</code>
+                                        <span class="modifier-icon fa fa-lock"></span>
+                                    <code>getGroupedList$(items: <a href="../interfaces/IItemBase.html">IItemBase[]</a>)</code>
                                 </td>
                             </tr>
             
@@ -2393,12 +2492,16 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                             <tr>
                                                               <td>items</td>
+                                                              <td>
+                                                                      <code><a href="../interfaces/IItemBase.html" target="_self" >IItemBase[]</a></code>
+                                                              </td>
                                                               <td>
                                                               </td>
                                                               <td><p>Liste des éléments à grouper.</p>
@@ -2425,12 +2528,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="getGroupingService"></a>
-                                    <b><span class="modifier">Public</span> getGroupingService</b>
+                                    <span class="name"><b><span class="modifier">Public</span> getGroupingService</b><a href="#getGroupingService"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>getGroupingService()</code>
                                 </td>
                             </tr>
@@ -2447,15 +2550,10 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                         <div class="io-description"><p>Renvoie le service utilisé pour le regroupement de la liste</p>
             </div>
             
-                                        <div>
-                                        </div>
                                         <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
             
                                         </div>
-                                            <div class="io-description">
-                                                
-                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -2465,12 +2563,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="getItemFromIndex"></a>
-                                    <b><span class="modifier">Public</span> getItemFromIndex</b>
+                                    <span class="name"><b><span class="modifier">Public</span> getItemFromIndex</b><a href="#getItemFromIndex"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>getItemFromIndex(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
                                 </td>
                             </tr>
@@ -2494,6 +2592,7 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -2502,6 +2601,8 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                               <td>index</td>
                                                               <td>
                                                                       <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                              </td>
+                                                              <td>
                                                               </td>
                                                               <td><p>Index de l&#39;élément à chercher sur la liste des éléments visibles.</p>
             </td>
@@ -2527,12 +2628,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="getItemIndex"></a>
-                                    <b><span class="modifier">Public</span> getItemIndex</b>
+                                    <span class="name"><b><span class="modifier">Public</span> getItemIndex</b><a href="#getItemIndex"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>getItemIndex(item: <a href="../interfaces/IItemBase.html">IItemBase</a>)</code>
                                 </td>
                             </tr>
@@ -2556,6 +2657,7 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -2564,6 +2666,8 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                               <td>item</td>
                                                               <td>
                                                                       <code><a href="../interfaces/IItemBase.html" target="_self" >IItemBase</a></code>
+                                                              </td>
+                                                              <td>
                                                               </td>
                                                               <td><p>Element à chercher sur la liste des éléments visibles.</p>
             </td>
@@ -2589,13 +2693,13 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="getItemList$"></a>
-                                    <b><span class="modifier">Protected</span> getItemList$</b>
+                                    <span class="name"><b><span class="modifier">Protected</span> getItemList$</b><a href="#getItemList$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play circle"></span>
-                                    <code>getItemList$(query: |string, selectedItems: [])</code>
+                                        <span class="modifier-icon fa fa-lock"></span>
+                                    <code>getItemList$(query?: RegExp | string, selectedItems?: <a href="../interfaces/IItemBase.html">IItemBase[]</a>)</code>
                                 </td>
                             </tr>
             
@@ -2619,6 +2723,7 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -2626,7 +2731,10 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                             <tr>
                                                               <td>query</td>
                                                               <td>
-                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                                      <code>RegExp | string</code>
+                                                              </td>
+                                                              <td>
+                                                                  true
                                                               </td>
                                                               <td><p>Texte ou regular expression par laquelle la liste doit être filtrée.</p>
             </td>
@@ -2634,6 +2742,10 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                             <tr>
                                                               <td>selectedItems</td>
                                                               <td>
+                                                                      <code><a href="../interfaces/IItemBase.html" target="_self" >IItemBase[]</a></code>
+                                                              </td>
+                                                              <td>
+                                                                  true
                                                               </td>
                                                               <td><p>Liste des éléments selectionés.</p>
             </td>
@@ -2659,12 +2771,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="getItems"></a>
-                                    <b><span class="modifier">Public</span> getItems</b>
+                                    <span class="name"><b><span class="modifier">Public</span> getItems</b><a href="#getItems"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>getItems()</code>
                                 </td>
                             </tr>
@@ -2692,12 +2804,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="getParentListInfos$"></a>
-                                    <b><span class="modifier">Public</span> getParentListInfos$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> getParentListInfos$</b><a href="#getParentListInfos$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>getParentListInfos$(item: <a href="../interfaces/IItemTree.html">IItemTree</a>, multiSelect: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
                                 </td>
                             </tr>
@@ -2721,6 +2833,7 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -2730,8 +2843,19 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                               <td>
                                                                       <code><a href="../interfaces/IItemTree.html" target="_self" >IItemTree</a></code>
                                                               </td>
+                                                              <td>
+                                                              </td>
                                                               <td><p>Element enfant du parent à retrouver.</p>
             </td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>multiSelect</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
                                                             </tr>
                                                     </tbody>
                                                 </table>
@@ -2754,12 +2878,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="getSelectedItems"></a>
-                                    <b><span class="modifier">Public</span> getSelectedItems</b>
+                                    <span class="name"><b><span class="modifier">Public</span> getSelectedItems</b><a href="#getSelectedItems"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>getSelectedItems()</code>
                                 </td>
                             </tr>
@@ -2776,15 +2900,10 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                         <div class="io-description"><p>Retourne la liste des éléments sélectionés.</p>
             </div>
             
-                                        <div>
-                                        </div>
                                         <div class="io-description">
                                             <b>Returns : </b>    <code>{}</code>
             
                                         </div>
-                                            <div class="io-description">
-                                                
-                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -2794,12 +2913,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="getSortingService"></a>
-                                    <b><span class="modifier">Public</span> getSortingService</b>
+                                    <span class="name"><b><span class="modifier">Public</span> getSortingService</b><a href="#getSortingService"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>getSortingService()</code>
                                 </td>
                             </tr>
@@ -2816,15 +2935,10 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                         <div class="io-description"><p>Renvoie le service utilisé pour le tri de la liste</p>
             </div>
             
-                                        <div>
-                                        </div>
                                         <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
             
                                         </div>
-                                            <div class="io-description">
-                                                
-                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -2834,13 +2948,13 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="getTextValue"></a>
-                                    <b><span class="modifier">Public</span> getTextValue</b>
+                                    <span class="name"><b><span class="modifier">Public</span> getTextValue</b><a href="#getTextValue"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>getTextValue(value: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, textField: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>getTextValue(value: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, textField?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                                 </td>
                             </tr>
             
@@ -2863,6 +2977,7 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -2872,6 +2987,8 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                               <td>
                                                                       <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
                                                               </td>
+                                                              <td>
+                                                              </td>
                                                               <td><p>Model à évaluer.</p>
             </td>
                                                             </tr>
@@ -2879,6 +2996,9 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                               <td>textField</td>
                                                               <td>
                                                                       <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                              </td>
+                                                              <td>
+                                                                  true
                                                               </td>
                                                               <td><p>(optional) Champs à traiter comme source du texte.</p>
             </td>
@@ -2904,13 +3024,13 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="getViewList$"></a>
-                                    <b><span class="modifier">Public</span> getViewList$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> getViewList$</b><a href="#getViewList$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>getViewList$(searchField: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, query: |string, ignoreCache: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, ddStartIndex: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, ddTargetIndex: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, multiSelect: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>getViewList$(searchField: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, query?: RegExp | string, ignoreCache?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, ddStartIndex?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, ddTargetIndex?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, multiSelect?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
                                 </td>
                             </tr>
             
@@ -2927,9 +3047,88 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
             </div>
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>searchField</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>query</td>
+                                                              <td>
+                                                                      <code>RegExp | string</code>
+                                                              </td>
+                                                              <td>
+                                                                  true
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>ignoreCache</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                                              </td>
+                                                              <td>
+                                                                  true
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>ddStartIndex</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                              </td>
+                                                              <td>
+                                                                  true
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>ddTargetIndex</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                              </td>
+                                                              <td>
+                                                                  true
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>multiSelect</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                                              </td>
+                                                              <td>
+                                                                  true
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code>Observable&lt;&gt;</code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -2939,13 +3138,13 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="getVisibleList$"></a>
-                                    <b><span class="modifier">Protected</span> getVisibleList$</b>
+                                    <span class="name"><b><span class="modifier">Protected</span> getVisibleList$</b><a href="#getVisibleList$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play circle"></span>
-                                    <code>getVisibleList$(items: [], searchField: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, regExp: RegExp, expandTree: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, multiSelect: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                                        <span class="modifier-icon fa fa-lock"></span>
+                                    <code>getVisibleList$(items: <a href="../interfaces/IItemBase.html">IItemBase[]</a>, searchField: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, regExp: RegExp, expandTree: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, multiSelect: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
                                 </td>
                             </tr>
             
@@ -2969,12 +3168,16 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                             <tr>
                                                               <td>items</td>
+                                                              <td>
+                                                                      <code><a href="../interfaces/IItemBase.html" target="_self" >IItemBase[]</a></code>
+                                                              </td>
                                                               <td>
                                                               </td>
                                                               <td><p>Liste des éléments à traiter.</p>
@@ -2985,6 +3188,8 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                               <td>
                                                                       <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
                                                               </td>
+                                                              <td>
+                                                              </td>
                                                               <td><p>Nom du champ à utiliser pour la recherche. Le champ représenté peut-être une valeur ou une function.</p>
             </td>
                                                             </tr>
@@ -2993,16 +3198,28 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                               <td>
                                                                       <code>RegExp</code>
                                                               </td>
+                                                              <td>
+                                                              </td>
                                                               <td><p>Expression de test à appliquer sur le champ de recherche.</p>
             </td>
                                                             </tr>
                                                             <tr>
-                                                              <td>Auto</td>
+                                                              <td>expandTree</td>
                                                               <td>
-                                                                      <code>expandTree</code>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
                                                               </td>
-                                                              <td><p>expand parents on search query.</p>
-            </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>multiSelect</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
                                                             </tr>
                                                     </tbody>
                                                 </table>
@@ -3025,13 +3242,13 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="group$"></a>
-                                    <b><span class="modifier">Public</span> group$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> group$</b><a href="#group$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>group$(groupInfos: [])</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>group$(groupInfos: <a href="../interfaces/IGroupInfo.html">IGroupInfo[]</a>)</code>
                                 </td>
                             </tr>
             
@@ -3054,6 +3271,7 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -3061,7 +3279,9 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                             <tr>
                                                               <td>groupInfos</td>
                                                               <td>
-                                                                      <code><a href="../interfaces/IGroupInfo.html" target="_self" >IGroupInfo</a></code>
+                                                                      <code><a href="../interfaces/IGroupInfo.html" target="_self" >IGroupInfo[]</a></code>
+                                                              </td>
+                                                              <td>
                                                               </td>
                                                               <td><p>Modèle de groupe à appliquer.</p>
             </td>
@@ -3087,12 +3307,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="invalidateCache"></a>
-                                    <b><span class="modifier">Public</span> invalidateCache</b>
+                                    <span class="name"><b><span class="modifier">Public</span> invalidateCache</b><a href="#invalidateCache"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>invalidateCache()</code>
                                 </td>
                             </tr>
@@ -3122,12 +3342,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="invalidateRowsHeightCache"></a>
-                                    <b><span class="modifier">Public</span> invalidateRowsHeightCache</b>
+                                    <span class="name"><b><span class="modifier">Public</span> invalidateRowsHeightCache</b><a href="#invalidateRowsHeightCache"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>invalidateRowsHeightCache()</code>
                                 </td>
                             </tr>
@@ -3157,12 +3377,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="invalidateViewCache"></a>
-                                    <b><span class="modifier">Protected</span> invalidateViewCache</b>
+                                    <span class="name"><b><span class="modifier">Protected</span> invalidateViewCache</b><a href="#invalidateViewCache"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play circle"></span>
+                                        <span class="modifier-icon fa fa-lock"></span>
                                     <code>invalidateViewCache()</code>
                                 </td>
                             </tr>
@@ -3192,12 +3412,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="itemMatch"></a>
-                                    <b><span class="modifier">Protected</span> itemMatch</b>
+                                    <span class="name"><b><span class="modifier">Protected</span> itemMatch</b><a href="#itemMatch"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play circle"></span>
+                                        <span class="modifier-icon fa fa-lock"></span>
                                     <code>itemMatch(item: <a href="../interfaces/IItemBase.html">IItemBase</a>, searchField: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, regExp: RegExp)</code>
                                 </td>
                             </tr>
@@ -3221,6 +3441,7 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -3230,6 +3451,8 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                               <td>
                                                                       <code><a href="../interfaces/IItemBase.html" target="_self" >IItemBase</a></code>
                                                               </td>
+                                                              <td>
+                                                              </td>
                                                               <td><p>Elément à analyser.</p>
             </td>
                                                             </tr>
@@ -3238,6 +3461,8 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                               <td>
                                                                       <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
                                                               </td>
+                                                              <td>
+                                                              </td>
                                                               <td><p>Nom du champ à utiliser pour la recherche. Le champ représenté peut-être une valeur ou une function.</p>
             </td>
                                                             </tr>
@@ -3245,6 +3470,8 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                               <td>regExp</td>
                                                               <td>
                                                                       <code>RegExp</code>
+                                                              </td>
+                                                              <td>
                                                               </td>
                                                               <td><p>Expression de test sur le champs spécifié.</p>
             </td>
@@ -3270,12 +3497,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="selectItem$"></a>
-                                    <b><span class="modifier">Public</span> selectItem$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> selectItem$</b><a href="#selectItem$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>selectItem$(item: <a href="../interfaces/IItemBase.html">IItemBase</a>)</code>
                                 </td>
                             </tr>
@@ -3299,6 +3526,7 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -3307,6 +3535,8 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                               <td>item</td>
                                                               <td>
                                                                       <code><a href="../interfaces/IItemBase.html" target="_self" >IItemBase</a></code>
+                                                              </td>
+                                                              <td>
                                                               </td>
                                                               <td><p>Elément à sélectioner.</p>
             </td>
@@ -3332,13 +3562,13 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="selectItems$"></a>
-                                    <b><span class="modifier">Public</span> selectItems$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> selectItems$</b><a href="#selectItems$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>selectItems$(items: [])</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>selectItems$(items: <a href="../interfaces/IItemBase.html">IItemBase[]</a>)</code>
                                 </td>
                             </tr>
             
@@ -3361,12 +3591,16 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                             <tr>
                                                               <td>items</td>
+                                                              <td>
+                                                                      <code><a href="../interfaces/IItemBase.html" target="_self" >IItemBase[]</a></code>
+                                                              </td>
                                                               <td>
                                                               </td>
                                                               <td><p>Liste des éléments à sélectioner.</p>
@@ -3393,13 +3627,13 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="selectRange$"></a>
-                                    <b><span class="modifier">Public</span> selectRange$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> selectRange$</b><a href="#selectRange$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>selectRange$(indexFrom: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, indexTo: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>selectRange$(indexFrom: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, indexTo?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
                                 </td>
                             </tr>
             
@@ -3422,6 +3656,7 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -3431,6 +3666,8 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                               <td>
                                                                       <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
                                                               </td>
+                                                              <td>
+                                                              </td>
                                                               <td><p>index sur la liste des éléments visibles du premier élément à sélectioner.</p>
             </td>
                                                             </tr>
@@ -3438,6 +3675,9 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                               <td>indexTo</td>
                                                               <td>
                                                                       <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                              </td>
+                                                              <td>
+                                                                  true
                                                               </td>
                                                               <td><p>index sur la liste des éléments visibles du dernier élément à sélectioner.</p>
             </td>
@@ -3463,12 +3703,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="setCollapsingItem"></a>
-                                    <b><span class="modifier">Public</span> setCollapsingItem</b>
+                                    <span class="name"><b><span class="modifier">Public</span> setCollapsingItem</b><a href="#setCollapsingItem"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>setCollapsingItem(fn: (item: <a href="../interfaces/IItemTree.html">IItemTree</a>) => void)</code>
                                 </td>
                             </tr>
@@ -3486,9 +3726,38 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
             </div>
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>fn</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -3498,12 +3767,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="setExpandingItem"></a>
-                                    <b><span class="modifier">Public</span> setExpandingItem</b>
+                                    <span class="name"><b><span class="modifier">Public</span> setExpandingItem</b><a href="#setExpandingItem"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>setExpandingItem(fn: (item: <a href="../interfaces/IItemTree.html">IItemTree</a>) => void)</code>
                                 </td>
                             </tr>
@@ -3521,9 +3790,38 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
             </div>
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>fn</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -3533,12 +3831,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="setGroupingService"></a>
-                                    <b><span class="modifier">Public</span> setGroupingService</b>
+                                    <span class="name"><b><span class="modifier">Public</span> setGroupingService</b><a href="#setGroupingService"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>setGroupingService(value: <a href="../classes/GroupingService.html">GroupingService</a>)</code>
                                 </td>
                             </tr>
@@ -3562,6 +3860,7 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -3570,6 +3869,8 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                               <td>value</td>
                                                               <td>
                                                                       <code><a href="../classes/GroupingService.html" target="_self" >GroupingService</a></code>
+                                                              </td>
+                                                              <td>
                                                               </td>
                                                               <td><p>Service à utiliser pour le regroupement.</p>
             </td>
@@ -3595,13 +3896,13 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="setItems$"></a>
-                                    <b><span class="modifier">Public</span> setItems$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> setItems$</b><a href="#setItems$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>setItems$(items: []||)</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>setItems$(items: [] | Promise | Observable)</code>
                                 </td>
                             </tr>
             
@@ -3624,12 +3925,16 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                             <tr>
                                                               <td>items</td>
+                                                              <td>
+                                                                      <code>[] | Promise | Observable</code>
+                                                              </td>
                                                               <td>
                                                               </td>
                                                               <td><p>Provider de la liste des éléments de la liste.</p>
@@ -3656,13 +3961,13 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="setLoadingItems"></a>
-                                    <b><span class="modifier">Public</span> setLoadingItems</b>
+                                    <span class="name"><b><span class="modifier">Public</span> setLoadingItems</b><a href="#setLoadingItems"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>setLoadingItems(fn: (query: string|,selectedItems: []) => void)</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>setLoadingItems(fn: (query: string | RegExp,selectedItems: <a href="../interfaces/IItemBase.html">IItemBase[]</a>) => void)</code>
                                 </td>
                             </tr>
             
@@ -3679,9 +3984,38 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
             </div>
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>fn</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -3691,13 +4025,13 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="setModels$"></a>
-                                    <b><span class="modifier">Public</span> setModels$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> setModels$</b><a href="#setModels$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>setModels$(items: []||)</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>setModels$(items: [] | Promise | Observable)</code>
                                 </td>
                             </tr>
             
@@ -3712,9 +4046,38 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                 <td class="col-md-4">
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>items</td>
+                                                              <td>
+                                                                      <code>[] | Promise | Observable</code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -3724,13 +4087,13 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="setSelectedItems"></a>
-                                    <b><span class="modifier">Public</span> setSelectedItems</b>
+                                    <span class="name"><b><span class="modifier">Public</span> setSelectedItems</b><a href="#setSelectedItems"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>setSelectedItems(items: [])</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>setSelectedItems(items: <a href="../interfaces/IItemBase.html">IItemBase[]</a>)</code>
                                 </td>
                             </tr>
             
@@ -3753,12 +4116,16 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                             <tr>
                                                               <td>items</td>
+                                                              <td>
+                                                                      <code><a href="../interfaces/IItemBase.html" target="_self" >IItemBase[]</a></code>
+                                                              </td>
                                                               <td>
                                                               </td>
                                                               <td><p>Liste des éléments a selectioner.</p>
@@ -3785,12 +4152,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="setSelectingItem"></a>
-                                    <b><span class="modifier">Public</span> setSelectingItem</b>
+                                    <span class="name"><b><span class="modifier">Public</span> setSelectingItem</b><a href="#setSelectingItem"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>setSelectingItem(fn: (item: <a href="../interfaces/IItemBase.html">IItemBase</a>) => void)</code>
                                 </td>
                             </tr>
@@ -3808,9 +4175,38 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
             </div>
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>fn</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -3820,12 +4216,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="setSortingService"></a>
-                                    <b><span class="modifier">Public</span> setSortingService</b>
+                                    <span class="name"><b><span class="modifier">Public</span> setSortingService</b><a href="#setSortingService"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>setSortingService(value: <a href="../classes/SortingService.html">SortingService</a>)</code>
                                 </td>
                             </tr>
@@ -3849,6 +4245,7 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -3857,6 +4254,8 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                               <td>value</td>
                                                               <td>
                                                                       <code><a href="../classes/SortingService.html" target="_self" >SortingService</a></code>
+                                                              </td>
+                                                              <td>
                                                               </td>
                                                               <td><p>Service à utiliser pour le tri.</p>
             </td>
@@ -3882,12 +4281,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="setUnselectingItem"></a>
-                                    <b><span class="modifier">Public</span> setUnselectingItem</b>
+                                    <span class="name"><b><span class="modifier">Public</span> setUnselectingItem</b><a href="#setUnselectingItem"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>setUnselectingItem(fn: (item: <a href="../interfaces/IItemBase.html">IItemBase</a>) => void)</code>
                                 </td>
                             </tr>
@@ -3905,9 +4304,38 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
             </div>
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>fn</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -3917,12 +4345,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="sort$"></a>
-                                    <b><span class="modifier">Public</span> sort$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> sort$</b><a href="#sort$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>sort$(sortInfos: <a href="../interfaces/ISortInfos.html">ISortInfos</a>)</code>
                                 </td>
                             </tr>
@@ -3946,6 +4374,7 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -3954,6 +4383,8 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                               <td>sortInfos</td>
                                                               <td>
                                                                       <code><a href="../interfaces/ISortInfos.html" target="_self" >ISortInfos</a></code>
+                                                              </td>
+                                                              <td>
                                                               </td>
                                                               <td><p>Modèle de tri à appliquer.</p>
             </td>
@@ -3979,12 +4410,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="toggleAll$"></a>
-                                    <b><span class="modifier">Public</span> toggleAll$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> toggleAll$</b><a href="#toggleAll$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>toggleAll$(collapsed: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
                                 </td>
                             </tr>
@@ -4008,6 +4439,7 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -4016,6 +4448,8 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                               <td>collapsed</td>
                                                               <td>
                                                                       <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                                              </td>
+                                                              <td>
                                                               </td>
                                                               <td><p>True si les éléments doivent être réduits.</p>
             </td>
@@ -4041,13 +4475,13 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="toggleCollapse$"></a>
-                                    <b><span class="modifier">Public</span> toggleCollapse$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> toggleCollapse$</b><a href="#toggleCollapse$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>toggleCollapse$(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, collapse: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>toggleCollapse$(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, collapse?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
                                 </td>
                             </tr>
             
@@ -4070,6 +4504,7 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -4079,6 +4514,8 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                               <td>
                                                                       <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
                                                               </td>
+                                                              <td>
+                                                              </td>
                                                               <td><p>Index sur la liste des éléments visibles de l&#39;élément à changer.</p>
             </td>
                                                             </tr>
@@ -4086,6 +4523,9 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                               <td>collapse</td>
                                                               <td>
                                                                       <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                                              </td>
+                                                              <td>
+                                                                  true
                                                               </td>
                                                               <td><p>Etat de l&#39;élément. True pour réduire l&#39;élément.</p>
             </td>
@@ -4111,13 +4551,13 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="toggleSelect$"></a>
-                                    <b><span class="modifier">Public</span> toggleSelect$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> toggleSelect$</b><a href="#toggleSelect$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>toggleSelect$(items: [], selected: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>toggleSelect$(items: <a href="../interfaces/IItemBase.html">IItemBase[]</a>, selected: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
                                 </td>
                             </tr>
             
@@ -4140,12 +4580,16 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                             <tr>
                                                               <td>items</td>
+                                                              <td>
+                                                                      <code><a href="../interfaces/IItemBase.html" target="_self" >IItemBase[]</a></code>
+                                                              </td>
                                                               <td>
                                                               </td>
                                                               <td><p>Liste des éléments à modifier.</p>
@@ -4155,6 +4599,8 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                               <td>selected</td>
                                                               <td>
                                                                       <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                                              </td>
+                                                              <td>
                                                               </td>
                                                               <td><p>True si les éléments divent être sélectionés, False si ils doivent être déselectionés.</p>
             </td>
@@ -4180,12 +4626,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="ungroup$"></a>
-                                    <b><span class="modifier">Public</span> ungroup$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> ungroup$</b><a href="#ungroup$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>ungroup$(groupInfo: <a href="../interfaces/IGroupInfo.html">IGroupInfo</a>)</code>
                                 </td>
                             </tr>
@@ -4209,17 +4655,19 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                             <tr>
-                                                              <td>groupInfos</td>
+                                                              <td>groupInfo</td>
                                                               <td>
                                                                       <code><a href="../interfaces/IGroupInfo.html" target="_self" >IGroupInfo</a></code>
                                                               </td>
-                                                              <td><p>Modèle de groupe à retirer.</p>
-            </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
                                                             </tr>
                                                     </tbody>
                                                 </table>
@@ -4242,12 +4690,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="unselectAll$"></a>
-                                    <b><span class="modifier">Public</span> unselectAll$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> unselectAll$</b><a href="#unselectAll$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>unselectAll$()</code>
                                 </td>
                             </tr>
@@ -4264,15 +4712,10 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                         <div class="io-description"><p>Déselectionne tous les éléments sélectionés.</p>
             </div>
             
-                                        <div>
-                                        </div>
                                         <div class="io-description">
                                             <b>Returns : </b>    <code>Observable&lt;[]&gt;</code>
             
                                         </div>
-                                            <div class="io-description">
-                                                
-                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -4282,12 +4725,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="unSelectItem$"></a>
-                                    <b><span class="modifier">Public</span> unSelectItem$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> unSelectItem$</b><a href="#unSelectItem$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>unSelectItem$(item: <a href="../interfaces/IItemBase.html">IItemBase</a>)</code>
                                 </td>
                             </tr>
@@ -4311,6 +4754,7 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -4319,6 +4763,8 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                               <td>item</td>
                                                               <td>
                                                                       <code><a href="../interfaces/IItemBase.html" target="_self" >IItemBase</a></code>
+                                                              </td>
+                                                              <td>
                                                               </td>
                                                               <td><p>Elément à déselectioner.</p>
             </td>
@@ -4344,13 +4790,13 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="unSelectItems$"></a>
-                                    <b><span class="modifier">Public</span> unSelectItems$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> unSelectItems$</b><a href="#unSelectItems$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>unSelectItems$(items: [])</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>unSelectItems$(items: <a href="../interfaces/IItemBase.html">IItemBase[]</a>)</code>
                                 </td>
                             </tr>
             
@@ -4373,12 +4819,16 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                             <tr>
                                                               <td>items</td>
+                                                              <td>
+                                                                      <code><a href="../interfaces/IItemBase.html" target="_self" >IItemBase[]</a></code>
+                                                              </td>
                                                               <td>
                                                               </td>
                                                               <td><p>Liste des éléments à déselectioner.</p>
@@ -4413,12 +4863,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="childrenField"></a>
-                                    <b><span class="modifier">Public</span> childrenField</b>
+                                    <span class="name"><b><span class="modifier">Public</span> childrenField</b><a href="#childrenField"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>childrenField:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>childrenField:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -4443,12 +4893,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="groupInfos"></a>
-                                    <b><span class="modifier">Public</span> groupInfos</b>
+                                    <span class="name"><b><span class="modifier">Public</span> groupInfos</b><a href="#groupInfos"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>groupInfos:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>groupInfos:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -4472,12 +4922,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="hasCache"></a>
-                                    <b><span class="modifier">Public</span> hasCache</b>
+                                    <span class="name"><b><span class="modifier">Public</span> hasCache</b><a href="#hasCache"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>hasCache:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>hasCache:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -4495,12 +4945,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="hideSelected"></a>
-                                    <b><span class="modifier">Public</span> hideSelected</b>
+                                    <span class="name"><b><span class="modifier">Public</span> hideSelected</b><a href="#hideSelected"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>hideSelected:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>hideSelected:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -4525,12 +4975,12 @@ Il peut-être surchargé pour faire du lazy loading ou du paging.</p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="waiter$"></a>
-                                    <b><span class="modifier">Public</span> waiter$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> waiter$</b><a href="#waiter$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>waiter$:     <code>BehaviorSubject&lt;boolean&gt;</code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>waiter$:     <code>BehaviorSubject&lt;boolean&gt;</code>
             </code>
                                 </td>
                             </tr>

@@ -177,6 +177,9 @@
                                     <a href="../modules/DejaSidenavModule.html" >DejaSidenavModule</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../modules/DejaSlimScrollModule.html" >DejaSlimScrollModule</a>
+                                </li>
+                                <li class="link">
                                     <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
                                 </li>
                                 <li class="link">
@@ -395,6 +398,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../directives/DejaSidenavMenuSeparatorDirective.html" >DejaSidenavMenuSeparatorDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaSlimScrollDirective.html" >DejaSlimScrollDirective</a>
                                 </li>
                                 <li class="link">
                                     <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
@@ -765,6 +771,9 @@
                                 <li class="link">
                                     <a href="../interfaces/Point.html" >Point</a>
                                 </li>
+                                <li class="link">
+                                    <a href="../interfaces/SlimScrollOptions.html" >SlimScrollOptions</a>
+                                </li>
                         </ul>
                     </li>
             
@@ -989,6 +998,9 @@
                                            <a href="../modules/DejaSidenavModule.html" >DejaSidenavModule</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../modules/DejaSlimScrollModule.html" >DejaSlimScrollModule</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
                                        </li>
                                        <li class="link">
@@ -1207,6 +1219,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../directives/DejaSidenavMenuSeparatorDirective.html" >DejaSidenavMenuSeparatorDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaSlimScrollDirective.html" >DejaSlimScrollDirective</a>
                                        </li>
                                        <li class="link">
                                            <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
@@ -1577,6 +1592,9 @@
                                        <li class="link">
                                            <a href="../interfaces/Point.html" >Point</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="../interfaces/SlimScrollOptions.html" >SlimScrollOptions</a>
+                                       </li>
                                </ul>
                            </li>
                    
@@ -1800,6 +1818,34 @@
                                 </td>
                             </tr>
     
+                    <tr>
+                        <td class="col-md-4">
+                                <div>
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Type</td>
+                                                    <td>Optional</td>
+                                                    <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                      <td>changeDetectorRef</td>
+                                                      <td>
+                                                                <code><a href="https://angular.io/docs/ts/latest/api/core/index/ChangeDetectorRef-class.html" target="_blank" >ChangeDetectorRef</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
     </section>
@@ -1892,6 +1938,8 @@
 
 
 
+
+
     <section>
         
             <h3 id="inputs">
@@ -1902,12 +1950,12 @@
                     <tr>
                         <td class="col-md-4">
                             <a name="cellTemplate"></a>
-                            <b><span class="modifier">Protected</span> cellTemplate</b>
+                            <span class="name"><b><span class="modifier">Protected</span> cellTemplate</b><a href="#cellTemplate"><span class="fa fa-link"></span></a></span>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <span class="modifier-icon fa fa-circle"></span><code>cellTemplate:     <code></code>
+                            <span class="modifier-icon fa fa-lock"></span><code>cellTemplate:     <code></code>
     </code>
                         </td>
                     </tr>
@@ -1925,12 +1973,12 @@
                     <tr>
                         <td class="col-md-4">
                             <a name="cellTemplateInternal"></a>
-                            <b><span class="modifier">Protected</span> cellTemplateInternal</b>
+                            <span class="name"><b><span class="modifier">Protected</span> cellTemplateInternal</b><a href="#cellTemplateInternal"><span class="fa fa-link"></span></a></span>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <span class="modifier-icon fa fa-circle"></span><code>cellTemplateInternal:     <code></code>
+                            <span class="modifier-icon fa fa-lock"></span><code>cellTemplateInternal:     <code></code>
     </code>
                         </td>
                     </tr>
@@ -1959,12 +2007,12 @@
                     <tr>
                         <td class="col-md-4">
                             <a name="columnLayout"></a>
-                            <b><span class="modifier">Public</span> columnLayout</b>
+                            <span class="name"><b><span class="modifier">Public</span> columnLayout</b><a href="#columnLayout"><span class="fa fa-link"></span></a></span>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <span class="modifier-icon fa fa-"></span><code>columnLayout:     <code></code>
+                            <span class="modifier-icon fa fa-reset"></span><code>columnLayout:     <code></code>
     </code>
                         </td>
                     </tr>
@@ -2085,7 +2133,7 @@ export class DejaGridRowComponent implements OnDestroy {
 <script>
         var COMPONENT_TEMPLATE = '<div><div *ngIf="columnLayout.vpBeforeWidth" [style.flex-basis.px]="columnLayout.vpBeforeWidth"></div><div *ngFor="let column of columnLayout.columns; let index=index" [attr.colindex]="index" [attr.colname]="column.name" [class.dragged]="column.dragged" [attr.current]="column.isCurrent || null" class="cell-wrapper" [style.flex-basis.px]="column.w">	<span *ngIf="!cellTemplate || !column.useCellTemplate" class="cell">{{ row[column.name] }}</span>	<ng-template [ngTemplateOutlet]="cellTemplate" *ngIf="cellTemplate && column.useCellTemplate" [ngTemplateOutletContext]="{ $implicit: row, flatIndex: flatIndex, column: column }"></ng-template></div><div *ngIf="columnLayout.vpAfterWidth" [style.flex-basis.px]="columnLayout.vpAfterWidth"></div></div>'
     var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBackdropComponent', 'selector': 'deja-backdrop'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaCodeViewerComponent', 'selector': 'deja-code-viewer'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaDropDownComponent', 'selector': 'deja-dropdown'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaItemComponent', 'selector': 'deja-item'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMarkdownComponent', 'selector': 'deja-markdown'},{'name': 'DejaMenuComponent', 'selector': 'deja-menu'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSidenavComponent', 'selector': 'deja-sidenav'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTagComponent', 'selector': 'deja-tag'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'}];
-    var DIRECTIVES = [{'name': 'DateValidatorDirective', 'selector': '[date-validator][ngModel]'},{'name': 'DejaAutosizeTextAreaDirective', 'selector': 'textarea[deja-autosize]'},{'name': 'DejaChildValidatorDirective', 'selector': '[deja-child-validator]'},{'name': 'DejaDraggableDirective', 'selector': '[deja-draggable]'},{'name': 'DejaDroppableDirective', 'selector': '[deja-droppable]'},{'name': 'DejaEditableDirective', 'selector': '[deja-editable]'},{'name': 'DejaMouseDraggableDirective', 'selector': '[deja-mouse-draggable]'},{'name': 'DejaMouseDroppableDirective', 'selector': '[deja-mouse-droppable]'},{'name': 'DejaSidenavContentDirective', 'selector': 'deja-sidenav-content, [deja-sidenav-content]'},{'name': 'DejaSidenavHeaderDirective', 'selector': 'deja-sidenav-header, [deja-sidenav-header]'},{'name': 'DejaSidenavMenuDirective', 'selector': 'deja-sidenav-menu, [deja-sidenav-menu]'},{'name': 'DejaSidenavMenuSeparatorDirective', 'selector': 'deja-sidenav-menu-separator, [deja-sidenav-menu-separator]'},{'name': 'DejaTilePositionDirective', 'selector': '[deja-tile-position]'},{'name': 'DejaTooltipDirective', 'selector': '[deja-tooltip]'},{'name': 'PendingOnFocusDirective', 'selector': '[pending-onfocus]'},{'name': 'SplitAreaDirective', 'selector': 'split-area'},{'name': 'SplitGutterDirective', 'selector': 'split-gutter'},{'name': 'ValidateOnBlurDirective', 'selector': '[validate-onblur]'}];
+    var DIRECTIVES = [{'name': 'DateValidatorDirective', 'selector': '[date-validator][ngModel]'},{'name': 'DejaAutosizeTextAreaDirective', 'selector': 'textarea[deja-autosize]'},{'name': 'DejaChildValidatorDirective', 'selector': '[deja-child-validator]'},{'name': 'DejaDraggableDirective', 'selector': '[deja-draggable]'},{'name': 'DejaDroppableDirective', 'selector': '[deja-droppable]'},{'name': 'DejaEditableDirective', 'selector': '[deja-editable]'},{'name': 'DejaMouseDraggableDirective', 'selector': '[deja-mouse-draggable]'},{'name': 'DejaMouseDroppableDirective', 'selector': '[deja-mouse-droppable]'},{'name': 'DejaSidenavContentDirective', 'selector': 'deja-sidenav-content, [deja-sidenav-content]'},{'name': 'DejaSidenavHeaderDirective', 'selector': 'deja-sidenav-header, [deja-sidenav-header]'},{'name': 'DejaSidenavMenuDirective', 'selector': 'deja-sidenav-menu, [deja-sidenav-menu]'},{'name': 'DejaSidenavMenuSeparatorDirective', 'selector': 'deja-sidenav-menu-separator, [deja-sidenav-menu-separator]'},{'name': 'DejaSlimScrollDirective', 'selector': '[slimScroll]'},{'name': 'DejaTilePositionDirective', 'selector': '[deja-tile-position]'},{'name': 'DejaTooltipDirective', 'selector': '[deja-tooltip]'},{'name': 'PendingOnFocusDirective', 'selector': '[pending-onfocus]'},{'name': 'SplitAreaDirective', 'selector': 'split-area'},{'name': 'SplitGutterDirective', 'selector': 'split-gutter'},{'name': 'ValidateOnBlurDirective', 'selector': '[validate-onblur]'}];
     var ACTUAL_COMPONENT = {'name': 'DejaGridRowComponent'};
 </script>
 <script src="../js/tree.js"></script>

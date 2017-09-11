@@ -177,6 +177,9 @@
                                     <a href="../modules/DejaSidenavModule.html" >DejaSidenavModule</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../modules/DejaSlimScrollModule.html" >DejaSlimScrollModule</a>
+                                </li>
+                                <li class="link">
                                     <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
                                 </li>
                                 <li class="link">
@@ -395,6 +398,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../directives/DejaSidenavMenuSeparatorDirective.html" >DejaSidenavMenuSeparatorDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaSlimScrollDirective.html" >DejaSlimScrollDirective</a>
                                 </li>
                                 <li class="link">
                                     <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
@@ -765,6 +771,9 @@
                                 <li class="link">
                                     <a href="../interfaces/Point.html" >Point</a>
                                 </li>
+                                <li class="link">
+                                    <a href="../interfaces/SlimScrollOptions.html" >SlimScrollOptions</a>
+                                </li>
                         </ul>
                     </li>
             
@@ -989,6 +998,9 @@
                                            <a href="../modules/DejaSidenavModule.html" >DejaSidenavModule</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../modules/DejaSlimScrollModule.html" >DejaSlimScrollModule</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
                                        </li>
                                        <li class="link">
@@ -1207,6 +1219,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../directives/DejaSidenavMenuSeparatorDirective.html" >DejaSidenavMenuSeparatorDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaSlimScrollDirective.html" >DejaSlimScrollDirective</a>
                                        </li>
                                        <li class="link">
                                            <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
@@ -1577,6 +1592,9 @@
                                        <li class="link">
                                            <a href="../interfaces/Point.html" >Point</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="../interfaces/SlimScrollOptions.html" >SlimScrollOptions</a>
+                                       </li>
                                </ul>
                            </li>
                    
@@ -1819,6 +1837,43 @@
                                 </td>
                             </tr>
     
+                    <tr>
+                        <td class="col-md-4">
+                                <div>
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Type</td>
+                                                    <td>Optional</td>
+                                                    <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                      <td>changeDetectorRef</td>
+                                                      <td>
+                                                                <code><a href="https://angular.io/docs/ts/latest/api/core/index/ChangeDetectorRef-class.html" target="_blank" >ChangeDetectorRef</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>clipboardService</td>
+                                                      <td>
+                                                                <code><a href="../injectables/DejaClipboardService.html" target="_self" >DejaClipboardService</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
     </section>
@@ -1892,6 +1947,8 @@
             </table>
     </section>
 
+
+
     <section>
         
             <h3 id="methods">
@@ -1902,12 +1959,12 @@
                     <tr>
                         <td class="col-md-4">
                             <a name="getDragContext"></a>
-                            <b><span class="modifier">Protected</span> getDragContext</b>
+                            <span class="name"><b><span class="modifier">Protected</span> getDragContext</b><a href="#getDragContext"><span class="fa fa-link"></span></a></span>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                                <span class="modifier-icon method fa fa-play circle"></span>
+                                <span class="modifier-icon fa fa-lock"></span>
                             <code>getDragContext(group: <a href="../interfaces/IDejaGridColumn.html">IDejaGridColumn</a>)</code>
                         </td>
                     </tr>
@@ -1923,9 +1980,38 @@
                         <td class="col-md-4">
     
                                 <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Type</td>
+                                                    <td>Optional</td>
+                                                    <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                      <td>group</td>
+                                                      <td>
+                                                              <code><a href="../interfaces/IDejaGridColumn.html" target="_self" >IDejaGridColumn</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
                                     <b>Returns : </b>    <code>{ dragendcallback: (event: any) &#x3D;&gt; void; dragstartcallback: (event: any) &#x3D;&gt; void; }</code>
     
                                 </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
                         </td>
                     </tr>
                 </tbody>
@@ -1935,12 +2021,12 @@
                     <tr>
                         <td class="col-md-4">
                             <a name="getDropContext"></a>
-                            <b><span class="modifier">Public</span> getDropContext</b>
+                            <span class="name"><b><span class="modifier">Public</span> getDropContext</b><a href="#getDropContext"><span class="fa fa-link"></span></a></span>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                                <span class="modifier-icon method fa fa-play "></span>
+                                <span class="modifier-icon fa fa-reset"></span>
                             <code>getDropContext()</code>
                         </td>
                     </tr>
@@ -1968,12 +2054,12 @@
                     <tr>
                         <td class="col-md-4">
                             <a name="getGroupColumnFromHTMLElement"></a>
-                            <b><span class="modifier">Protected</span> getGroupColumnFromHTMLElement</b>
+                            <span class="name"><b><span class="modifier">Protected</span> getGroupColumnFromHTMLElement</b><a href="#getGroupColumnFromHTMLElement"><span class="fa fa-link"></span></a></span>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                                <span class="modifier-icon method fa fa-play circle"></span>
+                                <span class="modifier-icon fa fa-lock"></span>
                             <code>getGroupColumnFromHTMLElement(element: HTMLElement)</code>
                         </td>
                     </tr>
@@ -1989,9 +2075,38 @@
                         <td class="col-md-4">
     
                                 <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Type</td>
+                                                    <td>Optional</td>
+                                                    <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                      <td>element</td>
+                                                      <td>
+                                                              <code>HTMLElement</code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
                                     <b>Returns : </b>    <code><a href="../interfaces/IDejaGridColumn.html" target="_self" >IDejaGridColumn</a></code>
     
                                 </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
                         </td>
                     </tr>
                 </tbody>
@@ -2001,12 +2116,12 @@
                     <tr>
                         <td class="col-md-4">
                             <a name="removeGroup"></a>
-                            <b><span class="modifier">Public</span> removeGroup</b>
+                            <span class="name"><b><span class="modifier">Public</span> removeGroup</b><a href="#removeGroup"><span class="fa fa-link"></span></a></span>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                                <span class="modifier-icon method fa fa-play "></span>
+                                <span class="modifier-icon fa fa-reset"></span>
                             <code>removeGroup(event: <a href="../classes/DejaChipsCloseEvent.html">DejaChipsCloseEvent</a>)</code>
                         </td>
                     </tr>
@@ -2022,9 +2137,38 @@
                         <td class="col-md-4">
     
                                 <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Type</td>
+                                                    <td>Optional</td>
+                                                    <td>Description</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                      <td>event</td>
+                                                      <td>
+                                                              <code><a href="../classes/DejaChipsCloseEvent.html" target="_self" >DejaChipsCloseEvent</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
                                     <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
     
                                 </div>
+                                    <div class="io-description">
+                                        
+                                    </div>
                         </td>
                     </tr>
                 </tbody>
@@ -2041,12 +2185,12 @@
                     <tr>
                         <td class="col-md-4">
                             <a name="groups"></a>
-                            <b><span class="modifier">Public</span> groups</b>
+                            <span class="name"><b><span class="modifier">Public</span> groups</b><a href="#groups"><span class="fa fa-link"></span></a></span>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <span class="modifier-icon fa fa-"></span><code>groups:     <code></code>
+                            <span class="modifier-icon fa fa-reset"></span><code>groups:     <code></code>
     </code>
                         </td>
                     </tr>
@@ -2277,7 +2421,7 @@ export class DejaGridGroupAreaComponent {
 <script>
         var COMPONENT_TEMPLATE = '<div><div #groupAreaElement id="deja-grid-grouparea" [deja-droppable]="getDropContext()">	<label id="placeholder" *ngIf="groups.length === 0">Drag one column here to group by this column</label>	<deja-chips [items]="groups" (close)="removeGroup($event)">		<ng-template #itemTemplate let-item let-index="index"><span class="label" [attr.groupname]="item.name" [attr.index]="index" [deja-draggable]="getDragContext(item)">{{ item.label }}</span></ng-template>	</deja-chips></div></div>'
     var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBackdropComponent', 'selector': 'deja-backdrop'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaCodeViewerComponent', 'selector': 'deja-code-viewer'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaDropDownComponent', 'selector': 'deja-dropdown'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaItemComponent', 'selector': 'deja-item'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMarkdownComponent', 'selector': 'deja-markdown'},{'name': 'DejaMenuComponent', 'selector': 'deja-menu'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSidenavComponent', 'selector': 'deja-sidenav'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTagComponent', 'selector': 'deja-tag'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'}];
-    var DIRECTIVES = [{'name': 'DateValidatorDirective', 'selector': '[date-validator][ngModel]'},{'name': 'DejaAutosizeTextAreaDirective', 'selector': 'textarea[deja-autosize]'},{'name': 'DejaChildValidatorDirective', 'selector': '[deja-child-validator]'},{'name': 'DejaDraggableDirective', 'selector': '[deja-draggable]'},{'name': 'DejaDroppableDirective', 'selector': '[deja-droppable]'},{'name': 'DejaEditableDirective', 'selector': '[deja-editable]'},{'name': 'DejaMouseDraggableDirective', 'selector': '[deja-mouse-draggable]'},{'name': 'DejaMouseDroppableDirective', 'selector': '[deja-mouse-droppable]'},{'name': 'DejaSidenavContentDirective', 'selector': 'deja-sidenav-content, [deja-sidenav-content]'},{'name': 'DejaSidenavHeaderDirective', 'selector': 'deja-sidenav-header, [deja-sidenav-header]'},{'name': 'DejaSidenavMenuDirective', 'selector': 'deja-sidenav-menu, [deja-sidenav-menu]'},{'name': 'DejaSidenavMenuSeparatorDirective', 'selector': 'deja-sidenav-menu-separator, [deja-sidenav-menu-separator]'},{'name': 'DejaTilePositionDirective', 'selector': '[deja-tile-position]'},{'name': 'DejaTooltipDirective', 'selector': '[deja-tooltip]'},{'name': 'PendingOnFocusDirective', 'selector': '[pending-onfocus]'},{'name': 'SplitAreaDirective', 'selector': 'split-area'},{'name': 'SplitGutterDirective', 'selector': 'split-gutter'},{'name': 'ValidateOnBlurDirective', 'selector': '[validate-onblur]'}];
+    var DIRECTIVES = [{'name': 'DateValidatorDirective', 'selector': '[date-validator][ngModel]'},{'name': 'DejaAutosizeTextAreaDirective', 'selector': 'textarea[deja-autosize]'},{'name': 'DejaChildValidatorDirective', 'selector': '[deja-child-validator]'},{'name': 'DejaDraggableDirective', 'selector': '[deja-draggable]'},{'name': 'DejaDroppableDirective', 'selector': '[deja-droppable]'},{'name': 'DejaEditableDirective', 'selector': '[deja-editable]'},{'name': 'DejaMouseDraggableDirective', 'selector': '[deja-mouse-draggable]'},{'name': 'DejaMouseDroppableDirective', 'selector': '[deja-mouse-droppable]'},{'name': 'DejaSidenavContentDirective', 'selector': 'deja-sidenav-content, [deja-sidenav-content]'},{'name': 'DejaSidenavHeaderDirective', 'selector': 'deja-sidenav-header, [deja-sidenav-header]'},{'name': 'DejaSidenavMenuDirective', 'selector': 'deja-sidenav-menu, [deja-sidenav-menu]'},{'name': 'DejaSidenavMenuSeparatorDirective', 'selector': 'deja-sidenav-menu-separator, [deja-sidenav-menu-separator]'},{'name': 'DejaSlimScrollDirective', 'selector': '[slimScroll]'},{'name': 'DejaTilePositionDirective', 'selector': '[deja-tile-position]'},{'name': 'DejaTooltipDirective', 'selector': '[deja-tooltip]'},{'name': 'PendingOnFocusDirective', 'selector': '[pending-onfocus]'},{'name': 'SplitAreaDirective', 'selector': 'split-area'},{'name': 'SplitGutterDirective', 'selector': 'split-gutter'},{'name': 'ValidateOnBlurDirective', 'selector': '[validate-onblur]'}];
     var ACTUAL_COMPONENT = {'name': 'DejaGridGroupAreaComponent'};
 </script>
 <script src="../js/tree.js"></script>

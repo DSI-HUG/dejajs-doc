@@ -177,6 +177,9 @@
                                     <a href="../modules/DejaSidenavModule.html" >DejaSidenavModule</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../modules/DejaSlimScrollModule.html" >DejaSlimScrollModule</a>
+                                </li>
+                                <li class="link">
                                     <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
                                 </li>
                                 <li class="link">
@@ -395,6 +398,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../directives/DejaSidenavMenuSeparatorDirective.html" >DejaSidenavMenuSeparatorDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaSlimScrollDirective.html" >DejaSlimScrollDirective</a>
                                 </li>
                                 <li class="link">
                                     <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
@@ -765,6 +771,9 @@
                                 <li class="link">
                                     <a href="../interfaces/Point.html" >Point</a>
                                 </li>
+                                <li class="link">
+                                    <a href="../interfaces/SlimScrollOptions.html" >SlimScrollOptions</a>
+                                </li>
                         </ul>
                     </li>
             
@@ -989,6 +998,9 @@
                                            <a href="../modules/DejaSidenavModule.html" >DejaSidenavModule</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../modules/DejaSlimScrollModule.html" >DejaSlimScrollModule</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
                                        </li>
                                        <li class="link">
@@ -1207,6 +1219,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../directives/DejaSidenavMenuSeparatorDirective.html" >DejaSidenavMenuSeparatorDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaSlimScrollDirective.html" >DejaSlimScrollDirective</a>
                                        </li>
                                        <li class="link">
                                            <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
@@ -1577,6 +1592,9 @@
                                        <li class="link">
                                            <a href="../interfaces/Point.html" >Point</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="../interfaces/SlimScrollOptions.html" >SlimScrollOptions</a>
+                                       </li>
                                </ul>
                            </li>
                    
@@ -1730,12 +1748,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="compare"></a>
-                                    <b><span class="modifier">Public</span> compare</b>
+                                    <span class="name"><b><span class="modifier">Public</span> compare</b><a href="#compare"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>compare(a: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, b: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, sortInfo: <a href="../interfaces/ISortInfos.html">ISortInfos</a>)</code>
                                 </td>
                             </tr>
@@ -1759,6 +1777,7 @@
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -1768,6 +1787,8 @@
                                                               <td>
                                                                       <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
                                                               </td>
+                                                              <td>
+                                                              </td>
                                                               <td><p>Objet 1.</p>
             </td>
                                                             </tr>
@@ -1776,16 +1797,19 @@
                                                               <td>
                                                                       <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
                                                               </td>
+                                                              <td>
+                                                              </td>
                                                               <td><p>Objet 2.</p>
             </td>
                                                             </tr>
                                                             <tr>
-                                                              <td>sortInfos</td>
+                                                              <td>sortInfo</td>
                                                               <td>
                                                                       <code><a href="../interfaces/ISortInfos.html" target="_self" >ISortInfos</a></code>
                                                               </td>
-                                                              <td><p>Modèle de tri à appliquer pour la comparaison.</p>
-            </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
                                                             </tr>
                                                     </tbody>
                                                 </table>
@@ -1808,13 +1832,13 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="sort"></a>
-                                    <b><span class="modifier">Public</span> sort</b>
+                                    <span class="name"><b><span class="modifier">Public</span> sort</b><a href="#sort"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>sort(list: any[], sortInfo: |[])</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>sort(list: any[], sortInfo: <a href="../interfaces/ISortInfos.html">ISortInfos | []</a>)</code>
                                 </td>
                             </tr>
             
@@ -1828,6 +1852,39 @@
                             <tr>
                                 <td class="col-md-4">
             
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>list</td>
+                                                              <td>
+                                                                      <code>any[]</code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>sortInfo</td>
+                                                              <td>
+                                                                      <code><a href="../interfaces/ISortInfos.html" target="_self" >ISortInfos | []</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
                                         <div>
                                         </div>
                                         <div class="io-description">
@@ -1846,13 +1903,13 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="sort$"></a>
-                                    <b><span class="modifier">Public</span> sort$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> sort$</b><a href="#sort$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>sort$(list: any[], sortInfo: |[])</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>sort$(list: any[], sortInfo: <a href="../interfaces/ISortInfos.html">ISortInfos | []</a>)</code>
                                 </td>
                             </tr>
             
@@ -1875,6 +1932,7 @@
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -1882,17 +1940,21 @@
                                                             <tr>
                                                               <td>list</td>
                                                               <td>
+                                                                      <code>any[]</code>
+                                                              </td>
+                                                              <td>
                                                               </td>
                                                               <td><p>Liste à trier.</p>
             </td>
                                                             </tr>
                                                             <tr>
-                                                              <td>sortInfos</td>
+                                                              <td>sortInfo</td>
                                                               <td>
-                                                                      <code><a href="../interfaces/ISortInfos.html" target="_self" >ISortInfos</a></code>
+                                                                      <code><a href="../interfaces/ISortInfos.html" target="_self" >ISortInfos | []</a></code>
                                                               </td>
-                                                              <td><p>Modèle de tri à appliquer.</p>
-            </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
                                                             </tr>
                                                     </tbody>
                                                 </table>
@@ -1915,13 +1977,13 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="sortTree"></a>
-                                    <b><span class="modifier">Public</span> sortTree</b>
+                                    <span class="name"><b><span class="modifier">Public</span> sortTree</b><a href="#sortTree"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>sortTree(tree: any[], sortInfo: |[], childrenField: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>sortTree(tree: any[], sortInfo: <a href="../interfaces/ISortInfos.html">ISortInfos | []</a>, childrenField?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                                 </td>
                             </tr>
             
@@ -1935,6 +1997,49 @@
                             <tr>
                                 <td class="col-md-4">
             
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>tree</td>
+                                                              <td>
+                                                                      <code>any[]</code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>sortInfo</td>
+                                                              <td>
+                                                                      <code><a href="../interfaces/ISortInfos.html" target="_self" >ISortInfos | []</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>childrenField</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                              </td>
+                                                              <td>
+                                                                  true
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
                                         <div>
                                         </div>
                                         <div class="io-description">
@@ -1953,13 +2058,13 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="sortTree$"></a>
-                                    <b><span class="modifier">Public</span> sortTree$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> sortTree$</b><a href="#sortTree$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>sortTree$(tree: any[], sortInfo: |[], childrenField: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>sortTree$(tree: any[], sortInfo: <a href="../interfaces/ISortInfos.html">ISortInfos | []</a>, childrenField?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                                 </td>
                             </tr>
             
@@ -1982,6 +2087,7 @@
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -1989,22 +2095,29 @@
                                                             <tr>
                                                               <td>tree</td>
                                                               <td>
+                                                                      <code>any[]</code>
+                                                              </td>
+                                                              <td>
                                                               </td>
                                                               <td><p>Liste à trier.</p>
             </td>
                                                             </tr>
                                                             <tr>
-                                                              <td>sortInfos</td>
+                                                              <td>sortInfo</td>
                                                               <td>
-                                                                      <code><a href="../interfaces/ISortInfos.html" target="_self" >ISortInfos</a></code>
+                                                                      <code><a href="../interfaces/ISortInfos.html" target="_self" >ISortInfos | []</a></code>
                                                               </td>
-                                                              <td><p>Modèle de tri à appliquer.</p>
-            </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
                                                             </tr>
                                                             <tr>
                                                               <td>childrenField</td>
                                                               <td>
                                                                       <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                              </td>
+                                                              <td>
+                                                                  true
                                                               </td>
                                                               <td><p>Champ à utiliser pour la recherche dans les enfants d&#39;un parent.</p>
             </td>

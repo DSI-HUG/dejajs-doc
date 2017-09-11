@@ -177,6 +177,9 @@
                                     <a href="../modules/DejaSidenavModule.html" >DejaSidenavModule</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../modules/DejaSlimScrollModule.html" >DejaSlimScrollModule</a>
+                                </li>
+                                <li class="link">
                                     <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
                                 </li>
                                 <li class="link">
@@ -395,6 +398,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../directives/DejaSidenavMenuSeparatorDirective.html" >DejaSidenavMenuSeparatorDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaSlimScrollDirective.html" >DejaSlimScrollDirective</a>
                                 </li>
                                 <li class="link">
                                     <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
@@ -765,6 +771,9 @@
                                 <li class="link">
                                     <a href="../interfaces/Point.html" >Point</a>
                                 </li>
+                                <li class="link">
+                                    <a href="../interfaces/SlimScrollOptions.html" >SlimScrollOptions</a>
+                                </li>
                         </ul>
                     </li>
             
@@ -989,6 +998,9 @@
                                            <a href="../modules/DejaSidenavModule.html" >DejaSidenavModule</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../modules/DejaSlimScrollModule.html" >DejaSlimScrollModule</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
                                        </li>
                                        <li class="link">
@@ -1207,6 +1219,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../directives/DejaSidenavMenuSeparatorDirective.html" >DejaSidenavMenuSeparatorDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaSlimScrollDirective.html" >DejaSlimScrollDirective</a>
                                        </li>
                                        <li class="link">
                                            <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
@@ -1577,6 +1592,9 @@
                                        <li class="link">
                                            <a href="../interfaces/Point.html" >Point</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="../interfaces/SlimScrollOptions.html" >SlimScrollOptions</a>
+                                       </li>
                                </ul>
                            </li>
                    
@@ -1790,6 +1808,20 @@
                                 </ul>
                             </td>
                         </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <h6><b>HostBindings</b></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <ul class="index-list">
+                                    <li>
+                                        <a href="#attr.disabled">attr.disabled</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </section>
@@ -1809,6 +1841,43 @@
                                         </td>
                                     </tr>
             
+                            <tr>
+                                <td class="col-md-4">
+                                        <div>
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>elementRef</td>
+                                                              <td>
+                                                                        <code><a href="https://angular.io/docs/ts/latest/api/core/index/ElementRef-class.html" target="_blank" >ElementRef</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>_control</td>
+                                                              <td>
+                                                                        <code><a href="https://angular.io/docs/ts/latest/api/forms/index/NgControl-class.html" target="_blank" >NgControl</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
             </section>
@@ -1918,6 +1987,33 @@ Retourne une valeur indiquant si le contenu édité est multiligne </p>
 
 
             <section>
+                <h3>HostBindings</h3>        <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="attr.disabled"></a>
+                                    <span class="name"><b> attr.disabled</b><a href="#attr.disabled"><span class="fa fa-link"></span></a></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <code>attr.disabled:     <code></code>
+            </code>
+                                </td>
+                            </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/component/content-editable/content-editable.directive.ts:35</a></div>
+                                        </td>
+                                    </tr>
+            
+            
+                        </tbody>
+                    </table>
+            </section>
+
+
+            <section>
                 
                     <h3 id="methods">
                         Methods
@@ -1927,13 +2023,13 @@ Retourne une valeur indiquant si le contenu édité est multiligne </p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="edit"></a>
-                                    <b><span class="modifier">Public</span> edit</b>
+                                    <span class="name"><b><span class="modifier">Public</span> edit</b><a href="#edit"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>edit(selectOnFocus: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>edit(selectOnFocus?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
                                 </td>
                             </tr>
             
@@ -1950,9 +2046,39 @@ Retourne une valeur indiquant si le contenu édité est multiligne </p>
             </div>
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>selectOnFocus</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                                              </td>
+                                                              <td>
+                                                                  true
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -1962,12 +2088,12 @@ Retourne une valeur indiquant si le contenu édité est multiligne </p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="focus"></a>
-                                    <b><span class="modifier">Public</span> focus</b>
+                                    <span class="name"><b><span class="modifier">Public</span> focus</b><a href="#focus"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>focus()</code>
                                 </td>
                             </tr>
@@ -1997,12 +2123,12 @@ Retourne une valeur indiquant si le contenu édité est multiligne </p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="ngOnDestroy"></a>
-                                    <b><span class="modifier">Public</span> ngOnDestroy</b>
+                                    <span class="name"><b><span class="modifier">Public</span> ngOnDestroy</b><a href="#ngOnDestroy"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>ngOnDestroy()</code>
                                 </td>
                             </tr>
@@ -2030,12 +2156,12 @@ Retourne une valeur indiquant si le contenu édité est multiligne </p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="registerOnChange"></a>
-                                    <b><span class="modifier">Public</span> registerOnChange</b>
+                                    <span class="name"><b><span class="modifier">Public</span> registerOnChange</b><a href="#registerOnChange"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>registerOnChange(fn: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
                                 </td>
                             </tr>
@@ -2051,9 +2177,38 @@ Retourne une valeur indiquant si le contenu édité est multiligne </p>
                                 <td class="col-md-4">
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>fn</td>
+                                                              <td>
+                                                                      <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -2063,12 +2218,12 @@ Retourne une valeur indiquant si le contenu édité est multiligne </p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="registerOnTouched"></a>
-                                    <b><span class="modifier">Public</span> registerOnTouched</b>
+                                    <span class="name"><b><span class="modifier">Public</span> registerOnTouched</b><a href="#registerOnTouched"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>registerOnTouched(fn: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
                                 </td>
                             </tr>
@@ -2084,9 +2239,38 @@ Retourne une valeur indiquant si le contenu édité est multiligne </p>
                                 <td class="col-md-4">
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>fn</td>
+                                                              <td>
+                                                                      <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -2096,12 +2280,12 @@ Retourne une valeur indiquant si le contenu édité est multiligne </p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="selectAll"></a>
-                                    <b><span class="modifier">Public</span> selectAll</b>
+                                    <span class="name"><b><span class="modifier">Public</span> selectAll</b><a href="#selectAll"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>selectAll()</code>
                                 </td>
                             </tr>
@@ -2131,12 +2315,12 @@ Retourne une valeur indiquant si le contenu édité est multiligne </p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="writeValue"></a>
-                                    <b><span class="modifier">Public</span> writeValue</b>
+                                    <span class="name"><b><span class="modifier">Public</span> writeValue</b><a href="#writeValue"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>writeValue(value: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
                                 </td>
                             </tr>
@@ -2152,9 +2336,38 @@ Retourne une valeur indiquant si le contenu édité est multiligne </p>
                                 <td class="col-md-4">
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>value</td>
+                                                              <td>
+                                                                      <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -2171,12 +2384,12 @@ Retourne une valeur indiquant si le contenu édité est multiligne </p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="_control"></a>
-                                    <b><span class="modifier">Public</span> _control</b>
+                                    <span class="name"><b><span class="modifier">Public</span> _control</b><a href="#_control"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>_control:     <code><a href="https://angular.io/docs/ts/latest/api/forms/index/NgControl-class.html" target="_blank" >NgControl</a></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>_control:     <code><a href="https://angular.io/docs/ts/latest/api/forms/index/NgControl-class.html" target="_blank" >NgControl</a></code>
             </code>
                                 </td>
                             </tr>
@@ -2205,12 +2418,12 @@ Retourne une valeur indiquant si le contenu édité est multiligne </p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="disabled"></a>
-                                    <b><span class="modifier">Public</span> disabled</b>
+                                    <span class="name"><b><span class="modifier">Public</span> disabled</b><a href="#disabled"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>disabled:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>disabled:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2234,12 +2447,12 @@ Retourne une valeur indiquant si le contenu édité est multiligne </p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="editMode"></a>
-                                    <b><span class="modifier">Public</span> editMode</b>
+                                    <span class="name"><b><span class="modifier">Public</span> editMode</b><a href="#editMode"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>editMode:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>editMode:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2264,12 +2477,12 @@ Retourne une valeur indiquant si le contenu édité est multiligne </p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="inEdition"></a>
-                                    <b><span class="modifier">Public</span> inEdition</b>
+                                    <span class="name"><b><span class="modifier">Public</span> inEdition</b><a href="#inEdition"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>inEdition:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>inEdition:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2294,12 +2507,12 @@ Retourne une valeur indiquant si le contenu édité est multiligne </p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="mandatory"></a>
-                                    <b><span class="modifier">Public</span> mandatory</b>
+                                    <span class="name"><b><span class="modifier">Public</span> mandatory</b><a href="#mandatory"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>mandatory:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>mandatory:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2324,12 +2537,12 @@ Retourne une valeur indiquant si le contenu édité est multiligne </p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="multiline"></a>
-                                    <b><span class="modifier">Public</span> multiline</b>
+                                    <span class="name"><b><span class="modifier">Public</span> multiline</b><a href="#multiline"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>multiline:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>multiline:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2354,12 +2567,12 @@ Retourne une valeur indiquant si le contenu édité est multiligne </p>
                             <tr>
                                 <td class="col-md-4">
                                     <a name="value"></a>
-                                    <b><span class="modifier">Public</span> value</b>
+                                    <span class="name"><b><span class="modifier">Public</span> value</b><a href="#value"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>value:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>value:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
             </code>
                                 </td>
                             </tr>

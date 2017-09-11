@@ -177,6 +177,9 @@
                                     <a href="../modules/DejaSidenavModule.html" >DejaSidenavModule</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../modules/DejaSlimScrollModule.html" >DejaSlimScrollModule</a>
+                                </li>
+                                <li class="link">
                                     <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
                                 </li>
                                 <li class="link">
@@ -395,6 +398,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../directives/DejaSidenavMenuSeparatorDirective.html" >DejaSidenavMenuSeparatorDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaSlimScrollDirective.html" >DejaSlimScrollDirective</a>
                                 </li>
                                 <li class="link">
                                     <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
@@ -765,6 +771,9 @@
                                 <li class="link">
                                     <a href="../interfaces/Point.html" >Point</a>
                                 </li>
+                                <li class="link">
+                                    <a href="../interfaces/SlimScrollOptions.html" >SlimScrollOptions</a>
+                                </li>
                         </ul>
                     </li>
             
@@ -989,6 +998,9 @@
                                            <a href="../modules/DejaSidenavModule.html" >DejaSidenavModule</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../modules/DejaSlimScrollModule.html" >DejaSlimScrollModule</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
                                        </li>
                                        <li class="link">
@@ -1207,6 +1219,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../directives/DejaSidenavMenuSeparatorDirective.html" >DejaSidenavMenuSeparatorDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaSlimScrollDirective.html" >DejaSlimScrollDirective</a>
                                        </li>
                                        <li class="link">
                                            <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
@@ -1577,6 +1592,9 @@
                                        <li class="link">
                                            <a href="../interfaces/Point.html" >Point</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="../interfaces/SlimScrollOptions.html" >SlimScrollOptions</a>
+                                       </li>
                                </ul>
                            </li>
                    
@@ -1828,6 +1846,34 @@
                                         </td>
                                     </tr>
             
+                            <tr>
+                                <td class="col-md-4">
+                                        <div>
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>tile</td>
+                                                              <td>
+                                                                        <code><a href="../interfaces/IDejaTile.html" target="_self" >IDejaTile</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
             </section>
@@ -1842,12 +1888,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="clone"></a>
-                                    <b><span class="modifier">Public</span> clone</b>
+                                    <span class="name"><b><span class="modifier">Public</span> clone</b><a href="#clone"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>clone()</code>
                                 </td>
                             </tr>
@@ -1875,12 +1921,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="delete"></a>
-                                    <b><span class="modifier">Public</span> delete</b>
+                                    <span class="name"><b><span class="modifier">Public</span> delete</b><a href="#delete"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>delete()</code>
                                 </td>
                             </tr>
@@ -1908,12 +1954,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="equalsTo"></a>
-                                    <b><span class="modifier">Public</span> equalsTo</b>
+                                    <span class="name"><b><span class="modifier">Public</span> equalsTo</b><a href="#equalsTo"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>equalsTo(tile: <a href="../interfaces/IDejaTile.html">IDejaTile</a>)</code>
                                 </td>
                             </tr>
@@ -1929,9 +1975,38 @@
                                 <td class="col-md-4">
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>tile</td>
+                                                              <td>
+                                                                      <code><a href="../interfaces/IDejaTile.html" target="_self" >IDejaTile</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -1941,12 +2016,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="makeId"></a>
-                                    <b><span class="modifier">Public</span> makeId</b>
+                                    <span class="name"><b><span class="modifier">Public</span> makeId</b><a href="#makeId"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>makeId()</code>
                                 </td>
                             </tr>
@@ -1974,12 +2049,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="refreshBounds"></a>
-                                    <b><span class="modifier">Public</span> refreshBounds</b>
+                                    <span class="name"><b><span class="modifier">Public</span> refreshBounds</b><a href="#refreshBounds"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>refreshBounds()</code>
                                 </td>
                             </tr>
@@ -2007,12 +2082,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="toTileModel"></a>
-                                    <b><span class="modifier">Public</span> toTileModel</b>
+                                    <span class="name"><b><span class="modifier">Public</span> toTileModel</b><a href="#toTileModel"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>toTileModel()</code>
                                 </td>
                             </tr>
@@ -2048,12 +2123,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="color"></a>
-                                    <b><span class="modifier">Public</span> color</b>
+                                    <span class="name"><b><span class="modifier">Public</span> color</b><a href="#color"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>color:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>color:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2071,12 +2146,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="cutted$"></a>
-                                    <b><span class="modifier">Public</span> cutted$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> cutted$</b><a href="#cutted$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>cutted$:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>cutted$:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2094,12 +2169,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="deleted$"></a>
-                                    <b><span class="modifier">Public</span> deleted$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> deleted$</b><a href="#deleted$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>deleted$:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>deleted$:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2117,12 +2192,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="dragging$"></a>
-                                    <b><span class="modifier">Public</span> dragging$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> dragging$</b><a href="#dragging$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>dragging$:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>dragging$:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2140,12 +2215,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="dropping$"></a>
-                                    <b><span class="modifier">Public</span> dropping$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> dropping$</b><a href="#dropping$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>dropping$:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>dropping$:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2163,12 +2238,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="expanded$"></a>
-                                    <b><span class="modifier">Public</span> expanded$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> expanded$</b><a href="#expanded$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>expanded$:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>expanded$:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2186,12 +2261,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="fading"></a>
-                                    <b><span class="modifier">Public</span> fading</b>
+                                    <span class="name"><b><span class="modifier">Public</span> fading</b><a href="#fading"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>fading:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>fading:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2214,12 +2289,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="hidden$"></a>
-                                    <b><span class="modifier">Public</span> hidden$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> hidden$</b><a href="#hidden$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>hidden$:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>hidden$:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2237,12 +2312,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="id"></a>
-                                    <b><span class="modifier">Public</span> id</b>
+                                    <span class="name"><b><span class="modifier">Public</span> id</b><a href="#id"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>id:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>id:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2260,12 +2335,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="isCutted"></a>
-                                    <b><span class="modifier">Public</span> isCutted</b>
+                                    <span class="name"><b><span class="modifier">Public</span> isCutted</b><a href="#isCutted"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>isCutted:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>isCutted:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2283,12 +2358,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="isDragging"></a>
-                                    <b><span class="modifier">Public</span> isDragging</b>
+                                    <span class="name"><b><span class="modifier">Public</span> isDragging</b><a href="#isDragging"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>isDragging:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>isDragging:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2306,12 +2381,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="isDropping"></a>
-                                    <b><span class="modifier">Public</span> isDropping</b>
+                                    <span class="name"><b><span class="modifier">Public</span> isDropping</b><a href="#isDropping"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>isDropping:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>isDropping:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2329,12 +2404,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="isExpanded"></a>
-                                    <b><span class="modifier">Public</span> isExpanded</b>
+                                    <span class="name"><b><span class="modifier">Public</span> isExpanded</b><a href="#isExpanded"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>isExpanded:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>isExpanded:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2352,12 +2427,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="isHidden"></a>
-                                    <b><span class="modifier">Public</span> isHidden</b>
+                                    <span class="name"><b><span class="modifier">Public</span> isHidden</b><a href="#isHidden"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>isHidden:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>isHidden:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2375,12 +2450,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="isPending"></a>
-                                    <b><span class="modifier">Public</span> isPending</b>
+                                    <span class="name"><b><span class="modifier">Public</span> isPending</b><a href="#isPending"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>isPending:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>isPending:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2398,12 +2473,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="isPressed"></a>
-                                    <b><span class="modifier">Public</span> isPressed</b>
+                                    <span class="name"><b><span class="modifier">Public</span> isPressed</b><a href="#isPressed"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>isPressed:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>isPressed:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2421,12 +2496,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="isSelected"></a>
-                                    <b><span class="modifier">Public</span> isSelected</b>
+                                    <span class="name"><b><span class="modifier">Public</span> isSelected</b><a href="#isSelected"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>isSelected:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>isSelected:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2444,12 +2519,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="isTemporary"></a>
-                                    <b><span class="modifier">Public</span> isTemporary</b>
+                                    <span class="name"><b><span class="modifier">Public</span> isTemporary</b><a href="#isTemporary"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>isTemporary:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>isTemporary:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2472,12 +2547,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="model"></a>
-                                    <b><span class="modifier">Public</span> model</b>
+                                    <span class="name"><b><span class="modifier">Public</span> model</b><a href="#model"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>model:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>model:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2495,12 +2570,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="pending$"></a>
-                                    <b><span class="modifier">Public</span> pending$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> pending$</b><a href="#pending$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>pending$:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>pending$:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2518,12 +2593,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="percentBounds"></a>
-                                    <b><span class="modifier">Public</span> percentBounds</b>
+                                    <span class="name"><b><span class="modifier">Public</span> percentBounds</b><a href="#percentBounds"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>percentBounds:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>percentBounds:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2541,12 +2616,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="pixelBounds"></a>
-                                    <b><span class="modifier">Public</span> pixelBounds</b>
+                                    <span class="name"><b><span class="modifier">Public</span> pixelBounds</b><a href="#pixelBounds"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>pixelBounds:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>pixelBounds:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2564,12 +2639,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="pixelBounds$"></a>
-                                    <b><span class="modifier">Public</span> pixelBounds$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> pixelBounds$</b><a href="#pixelBounds$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>pixelBounds$:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>pixelBounds$:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2587,12 +2662,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="pressed$"></a>
-                                    <b><span class="modifier">Public</span> pressed$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> pressed$</b><a href="#pressed$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>pressed$:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>pressed$:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2610,12 +2685,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="selected$"></a>
-                                    <b><span class="modifier">Public</span> selected$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> selected$</b><a href="#selected$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>selected$:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>selected$:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2633,12 +2708,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="templateModel"></a>
-                                    <b><span class="modifier">Public</span> templateModel</b>
+                                    <span class="name"><b><span class="modifier">Public</span> templateModel</b><a href="#templateModel"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>templateModel:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>templateModel:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2656,12 +2731,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="type"></a>
-                                    <b><span class="modifier">Public</span> type</b>
+                                    <span class="name"><b><span class="modifier">Public</span> type</b><a href="#type"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>type:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>type:     <code></code>
             </code>
                                 </td>
                             </tr>

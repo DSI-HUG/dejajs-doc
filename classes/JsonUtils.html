@@ -177,6 +177,9 @@
                                     <a href="../modules/DejaSidenavModule.html" >DejaSidenavModule</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../modules/DejaSlimScrollModule.html" >DejaSlimScrollModule</a>
+                                </li>
+                                <li class="link">
                                     <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
                                 </li>
                                 <li class="link">
@@ -395,6 +398,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../directives/DejaSidenavMenuSeparatorDirective.html" >DejaSidenavMenuSeparatorDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaSlimScrollDirective.html" >DejaSlimScrollDirective</a>
                                 </li>
                                 <li class="link">
                                     <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
@@ -765,6 +771,9 @@
                                 <li class="link">
                                     <a href="../interfaces/Point.html" >Point</a>
                                 </li>
+                                <li class="link">
+                                    <a href="../interfaces/SlimScrollOptions.html" >SlimScrollOptions</a>
+                                </li>
                         </ul>
                     </li>
             
@@ -989,6 +998,9 @@
                                            <a href="../modules/DejaSidenavModule.html" >DejaSidenavModule</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../modules/DejaSlimScrollModule.html" >DejaSlimScrollModule</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
                                        </li>
                                        <li class="link">
@@ -1207,6 +1219,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../directives/DejaSidenavMenuSeparatorDirective.html" >DejaSidenavMenuSeparatorDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaSlimScrollDirective.html" >DejaSlimScrollDirective</a>
                                        </li>
                                        <li class="link">
                                            <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
@@ -1577,6 +1592,9 @@
                                        <li class="link">
                                            <a href="../interfaces/Point.html" >Point</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="../interfaces/SlimScrollOptions.html" >SlimScrollOptions</a>
+                                       </li>
                                </ul>
                            </li>
                    
@@ -1723,12 +1741,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="deserializeJson"></a>
-                                    <b><span class="modifier">Public</span> deserializeJson</b>
+                                    <span class="name"><b><span class="modifier">Public</span> deserializeJson</b><a href="#deserializeJson"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>deserializeJson(obj: T, jsonObj: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
                                 </td>
                             </tr>
@@ -1761,6 +1779,7 @@
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -1768,13 +1787,18 @@
                                                             <tr>
                                                               <td>obj</td>
                                                               <td>
-                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_blank" >Object</a></code>
+                                                                      <code>T</code>
+                                                              </td>
+                                                              <td>
                                                               </td>
                                                               <td><p>: Object to deserialize into</p>
             </td>
                                                             </tr>
                                                             <tr>
                                                               <td>jsonObj</td>
+                                                              <td>
+                                                                      <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                              </td>
                                                               <td>
                                                               </td>
                                                               <td><p>: a JSON;</p>
@@ -1801,12 +1825,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="deserializeJson2"></a>
-                                    <b><span class="modifier">Public</span> deserializeJson2</b>
+                                    <span class="name"><b><span class="modifier">Public</span> deserializeJson2</b><a href="#deserializeJson2"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>deserializeJson2(clazz: literal type, sourceObj: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, caseTransform: )</code>
                                 </td>
                             </tr>
@@ -1835,12 +1859,16 @@
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                             <tr>
                                                               <td>clazz</td>
+                                                              <td>
+                                                                      <code>literal type</code>
+                                                              </td>
                                                               <td>
                                                               </td>
                                                               <td><p>The class of the object created</p>
@@ -1849,12 +1877,17 @@
                                                             <tr>
                                                               <td>sourceObj</td>
                                                               <td>
+                                                                      <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                              </td>
+                                                              <td>
                                                               </td>
                                                               <td><p>The JSON object</p>
             </td>
                                                             </tr>
                                                             <tr>
                                                               <td>caseTransform</td>
+                                                              <td>
+                                                              </td>
                                                               <td>
                                                               </td>
                                                               <td></td>
@@ -1881,12 +1914,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="deserializeJsonList"></a>
-                                    <b><span class="modifier">Public</span> deserializeJsonList</b>
+                                    <span class="name"><b><span class="modifier">Public</span> deserializeJsonList</b><a href="#deserializeJsonList"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>deserializeJsonList(clazz: literal type, sourceList: any[], caseTransform: )</code>
                                 </td>
                             </tr>
@@ -1910,6 +1943,7 @@
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -1917,17 +1951,25 @@
                                                             <tr>
                                                               <td>clazz</td>
                                                               <td>
+                                                                      <code>literal type</code>
+                                                              </td>
+                                                              <td>
                                                               </td>
                                                               <td></td>
                                                             </tr>
                                                             <tr>
                                                               <td>sourceList</td>
                                                               <td>
+                                                                      <code>any[]</code>
+                                                              </td>
+                                                              <td>
                                                               </td>
                                                               <td></td>
                                                             </tr>
                                                             <tr>
                                                               <td>caseTransform</td>
+                                                              <td>
+                                                              </td>
                                                               <td>
                                                               </td>
                                                               <td></td>
@@ -1953,12 +1995,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="getOneFrom"></a>
-                                    <b><span class="modifier">Public</span> getOneFrom</b>
+                                    <span class="name"><b><span class="modifier">Public</span> getOneFrom</b><a href="#getOneFrom"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>getOneFrom(listPromise: Promise<any>, id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, cacheName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, idFieldName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                                 </td>
                             </tr>
@@ -1982,12 +2024,16 @@
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                             <tr>
                                                               <td>listPromise</td>
+                                                              <td>
+                                                                      <code>Promise&lt;any&gt;</code>
+                                                              </td>
                                                               <td>
                                                               </td>
                                                               <td><p>Promise that returns a array of objects. Object can have an an attribute &quot;id&quot; or &quot;ID&quot; or &quot;Id&quot; or field named by the &#39;idFieldName&#39; param.</p>
@@ -1996,6 +2042,9 @@
                                                             <tr>
                                                               <td>id</td>
                                                               <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                              </td>
+                                                              <td>
                                                               </td>
                                                               <td><p>: The ID we want to get</p>
             </td>
@@ -2003,12 +2052,18 @@
                                                             <tr>
                                                               <td>cacheName</td>
                                                               <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                              </td>
+                                                              <td>
                                                               </td>
                                                               <td><p>: The cache key to store it</p>
             </td>
                                                             </tr>
                                                             <tr>
                                                               <td>idFieldName</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                              </td>
                                                               <td>
                                                               </td>
                                                               <td><p>: Field name to use insetead of id.</p>
@@ -2036,12 +2091,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="toMap"></a>
-                                    <b><span class="modifier">Public</span> toMap</b>
+                                    <span class="name"><b><span class="modifier">Public</span> toMap</b><a href="#toMap"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>toMap(objList: any[], idFieldName: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                                 </td>
                             </tr>
@@ -2065,6 +2120,7 @@
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -2072,12 +2128,18 @@
                                                             <tr>
                                                               <td>objList</td>
                                                               <td>
+                                                                      <code>any[]</code>
+                                                              </td>
+                                                              <td>
                                                               </td>
                                                               <td><p>: List of object with an attribute &quot;id&quot; or &quot;ID&quot; or &quot;Id&quot;</p>
             </td>
                                                             </tr>
                                                             <tr>
                                                               <td>idFieldName</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                              </td>
                                                               <td>
                                                               </td>
                                                               <td><p>: Field name to use insetead of id.</p>

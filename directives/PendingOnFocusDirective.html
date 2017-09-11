@@ -177,6 +177,9 @@
                                     <a href="../modules/DejaSidenavModule.html" >DejaSidenavModule</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../modules/DejaSlimScrollModule.html" >DejaSlimScrollModule</a>
+                                </li>
+                                <li class="link">
                                     <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
                                 </li>
                                 <li class="link">
@@ -395,6 +398,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../directives/DejaSidenavMenuSeparatorDirective.html" >DejaSidenavMenuSeparatorDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaSlimScrollDirective.html" >DejaSlimScrollDirective</a>
                                 </li>
                                 <li class="link">
                                     <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
@@ -765,6 +771,9 @@
                                 <li class="link">
                                     <a href="../interfaces/Point.html" >Point</a>
                                 </li>
+                                <li class="link">
+                                    <a href="../interfaces/SlimScrollOptions.html" >SlimScrollOptions</a>
+                                </li>
                         </ul>
                     </li>
             
@@ -989,6 +998,9 @@
                                            <a href="../modules/DejaSidenavModule.html" >DejaSidenavModule</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../modules/DejaSlimScrollModule.html" >DejaSlimScrollModule</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
                                        </li>
                                        <li class="link">
@@ -1207,6 +1219,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../directives/DejaSidenavMenuSeparatorDirective.html" >DejaSidenavMenuSeparatorDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaSlimScrollDirective.html" >DejaSlimScrollDirective</a>
                                        </li>
                                        <li class="link">
                                            <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
@@ -1577,6 +1592,9 @@
                                        <li class="link">
                                            <a href="../interfaces/Point.html" >Point</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="../interfaces/SlimScrollOptions.html" >SlimScrollOptions</a>
+                                       </li>
                                </ul>
                            </li>
                    
@@ -1728,11 +1746,22 @@
                                     <li>
                                         <span class="modifier">Public</span> <a href="#ngOnDestroy">ngOnDestroy</a>
                                     </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <h6><b>HostListeners</b></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <ul class="index-list">
                                     <li>
-                                        <span class="modifier">Protected</span> <a href="#onBlur">onBlur</a>
+                                        <a href="#blur">blur</a>
                                     </li>
                                     <li>
-                                        <span class="modifier">Protected</span> <a href="#onFocus">onFocus</a>
+                                        <a href="#focus">focus</a>
                                     </li>
                                 </ul>
                             </td>
@@ -1756,11 +1785,89 @@
                                         </td>
                                     </tr>
             
+                            <tr>
+                                <td class="col-md-4">
+                                        <div>
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>formControl</td>
+                                                              <td>
+                                                                        <code><a href="https://angular.io/docs/ts/latest/api/forms/index/NgControl-class.html" target="_blank" >NgControl</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
             </section>
 
 
+
+
+            <section>
+                <h3>HostListeners</h3>        <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="blur"></a>
+                                    <span class="name"><b> blur</b><a href="#blur"><span class="fa fa-link"></span></a></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+            <code>blur()</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/common/core/form/pending-onfocus.directive.ts:42</a></div>
+                                        </td>
+                                    </tr>
+            
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="focus"></a>
+                                    <span class="name"><b> focus</b><a href="#focus"><span class="fa fa-link"></span></a></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+            <code>focus()</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/common/core/form/pending-onfocus.directive.ts:37</a></div>
+                                        </td>
+                                    </tr>
+            
+                        </tbody>
+                    </table>
+            </section>
 
             <section>
                 
@@ -1772,12 +1879,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="ngAfterContentInit"></a>
-                                    <b><span class="modifier">Public</span> ngAfterContentInit</b>
+                                    <span class="name"><b><span class="modifier">Public</span> ngAfterContentInit</b><a href="#ngAfterContentInit"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>ngAfterContentInit()</code>
                                 </td>
                             </tr>
@@ -1805,12 +1912,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="ngOnDestroy"></a>
-                                    <b><span class="modifier">Public</span> ngOnDestroy</b>
+                                    <span class="name"><b><span class="modifier">Public</span> ngOnDestroy</b><a href="#ngOnDestroy"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>ngOnDestroy()</code>
                                 </td>
                             </tr>
@@ -1819,82 +1926,6 @@
                                     <tr>
                                         <td class="col-md-4">
                                             <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/common/core/form/pending-onfocus.directive.ts:30</a></div>
-                                        </td>
-                                    </tr>
-            
-                            <tr>
-                                <td class="col-md-4">
-            
-                                        <div class="io-description">
-                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-            
-                                        </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <a name="onBlur"></a>
-                                    <b><span class="modifier">Protected</span> onBlur</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play circle"></span>
-                                    <code>onBlur()</code>
-                                </td>
-                            </tr>
-            
-                                <tr>
-                                    <td class="col-md-4">
-                                        <i>Decorators : </i><code>HostListener</code>
-                                    </td>
-                                </tr>
-            
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/common/core/form/pending-onfocus.directive.ts:42</a></div>
-                                        </td>
-                                    </tr>
-            
-                            <tr>
-                                <td class="col-md-4">
-            
-                                        <div class="io-description">
-                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-            
-                                        </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <a name="onFocus"></a>
-                                    <b><span class="modifier">Protected</span> onFocus</b>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play circle"></span>
-                                    <code>onFocus()</code>
-                                </td>
-                            </tr>
-            
-                                <tr>
-                                    <td class="col-md-4">
-                                        <i>Decorators : </i><code>HostListener</code>
-                                    </td>
-                                </tr>
-            
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/common/core/form/pending-onfocus.directive.ts:37</a></div>
                                         </td>
                                     </tr>
             
@@ -1921,12 +1952,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="formControl"></a>
-                                    <b><span class="modifier">Public</span> formControl</b>
+                                    <span class="name"><b><span class="modifier">Public</span> formControl</b><a href="#formControl"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>formControl:     <code><a href="https://angular.io/docs/ts/latest/api/forms/index/NgControl-class.html" target="_blank" >NgControl</a></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>formControl:     <code><a href="https://angular.io/docs/ts/latest/api/forms/index/NgControl-class.html" target="_blank" >NgControl</a></code>
             </code>
                                 </td>
                             </tr>

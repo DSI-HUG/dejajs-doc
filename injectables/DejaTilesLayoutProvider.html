@@ -177,6 +177,9 @@
                                     <a href="../modules/DejaSidenavModule.html" >DejaSidenavModule</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../modules/DejaSlimScrollModule.html" >DejaSlimScrollModule</a>
+                                </li>
+                                <li class="link">
                                     <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
                                 </li>
                                 <li class="link">
@@ -395,6 +398,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../directives/DejaSidenavMenuSeparatorDirective.html" >DejaSidenavMenuSeparatorDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaSlimScrollDirective.html" >DejaSlimScrollDirective</a>
                                 </li>
                                 <li class="link">
                                     <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
@@ -765,6 +771,9 @@
                                 <li class="link">
                                     <a href="../interfaces/Point.html" >Point</a>
                                 </li>
+                                <li class="link">
+                                    <a href="../interfaces/SlimScrollOptions.html" >SlimScrollOptions</a>
+                                </li>
                         </ul>
                     </li>
             
@@ -989,6 +998,9 @@
                                            <a href="../modules/DejaSidenavModule.html" >DejaSidenavModule</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../modules/DejaSlimScrollModule.html" >DejaSlimScrollModule</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
                                        </li>
                                        <li class="link">
@@ -1207,6 +1219,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../directives/DejaSidenavMenuSeparatorDirective.html" >DejaSidenavMenuSeparatorDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaSlimScrollDirective.html" >DejaSlimScrollDirective</a>
                                        </li>
                                        <li class="link">
                                            <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
@@ -1577,6 +1592,9 @@
                                        <li class="link">
                                            <a href="../interfaces/Point.html" >Point</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="../interfaces/SlimScrollOptions.html" >SlimScrollOptions</a>
+                                       </li>
                                </ul>
                            </li>
                    
@@ -1872,6 +1890,34 @@
                                         </td>
                                     </tr>
             
+                            <tr>
+                                <td class="col-md-4">
+                                        <div>
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>clipboardService</td>
+                                                              <td>
+                                                                        <code><a href="../injectables/DejaClipboardService.html" target="_self" >DejaClipboardService</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                </td>
+                            </tr>
                         </tbody>
                     </table>
             </section>
@@ -1886,13 +1932,13 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="addTiles"></a>
-                                    <b><span class="modifier">Public</span> addTiles</b>
+                                    <span class="name"><b><span class="modifier">Public</span> addTiles</b><a href="#addTiles"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>addTiles(newTiles: [])</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>addTiles(newTiles: <a href="../classes/DejaTile.html">DejaTile[]</a>)</code>
                                 </td>
                             </tr>
             
@@ -1907,9 +1953,38 @@
                                 <td class="col-md-4">
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>newTiles</td>
+                                                              <td>
+                                                                      <code><a href="../classes/DejaTile.html" target="_self" >DejaTile[]</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -1919,13 +1994,13 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="cancelDrag"></a>
-                                    <b><span class="modifier">Public</span> cancelDrag</b>
+                                    <span class="name"><b><span class="modifier">Public</span> cancelDrag</b><a href="#cancelDrag"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>cancelDrag(tiles: [])</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>cancelDrag(tiles: <a href="../classes/DejaTile.html">DejaTile[]</a>)</code>
                                 </td>
                             </tr>
             
@@ -1940,9 +2015,38 @@
                                 <td class="col-md-4">
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>tiles</td>
+                                                              <td>
+                                                                      <code><a href="../classes/DejaTile.html" target="_self" >DejaTile[]</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -1952,12 +2056,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="cancelExpand"></a>
-                                    <b><span class="modifier">Public</span> cancelExpand</b>
+                                    <span class="name"><b><span class="modifier">Public</span> cancelExpand</b><a href="#cancelExpand"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>cancelExpand()</code>
                                 </td>
                             </tr>
@@ -1985,12 +2089,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="copySelection"></a>
-                                    <b><span class="modifier">Public</span> copySelection</b>
+                                    <span class="name"><b><span class="modifier">Public</span> copySelection</b><a href="#copySelection"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>copySelection()</code>
                                 </td>
                             </tr>
@@ -2018,13 +2122,13 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="createTiles"></a>
-                                    <b><span class="modifier">Public</span> createTiles</b>
+                                    <span class="name"><b><span class="modifier">Public</span> createTiles</b><a href="#createTiles"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>createTiles(tiles: [])</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>createTiles(tiles: <a href="../interfaces/IDejaTile.html">IDejaTile[]</a>)</code>
                                 </td>
                             </tr>
             
@@ -2039,9 +2143,38 @@
                                 <td class="col-md-4">
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>tiles</td>
+                                                              <td>
+                                                                      <code><a href="../interfaces/IDejaTile.html" target="_self" >IDejaTile[]</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -2051,12 +2184,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="cutSelection"></a>
-                                    <b><span class="modifier">Public</span> cutSelection</b>
+                                    <span class="name"><b><span class="modifier">Public</span> cutSelection</b><a href="#cutSelection"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>cutSelection()</code>
                                 </td>
                             </tr>
@@ -2084,12 +2217,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="deleteSelection"></a>
-                                    <b><span class="modifier">Public</span> deleteSelection</b>
+                                    <span class="name"><b><span class="modifier">Public</span> deleteSelection</b><a href="#deleteSelection"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>deleteSelection()</code>
                                 </td>
                             </tr>
@@ -2117,13 +2250,13 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="deleteTiles"></a>
-                                    <b><span class="modifier">Public</span> deleteTiles</b>
+                                    <span class="name"><b><span class="modifier">Public</span> deleteTiles</b><a href="#deleteTiles"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>deleteTiles(tilesToDelete: [])</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>deleteTiles(tilesToDelete: <a href="../classes/DejaTile.html">DejaTile[]</a>)</code>
                                 </td>
                             </tr>
             
@@ -2138,9 +2271,38 @@
                                 <td class="col-md-4">
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>tilesToDelete</td>
+                                                              <td>
+                                                                      <code><a href="../classes/DejaTile.html" target="_self" >DejaTile[]</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -2150,13 +2312,13 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="drag"></a>
-                                    <b><span class="modifier">Public</span> drag</b>
+                                    <span class="name"><b><span class="modifier">Public</span> drag</b><a href="#drag"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>drag(tiles: [], pageX: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, pageY: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>drag(tiles: <a href="../classes/DejaTile.html">DejaTile[]</a>, pageX: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, pageY: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
                                 </td>
                             </tr>
             
@@ -2171,9 +2333,56 @@
                                 <td class="col-md-4">
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>tiles</td>
+                                                              <td>
+                                                                      <code><a href="../classes/DejaTile.html" target="_self" >DejaTile[]</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>pageX</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>pageY</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -2183,12 +2392,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="dragEnter"></a>
-                                    <b><span class="modifier">Public</span> dragEnter</b>
+                                    <span class="name"><b><span class="modifier">Public</span> dragEnter</b><a href="#dragEnter"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>dragEnter(dragContext: <a href="../interfaces/IDragDropContext.html">IDragDropContext</a>, dragCursor: <a href="../interfaces/IDragCursorInfos.html">IDragCursorInfos</a>)</code>
                                 </td>
                             </tr>
@@ -2204,9 +2413,47 @@
                                 <td class="col-md-4">
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>dragContext</td>
+                                                              <td>
+                                                                      <code><a href="../interfaces/IDragDropContext.html" target="_self" >IDragDropContext</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>dragCursor</td>
+                                                              <td>
+                                                                      <code><a href="../interfaces/IDragCursorInfos.html" target="_self" >IDragCursorInfos</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -2216,13 +2463,13 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="drop"></a>
-                                    <b><span class="modifier">Public</span> drop</b>
+                                    <span class="name"><b><span class="modifier">Public</span> drop</b><a href="#drop"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>drop(tiles: [])</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>drop(tiles: <a href="../classes/DejaTile.html">DejaTile[]</a>)</code>
                                 </td>
                             </tr>
             
@@ -2237,9 +2484,38 @@
                                 <td class="col-md-4">
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>tiles</td>
+                                                              <td>
+                                                                      <code><a href="../classes/DejaTile.html" target="_self" >DejaTile[]</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -2249,12 +2525,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="endDrag"></a>
-                                    <b><span class="modifier">Public</span> endDrag</b>
+                                    <span class="name"><b><span class="modifier">Public</span> endDrag</b><a href="#endDrag"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>endDrag()</code>
                                 </td>
                             </tr>
@@ -2282,12 +2558,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="expandTile"></a>
-                                    <b><span class="modifier">Public</span> expandTile</b>
+                                    <span class="name"><b><span class="modifier">Public</span> expandTile</b><a href="#expandTile"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>expandTile(tile: <a href="../interfaces/IDejaTile.html">IDejaTile</a>, pixelheight: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
                                 </td>
                             </tr>
@@ -2303,9 +2579,47 @@
                                 <td class="col-md-4">
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>tile</td>
+                                                              <td>
+                                                                      <code><a href="../interfaces/IDejaTile.html" target="_self" >IDejaTile</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>pixelheight</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -2315,12 +2629,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="getFreePlace"></a>
-                                    <b><span class="modifier">Public</span> getFreePlace</b>
+                                    <span class="name"><b><span class="modifier">Public</span> getFreePlace</b><a href="#getFreePlace"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>getFreePlace(idealBounds: <a href="../classes/Rect.html">Rect</a>)</code>
                                 </td>
                             </tr>
@@ -2336,9 +2650,38 @@
                                 <td class="col-md-4">
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>idealBounds</td>
+                                                              <td>
+                                                                      <code><a href="../classes/Rect.html" target="_self" >Rect</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -2348,12 +2691,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="getPercentSize"></a>
-                                    <b><span class="modifier">Public</span> getPercentSize</b>
+                                    <span class="name"><b><span class="modifier">Public</span> getPercentSize</b><a href="#getPercentSize"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>getPercentSize(value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
                                 </td>
                             </tr>
@@ -2369,9 +2712,38 @@
                                 <td class="col-md-4">
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>value</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -2381,12 +2753,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="getTileComponentFromHTMLElement"></a>
-                                    <b><span class="modifier">Public</span> getTileComponentFromHTMLElement</b>
+                                    <span class="name"><b><span class="modifier">Public</span> getTileComponentFromHTMLElement</b><a href="#getTileComponentFromHTMLElement"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>getTileComponentFromHTMLElement(element: HTMLElement)</code>
                                 </td>
                             </tr>
@@ -2402,9 +2774,38 @@
                                 <td class="col-md-4">
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>element</td>
+                                                              <td>
+                                                                      <code>HTMLElement</code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="../classes/DejaTile.html" target="_self" >DejaTile</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -2414,12 +2815,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="getTileElementFromHTMLElement"></a>
-                                    <b><span class="modifier">Public</span> getTileElementFromHTMLElement</b>
+                                    <span class="name"><b><span class="modifier">Public</span> getTileElementFromHTMLElement</b><a href="#getTileElementFromHTMLElement"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>getTileElementFromHTMLElement(element: HTMLElement)</code>
                                 </td>
                             </tr>
@@ -2435,9 +2836,38 @@
                                 <td class="col-md-4">
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>element</td>
+                                                              <td>
+                                                                      <code>HTMLElement</code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -2447,12 +2877,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="HitTest"></a>
-                                    <b><span class="modifier">Public</span> HitTest</b>
+                                    <span class="name"><b><span class="modifier">Public</span> HitTest</b><a href="#HitTest"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>HitTest(pixelBounds: <a href="../classes/Rect.html">Rect</a>)</code>
                                 </td>
                             </tr>
@@ -2468,9 +2898,38 @@
                                 <td class="col-md-4">
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>pixelBounds</td>
+                                                              <td>
+                                                                      <code><a href="../classes/Rect.html" target="_self" >Rect</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -2480,12 +2939,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="moveTile"></a>
-                                    <b><span class="modifier">Public</span> moveTile</b>
+                                    <span class="name"><b><span class="modifier">Public</span> moveTile</b><a href="#moveTile"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>moveTile(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, bounds: <a href="../classes/Rect.html">Rect</a>)</code>
                                 </td>
                             </tr>
@@ -2501,9 +2960,47 @@
                                 <td class="col-md-4">
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>id</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>bounds</td>
+                                                              <td>
+                                                                      <code><a href="../classes/Rect.html" target="_self" >Rect</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -2513,12 +3010,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="ngOnDestroy"></a>
-                                    <b><span class="modifier">Public</span> ngOnDestroy</b>
+                                    <span class="name"><b><span class="modifier">Public</span> ngOnDestroy</b><a href="#ngOnDestroy"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>ngOnDestroy()</code>
                                 </td>
                             </tr>
@@ -2546,12 +3043,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="paste"></a>
-                                    <b><span class="modifier">Public</span> paste</b>
+                                    <span class="name"><b><span class="modifier">Public</span> paste</b><a href="#paste"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>paste()</code>
                                 </td>
                             </tr>
@@ -2579,12 +3076,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="removeTiles"></a>
-                                    <b><span class="modifier">Public</span> removeTiles</b>
+                                    <span class="name"><b><span class="modifier">Public</span> removeTiles</b><a href="#removeTiles"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>removeTiles(tileIdsToRemove: string[])</code>
                                 </td>
                             </tr>
@@ -2600,9 +3097,38 @@
                                 <td class="col-md-4">
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>tileIdsToRemove</td>
+                                                              <td>
+                                                                      <code>string[]</code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -2612,13 +3138,13 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="startDrag"></a>
-                                    <b><span class="modifier">Public</span> startDrag</b>
+                                    <span class="name"><b><span class="modifier">Public</span> startDrag</b><a href="#startDrag"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>startDrag(tiles: [], pageX: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, pageY: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>startDrag(tiles: <a href="../classes/DejaTile.html">DejaTile[]</a>, pageX: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, pageY: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
                                 </td>
                             </tr>
             
@@ -2633,9 +3159,56 @@
                                 <td class="col-md-4">
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>tiles</td>
+                                                              <td>
+                                                                      <code><a href="../classes/DejaTile.html" target="_self" >DejaTile[]</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>pageX</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>pageY</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -2652,12 +3225,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="container"></a>
-                                    <b><span class="modifier">Public</span> container</b>
+                                    <span class="name"><b><span class="modifier">Public</span> container</b><a href="#container"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>container:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>container:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2675,12 +3248,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="contentAdding"></a>
-                                    <b><span class="modifier">Public</span> contentAdding</b>
+                                    <span class="name"><b><span class="modifier">Public</span> contentAdding</b><a href="#contentAdding"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>contentAdding:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>contentAdding:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2698,12 +3271,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="contentRemoving"></a>
-                                    <b><span class="modifier">Public</span> contentRemoving</b>
+                                    <span class="name"><b><span class="modifier">Public</span> contentRemoving</b><a href="#contentRemoving"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>contentRemoving:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>contentRemoving:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2721,12 +3294,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="deleteTiles$"></a>
-                                    <b><span class="modifier">Public</span> deleteTiles$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> deleteTiles$</b><a href="#deleteTiles$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>deleteTiles$:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>deleteTiles$:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2744,12 +3317,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="designMode"></a>
-                                    <b><span class="modifier">Public</span> designMode</b>
+                                    <span class="name"><b><span class="modifier">Public</span> designMode</b><a href="#designMode"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>designMode:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>designMode:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2772,12 +3345,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="dragDropInfos$"></a>
-                                    <b><span class="modifier">Public</span> dragDropInfos$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> dragDropInfos$</b><a href="#dragDropInfos$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>dragDropInfos$:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>dragDropInfos$:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2795,12 +3368,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="dragging$"></a>
-                                    <b><span class="modifier">Public</span> dragging$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> dragging$</b><a href="#dragging$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>dragging$:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>dragging$:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2818,12 +3391,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="dragleave$"></a>
-                                    <b><span class="modifier">Public</span> dragleave$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> dragleave$</b><a href="#dragleave$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>dragleave$:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>dragleave$:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2841,12 +3414,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="dragover$"></a>
-                                    <b><span class="modifier">Public</span> dragover$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> dragover$</b><a href="#dragover$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>dragover$:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>dragover$:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2864,12 +3437,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="dragSelection$"></a>
-                                    <b><span class="modifier">Public</span> dragSelection$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> dragSelection$</b><a href="#dragSelection$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>dragSelection$:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>dragSelection$:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2887,12 +3460,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="ensureBounds$"></a>
-                                    <b><span class="modifier">Public</span> ensureBounds$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> ensureBounds$</b><a href="#ensureBounds$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>ensureBounds$:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>ensureBounds$:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2910,12 +3483,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="ensureVisible$"></a>
-                                    <b><span class="modifier">Public</span> ensureVisible$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> ensureVisible$</b><a href="#ensureVisible$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>ensureVisible$:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>ensureVisible$:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2933,12 +3506,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="layoutChanged"></a>
-                                    <b><span class="modifier">Public</span> layoutChanged</b>
+                                    <span class="name"><b><span class="modifier">Public</span> layoutChanged</b><a href="#layoutChanged"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>layoutChanged:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>layoutChanged:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2956,12 +3529,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="maxWidth"></a>
-                                    <b><span class="modifier">Protected</span> maxWidth</b>
+                                    <span class="name"><b><span class="modifier">Protected</span> maxWidth</b><a href="#maxWidth"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-circle"></span><code>maxWidth:     <code></code>
+                                    <span class="modifier-icon fa fa-lock"></span><code>maxWidth:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -2984,12 +3557,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="maxWidthUnit"></a>
-                                    <b><span class="modifier">Protected</span> maxWidthUnit</b>
+                                    <span class="name"><b><span class="modifier">Protected</span> maxWidthUnit</b><a href="#maxWidthUnit"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-circle"></span><code>maxWidthUnit:     <code></code>
+                                    <span class="modifier-icon fa fa-lock"></span><code>maxWidthUnit:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -3012,12 +3585,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="modelChanged"></a>
-                                    <b><span class="modifier">Public</span> modelChanged</b>
+                                    <span class="name"><b><span class="modifier">Public</span> modelChanged</b><a href="#modelChanged"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>modelChanged:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>modelChanged:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -3035,12 +3608,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="refreshTiles$"></a>
-                                    <b><span class="modifier">Public</span> refreshTiles$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> refreshTiles$</b><a href="#refreshTiles$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>refreshTiles$:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>refreshTiles$:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -3058,12 +3631,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="selectionChanged"></a>
-                                    <b><span class="modifier">Public</span> selectionChanged</b>
+                                    <span class="name"><b><span class="modifier">Public</span> selectionChanged</b><a href="#selectionChanged"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>selectionChanged:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>selectionChanged:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -3081,12 +3654,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="selectionRect$"></a>
-                                    <b><span class="modifier">Public</span> selectionRect$</b>
+                                    <span class="name"><b><span class="modifier">Public</span> selectionRect$</b><a href="#selectionRect$"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>selectionRect$:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>selectionRect$:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -3104,12 +3677,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="tileMaxHeight"></a>
-                                    <b><span class="modifier">Protected</span> tileMaxHeight</b>
+                                    <span class="name"><b><span class="modifier">Protected</span> tileMaxHeight</b><a href="#tileMaxHeight"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-circle"></span><code>tileMaxHeight:     <code></code>
+                                    <span class="modifier-icon fa fa-lock"></span><code>tileMaxHeight:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -3132,12 +3705,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="tileMaxHeightUnit"></a>
-                                    <b><span class="modifier">Protected</span> tileMaxHeightUnit</b>
+                                    <span class="name"><b><span class="modifier">Protected</span> tileMaxHeightUnit</b><a href="#tileMaxHeightUnit"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-circle"></span><code>tileMaxHeightUnit:     <code></code>
+                                    <span class="modifier-icon fa fa-lock"></span><code>tileMaxHeightUnit:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -3160,12 +3733,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="tileMaxWidth"></a>
-                                    <b><span class="modifier">Protected</span> tileMaxWidth</b>
+                                    <span class="name"><b><span class="modifier">Protected</span> tileMaxWidth</b><a href="#tileMaxWidth"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-circle"></span><code>tileMaxWidth:     <code></code>
+                                    <span class="modifier-icon fa fa-lock"></span><code>tileMaxWidth:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -3188,12 +3761,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="tileMaxWidthUnit"></a>
-                                    <b><span class="modifier">Protected</span> tileMaxWidthUnit</b>
+                                    <span class="name"><b><span class="modifier">Protected</span> tileMaxWidthUnit</b><a href="#tileMaxWidthUnit"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-circle"></span><code>tileMaxWidthUnit:     <code></code>
+                                    <span class="modifier-icon fa fa-lock"></span><code>tileMaxWidthUnit:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -3216,12 +3789,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="tileMinHeight"></a>
-                                    <b><span class="modifier">Protected</span> tileMinHeight</b>
+                                    <span class="name"><b><span class="modifier">Protected</span> tileMinHeight</b><a href="#tileMinHeight"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-circle"></span><code>tileMinHeight:     <code></code>
+                                    <span class="modifier-icon fa fa-lock"></span><code>tileMinHeight:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -3244,12 +3817,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="tileMinHeightUnit"></a>
-                                    <b><span class="modifier">Protected</span> tileMinHeightUnit</b>
+                                    <span class="name"><b><span class="modifier">Protected</span> tileMinHeightUnit</b><a href="#tileMinHeightUnit"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-circle"></span><code>tileMinHeightUnit:     <code></code>
+                                    <span class="modifier-icon fa fa-lock"></span><code>tileMinHeightUnit:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -3272,12 +3845,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="tileMinWidth"></a>
-                                    <b><span class="modifier">Protected</span> tileMinWidth</b>
+                                    <span class="name"><b><span class="modifier">Protected</span> tileMinWidth</b><a href="#tileMinWidth"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-circle"></span><code>tileMinWidth:     <code></code>
+                                    <span class="modifier-icon fa fa-lock"></span><code>tileMinWidth:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -3300,12 +3873,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="tileMinWidthUnit"></a>
-                                    <b><span class="modifier">Protected</span> tileMinWidthUnit</b>
+                                    <span class="name"><b><span class="modifier">Protected</span> tileMinWidthUnit</b><a href="#tileMinWidthUnit"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-circle"></span><code>tileMinWidthUnit:     <code></code>
+                                    <span class="modifier-icon fa fa-lock"></span><code>tileMinWidthUnit:     <code></code>
             </code>
                                 </td>
                             </tr>
@@ -3328,12 +3901,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="tiles"></a>
-                                    <b><span class="modifier">Public</span> tiles</b>
+                                    <span class="name"><b><span class="modifier">Public</span> tiles</b><a href="#tiles"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>tiles:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>tiles:     <code></code>
             </code>
                                 </td>
                             </tr>

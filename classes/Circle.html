@@ -177,6 +177,9 @@
                                     <a href="../modules/DejaSidenavModule.html" >DejaSidenavModule</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../modules/DejaSlimScrollModule.html" >DejaSlimScrollModule</a>
+                                </li>
+                                <li class="link">
                                     <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
                                 </li>
                                 <li class="link">
@@ -395,6 +398,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../directives/DejaSidenavMenuSeparatorDirective.html" >DejaSidenavMenuSeparatorDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaSlimScrollDirective.html" >DejaSlimScrollDirective</a>
                                 </li>
                                 <li class="link">
                                     <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
@@ -765,6 +771,9 @@
                                 <li class="link">
                                     <a href="../interfaces/Point.html" >Point</a>
                                 </li>
+                                <li class="link">
+                                    <a href="../interfaces/SlimScrollOptions.html" >SlimScrollOptions</a>
+                                </li>
                         </ul>
                     </li>
             
@@ -989,6 +998,9 @@
                                            <a href="../modules/DejaSidenavModule.html" >DejaSidenavModule</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../modules/DejaSlimScrollModule.html" >DejaSlimScrollModule</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
                                        </li>
                                        <li class="link">
@@ -1207,6 +1219,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../directives/DejaSidenavMenuSeparatorDirective.html" >DejaSidenavMenuSeparatorDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaSlimScrollDirective.html" >DejaSlimScrollDirective</a>
                                        </li>
                                        <li class="link">
                                            <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
@@ -1577,6 +1592,9 @@
                                        <li class="link">
                                            <a href="../interfaces/Point.html" >Point</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="../interfaces/SlimScrollOptions.html" >SlimScrollOptions</a>
+                                       </li>
                                </ul>
                            </li>
                    
@@ -1751,6 +1769,39 @@
                                 <td class="col-md-4">
                                         <div class="io-description"><p>Create e new circle instance from the center position and the radius </p>
             </div>
+                                        <div>
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>center</td>
+                                                              <td>
+                                                                        <code><a href="../classes/Position.html" target="_self" >Position</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>radius</td>
+                                                              <td>
+                                                                        <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -1767,12 +1818,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="clone"></a>
-                                    <b><span class="modifier">Public</span> clone</b>
+                                    <span class="name"><b><span class="modifier">Public</span> clone</b><a href="#clone"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>clone()</code>
                                 </td>
                             </tr>
@@ -1802,12 +1853,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="contains"></a>
-                                    <b><span class="modifier">Public</span> contains</b>
+                                    <span class="name"><b><span class="modifier">Public</span> contains</b><a href="#contains"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>contains(circle: <a href="../classes/Circle.html">Circle</a>)</code>
                                 </td>
                             </tr>
@@ -1825,9 +1876,38 @@
             </div>
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>circle</td>
+                                                              <td>
+                                                                      <code><a href="../classes/Circle.html" target="_self" >Circle</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -1837,12 +1917,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="containsPoint"></a>
-                                    <b><span class="modifier">Public</span> containsPoint</b>
+                                    <span class="name"><b><span class="modifier">Public</span> containsPoint</b><a href="#containsPoint"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>containsPoint(point: <a href="../classes/Position.html">Position</a>)</code>
                                 </td>
                             </tr>
@@ -1860,9 +1940,38 @@
             </div>
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>point</td>
+                                                              <td>
+                                                                      <code><a href="../classes/Position.html" target="_self" >Position</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -1872,13 +1981,13 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="fromOuterRect"></a>
-                                    <b><span class="modifier">Public</span> fromOuterRect</b>
+                                    <span class="name"><b><span class="modifier">Public</span> fromOuterRect</b><a href="#fromOuterRect"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
-                                    <code>fromOuterRect(left: number|, top: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, width: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, height: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>fromOuterRect(left?: number | Object, top?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, width?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, height?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
                                 </td>
                             </tr>
             
@@ -1901,6 +2010,7 @@
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -1908,6 +2018,10 @@
                                                             <tr>
                                                               <td>left</td>
                                                               <td>
+                                                                      <code>number | Object</code>
+                                                              </td>
+                                                              <td>
+                                                                  true
                                                               </td>
                                                               <td><p>The left position of the circle center or a rectangle object.</p>
             </td>
@@ -1915,6 +2029,10 @@
                                                             <tr>
                                                               <td>top</td>
                                                               <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                              </td>
+                                                              <td>
+                                                                  true
                                                               </td>
                                                               <td><p>The top position of the circle center</p>
             </td>
@@ -1922,6 +2040,10 @@
                                                             <tr>
                                                               <td>width</td>
                                                               <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                              </td>
+                                                              <td>
+                                                                  true
                                                               </td>
                                                               <td><p>The width of the outer rectangle</p>
             </td>
@@ -1929,6 +2051,10 @@
                                                             <tr>
                                                               <td>height</td>
                                                               <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                              </td>
+                                                              <td>
+                                                                  true
                                                               </td>
                                                               <td><p>The height of the outer rectangle</p>
             </td>
@@ -1954,12 +2080,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="inflate"></a>
-                                    <b><span class="modifier">Public</span> inflate</b>
+                                    <span class="name"><b><span class="modifier">Public</span> inflate</b><a href="#inflate"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>inflate(radius: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
                                 </td>
                             </tr>
@@ -1977,9 +2103,38 @@
             </div>
             
                                         <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>radius</td>
+                                                              <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
                                             <b>Returns : </b>    <code><a href="../classes/Circle.html" target="_self" >Circle</a></code>
             
                                         </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -1997,12 +2152,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="center"></a>
-                                    <b><span class="modifier">Public</span> center</b>
+                                    <span class="name"><b><span class="modifier">Public</span> center</b><a href="#center"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>center:     <code><a href="../classes/Position.html" target="_self" >Position</a></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>center:     <code><a href="../classes/Position.html" target="_self" >Position</a></code>
             </code>
                                 </td>
                             </tr>
@@ -2026,12 +2181,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="outerRect"></a>
-                                    <b><span class="modifier">Public</span> outerRect</b>
+                                    <span class="name"><b><span class="modifier">Public</span> outerRect</b><a href="#outerRect"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>outerRect:     <code><a href="../classes/Rect.html" target="_self" >Rect</a></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>outerRect:     <code><a href="../classes/Rect.html" target="_self" >Rect</a></code>
             </code>
                                 </td>
                             </tr>
@@ -2061,12 +2216,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="radius"></a>
-                                    <b><span class="modifier">Public</span> radius</b>
+                                    <span class="name"><b><span class="modifier">Public</span> radius</b><a href="#radius"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-"></span><code>radius:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>radius:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
             </code>
                                 </td>
                             </tr>

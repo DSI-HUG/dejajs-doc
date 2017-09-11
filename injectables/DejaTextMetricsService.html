@@ -177,6 +177,9 @@
                                     <a href="../modules/DejaSidenavModule.html" >DejaSidenavModule</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../modules/DejaSlimScrollModule.html" >DejaSlimScrollModule</a>
+                                </li>
+                                <li class="link">
                                     <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
                                 </li>
                                 <li class="link">
@@ -395,6 +398,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../directives/DejaSidenavMenuSeparatorDirective.html" >DejaSidenavMenuSeparatorDirective</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../directives/DejaSlimScrollDirective.html" >DejaSlimScrollDirective</a>
                                 </li>
                                 <li class="link">
                                     <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
@@ -765,6 +771,9 @@
                                 <li class="link">
                                     <a href="../interfaces/Point.html" >Point</a>
                                 </li>
+                                <li class="link">
+                                    <a href="../interfaces/SlimScrollOptions.html" >SlimScrollOptions</a>
+                                </li>
                         </ul>
                     </li>
             
@@ -989,6 +998,9 @@
                                            <a href="../modules/DejaSidenavModule.html" >DejaSidenavModule</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../modules/DejaSlimScrollModule.html" >DejaSlimScrollModule</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../modules/DejaSnackbarModule.html" >DejaSnackbarModule</a>
                                        </li>
                                        <li class="link">
@@ -1207,6 +1219,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../directives/DejaSidenavMenuSeparatorDirective.html" >DejaSidenavMenuSeparatorDirective</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../directives/DejaSlimScrollDirective.html" >DejaSlimScrollDirective</a>
                                        </li>
                                        <li class="link">
                                            <a href="../directives/DejaTilePositionDirective.html" >DejaTilePositionDirective</a>
@@ -1577,6 +1592,9 @@
                                        <li class="link">
                                            <a href="../interfaces/Point.html" >Point</a>
                                        </li>
+                                       <li class="link">
+                                           <a href="../interfaces/SlimScrollOptions.html" >SlimScrollOptions</a>
+                                       </li>
                                </ul>
                            </li>
                    
@@ -1724,13 +1742,6 @@
                                         </td>
                                     </tr>
             
-                            <tr>
-                                <td class="col-md-4">
-                                        <div class="io-description"><p>Constructor
-            Add observable to wait for element to be set. And then take its properties to measure all ASCII char size.</p>
-            </div>
-                                </td>
-                            </tr>
                         </tbody>
                     </table>
             </section>
@@ -1745,12 +1756,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="getTextHeight"></a>
-                                    <b><span class="modifier">Public</span> getTextHeight</b>
+                                    <span class="name"><b><span class="modifier">Public</span> getTextHeight</b><a href="#getTextHeight"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>getTextHeight(maxWidth: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, text: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                                 </td>
                             </tr>
@@ -1774,6 +1785,7 @@
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -1783,6 +1795,8 @@
                                                               <td>
                                                                       <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
                                                               </td>
+                                                              <td>
+                                                              </td>
                                                               <td><p>taille du conteneur</p>
             </td>
                                                             </tr>
@@ -1790,6 +1804,8 @@
                                                               <td>text</td>
                                                               <td>
                                                                       <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                              </td>
+                                                              <td>
                                                               </td>
                                                               <td><p>texte à mesurer</p>
             </td>
@@ -1815,12 +1831,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="getTextMaxWidth"></a>
-                                    <b><span class="modifier">Public</span> getTextMaxWidth</b>
+                                    <span class="name"><b><span class="modifier">Public</span> getTextMaxWidth</b><a href="#getTextMaxWidth"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>getTextMaxWidth(texts: string[], elem: HTMLElement)</code>
                                 </td>
                             </tr>
@@ -1844,12 +1860,16 @@
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
                                                     <tbody>
                                                             <tr>
                                                               <td>texts</td>
+                                                              <td>
+                                                                      <code>string[]</code>
+                                                              </td>
                                                               <td>
                                                               </td>
                                                               <td><p>les textes à comparer.</p>
@@ -1859,6 +1879,8 @@
                                                               <td>elem</td>
                                                               <td>
                                                                       <code>HTMLElement</code>
+                                                              </td>
+                                                              <td>
                                                               </td>
                                                               <td><p>Le conteneur du texte</p>
             </td>
@@ -1884,12 +1906,12 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="getTextWidth"></a>
-                                    <b><span class="modifier">Public</span> getTextWidth</b>
+                                    <span class="name"><b><span class="modifier">Public</span> getTextWidth</b><a href="#getTextWidth"><span class="fa fa-link"></span></a></span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                        <span class="modifier-icon method fa fa-play "></span>
+                                        <span class="modifier-icon fa fa-reset"></span>
                                     <code>getTextWidth(text: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, elem: HTMLElement)</code>
                                 </td>
                             </tr>
@@ -1913,6 +1935,7 @@
                                                         <tr>
                                                             <td>Name</td>
                                                             <td>Type</td>
+                                                            <td>Optional</td>
                                                             <td>Description</td>
                                                         </tr>
                                                     </thead>
@@ -1922,6 +1945,8 @@
                                                               <td>
                                                                       <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
                                                               </td>
+                                                              <td>
+                                                              </td>
                                                               <td><p>Le texte à mesurer</p>
             </td>
                                                             </tr>
@@ -1929,6 +1954,8 @@
                                                               <td>elem</td>
                                                               <td>
                                                                       <code>HTMLElement</code>
+                                                              </td>
+                                                              <td>
                                                               </td>
                                                               <td><p>Le conteneur du texte</p>
             </td>
