@@ -1630,6 +1630,105 @@
                <div class="content getting-started">
                    <div class="content-data">
 
+<h4 id="2-12-1-2017-09-14-">2.12.1 (2017-09-14)</h4>
+<h5 id="breaking-changes">BREAKING CHANGES</h5>
+<ul>
+<li><strong>DejaSelect:</strong><ul>
+<li>Removed useless dropdownContainerId input. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/f027f51c94f52eb4c7fc8e3b6746cebe410da927">f027f51c</a>)</li>
+<li>Using angular/cdk/overlay to open the dropdown in the body (<a href="https://github.com/DSI-HUG/dejajs-components/commit/009723d45a152c40d592c694f12b32bd881595e7">009723d4</a>)</li>
+</ul>
+</li>
+<li><strong>DejaDatePicker:</strong> Using angular/cdk/overlay to open the dropdown in the body refactor(DejaDropDown): Removed. Replaced by the angular/cdk/overlay refactor(DejaBackDrop): Removed. Replaced by the angular/cdk/overlay (<a href="https://github.com/DSI-HUG/dejajs-components/commit/e9fd7f7217c08dc322f4e2f8a2a362c9cfb12e87">e9fd7f72</a>)</li>
+<li><strong>DejaColorPicker:</strong> Using angular/cdk/overlay to open the dropdown in the body (<a href="https://github.com/DSI-HUG/dejajs-components/commit/0ee8b8a391d11be5b6188d1bafc289224a43f601">0ee8b8a3</a>)</li>
+<li><strong>DejaTooltip:</strong> Using angular/cdk/overlay to open the dropdown in the body (<a href="https://github.com/DSI-HUG/dejajs-components/commit/13c897d82c6b55fdf9eaa232fb73aa2b232e3b05">13c897d8</a>)</li>
+<li><strong>DejaMenu:</strong> Using angular/cdk/overlay to open the dropdown in the body (<a href="https://github.com/DSI-HUG/dejajs-components/commit/9298fb688709fc656b230fb796808da0f28c879a">9298fb68</a>)</li>
+</ul>
+<h5 id="new-features">New Features</h5>
+<ul>
+<li><strong>DejaToolTip:</strong> Accept also ng-content feat(backdrop): backdrop css to create a backdrop with a simple div with a class name deja-backdrop (<a href="https://github.com/DSI-HUG/dejajs-components/commit/acd4ee30018d2a8d20aad06fa4ca20e149456ad4">acd4ee30</a>)</li>
+<li><strong>DropDownContainerService:</strong> Added DropDownContainerService (<a href="https://github.com/DSI-HUG/dejajs-components/commit/f016e55c2a9180e889ccb36d68b0485518db5981">f016e55c</a>)</li>
+</ul>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>DejaToolTip:</strong> Hide timer on leave from 20ms to 100ms (<a href="https://github.com/DSI-HUG/dejajs-components/commit/5025e585f55836eb2d99834ca54cbd2080b06c6d">5025e585</a>)</li>
+<li><strong>Global:</strong> Member access mandatory feat(Global): Usage of angular/cdk/coercion (<a href="https://github.com/DSI-HUG/dejajs-components/commit/bded9b4597afd6877d0aa47f45de7234374861ee">bded9b45</a>)</li>
+</ul>
+<h3 id="2-12-0-2017-09-13-">2.12.0 (2017-09-13)</h3>
+<h5 id="breaking-changes">BREAKING CHANGES</h5>
+<ul>
+<li><strong>DejaDatePicker:</strong> Using angular/cdk/overlay to open the dropdown in the body refactor(DejaDropDown): Removed. Replaced by the angular/cdk/overlay refactor(DejaBackDrop): Removed. Replaced by the angular/cdk/overlay (<a href="https://github.com/DSI-HUG/dejajs-components/commit/e9fd7f7217c08dc322f4e2f8a2a362c9cfb12e87">e9fd7f72</a>)</li>
+<li><strong>DejaSelect:</strong> Using angular/cdk/overlay to open the dropdown in the body (<a href="https://github.com/DSI-HUG/dejajs-components/commit/009723d45a152c40d592c694f12b32bd881595e7">009723d4</a>)</li>
+<li><strong>DejaColorPicker:</strong> Using angular/cdk/overlay to open the dropdown in the body (<a href="https://github.com/DSI-HUG/dejajs-components/commit/0ee8b8a391d11be5b6188d1bafc289224a43f601">0ee8b8a3</a>)</li>
+<li><strong>DejaTooltip:</strong> Using angular/cdk/overlay to open the dropdown in the body (<a href="https://github.com/DSI-HUG/dejajs-components/commit/13c897d82c6b55fdf9eaa232fb73aa2b232e3b05">13c897d8</a>)</li>
+<li><strong>DejaMenu:</strong> Using angular/cdk/overlay to open the dropdown in the body (<a href="https://github.com/DSI-HUG/dejajs-components/commit/9298fb688709fc656b230fb796808da0f28c879a">9298fb68</a>)</li>
+<li><strong>Dependencies:</strong><ul>
+<li>Upgrade dependencies (<a href="https://github.com/DSI-HUG/dejajs-components/commit/8608d42af221d5dc66e40e6aa91f51e2d32b97da">8608d42a</a>)</li>
+<li>Change dependencies to PeerDependencies (<a href="https://github.com/DSI-HUG/dejajs-components/commit/76e7ee85268e8e4827adc8656d045c908b1b87b0">76e7ee85</a>)</li>
+</ul>
+</li>
+</ul>
+<h5 id="continuous-integration">Continuous Integration</h5>
+<ul>
+<li><strong>Build:</strong><ul>
+<li>Fix rollup build (<a href="https://github.com/DSI-HUG/dejajs-components/commit/2a6837258e586846dab39ef3ac1c1f2d511d4352">2a683725</a>)</li>
+<li>Remove rollup warning (<a href="https://github.com/DSI-HUG/dejajs-components/commit/63abfa68dc03deaedf29b67c54bebca592e97c8b">63abfa68</a>)</li>
+</ul>
+</li>
+</ul>
+<h5 id="new-features">New Features</h5>
+<ul>
+<li><strong>DejaToolTip:</strong> Accept also ng-content feat(backdrop): backdrop css to create a backdrop with a simple div with a class name deja-backdrop (<a href="https://github.com/DSI-HUG/dejajs-components/commit/acd4ee30018d2a8d20aad06fa4ca20e149456ad4">acd4ee30</a>)</li>
+<li><strong>DropDownContainerService:</strong> Added DropDownContainerService (<a href="https://github.com/DSI-HUG/dejajs-components/commit/f016e55c2a9180e889ccb36d68b0485518db5981">f016e55c</a>)</li>
+<li><strong>SlimScroll:</strong><ul>
+<li>Add slimScroll (<a href="https://github.com/DSI-HUG/dejajs-components/commit/17ab898d668935c44559531937bdfc5b0c3d3685">17ab898d</a>)</li>
+<li>Add slimScroll (<a href="https://github.com/DSI-HUG/dejajs-components/commit/928789447826610e75d0a6e28a7e8d36faaceb9d">92878944</a>)</li>
+</ul>
+</li>
+<li><strong>Sidenav:</strong> Add sidenav component (<a href="https://github.com/DSI-HUG/dejajs-components/commit/424c64e8a410d86f554d920ecf919dbb38052a5f">424c64e8</a>)</li>
+</ul>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>DejaToolTip:</strong> Hide timer on leave from 20ms to 100ms (<a href="https://github.com/DSI-HUG/dejajs-components/commit/5025e585f55836eb2d99834ca54cbd2080b06c6d">5025e585</a>)</li>
+<li><strong>Sidenav:</strong><ul>
+<li>Mobile compliance (<a href="https://github.com/DSI-HUG/dejajs-components/commit/356490a9aa3cba9e8ad6ec10a2eb710ed0b99753">356490a9</a>)</li>
+<li>unused variable (<a href="https://github.com/DSI-HUG/dejajs-components/commit/a96fdf993f9080841154991fc0e912123cd99124">a96fdf99</a>)</li>
+</ul>
+</li>
+<li><strong>Global:</strong><ul>
+<li>Member access mandatory feat(Global): Usage of angular/cdk/coercion (<a href="https://github.com/DSI-HUG/dejajs-components/commit/bded9b4597afd6877d0aa47f45de7234374861ee">bded9b45</a>)</li>
+<li>Update theme selector (<a href="https://github.com/DSI-HUG/dejajs-components/commit/2c4a52a6ee711d65a476ebb503729d50a296616d">2c4a52a6</a>)</li>
+<li>Build AOT part 1 (<a href="https://github.com/DSI-HUG/dejajs-components/commit/73cfbe2b19a1b59f4170fb4bd66255e211d7a1da">73cfbe2b</a>)</li>
+</ul>
+</li>
+<li><strong>Select:</strong> Material style (<a href="https://github.com/DSI-HUG/dejajs-components/commit/b30ada7353f75d95609bb0975c94a90d137c1f7a">b30ada73</a>)</li>
+<li><strong>DemoApp:</strong> Demo style (<a href="https://github.com/DSI-HUG/dejajs-components/commit/5f1cc9d8d5ecd70965d2fdc9e74b30eadf877d15">5f1cc9d8</a>)</li>
+<li><strong>DejaGrid:</strong> Wrong binding on function (<a href="https://github.com/DSI-HUG/dejajs-components/commit/dbffc967a14dc4e9200dca447de76304bd3dc73e">dbffc967</a>)</li>
+<li><strong>Tiles:</strong> AOT Compilation (<a href="https://github.com/DSI-HUG/dejajs-components/commit/4adecd9bcb411abd02af5e4f844184e40321b907">4adecd9b</a>)</li>
+<li><strong>Dependencies:</strong> CDK Build error version (<a href="https://github.com/DSI-HUG/dejajs-components/commit/21436239a4686c298b4a8060a389a36592c5a0ac">21436239</a>)</li>
+</ul>
+<h5 id="other-changes">Other Changes</h5>
+<ul>
+<li><strong>License:</strong> Fix (<a href="https://github.com/DSI-HUG/dejajs-components/commit/526175360b206c435c59f1bc791b5d81f8751c61">52617536</a>)</li>
+<li><strong>Dependencies:</strong> upgrade dependencies (<a href="https://github.com/DSI-HUG/dejajs-components/commit/fd6aff26e25ef75a0a3b266c99ca4f3bac68bb50">fd6aff26</a>)</li>
+<li><strong>Sidenav:</strong> Fix license (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1bc6f0f42720f66f3d48f3bf3a01cd667eb91ce7">1bc6f0f4</a>)</li>
+</ul>
+<h5 id="refactors">Refactors</h5>
+<ul>
+<li><strong>Demo:</strong> Add new sidebar in demo app and css refactor (<a href="https://github.com/DSI-HUG/dejajs-components/commit/a2cae2e4c824832e08fe6f6e3b80b18a7a85e89d">a2cae2e4</a>)</li>
+</ul>
+<h5 id="tests">Tests</h5>
+<ul>
+<li><strong>Global:</strong><ul>
+<li>Remove temporary E2E (<a href="https://github.com/DSI-HUG/dejajs-components/commit/dc4521f059d4cfddfdcd35645ab068d9875ed543">dc4521f0</a>)</li>
+<li>Remove temporary E2E (<a href="https://github.com/DSI-HUG/dejajs-components/commit/97b7d00414ad6e2e95f0e01a0085646d8d6d0ffc">97b7d004</a>)</li>
+</ul>
+</li>
+<li><strong>Accordion:</strong><ul>
+<li>Change route url (<a href="https://github.com/DSI-HUG/dejajs-components/commit/b96f9841cb34d7bf356279c26fbb9955172b0495">b96f9841</a>)</li>
+<li>Change route url (<a href="https://github.com/DSI-HUG/dejajs-components/commit/3d8ed034e9805cb05b50640854219f989f833bb5">3d8ed034</a>)</li>
+</ul>
+</li>
+</ul>
 <h3 id="2-11-0-2017-09-11-">2.11.0 (2017-09-11)</h3>
 <h5 id="breaking-changes">BREAKING CHANGES</h5>
 <ul>
