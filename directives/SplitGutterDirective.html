@@ -1726,7 +1726,7 @@
                             </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/component/splitter/split-gutter.directive.ts:56</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="62" class="link-to-prism">src/component/splitter/split-gutter.directive.ts:62</a></div>
                                         </td>
                                     </tr>
             
@@ -1810,7 +1810,7 @@ By default <code>false</code></p>
                             </tr>
                                     <tr>
                                         <td class="col-md-2" colspan="2">
-                                            <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/component/splitter/split-gutter.directive.ts:53</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/component/splitter/split-gutter.directive.ts:59</a></div>
                                         </td>
                                     </tr>
                         </tbody>
@@ -1899,7 +1899,13 @@ export class SplitGutterDirective {
      */
     @Input()
     public set size(v: number | string) {
-        this.setStyle(&#x27;flex-basis&#x27;, &#x60;${coerceNumberProperty(v)}px&#x60;);
+        if (!v) {
+            this.setStyle(&#x27;flex-basis&#x27;, &#x27;&#x27;);
+        } else if (typeof v &#x3D;&#x3D;&#x3D; &#x27;string&#x27;) {
+            this.setStyle(&#x27;flex-basis&#x27;, &#x60;${coerceNumberProperty(v)}px&#x60;);
+        } else {
+            this.setStyle(&#x27;flex-basis&#x27;, &#x60;${v}px&#x60;);
+        }
     }
 
     private _disabled &#x3D; false;
