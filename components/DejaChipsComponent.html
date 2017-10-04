@@ -1733,7 +1733,7 @@
                                 <span class="modifier">Public</span> <a href="#items">items</a>
                             </li>
                             <li>
-                                <span class="modifier">Protected</span> <a href="#itemTemplate">itemTemplate</a>
+                                <span class="modifier">Public</span> <a href="#itemTemplate">itemTemplate</a>
                             </li>
                             <li>
                                 <span class="modifier">Protected</span> <a href="#onChangeCallback">onChangeCallback</a>
@@ -1756,10 +1756,10 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
-                                <span class="modifier">Protected</span> <a href="#getTextValue">getTextValue</a>
+                                <span class="modifier">Public</span> <a href="#getTextValue">getTextValue</a>
                             </li>
                             <li>
-                                <span class="modifier">Protected</span> <a href="#onClose">onClose</a>
+                                <span class="modifier">Public</span> <a href="#onClose">onClose</a>
                             </li>
                             <li>
                                 <span class="modifier">Public</span> <a href="#registerOnChange">registerOnChange</a>
@@ -2068,12 +2068,12 @@
                     <tr>
                         <td class="col-md-4">
                             <a name="getTextValue"></a>
-                            <span class="name"><b><span class="modifier">Protected</span> getTextValue</b><a href="#getTextValue"><span class="fa fa-link"></span></a></span>
+                            <span class="name"><b><span class="modifier">Public</span> getTextValue</b><a href="#getTextValue"><span class="fa fa-link"></span></a></span>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                                <span class="modifier-icon fa fa-lock"></span>
+                                <span class="modifier-icon fa fa-reset"></span>
                             <code>getTextValue(value: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
                         </td>
                     </tr>
@@ -2130,12 +2130,12 @@
                     <tr>
                         <td class="col-md-4">
                             <a name="onClose"></a>
-                            <span class="name"><b><span class="modifier">Protected</span> onClose</b><a href="#onClose"><span class="fa fa-link"></span></a></span>
+                            <span class="name"><b><span class="modifier">Public</span> onClose</b><a href="#onClose"><span class="fa fa-link"></span></a></span>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                                <span class="modifier-icon fa fa-lock"></span>
+                                <span class="modifier-icon fa fa-reset"></span>
                             <code>onClose(item: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
                         </td>
                     </tr>
@@ -2486,12 +2486,12 @@
                     <tr>
                         <td class="col-md-4">
                             <a name="itemTemplate"></a>
-                            <span class="name"><b><span class="modifier">Protected</span> itemTemplate</b><a href="#itemTemplate"><span class="fa fa-link"></span></a></span>
+                            <span class="name"><b><span class="modifier">Public</span> itemTemplate</b><a href="#itemTemplate"><span class="fa fa-link"></span></a></span>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <span class="modifier-icon fa fa-lock"></span><code>itemTemplate:     <code></code>
+                            <span class="modifier-icon fa fa-reset"></span><code>itemTemplate:     <code></code>
     </code>
                         </td>
                     </tr>
@@ -2705,11 +2705,11 @@ export class DejaChipsComponent implements ControlValueAccessor {
     }
     // ************* End of ControlValueAccessor Implementation **************
 
-    protected get itemTemplate() {
+    public get itemTemplate() {
         return this.itemTemplateExternal || this.itemTemplateInternal;
     }
 
-    protected getTextValue(value: any) {
+    public getTextValue(value: any) {
         if (!value) {
             return &#x27;&#x27;;
         } else {
@@ -2725,7 +2725,7 @@ export class DejaChipsComponent implements ControlValueAccessor {
         }
     }
 
-    protected onClose(item: any, index: number) {
+    public onClose(item: any, index: number) {
         const event &#x3D; new DejaChipsCloseEvent(item, index);
         this.items.splice(index, 1);
         this.onChangeCallback(this.items);

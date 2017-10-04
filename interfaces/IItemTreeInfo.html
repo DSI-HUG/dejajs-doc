@@ -2286,7 +2286,7 @@ export abstract class ItemListBase implements OnDestroy {
         if (this._itemListService) {
             this._itemListService.hideSelected &#x3D; this._hideSelected;
             this._itemListService.childrenField &#x3D; this._childrenField;
-            this._itemListService.valueField &#x3D; this.getValueField();
+            this._itemListService.valueField &#x3D; this._valueField;
             this.waiter$sub &#x3D; Observable.from(this._itemListService.waiter$)
                 .takeWhile(() &#x3D;&gt; this._isAlive)
                 .subscribe((status: boolean) &#x3D;&gt; {

@@ -3171,27 +3171,27 @@ export class DejaTilesLayoutProvider implements OnDestroy {
     }
 
     private getTileMinPercentWidth(): number {
-        return this.getSizePercentLimit(&#x27;tileMinWidth&#x27;);
+        return Math.max(1, this.getSizePercentLimit(&#x27;tileMinWidth&#x27;));
     }
 
     private getTileMaxPercentWidth(): number {
-        return this.getSizePercentLimit(&#x27;tileMaxWidth&#x27;);
+        return Math.max(5, this.getSizePercentLimit(&#x27;tileMaxWidth&#x27;));
     }
 
     private getTileMinPercentHeight(): number {
-        return this.getSizePercentLimit(&#x27;tileMinHeight&#x27;);
+        return Math.max(1, this.getSizePercentLimit(&#x27;tileMinHeight&#x27;));
     }
 
     private getTileMaxPercentHeight(): number {
-        return this.getSizePercentLimit(&#x27;tileMaxHeight&#x27;);
+        return Math.max(5, this.getSizePercentLimit(&#x27;tileMaxHeight&#x27;));
     }
 
     private getMaxPercentWidth(): number {
-        return this.getSizePercentLimit(&#x27;maxWidth&#x27;);
+        return Math.max(5, this.getSizePercentLimit(&#x27;maxWidth&#x27;));
     }
 
     private getMaxPercentHeight(): number {
-        return this.getSizePercentLimit(&#x27;maxHeight&#x27;);
+        return Math.max(5, this.getSizePercentLimit(&#x27;maxHeight&#x27;));
     }
 
     private getCursorFromHTMLElement(x: number, y: number, element: HTMLElement) {

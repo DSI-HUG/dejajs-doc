@@ -1721,7 +1721,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="82" class="link-to-prism">src/component/data-grid/data-grid-parent-row/data-grid-parent-row.component.ts:82</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="87" class="link-to-prism">src/component/data-grid/data-grid-parent-row/data-grid-parent-row.component.ts:87</a></div>
                                         </td>
                                     </tr>
 
@@ -1754,7 +1754,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/component/data-grid/data-grid-parent-row/data-grid-parent-row.component.ts:83</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="88" class="link-to-prism">src/component/data-grid/data-grid-parent-row/data-grid-parent-row.component.ts:88</a></div>
                                         </td>
                                     </tr>
 
@@ -1766,6 +1766,7 @@
 
     <div class="tab-pane fade tab-source-code" id="source">
         <pre class="line-numbers"><code class="language-typescript">import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChild, Input } from &#x27;@angular/core&#x27;;
+import { ItemListService } from &#x27;../../../common/core/item-list/item-list.service&#x27;;
 import { IDejaGridColumn } from &#x27;../data-grid-column/data-grid-column&#x27;;
 import { IDejaGridParentRow } from &#x27;./data-grid-parent-row&#x27;;
 
@@ -1811,7 +1812,7 @@ export class DejaGridParentRowComponent {
         let left &#x3D; 0;
         this._columnLayout.columns &#x3D; [];
         columns.forEach((column) &#x3D;&gt; {
-            if (this.row[column.name]) {
+            if (this.getCellText(this.row, column.name)) {
                 if (this._columnLayout.column0 &#x3D;&#x3D;&#x3D; 0) {
                     this._columnLayout.column0 &#x3D; left;
                 }
@@ -1835,6 +1836,10 @@ export class DejaGridParentRowComponent {
     }
 
     constructor(private changeDetectorRef: ChangeDetectorRef) { }
+
+    public getCellText(row, textField) {
+        return ItemListService.getItemText(row, textField);
+    }
 }
 
 export interface IDejaGridParentRowColumnLayout {

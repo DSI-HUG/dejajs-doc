@@ -1775,7 +1775,7 @@
                                 <span class="modifier">Public</span> <a href="#close">close</a>
                             </li>
                             <li>
-                                <span class="modifier">Protected</span> <a href="#onColorChange">onColorChange</a>
+                                <span class="modifier">Public</span> <a href="#onColorChange">onColorChange</a>
                             </li>
                             <li>
                                 <span class="modifier">Public</span> <a href="#registerOnChange">registerOnChange</a>
@@ -2103,7 +2103,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="161" class="link-to-prism">src/component/color-picker/color-picker.component.ts:161</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="162" class="link-to-prism">src/component/color-picker/color-picker.component.ts:162</a></div>
                                 </td>
                             </tr>
     
@@ -2125,12 +2125,12 @@
                     <tr>
                         <td class="col-md-4">
                             <a name="onColorChange"></a>
-                            <span class="name"><b><span class="modifier">Protected</span> onColorChange</b><a href="#onColorChange"><span class="fa fa-link"></span></a></span>
+                            <span class="name"><b><span class="modifier">Public</span> onColorChange</b><a href="#onColorChange"><span class="fa fa-link"></span></a></span>
                         </td>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                                <span class="modifier-icon fa fa-lock"></span>
+                                <span class="modifier-icon fa fa-reset"></span>
                             <code>onColorChange(color: <a href="../classes/Color.html">Color</a>)</code>
                         </td>
                     </tr>
@@ -2138,7 +2138,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="165" class="link-to-prism">src/component/color-picker/color-picker.component.ts:165</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="166" class="link-to-prism">src/component/color-picker/color-picker.component.ts:166</a></div>
                                 </td>
                             </tr>
     
@@ -2200,7 +2200,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="135" class="link-to-prism">src/component/color-picker/color-picker.component.ts:135</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="136" class="link-to-prism">src/component/color-picker/color-picker.component.ts:136</a></div>
                                 </td>
                             </tr>
     
@@ -2262,7 +2262,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="140" class="link-to-prism">src/component/color-picker/color-picker.component.ts:140</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="141" class="link-to-prism">src/component/color-picker/color-picker.component.ts:141</a></div>
                                 </td>
                             </tr>
     
@@ -2324,7 +2324,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="146" class="link-to-prism">src/component/color-picker/color-picker.component.ts:146</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="147" class="link-to-prism">src/component/color-picker/color-picker.component.ts:147</a></div>
                                 </td>
                             </tr>
     
@@ -2837,6 +2837,7 @@ export class DejaColorPickerComponent implements ControlValueAccessor, OnInit, O
     // From ControlValueAccessor interface
     public writeValue(value: Color) {
         this._value &#x3D; value;
+        this.changeDetectorRef.markForCheck();
     }
 
     // From ControlValueAccessor interface
@@ -2870,7 +2871,7 @@ export class DejaColorPickerComponent implements ControlValueAccessor, OnInit, O
         this.isOpen &#x3D; false;
     }
 
-    protected onColorChange(color: Color) {
+    public onColorChange(color: Color) {
         this.isOpen &#x3D; false;
         this.value &#x3D; color;
     }

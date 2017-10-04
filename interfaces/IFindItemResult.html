@@ -1728,7 +1728,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="1308" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1308</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="1340" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1340</a></div>
                                         </td>
                                     </tr>
 
@@ -1767,7 +1767,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="1306" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1306</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="1338" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1338</a></div>
                                         </td>
                                     </tr>
 
@@ -1851,6 +1851,54 @@ export class ItemListService {
 
     // champs à utiliser comme valeur de comparaison
     private _valueField: string;
+
+    /** Evalue la valeur à comparer pour l&#x27;élément spécifié.
+     * @param {any} value  Model à évaluer.
+     * @param {string} valueField (optional) Champs à traiter comme valeur.
+     * @return {string} Valeur à comparer pour le modèle spécifié.
+     */
+    public static getItemValue(item: any, valueField?: string) {
+        if (valueField) {
+            const fields &#x3D; valueField.split(&#x27;.&#x27;);
+            let model &#x3D; item.model &amp;&amp; item.model[fields[0]] !&#x3D;&#x3D; undefined ? item.model : item;
+            fields.forEach((fieldName) &#x3D;&gt; {
+                model &#x3D; model &amp;&amp; model[fieldName];
+            });
+            if (model) {
+                return typeof model &#x3D;&#x3D;&#x3D; &#x27;function&#x27; ? model() : model;
+            }
+        }
+
+        return item.value || item.model || item;
+    }
+
+    /** Evalue le texte à afficher pour l&#x27;élément spécifié.
+     * @param {any} value  Model à évaluer.
+     * @param {string} textField (optional) Champs à traiter comme source du texte.
+     * @return {string} Texte à afficher pour le modèle spécifié.
+     */
+    public static getItemText(value: any, textField?: string) {
+        if (!value) {
+            return &#x27;&#x27;;
+        } else {
+            if (textField) {
+                const fields &#x3D; textField.split(&#x27;.&#x27;);
+                let model &#x3D; value.model &amp;&amp; value.model[fields[0]] !&#x3D;&#x3D; undefined ? value.model : value;
+                fields.forEach((fieldName) &#x3D;&gt; {
+                    model &#x3D; model &amp;&amp; model[fieldName];
+                });
+                if (model !&#x3D;&#x3D; undefined) {
+                    return typeof model &#x3D;&#x3D;&#x3D; &#x27;function&#x27; ? model() : model;
+                }
+            }
+
+            if (value.displayName) {
+                return typeof value.displayName &#x3D;&#x3D;&#x3D; &#x27;string&#x27; ? value.displayName : value.displayName();
+            } else if (typeof value.toString &#x3D;&#x3D;&#x3D; &#x27;function&#x27;) {
+                return value.toString();
+            }
+        }
+    }
 
     /**
      * Set a observable called before the list will be displayed
@@ -2054,21 +2102,16 @@ export class ItemListService {
      * @return {string} Texte à afficher pour le modèle spécifié.
      */
     public getTextValue(value: any, textField?: string) {
-        if (!value) {
-            return &#x27;&#x27;;
-        } else {
-            if (textField &amp;&amp; value.model &amp;&amp; value.model[textField] !&#x3D;&#x3D; undefined) {
-                const displayName &#x3D; value.model[textField];
-                return typeof displayName &#x3D;&#x3D;&#x3D; &#x27;string&#x27; ? displayName : displayName();
-            } else if (textField &amp;&amp; value[textField] !&#x3D;&#x3D; undefined) {
-                const displayName &#x3D; value[textField];
-                return typeof displayName &#x3D;&#x3D;&#x3D; &#x27;string&#x27; ? displayName : displayName();
-            } else if (value.displayName) {
-                return typeof value.displayName &#x3D;&#x3D;&#x3D; &#x27;string&#x27; ? value.displayName : value.displayName();
-            } else if (typeof value.toString &#x3D;&#x3D;&#x3D; &#x27;function&#x27;) {
-                return value.toString();
-            }
-        }
+        return ItemListService.getItemText(value, textField);
+    }
+
+    /** Evalue la valeur à comparer pour l&#x27;élément spécifié.
+     * @param {any} value  Model à évaluer.
+     * @param {string} valueField (optional) Champs à traiter comme valeur.
+     * @return {string} Valeur à comparer pour le modèle spécifié.
+     */
+    public getValue(item: any, valueField?: string) {
+        return ItemListService.getItemValue(item, valueField);
     }
 
     /** Usage interne. Termine le drag and drop en cours. */
@@ -2729,7 +2772,7 @@ export class ItemListService {
      * @return {boolean} True si l&#x27;élément correspond aux critères de recherche.
      */
     protected itemMatch(item: IItemBase, searchField: string, regExp: RegExp) {
-        const value &#x3D; typeof item[searchField] &#x3D;&#x3D;&#x3D; &#x27;function&#x27; ? item[searchField]() : (item[searchField] ? item[searchField] : this.getTextValue(item));
+        const value &#x3D; typeof item[searchField] &#x3D;&#x3D;&#x3D; &#x27;function&#x27; ? item[searchField]() : (item[searchField] ? item[searchField] : this.getTextValue(item, searchField));
         return value &amp;&amp; regExp.test(Diacritics.remove(value));
     }
 
@@ -2977,18 +3020,7 @@ export class ItemListService {
             } else if (item2.model &amp;&amp; item2.model.equals) {
                 return item2.model.equals(item1.model);
             } else {
-                const getValue &#x3D; (item: any) &#x3D;&gt; {
-                    const valueField &#x3D; this._valueField || &#x27;value&#x27;;
-                    if (item.model &amp;&amp; item.model[valueField] !&#x3D;&#x3D; undefined) {
-                        return item.model[valueField];
-                    }
-                    if (item[valueField] !&#x3D;&#x3D; undefined) {
-                        return item[valueField];
-                    } else {
-                        return item.model || item;
-                    }
-                };
-                return getValue(item1) &#x3D;&#x3D;&#x3D; getValue(item2);
+                return this.getValue(item1, this._valueField) &#x3D;&#x3D;&#x3D; this.getValue(item2, this._valueField);
             }
         }
     }
