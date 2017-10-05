@@ -147,9 +147,6 @@
                                     <a href="./modules/DejaMarkdownModule.html" >DejaMarkdownModule</a>
                                 </li>
                                 <li class="link">
-                                    <a href="./modules/DejaMenuModule.html" >DejaMenuModule</a>
-                                </li>
-                                <li class="link">
                                     <a href="./modules/DejaMessageBoxModule.html" >DejaMessageBoxModule</a>
                                 </li>
                                 <li class="link">
@@ -157,6 +154,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="./modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./modules/DejaOverlayModule.html" >DejaOverlayModule</a>
                                 </li>
                                 <li class="link">
                                     <a href="./modules/DejaPipeModule.html" >DejaPipeModule</a>
@@ -202,6 +202,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="./modules/GroupingModule.html" >GroupingModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./modules/MediaModule.html" >MediaModule</a>
                                 </li>
                         </ul>
                     </li>
@@ -287,9 +290,6 @@
                                     <a href="./components/DejaMarkdownComponent.html" >DejaMarkdownComponent</a>
                                 </li>
                                 <li class="link">
-                                    <a href="./components/DejaMenuComponent.html" >DejaMenuComponent</a>
-                                </li>
-                                <li class="link">
                                     <a href="./components/DejaMessageBoxComponent.html" >DejaMessageBoxComponent</a>
                                 </li>
                                 <li class="link">
@@ -297,6 +297,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="./components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./components/DejaOverlayComponent.html" >DejaOverlayComponent</a>
                                 </li>
                                 <li class="link">
                                     <a href="./components/DejaRangeComponent.html" >DejaRangeComponent</a>
@@ -567,6 +570,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="./injectables/MaterialColors.html" >MaterialColors</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./injectables/MediaService.html" >MediaService</a>
                                 </li>
                                 <li class="link">
                                     <a href="./injectables/MonacoEditorService.html" >MonacoEditorService</a>
@@ -953,9 +959,6 @@
                                            <a href="./modules/DejaMarkdownModule.html" >DejaMarkdownModule</a>
                                        </li>
                                        <li class="link">
-                                           <a href="./modules/DejaMenuModule.html" >DejaMenuModule</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="./modules/DejaMessageBoxModule.html" >DejaMessageBoxModule</a>
                                        </li>
                                        <li class="link">
@@ -963,6 +966,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="./modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./modules/DejaOverlayModule.html" >DejaOverlayModule</a>
                                        </li>
                                        <li class="link">
                                            <a href="./modules/DejaPipeModule.html" >DejaPipeModule</a>
@@ -1008,6 +1014,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="./modules/GroupingModule.html" >GroupingModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./modules/MediaModule.html" >MediaModule</a>
                                        </li>
                                </ul>
                            </li>
@@ -1093,9 +1102,6 @@
                                            <a href="./components/DejaMarkdownComponent.html" >DejaMarkdownComponent</a>
                                        </li>
                                        <li class="link">
-                                           <a href="./components/DejaMenuComponent.html" >DejaMenuComponent</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="./components/DejaMessageBoxComponent.html" >DejaMessageBoxComponent</a>
                                        </li>
                                        <li class="link">
@@ -1103,6 +1109,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="./components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./components/DejaOverlayComponent.html" >DejaOverlayComponent</a>
                                        </li>
                                        <li class="link">
                                            <a href="./components/DejaRangeComponent.html" >DejaRangeComponent</a>
@@ -1375,6 +1384,9 @@
                                            <a href="./injectables/MaterialColors.html" >MaterialColors</a>
                                        </li>
                                        <li class="link">
+                                           <a href="./injectables/MediaService.html" >MediaService</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="./injectables/MonacoEditorService.html" >MonacoEditorService</a>
                                        </li>
                                        <li class="link">
@@ -1630,6 +1642,42 @@
                <div class="content getting-started">
                    <div class="content-data">
 
+<h3 id="2-14-0-2017-10-05-">2.14.0 (2017-10-05)</h3>
+<h5 id="breaking-changes">BREAKING CHANGES</h5>
+<ul>
+<li><strong>DejaMenuComponent:</strong> DejaMenuComponent as DejaOverlayComponent (<a href="https://github.com/DSI-HUG/dejajs-components/commit/fd1fea30859c68ec6ee1abbd1954d371811c3ea6">fd1fea30</a>)</li>
+</ul>
+<h5 id="new-features">New Features</h5>
+<ul>
+<li><strong>MonacoEditor:</strong> Added loaded event after first load (<a href="https://github.com/DSI-HUG/dejajs-components/commit/662e56957b139a9b6722cae1492cd946944c809b">662e5695</a>)</li>
+<li><strong>Global:</strong> Material 11 compatibility (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1351371f163e52b0159bd4355ae5ce1976a40f15">1351371f</a>)</li>
+</ul>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>ViewportService:</strong> Fix crash when treelist parent is collapsed and viewport mode is disabled (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c3571929d2abbae3cf6d28b2d91637a534840a32">c3571929</a>)</li>
+<li><strong>DejaDatePickerComponent:</strong> markForCheck() on close to avoid bug when close function isn&#39;t called by user action (<a href="https://github.com/DSI-HUG/dejajs-components/commit/b5f17991f414b48e9023eeab08f300f45c2caef6">b5f17991</a>)</li>
+<li><strong>BoldQuery:</strong> Removed encapsulation (<a href="https://github.com/DSI-HUG/dejajs-components/commit/96ca2b5e6a987d0c9e887c3bc49f7981608de523">96ca2b5e</a>)</li>
+<li><strong>Global:</strong><ul>
+<li>Material 11 Compatibility (<a href="https://github.com/DSI-HUG/dejajs-components/commit/9d3a674e7cdc156055b60117aa1576fdc7d6d2af">9d3a674e</a>)</li>
+<li>Ignore and remove .d.ts files (<a href="https://github.com/DSI-HUG/dejajs-components/commit/64825216472bb0dcc1cfd98e7d58dedfe6bf8a0b">64825216</a>)</li>
+<li>Ignore and remove .d.ts files (<a href="https://github.com/DSI-HUG/dejajs-components/commit/b23644ffc42919c55ceb72e5afe50854e05fea3c">b23644ff</a>)</li>
+</ul>
+</li>
+<li><strong>Demo:</strong> Material10 Compatibility fix(Tiles): Small step move issue (<a href="https://github.com/DSI-HUG/dejajs-components/commit/ba4131df1c1b588e144596fa52ba349beb7c6005">ba4131df</a>)</li>
+<li><strong>TilesComponent:</strong> Work in push mode quiet(MonacoEditor): Fixed wrong value emitted by the event (<a href="https://github.com/DSI-HUG/dejajs-components/commit/e800fd2187fb3f415eec5ad7e0d2555039b55102">e800fd21</a>)</li>
+<li><strong>MonacoEditor:</strong> Use Observables to avoid life cycle issues (<a href="https://github.com/DSI-HUG/dejajs-components/commit/0e5752dda57dd73d8223fea12a9f2f32c140177f">0e5752dd</a>)</li>
+</ul>
+<h5 id="other-changes">Other Changes</h5>
+<ul>
+<li><strong>DejaTag:</strong> Fix test Material 11 compatibility (<a href="https://github.com/DSI-HUG/dejajs-components/commit/8bf1524cade4efd5db1f4cbc9ba8357311e63d71">8bf1524c</a>)</li>
+<li><strong>Global:</strong><ul>
+<li>Fix issues due to the material 11 migration (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c38070444327716400053b60e40548e822ed1bad">c3807044</a>)</li>
+<li>Fix issues due to the material 11 migration (<a href="https://github.com/DSI-HUG/dejajs-components/commit/dec01d0da79668b8fc43a0d2e3b5f301fb137020">dec01d0d</a>)</li>
+</ul>
+</li>
+<li><strong>GlobalEvent:</strong> Restored .d.ts (<a href="https://github.com/DSI-HUG/dejajs-components/commit/03b32ddacc001d1a50eaaed8de128a372df078ca">03b32dda</a>)</li>
+<li><strong>MonacoEditor:</strong> Revrted: Use Observables to avoid life cycle issues (<a href="https://github.com/DSI-HUG/dejajs-components/commit/d436aa143ba711fe8b276f386672907b212c5306">d436aa14</a>)</li>
+</ul>
 <h3 id="2-13-0-2017-10-04-">2.13.0 (2017-10-04)</h3>
 <h5 id="continuous-integration">Continuous Integration</h5>
 <ul>
@@ -3167,7 +3215,7 @@ Material theming for all components</p>
 <h1 id="-1-1-1-2017-01-">[1.1.1] (2017-01-??)</h1>
 <h3 id="breaking-changes-from-1-0-0">Breaking changes from 1.0.0</h3>
 <ul>
-<li><strong>DejaAutosizeTextAreaDirective:</strong> The directive deja-autositze is now placed on the textarea element inside an md-input-container. ngModel must be also declared on the textarea element.</li>
+<li><strong>DejaAutosizeTextAreaDirective:</strong> The directive deja-autositze is now placed on the textarea element inside an mat-input-container. ngModel must be also declared on the textarea element.</li>
 <li><strong>BooleanFieldValue:</strong>  The annotation BooleanFieldValue is removed due to an incompatibility with webpack. Now the angular material core coerceBooleanProperty is used instead.</li>
 </ul>
 <h3 id="bug-fixes">Bug Fixes</h3>

@@ -147,9 +147,6 @@
                                     <a href="../modules/DejaMarkdownModule.html" >DejaMarkdownModule</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../modules/DejaMenuModule.html" >DejaMenuModule</a>
-                                </li>
-                                <li class="link">
                                     <a href="../modules/DejaMessageBoxModule.html" >DejaMessageBoxModule</a>
                                 </li>
                                 <li class="link">
@@ -157,6 +154,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaOverlayModule.html" >DejaOverlayModule</a>
                                 </li>
                                 <li class="link">
                                     <a href="../modules/DejaPipeModule.html" >DejaPipeModule</a>
@@ -202,6 +202,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../modules/GroupingModule.html" >GroupingModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/MediaModule.html" >MediaModule</a>
                                 </li>
                         </ul>
                     </li>
@@ -287,9 +290,6 @@
                                     <a href="../components/DejaMarkdownComponent.html" >DejaMarkdownComponent</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../components/DejaMenuComponent.html" >DejaMenuComponent</a>
-                                </li>
-                                <li class="link">
                                     <a href="../components/DejaMessageBoxComponent.html" >DejaMessageBoxComponent</a>
                                 </li>
                                 <li class="link">
@@ -297,6 +297,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaOverlayComponent.html" >DejaOverlayComponent</a>
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaRangeComponent.html" >DejaRangeComponent</a>
@@ -567,6 +570,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../injectables/MaterialColors.html" >MaterialColors</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/MediaService.html" >MediaService</a>
                                 </li>
                                 <li class="link">
                                     <a href="../injectables/MonacoEditorService.html" >MonacoEditorService</a>
@@ -953,9 +959,6 @@
                                            <a href="../modules/DejaMarkdownModule.html" >DejaMarkdownModule</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../modules/DejaMenuModule.html" >DejaMenuModule</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="../modules/DejaMessageBoxModule.html" >DejaMessageBoxModule</a>
                                        </li>
                                        <li class="link">
@@ -963,6 +966,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaOverlayModule.html" >DejaOverlayModule</a>
                                        </li>
                                        <li class="link">
                                            <a href="../modules/DejaPipeModule.html" >DejaPipeModule</a>
@@ -1008,6 +1014,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../modules/GroupingModule.html" >GroupingModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/MediaModule.html" >MediaModule</a>
                                        </li>
                                </ul>
                            </li>
@@ -1093,9 +1102,6 @@
                                            <a href="../components/DejaMarkdownComponent.html" >DejaMarkdownComponent</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../components/DejaMenuComponent.html" >DejaMenuComponent</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="../components/DejaMessageBoxComponent.html" >DejaMessageBoxComponent</a>
                                        </li>
                                        <li class="link">
@@ -1103,6 +1109,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaOverlayComponent.html" >DejaOverlayComponent</a>
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaRangeComponent.html" >DejaRangeComponent</a>
@@ -1373,6 +1382,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../injectables/MaterialColors.html" >MaterialColors</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/MediaService.html" >MediaService</a>
                                        </li>
                                        <li class="link">
                                            <a href="../injectables/MonacoEditorService.html" >MonacoEditorService</a>
@@ -6193,15 +6205,15 @@ export class DejaTreeListComponent extends ItemListBase implements AfterViewInit
 
     <div class="tab-pane fade" id="templateData">
         <pre class="line-numbers"><code class="language-html">&lt;div id&#x3D;&quot;header&quot; *ngIf&#x3D;&quot;searchArea&quot;&gt;
-    &lt;md-form-field deja-child-validator id&#x3D;&quot;input&quot; *ngIf&#x3D;&quot;searchArea&quot;&gt;
-        &lt;input #inputelement type&#x3D;&quot;text&quot; mdInput tabindex&#x3D;&quot;0&quot; [(ngModel)]&#x3D;&quot;query&quot; [placeholder]&#x3D;&quot;placeholder&quot; [disabled]&#x3D;&quot;disabled&quot;&gt;
-        &lt;span *ngIf&#x3D;&quot;searchPrefixTemplate&quot; mdPrefix&gt;
+    &lt;mat-form-field deja-child-validator id&#x3D;&quot;input&quot; *ngIf&#x3D;&quot;searchArea&quot;&gt;
+        &lt;input #inputelement type&#x3D;&quot;text&quot; matInput tabindex&#x3D;&quot;0&quot; [(ngModel)]&#x3D;&quot;query&quot; [placeholder]&#x3D;&quot;placeholder&quot; [disabled]&#x3D;&quot;disabled&quot;&gt;
+        &lt;span *ngIf&#x3D;&quot;searchPrefixTemplate&quot; matPrefix&gt;
 			&lt;ng-template [ngTemplateOutlet]&#x3D;&quot;searchPrefixTemplate&quot;&gt;&lt;/ng-template&gt;
 		&lt;/span&gt;
-        &lt;span *ngIf&#x3D;&quot;searchSuffixTemplate&quot; mdSuffix&gt;
+        &lt;span *ngIf&#x3D;&quot;searchSuffixTemplate&quot; matSuffix&gt;
 			&lt;ng-template [ngTemplateOutlet]&#x3D;&quot;searchSuffixTemplate&quot;&gt;&lt;/ng-template&gt;
 		&lt;/span&gt;
-    &lt;/md-form-field&gt;
+    &lt;/mat-form-field&gt;
 &lt;/div&gt;
 &lt;div id&#x3D;&quot;listheader&quot; *ngIf&#x3D;&quot;headerTemplate&quot;&gt;
     &lt;ng-template [ngTemplateOutlet]&#x3D;&quot;headerTemplate&quot;&gt;&lt;/ng-template&gt;
@@ -6254,8 +6266,8 @@ export class DejaTreeListComponent extends ItemListBase implements AfterViewInit
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><div id="header" *ngIf="searchArea">    <md-form-field deja-child-validator id="input" *ngIf="searchArea">        <input #inputelement type="text" mdInput tabindex="0" [(ngModel)]="query" [placeholder]="placeholder" [disabled]="disabled">        <span *ngIf="searchPrefixTemplate" mdPrefix>			<ng-template [ngTemplateOutlet]="searchPrefixTemplate"></ng-template>		</span>        <span *ngIf="searchSuffixTemplate" mdSuffix>			<ng-template [ngTemplateOutlet]="searchSuffixTemplate"></ng-template>		</span>    </md-form-field></div><div id="listheader" *ngIf="headerTemplate">    <ng-template [ngTemplateOutlet]="headerTemplate"></ng-template></div><div [id]="listElementId" class="deja-listcontainer" [attr.itemscount]="_itemList && _itemList.length" [attr.depth-max]="depthMax || null" [attr.vp-rowheight]="getViewPortRowHeight()" [style.max-height.px]="maxHeight || null" tabindex="1" [class.hasheader]="headerTemplate" [class.dragover]="ddStartIndex !== undefined ? ddStartIndex : null" [attr.keynav]="keyboardNavigation" (dragleave)="sortable ? dragLeave($event): null" (mousedown)="mousedown($event)" [deja-droppable]="getDropContext()">    <div id="nodata-holder" *ngIf="(!itemList || itemList.length === 0) && !waiter">{{ nodataholder }}</div>    <div id="error-hint" *ngIf="hintLabel">{{ hintLabel }}</div>    <div *ngIf="vpBeforeHeight && !waiter" [style.height.px]="vpBeforeHeight"></div>    <ng-container *ngIf="!waiter">        <div *ngFor="let item of itemList; let index = index" #listitem [attr.class]="getItemClass(item)" [attr.current]="(vpStartRow+index === currentItemIndex) || null" [attr.depth]="depthMax ? item.depth : null" [attr.id]="item.id || null" [attr.flat]="vpStartRow + index" [deja-draggable]="getDragContext(vpStartRow + index)" [style.width.px]="itemsWidth" [style.height.px]="getItemHeight(item)">            <span id="expandbtn"><i *ngIf="item.$items && item.$items.length" class="material-icons">keyboard_arrow_down</i></span>            <ng-container *ngIf="(!item.$items || !parentItemTemplate) && (item.$items || !itemTemplate)">{{ getTextValue(item) }}</ng-container>            <ng-container class="item-content" *ngIf="item.$items && parentItemTemplate">                <ng-template [ngTemplateOutlet]="parentItemTemplate" [ngTemplateOutletContext]="{ $implicit: item, query: query, flatindex: vpStartRow+index }"></ng-template>            </ng-container>            <ng-container class="item-content" *ngIf="!item.$items && itemTemplate">                <ng-template [ngTemplateOutlet]="itemTemplate" [ngTemplateOutletContext]="{ $implicit: item, query: query, flatindex: vpStartRow+index }"></ng-template>            </ng-container>        </div>    </ng-container>    <div *ngIf="vpAfterHeight && !waiter" [style.height.px]="vpAfterHeight"></div>    <deja-list-loader id="loader" *ngIf="waiter && !loaderTemplate"></deja-list-loader>    <ng-container *ngIf="waiter && loaderTemplate">        <ng-template [ngTemplateOutlet]="loaderTemplate"></ng-template>    </ng-container></div></div>'
-    var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaCodeViewerComponent', 'selector': 'deja-code-viewer'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaItemComponent', 'selector': 'deja-item'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMarkdownComponent', 'selector': 'deja-markdown'},{'name': 'DejaMenuComponent', 'selector': 'deja-menu'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSidenavComponent', 'selector': 'deja-sidenav'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTagComponent', 'selector': 'deja-tag'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'}];
+        var COMPONENT_TEMPLATE = '<div><div id="header" *ngIf="searchArea">    <mat-form-field deja-child-validator id="input" *ngIf="searchArea">        <input #inputelement type="text" matInput tabindex="0" [(ngModel)]="query" [placeholder]="placeholder" [disabled]="disabled">        <span *ngIf="searchPrefixTemplate" matPrefix>			<ng-template [ngTemplateOutlet]="searchPrefixTemplate"></ng-template>		</span>        <span *ngIf="searchSuffixTemplate" matSuffix>			<ng-template [ngTemplateOutlet]="searchSuffixTemplate"></ng-template>		</span>    </mat-form-field></div><div id="listheader" *ngIf="headerTemplate">    <ng-template [ngTemplateOutlet]="headerTemplate"></ng-template></div><div [id]="listElementId" class="deja-listcontainer" [attr.itemscount]="_itemList && _itemList.length" [attr.depth-max]="depthMax || null" [attr.vp-rowheight]="getViewPortRowHeight()" [style.max-height.px]="maxHeight || null" tabindex="1" [class.hasheader]="headerTemplate" [class.dragover]="ddStartIndex !== undefined ? ddStartIndex : null" [attr.keynav]="keyboardNavigation" (dragleave)="sortable ? dragLeave($event): null" (mousedown)="mousedown($event)" [deja-droppable]="getDropContext()">    <div id="nodata-holder" *ngIf="(!itemList || itemList.length === 0) && !waiter">{{ nodataholder }}</div>    <div id="error-hint" *ngIf="hintLabel">{{ hintLabel }}</div>    <div *ngIf="vpBeforeHeight && !waiter" [style.height.px]="vpBeforeHeight"></div>    <ng-container *ngIf="!waiter">        <div *ngFor="let item of itemList; let index = index" #listitem [attr.class]="getItemClass(item)" [attr.current]="(vpStartRow+index === currentItemIndex) || null" [attr.depth]="depthMax ? item.depth : null" [attr.id]="item.id || null" [attr.flat]="vpStartRow + index" [deja-draggable]="getDragContext(vpStartRow + index)" [style.width.px]="itemsWidth" [style.height.px]="getItemHeight(item)">            <span id="expandbtn"><i *ngIf="item.$items && item.$items.length" class="material-icons">keyboard_arrow_down</i></span>            <ng-container *ngIf="(!item.$items || !parentItemTemplate) && (item.$items || !itemTemplate)">{{ getTextValue(item) }}</ng-container>            <ng-container class="item-content" *ngIf="item.$items && parentItemTemplate">                <ng-template [ngTemplateOutlet]="parentItemTemplate" [ngTemplateOutletContext]="{ $implicit: item, query: query, flatindex: vpStartRow+index }"></ng-template>            </ng-container>            <ng-container class="item-content" *ngIf="!item.$items && itemTemplate">                <ng-template [ngTemplateOutlet]="itemTemplate" [ngTemplateOutletContext]="{ $implicit: item, query: query, flatindex: vpStartRow+index }"></ng-template>            </ng-container>        </div>    </ng-container>    <div *ngIf="vpAfterHeight && !waiter" [style.height.px]="vpAfterHeight"></div>    <deja-list-loader id="loader" *ngIf="waiter && !loaderTemplate"></deja-list-loader>    <ng-container *ngIf="waiter && loaderTemplate">        <ng-template [ngTemplateOutlet]="loaderTemplate"></ng-template>    </ng-container></div></div>'
+    var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaCodeViewerComponent', 'selector': 'deja-code-viewer'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaItemComponent', 'selector': 'deja-item'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMarkdownComponent', 'selector': 'deja-markdown'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaOverlayComponent', 'selector': 'deja-overlay'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSidenavComponent', 'selector': 'deja-sidenav'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTagComponent', 'selector': 'deja-tag'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'}];
     var DIRECTIVES = [{'name': 'DateValidatorDirective', 'selector': '[date-validator][ngModel]'},{'name': 'DejaAutosizeTextAreaDirective', 'selector': 'textarea[deja-autosize]'},{'name': 'DejaChildValidatorDirective', 'selector': '[deja-child-validator]'},{'name': 'DejaDraggableDirective', 'selector': '[deja-draggable]'},{'name': 'DejaDroppableDirective', 'selector': '[deja-droppable]'},{'name': 'DejaEditableDirective', 'selector': '[deja-editable]'},{'name': 'DejaMouseDraggableDirective', 'selector': '[deja-mouse-draggable]'},{'name': 'DejaMouseDroppableDirective', 'selector': '[deja-mouse-droppable]'},{'name': 'DejaSidenavContentDirective', 'selector': 'deja-sidenav-content, [deja-sidenav-content]'},{'name': 'DejaSidenavHeaderDirective', 'selector': 'deja-sidenav-header, [deja-sidenav-header]'},{'name': 'DejaSidenavMenuDirective', 'selector': 'deja-sidenav-menu, [deja-sidenav-menu]'},{'name': 'DejaSidenavMenuSeparatorDirective', 'selector': 'deja-sidenav-menu-separator, [deja-sidenav-menu-separator]'},{'name': 'DejaSlimScrollDirective', 'selector': '[slimScroll]'},{'name': 'DejaTilePositionDirective', 'selector': '[deja-tile-position]'},{'name': 'DejaTooltipDirective', 'selector': '[deja-tooltip]'},{'name': 'PendingOnFocusDirective', 'selector': '[pending-onfocus]'},{'name': 'SplitAreaDirective', 'selector': 'split-area'},{'name': 'SplitGutterDirective', 'selector': 'split-gutter'},{'name': 'ValidateOnBlurDirective', 'selector': '[validate-onblur]'}];
     var ACTUAL_COMPONENT = {'name': 'DejaTreeListComponent'};
 </script>

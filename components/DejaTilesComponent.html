@@ -147,9 +147,6 @@
                                     <a href="../modules/DejaMarkdownModule.html" >DejaMarkdownModule</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../modules/DejaMenuModule.html" >DejaMenuModule</a>
-                                </li>
-                                <li class="link">
                                     <a href="../modules/DejaMessageBoxModule.html" >DejaMessageBoxModule</a>
                                 </li>
                                 <li class="link">
@@ -157,6 +154,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaOverlayModule.html" >DejaOverlayModule</a>
                                 </li>
                                 <li class="link">
                                     <a href="../modules/DejaPipeModule.html" >DejaPipeModule</a>
@@ -202,6 +202,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../modules/GroupingModule.html" >GroupingModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/MediaModule.html" >MediaModule</a>
                                 </li>
                         </ul>
                     </li>
@@ -287,9 +290,6 @@
                                     <a href="../components/DejaMarkdownComponent.html" >DejaMarkdownComponent</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../components/DejaMenuComponent.html" >DejaMenuComponent</a>
-                                </li>
-                                <li class="link">
                                     <a href="../components/DejaMessageBoxComponent.html" >DejaMessageBoxComponent</a>
                                 </li>
                                 <li class="link">
@@ -297,6 +297,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaOverlayComponent.html" >DejaOverlayComponent</a>
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaRangeComponent.html" >DejaRangeComponent</a>
@@ -567,6 +570,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../injectables/MaterialColors.html" >MaterialColors</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/MediaService.html" >MediaService</a>
                                 </li>
                                 <li class="link">
                                     <a href="../injectables/MonacoEditorService.html" >MonacoEditorService</a>
@@ -953,9 +959,6 @@
                                            <a href="../modules/DejaMarkdownModule.html" >DejaMarkdownModule</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../modules/DejaMenuModule.html" >DejaMenuModule</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="../modules/DejaMessageBoxModule.html" >DejaMessageBoxModule</a>
                                        </li>
                                        <li class="link">
@@ -963,6 +966,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaOverlayModule.html" >DejaOverlayModule</a>
                                        </li>
                                        <li class="link">
                                            <a href="../modules/DejaPipeModule.html" >DejaPipeModule</a>
@@ -1008,6 +1014,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../modules/GroupingModule.html" >GroupingModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/MediaModule.html" >MediaModule</a>
                                        </li>
                                </ul>
                            </li>
@@ -1093,9 +1102,6 @@
                                            <a href="../components/DejaMarkdownComponent.html" >DejaMarkdownComponent</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../components/DejaMenuComponent.html" >DejaMenuComponent</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="../components/DejaMessageBoxComponent.html" >DejaMessageBoxComponent</a>
                                        </li>
                                        <li class="link">
@@ -1103,6 +1109,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaOverlayComponent.html" >DejaOverlayComponent</a>
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaRangeComponent.html" >DejaRangeComponent</a>
@@ -1373,6 +1382,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../injectables/MaterialColors.html" >MaterialColors</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/MediaService.html" >MediaService</a>
                                        </li>
                                        <li class="link">
                                            <a href="../injectables/MonacoEditorService.html" >MonacoEditorService</a>
@@ -1680,6 +1692,10 @@
     <table class="table table-sm table-hover">
         <tbody>
 
+            <tr>
+                <td class="col-md-3">changeDetection</td>
+                <td class="col-md-9"><code>ChangeDetectionStrategy.OnPush</code></td>
+            </tr>
 
 
 
@@ -1920,12 +1936,12 @@
                 <tbody>
                     <tr>
                         <td class="col-md-4">
-                            <code>constructor(el: <a href="https://angular.io/docs/ts/latest/api/core/index/ElementRef-class.html" target="_blank">ElementRef</a>, layoutProvider: <a href="../injectables/DejaTilesLayoutProvider.html">DejaTilesLayoutProvider</a>, _control: <a href="https://angular.io/docs/ts/latest/api/forms/index/NgControl-class.html" target="_blank">NgControl</a>)</code>
+                            <code>constructor(el: <a href="https://angular.io/docs/ts/latest/api/core/index/ElementRef-class.html" target="_blank">ElementRef</a>, changeDetectorRef: <a href="https://angular.io/docs/ts/latest/api/core/index/ChangeDetectorRef-class.html" target="_blank">ChangeDetectorRef</a>, layoutProvider: <a href="../injectables/DejaTilesLayoutProvider.html">DejaTilesLayoutProvider</a>, _control: <a href="https://angular.io/docs/ts/latest/api/forms/index/NgControl-class.html" target="_blank">NgControl</a>)</code>
                         </td>
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="94" class="link-to-prism">src/component/tiles/tiles.component.ts:94</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="95" class="link-to-prism">src/component/tiles/tiles.component.ts:95</a></div>
                                 </td>
                             </tr>
     
@@ -1947,6 +1963,15 @@
                                                       <td>el</td>
                                                       <td>
                                                                 <code><a href="https://angular.io/docs/ts/latest/api/core/index/ElementRef-class.html" target="_blank" >ElementRef</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>changeDetectorRef</td>
+                                                      <td>
+                                                                <code><a href="https://angular.io/docs/ts/latest/api/core/index/ChangeDetectorRef-class.html" target="_blank" >ChangeDetectorRef</a></code>
                                                       </td>
                                                       <td>
                                                       </td>
@@ -1993,7 +2018,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="183" class="link-to-prism">src/component/tiles/tiles.component.ts:183</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="184" class="link-to-prism">src/component/tiles/tiles.component.ts:184</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -2010,7 +2035,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="198" class="link-to-prism">src/component/tiles/tiles.component.ts:198</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="199" class="link-to-prism">src/component/tiles/tiles.component.ts:199</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -2027,7 +2052,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="169" class="link-to-prism">src/component/tiles/tiles.component.ts:169</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="170" class="link-to-prism">src/component/tiles/tiles.component.ts:170</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -2044,7 +2069,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="214" class="link-to-prism">src/component/tiles/tiles.component.ts:214</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="215" class="link-to-prism">src/component/tiles/tiles.component.ts:215</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -2061,7 +2086,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="155" class="link-to-prism">src/component/tiles/tiles.component.ts:155</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="156" class="link-to-prism">src/component/tiles/tiles.component.ts:156</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -2078,7 +2103,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="150" class="link-to-prism">src/component/tiles/tiles.component.ts:150</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="151" class="link-to-prism">src/component/tiles/tiles.component.ts:151</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -2095,7 +2120,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="164" class="link-to-prism">src/component/tiles/tiles.component.ts:164</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="165" class="link-to-prism">src/component/tiles/tiles.component.ts:165</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -2112,7 +2137,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="228" class="link-to-prism">src/component/tiles/tiles.component.ts:228</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="229" class="link-to-prism">src/component/tiles/tiles.component.ts:229</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -2134,7 +2159,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/component/tiles/tiles.component.ts:70</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="71" class="link-to-prism">src/component/tiles/tiles.component.ts:71</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -2151,7 +2176,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="145" class="link-to-prism">src/component/tiles/tiles.component.ts:145</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="146" class="link-to-prism">src/component/tiles/tiles.component.ts:146</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -2168,7 +2193,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="135" class="link-to-prism">src/component/tiles/tiles.component.ts:135</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="136" class="link-to-prism">src/component/tiles/tiles.component.ts:136</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -2185,7 +2210,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="140" class="link-to-prism">src/component/tiles/tiles.component.ts:140</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="141" class="link-to-prism">src/component/tiles/tiles.component.ts:141</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -2202,7 +2227,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="130" class="link-to-prism">src/component/tiles/tiles.component.ts:130</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="131" class="link-to-prism">src/component/tiles/tiles.component.ts:131</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -2227,7 +2252,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/component/tiles/tiles.component.ts:50</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/component/tiles/tiles.component.ts:51</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -2248,7 +2273,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/component/tiles/tiles.component.ts:65</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="66" class="link-to-prism">src/component/tiles/tiles.component.ts:66</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -2269,7 +2294,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/component/tiles/tiles.component.ts:55</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/component/tiles/tiles.component.ts:56</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -2290,7 +2315,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/component/tiles/tiles.component.ts:45</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/component/tiles/tiles.component.ts:46</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -2311,7 +2336,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/component/tiles/tiles.component.ts:60</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/component/tiles/tiles.component.ts:61</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -2332,7 +2357,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/component/tiles/tiles.component.ts:40</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/component/tiles/tiles.component.ts:41</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -2364,7 +2389,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="312" class="link-to-prism">src/component/tiles/tiles.component.ts:312</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="314" class="link-to-prism">src/component/tiles/tiles.component.ts:314</a></div>
                                 </td>
                             </tr>
     
@@ -2437,7 +2462,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="304" class="link-to-prism">src/component/tiles/tiles.component.ts:304</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="306" class="link-to-prism">src/component/tiles/tiles.component.ts:306</a></div>
                                 </td>
                             </tr>
     
@@ -2499,7 +2524,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="296" class="link-to-prism">src/component/tiles/tiles.component.ts:296</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="298" class="link-to-prism">src/component/tiles/tiles.component.ts:298</a></div>
                                 </td>
                             </tr>
     
@@ -2532,7 +2557,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="262" class="link-to-prism">src/component/tiles/tiles.component.ts:262</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="264" class="link-to-prism">src/component/tiles/tiles.component.ts:264</a></div>
                                 </td>
                             </tr>
     
@@ -2565,7 +2590,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="271" class="link-to-prism">src/component/tiles/tiles.component.ts:271</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="273" class="link-to-prism">src/component/tiles/tiles.component.ts:273</a></div>
                                 </td>
                             </tr>
     
@@ -2598,7 +2623,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="280" class="link-to-prism">src/component/tiles/tiles.component.ts:280</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="282" class="link-to-prism">src/component/tiles/tiles.component.ts:282</a></div>
                                 </td>
                             </tr>
     
@@ -2631,7 +2656,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="288" class="link-to-prism">src/component/tiles/tiles.component.ts:288</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="290" class="link-to-prism">src/component/tiles/tiles.component.ts:290</a></div>
                                 </td>
                             </tr>
     
@@ -2693,7 +2718,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="292" class="link-to-prism">src/component/tiles/tiles.component.ts:292</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="294" class="link-to-prism">src/component/tiles/tiles.component.ts:294</a></div>
                                 </td>
                             </tr>
     
@@ -2764,7 +2789,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="347" class="link-to-prism">src/component/tiles/tiles.component.ts:347</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="349" class="link-to-prism">src/component/tiles/tiles.component.ts:349</a></div>
                                 </td>
                             </tr>
     
@@ -2797,7 +2822,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="327" class="link-to-prism">src/component/tiles/tiles.component.ts:327</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="329" class="link-to-prism">src/component/tiles/tiles.component.ts:329</a></div>
                                 </td>
                             </tr>
     
@@ -2890,7 +2915,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="343" class="link-to-prism">src/component/tiles/tiles.component.ts:343</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="345" class="link-to-prism">src/component/tiles/tiles.component.ts:345</a></div>
                                 </td>
                             </tr>
     
@@ -2961,7 +2986,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="377" class="link-to-prism">src/component/tiles/tiles.component.ts:377</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="379" class="link-to-prism">src/component/tiles/tiles.component.ts:379</a></div>
                                 </td>
                             </tr>
     
@@ -2994,7 +3019,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="373" class="link-to-prism">src/component/tiles/tiles.component.ts:373</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="375" class="link-to-prism">src/component/tiles/tiles.component.ts:375</a></div>
                                 </td>
                             </tr>
     
@@ -3027,7 +3052,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="363" class="link-to-prism">src/component/tiles/tiles.component.ts:363</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="365" class="link-to-prism">src/component/tiles/tiles.component.ts:365</a></div>
                                 </td>
                             </tr>
     
@@ -3089,7 +3114,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="367" class="link-to-prism">src/component/tiles/tiles.component.ts:367</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="369" class="link-to-prism">src/component/tiles/tiles.component.ts:369</a></div>
                                 </td>
                             </tr>
     
@@ -3122,7 +3147,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="284" class="link-to-prism">src/component/tiles/tiles.component.ts:284</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="286" class="link-to-prism">src/component/tiles/tiles.component.ts:286</a></div>
                                 </td>
                             </tr>
     
@@ -3155,7 +3180,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="300" class="link-to-prism">src/component/tiles/tiles.component.ts:300</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="302" class="link-to-prism">src/component/tiles/tiles.component.ts:302</a></div>
                                 </td>
                             </tr>
     
@@ -3218,7 +3243,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="238" class="link-to-prism">src/component/tiles/tiles.component.ts:238</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="240" class="link-to-prism">src/component/tiles/tiles.component.ts:240</a></div>
                                 </td>
                             </tr>
     
@@ -3280,7 +3305,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="242" class="link-to-prism">src/component/tiles/tiles.component.ts:242</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="244" class="link-to-prism">src/component/tiles/tiles.component.ts:244</a></div>
                                 </td>
                             </tr>
     
@@ -3342,7 +3367,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="308" class="link-to-prism">src/component/tiles/tiles.component.ts:308</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="310" class="link-to-prism">src/component/tiles/tiles.component.ts:310</a></div>
                                 </td>
                             </tr>
     
@@ -3404,7 +3429,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="233" class="link-to-prism">src/component/tiles/tiles.component.ts:233</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="234" class="link-to-prism">src/component/tiles/tiles.component.ts:234</a></div>
                                 </td>
                             </tr>
     
@@ -3482,7 +3507,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="96" class="link-to-prism">src/component/tiles/tiles.component.ts:96</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="97" class="link-to-prism">src/component/tiles/tiles.component.ts:97</a></div>
                                 </td>
                             </tr>
     
@@ -3505,7 +3530,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="159" class="link-to-prism">src/component/tiles/tiles.component.ts:159</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="160" class="link-to-prism">src/component/tiles/tiles.component.ts:160</a></div>
                                 </td>
                             </tr>
     
@@ -3539,7 +3564,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/component/tiles/tiles.component.ts:76</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="77" class="link-to-prism">src/component/tiles/tiles.component.ts:77</a></div>
                                 </td>
                             </tr>
     
@@ -3573,7 +3598,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="75" class="link-to-prism">src/component/tiles/tiles.component.ts:75</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/component/tiles/tiles.component.ts:76</a></div>
                                 </td>
                             </tr>
     
@@ -3602,7 +3627,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="125" class="link-to-prism">src/component/tiles/tiles.component.ts:125</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="126" class="link-to-prism">src/component/tiles/tiles.component.ts:126</a></div>
                                 </td>
                             </tr>
     
@@ -3631,7 +3656,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="90" class="link-to-prism">src/component/tiles/tiles.component.ts:90</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="91" class="link-to-prism">src/component/tiles/tiles.component.ts:91</a></div>
                                 </td>
                             </tr>
     
@@ -3659,7 +3684,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="72" class="link-to-prism">src/component/tiles/tiles.component.ts:72</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/component/tiles/tiles.component.ts:73</a></div>
                                 </td>
                             </tr>
     
@@ -3672,7 +3697,7 @@
 
     <div class="tab-pane fade tab-source-code" id="source">
         <pre class="line-numbers"><code class="language-typescript">import { coerceBooleanProperty } from &#x27;@angular/cdk/coercion&#x27;;
-import { AfterViewInit, Component, ContentChild, ElementRef, EventEmitter, Input, OnDestroy, Optional, Output, Self, ViewChild } from &#x27;@angular/core&#x27;;
+import { AfterViewInit, ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChild, ElementRef, EventEmitter, Input, OnDestroy, Optional, Output, Self, ViewChild } from &#x27;@angular/core&#x27;;
 import { ControlValueAccessor, NgControl } from &#x27;@angular/forms&#x27;;
 import { BehaviorSubject } from &#x27;rxjs/BehaviorSubject&#x27;;
 import { Observable } from &#x27;rxjs/Observable&#x27;;
@@ -3691,6 +3716,7 @@ import { IDejaTilesAddEvent, IDejaTilesEvent, IDejaTilesModelEvent, IDejaTilesRe
 const noop &#x3D; () &#x3D;&gt; { };
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.OnPush,
     providers: [DejaTilesLayoutProvider],
     selector: &#x27;deja-tiles&#x27;,
     styleUrls: [
@@ -3758,7 +3784,7 @@ export class DejaTilesComponent implements AfterViewInit, ControlValueAccessor, 
 
     @ViewChild(&#x27;tilesContainer&#x27;) private tilesContainer: ElementRef;
 
-    constructor(el: ElementRef, private layoutProvider: DejaTilesLayoutProvider, @Self() @Optional() public _control: NgControl) {
+    constructor(el: ElementRef, private changeDetectorRef: ChangeDetectorRef, private layoutProvider: DejaTilesLayoutProvider, @Self() @Optional() public _control: NgControl) {
         if (this._control) {
             this._control.valueAccessor &#x3D; this;
         }
@@ -3898,6 +3924,7 @@ export class DejaTilesComponent implements AfterViewInit, ControlValueAccessor, 
     public writeValue(models: any) {
         this._models &#x3D; models || [];
         this._tiles$.next(this.layoutProvider.tiles &#x3D; (this._models.map((tile) &#x3D;&gt; new DejaTile(tile))));
+        this.changeDetectorRef.markForCheck();
     }
 
     public registerOnChange(fn: any) {
@@ -4077,7 +4104,7 @@ export class DejaTilesComponent implements AfterViewInit, ControlValueAccessor, 
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><div #tilesContainer id="tiles" [class.design]="designMode" [deja-mouse-droppable]="getDropContext()" [attr.tabindex]="tabIndex" (focus)="onFocus()" (blur)="onBlur()">    <deja-tile *ngFor="let tile of tiles$ | async; let index = index;" [id]="tile.id" [tile]="tile" [designMode]="designMode" [attr.tile-index]="index" [template]="tileTemplate" (close)="onTileClosed(tile)" (modelChanged)="onTileModelChanged(tile)"></deja-tile>    <div deja-tile-position [bounds]="selectionRect$ | async"></div></div></div>'
-    var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaCodeViewerComponent', 'selector': 'deja-code-viewer'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaItemComponent', 'selector': 'deja-item'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMarkdownComponent', 'selector': 'deja-markdown'},{'name': 'DejaMenuComponent', 'selector': 'deja-menu'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSidenavComponent', 'selector': 'deja-sidenav'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTagComponent', 'selector': 'deja-tag'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'}];
+    var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaCodeViewerComponent', 'selector': 'deja-code-viewer'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaItemComponent', 'selector': 'deja-item'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMarkdownComponent', 'selector': 'deja-markdown'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaOverlayComponent', 'selector': 'deja-overlay'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSidenavComponent', 'selector': 'deja-sidenav'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTagComponent', 'selector': 'deja-tag'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'}];
     var DIRECTIVES = [{'name': 'DateValidatorDirective', 'selector': '[date-validator][ngModel]'},{'name': 'DejaAutosizeTextAreaDirective', 'selector': 'textarea[deja-autosize]'},{'name': 'DejaChildValidatorDirective', 'selector': '[deja-child-validator]'},{'name': 'DejaDraggableDirective', 'selector': '[deja-draggable]'},{'name': 'DejaDroppableDirective', 'selector': '[deja-droppable]'},{'name': 'DejaEditableDirective', 'selector': '[deja-editable]'},{'name': 'DejaMouseDraggableDirective', 'selector': '[deja-mouse-draggable]'},{'name': 'DejaMouseDroppableDirective', 'selector': '[deja-mouse-droppable]'},{'name': 'DejaSidenavContentDirective', 'selector': 'deja-sidenav-content, [deja-sidenav-content]'},{'name': 'DejaSidenavHeaderDirective', 'selector': 'deja-sidenav-header, [deja-sidenav-header]'},{'name': 'DejaSidenavMenuDirective', 'selector': 'deja-sidenav-menu, [deja-sidenav-menu]'},{'name': 'DejaSidenavMenuSeparatorDirective', 'selector': 'deja-sidenav-menu-separator, [deja-sidenav-menu-separator]'},{'name': 'DejaSlimScrollDirective', 'selector': '[slimScroll]'},{'name': 'DejaTilePositionDirective', 'selector': '[deja-tile-position]'},{'name': 'DejaTooltipDirective', 'selector': '[deja-tooltip]'},{'name': 'PendingOnFocusDirective', 'selector': '[pending-onfocus]'},{'name': 'SplitAreaDirective', 'selector': 'split-area'},{'name': 'SplitGutterDirective', 'selector': 'split-gutter'},{'name': 'ValidateOnBlurDirective', 'selector': '[validate-onblur]'}];
     var ACTUAL_COMPONENT = {'name': 'DejaTilesComponent'};
 </script>

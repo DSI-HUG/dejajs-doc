@@ -147,9 +147,6 @@
                                     <a href="../modules/DejaMarkdownModule.html" >DejaMarkdownModule</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../modules/DejaMenuModule.html" >DejaMenuModule</a>
-                                </li>
-                                <li class="link">
                                     <a href="../modules/DejaMessageBoxModule.html" >DejaMessageBoxModule</a>
                                 </li>
                                 <li class="link">
@@ -157,6 +154,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaOverlayModule.html" >DejaOverlayModule</a>
                                 </li>
                                 <li class="link">
                                     <a href="../modules/DejaPipeModule.html" >DejaPipeModule</a>
@@ -202,6 +202,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../modules/GroupingModule.html" >GroupingModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/MediaModule.html" >MediaModule</a>
                                 </li>
                         </ul>
                     </li>
@@ -287,9 +290,6 @@
                                     <a href="../components/DejaMarkdownComponent.html" >DejaMarkdownComponent</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../components/DejaMenuComponent.html" >DejaMenuComponent</a>
-                                </li>
-                                <li class="link">
                                     <a href="../components/DejaMessageBoxComponent.html" >DejaMessageBoxComponent</a>
                                 </li>
                                 <li class="link">
@@ -297,6 +297,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaOverlayComponent.html" >DejaOverlayComponent</a>
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaRangeComponent.html" >DejaRangeComponent</a>
@@ -567,6 +570,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../injectables/MaterialColors.html" >MaterialColors</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../injectables/MediaService.html" >MediaService</a>
                                 </li>
                                 <li class="link">
                                     <a href="../injectables/MonacoEditorService.html" >MonacoEditorService</a>
@@ -953,9 +959,6 @@
                                            <a href="../modules/DejaMarkdownModule.html" >DejaMarkdownModule</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../modules/DejaMenuModule.html" >DejaMenuModule</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="../modules/DejaMessageBoxModule.html" >DejaMessageBoxModule</a>
                                        </li>
                                        <li class="link">
@@ -963,6 +966,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaOverlayModule.html" >DejaOverlayModule</a>
                                        </li>
                                        <li class="link">
                                            <a href="../modules/DejaPipeModule.html" >DejaPipeModule</a>
@@ -1008,6 +1014,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../modules/GroupingModule.html" >GroupingModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/MediaModule.html" >MediaModule</a>
                                        </li>
                                </ul>
                            </li>
@@ -1093,9 +1102,6 @@
                                            <a href="../components/DejaMarkdownComponent.html" >DejaMarkdownComponent</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../components/DejaMenuComponent.html" >DejaMenuComponent</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="../components/DejaMessageBoxComponent.html" >DejaMessageBoxComponent</a>
                                        </li>
                                        <li class="link">
@@ -1103,6 +1109,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaOverlayComponent.html" >DejaOverlayComponent</a>
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaRangeComponent.html" >DejaRangeComponent</a>
@@ -1373,6 +1382,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../injectables/MaterialColors.html" >MaterialColors</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../injectables/MediaService.html" >MediaService</a>
                                        </li>
                                        <li class="link">
                                            <a href="../injectables/MonacoEditorService.html" >MonacoEditorService</a>
@@ -1678,6 +1690,10 @@
     <table class="table table-sm table-hover">
         <tbody>
 
+            <tr>
+                <td class="col-md-3">changeDetection</td>
+                <td class="col-md-9"><code>ChangeDetectionStrategy.OnPush</code></td>
+            </tr>
 
 
 
@@ -1793,7 +1809,7 @@
                 <tbody>
                     <tr>
                         <td class="col-md-4">
-                            <code>constructor(el: <a href="https://angular.io/docs/ts/latest/api/core/index/ElementRef-class.html" target="_blank">ElementRef</a>)</code>
+                            <code>constructor(el: <a href="https://angular.io/docs/ts/latest/api/core/index/ElementRef-class.html" target="_blank">ElementRef</a>, changeDetectorRef: <a href="https://angular.io/docs/ts/latest/api/core/index/ChangeDetectorRef-class.html" target="_blank">ChangeDetectorRef</a>)</code>
                         </td>
                     </tr>
                             <tr>
@@ -1820,6 +1836,15 @@
                                                       <td>el</td>
                                                       <td>
                                                                 <code><a href="https://angular.io/docs/ts/latest/api/core/index/ElementRef-class.html" target="_blank" >ElementRef</a></code>
+                                                      </td>
+                                                      <td>
+                                                      </td>
+                                                      <td></td>
+                                                    </tr>
+                                                    <tr>
+                                                      <td>changeDetectorRef</td>
+                                                      <td>
+                                                                <code><a href="https://angular.io/docs/ts/latest/api/core/index/ChangeDetectorRef-class.html" target="_blank" >ChangeDetectorRef</a></code>
                                                       </td>
                                                       <td>
                                                       </td>
@@ -1956,7 +1981,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="115" class="link-to-prism">src/component/tiles/tile.component.ts:115</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="153" class="link-to-prism">src/component/tiles/tile.component.ts:153</a></div>
                                 </td>
                             </tr>
     
@@ -2023,7 +2048,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="107" class="link-to-prism">src/component/tiles/tile.component.ts:107</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="145" class="link-to-prism">src/component/tiles/tile.component.ts:145</a></div>
                                 </td>
                             </tr>
     
@@ -2035,13 +2060,13 @@
 
 
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">import { Component, ElementRef, EventEmitter, Input, OnDestroy, Output } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers"><code class="language-typescript">import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, EventEmitter, Input, OnDestroy, Output } from &#x27;@angular/core&#x27;;
 import &#x27;rxjs/add/operator/delay&#x27;;
 import { Observable } from &#x27;rxjs/Observable&#x27;;
-import { Subscription } from &#x27;rxjs/Subscription&#x27;;
 import { DejaTile } from &#x27;./tile.class&#x27;;
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.OnPush,
     selector: &#x27;deja-tile&#x27;,
     styleUrls: [
         &#x27;./tile.component.scss&#x27;,
@@ -2057,9 +2082,9 @@ export class DejaTileComponent implements OnDestroy {
     public element: HTMLElement;
 
     private _tile: DejaTile;
-    private subscriptions &#x3D; [] as Subscription[];
+    private isAlive &#x3D; true;
 
-    constructor(el: ElementRef) {
+    constructor(el: ElementRef, private changeDetectorRef: ChangeDetectorRef) {
         this.element &#x3D; el.nativeElement as HTMLElement;
         this.element.setAttribute(&#x27;hidden&#x27;, &#x27;0&#x27;);
     }
@@ -2079,18 +2104,27 @@ export class DejaTileComponent implements OnDestroy {
 
             if (tile.fading) {
                 this.element.setAttribute(&#x27;fading&#x27;, &#x27;0&#x27;);
+                this.changeDetectorRef.markForCheck();
             }
 
-            this.subscriptions.push(Observable.from(tile.pixelBounds$)
+            Observable.from(tile.pixelBounds$)
+                .filter((bounds) &#x3D;&gt; !!bounds)
                 .first()
+                .takeWhile(() &#x3D;&gt; this.isAlive &amp;&amp; !!this._tile)
                 .filter(() &#x3D;&gt; tile.fading)
-                .do(() &#x3D;&gt; this.element.setAttribute(&#x27;fading&#x27;, &#x27;1&#x27;))
+                .do(() &#x3D;&gt; {
+                    this.element.setAttribute(&#x27;fading&#x27;, &#x27;1&#x27;);
+                    this.changeDetectorRef.markForCheck();
+                })
                 .delay(200)
                 .subscribe(() &#x3D;&gt; {
                     this.element.removeAttribute(&#x27;fading&#x27;);
-                }));
+                    this.changeDetectorRef.markForCheck();
+                });
 
-            this.subscriptions.push(Observable.from(tile.pixelBounds$)
+            Observable.from(tile.pixelBounds$)
+                .takeWhile(() &#x3D;&gt; this.isAlive &amp;&amp; !!this._tile)
+                .filter((bounds) &#x3D;&gt; !!bounds)
                 .subscribe((bounds) &#x3D;&gt; {
                     if (!tile.isHidden) {
                         this.element.removeAttribute(&#x27;hidden&#x27;);
@@ -2099,16 +2133,43 @@ export class DejaTileComponent implements OnDestroy {
                     this.element.style.top &#x3D; &#x60;${bounds.top}px&#x60;;
                     this.element.style.width &#x3D; &#x60;${bounds.width}px&#x60;;
                     this.element.style.height &#x3D; &#x60;${bounds.height}px&#x60;;
-                }));
+                    this.changeDetectorRef.markForCheck();
+                });
 
-            this.subscriptions.push(Observable.from(tile.pressed$).subscribe((value) &#x3D;&gt; toogleAttribute(&#x27;pressed&#x27;, value)));
-            this.subscriptions.push(Observable.from(tile.selected$).subscribe((value) &#x3D;&gt; toogleAttribute(&#x27;selected&#x27;, value)));
-            this.subscriptions.push(Observable.from(tile.dragging$).subscribe((value) &#x3D;&gt; toogleAttribute(&#x27;drag&#x27;, value)));
-            this.subscriptions.push(Observable.from(tile.dropping$).subscribe((value) &#x3D;&gt; toogleAttribute(&#x27;drop&#x27;, value)));
-            this.subscriptions.push(Observable.from(tile.cutted$).subscribe((value) &#x3D;&gt; toogleAttribute(&#x27;cutted&#x27;, value)));
-            this.subscriptions.push(Observable.from(tile.expanded$).subscribe((value) &#x3D;&gt; toogleAttribute(&#x27;expanded&#x27;, value)));
+            Observable.from(tile.pressed$)
+                .takeWhile(() &#x3D;&gt; this.isAlive &amp;&amp; !!this._tile)
+                .do((value) &#x3D;&gt; toogleAttribute(&#x27;pressed&#x27;, value))
+                .subscribe(() &#x3D;&gt; this.changeDetectorRef.markForCheck());
 
-            this.subscriptions.push(Observable.from(tile.deleted$).subscribe(() &#x3D;&gt; this.element.remove()));
+            Observable.from(tile.selected$)
+                .takeWhile(() &#x3D;&gt; this.isAlive &amp;&amp; !!this._tile)
+                .do((value) &#x3D;&gt; toogleAttribute(&#x27;selected&#x27;, value))
+                .subscribe(() &#x3D;&gt; this.changeDetectorRef.markForCheck());
+
+            Observable.from(tile.dragging$)
+                .takeWhile(() &#x3D;&gt; this.isAlive &amp;&amp; !!this._tile)
+                .do((value) &#x3D;&gt; toogleAttribute(&#x27;drag&#x27;, value))
+                .subscribe(() &#x3D;&gt; this.changeDetectorRef.markForCheck());
+
+            Observable.from(tile.dropping$)
+                .takeWhile(() &#x3D;&gt; this.isAlive &amp;&amp; !!this._tile)
+                .do((value) &#x3D;&gt; toogleAttribute(&#x27;drop&#x27;, value))
+                .subscribe(() &#x3D;&gt; this.changeDetectorRef.markForCheck());
+
+            Observable.from(tile.cutted$)
+                .takeWhile(() &#x3D;&gt; this.isAlive &amp;&amp; !!this._tile)
+                .do((value) &#x3D;&gt; toogleAttribute(&#x27;cutted&#x27;, value))
+                .subscribe(() &#x3D;&gt; this.changeDetectorRef.markForCheck());
+
+            Observable.from(tile.expanded$)
+                .takeWhile(() &#x3D;&gt; this.isAlive &amp;&amp; !!this._tile)
+                .do((value) &#x3D;&gt; toogleAttribute(&#x27;expanded&#x27;, value))
+                .subscribe(() &#x3D;&gt; this.changeDetectorRef.markForCheck());
+
+            Observable.from(tile.deleted$)
+                .takeWhile(() &#x3D;&gt; this.isAlive &amp;&amp; !!this._tile)
+                .do(() &#x3D;&gt; this.element.remove())
+                .subscribe(() &#x3D;&gt; this.changeDetectorRef.markForCheck());
 
             const tooogleHide$ &#x3D; Observable.from(tile.hidden$)
                 .do((value) &#x3D;&gt; {
@@ -2116,20 +2177,22 @@ export class DejaTileComponent implements OnDestroy {
                 });
 
             // Hide
-            this.subscriptions.push(tooogleHide$
+            tooogleHide$
+                .takeWhile(() &#x3D;&gt; this.isAlive &amp;&amp; !!this._tile)
                 .debounceTime(1000)
                 .filter((value) &#x3D;&gt; value)
-                .subscribe(() &#x3D;&gt; this.element.setAttribute(&#x27;hidden&#x27;, &#x27;0&#x27;)));
+                .do(() &#x3D;&gt; this.element.setAttribute(&#x27;hidden&#x27;, &#x27;0&#x27;))
+                .subscribe(() &#x3D;&gt; this.changeDetectorRef.markForCheck());
 
             // Show
-            this.subscriptions.push(tooogleHide$
+            tooogleHide$
+                .takeWhile(() &#x3D;&gt; this.isAlive &amp;&amp; !!this._tile)
                 .debounceTime(1)
                 .filter((value) &#x3D;&gt; !value)
-                .subscribe(() &#x3D;&gt; this.element.removeAttribute(&#x27;hidden&#x27;)));
-
-        } else {
-            this.subscriptions.forEach((subscription) &#x3D;&gt; subscription.unsubscribe());
-            this.subscriptions &#x3D; [];
+                .do(() &#x3D;&gt; this.element.removeAttribute(&#x27;hidden&#x27;))
+                .subscribe(() &#x3D;&gt; {
+                    this.changeDetectorRef.markForCheck();
+                });
         }
     }
 
@@ -2138,7 +2201,7 @@ export class DejaTileComponent implements OnDestroy {
     }
 
     public ngOnDestroy() {
-        this.subscriptions.forEach((subscription) &#x3D;&gt; subscription.unsubscribe());
+        this.isAlive &#x3D; false;
     }
 
     protected onTitleChanged() {
@@ -2151,7 +2214,7 @@ export class DejaTileComponent implements OnDestroy {
     <div class="tab-pane fade" id="templateData">
         <pre class="line-numbers"><code class="language-html">&lt;deja-tile-group class&#x3D;&quot;noselect&quot; *ngIf&#x3D;&quot;tile.type&#x3D;&#x3D;&#x3D;&#x27;group&#x27;&quot; [model]&#x3D;&quot;tile&quot; [designMode]&#x3D;&quot;designMode&quot; (titleChanged)&#x3D;&quot;onTitleChanged($event)&quot; [color]&#x3D;&quot;tile.color&quot; (close)&#x3D;&quot;close.emit($event)&quot;&gt;&lt;/deja-tile-group&gt;
 &lt;ng-template *ngIf&#x3D;&quot;tile.type!&#x3D;&#x3D;&#x27;group&#x27;&quot; [ngTemplateOutlet]&#x3D;&quot;template&quot; [ngTemplateOutletContext]&#x3D;&quot;{ $implicit: tile, designMode: designMode }&quot;&gt;&lt;/ng-template&gt;
-&lt;md-progress-spinner *ngIf&#x3D;&quot;this.tile &amp;&amp; this.tile.pending$ | async&quot; mode&#x3D;&quot;indeterminate&quot; class&#x3D;&quot;accent&quot;&gt;&lt;/md-progress-spinner&gt;
+&lt;mat-progress-spinner *ngIf&#x3D;&quot;this.tile &amp;&amp; this.tile.pending$ | async&quot; mode&#x3D;&quot;indeterminate&quot; class&#x3D;&quot;accent&quot;&gt;&lt;/mat-progress-spinner&gt;
 
 
 </code></pre>
@@ -2180,8 +2243,8 @@ export class DejaTileComponent implements OnDestroy {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><deja-tile-group class="noselect" *ngIf="tile.type===\'group\'" [model]="tile" [designMode]="designMode" (titleChanged)="onTitleChanged($event)" [color]="tile.color" (close)="close.emit($event)"></deja-tile-group><ng-template *ngIf="tile.type!==\'group\'" [ngTemplateOutlet]="template" [ngTemplateOutletContext]="{ $implicit: tile, designMode: designMode }"></ng-template><md-progress-spinner *ngIf="this.tile && this.tile.pending$ | async" mode="indeterminate" class="accent"></md-progress-spinner></div>'
-    var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaCodeViewerComponent', 'selector': 'deja-code-viewer'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaItemComponent', 'selector': 'deja-item'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMarkdownComponent', 'selector': 'deja-markdown'},{'name': 'DejaMenuComponent', 'selector': 'deja-menu'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSidenavComponent', 'selector': 'deja-sidenav'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTagComponent', 'selector': 'deja-tag'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'}];
+        var COMPONENT_TEMPLATE = '<div><deja-tile-group class="noselect" *ngIf="tile.type===\'group\'" [model]="tile" [designMode]="designMode" (titleChanged)="onTitleChanged($event)" [color]="tile.color" (close)="close.emit($event)"></deja-tile-group><ng-template *ngIf="tile.type!==\'group\'" [ngTemplateOutlet]="template" [ngTemplateOutletContext]="{ $implicit: tile, designMode: designMode }"></ng-template><mat-progress-spinner *ngIf="this.tile && this.tile.pending$ | async" mode="indeterminate" class="accent"></mat-progress-spinner></div>'
+    var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaCodeViewerComponent', 'selector': 'deja-code-viewer'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaItemComponent', 'selector': 'deja-item'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMarkdownComponent', 'selector': 'deja-markdown'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaOverlayComponent', 'selector': 'deja-overlay'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSidenavComponent', 'selector': 'deja-sidenav'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTagComponent', 'selector': 'deja-tag'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'}];
     var DIRECTIVES = [{'name': 'DateValidatorDirective', 'selector': '[date-validator][ngModel]'},{'name': 'DejaAutosizeTextAreaDirective', 'selector': 'textarea[deja-autosize]'},{'name': 'DejaChildValidatorDirective', 'selector': '[deja-child-validator]'},{'name': 'DejaDraggableDirective', 'selector': '[deja-draggable]'},{'name': 'DejaDroppableDirective', 'selector': '[deja-droppable]'},{'name': 'DejaEditableDirective', 'selector': '[deja-editable]'},{'name': 'DejaMouseDraggableDirective', 'selector': '[deja-mouse-draggable]'},{'name': 'DejaMouseDroppableDirective', 'selector': '[deja-mouse-droppable]'},{'name': 'DejaSidenavContentDirective', 'selector': 'deja-sidenav-content, [deja-sidenav-content]'},{'name': 'DejaSidenavHeaderDirective', 'selector': 'deja-sidenav-header, [deja-sidenav-header]'},{'name': 'DejaSidenavMenuDirective', 'selector': 'deja-sidenav-menu, [deja-sidenav-menu]'},{'name': 'DejaSidenavMenuSeparatorDirective', 'selector': 'deja-sidenav-menu-separator, [deja-sidenav-menu-separator]'},{'name': 'DejaSlimScrollDirective', 'selector': '[slimScroll]'},{'name': 'DejaTilePositionDirective', 'selector': '[deja-tile-position]'},{'name': 'DejaTooltipDirective', 'selector': '[deja-tooltip]'},{'name': 'PendingOnFocusDirective', 'selector': '[pending-onfocus]'},{'name': 'SplitAreaDirective', 'selector': 'split-area'},{'name': 'SplitGutterDirective', 'selector': 'split-gutter'},{'name': 'ValidateOnBlurDirective', 'selector': '[validate-onblur]'}];
     var ACTUAL_COMPONENT = {'name': 'DejaTileComponent'};
 </script>

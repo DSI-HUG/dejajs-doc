@@ -153,10 +153,10 @@
                                     <a href="../modules/DejaMonacoEditorModule.html" >DejaMonacoEditorModule</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../modules/DejaMouseDragDropModule.html"  data-type="entity-link" class="active" >DejaMouseDragDropModule</a>
+                                    <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../modules/DejaOverlayModule.html" >DejaOverlayModule</a>
+                                    <a href="../modules/DejaOverlayModule.html"  data-type="entity-link" class="active" >DejaOverlayModule</a>
                                 </li>
                                 <li class="link">
                                     <a href="../modules/DejaPipeModule.html" >DejaPipeModule</a>
@@ -965,10 +965,10 @@
                                            <a href="../modules/DejaMonacoEditorModule.html" >DejaMonacoEditorModule</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../modules/DejaMouseDragDropModule.html"  data-type="entity-link" class="active" >DejaMouseDragDropModule</a>
+                                           <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../modules/DejaOverlayModule.html" >DejaOverlayModule</a>
+                                           <a href="../modules/DejaOverlayModule.html"  data-type="entity-link" class="active" >DejaOverlayModule</a>
                                        </li>
                                        <li class="link">
                                            <a href="../modules/DejaPipeModule.html" >DejaPipeModule</a>
@@ -1646,7 +1646,7 @@
 
 <ol class="breadcrumb">
   <li>Modules</li>
-  <li>DejaMouseDragDropModule</li>
+  <li>DejaOverlayModule</li>
 </ol>
 
 
@@ -1668,7 +1668,7 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/component/mouse-dragdrop/index.ts</code>
+            <code>src/component/overlay/index.ts</code>
         </p>
 
 
@@ -1678,13 +1678,15 @@
                     <h3>Declarations<a href="https://angular.io/api/core/NgModule#declarations" target="_blank" title="Official documentation about module declarations"><span class="fa fa-info-circle"></span></a></h3>
                     <ul class="list-group">
                             <li class="list-group-item">
-                                <a href="../directives/DejaMouseDraggableDirective.html">DejaMouseDraggableDirective</a>
+                                <a href="../components/DejaOverlayComponent.html">DejaOverlayComponent</a>
                             </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3>Imports<a href="https://angular.io/api/core/NgModule#imports" target="_blank" title="Official documentation about module imports"><span class="fa fa-info-circle"></a></h3>
+                    <ul class="list-group">
                             <li class="list-group-item">
-                                <a href="../directives/DejaMouseDroppableDirective.html">DejaMouseDroppableDirective</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="../components/DejaMouseDragDropCursorComponent.html">DejaMouseDragDropCursorComponent</a>
+                                    <a href="../modules/MediaModule.html" >MediaModule</a>
                             </li>
                     </ul>
                 </div>
@@ -1692,13 +1694,7 @@
                     <h3>Exports<a href="https://angular.io/api/core/NgModule#exports" target="_blank" title="Official documentation about module exports"><span class="fa fa-info-circle"></a></h3>
                     <ul class="list-group">
                             <li class="list-group-item">
-                                    <a href="../directives/DejaMouseDraggableDirective.html" >DejaMouseDraggableDirective</a>
-                            </li>
-                            <li class="list-group-item">
-                                    <a href="../directives/DejaMouseDroppableDirective.html" >DejaMouseDroppableDirective</a>
-                            </li>
-                            <li class="list-group-item">
-                                    <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                    <a href="../components/DejaOverlayComponent.html" >DejaOverlayComponent</a>
                             </li>
                     </ul>
                 </div>
@@ -1708,30 +1704,24 @@
 
 
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">import { ModuleWithProviders, NgModule } from &#x27;@angular/core&#x27;;
-import { DejaMouseDragDropCursorComponent } from &#x27;./mouse-dragdrop-cursor.component&#x27;;
-import { DejaMouseDragDropService } from &#x27;./mouse-dragdrop.service&#x27;;
-import { DejaMouseDraggableDirective } from &#x27;./mouse-draggable.directive&#x27;;
-import { DejaMouseDroppableDirective } from &#x27;./mouse-droppable.directive&#x27;;
+        <pre class="line-numbers"><code class="language-typescript">import {OverlayModule} from &#x27;@angular/cdk/overlay&#x27;;
+import {CommonModule} from &#x27;@angular/common&#x27;;
+import {NgModule} from &#x27;@angular/core&#x27;;
+import { MediaModule } from &#x27;../../common/core/media/index&#x27;;
+import {DejaOverlayComponent} from &#x27;./overlay.component&#x27;;
 
 @NgModule({
-    declarations: [DejaMouseDraggableDirective, DejaMouseDroppableDirective, DejaMouseDragDropCursorComponent],
-    exports: [DejaMouseDraggableDirective, DejaMouseDroppableDirective, DejaMouseDragDropCursorComponent],
-    providers: [],
+    declarations: [DejaOverlayComponent],
+    exports: [DejaOverlayComponent],
+    imports: [
+        CommonModule,
+        OverlayModule,
+        MediaModule,
+    ],
 })
-export class DejaMouseDragDropModule {
-    public static forRoot(): ModuleWithProviders {
-        return {
-            ngModule: DejaMouseDragDropModule,
-            providers: [DejaMouseDragDropService],
-        };
-    }
-}
+export class DejaOverlayModule { }
 
-export * from &#x27;./mouse-dragdrop.service&#x27;;
-export * from &#x27;./mouse-draggable.directive&#x27;;
-export * from &#x27;./mouse-droppable.directive&#x27;;
-export * from &#x27;./mouse-dragdrop-cursor.component&#x27;;
+export * from &#x27;./overlay.component&#x27;;
 </code></pre>
     </div>
 </div>
