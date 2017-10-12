@@ -507,6 +507,15 @@
                                     <a href="../classes/MaterialColor.html" >MaterialColor</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../classes/MockElementRef.html" >MockElementRef</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/MockMediaService.html" >MockMediaService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/MockObservableMedia.html" >MockObservableMedia</a>
+                                </li>
+                                <li class="link">
                                     <a href="../classes/Position.html" >Position</a>
                                 </li>
                                 <li class="link">
@@ -1319,6 +1328,15 @@
                                            <a href="../classes/MaterialColor.html" >MaterialColor</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../classes/MockElementRef.html" >MockElementRef</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/MockMediaService.html" >MockMediaService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/MockObservableMedia.html" >MockObservableMedia</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../classes/Position.html" >Position</a>
                                        </li>
                                        <li class="link">
@@ -1784,6 +1802,9 @@
                                 <span class="modifier">Protected</span> <a href="#onSelect">onSelect</a>
                             </li>
                             <li>
+                                <span class="modifier">Public</span> <a href="#refresh">refresh</a>
+                            </li>
+                            <li>
                                 <span class="modifier">Public</span> <a href="#registerOnChange">registerOnChange</a>
                             </li>
                             <li>
@@ -2133,7 +2154,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="198" class="link-to-prism">src/component/range/range.component.ts:198</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="203" class="link-to-prism">src/component/range/range.component.ts:203</a></div>
                                 </td>
                             </tr>
     
@@ -2204,7 +2225,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="183" class="link-to-prism">src/component/range/range.component.ts:183</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="188" class="link-to-prism">src/component/range/range.component.ts:188</a></div>
                                 </td>
                             </tr>
     
@@ -2253,6 +2274,41 @@
                                     <div class="io-description">
                                         
                                     </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <table class="table table-sm table-bordered">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <a name="refresh"></a>
+                            <span class="name"><b><span class="modifier">Public</span> refresh</b><a href="#refresh"><span class="fa fa-link"></span></a></span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                                <span class="modifier-icon fa fa-reset"></span>
+                            <code>refresh()</code>
+                        </td>
+                    </tr>
+    
+    
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="183" class="link-to-prism">src/component/range/range.component.ts:183</a></div>
+                                </td>
+                            </tr>
+    
+                    <tr>
+                        <td class="col-md-4">
+                                <div class="io-description"><p>Force control to rebind </p>
+    </div>
+    
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+    
+                                </div>
                         </td>
                     </tr>
                 </tbody>
@@ -2892,6 +2948,11 @@ export class DejaRangeComponent implements ControlValueAccessor {
                     return range;
                 });
         }
+    }
+
+    /** Force control to rebind */
+    public refresh() {
+        this.changeDetectorRef.markForCheck();
     }
 
     // set the new selected index and emit a IRangeEvent

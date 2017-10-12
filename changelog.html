@@ -507,6 +507,15 @@
                                     <a href="./classes/MaterialColor.html" >MaterialColor</a>
                                 </li>
                                 <li class="link">
+                                    <a href="./classes/MockElementRef.html" >MockElementRef</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/MockMediaService.html" >MockMediaService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="./classes/MockObservableMedia.html" >MockObservableMedia</a>
+                                </li>
+                                <li class="link">
                                     <a href="./classes/Position.html" >Position</a>
                                 </li>
                                 <li class="link">
@@ -1319,6 +1328,15 @@
                                            <a href="./classes/MaterialColor.html" >MaterialColor</a>
                                        </li>
                                        <li class="link">
+                                           <a href="./classes/MockElementRef.html" >MockElementRef</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/MockMediaService.html" >MockMediaService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="./classes/MockObservableMedia.html" >MockObservableMedia</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="./classes/Position.html" >Position</a>
                                        </li>
                                        <li class="link">
@@ -1642,6 +1660,72 @@
                <div class="content getting-started">
                    <div class="content-data">
 
+<h4 id="2-14-1-2017-10-12-">2.14.1 (2017-10-12)</h4>
+<h5 id="continuous-integration">Continuous Integration</h5>
+<ul>
+<li><strong>Test:</strong> Increase karma timeout for PC with bad perf (<a href="https://github.com/DSI-HUG/dejajs-components/commit/18f1d65aa7a5a111106d2fae47524349d273b050">18f1d65a</a>)</li>
+</ul>
+<h5 id="documentation-changes">Documentation Changes</h5>
+<ul>
+<li><strong>DejaOverlayComponent:</strong> ajouter entête licence HUG (<a href="https://github.com/DSI-HUG/dejajs-components/commit/541cc49eccf673d4506414aec2610587039282cc">541cc49e</a>)</li>
+</ul>
+<h5 id="new-features">New Features</h5>
+<ul>
+<li><strong>RangeComponent:</strong> Add refresh function (<a href="https://github.com/DSI-HUG/dejajs-components/commit/96723d4d24351d8990d74e307f291fb244e6951e">96723d4d</a>)</li>
+</ul>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>DejaMarkdown:</strong> Fix color margin in code sample (<a href="https://github.com/DSI-HUG/dejajs-components/commit/0279527369c8e41694f3ac6b10e5528f7e22beca">02795273</a>)</li>
+<li><strong>DejaTreeList:</strong><ul>
+<li>modelIsValue property initialized to undefined and is determined by the first passed model (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1facb7ada93baed4693769ceef0e0c28b44f8736">1facb7ad</a>)</li>
+<li>modelIsValue property can be defined for multiselect (<a href="https://github.com/DSI-HUG/dejajs-components/commit/a2b9adec3450a99bd623524f0904250782400c42">a2b9adec</a>)</li>
+</ul>
+</li>
+<li><strong>DejaSelect:</strong><ul>
+<li>modelIsValue property initialized to undefined and is determined by the first passed model (<a href="https://github.com/DSI-HUG/dejajs-components/commit/bd7dc3cf9d6559c0ecf1837d2eef65a8330316eb">bd7dc3cf</a>)</li>
+<li>modelIsValue property can be defined for multiselect (<a href="https://github.com/DSI-HUG/dejajs-components/commit/3d9c0673d1e413686d77e28216e258312c763bf0">3d9c0673</a>)</li>
+</ul>
+</li>
+<li><strong>DejaOverlayComponent:</strong><ul>
+<li>only throw visibilityChanged if old value is different from new value (<a href="https://github.com/DSI-HUG/dejajs-components/commit/607aa9f045a58393160b2902e2e127f9e5427093">607aa9f0</a>)</li>
+<li>tooltip style conflict with overlay style (<a href="https://github.com/DSI-HUG/dejajs-components/commit/b3f6e3f1e9e6fad1bd91049faf0916cd12005029">b3f6e3f1</a>)</li>
+</ul>
+</li>
+<li><strong>Diacritics:</strong> Remove crash when null or undefined was passed. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/60afeca1fb0483b6ee56499f7bbebf0b3191de24">60afeca1</a>)</li>
+<li><strong>DejaOverlay:</strong><ul>
+<li>Replacing class cdk-overlay-container with deja-overlay-container (<a href="https://github.com/DSI-HUG/dejajs-components/commit/a86f130d11db94da9e9f5e0dd0badb1bf0b19336">a86f130d</a>)</li>
+<li>Menu styling was broken (<a href="https://github.com/DSI-HUG/dejajs-components/commit/bcb24836d872120f0ec0b61b2bcc04ade74d91d4">bcb24836</a>)</li>
+</ul>
+</li>
+</ul>
+<h5 id="other-changes">Other Changes</h5>
+<ul>
+<li><strong>Test:</strong><ul>
+<li>Fix Test E2E (<a href="https://github.com/DSI-HUG/dejajs-components/commit/f57edb4338f701fbf5b8c6065bf6b3a67f68c8e2">f57edb43</a>)</li>
+<li>conf travis (<a href="https://github.com/DSI-HUG/dejajs-components/commit/f14471370ee2c8f7dc8ac5a8486daeaebee51353">f1447137</a>)</li>
+<li>Restore Karma config (<a href="https://github.com/DSI-HUG/dejajs-components/commit/5802639a3b9f4f5fc5edc876018f8c4130ec820b">5802639a</a>)</li>
+<li>Test E2E conf (<a href="https://github.com/DSI-HUG/dejajs-components/commit/70acfeff08119be7fee2d473aa4ec9da2c0763bf">70acfeff</a>)</li>
+<li>Try e2e without chrome headless (<a href="https://github.com/DSI-HUG/dejajs-components/commit/9103162083afadf9b7bf919c06d9e22c46349288">91031620</a>)</li>
+<li>Try e2e without chrome headless (<a href="https://github.com/DSI-HUG/dejajs-components/commit/e339cfe96ddae18dd8d18a027a97772ebd53d561">e339cfe9</a>)</li>
+<li>Travis test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/9a0b5c38e746ee35f81d678cc2b6cc92183bb31f">9a0b5c38</a>)</li>
+<li>Fix test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/8bb154dadbb633898075e14657d06bdab89be55a">8bb154da</a>)</li>
+</ul>
+</li>
+</ul>
+<h5 id="reverts">Reverts</h5>
+<ul>
+<li><strong>DemoApp:</strong> Revert updates on theme selector (<a href="https://github.com/DSI-HUG/dejajs-components/commit/6e3434a8e22b055a31ef4811daef8ca9d6e294ea">6e3434a8</a>)</li>
+</ul>
+<h5 id="code-style-changes">Code Style Changes</h5>
+<ul>
+<li><strong>TSLint:</strong> Fix lint issue (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1038adff260aefbc1bb6f2369d56b710ae522989">1038adff</a>)</li>
+</ul>
+<h5 id="tests">Tests</h5>
+<ul>
+<li><strong>DejaSidenav:</strong> Add e2e test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/6c92482f427e26e8d42b16e3b0e2a307b22050fb">6c92482f</a>)</li>
+<li><strong>DejaOverlayComponent:</strong> added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/622b28aa63d1e2eb5e88eed006decc73f5b762d3">622b28aa</a>)</li>
+<li><strong>Sidenav:</strong> Add sidenav tests (<a href="https://github.com/DSI-HUG/dejajs-components/commit/95928040e70c7e537ce074c8d9645ce66df85b7a">95928040</a>)</li>
+</ul>
 <h3 id="2-14-0-2017-10-05-">2.14.0 (2017-10-05)</h3>
 <h5 id="breaking-changes">BREAKING CHANGES</h5>
 <ul>

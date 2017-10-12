@@ -507,6 +507,15 @@
                                     <a href="../classes/MaterialColor.html" >MaterialColor</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../classes/MockElementRef.html" >MockElementRef</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/MockMediaService.html" >MockMediaService</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/MockObservableMedia.html" >MockObservableMedia</a>
+                                </li>
+                                <li class="link">
                                     <a href="../classes/Position.html" >Position</a>
                                 </li>
                                 <li class="link">
@@ -1319,6 +1328,15 @@
                                            <a href="../classes/MaterialColor.html" >MaterialColor</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../classes/MockElementRef.html" >MockElementRef</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/MockMediaService.html" >MockMediaService</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/MockObservableMedia.html" >MockObservableMedia</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../classes/Position.html" >Position</a>
                                        </li>
                                        <li class="link">
@@ -1743,15 +1761,15 @@
                             <tr>
                                 <td class="col-md-4">
                                         <div class="io-description"><p>deserializeJson is a method to deserialize a json into a typed object. The <T> say that we want to &#39;capture&#39; the object type so we can return it.
-            More details : <a href="https://www.typescriptlang.org/docs/handbook/generics.html">https://www.typescriptlang.org/docs/handbook/generics.html</a></p>
+            More details : www.typescriptlang.org/docs/handbook/generics.html</p>
             <p>/!\ this is not a recursive function !
-                 Object into object will stay as generic objects.
-                 Re-use this function to deserialize them into typed objects.</p>
+                  Object into object will stay as generic objects.
+                  Re-use this function to deserialize them into typed objects.</p>
             <p>Usage : var obj = JsonUtils.deserializeJson(new TypedObj(), aJSON);
-                     Where TypedObj is a valid TypeScript class.
-                     After that, obj.constructor.name will be TypedObj
+                      Where TypedObj is a valid TypeScript class.
+                      After that, obj.constructor.name will be TypedObj
             {
-            Example of use : <a href="http://plnkr.co/edit/11b0kzypP0N9I9B8AqPx?p=preview">http://plnkr.co/edit/11b0kzypP0N9I9B8AqPx?p=preview</a></p>
+            Example of use : plnkr.co/edit/11b0kzypP0N9I9B8AqPx?p=preview</p>
             </div>
             
                                         <div class="io-description">
@@ -2159,23 +2177,23 @@
 
     /**
      * deserializeJson is a method to deserialize a json into a typed object. The &lt;T&gt; say that we want to &#x27;capture&#x27; the object type so we can return it.
-    * More details : https://www.typescriptlang.org/docs/handbook/generics.html
+     * More details : www.typescriptlang.org/docs/handbook/generics.html
+     *
+     * /!\ this is not a recursive function !
+     *      Object into object will stay as generic objects.
+     *      Re-use this function to deserialize them into typed objects.
+     *
+     * Usage : var obj &#x3D; JsonUtils.deserializeJson(new TypedObj(), aJSON);
+     *          Where TypedObj is a valid TypeScript class.
+     *          After that, obj.constructor.name will be TypedObj
+     * {
+    * Example of use : plnkr.co/edit/11b0kzypP0N9I9B8AqPx?p&#x3D;preview
     *
-    * /!\ this is not a recursive function !
-    *      Object into object will stay as generic objects.
-    *      Re-use this function to deserialize them into typed objects.
-    *
-    * Usage : var obj &#x3D; JsonUtils.deserializeJson(new TypedObj(), aJSON);
-    *          Where TypedObj is a valid TypeScript class.
-    *          After that, obj.constructor.name will be TypedObj
-    * {
-    * Example of use : http://plnkr.co/edit/11b0kzypP0N9I9B8AqPx?p&#x3D;preview
-    *
-    * @param {Object} obj : Object to deserialize into
-    * @param {Object | string} jsonObj : a JSON;
-    *
+     * @param {Object} obj : Object to deserialize into
+     * @param {Object | string} jsonObj : a JSON;
+     *
      * @return {&lt;T&gt;} obj : an object of &#x27;T&#x27; type
-    */
+     */
     public static deserializeJson&lt;T&gt;(obj: T, jsonObj: any): T {
 
         if (typeof jsonObj &#x3D;&#x3D;&#x3D; &#x27;string&#x27;) {
