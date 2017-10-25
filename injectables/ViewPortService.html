@@ -1829,7 +1829,7 @@ Ce service permet la gestion du viewport verticalement ou horizontalement.</p>
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="599" class="link-to-prism">src/common/core/item-list/viewport.service.ts:599</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="615" class="link-to-prism">src/common/core/item-list/viewport.service.ts:615</a></div>
                                         </td>
                                     </tr>
             
@@ -1862,7 +1862,7 @@ Ce service permet la gestion du viewport verticalement ou horizontalement.</p>
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="595" class="link-to-prism">src/common/core/item-list/viewport.service.ts:595</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="611" class="link-to-prism">src/common/core/item-list/viewport.service.ts:611</a></div>
                                         </td>
                                     </tr>
             
@@ -1895,7 +1895,7 @@ Ce service permet la gestion du viewport verticalement ou horizontalement.</p>
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="591" class="link-to-prism">src/common/core/item-list/viewport.service.ts:591</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="607" class="link-to-prism">src/common/core/item-list/viewport.service.ts:607</a></div>
                                         </td>
                                     </tr>
             
@@ -1928,7 +1928,7 @@ Ce service permet la gestion du viewport verticalement ou horizontalement.</p>
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="603" class="link-to-prism">src/common/core/item-list/viewport.service.ts:603</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="619" class="link-to-prism">src/common/core/item-list/viewport.service.ts:619</a></div>
                                         </td>
                                     </tr>
             
@@ -2459,6 +2459,7 @@ export class ViewPortService implements OnDestroy {
         };
 
         const calcFixedSizeViewPort$ &#x3D; (items: IViewPortItem[], containerSize: number, scrollPos: number, itemDefaultSize: number, ensureParams: IEnsureParams): Observable&lt;IViewPort&gt; &#x3D;&gt; {
+            consoleLog(&#x60;calcFixedSizeViewPort&#x60;);
             const maxCount &#x3D; Math.ceil(containerSize / itemDefaultSize) + 1;
             const startRow &#x3D; Math.floor(scrollPos / itemDefaultSize);
 
@@ -2501,6 +2502,7 @@ export class ViewPortService implements OnDestroy {
         };
 
         const calcVariableSizeViewPort$ &#x3D; (items: IViewPortItem[], containerSize: number, scrollPos: number, itemDefaultSize: number, ensureParams: IEnsureParams): Observable&lt;IViewPort&gt; &#x3D;&gt; {
+            consoleLog(&#x60;calcVariableSizeViewPort&#x60;);
             const visibleList &#x3D; [] as IViewPortItem[];
             let startIndex: number;
             let endIndex;
@@ -2597,6 +2599,7 @@ export class ViewPortService implements OnDestroy {
         };
 
         const calcAutoSizeViewPort$ &#x3D; (items: IViewPortItem[], containerSize: number, scrollPos: number, element: HTMLElement, itemDefaultSize: number, ensureParams: IEnsureParams, isCalculation?: boolean): Observable&lt;IViewPort&gt; &#x3D;&gt; {
+            consoleLog(&#x60;calcAutoSizeViewPort&#x60;);
             return calcVariableSizeViewPort$(items, containerSize, scrollPos, itemDefaultSize, ensureParams)
                 .switchMap((viewPort) &#x3D;&gt; {
                     const calculationRequired &#x3D; !isCalculation &amp;&amp; viewPort.visibleItems.find((item) &#x3D;&gt; !item.size);
@@ -2645,7 +2648,9 @@ export class ViewPortService implements OnDestroy {
 
             if (elements.length !&#x3D;&#x3D; items.length &amp;&amp; bindIfAny !&#x3D;&#x3D; false) {
                 this.viewPortResult$.next(viewPort);
-                return Observable.timer(1).switchMap(() &#x3D;&gt; calcDisabledViewPort$(items, containerSize, scrollPos, element, ensureParams, false));
+                return Observable
+                    .timer(1)
+                    .switchMap(() &#x3D;&gt; calcDisabledViewPort$(items, containerSize, scrollPos, element, ensureParams, false));
             }
 
             if (!ensureParams || ensureParams.index &#x3D;&#x3D;&#x3D; undefined || !ensureParams.atEnd) {
@@ -2699,7 +2704,7 @@ export class ViewPortService implements OnDestroy {
 
             startIndex &#x3D; startIndex || 0;
             endIndex &#x3D; endIndex || 0;
-
+            consoleLog(&#x60;viewPortSize ${viewPortSize}&#x60;);
             viewPort &#x3D; {
                 beforeSize: 0,
                 afterSize: 0,
@@ -2715,7 +2720,7 @@ export class ViewPortService implements OnDestroy {
             return Observable.of(viewPort);
         };
 
-        const calcViewPort$ &#x3D; (items: IViewPortItem[], maxSize: number, scrollPos: number, element: HTMLElement, itemDefaultSize: number, ensureParams: IEnsureParams) &#x3D;&gt; {
+        const calcViewPort$ &#x3D; (items: IViewPortItem[], maxSize: number, scrollPos: number, element: HTMLElement, itemDefaultSize: number, ensureParams: IEnsureParams, fromMeasure?: boolean) &#x3D;&gt; {
             consoleLog(&#x60;calcViewPort&#x60;);
             if (!items || !items.length) {
                 return Observable.of(this.emptyViewPort);
@@ -2748,25 +2753,27 @@ export class ViewPortService implements OnDestroy {
                     }
                 })
                 .switchMap((viewPort: IViewPort) &#x3D;&gt; {
-                    const endScrollPos &#x3D; viewPort.beforeSize + viewPort.viewPortSize + viewPort.afterSize - viewPort.listSize;
-                    if (this.mode !&#x3D;&#x3D; ViewportMode.disabled &amp;&amp; listSize &lt; 2 * ViewPortService.itemDefaultSize) {
-                        // Measure again container and recalc viewport
-                        this.viewPortResult$.next(this.measureViewPort);
-                        return Observable.timer(1).switchMap(() &#x3D;&gt; calcViewPort$(items, maxSize, scrollPos, element, itemDefaultSize, ensureParams));
-                    } else if (items.length &amp;&amp; endScrollPos &gt; 0 &amp;&amp; (viewPort.scrollPos || scrollPos) &gt; endScrollPos) {
-                        // Scroll position is over the last item
-                        // Ensure last item visible and recalc viewport
-                        return calcViewPort$(items, maxSize, endScrollPos, element, itemDefaultSize, {} as IEnsureParams);
-                    } else if (this.mode &#x3D;&#x3D;&#x3D; ViewportMode.auto &amp;&amp; viewPort.listSize &lt; listSize) {
-                        // Rendered viewport is to small, render again to complete
-                        return calcViewPort$(items, maxSize, 0, element, itemDefaultSize, {
-                            index: items.length - 1,
-                            atEnd: true,
-                        } as IEnsureParams);
-                    } else {
-                        // Return calculated viewport
-                        return Observable.of(viewPort);
+                    if (!fromMeasure) {
+                        const endScrollPos &#x3D; viewPort.beforeSize + viewPort.viewPortSize + viewPort.afterSize - viewPort.listSize;
+                        if (this.mode !&#x3D;&#x3D; ViewportMode.disabled &amp;&amp; listSize &lt; 2 * ViewPortService.itemDefaultSize) {
+                            // Measure again container and recalc viewport
+                            this.viewPortResult$.next(this.measureViewPort);
+                            return Observable.timer(1).switchMap(() &#x3D;&gt; calcViewPort$(items, maxSize, scrollPos, element, itemDefaultSize, ensureParams, true));
+                        } else if (items.length &amp;&amp; endScrollPos &gt; 0 &amp;&amp; (viewPort.scrollPos || scrollPos) &gt; endScrollPos) {
+                            // Scroll position is over the last item
+                            // Ensure last item visible and recalc viewport
+                            return calcViewPort$(items, maxSize, endScrollPos, element, itemDefaultSize, {} as IEnsureParams, true);
+                        } else if (this.mode &#x3D;&#x3D;&#x3D; ViewportMode.auto &amp;&amp; viewPort.listSize &lt; listSize) {
+                            // Rendered viewport is to small, render again to complete
+                            return calcViewPort$(items, maxSize, 0, element, itemDefaultSize, {
+                                index: items.length - 1,
+                                atEnd: true,
+                            } as IEnsureParams, true);
+                        }
                     }
+
+                    // Return calculated viewport
+                    return Observable.of(viewPort);
                 })
                 .do(() &#x3D;&gt; ensureParams.index &#x3D; undefined);
         };
@@ -2804,16 +2811,23 @@ export class ViewPortService implements OnDestroy {
             .do((value) &#x3D;&gt; consoleLog(&#x60;maxSize ${value}&#x60;));
 
         const refresh$ &#x3D; Observable.from(this.refresh$)
-            .do((params: IViewPortRefreshParams) &#x3D;&gt; {
+            .switchMap((params: IViewPortRefreshParams) &#x3D;&gt; {
                 this.ignoreScrollCount &#x3D; 0;
                 if (params) {
                     if (params.clearMeasuredSize) {
-                        this.lastCalculatedSize &#x3D; undefined;
+                        return Observable.from(this.items$)
+                            .do((items) &#x3D;&gt; {
+                                this.lastCalculatedSize &#x3D; undefined;
+                                items.forEach((item) &#x3D;&gt; item.size &#x3D; undefined);
+                            })
+                            .map(() &#x3D;&gt; params);
                     }
+
                     if (params.items) {
                         params.items.forEach((item) &#x3D;&gt; item.size &#x3D; undefined);
                     }
                 }
+                return Observable.of(params);
             })
             .do(() &#x3D;&gt; consoleLog(&#x27;refresh&#x27;));
 
@@ -2888,6 +2902,7 @@ export class ViewPortService implements OnDestroy {
                 if (items &amp;&amp; items.length &amp;&amp; (listSize &#x3D;&#x3D;&#x3D; &#x27;auto&#x27; || listSize &lt; 2 * ViewPortService.itemDefaultSize)) {
                     // Set the viewlist to the maximum height to measure the real max-height defined in the css
                     // Use a blank div to do that
+                    consoleLog(&#x60;viewPortResult for measure ${JSON.stringify(this.measureViewPort)}&#x60;);
                     this.viewPortResult$.next(this.measureViewPort);
                     // Wait next life cycle for the result
                     return Observable.timer(1)
@@ -2920,6 +2935,7 @@ export class ViewPortService implements OnDestroy {
             })
             .switchMap(({ element, scrollPos, items, maxSizeValue, itemDefaultSize, ensureParams }) &#x3D;&gt; calcViewPort$(items, maxSizeValue, scrollPos, element, itemDefaultSize, ensureParams))
             .subscribe((viewPort: IViewPort) &#x3D;&gt; {
+                consoleLog(&#x60;viewPortResult final ${JSON.stringify(viewPort)}&#x60;);
                 this.viewPortResult$.next(viewPort);
             }, ((error) &#x3D;&gt; {
                 console.error(error);

@@ -2230,10 +2230,10 @@ export abstract class ItemListBase implements OnDestroy {
     }
 
     /** Recalcule le viewport. */
-    public refreshViewPort(item?: IItemBase, clearMeasuredHeight?: boolean) {
+    public refreshViewPort(item?: IItemBase | IItemBase[], clearMeasuredHeight?: boolean) {
         const refreshParams &#x3D; {} as IViewPortRefreshParams;
         if (item) {
-            refreshParams.items &#x3D; [item];
+            refreshParams.items &#x3D; item instanceof Array ? item : [item];
         }
         if (clearMeasuredHeight) {
             refreshParams.clearMeasuredSize &#x3D; clearMeasuredHeight;

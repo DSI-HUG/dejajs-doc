@@ -1728,10 +1728,62 @@
                             </ul>
                         </td>
                     </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Methods</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                     <a href="#refresh">refresh</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
                 </tbody>
             </table>
         </section>
 
+            <section>
+                
+                    <h3 id="methods">
+                        Methods
+                    </h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="refresh"></a>
+                                    <span class="name"><b> refresh</b><a href="#refresh"><span class="fa fa-link"></span></a></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+            <code>refresh()</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/component/tiles/tile.interface.ts:25</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
 
 
             <section>
@@ -1955,6 +2007,7 @@ export interface IDejaTile {
     color?: string;
     templateModel?: any;
     effects?: IDejaTileEffect;
+    refresh?(): void;
 }
 </code></pre>
     </div>

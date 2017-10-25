@@ -1999,7 +1999,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="153" class="link-to-prism">src/component/tiles/tile.component.ts:153</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="161" class="link-to-prism">src/component/tiles/tile.component.ts:161</a></div>
                                 </td>
                             </tr>
     
@@ -2066,7 +2066,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="145" class="link-to-prism">src/component/tiles/tile.component.ts:145</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="153" class="link-to-prism">src/component/tiles/tile.component.ts:153</a></div>
                                 </td>
                             </tr>
     
@@ -2208,6 +2208,14 @@ export class DejaTileComponent implements OnDestroy {
                 .debounceTime(1)
                 .filter((value) &#x3D;&gt; !value)
                 .do(() &#x3D;&gt; this.element.removeAttribute(&#x27;hidden&#x27;))
+                .subscribe(() &#x3D;&gt; {
+                    this.changeDetectorRef.markForCheck();
+                });
+
+            // Refresh
+            Observable.from(tile.refresh$)
+                .takeWhile(() &#x3D;&gt; this.isAlive &amp;&amp; !!this._tile)
+                .debounceTime(1)
                 .subscribe(() &#x3D;&gt; {
                     this.changeDetectorRef.markForCheck();
                 });

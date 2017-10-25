@@ -1660,6 +1660,95 @@
                <div class="content getting-started">
                    <div class="content-data">
 
+<h4 id="2-15-2-2017-10-25-">2.15.2 (2017-10-25)</h4>
+<h5 id="code-style-changes">Code Style Changes</h5>
+<ul>
+<li><strong>DejaDateSelectorComponent:</strong> TsLint (<a href="https://github.com/DSI-HUG/dejajs-components/commit/7e237bc40273208b0313c7078d931bc9bce8df0f">7e237bc4</a>)</li>
+</ul>
+<h4 id="2-15-1-2017-10-25-">2.15.1 (2017-10-25)</h4>
+<h5 id="breaking-changes">BREAKING CHANGES</h5>
+<ul>
+<li><strong>ViewPortComponent:</strong> Property items become models and another property items is added and representing an array of IViewPortItems. That allow to control the size of each items. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/bb11027d2058fe3a33a9b26c5cecad0dd7bceed4">bb11027d</a>)
+  =&gt; previous usage of the items input must be renamed to models</li>
+</ul>
+<h5 id="continuous-integration">Continuous Integration</h5>
+<ul>
+<li><strong>Travis:</strong> Improve build performance (concurrent execution) (<a href="https://github.com/DSI-HUG/dejajs-components/commit/d591582ec5c1ac2334aabc7553c796ef7b732313">d591582e</a>)</li>
+</ul>
+<h5 id="new-features">New Features</h5>
+<ul>
+<li><strong>DejaTileComponent:</strong> Ability to refresh the tile (<a href="https://github.com/DSI-HUG/dejajs-components/commit/d1d40b5a8ab26ddafa9868fdb713f8e6fdb074b8">d1d40b5a</a>)</li>
+<li><strong>ItemListBase:</strong> Possibility to pass an array of items to RefreshViewPort (<a href="https://github.com/DSI-HUG/dejajs-components/commit/7f71ec38df18744ff9d5dc7930bc816d7005e8e2">7f71ec38</a>)</li>
+</ul>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>DejaTreeList:</strong> model was not updated on multiselect mode (<a href="https://github.com/DSI-HUG/dejajs-components/commit/611aaea1025e47edde19294a3059d4879ee7e559">611aaea1</a>)</li>
+<li><strong>DejaOverlay:</strong><ul>
+<li>Avoid right click when overlay is open (<a href="https://github.com/DSI-HUG/dejajs-components/commit/26bfc1f115aeeb7c95e1288263678ce80d65bc75">26bfc1f1</a>)</li>
+<li>For display block for deja-menu-content (<a href="https://github.com/DSI-HUG/dejajs-components/commit/55e8d7c80f23790391e984c066a6f097e3770fff">55e8d7c8</a>)</li>
+</ul>
+</li>
+<li><strong>ViewPortService:</strong> Clear items size when refresh with clearMeasuredSize is invoked (<a href="https://github.com/DSI-HUG/dejajs-components/commit/4a3c9b52533e29470ba6ebf4598cfe87efb273ee">4a3c9b52</a>)</li>
+<li><strong>DejaViewportComponent:</strong> Improve buttons binding during lifecycle in button scrolling mode (<a href="https://github.com/DSI-HUG/dejajs-components/commit/8949a4c25221b9fc52aeafc8aaa401f15bcccef5">8949a4c2</a>)</li>
+<li><strong>DejaViewportService:</strong> Prevent a possible infinite call of calcViewPort in fixed size mode (<a href="https://github.com/DSI-HUG/dejajs-components/commit/bc3290b79bad13deca332fe17871768cbaa4b16b">bc3290b7</a>)</li>
+</ul>
+<h5 id="refactors">Refactors</h5>
+<ul>
+<li><strong>DejaViewport:</strong> Refactoring of observables unsubscription (<a href="https://github.com/DSI-HUG/dejajs-components/commit/62df1780ebbbb68a7afa1842577e03754862dc8b">62df1780</a>)</li>
+</ul>
+<h5 id="tests">Tests</h5>
+<ul>
+<li><strong>DejaViewPortComponent:</strong><ul>
+<li>improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/bdfb12941979da00cd7b97ff4fad01d6f772b751">bdfb1294</a>)</li>
+<li>improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/544972426ec7c3a8b18aab0c8f8e9b2b2e988c3b">54497242</a>)</li>
+<li>improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/6ab05a2988d4fc6241d5ff8bcdacfc236354cdb3">6ab05a29</a>)</li>
+<li>improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/180681c3588152f3dd26658a1ba1d8a8049a473a">180681c3</a>)</li>
+<li>added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/b382ecc8272dd0df93ac415143b7e18cfafc71e1">b382ecc8</a>)</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-15-1-2017-10-25-">2.15.1 (2017-10-25)</h4>
+<h5 id="breaking-changes">BREAKING CHANGES</h5>
+<ul>
+<li><strong>ViewPortComponent:</strong> Property items become models and another property items is added and representing an array of IViewPortItems. That allow to control the size of each items. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/bb11027d2058fe3a33a9b26c5cecad0dd7bceed4">bb11027d</a>)
+  =&gt; previous usage of the items input must be renamed to models</li>
+</ul>
+<h5 id="continuous-integration">Continuous Integration</h5>
+<ul>
+<li><strong>Travis:</strong> Improve build performance (concurrent execution) (<a href="https://github.com/DSI-HUG/dejajs-components/commit/d591582ec5c1ac2334aabc7553c796ef7b732313">d591582e</a>)</li>
+</ul>
+<h5 id="new-features">New Features</h5>
+<ul>
+<li><strong>DejaTileComponent:</strong> Ability to refresh the tile (<a href="https://github.com/DSI-HUG/dejajs-components/commit/d1d40b5a8ab26ddafa9868fdb713f8e6fdb074b8">d1d40b5a</a>)</li>
+<li><strong>ItemListBase:</strong> Possibility to pass an array of items to RefreshViewPort (<a href="https://github.com/DSI-HUG/dejajs-components/commit/7f71ec38df18744ff9d5dc7930bc816d7005e8e2">7f71ec38</a>)</li>
+</ul>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>DejaTreeList:</strong> model was not updated on multiselect mode (<a href="https://github.com/DSI-HUG/dejajs-components/commit/611aaea1025e47edde19294a3059d4879ee7e559">611aaea1</a>)</li>
+<li><strong>DejaOverlay:</strong><ul>
+<li>Avoid right click when overlay is open (<a href="https://github.com/DSI-HUG/dejajs-components/commit/26bfc1f115aeeb7c95e1288263678ce80d65bc75">26bfc1f1</a>)</li>
+<li>For display block for deja-menu-content (<a href="https://github.com/DSI-HUG/dejajs-components/commit/55e8d7c80f23790391e984c066a6f097e3770fff">55e8d7c8</a>)</li>
+</ul>
+</li>
+<li><strong>ViewPortService:</strong> Clear items size when refresh with clearMeasuredSize is invoked (<a href="https://github.com/DSI-HUG/dejajs-components/commit/4a3c9b52533e29470ba6ebf4598cfe87efb273ee">4a3c9b52</a>)</li>
+<li><strong>DejaViewportComponent:</strong> Improve buttons binding during lifecycle in button scrolling mode (<a href="https://github.com/DSI-HUG/dejajs-components/commit/8949a4c25221b9fc52aeafc8aaa401f15bcccef5">8949a4c2</a>)</li>
+<li><strong>DejaViewportService:</strong> Prevent a possible infinite call of calcViewPort in fixed size mode (<a href="https://github.com/DSI-HUG/dejajs-components/commit/bc3290b79bad13deca332fe17871768cbaa4b16b">bc3290b7</a>)</li>
+</ul>
+<h5 id="refactors">Refactors</h5>
+<ul>
+<li><strong>DejaViewport:</strong> Refactoring of observables unsubscription (<a href="https://github.com/DSI-HUG/dejajs-components/commit/62df1780ebbbb68a7afa1842577e03754862dc8b">62df1780</a>)</li>
+</ul>
+<h5 id="tests">Tests</h5>
+<ul>
+<li><strong>DejaViewPortComponent:</strong><ul>
+<li>improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/bdfb12941979da00cd7b97ff4fad01d6f772b751">bdfb1294</a>)</li>
+<li>improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/544972426ec7c3a8b18aab0c8f8e9b2b2e988c3b">54497242</a>)</li>
+<li>improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/6ab05a2988d4fc6241d5ff8bcdacfc236354cdb3">6ab05a29</a>)</li>
+<li>improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/180681c3588152f3dd26658a1ba1d8a8049a473a">180681c3</a>)</li>
+<li>added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/b382ecc8272dd0df93ac415143b7e18cfafc71e1">b382ecc8</a>)</li>
+</ul>
+</li>
+</ul>
 <h3 id="2-15-0-2017-10-12-">2.15.0 (2017-10-12)</h3>
 <h5 id="breaking-changes">BREAKING CHANGES</h5>
 <ul>
