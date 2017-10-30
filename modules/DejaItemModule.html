@@ -141,7 +141,7 @@
                                     <a href="../modules/DejaIFrameModule.html" >DejaIFrameModule</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../modules/DejaItemModule.html" >DejaItemModule</a>
+                                    <a href="../modules/DejaItemModule.html"  data-type="entity-link" class="active" >DejaItemModule</a>
                                 </li>
                                 <li class="link">
                                     <a href="../modules/DejaListLoaderModule.html" >DejaListLoaderModule</a>
@@ -700,7 +700,7 @@
                                     <a href="../interfaces/IDragCursorInfos.html" >IDragCursorInfos</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../interfaces/IDragDropContext.html"  data-type="entity-link" class="active" >IDragDropContext</a>
+                                    <a href="../interfaces/IDragDropContext.html" >IDragDropContext</a>
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/IDragDropInfos.html" >IDragDropInfos</a>
@@ -971,7 +971,7 @@
                                            <a href="../modules/DejaIFrameModule.html" >DejaIFrameModule</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../modules/DejaItemModule.html" >DejaItemModule</a>
+                                           <a href="../modules/DejaItemModule.html"  data-type="entity-link" class="active" >DejaItemModule</a>
                                        </li>
                                        <li class="link">
                                            <a href="../modules/DejaListLoaderModule.html" >DejaListLoaderModule</a>
@@ -1530,7 +1530,7 @@
                                            <a href="../interfaces/IDragCursorInfos.html" >IDragCursorInfos</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../interfaces/IDragDropContext.html"  data-type="entity-link" class="active" >IDragDropContext</a>
+                                           <a href="../interfaces/IDragDropContext.html" >IDragDropContext</a>
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/IDragDropInfos.html" >IDragDropInfos</a>
@@ -1675,21 +1675,16 @@
                    
                    </nav>
                </div>
-               <div class="content interface">
+               <div class="content module">
                    <div class="content-data">
 
 
 
-
-
-
-
-
-
 <ol class="breadcrumb">
-  <li>Interfaces</li>
-  <li>IDragDropContext</li>
+  <li>Modules</li>
+  <li>DejaItemModule</li>
 </ol>
+
 
 <ul class="nav nav-tabs" role="tablist">
     <li class="active">
@@ -1704,91 +1699,73 @@
 
 <div class="tab-content">
     <div class="tab-pane fade active in" id="info">
+
         <p class="comment">
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/component/mouse-dragdrop/mouse-dragdrop.service.ts</code>
+            <code>src/common/core/item-list/index.ts</code>
         </p>
 
 
-
-
-
-            <section>
-                <h3 id="inputs">Indexable</h3>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <code>[key: string]:    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-            </code>
-                                </td>
-                            </tr>
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/component/mouse-dragdrop/mouse-dragdrop.service.ts:45</a></div>
-                                        </td>
-                                    </tr>
-                        </tbody>
-                    </table>
-            </section>
-
+        <div class="container-fluid module">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h3>Declarations<a href="https://angular.io/api/core/NgModule#declarations" target="_blank" title="Official documentation about module declarations"><span class="fa fa-info-circle"></span></a></h3>
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                <a href="../components/DejaItemComponent.html">DejaItemComponent</a>
+                            </li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h3>Exports<a href="https://angular.io/api/core/NgModule#exports" target="_blank" title="Official documentation about module exports"><span class="fa fa-info-circle"></a></h3>
+                    <ul class="list-group">
+                            <li class="list-group-item">
+                                    <a href="../components/DejaItemComponent.html" >DejaItemComponent</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 
 
     <div class="tab-pane fade tab-source-code" id="source">
-        <pre class="line-numbers"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
-import { BehaviorSubject } from &#x27;rxjs/BehaviorSubject&#x27;;
-import { Subject } from &#x27;rxjs/Subject&#x27;;
-import { Position } from &#x27;../../common/core/graphics/position&#x27;;
+        <pre class="line-numbers"><code class="language-typescript">import { CommonModule } from &#x27;@angular/common&#x27;;
+import { NgModule } from &#x27;@angular/core&#x27;;
+import { DejaItemComponent } from &#x27;./item.component&#x27;;
 
-@Injectable()
-export class DejaMouseDragDropService {
-    private _context &#x3D; {} as IDragDropContext;
-    private _isDragging &#x3D; false;
-    public dragCursor$ &#x3D; new BehaviorSubject&lt;IDragCursorInfos&gt;(undefined);
-    public dropCursor$ &#x3D; new Subject&lt;IDropCursorInfos&gt;();
-    public dragging$ &#x3D; new BehaviorSubject&lt;boolean&gt;(false);
+@NgModule({
+    declarations: [
+        DejaItemComponent,
+    ],
+    exports: [
+        DejaItemComponent,
+    ],
+    imports: [
+        CommonModule,
+    ],
+})
+export class DejaItemModule { }
 
-    constructor() {
-        this.dragging$
-            .do((value) &#x3D;&gt; this._isDragging &#x3D; value)
-            .filter((value) &#x3D;&gt; !value)
-            .subscribe(() &#x3D;&gt; this._context &#x3D; {});
-    }
-
-    public get isDragging() {
-        return this._isDragging;
-    }
-
-    public set context(value: IDragDropContext) {
-        this._context &#x3D; value;
-    }
-
-    public get context() {
-        return this._context;
-    }
-}
-
-export interface IDragDropContext {
-    [key: string]: any;
-}
-
-export interface IDropCursorInfos {
-    html?: string;
-    width?: number;
-    height?: number;
-    className?: string;
-}
-
-export interface IDragCursorInfos extends IDropCursorInfos {
-    position: Position;
-    originalEvent: MouseEvent;
-}
+export * from &#x27;./viewport.service&#x27;;
+export * from &#x27;./item-base&#x27;;
+export * from &#x27;./item-tree&#x27;;
+export * from &#x27;./item-list.service&#x27;;
+export * from &#x27;./item-list-base&#x27;;
+export * from &#x27;./item-event&#x27;;
+export * from &#x27;./items-event&#x27;;
+export * from &#x27;./item.component&#x27;;
 </code></pre>
     </div>
 </div>
+
+
+
+
+
+
 
 
 

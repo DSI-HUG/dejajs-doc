@@ -141,6 +141,9 @@
                                     <a href="../modules/DejaIFrameModule.html" >DejaIFrameModule</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../modules/DejaItemModule.html" >DejaItemModule</a>
+                                </li>
+                                <li class="link">
                                     <a href="../modules/DejaListLoaderModule.html" >DejaListLoaderModule</a>
                                 </li>
                                 <li class="link">
@@ -154,6 +157,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaNumericStepperModule.html" >DejaNumericStepperModule</a>
                                 </li>
                                 <li class="link">
                                     <a href="../modules/DejaOverlayModule.html" >DejaOverlayModule</a>
@@ -297,6 +303,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaNumericStepperComponent.html" >DejaNumericStepperComponent</a>
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaOverlayComponent.html" >DejaOverlayComponent</a>
@@ -962,6 +971,9 @@
                                            <a href="../modules/DejaIFrameModule.html" >DejaIFrameModule</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../modules/DejaItemModule.html" >DejaItemModule</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../modules/DejaListLoaderModule.html" >DejaListLoaderModule</a>
                                        </li>
                                        <li class="link">
@@ -975,6 +987,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaNumericStepperModule.html" >DejaNumericStepperModule</a>
                                        </li>
                                        <li class="link">
                                            <a href="../modules/DejaOverlayModule.html" >DejaOverlayModule</a>
@@ -1118,6 +1133,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaNumericStepperComponent.html" >DejaNumericStepperComponent</a>
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaOverlayComponent.html" >DejaOverlayComponent</a>
@@ -1758,7 +1776,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="1331" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1331</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="1345" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1345</a></div>
                                         </td>
                                     </tr>
 
@@ -1791,7 +1809,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="1332" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1332</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="1346" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1346</a></div>
                                         </td>
                                     </tr>
 
@@ -1822,6 +1840,9 @@ import { IItemTree } from &#x27;./item-tree&#x27;;
  * Il peut-être surchargé pour faire du lazy loading ou du paging.
  */
 export class ItemListService {
+    public static defaultChildrenField &#x3D; &#x27;items&#x27;;
+    public static defaultTextField &#x3D; &#x27;displayName&#x27;;
+    public static defaultValueField &#x3D; &#x27;value&#x27;;
 
     // Waiter
     private _waiter$ &#x3D; new BehaviorSubject&lt;boolean&gt;(false);
@@ -1858,7 +1879,7 @@ export class ItemListService {
     private _ddCurrentIndex: number;
     private _ddChildCount: number;
 
-    private _childrenField &#x3D; &#x27;items&#x27;;
+    private _childrenField &#x3D; ItemListService.defaultChildrenField;
 
     // Cnacelable pre events
     private loadingItems$: (query: string | RegExp, selectedItems: IItemBase[]) &#x3D;&gt; Observable&lt;IItemBase[]&gt;;
@@ -1876,18 +1897,21 @@ export class ItemListService {
      * @return {string} Valeur à comparer pour le modèle spécifié.
      */
     public static getItemValue(item: any, valueField?: string) {
+        // tslint:disable-next-line:triple-equals
+        const isDefined &#x3D; (value) &#x3D;&gt; value !&#x3D; undefined;
+
         if (valueField) {
             const fields &#x3D; valueField.split(&#x27;.&#x27;);
             let model &#x3D; item.model &amp;&amp; item.model[fields[0]] !&#x3D;&#x3D; undefined ? item.model : item;
             fields.forEach((fieldName) &#x3D;&gt; {
                 model &#x3D; model &amp;&amp; model[fieldName];
             });
-            if (model) {
+            if (isDefined(model)) {
                 return typeof model &#x3D;&#x3D;&#x3D; &#x27;function&#x27; ? model() : model;
             }
         }
 
-        return item.value || item.model || item;
+        return isDefined(item.value) ? item.value : (isDefined(item.model) ? item.model : item);
     }
 
     /** Evalue le texte à afficher pour l&#x27;élément spécifié.
@@ -1965,7 +1989,7 @@ export class ItemListService {
      * @param {string} value Nom du champ à utiliser comme collection d&#x27;enfants
      */
     public set childrenField(value: string) {
-        this._childrenField &#x3D; value || &#x27;items&#x27;;
+        this._childrenField &#x3D; value || ItemListService.defaultChildrenField;
         this.invalidateCache();
     }
 
@@ -1993,6 +2017,11 @@ export class ItemListService {
     /** Définit le champs à utiliser comme valeur de comparaison */
     public set valueField(valueField: string) {
         this._valueField &#x3D; valueField;
+    }
+
+    /** Renvoie le champs à utiliser comme valeur de comparaison */
+    public get valueField() {
+        return this._valueField;
     }
 
     public get hasCache() {
@@ -3022,11 +3051,14 @@ export class ItemListService {
     }
 
     private compareItems &#x3D; (item1: IItemBase, item2: IItemBase) &#x3D;&gt; {
-        if (!item1 || !item2) {
+        // tslint:disable-next-line:triple-equals
+        const isDefined &#x3D; (value) &#x3D;&gt; value !&#x3D; undefined;
+
+        if (!isDefined(item1) || !isDefined(item2)) {
             return false;
-        } else if (item1 &amp;&amp; !item2) {
+        } else if (isDefined(item1) &amp;&amp; !isDefined(item2)) {
             return false;
-        } else if (!item1 &amp;&amp; item2) {
+        } else if (!isDefined(item1) &amp;&amp; isDefined(item2)) {
             return false;
         } else {
             if (item1.equals) {

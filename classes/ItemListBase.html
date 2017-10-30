@@ -141,6 +141,9 @@
                                     <a href="../modules/DejaIFrameModule.html" >DejaIFrameModule</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../modules/DejaItemModule.html" >DejaItemModule</a>
+                                </li>
+                                <li class="link">
                                     <a href="../modules/DejaListLoaderModule.html" >DejaListLoaderModule</a>
                                 </li>
                                 <li class="link">
@@ -154,6 +157,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaNumericStepperModule.html" >DejaNumericStepperModule</a>
                                 </li>
                                 <li class="link">
                                     <a href="../modules/DejaOverlayModule.html" >DejaOverlayModule</a>
@@ -297,6 +303,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaNumericStepperComponent.html" >DejaNumericStepperComponent</a>
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaOverlayComponent.html" >DejaOverlayComponent</a>
@@ -962,6 +971,9 @@
                                            <a href="../modules/DejaIFrameModule.html" >DejaIFrameModule</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../modules/DejaItemModule.html" >DejaItemModule</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../modules/DejaListLoaderModule.html" >DejaListLoaderModule</a>
                                        </li>
                                        <li class="link">
@@ -975,6 +987,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaNumericStepperModule.html" >DejaNumericStepperModule</a>
                                        </li>
                                        <li class="link">
                                            <a href="../modules/DejaOverlayModule.html" >DejaOverlayModule</a>
@@ -1118,6 +1133,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaNumericStepperComponent.html" >DejaNumericStepperComponent</a>
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaOverlayComponent.html" >DejaOverlayComponent</a>
@@ -2674,7 +2692,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="784" class="link-to-prism">src/common/core/item-list/item-list-base.ts:784</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="785" class="link-to-prism">src/common/core/item-list/item-list-base.ts:785</a></div>
                                         </td>
                                     </tr>
             
@@ -3186,7 +3204,7 @@
             </div>
             
                                         <div class="io-description">
-                                            <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
             
                                         </div>
                                 </td>
@@ -3286,7 +3304,7 @@
             </div>
             
                                         <div class="io-description">
-                                            <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
             
                                         </div>
                                 </td>
@@ -3419,7 +3437,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="796" class="link-to-prism">src/common/core/item-list/item-list-base.ts:796</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="797" class="link-to-prism">src/common/core/item-list/item-list-base.ts:797</a></div>
                                         </td>
                                     </tr>
             
@@ -7680,7 +7698,7 @@ export abstract class ItemListBase implements OnDestroy {
 
     /** Retourne le champ utilisé comme valeur d&#x27;affichage.*/
     protected getTextField() {
-        return this._textField || &#x27;displayName&#x27;;
+        return this._textField || ItemListService.defaultTextField;
     }
 
     /** Définit le champ à utiliser comme valeur de comparaison.
@@ -7695,7 +7713,7 @@ export abstract class ItemListBase implements OnDestroy {
 
     /** Retourne le champ utilisé comme valeur de comparaison.*/
     protected getValueField() {
-        return this._valueField || &#x27;value&#x27;;
+        return this._valueField || ItemListService.defaultValueField;
     }
 
     /** Définit le champ à utiliser comme champ de recherche.
@@ -7782,7 +7800,8 @@ export abstract class ItemListBase implements OnDestroy {
     }
 
     protected mapToIItemBase(modls: any[], selected?: boolean): IItemBase[] {
-        return modls.map((model) &#x3D;&gt; {
+        const m &#x3D; modls || [];
+        return m.map((model) &#x3D;&gt; {
             const itemBase: IItemBase &#x3D; {};
 
             itemBase.model &#x3D; model;
@@ -7831,28 +7850,26 @@ export abstract class ItemListBase implements OnDestroy {
     }
 
     protected getVirtualSelectedEntities(value) {
+        const map &#x3D; (v) &#x3D;&gt; {
+            const model &#x3D; {};
+            const textField &#x3D; this.getTextField();
+            const valueField &#x3D; this.getValueField();
+            model[textField] &#x3D; &#x60;${v}&#x60;.trim();
+            model[valueField] &#x3D; v;
+            return model;
+        };
+
         if (value) {
             const modelType &#x3D; typeof value;
             if (modelType &#x3D;&#x3D;&#x3D; &#x27;string&#x27; || modelType &#x3D;&#x3D;&#x3D; &#x27;number&#x27;) {
-                if (this._multiSelect) {
-                    value &#x3D; value.split(&#x27;,&#x27;)
-                        .map((v) &#x3D;&gt; v.trim())
-                        .map((v) &#x3D;&gt; {
-                            const model &#x3D; {};
-                            const textField &#x3D; this.getTextField();
-                            const valueField &#x3D; this.getValueField();
-                            model[textField] &#x3D; v;
-                            model[valueField] &#x3D; v;
-                            return model;
-                        });
-                } else {
-                    const v &#x3D; value.trim();
-                    value &#x3D; {};
-                    const textField &#x3D; this.getTextField();
-                    const valueField &#x3D; this.getValueField();
-                    value[textField] &#x3D; v;
-                    value[valueField] &#x3D; v;
+                value &#x3D; this._multiSelect ? value.split(&#x27;,&#x27;).map(map) : map(value);
+            } else if (value instanceof Array &amp;&amp; value.length) {
+                const type &#x3D; typeof value[0];
+                if (type &#x3D;&#x3D;&#x3D; &#x27;string&#x27; || type &#x3D;&#x3D;&#x3D; &#x27;number&#x27;) {
+                    value &#x3D; this._multiSelect ? value.map(map) : map(value[0]);
                 }
+            } else if (value instanceof Array &amp;&amp; !this._multiSelect) {
+                value &#x3D; null;
             }
         }
 

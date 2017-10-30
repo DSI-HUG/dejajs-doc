@@ -141,6 +141,9 @@
                                     <a href="../modules/DejaIFrameModule.html" >DejaIFrameModule</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../modules/DejaItemModule.html" >DejaItemModule</a>
+                                </li>
+                                <li class="link">
                                     <a href="../modules/DejaListLoaderModule.html" >DejaListLoaderModule</a>
                                 </li>
                                 <li class="link">
@@ -154,6 +157,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaNumericStepperModule.html" >DejaNumericStepperModule</a>
                                 </li>
                                 <li class="link">
                                     <a href="../modules/DejaOverlayModule.html" >DejaOverlayModule</a>
@@ -297,6 +303,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaNumericStepperComponent.html" >DejaNumericStepperComponent</a>
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaOverlayComponent.html" >DejaOverlayComponent</a>
@@ -962,6 +971,9 @@
                                            <a href="../modules/DejaIFrameModule.html" >DejaIFrameModule</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../modules/DejaItemModule.html" >DejaItemModule</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../modules/DejaListLoaderModule.html" >DejaListLoaderModule</a>
                                        </li>
                                        <li class="link">
@@ -975,6 +987,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaNumericStepperModule.html" >DejaNumericStepperModule</a>
                                        </li>
                                        <li class="link">
                                            <a href="../modules/DejaOverlayModule.html" >DejaOverlayModule</a>
@@ -1118,6 +1133,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaNumericStepperComponent.html" >DejaNumericStepperComponent</a>
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaOverlayComponent.html" >DejaOverlayComponent</a>
@@ -1761,7 +1779,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/common/core/sorting/sorting.service.ts:25</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/common/core/sorting/sorting.service.ts:26</a></div>
                                         </td>
                                     </tr>
             
@@ -1845,7 +1863,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="130" class="link-to-prism">src/common/core/sorting/sorting.service.ts:130</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="131" class="link-to-prism">src/common/core/sorting/sorting.service.ts:131</a></div>
                                         </td>
                                     </tr>
             
@@ -1916,7 +1934,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="111" class="link-to-prism">src/common/core/sorting/sorting.service.ts:111</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="112" class="link-to-prism">src/common/core/sorting/sorting.service.ts:112</a></div>
                                         </td>
                                     </tr>
             
@@ -1990,7 +2008,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="163" class="link-to-prism">src/common/core/sorting/sorting.service.ts:163</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="164" class="link-to-prism">src/common/core/sorting/sorting.service.ts:164</a></div>
                                         </td>
                                     </tr>
             
@@ -2071,7 +2089,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="140" class="link-to-prism">src/common/core/sorting/sorting.service.ts:140</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="141" class="link-to-prism">src/common/core/sorting/sorting.service.ts:141</a></div>
                                         </td>
                                     </tr>
             
@@ -2149,6 +2167,7 @@
 import &#x27;rxjs/add/operator/map&#x27;;
 import &#x27;rxjs/add/operator/mergeMap&#x27;;
 import &#x27;rxjs/add/operator/switchMap&#x27;;
+import &#x27;rxjs/add/operator/toPromise&#x27;;
 import { Observable } from &#x27;rxjs/Observable&#x27;;
 import { ISortInfos } from &#x27;./sort-infos.model&#x27;;
 import { SortOrder } from &#x27;./sort-order.model&#x27;;

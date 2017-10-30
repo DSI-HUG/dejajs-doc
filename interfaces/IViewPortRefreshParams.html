@@ -141,6 +141,9 @@
                                     <a href="../modules/DejaIFrameModule.html" >DejaIFrameModule</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../modules/DejaItemModule.html" >DejaItemModule</a>
+                                </li>
+                                <li class="link">
                                     <a href="../modules/DejaListLoaderModule.html" >DejaListLoaderModule</a>
                                 </li>
                                 <li class="link">
@@ -154,6 +157,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaNumericStepperModule.html" >DejaNumericStepperModule</a>
                                 </li>
                                 <li class="link">
                                     <a href="../modules/DejaOverlayModule.html" >DejaOverlayModule</a>
@@ -297,6 +303,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaNumericStepperComponent.html" >DejaNumericStepperComponent</a>
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaOverlayComponent.html" >DejaOverlayComponent</a>
@@ -962,6 +971,9 @@
                                            <a href="../modules/DejaIFrameModule.html" >DejaIFrameModule</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../modules/DejaItemModule.html" >DejaItemModule</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../modules/DejaListLoaderModule.html" >DejaListLoaderModule</a>
                                        </li>
                                        <li class="link">
@@ -975,6 +987,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaNumericStepperModule.html" >DejaNumericStepperModule</a>
                                        </li>
                                        <li class="link">
                                            <a href="../modules/DejaOverlayModule.html" >DejaOverlayModule</a>
@@ -1118,6 +1133,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaNumericStepperComponent.html" >DejaNumericStepperComponent</a>
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaOverlayComponent.html" >DejaOverlayComponent</a>
@@ -1751,7 +1769,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="645" class="link-to-prism">src/common/core/item-list/viewport.service.ts:645</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="656" class="link-to-prism">src/common/core/item-list/viewport.service.ts:656</a></div>
                                         </td>
                                     </tr>
 
@@ -1784,7 +1802,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="644" class="link-to-prism">src/common/core/item-list/viewport.service.ts:644</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="655" class="link-to-prism">src/common/core/item-list/viewport.service.ts:655</a></div>
                                         </td>
                                     </tr>
 
@@ -1806,6 +1824,7 @@ import &#x27;rxjs/add/operator/do&#x27;;
 import &#x27;rxjs/add/operator/filter&#x27;;
 import { BehaviorSubject } from &#x27;rxjs/BehaviorSubject&#x27;;
 import { Observable } from &#x27;rxjs/Observable&#x27;;
+import { ReplaySubject } from &#x27;rxjs/ReplaySubject&#x27;;
 import { Subscription } from &#x27;rxjs/Subscription&#x27;;
 import { IViewPort, IViewPortItem } from &#x27;./viewport.service&#x27;;
 
@@ -1835,7 +1854,7 @@ export class ViewPortService implements OnDestroy {
     public maxSize$ &#x3D; new BehaviorSubject&lt;number | string&gt;(0);
     public ensureItem$ &#x3D; new BehaviorSubject&lt;IViewPortItem | number&gt;(null);
     public scrollPosition$ &#x3D; new BehaviorSubject&lt;number&gt;(0);
-    public element$ &#x3D; new BehaviorSubject&lt;HTMLElement&gt;(null);
+    public element$ &#x3D; new ReplaySubject&lt;HTMLElement&gt;(1);
     public itemsSize$ &#x3D; new BehaviorSubject&lt;number&gt;(0);
     public direction$ &#x3D; new BehaviorSubject&lt;ViewportDirection | string&gt;(ViewportDirection.vertical);
     public ensureParams$: Observable&lt;IEnsureParams&gt;;
@@ -2207,10 +2226,13 @@ export class ViewPortService implements OnDestroy {
                             // Measure again container and recalc viewport
                             this.viewPortResult$.next(this.measureViewPort);
                             return Observable.timer(1).switchMap(() &#x3D;&gt; calcViewPort$(items, maxSize, scrollPos, element, itemDefaultSize, ensureParams, true));
-                        } else if (items.length &amp;&amp; endScrollPos &gt; 0 &amp;&amp; (viewPort.scrollPos || scrollPos) &gt; endScrollPos) {
+                        } else if (endScrollPos &lt; 0 || (items.length &amp;&amp; endScrollPos &gt; 0 &amp;&amp; (viewPort.scrollPos || scrollPos) &gt; endScrollPos)) {
                             // Scroll position is over the last item
                             // Ensure last item visible and recalc viewport
-                            return calcViewPort$(items, maxSize, endScrollPos, element, itemDefaultSize, {} as IEnsureParams, true);
+                            return calcViewPort$(items, maxSize, 0, element, itemDefaultSize, {
+                                index: items.length - 1,
+                                atEnd: true,
+                            } as IEnsureParams, true);
                         } else if (this.mode &#x3D;&#x3D;&#x3D; ViewportMode.auto &amp;&amp; viewPort.listSize &lt; listSize) {
                             // Rendered viewport is to small, render again to complete
                             return calcViewPort$(items, maxSize, 0, element, itemDefaultSize, {
@@ -2223,7 +2245,10 @@ export class ViewPortService implements OnDestroy {
                     // Return calculated viewport
                     return Observable.of(viewPort);
                 })
-                .do(() &#x3D;&gt; ensureParams.index &#x3D; undefined);
+                .do(() &#x3D;&gt; {
+                    consoleLog(&#x60;clear ensureParams ${ensureParams &amp;&amp; ensureParams.index}&#x60;);
+                    ensureParams.index &#x3D; undefined;
+                });
         };
 
         const items$ &#x3D; Observable.from(this.items$)
@@ -2232,6 +2257,7 @@ export class ViewPortService implements OnDestroy {
         // Ensure item visible by index or instance
         this.ensureParams$ &#x3D; Observable.combineLatest(this.ensureItem$, items$)
             .map(([ensureItem, items]) &#x3D;&gt; {
+                this.ignoreScrollCount &#x3D; 0;
                 const ensureParams &#x3D; {} as IEnsureParams;
                 if (ensureItem !&#x3D;&#x3D; undefined &amp;&amp; ensureItem !&#x3D;&#x3D; null &amp;&amp; items &amp;&amp; items.length) {
                     let ensureIndex &#x3D; ensureItem as number;
@@ -2252,7 +2278,7 @@ export class ViewPortService implements OnDestroy {
 
                 return ensureParams;
             })
-            .do(() &#x3D;&gt; consoleLog(&#x27;ensureParams&#x27;));
+            .do((ensureParams) &#x3D;&gt; consoleLog(&#x60;ensureParams index:${ensureParams &amp;&amp; ensureParams.index} atEnd:${ensureParams &amp;&amp; ensureParams.atEnd}&#x60;));
 
         const maxSize$ &#x3D; Observable.from(this.maxSize$)
             .distinctUntilChanged()
@@ -2285,7 +2311,7 @@ export class ViewPortService implements OnDestroy {
             .filter(() &#x3D;&gt; {
                 if (this.ignoreScrollCount &gt; 0) {
                     this.ignoreScrollCount--;
-                    console.log(&#x60;ignoreScrollCount ${this.ignoreScrollCount}&#x60;);
+                    consoleLog(&#x60;ignoreScrollCount ${this.ignoreScrollCount}&#x60;);
                     return false;
                 } else {
                     return true;
@@ -2334,13 +2360,13 @@ export class ViewPortService implements OnDestroy {
             }));
 
         // Calc view port observable
-        this.subscriptions.push(Observable.combineLatest(items$, maxSize$, itemsSize$, this.ensureParams$)
-            .combineLatest(direction$, mode$, refresh$, element$)
+        this.subscriptions.push(Observable.combineLatest(element$, items$, refresh$, this.ensureParams$)
+            .combineLatest(direction$, mode$, itemsSize$, maxSize$)
             .debounceTime(1)
             .combineLatest(scrollPos$)
-            .filter(([[[_items, _maxSize, _itemDefaultSize, _ensureParams], _direction, _mode, _refresh, element], _scrollPos]) &#x3D;&gt; !!element)
-            .do(() &#x3D;&gt; consoleLog(&#x60;combineLatest&#x60;))
-            .switchMap(([[[items, maxSize, itemDefaultSize, ensureParams], _direction, _mode, _refresh, element], _scrollPos]) &#x3D;&gt; {
+            .do(([[[_element, _items, _refresh, ensureParams], _direction, _mode, _itemDefaultSize, _maxSize], _scrollPos]) &#x3D;&gt; consoleLog(&#x60;combineLatest ${JSON.stringify(ensureParams)}&#x60;))
+            .switchMap(([[[element, items, _refresh, ensureParams], _direction, _mode, itemDefaultSize, maxSize], _scrollPos]) &#x3D;&gt; {
+                consoleLog(&#x60;combineLatest ${ensureParams &amp;&amp; ensureParams.index}&#x60;);
                 if (!itemDefaultSize) {
                     itemDefaultSize &#x3D; ViewPortService.itemDefaultSize;
                 }
@@ -2381,9 +2407,12 @@ export class ViewPortService implements OnDestroy {
                     return Observable.of({ element, scrollPos, items, maxSizeValue, itemDefaultSize, ensureParams });
                 }
             })
-            .switchMap(({ element, scrollPos, items, maxSizeValue, itemDefaultSize, ensureParams }) &#x3D;&gt; calcViewPort$(items, maxSizeValue, scrollPos, element, itemDefaultSize, ensureParams))
+            .switchMap(({ element, scrollPos, items, maxSizeValue, itemDefaultSize, ensureParams }) &#x3D;&gt; {
+                consoleLog(&#x60;calcViewPort ${ensureParams &amp;&amp; ensureParams.index}&#x60;);
+                return calcViewPort$(items, maxSizeValue, scrollPos, element, itemDefaultSize, ensureParams);
+            })
             .subscribe((viewPort: IViewPort) &#x3D;&gt; {
-                consoleLog(&#x60;viewPortResult final ${JSON.stringify(viewPort)}&#x60;);
+                // consoleLog(&#x60;viewPortResult final ${JSON.stringify(viewPort)}&#x60;);
                 this.viewPortResult$.next(viewPort);
             }, ((error) &#x3D;&gt; {
                 console.error(error);

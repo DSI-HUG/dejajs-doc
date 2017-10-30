@@ -141,6 +141,9 @@
                                     <a href="../modules/DejaIFrameModule.html" >DejaIFrameModule</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../modules/DejaItemModule.html" >DejaItemModule</a>
+                                </li>
+                                <li class="link">
                                     <a href="../modules/DejaListLoaderModule.html" >DejaListLoaderModule</a>
                                 </li>
                                 <li class="link">
@@ -154,6 +157,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaNumericStepperModule.html" >DejaNumericStepperModule</a>
                                 </li>
                                 <li class="link">
                                     <a href="../modules/DejaOverlayModule.html" >DejaOverlayModule</a>
@@ -297,6 +303,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaNumericStepperComponent.html" >DejaNumericStepperComponent</a>
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaOverlayComponent.html" >DejaOverlayComponent</a>
@@ -962,6 +971,9 @@
                                            <a href="../modules/DejaIFrameModule.html" >DejaIFrameModule</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../modules/DejaItemModule.html" >DejaItemModule</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../modules/DejaListLoaderModule.html" >DejaListLoaderModule</a>
                                        </li>
                                        <li class="link">
@@ -975,6 +987,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaNumericStepperModule.html" >DejaNumericStepperModule</a>
                                        </li>
                                        <li class="link">
                                            <a href="../modules/DejaOverlayModule.html" >DejaOverlayModule</a>
@@ -1118,6 +1133,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaNumericStepperComponent.html" >DejaNumericStepperComponent</a>
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaOverlayComponent.html" >DejaOverlayComponent</a>
@@ -1715,6 +1733,9 @@
                             <li class="list-group-item">
                                     <a href="../modules/DejaTextMetricsModule.html" >DejaTextMetricsModule</a>
                             </li>
+                            <li class="list-group-item">
+                                    <a href="../modules/DejaItemModule.html" >DejaItemModule</a>
+                            </li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
@@ -1735,17 +1756,20 @@
 import { NgModule } from &#x27;@angular/core&#x27;;
 import { FormsModule } from &#x27;@angular/forms&#x27;;
 import { MatButtonModule, MatCheckboxModule, MatInputModule } from &#x27;@angular/material&#x27;;
+import { DejaTextMetricsModule } from &#x27;../../common/core/text-metrics/index&#x27;;
+import { DejaItemModule } from &#x27;./../../common/core/item-list/index&#x27;;
 import { DejaChildValidatorModule } from &#x27;./../../common/core/validation/index&#x27;;
 import { DejaDragDropModule } from &#x27;./../dragdrop/index&#x27;;
 import { DejaListLoaderModule } from &#x27;./../loaders/index&#x27;;
-import { DejaTextMetricsModule } from &#x27;./text-metrics/index&#x27;;
 import { DejaTreeListComponent } from &#x27;./tree-list.component&#x27;;
 
 @NgModule({
     declarations: [
         DejaTreeListComponent,
     ],
-    exports: [DejaTreeListComponent],
+    exports: [
+        DejaTreeListComponent,
+    ],
     imports: [
         CommonModule,
         FormsModule,
@@ -1756,13 +1780,13 @@ import { DejaTreeListComponent } from &#x27;./tree-list.component&#x27;;
         DejaListLoaderModule,
         DejaDragDropModule,
         DejaTextMetricsModule,
+        DejaItemModule,
     ],
 })
 export class DejaTreeListModule { }
 
 export * from &#x27;./tree-list-scroll-event&#x27;;
 export * from &#x27;./tree-list.component&#x27;;
-export * from &#x27;./text-metrics/index&#x27;;
 </code></pre>
     </div>
 </div>

@@ -141,6 +141,9 @@
                                     <a href="../modules/DejaIFrameModule.html" >DejaIFrameModule</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../modules/DejaItemModule.html" >DejaItemModule</a>
+                                </li>
+                                <li class="link">
                                     <a href="../modules/DejaListLoaderModule.html" >DejaListLoaderModule</a>
                                 </li>
                                 <li class="link">
@@ -154,6 +157,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/DejaNumericStepperModule.html" >DejaNumericStepperModule</a>
                                 </li>
                                 <li class="link">
                                     <a href="../modules/DejaOverlayModule.html" >DejaOverlayModule</a>
@@ -297,6 +303,9 @@
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaNumericStepperComponent.html" >DejaNumericStepperComponent</a>
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaOverlayComponent.html" >DejaOverlayComponent</a>
@@ -962,6 +971,9 @@
                                            <a href="../modules/DejaIFrameModule.html" >DejaIFrameModule</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../modules/DejaItemModule.html" >DejaItemModule</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../modules/DejaListLoaderModule.html" >DejaListLoaderModule</a>
                                        </li>
                                        <li class="link">
@@ -975,6 +987,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../modules/DejaMouseDragDropModule.html" >DejaMouseDragDropModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/DejaNumericStepperModule.html" >DejaNumericStepperModule</a>
                                        </li>
                                        <li class="link">
                                            <a href="../modules/DejaOverlayModule.html" >DejaOverlayModule</a>
@@ -1118,6 +1133,9 @@
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaMouseDragDropCursorComponent.html" >DejaMouseDragDropCursorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaNumericStepperComponent.html" >DejaNumericStepperComponent</a>
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaOverlayComponent.html" >DejaOverlayComponent</a>
@@ -1712,22 +1730,16 @@
                             <td class="col-md-4">
                                 <ul class="index-list">
                                     <li>
-                                        <span class="modifier">Public</span> <a href="#clone">clone</a>
-                                    </li>
-                                    <li>
                                         <span class="modifier">Public</span> <a href="#clone$">clone$</a>
                                     </li>
                                     <li>
+                                        <span class="modifier">Public</span> <a href="#cloneArray">cloneArray</a>
+                                    </li>
+                                    <li>
+                                        <span class="modifier">Public</span> <a href="#cloneArray$">cloneArray$</a>
+                                    </li>
+                                    <li>
                                         <span class="modifier">Public</span> <a href="#cloneSync">cloneSync</a>
-                                    </li>
-                                    <li>
-                                        <span class="modifier">Public</span> <a href="#cloneSyncWithPrototype">cloneSyncWithPrototype</a>
-                                    </li>
-                                    <li>
-                                        <span class="modifier">Public</span> <a href="#cloneWithPrototype$">cloneWithPrototype$</a>
-                                    </li>
-                                    <li>
-                                        <span class="modifier">Public</span> <a href="#deepCopy">deepCopy</a>
                                     </li>
                                 </ul>
                             </td>
@@ -1746,68 +1758,6 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
-                                    <a name="clone"></a>
-                                    <span class="name"><b><span class="modifier">Public</span> clone</b><a href="#clone"><span class="fa fa-link"></span></a></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                        <span class="modifier-icon fa fa-reset"></span>
-                                    <code>clone(object: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
-                                </td>
-                            </tr>
-            
-            
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="122" class="link-to-prism">src/common/core/cloning/cloning.service.ts:122</a></div>
-                                        </td>
-                                    </tr>
-            
-                            <tr>
-                                <td class="col-md-4">
-            
-                                        <div class="io-description">
-                                                <b>Parameters :</b>
-                                                <table class="params">
-                                                    <thead>
-                                                        <tr>
-                                                            <td>Name</td>
-                                                            <td>Type</td>
-                                                            <td>Optional</td>
-                                                            <td>Description</td>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                            <tr>
-                                                              <td>object</td>
-                                                              <td>
-                                                                      <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-                                                              </td>
-                                                              <td>
-                                                              </td>
-                                                              <td></td>
-                                                            </tr>
-                                                    </tbody>
-                                                </table>
-                                        </div>
-                                        <div>
-                                        </div>
-                                        <div class="io-description">
-                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-            
-                                        </div>
-                                            <div class="io-description">
-                                                
-                                            </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
                                     <a name="clone$"></a>
                                     <span class="name"><b><span class="modifier">Public</span> clone$</b><a href="#clone$"><span class="fa fa-link"></span></a></span>
                                 </td>
@@ -1822,13 +1772,13 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/common/core/cloning/cloning.service.ts:26</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/common/core/cloning/cloning.service.ts:25</a></div>
                                         </td>
                                     </tr>
             
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-description"><p>Sync cloning of an object</p>
+                                        <div class="io-description"><p>Clone of an object asyncronously</p>
             </div>
             
                                         <div class="io-description">
@@ -1884,6 +1834,156 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
+                                    <a name="cloneArray"></a>
+                                    <span class="name"><b><span class="modifier">Public</span> cloneArray</b><a href="#cloneArray"><span class="fa fa-link"></span></a></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>cloneArray(obj: object[], target?: literal type | [])</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="94" class="link-to-prism">src/common/core/cloning/cloning.service.ts:94</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>Clone an Array</p>
+            </div>
+            
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>obj</td>
+                                                              <td>
+                                                                      <code>object[]</code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>target</td>
+                                                              <td>
+                                                                      <code>literal type | []</code>
+                                                              </td>
+                                                              <td>
+                                                                  true
+                                                              </td>
+                                                              <td><p>The type or an instance of the target</p>
+            </td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>[]</code>
+            
+                                        </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="cloneArray$"></a>
+                                    <span class="name"><b><span class="modifier">Public</span> cloneArray$</b><a href="#cloneArray$"><span class="fa fa-link"></span></a></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>cloneArray$(obj: any[], target?: literal type | [])</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="113" class="link-to-prism">src/common/core/cloning/cloning.service.ts:113</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>Clone an array asyncronously</p>
+            </div>
+            
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                            <td>Type</td>
+                                                            <td>Optional</td>
+                                                            <td>Description</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                              <td>obj</td>
+                                                              <td>
+                                                                      <code>any[]</code>
+                                                              </td>
+                                                              <td>
+                                                              </td>
+                                                              <td></td>
+                                                            </tr>
+                                                            <tr>
+                                                              <td>target</td>
+                                                              <td>
+                                                                      <code>literal type | []</code>
+                                                              </td>
+                                                              <td>
+                                                                  true
+                                                              </td>
+                                                              <td><p>The type or an instance of the target</p>
+            </td>
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>Observable&lt;&gt;</code>
+            
+                                        </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
                                     <a name="cloneSync"></a>
                                     <span class="name"><b><span class="modifier">Public</span> cloneSync</b><a href="#cloneSync"><span class="fa fa-link"></span></a></span>
                                 </td>
@@ -1898,7 +1998,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/common/core/cloning/cloning.service.ts:37</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/common/core/cloning/cloning.service.ts:36</a></div>
                                         </td>
                                     </tr>
             
@@ -1955,192 +2055,6 @@
                             </tr>
                         </tbody>
                     </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <a name="cloneSyncWithPrototype"></a>
-                                    <span class="name"><b><span class="modifier">Public</span> cloneSyncWithPrototype</b><a href="#cloneSyncWithPrototype"><span class="fa fa-link"></span></a></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                        <span class="modifier-icon fa fa-reset"></span>
-                                    <code>cloneSyncWithPrototype(object: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
-                                </td>
-                            </tr>
-            
-            
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="90" class="link-to-prism">src/common/core/cloning/cloning.service.ts:90</a></div>
-                                        </td>
-                                    </tr>
-            
-                            <tr>
-                                <td class="col-md-4">
-            
-                                        <div class="io-description">
-                                                <b>Parameters :</b>
-                                                <table class="params">
-                                                    <thead>
-                                                        <tr>
-                                                            <td>Name</td>
-                                                            <td>Type</td>
-                                                            <td>Optional</td>
-                                                            <td>Description</td>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                            <tr>
-                                                              <td>object</td>
-                                                              <td>
-                                                                      <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-                                                              </td>
-                                                              <td>
-                                                              </td>
-                                                              <td></td>
-                                                            </tr>
-                                                    </tbody>
-                                                </table>
-                                        </div>
-                                        <div>
-                                        </div>
-                                        <div class="io-description">
-                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-            
-                                        </div>
-                                            <div class="io-description">
-                                                
-                                            </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <a name="cloneWithPrototype$"></a>
-                                    <span class="name"><b><span class="modifier">Public</span> cloneWithPrototype$</b><a href="#cloneWithPrototype$"><span class="fa fa-link"></span></a></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                        <span class="modifier-icon fa fa-reset"></span>
-                                    <code>cloneWithPrototype$(object: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
-                                </td>
-                            </tr>
-            
-            
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="115" class="link-to-prism">src/common/core/cloning/cloning.service.ts:115</a></div>
-                                        </td>
-                                    </tr>
-            
-                            <tr>
-                                <td class="col-md-4">
-            
-                                        <div class="io-description">
-                                                <b>Parameters :</b>
-                                                <table class="params">
-                                                    <thead>
-                                                        <tr>
-                                                            <td>Name</td>
-                                                            <td>Type</td>
-                                                            <td>Optional</td>
-                                                            <td>Description</td>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                            <tr>
-                                                              <td>object</td>
-                                                              <td>
-                                                                      <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-                                                              </td>
-                                                              <td>
-                                                              </td>
-                                                              <td></td>
-                                                            </tr>
-                                                    </tbody>
-                                                </table>
-                                        </div>
-                                        <div>
-                                        </div>
-                                        <div class="io-description">
-                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-            
-                                        </div>
-                                            <div class="io-description">
-                                                
-                                            </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <a name="deepCopy"></a>
-                                    <span class="name"><b><span class="modifier">Public</span> deepCopy</b><a href="#deepCopy"><span class="fa fa-link"></span></a></span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                        <span class="modifier-icon fa fa-reset"></span>
-                                    <code>deepCopy(...objects: any[])</code>
-                                </td>
-                            </tr>
-            
-            
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="129" class="link-to-prism">src/common/core/cloning/cloning.service.ts:129</a></div>
-                                        </td>
-                                    </tr>
-            
-                            <tr>
-                                <td class="col-md-4">
-            
-                                        <div class="io-description">
-                                                <b>Parameters :</b>
-                                                <table class="params">
-                                                    <thead>
-                                                        <tr>
-                                                            <td>Name</td>
-                                                            <td>Type</td>
-                                                            <td>Optional</td>
-                                                            <td>Description</td>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                            <tr>
-                                                              <td>objects</td>
-                                                              <td>
-                                                                      <code>any[]</code>
-                                                              </td>
-                                                              <td>
-                                                              </td>
-                                                              <td></td>
-                                                            </tr>
-                                                    </tbody>
-                                                </table>
-                                        </div>
-                                        <div>
-                                        </div>
-                                        <div class="io-description">
-                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-            
-                                        </div>
-                                            <div class="io-description">
-                                                
-                                            </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
             </section>
 
     </div>
@@ -2149,7 +2063,6 @@
     <div class="tab-pane fade tab-source-code" id="source">
         <pre class="line-numbers"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
 import &#x27;rxjs/add/observable/of&#x27;;
-import &#x27;rxjs/add/operator/toPromise&#x27;;
 import { Observable } from &#x27;rxjs/Observable&#x27;;
 
 /**
@@ -2158,13 +2071,13 @@ import { Observable } from &#x27;rxjs/Observable&#x27;;
 @Injectable()
 export class CloningService {
     /**
-     * Sync cloning of an object
+     * Clone of an object asyncronously
      *
      * @param object  The object to clone.
      * @param type The type of object to clone
      * @return Observable resolving to the cloned object.
      */
-    public clone$&lt;T&gt;(object: any, type?: { new (): T } | object): Observable&lt;T&gt; {
+    public clone$&lt;T&gt;(object: any, type?: { new(): T } | object): Observable&lt;T&gt; {
         return Observable.of(this.cloneSync(object, type));
     }
 
@@ -2175,7 +2088,7 @@ export class CloningService {
      * @param target The type or an instance of the target
      * @return The cloned object.
      */
-    public cloneSync&lt;T&gt;(obj: object, target?: { new (): T } | object): T {
+    public cloneSync&lt;T&gt;(obj: object, target?: { new(): T } | object): T {
         if (!target) {
             return JSON.parse(JSON.stringify(obj));
         } else {
@@ -2217,6 +2130,7 @@ export class CloningService {
                 return tgt;
             };
 
+            /** deprecated, replaced by clone array because not working if target is an object */
             if (obj &amp;&amp; Array.isArray(obj)) {
                 return obj.map((o) &#x3D;&gt; this.cloneSync(o, target)) as any;
             }
@@ -2226,154 +2140,41 @@ export class CloningService {
     }
 
     /**
-     * @deprecated 03.07.2017 Use cloneSync with the parameter type specified instead
-    */
-    public cloneSyncWithPrototype(object: any) {
-        if (!object || typeof object !&#x3D;&#x3D; &#x27;object&#x27;) {
-            return object;
-        } else if (object instanceof Date) {
-            return new Date(object);
-        }
-
-        const target &#x3D; new object.constructor();
-        Object.assign(target, object);
-        Object.keys(target).forEach((key) &#x3D;&gt; {
-            if (target[key] instanceof Array) {
-                const a &#x3D; target[key] as any[];
-                target[key] &#x3D; a.map((element) &#x3D;&gt; this.cloneSyncWithPrototype(element));
-            } else if (target[key] instanceof Date) {
-                target[key] &#x3D; new Date(target[key]);
-            } else if (typeof target[key] &#x3D;&#x3D;&#x3D; &#x27;object&#x27;) {
-                target[key] &#x3D; this.cloneSyncWithPrototype(target[key]);
-            }
-        });
-        return target;
-    }
-
-    /**
-     * @deprecated 03.07.2017 Use clone$ with the parameter type specified instead
+     * Clone an Array
+     *
+     * @param object  The Array to clone.
+     * @param target The type or an instance of the target
+     * @return The cloned Array.
      */
-    public cloneWithPrototype$(object: any) {
-        return Observable.of(this.cloneSyncWithPrototype(object));
-    }
-
-    /**
-     * @deprecated 01.03.2017
-     */
-    public clone(object: any) {
-        return this.clone$(object).toPromise();
-    }
-
-    /**
-     * @deprecated 03.07.2017 Use cloneSync with the parameter type specified instead
-     */
-    public deepCopy(...objects: any[]) {
-        if (objects.length &lt; 1 || typeof objects[0] !&#x3D;&#x3D; &#x27;object&#x27;) {
-            return false;
-        }
-
-        if (objects.length &lt; 2) {
-            return objects[0];
-        }
-
-        const target &#x3D; objects[0];
-
-        // convert objects to array and cut off target object
-        const that &#x3D; this;  // Keep reference on class
-        const args &#x3D; Array.prototype.slice.call(objects, 1);
-        let val;
-        let src;
-
-        args.forEach((obj) &#x3D;&gt; {
-            // skip argument if it is array or isn&#x27;t object
-            if (typeof obj !&#x3D;&#x3D; &#x27;object&#x27; || Array.isArray(obj)) {
-                return;
-            }
-
-            Object.keys(obj).forEach((key) &#x3D;&gt; {
-                src &#x3D; target[key]; // source value
-                val &#x3D; obj[key]; // new value
-
-                // recursion prevention
-                if (val &#x3D;&#x3D;&#x3D; target) {
-                    return;
-
-                    /**
-                     * if new value isn&#x27;t object then just overwrite by new value
-                     * instead of extending.
-                     */
-                } else if (typeof val !&#x3D;&#x3D; &#x27;object&#x27; || val &#x3D;&#x3D;&#x3D; null) {
-                    target[key] &#x3D; val;
-                    return;
-
-                    // just clone arrays (and recursive clone objects inside)
-                } else if (Array.isArray(val)) {
-                    target[key] &#x3D; that.deepCloneArray(val);
-                    return;
-
-                    // custom cloning and overwrite for specific objects
-                } else if (that.isSpecificValue(val)) {
-                    target[key] &#x3D; that.cloneSpecificValue(val);
-                    return;
-
-                    // overwrite by new value if source isn&#x27;t object or array
-                } else if (typeof src !&#x3D;&#x3D; &#x27;object&#x27; || src &#x3D;&#x3D;&#x3D; null || Array.isArray(src)) {
-                    target[key] &#x3D; that.deepCopy({}, val);
-                    return;
-
-                    // source value and new value is objects both, extending...
-                } else {
-                    target[key] &#x3D; that.deepCopy(src, val);
-                    return;
-                }
+    public cloneArray&lt;T&gt;(obj: object[], target?: { new(): T } | T[]): T[] {
+        if (target &amp;&amp; Array.isArray(target)) {
+            obj.forEach((o) &#x3D;&gt; {
+                const cloned &#x3D; this.cloneSync(o) as T;
+                target.push(cloned);
             });
-        });
-
-        return target;
-    }
-
-    /**
-     * @deprecated 03.07.2017
-    */
-    private deepCloneArray(arr) {
-        const clone &#x3D; [];
-        const that &#x3D; this;
-        arr.forEach((item, index) &#x3D;&gt; {
-            if (typeof item &#x3D;&#x3D;&#x3D; &#x27;object&#x27; &amp;&amp; item !&#x3D;&#x3D; null) {
-                if (Array.isArray(item)) {
-                    clone[index] &#x3D; that.deepCloneArray(item);
-                } else if (that.isSpecificValue(item)) {
-                    clone[index] &#x3D; that.cloneSpecificValue(item);
-                } else {
-                    clone[index] &#x3D; that.deepCopy({}, item);
-                }
-            } else {
-                clone[index] &#x3D; item;
-            }
-        });
-        return clone;
-    }
-
-    /**
-     * @deprecated 03.07.2017
-    */
-    private isSpecificValue(val) {
-        return (
-            val instanceof Date
-            || val instanceof RegExp
-        ) ? true : false;
-    }
-
-    /**
-     * @deprecated 03.07.2017
-    */
-    private cloneSpecificValue(val): any {
-        if (val instanceof Date) {
-            return new Date(val.getTime());
-        } else if (val instanceof RegExp) {
-            return new RegExp(val);
+            return target as T[];
         } else {
-            throw new Error(&#x27;Unexpected situation&#x27;);
+            return obj.map((o) &#x3D;&gt; this.cloneSync(o, target));
+        }
+    }
+
+    /**
+     * Clone an array asyncronously
+     *
+     * @param object  The array to clone.
+     * @param target The type or an instance of the target
+     * @return Observable resolving to the cloned array.
+     */
+    public cloneArray$&lt;T&gt;(obj: any[], target?: { new(): T } | T[]): Observable&lt;T&gt; {
+        if (target &amp;&amp; Array.isArray(target)) {
+            obj.forEach((o) &#x3D;&gt; {
+                const cloned &#x3D; this.cloneSync(o) as T;
+                target.push(cloned);
+            });
+            return Observable.from(target);
+        } else {
+            return Observable.from(obj)
+                .switchMap((o) &#x3D;&gt; this.clone$(o, target));
         }
     }
 }
