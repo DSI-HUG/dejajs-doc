@@ -49,20 +49,20 @@
                                   <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
                                 </li>
                                 <li class="link">
-                                    <a href="./changelog.html"
-                                        >
+                                        <a href="../changelog.html"
+                                    >
                                         <span class="fa fa-file-text-o"></span>CHANGELOG
                                     </a>
                                 </li>
                                 <li class="link">
-                                    <a href="./contributing.html"
-                                        >
+                                        <a href="../contributing.html"
+                                    >
                                         <span class="fa fa-file-text-o"></span>CONTRIBUTING
                                     </a>
                                 </li>
                                 <li class="link">
-                                    <a href="./license.html"
-                                        >
+                                        <a href="../license.html"
+                                    >
                                         <span class="fa fa-file-text-o"></span>LICENSE
                                     </a>
                                 </li>
@@ -364,9 +364,6 @@
                                 id="xs-directives-links"
                             >
                                 <li class="link">
-                                    <a href="../directives/DateValidatorDirective.html" >DateValidatorDirective</a>
-                                </li>
-                                <li class="link">
                                     <a href="../directives/DejaAutosizeTextAreaDirective.html" >DejaAutosizeTextAreaDirective</a>
                                 </li>
                                 <li class="link">
@@ -601,6 +598,7 @@
                         </ul>
                     </li>
             
+            
                     <li class="chapter">
                         <div class="simple menu-toggler" data-toggle="collapse"
                                 data-target="#xs-interfaces-links"
@@ -612,6 +610,9 @@
                         <ul class="links collapse "
                                 id="xs-interfaces-links"
                             >
+                                <li class="link">
+                                    <a href="../interfaces/HSL.html" >HSL</a>
+                                </li>
                                 <li class="link">
                                     <a href="../interfaces/IAnimation.html" >IAnimation</a>
                                 </li>
@@ -879,20 +880,20 @@
                                          <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
                                        </li>
                                        <li class="link">
-                                           <a href="./changelog.html"
-                                               >
+                                               <a href="../changelog.html"
+                                           >
                                                <span class="fa fa-file-text-o"></span>CHANGELOG
                                            </a>
                                        </li>
                                        <li class="link">
-                                           <a href="./contributing.html"
-                                               >
+                                               <a href="../contributing.html"
+                                           >
                                                <span class="fa fa-file-text-o"></span>CONTRIBUTING
                                            </a>
                                        </li>
                                        <li class="link">
-                                           <a href="./license.html"
-                                               >
+                                               <a href="../license.html"
+                                           >
                                                <span class="fa fa-file-text-o"></span>LICENSE
                                            </a>
                                        </li>
@@ -1194,9 +1195,6 @@
                                        id="directives-links"
                    >
                                        <li class="link">
-                                           <a href="../directives/DateValidatorDirective.html" >DateValidatorDirective</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="../directives/DejaAutosizeTextAreaDirective.html" >DejaAutosizeTextAreaDirective</a>
                                        </li>
                                        <li class="link">
@@ -1431,6 +1429,7 @@
                                </ul>
                            </li>
                    
+                   
                            <li class="chapter">
                                <div class="simple menu-toggler" data-toggle="collapse"
                                        data-target="#interfaces-links"
@@ -1442,6 +1441,9 @@
                                <ul class="links collapse "
                                        id="interfaces-links"
                    >
+                                       <li class="link">
+                                           <a href="../interfaces/HSL.html" >HSL</a>
+                                       </li>
                                        <li class="link">
                                            <a href="../interfaces/IAnimation.html" >IAnimation</a>
                                        </li>
@@ -1686,6 +1688,7 @@
 
 
 
+
 <ol class="breadcrumb">
   <li>Interfaces</li>
   <li>IFindItemResult</li>
@@ -1703,7 +1706,7 @@
 </ul>
 
 <div class="tab-content">
-    <div class="tab-pane fade active in" id="info">
+    <div class="tab-pane fade active in" id="c-info">
         <p class="comment">
             <h3>File</h3>
         </p>
@@ -1776,7 +1779,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="1354" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1354</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="1378" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1378</a></div>
                                         </td>
                                     </tr>
 
@@ -1815,7 +1818,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="1352" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1352</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="1376" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1376</a></div>
                                         </td>
                                     </tr>
 
@@ -1831,11 +1834,17 @@
     </div>
 
 
-    <div class="tab-pane fade tab-source-code" id="source">
+    <div class="tab-pane fade tab-source-code" id="c-source">
         <pre class="line-numbers"><code class="language-typescript">import &#x27;rxjs/add/observable/concat&#x27;;
+import &#x27;rxjs/add/observable/from&#x27;;
 import &#x27;rxjs/add/observable/fromPromise&#x27;;
 import &#x27;rxjs/add/observable/if&#x27;;
+import &#x27;rxjs/add/observable/of&#x27;;
+import &#x27;rxjs/add/operator/do&#x27;;
+import &#x27;rxjs/add/operator/filter&#x27;;
+import &#x27;rxjs/add/operator/map&#x27;;
 import &#x27;rxjs/add/operator/reduce&#x27;;
+import &#x27;rxjs/add/operator/switchMap&#x27;;
 import { BehaviorSubject } from &#x27;rxjs/BehaviorSubject&#x27;;
 import { Observable } from &#x27;rxjs/Observable&#x27;;
 import { Subscriber } from &#x27;rxjs/Subscriber&#x27;;
@@ -1904,9 +1913,9 @@ export class ItemListService {
     private _valueField: string;
 
     /** Evalue la valeur à comparer pour l&#x27;élément spécifié.
-     * @param {any} value  Model à évaluer.
-     * @param {string} valueField (optional) Champs à traiter comme valeur.
-     * @return {string} Valeur à comparer pour le modèle spécifié.
+     * @param value  Model à évaluer.
+     * @param valueField (optional) Champs à traiter comme valeur.
+     * @return Valeur à comparer pour le modèle spécifié.
      */
     public static getItemValue(item: any, valueField?: string) {
         // tslint:disable-next-line:triple-equals
@@ -1927,9 +1936,9 @@ export class ItemListService {
     }
 
     /** Evalue le texte à afficher pour l&#x27;élément spécifié.
-     * @param {any} value  Model à évaluer.
-     * @param {string} textField (optional) Champs à traiter comme source du texte.
-     * @return {string} Texte à afficher pour le modèle spécifié.
+     * @param value  Model à évaluer.
+     * @param textField (optional) Champs à traiter comme source du texte.
+     * @return Texte à afficher pour le modèle spécifié.
      */
     public static getItemText(value: any, textField?: string) {
         if (!value) {
@@ -1991,14 +2000,14 @@ export class ItemListService {
 
     /**
      * Permet de controler l&#x27;affichage du waiter
-     * @returns {BehaviorSubject&lt;boolean&gt;}
+     * @return un sujet contenant la valeur du waiter
      */
     public get waiter$(): BehaviorSubject&lt;boolean&gt; {
         return this._waiter$;
     }
 
     /** Définit le champs utilisé comme collection pour les enfants d&#x27;un parent.
-     * @param {string} value Nom du champ à utiliser comme collection d&#x27;enfants
+     * @param value Nom du champ à utiliser comme collection d&#x27;enfants
      */
     public set childrenField(value: string) {
         this._childrenField &#x3D; value || ItemListService.defaultChildrenField;
@@ -2006,21 +2015,21 @@ export class ItemListService {
     }
 
     /** Renvoie le champs utilisé comme collection pour les enfants d&#x27;un parent
-     * @return {string} value Nom du champ à utilisé comme collection d&#x27;enfants.
+     * @return value Nom du champ à utilisé comme collection d&#x27;enfants.
      */
     public get childrenField() {
         return this._childrenField;
     }
 
     /** Définit une valeur indiquant si les éléments selectionés doivent être masqué. Ce flag est principalement utilisé dans le cas d&#x27;un multi-select
-     * @param {boolean} value True si les éléments selectionés doivent être masqués
+     * @param value True si les éléments selectionés doivent être masqués
      */
     public set hideSelected(value: boolean) {
         this._hideSelected &#x3D; value;
     }
 
     /** Renvoie une valeur indiquant si les éléments selectionés doivent être masqué.
-     * @return {boolean} value True si les éléments selectionés sont masqués
+     * @return value True si les éléments selectionés sont masqués
      */
     public get hideSelected() {
         return this._hideSelected;
@@ -2094,7 +2103,7 @@ export class ItemListService {
     }
 
     /** Renvoie le modèle de grouping ajouté à la liste de base par le service. Ce modèle ne modifie pas la donée, mais est jsute ajouté à l&#x27;affichage
-     * @return {IGroupInfo[]} value Modèle de grouping d&#x27;affichage de la liste.
+     * @return value Modèle de grouping d&#x27;affichage de la liste.
      */
     public get groupInfos() {
         return this._groupInfos;
@@ -2106,23 +2115,23 @@ export class ItemListService {
     }
 
     /** Retourne l&#x27;élément corresondant à l&#x27;index spéficié dans la liste des éléments visibles.
-     * @param {number} index Index de l&#x27;élément à chercher sur la liste des éléments visibles.
-     * @return {IItemBase} Element correspondant à l&#x27;index recherché.
+     * @param index Index de l&#x27;élément à chercher sur la liste des éléments visibles.
+     * @return Element correspondant à l&#x27;index recherché.
      */
     public getItemFromIndex(index: number) {
         return this._cache.visibleList ? this._cache.visibleList[index] : null;
     }
 
     /** Retourne l&#x27;index correspondant à l&#x27;élément spéficié dans la liste des éléments visibles
-     * @param {IItemBase} item Element à chercher sur la liste des éléments visibles.
-     * @return {number} Index correspondant à l&#x27;élément recherché.
+     * @param item Element à chercher sur la liste des éléments visibles.
+     * @return Index correspondant à l&#x27;élément recherché.
      */
     public getItemIndex(item: IItemBase) {
         return this._cache.visibleList ? this._cache.visibleList.findIndex((itm) &#x3D;&gt; this.compareItems(item, itm)) : -1;
     }
 
     /** Renvoie le service utilisé pour le tri de la liste
-     * @return {SortingService} Service utilisé pour le tri.
+     * @return Service utilisé pour le tri.
      */
     public getSortingService() {
         if (!this._sortingService) {
@@ -2132,14 +2141,14 @@ export class ItemListService {
     }
 
     /** Définit le service utilisé pour le tri de la liste
-     * @param {SortingService} value  Service à utiliser pour le tri.
+     * @param value  Service à utiliser pour le tri.
      */
     public setSortingService(value: SortingService) {
         this._sortingService &#x3D; value;
     }
 
     /** Renvoie le service utilisé pour le regroupement de la liste
-     * @return {GroupingService} Service utilisé pour le regroupement.
+     * @return Service utilisé pour le regroupement.
      */
     public getGroupingService() {
         if (!this._groupingService) {
@@ -2149,25 +2158,25 @@ export class ItemListService {
     }
 
     /** Définit le service utilisé pour le regroupement de la liste
-     * @param {GroupingService} value  Service à utiliser pour le regroupement.
+     * @param value Service à utiliser pour le regroupement.
      */
     public setGroupingService(value: GroupingService) {
         this._groupingService &#x3D; value;
     }
 
     /** Evalue le texte à afficher pour l&#x27;élément spécifié.
-     * @param {any} value  Model à évaluer.
-     * @param {string} textField (optional) Champs à traiter comme source du texte.
-     * @return {string} Texte à afficher pour le modèle spécifié.
+     * @param value  Model à évaluer.
+     * @param textField (optional) Champs à traiter comme source du texte.
+     * @return Texte à afficher pour le modèle spécifié.
      */
     public getTextValue(value: any, textField?: string) {
         return ItemListService.getItemText(value, textField);
     }
 
     /** Evalue la valeur à comparer pour l&#x27;élément spécifié.
-     * @param {any} value  Model à évaluer.
-     * @param {string} valueField (optional) Champs à traiter comme valeur.
-     * @return {string} Valeur à comparer pour le modèle spécifié.
+     * @param value  Model à évaluer.
+     * @param valueField (optional) Champs à traiter comme valeur.
+     * @return Valeur à comparer pour le modèle spécifié.
      */
     public getValue(item: any, valueField?: string) {
         return ItemListService.getItemValue(item, valueField);
@@ -2327,8 +2336,8 @@ export class ItemListService {
     }
 
     /** Change l&#x27;état d&#x27;expansion de tous les éléments.
-     * @param {boolean} collapsed  True si les éléments doivent être réduits.
-     * @return {Observable} Observable résolu par la fonction.
+     * @param collapsed True si les éléments doivent être réduits.
+     * @return Observable résolu par la fonction.
      */
     public toggleAll$(collapsed: boolean): Observable&lt;IItemTree[]&gt; {
         return Observable.of(this._cache.flatList)
@@ -2338,9 +2347,9 @@ export class ItemListService {
     }
 
     /** Change l&#x27;état d&#x27;expansion de l&#x27;élément spécifié par son index sur la liste des éléments visibles.
-     * @param {number} index  Index sur la liste des éléments visibles de l&#x27;élément à changer.
-     * @param {boolean} collapse  Etat de l&#x27;élément. True pour réduire l&#x27;élément.
-     * @return {Observable} Observable résolu par la fonction.
+     * @param index Index sur la liste des éléments visibles de l&#x27;élément à changer.
+     * @param collapse Etat de l&#x27;élément. True pour réduire l&#x27;élément.
+     * @return Observable résolu par la fonction.
      */
     public toggleCollapse$(index: number, collapse?: boolean): Observable&lt;IItemTree&gt; {
         const visibleList &#x3D; this._cache.visibleList;
@@ -2358,8 +2367,8 @@ export class ItemListService {
     }
 
     /** Etends les éléments spécifiés.
-     * @param {IItemBase[]} items  Liste des éléments à étendre.
-     * @return {Observable} Observable résolu par la fonction.
+     * @param items Liste des éléments à étendre.
+     * @return Observable résolu par la fonction.
      */
     public expandItems$(items: IItemBase[]): Observable&lt;IItemBase[]&gt; {
         return Observable.from(items || [])
@@ -2371,8 +2380,8 @@ export class ItemListService {
     }
 
     /** Reduits les éléments spécifiés.
-     * @param {IItemBase[]} items  Liste des éléments à réduire.
-     * @return {Observable} Observable résolu par la fonction.
+     * @param items Liste des éléments à réduire.
+     * @return Observable résolu par la fonction.
      */
     public collapseItems$(items: IItemBase[]): Observable&lt;IItemBase[]&gt; {
         return Observable.from(items || [])
@@ -2384,8 +2393,8 @@ export class ItemListService {
     }
 
     /** Etends l&#x27;élément spécifié.
-     * @param {IItemBase[]} items  Eléments à étendre.
-     * @return {Observable} Observable résolu par la fonction.
+     * @param items Eléments à étendre.
+     * @return Observable résolu par la fonction.
      */
     public expandItem$(item: IItemTree) {
         return Observable.of(item)
@@ -2400,8 +2409,8 @@ export class ItemListService {
     }
 
     /** Réduit l&#x27;élément spécifié.
-     * @param {IItemBase[]} items  Eléments à réduire.
-     * @return {Observable} Observable résolu par la fonction.
+     * @param items Eléments à réduire.
+     * @return Observable résolu par la fonction.
      */
     public collapseItem$(item: IItemTree) {
         return Observable.of(item)
@@ -2416,14 +2425,14 @@ export class ItemListService {
     }
 
     /** Retourne la liste des éléments sélectionés.
-     * @return {IItemBase[]} Liste des éléments selectionés.
+     * @return Liste des éléments selectionés.
      */
     public getSelectedItems() {
         return this.selectedList || [];
     }
 
     /** Définit la liste des éléments sélectionés.
-     * @param {IItemBase[]} items Liste des éléments a selectioner.
+     * @param items Liste des éléments a selectioner.
      */
     public setSelectedItems(items: IItemBase[]) {
         if (this.selectedList) {
@@ -2440,7 +2449,7 @@ export class ItemListService {
     }
 
     /** Déselectionne tous les éléments sélectionés.
-     * @return {Observable} Observable résolu par la fonction.
+     * @return Observable résolu par la fonction.
      */
     public unselectAll$(): Observable&lt;IItemBase[]&gt; {
         if (this.hideSelected) {
@@ -2454,9 +2463,9 @@ export class ItemListService {
     }
 
     /** Sélectionne une plage d&#x27;éléments en fonction de l&#x27;index de début et l&#x27;index de fin sur la liste des éléments visibles.
-     * @param {number} indexFrom index sur la liste des éléments visibles du premier élément à sélectioner.
-     * @param {number} indexTo index sur la liste des éléments visibles du dernier élément à sélectioner.
-     * @return {Observable} Observable résolu par la fonction.
+     * @param indexFrom index sur la liste des éléments visibles du premier élément à sélectioner.
+     * @param indexTo index sur la liste des éléments visibles du dernier élément à sélectioner.
+     * @return Observable résolu par la fonction.
      */
     public selectRange$(indexFrom: number, indexTo?: number): Observable&lt;number&gt; {
         if (indexTo &#x3D;&#x3D;&#x3D; undefined) {
@@ -2481,9 +2490,9 @@ export class ItemListService {
     }
 
     /** Change l&#x27;état de selection de l&#x27;élément spécifié.
-     * @param {IItemBase[]} items Liste des éléments à modifier.
-     * @param {boolean} selected True si les éléments divent être sélectionés, False si ils doivent être déselectionés.
-     * @return {Observable} Observable résolu par la fonction.
+     * @param items Liste des éléments à modifier.
+     * @param selected True si les éléments divent être sélectionés, False si ils doivent être déselectionés.
+     * @return Observable résolu par la fonction.
      */
     public toggleSelect$(items: IItemBase[], selected: boolean) {
         items &#x3D; items || [];
@@ -2497,8 +2506,8 @@ export class ItemListService {
     }
 
     /** Sélectionne les éléments spécifiés
-     * @param {IItemBase[]} items Liste des éléments à sélectioner.
-     * @return {Observable} Observable résolu par la fonction.
+     * @param items Liste des éléments à sélectioner.
+     * @return Observable résolu par la fonction.
      */
     public selectItems$(items: IItemBase[]): Observable&lt;IItemBase[]&gt; {
         return Observable.from(items || [])
@@ -2510,8 +2519,8 @@ export class ItemListService {
     }
 
     /** Déselectionne les éléments spécifiés
-     * @param {IItemBase[]} items Liste des éléments à déselectioner.
-     * @return {Observable} Observable résolu par la fonction.
+     * @param items Liste des éléments à déselectioner.
+     * @return Observable résolu par la fonction.
      */
     public unSelectItems$(items: IItemBase[]): Observable&lt;IItemBase[]&gt; {
         return Observable.from(items || [])
@@ -2524,8 +2533,8 @@ export class ItemListService {
     }
 
     /** Sélectionne l&#x27;élément spécifié
-     * @param {IItemBase} item Elément à sélectioner.
-     * @return {Observable} Observable résolu par la fonction.
+     * @param item Elément à sélectioner.
+     * @return Observable résolu par la fonction.
      */
     public selectItem$(item: IItemBase) {
         return Observable.of(item)
@@ -2543,8 +2552,8 @@ export class ItemListService {
     }
 
     /** Déselectionne l&#x27;élément spécifié
-     * @param {IItemBase} item Elément à déselectioner.
-     * @return {Observable} Observable résolu par la fonction.
+     * @param item Elément à déselectioner.
+     * @return Observable résolu par la fonction.
      */
     public unSelectItem$(item: IItemBase) {
         return Observable.of(item)
@@ -2563,9 +2572,9 @@ export class ItemListService {
     }
 
     /** Trouve l&#x27;élément suivant répondant à la fonction de comparaison spécifiée.
-     * @param {Function} compare Function de comparaison pour la recherche de l&#x27;élément.
-     * @param {number} startIndex Index de départ sur la liste des éléments visibles.
-     * @return {Observable} Observable résolu par la fonction.
+     * @param compare Function de comparaison pour la recherche de l&#x27;élément.
+     * @param startIndex Index de départ sur la liste des éléments visibles.
+     * @return Observable résolu par la fonction.
      */
     public findNextMatch$(compare?: (item: IItemBase, index: number) &#x3D;&gt; boolean, startIndex?: number): Observable&lt;IFindItemResult&gt; {
         let result &#x3D; { index: -1 } as IFindItemResult;
@@ -2602,8 +2611,8 @@ export class ItemListService {
     }
 
     /** Trie les éléments en fonction du modèle de tri spécifié
-     * @param {ISortInfos} sortInfos Modèle de tri à appliquer.
-     * @return {Observable} Observable résolu par la fonction.
+     * @param sortInfos Modèle de tri à appliquer.
+     * @return Observable résolu par la fonction.
      */
     public sort$(sortInfos: ISortInfos) {
         if (!this.items) {
@@ -2627,8 +2636,8 @@ export class ItemListService {
     }
 
     /** Groupe les éléments en fonction du modèle de groupe spécifié
-     * @param {IGroupInfo} groupInfos Modèle de groupe à appliquer.
-     * @return {Observable} Observable résolu par la fonction.
+     * @param groupInfos Modèle de groupe à appliquer.
+     * @return Observable résolu par la fonction.
      */
     public group$(groupInfos: IGroupInfo[]) {
         this._groupInfos &#x3D; groupInfos;
@@ -2638,8 +2647,8 @@ export class ItemListService {
     }
 
     /** Retire les groupe correspondants au modèle de groupe spécifié
-     * @param {IGroupInfo} groupInfos Modèle de groupe à retirer.
-     * @return {Observable} Observable résolu par la fonction.
+     * @param groupInfos Modèle de groupe à retirer.
+     * @return Observable résolu par la fonction.
      */
     public ungroup$(groupInfo: IGroupInfo) {
         const groupIndex &#x3D; this._groupInfos ? this._groupInfos.findIndex((gi) &#x3D;&gt; gi.groupByField &#x3D;&#x3D;&#x3D; groupInfo.groupByField) : -1;
@@ -2653,8 +2662,8 @@ export class ItemListService {
     }
 
     /** Retrouve les informations du parent de l&#x27;élément spécifié
-     * @param {IItemTree} item Element enfant du parent à retrouver.
-     * @return {Observable&lt;IParentListInfoResult&gt;} Observable résolu par la fonction, qui retourne les informations sur le parent de l&#x27;élément spécifié
+     * @param item Element enfant du parent à retrouver.
+     * @return Observable résolu par la fonction, qui retourne les informations sur le parent de l&#x27;élément spécifié
      */
     public getParentListInfos$(item: IItemTree, multiSelect: boolean): Observable&lt;IParentListInfoResult&gt; {
         const search$ &#x3D; (flatList: IItemBase[]) &#x3D;&gt; {
@@ -2816,19 +2825,19 @@ export class ItemListService {
 
     /** Retourne la liste à utilise pour la création des caches. Surcharger cetee méthode pour fournir une liste de façon lazy.
      * En cas de surcharge, retourner une nouvelle instance de la liste originale pour que le service regénère ses caches.
-     * @param {string} query Texte ou regular expression par laquelle la liste doit être filtrée.
-     * @param {IItemBase[]} selectedItems Liste des éléments selectionés.
-     * @return {Observable} Observable résolu par la fonction, qui retourne la liste à utiliser.
+     * @param query Texte ou regular expression par laquelle la liste doit être filtrée.
+     * @param selectedItems Liste des éléments selectionés.
+     * @return Observable résolu par la fonction, qui retourne la liste à utiliser.
      */
     protected getItemList$(query?: RegExp | string, selectedItems?: IItemBase[]): Observable&lt;IItemBase[]&gt; {
         return this.loadingItems$ ? this.loadingItems$(query, selectedItems) : Observable.of(this.items);
     }
 
     /** Retourne une valeur indiquant si l&#x27;élément spécifié correspond aux critères de recherche spécifiés
-     * @param {IItemBase} item Elément à analyser.
-     * @param {string} searchField Nom du champ à utiliser pour la recherche. Le champ représenté peut-être une valeur ou une function.
-     * @param {RegExp} regExp Expression de test sur le champs spécifié.
-     * @return {boolean} True si l&#x27;élément correspond aux critères de recherche.
+     * @param item Elément à analyser.
+     * @param searchField Nom du champ à utiliser pour la recherche. Le champ représenté peut-être une valeur ou une function.
+     * @param regExp Expression de test sur le champs spécifié.
+     * @return True si l&#x27;élément correspond aux critères de recherche.
      */
     protected itemMatch(item: IItemBase, searchField: string, regExp: RegExp) {
         const value &#x3D; typeof item[searchField] &#x3D;&#x3D;&#x3D; &#x27;function&#x27; ? item[searchField]() : (item[searchField] ? item[searchField] : this.getTextValue(item, searchField));
@@ -2837,8 +2846,8 @@ export class ItemListService {
 
     /** Retourne une liste groupée si un modèle de groupe interne est spécifié.
      * En cas de surcharge, retourner une nouvelle instance de la liste originale pour que le service regénère ses caches.
-     * @param {IItemBase[]} items Liste des éléments à grouper.
-     * @return {Observable} Observable résolu par la fonction, qui retourne la liste groupés.
+     * @param items Liste des éléments à grouper.
+     * @return Observable résolu par la fonction, qui retourne la liste groupés.
      */
     protected getGroupedList$(items: IItemBase[]): Observable&lt;IItemTree[]&gt; {
         return items ? this.getGroupingService().group$(this.items, this.groupInfos, &#x27;$items&#x27;) : Observable.of([]);
@@ -2846,11 +2855,11 @@ export class ItemListService {
 
     /** Retourne la liste des éléments visibles. Si la liste des éléments est hièrarchique, cette fonction retourne une liste plate. Cette liste est utilisé pour calculer la portion de la liste à afficher.
      * En cas de surcharge, retourner une nouvelle instance de la liste originale pour que le service regénère ses caches.
-     * @param {IItemBase[]} items Liste des éléments à traiter.
-     * @param {string} searchField Nom du champ à utiliser pour la recherche. Le champ représenté peut-être une valeur ou une function.
-     * @param {RegExp} regExp Expression de test à appliquer sur le champ de recherche.
-     * @param {expandTree} Auto expand parents on search query.
-     * @return {Observable} Observable résolu par la fonction, qui retourne la liste visibles.
+     * @param items Liste des éléments à traiter.
+     * @param searchField Nom du champ à utiliser pour la recherche. Le champ représenté peut-être une valeur ou une function.
+     * @param regExp Expression de test à appliquer sur le champ de recherche.
+     * @param Auto expand parents on search query.
+     * @return Observable résolu par la fonction, qui retourne la liste visibles.
      */
     protected getVisibleList$(items: IItemBase[], searchField: string, regExp: RegExp, expandTree: boolean, multiSelect: boolean): Observable&lt;IItemBase[]&gt; {
         if (!items) {
@@ -2949,8 +2958,8 @@ export class ItemListService {
 
     /** Retourne une liste plate depuis la liste originale sans hierarchie.
      * En cas de surcharge, retourner une nouvelle instance de la liste originale pour que le service regénère ses caches.
-     * @param {IItemBase[]} items Liste des éléments hierarchique.
-     * @return {Observable} Observable résolu par la fonction, qui retourne la liste hierarchique mise à plat.
+     * @param items Liste des éléments hierarchique.
+     * @return Observable résolu par la fonction, qui retourne la liste hierarchique mise à plat.
      */
     protected getFlatList$(items: IItemBase[], isFiltered: boolean, multiSelect: boolean): Observable&lt;IItemBase[]&gt; {
         if (!items) {
@@ -3024,40 +3033,58 @@ export class ItemListService {
     }
 
     private ensureSelectedItems(items: IItemBase[]) {
-        if (!this.selectedList || this.selectedList.length &#x3D;&#x3D;&#x3D; 0) {
-            return [];
+        if (this.selectedList &amp;&amp; this.selectedList.length &gt; 0) {
+            // Ensure selected flag
+            this.selectedList.forEach((item) &#x3D;&gt; item.selected &#x3D; true);
+
+            if (!items) {
+                return this.selectedList;
+            }
+
+            const newSelectedList &#x3D; [] as IItemBase[];
+            const ensureSelectedChildren &#x3D; (children: IItemTree[]) &#x3D;&gt; {
+                children.forEach((item) &#x3D;&gt; {
+                    const selectedItem &#x3D; this.selectedList.find((selected) &#x3D;&gt; this.compareItems(selected, item));
+                    if (selectedItem) {
+                        selectedItem.selected &#x3D; false;
+                        newSelectedList.push(item);
+                    }
+                    if (item.$items) {
+                        ensureSelectedChildren(item.$items);
+                    }
+                });
+            };
+
+            ensureSelectedChildren(items);
+
+            // Add not found selected items
+            this.selectedList.filter((item) &#x3D;&gt; item.selected).forEach((item) &#x3D;&gt; newSelectedList.push(item));
+
+            this.selectedList &#x3D; newSelectedList;
+
+            // Ensure selected flag for the new items
+            this.selectedList.forEach((item) &#x3D;&gt; item.selected &#x3D; true);
+
+        } else {
+            this.selectedList &#x3D; [];
+
+            if (!items) {
+                return this.selectedList;
+            }
+
+            const ensureSelectedChildren &#x3D; (children: IItemTree[]) &#x3D;&gt; {
+                children.forEach((item) &#x3D;&gt; {
+                    if (item.selected) {
+                        this.selectedList.push(item);
+                    }
+                    if (item.$items) {
+                        ensureSelectedChildren(item.$items);
+                    }
+                });
+            };
+
+            ensureSelectedChildren(items);
         }
-
-        // Ensure selected flag
-        this.selectedList.forEach((item) &#x3D;&gt; item.selected &#x3D; true);
-
-        if (!items) {
-            return this.selectedList;
-        }
-
-        const newSelectedList &#x3D; [] as IItemBase[];
-        const ensureSelectedChildren &#x3D; (children: IItemTree[]) &#x3D;&gt; {
-            children.forEach((item) &#x3D;&gt; {
-                const selectedItem &#x3D; this.selectedList.find((selected) &#x3D;&gt; this.compareItems(selected, item));
-                if (selectedItem) {
-                    selectedItem.selected &#x3D; false;
-                    newSelectedList.push(item);
-                }
-                if (item.$items) {
-                    ensureSelectedChildren(item.$items);
-                }
-            });
-        };
-
-        ensureSelectedChildren(items);
-
-        // Add not found selected items
-        this.selectedList.filter((item) &#x3D;&gt; item.selected).forEach((item) &#x3D;&gt; newSelectedList.push(item));
-
-        this.selectedList &#x3D; newSelectedList;
-
-        // Ensure selected flag for the new items
-        this.selectedList.forEach((item) &#x3D;&gt; item.selected &#x3D; true);
 
         return this.selectedList;
     }

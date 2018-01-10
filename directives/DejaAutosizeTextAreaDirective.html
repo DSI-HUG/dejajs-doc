@@ -49,20 +49,20 @@
                                   <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
                                 </li>
                                 <li class="link">
-                                    <a href="./changelog.html"
-                                        >
+                                        <a href="../changelog.html"
+                                    >
                                         <span class="fa fa-file-text-o"></span>CHANGELOG
                                     </a>
                                 </li>
                                 <li class="link">
-                                    <a href="./contributing.html"
-                                        >
+                                        <a href="../contributing.html"
+                                    >
                                         <span class="fa fa-file-text-o"></span>CONTRIBUTING
                                     </a>
                                 </li>
                                 <li class="link">
-                                    <a href="./license.html"
-                                        >
+                                        <a href="../license.html"
+                                    >
                                         <span class="fa fa-file-text-o"></span>LICENSE
                                     </a>
                                 </li>
@@ -364,9 +364,6 @@
                                 id="xs-directives-links"
                             >
                                 <li class="link">
-                                    <a href="../directives/DateValidatorDirective.html" >DateValidatorDirective</a>
-                                </li>
-                                <li class="link">
                                     <a href="../directives/DejaAutosizeTextAreaDirective.html"  data-type="entity-link" class="active" >DejaAutosizeTextAreaDirective</a>
                                 </li>
                                 <li class="link">
@@ -601,6 +598,7 @@
                         </ul>
                     </li>
             
+            
                     <li class="chapter">
                         <div class="simple menu-toggler" data-toggle="collapse"
                                 data-target="#xs-interfaces-links"
@@ -612,6 +610,9 @@
                         <ul class="links collapse "
                                 id="xs-interfaces-links"
                             >
+                                <li class="link">
+                                    <a href="../interfaces/HSL.html" >HSL</a>
+                                </li>
                                 <li class="link">
                                     <a href="../interfaces/IAnimation.html" >IAnimation</a>
                                 </li>
@@ -879,20 +880,20 @@
                                          <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
                                        </li>
                                        <li class="link">
-                                           <a href="./changelog.html"
-                                               >
+                                               <a href="../changelog.html"
+                                           >
                                                <span class="fa fa-file-text-o"></span>CHANGELOG
                                            </a>
                                        </li>
                                        <li class="link">
-                                           <a href="./contributing.html"
-                                               >
+                                               <a href="../contributing.html"
+                                           >
                                                <span class="fa fa-file-text-o"></span>CONTRIBUTING
                                            </a>
                                        </li>
                                        <li class="link">
-                                           <a href="./license.html"
-                                               >
+                                               <a href="../license.html"
+                                           >
                                                <span class="fa fa-file-text-o"></span>LICENSE
                                            </a>
                                        </li>
@@ -1194,9 +1195,6 @@
                                        id="directives-links"
                    >
                                        <li class="link">
-                                           <a href="../directives/DateValidatorDirective.html" >DateValidatorDirective</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="../directives/DejaAutosizeTextAreaDirective.html"  data-type="entity-link" class="active" >DejaAutosizeTextAreaDirective</a>
                                        </li>
                                        <li class="link">
@@ -1431,6 +1429,7 @@
                                </ul>
                            </li>
                    
+                   
                            <li class="chapter">
                                <div class="simple menu-toggler" data-toggle="collapse"
                                        data-target="#interfaces-links"
@@ -1442,6 +1441,9 @@
                                <ul class="links collapse "
                                        id="interfaces-links"
                    >
+                                       <li class="link">
+                                           <a href="../interfaces/HSL.html" >HSL</a>
+                                       </li>
                                        <li class="link">
                                            <a href="../interfaces/IAnimation.html" >IAnimation</a>
                                        </li>
@@ -1700,7 +1702,7 @@
 </ul>
 
 <div class="tab-content">
-    <div class="tab-pane fade active in" id="info">
+    <div class="tab-pane fade active in" id="c-info">
         <p class="comment">
             <h3>File</h3>
         </p>
@@ -1722,9 +1724,9 @@ Attention, comme la directive utilise un validateur pour détecter les modificat
                 <h3>Implements</h3>
             </p>
             <p class="comment">
-                        <code><a href="https://angular.io/docs/ts/latest/api/core/index/AfterViewInit-interface.html" target="_blank" >AfterViewInit</a></code>
-                        <code><a href="https://angular.io/docs/ts/latest/api/forms/index/Validator-interface.html" target="_blank" >Validator</a></code>
-                        <code><a href="https://angular.io/docs/ts/latest/api/core/index/OnDestroy-interface.html" target="_blank" >OnDestroy</a></code>
+                        <code><a href="https://angular.io/api/core/AfterViewInit" target="_blank" >AfterViewInit</a></code>
+                        <code><a href="https://angular.io/api/forms/Validator" target="_blank" >Validator</a></code>
+                        <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
             </p>
 
 
@@ -1736,7 +1738,7 @@ Attention, comme la directive utilise un validateur pour détecter les modificat
                         <td class="col-md-3">providers</td>
                         <td class="col-md-9">
                             <code>
-                                { provide: NG_VALIDATORS, useExisting: , multi:  }
+                                { : , : (() &#x3D;&gt; ), : true }
                             </code>
                         </td>
                     </tr>
@@ -1756,6 +1758,25 @@ Attention, comme la directive utilise un validateur pour détecter les modificat
                     <tbody>
                         <tr>
                             <td class="col-md-4">
+                                <h6><b>Properties</b></h6>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <ul class="index-list">
+                                    <li>
+                                            <span class="modifier">Private</span>
+                                        <a href="#isAlive">isAlive</a>
+                                    </li>
+                                    <li>
+                                            <span class="modifier">Private</span>
+                                        <a href="#resize$">resize$</a>
+                                    </li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="col-md-4">
                                 <h6><b>Methods</b></h6>
                             </td>
                         </tr>
@@ -1763,13 +1784,16 @@ Attention, comme la directive utilise un validateur pour détecter les modificat
                             <td class="col-md-4">
                                 <ul class="index-list">
                                     <li>
-                                        <span class="modifier">Public</span> <a href="#ngAfterViewInit">ngAfterViewInit</a>
+                                            <span class="modifier">Public</span>
+                                        <a href="#ngAfterViewInit">ngAfterViewInit</a>
                                     </li>
                                     <li>
-                                        <span class="modifier">Public</span> <a href="#ngOnDestroy">ngOnDestroy</a>
+                                            <span class="modifier">Public</span>
+                                        <a href="#ngOnDestroy">ngOnDestroy</a>
                                     </li>
                                     <li>
-                                        <span class="modifier">Public</span> <a href="#validate">validate</a>
+                                            <span class="modifier">Public</span>
+                                        <a href="#validate">validate</a>
                                     </li>
                                 </ul>
                             </td>
@@ -1784,12 +1808,12 @@ Attention, comme la directive utilise un validateur pour détecter les modificat
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
-                                    <code>constructor(elementRef: <a href="https://angular.io/docs/ts/latest/api/core/index/ElementRef-class.html" target="_blank">ElementRef</a>)</code>
+                                    <code>constructor(elementRef: <a href="https://angular.io/api/core/ElementRef" target="_blank">ElementRef</a>)</code>
                                 </td>
                             </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/component/autosize-textarea/autosize-textarea.directive.ts:28</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/component/autosize-textarea/autosize-textarea.directive.ts:32</a></div>
                                         </td>
                                     </tr>
             
@@ -1810,7 +1834,7 @@ Attention, comme la directive utilise un validateur pour détecter les modificat
                                                             <tr>
                                                               <td>elementRef</td>
                                                               <td>
-                                                                        <code><a href="https://angular.io/docs/ts/latest/api/core/index/ElementRef-class.html" target="_blank" >ElementRef</a></code>
+                                                                        <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
                                                               </td>
                                                               <td>
                                                               </td>
@@ -1839,7 +1863,13 @@ Attention, comme la directive utilise un validateur pour détecter les modificat
                             <tr>
                                 <td class="col-md-4">
                                     <a name="ngAfterViewInit"></a>
-                                    <span class="name"><b><span class="modifier">Public</span> ngAfterViewInit</b><a href="#ngAfterViewInit"><span class="fa fa-link"></span></a></span>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Public</span>
+                                        ngAfterViewInit
+                                        </b>
+                                        <a href="#ngAfterViewInit"><span class="fa fa-link"></span></a>
+                                    </span>
                                 </td>
                             </tr>
                             <tr>
@@ -1852,7 +1882,7 @@ Attention, comme la directive utilise un validateur pour détecter les modificat
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/component/autosize-textarea/autosize-textarea.directive.ts:52</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/component/autosize-textarea/autosize-textarea.directive.ts:57</a></div>
                                         </td>
                                     </tr>
             
@@ -1872,7 +1902,13 @@ Attention, comme la directive utilise un validateur pour détecter les modificat
                             <tr>
                                 <td class="col-md-4">
                                     <a name="ngOnDestroy"></a>
-                                    <span class="name"><b><span class="modifier">Public</span> ngOnDestroy</b><a href="#ngOnDestroy"><span class="fa fa-link"></span></a></span>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Public</span>
+                                        ngOnDestroy
+                                        </b>
+                                        <a href="#ngOnDestroy"><span class="fa fa-link"></span></a>
+                                    </span>
                                 </td>
                             </tr>
                             <tr>
@@ -1885,7 +1921,7 @@ Attention, comme la directive utilise un validateur pour détecter les modificat
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/component/autosize-textarea/autosize-textarea.directive.ts:48</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/component/autosize-textarea/autosize-textarea.directive.ts:53</a></div>
                                         </td>
                                     </tr>
             
@@ -1905,7 +1941,13 @@ Attention, comme la directive utilise un validateur pour détecter les modificat
                             <tr>
                                 <td class="col-md-4">
                                     <a name="validate"></a>
-                                    <span class="name"><b><span class="modifier">Public</span> validate</b><a href="#validate"><span class="fa fa-link"></span></a></span>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Public</span>
+                                        validate
+                                        </b>
+                                        <a href="#validate"><span class="fa fa-link"></span></a>
+                                    </span>
                                 </td>
                             </tr>
                             <tr>
@@ -1918,7 +1960,7 @@ Attention, comme la directive utilise un validateur pour détecter les modificat
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/component/autosize-textarea/autosize-textarea.directive.ts:56</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/component/autosize-textarea/autosize-textarea.directive.ts:61</a></div>
                                         </td>
                                     </tr>
             
@@ -1935,16 +1977,95 @@ Attention, comme la directive utilise un validateur pour détecter les modificat
                     </table>
             </section>
 
+            <section>
+                
+                    <h3 id="inputs">
+                        Properties
+                    </h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="isAlive"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Private</span>
+                                        isAlive
+                                        </b>
+                                        <a href="#isAlive"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <span class="modifier-icon fa fa-reset"></span><code>isAlive:     <code></code>
+            </code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Default value : </i><code>true</code>
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/component/autosize-textarea/autosize-textarea.directive.ts:32</a></div>
+                                        </td>
+                                    </tr>
+            
+            
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="resize$"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Private</span>
+                                        resize$
+                                        </b>
+                                        <a href="#resize$"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <span class="modifier-icon fa fa-reset"></span><code>resize$:     <code></code>
+            </code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Default value : </i><code>new Subject&lt;void&gt;()</code>
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                            <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/component/autosize-textarea/autosize-textarea.directive.ts:31</a></div>
+                                        </td>
+                                    </tr>
+            
+            
+                        </tbody>
+                    </table>
+            </section>
+
 
     </div>
 
 
-    <div class="tab-pane fade tab-source-code" id="source">
+    <div class="tab-pane fade tab-source-code" id="c-source">
         <pre class="line-numbers"><code class="language-typescript">import { AfterViewInit, Directive, ElementRef, forwardRef, OnDestroy } from &#x27;@angular/core&#x27;;
 import { NG_VALIDATORS, Validator } from &#x27;@angular/forms&#x27;;
+import &#x27;rxjs/add/observable/from&#x27;;
+import &#x27;rxjs/add/operator/debounceTime&#x27;;
+import &#x27;rxjs/add/operator/do&#x27;;
+import &#x27;rxjs/add/operator/first&#x27;;
+import &#x27;rxjs/add/operator/takeWhile&#x27;;
 import { Observable } from &#x27;rxjs/Observable&#x27;;
 import { Subject } from &#x27;rxjs/Subject&#x27;;
-import { Subscription } from &#x27;rxjs/Subscription&#x27;;
 
 /**
  * Directive pour rendre un textarea material redimensioné automatiquement au contenu.
@@ -1959,7 +2080,7 @@ import { Subscription } from &#x27;rxjs/Subscription&#x27;;
 })
 export class DejaAutosizeTextAreaDirective implements AfterViewInit, Validator, OnDestroy {
     private resize$ &#x3D; new Subject&lt;void&gt;();
-    private resize$sub: Subscription;
+    private isAlive &#x3D; true;
 
     constructor(private elementRef: ElementRef) {
         const textAreaElement &#x3D; this.elementRef.nativeElement as HTMLTextAreaElement;
@@ -1971,7 +2092,8 @@ export class DejaAutosizeTextAreaDirective implements AfterViewInit, Validator, 
                 textAreaElement.style.overflowY &#x3D; &#x27;hidden&#x27;;
             });
 
-        this.resize$sub &#x3D; Observable.from(this.resize$)
+        Observable.from(this.resize$)
+            .takeWhile(() &#x3D;&gt; this.isAlive)
             .debounceTime(5)
             .do(() &#x3D;&gt; textAreaElement.style.height &#x3D; &#x27;18px&#x27;)
             .subscribe(() &#x3D;&gt; {
@@ -1980,7 +2102,7 @@ export class DejaAutosizeTextAreaDirective implements AfterViewInit, Validator, 
     }
 
     public ngOnDestroy() {
-        this.resize$sub.unsubscribe();
+        this.isAlive &#x3D; false;
     }
 
     public ngAfterViewInit() {
@@ -1996,6 +2118,7 @@ export class DejaAutosizeTextAreaDirective implements AfterViewInit, Validator, 
     </div>
 
 </div>
+
 
 
 

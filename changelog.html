@@ -49,20 +49,20 @@
                                   <a href="./index.html" ><span class="fa fa-file-text-o"></span>README</a>
                                 </li>
                                 <li class="link">
-                                    <a href="./changelog.html"
-                                        >
+                                        <a href="./changelog.html"
+                                    >
                                         <span class="fa fa-file-text-o"></span>CHANGELOG
                                     </a>
                                 </li>
                                 <li class="link">
-                                    <a href="./contributing.html"
-                                        >
+                                        <a href="./contributing.html"
+                                    >
                                         <span class="fa fa-file-text-o"></span>CONTRIBUTING
                                     </a>
                                 </li>
                                 <li class="link">
-                                    <a href="./license.html"
-                                        >
+                                        <a href="./license.html"
+                                    >
                                         <span class="fa fa-file-text-o"></span>LICENSE
                                     </a>
                                 </li>
@@ -364,9 +364,6 @@
                                 id="xs-directives-links"
                             >
                                 <li class="link">
-                                    <a href="./directives/DateValidatorDirective.html" >DateValidatorDirective</a>
-                                </li>
-                                <li class="link">
                                     <a href="./directives/DejaAutosizeTextAreaDirective.html" >DejaAutosizeTextAreaDirective</a>
                                 </li>
                                 <li class="link">
@@ -601,6 +598,7 @@
                         </ul>
                     </li>
             
+            
                     <li class="chapter">
                         <div class="simple menu-toggler" data-toggle="collapse"
                                 data-target="#xs-interfaces-links"
@@ -612,6 +610,9 @@
                         <ul class="links collapse "
                                 id="xs-interfaces-links"
                             >
+                                <li class="link">
+                                    <a href="./interfaces/HSL.html" >HSL</a>
+                                </li>
                                 <li class="link">
                                     <a href="./interfaces/IAnimation.html" >IAnimation</a>
                                 </li>
@@ -879,20 +880,20 @@
                                          <a href="./index.html" ><span class="fa fa-file-text-o"></span>README</a>
                                        </li>
                                        <li class="link">
-                                           <a href="./changelog.html"
-                                               >
+                                               <a href="./changelog.html"
+                                           >
                                                <span class="fa fa-file-text-o"></span>CHANGELOG
                                            </a>
                                        </li>
                                        <li class="link">
-                                           <a href="./contributing.html"
-                                               >
+                                               <a href="./contributing.html"
+                                           >
                                                <span class="fa fa-file-text-o"></span>CONTRIBUTING
                                            </a>
                                        </li>
                                        <li class="link">
-                                           <a href="./license.html"
-                                               >
+                                               <a href="./license.html"
+                                           >
                                                <span class="fa fa-file-text-o"></span>LICENSE
                                            </a>
                                        </li>
@@ -1194,9 +1195,6 @@
                                        id="directives-links"
                    >
                                        <li class="link">
-                                           <a href="./directives/DateValidatorDirective.html" >DateValidatorDirective</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="./directives/DejaAutosizeTextAreaDirective.html" >DejaAutosizeTextAreaDirective</a>
                                        </li>
                                        <li class="link">
@@ -1431,6 +1429,7 @@
                                </ul>
                            </li>
                    
+                   
                            <li class="chapter">
                                <div class="simple menu-toggler" data-toggle="collapse"
                                        data-target="#interfaces-links"
@@ -1442,6 +1441,9 @@
                                <ul class="links collapse "
                                        id="interfaces-links"
                    >
+                                       <li class="link">
+                                           <a href="./interfaces/HSL.html" >HSL</a>
+                                       </li>
                                        <li class="link">
                                            <a href="./interfaces/IAnimation.html" >IAnimation</a>
                                        </li>
@@ -1678,6 +1680,788 @@
                <div class="content getting-started">
                    <div class="content-data">
 
+<h3 id="2-21-0-2018-01-10-">2.21.0 (2018-01-10)</h3>
+<h5 id="breaking-changes">BREAKING CHANGES</h5>
+<ul>
+<li><strong>DejaTreeList:</strong> Fix limited depth (<a href="https://github.com/DSI-HUG/dejajs-components/commit/7f19da35906d035b617c49492c8afebd7b437a94">7f19da35</a>)
+  =&gt; Fix limited padding depth to 4 and remove background gradient for parent items</li>
+</ul>
+<p>Padding of the parent element can change. There is no more background gradient for
+parent items</p>
+<p>DEJS-221</p>
+<h5 id="chores">Chores</h5>
+<ul>
+<li><strong>Dependencies:</strong> Get RXJS from Angular CLI (<a href="https://github.com/DSI-HUG/dejajs-components/commit/fbd0596b2fe0567c22c51bfc19675217aca0150f">fbd0596b</a>)</li>
+</ul>
+<h5 id="continuous-integration">Continuous Integration</h5>
+<ul>
+<li><strong>Dependencies:</strong> upgrade dependencies (<a href="https://github.com/DSI-HUG/dejajs-components/commit/d89174cbde226068eb06bd266bc974159cd65180">d89174cb</a>)</li>
+<li><strong>Travis:</strong><ul>
+<li>Add DSI Slack notifications (<a href="https://github.com/DSI-HUG/dejajs-components/commit/00b649157cff7cc8279ab534b680946d35e8ef40">00b64915</a>)</li>
+<li>Add DSI Slack notifications (<a href="https://github.com/DSI-HUG/dejajs-components/commit/e73a8b689304dab83499104b03af2cbbc9bff144">e73a8b68</a>)</li>
+</ul>
+</li>
+</ul>
+<h5 id="new-features">New Features</h5>
+<ul>
+<li><strong>DejaTiles:</strong> Added event when refresh and binding is done (<a href="https://github.com/DSI-HUG/dejajs-components/commit/6a90d78ed9bb9107e59bcec42ecb062701ba1844">6a90d78e</a>)</li>
+<li><strong>DejaMessageBoxComponent:</strong> add showCloseIcon property in order to display a close icon at the top and on the right of the title bar. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/7867617a4a9fe9323c477cea9c0f33d8a62cdd42">7867617a</a>)</li>
+<li><strong>DejaDatePickerComponent:</strong> Add event onDateChange and onTimeChange (<a href="https://github.com/DSI-HUG/dejajs-components/commit/f3fa96f31c86b1dc4cf12e46891783c53c1305cb">f3fa96f3</a>)</li>
+<li><strong>DejaBoldQueryComponent:</strong> added new properties firstOccurenceOnly, firstOccurencePerWordOnly, atTheBeginningOfWordOnly, highlightClassName. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/3ccf5caa1a8382d1a295c4d9323128b568509b85">3ccf5caa</a>)</li>
+<li><strong>DatePicker:</strong><ul>
+<li>layout as a string (<a href="https://github.com/DSI-HUG/dejajs-components/commit/235e0f376236030b430ddff710ea4be77083828a">235e0f37</a>)</li>
+<li>time picker and time selector (<a href="https://github.com/DSI-HUG/dejajs-components/commit/142b977b5e9a9d3aa041bdc53027eea0a43909df">142b977b</a>)</li>
+</ul>
+</li>
+<li><strong>DejaItem:</strong> Add selected input to deja item DEJS-250 (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c23d0405125f3d0af17a50fcae8901fb73de3f3b">c23d0405</a>)</li>
+</ul>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>DejaTilesComponent:</strong><ul>
+<li>Fix crash if model is not defined (<a href="https://github.com/DSI-HUG/dejajs-components/commit/41e269680996450f4dc6c44c2d66532b588df411">41e26968</a>)</li>
+<li>Fix a synchronization issue between tiles model and associated dictionary (<a href="https://github.com/DSI-HUG/dejajs-components/commit/9712b189872eae6ca5fce4a01e38513b9507e018">9712b189</a>)</li>
+</ul>
+</li>
+<li><strong>GlobalEventService:</strong> Fix test fail due to a missing sendaction.js script (<a href="https://github.com/DSI-HUG/dejajs-components/commit/3fabaa5334435b2d75362299835aa00761ebd1b1">3fabaa53</a>)</li>
+<li><strong>DejaTooltip:</strong> Improve alignment because overlay material can&#39;t fit into body (DEJS-302 Régression UserCard) (<a href="https://github.com/DSI-HUG/dejajs-components/commit/2283414438c6827b986b57be6958b7e4809b8525">22834144</a>)</li>
+<li><strong>DejaTiles:</strong><ul>
+<li>Improved event and garbage collection to avoid null pointers onDestroy (<a href="https://github.com/DSI-HUG/dejajs-components/commit/902f9cd7d33fb4c6c1a58cb29cb775de4d2ca1cb">902f9cd7</a>)</li>
+<li>Remove selection when tiles are empties (<a href="https://github.com/DSI-HUG/dejajs-components/commit/55da6084a9b331e51a4887abe901c8fc1f101c43">55da6084</a>)</li>
+</ul>
+</li>
+<li><strong>DejadatePickerComponent:</strong> Raise change events on keyboard navigation (<a href="https://github.com/DSI-HUG/dejajs-components/commit/d9c43cf960e129d9d6fd5ecdbc4e6eb3d5fc0e6d">d9c43cf9</a>)</li>
+<li><strong>DejaDatePickerComponent:</strong> #94 check mask on blur and make control invalid if mask isn&#39;t ok (<a href="https://github.com/DSI-HUG/dejajs-components/commit/7c25cf70cf9264aa8345270f94e1edb704f2d5c9">7c25cf70</a>)</li>
+<li><strong>DejaDateSelectorComponent:</strong> Hour cursor was displayed on 12 when click on 0 (<a href="https://github.com/DSI-HUG/dejajs-components/commit/bfa740d95bde9463c3e662897716d48a7b7c7ac4">bfa740d9</a>)</li>
+<li><strong>DejaTile:</strong><ul>
+<li>Removed useless this in html (<a href="https://github.com/DSI-HUG/dejajs-components/commit/ef9657ca45856177b81cdfb41319fbcbeda6a25f">ef9657ca</a>)</li>
+<li>Spinner position (Regression due to mateial spinner changes) (<a href="https://github.com/DSI-HUG/dejajs-components/commit/5b773940dc7f0def46ff8997fc51ababb02c879e">5b773940</a>)</li>
+</ul>
+</li>
+<li><strong>ViewPortService:</strong> ViewportService sometimes blocked when the last item is displayed and the scoll button up is pressed (<a href="https://github.com/DSI-HUG/dejajs-components/commit/b5ba5520025c62febb3910142cdc39add74f8c53">b5ba5520</a>)</li>
+<li><strong>DejaGrid:</strong> Header bottom line style (<a href="https://github.com/DSI-HUG/dejajs-components/commit/23fbe33c6604e1db68bc468a49cce612e1164662">23fbe33c</a>)</li>
+<li><strong>DejaSelect:</strong><ul>
+<li>Ensure SearchCriteria in auto-complete when min search length is set and a value already selected (<a href="https://github.com/DSI-HUG/dejajs-components/commit/e11e666bdfa0b0e8a7bdb369bb1f56f305091b0f">e11e666b</a>)</li>
+<li>rxjs imports (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c0ca4ba911bed823fc152d939da889618cb1ce0e">c0ca4ba9</a>)</li>
+<li>Hide when an element is clicked (<a href="https://github.com/DSI-HUG/dejajs-components/commit/6236f108d4fe175dc3ced30e08fbcf53863a64b8">6236f108</a>)</li>
+<li>Autocomplete clear model when text is changed DEJS-246 (<a href="https://github.com/DSI-HUG/dejajs-components/commit/14efbbde2140745ea1e62f5163645d908f63255d">14efbbde</a>)</li>
+<li>Width regression from material rc0 migration (<a href="https://github.com/DSI-HUG/dejajs-components/commit/6188733fe54d2913a13b9c5990534ca40dbfcf1a">6188733f</a>)</li>
+</ul>
+</li>
+<li><strong>Global:</strong><ul>
+<li>rxjs imports (<a href="https://github.com/DSI-HUG/dejajs-components/commit/409c78089e43fe06e9b64ac6cf908591d28e6eb4">409c7808</a>)</li>
+<li>RxJs Imports (<a href="https://github.com/DSI-HUG/dejajs-components/commit/751fbebe16ae2488129c8fcbb1c00e374841cbdc">751fbebe</a>)</li>
+<li>RxJs Imports (<a href="https://github.com/DSI-HUG/dejajs-components/commit/dd445747d8e333428d62e24328f3a10bb0318633">dd445747</a>)</li>
+<li>RxJs Imports (<a href="https://github.com/DSI-HUG/dejajs-components/commit/4047f5d2074b3f608644b1255e47af969cb417a1">4047f5d2</a>)</li>
+</ul>
+</li>
+<li><strong>DejaNumericStepperComponent:</strong> add possibility to remove value and fix onChangeCallback out of range. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/20376c3dd90597839c1a0bb38c11e99776cf14f7">20376c3d</a>)</li>
+<li><strong>DatePicker:</strong><ul>
+<li>conflicts with 2.18.6 (<a href="https://github.com/DSI-HUG/dejajs-components/commit/361de340e0c7eec131f102ceb58187af71209d95">361de340</a>)</li>
+<li>consecutives blank lines (<a href="https://github.com/DSI-HUG/dejajs-components/commit/a7f4190841f84c467af188dfbc41f7fc59693d7a">a7f41908</a>)</li>
+<li>fixed circular dependencies (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1901ec170db4ac834b24da251fc0cbf1aa95f0c4">1901ec17</a>)</li>
+</ul>
+</li>
+<li><strong>DemoTiles:</strong> Drag cursor is missing (<a href="https://github.com/DSI-HUG/dejajs-components/commit/cfccdeba2c523676bb1c820f5b4244a4c00cb86e">cfccdeba</a>)</li>
+<li><strong>ColorPicker:</strong> Disabled style (<a href="https://github.com/DSI-HUG/dejajs-components/commit/3217117d656dec93eef8c38e82b9e1ee827df23c">3217117d</a>)</li>
+<li><strong>SortingService:</strong> Re-add test to check as a date when type date is specified inside SortInfo. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/8a945be78c5aa00857fffdc1feb69a668f494821">8a945be7</a>)</li>
+<li><strong>ItemListService:</strong> Ensure pre-selection from items object DEJS-256 (<a href="https://github.com/DSI-HUG/dejajs-components/commit/70177209bac03daa97d4a2340b26661dc6b98b7a">70177209</a>)</li>
+<li><strong>DejaItemBase:</strong> viewPortRowHeight and viewPortRowMode don&#39;t use coercion (<a href="https://github.com/DSI-HUG/dejajs-components/commit/fc173f00b5e80abbff31ef87c8cad2f20d89c9f5">fc173f00</a>)</li>
+<li><strong>DejaSelectComponent:</strong> Issues fixing find by unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/279f59420783ca4b7c4513aa6860fc4c97157850">279f5942</a>)</li>
+</ul>
+<h5 id="refactors">Refactors</h5>
+<ul>
+<li><strong>DejaGrid:</strong> Fix Lint errors and change signature observeViewPort$ (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1fad0139a05d9f6aa76b335170818c09bf7ea167">1fad0139</a>)</li>
+<li><strong>DatePicker:</strong><ul>
+<li>check removed for layout classname in template (<a href="https://github.com/DSI-HUG/dejajs-components/commit/04ac3db07a6eea318fe3e91d30406dfdaad65e9d">04ac3db0</a>)</li>
+<li>cleanup after time picker (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1c5d7c2d931de27282ca88f531201a14464e2d46">1c5d7c2d</a>)</li>
+</ul>
+</li>
+</ul>
+<h5 id="tests">Tests</h5>
+<ul>
+<li><strong>DejaMouseDragDrop:</strong><ul>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/d72348cbeed05eeb56eb690ffbef85c89ecce398">d72348cb</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/44e01b3c24332695c04d613db083f905dcda0db5">44e01b3c</a>)</li>
+<li>Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1255c8e4163c75746be06cc87347b2a1e058e1c3">1255c8e4</a>)</li>
+</ul>
+</li>
+<li><strong>DejaAutoSizeTextArea:</strong><ul>
+<li>Improve unit test when font can differ between linux and windows (<a href="https://github.com/DSI-HUG/dejajs-components/commit/7bbbe6c450d9962afe9ee206d33238f3767b8781">7bbbe6c4</a>)</li>
+<li>Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/30501ca875045596ef43b87eb8563506b5cd7a49">30501ca8</a>)</li>
+</ul>
+</li>
+<li><strong>DejaTiles:</strong><ul>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/af14dee2586be476b33b75daeda2f96c84c6f945">af14dee2</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/d16f313da87a3436e18ce2701e3d1d1ae47fa1ff">d16f313d</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/a990c2e7fabf756572e152d713e6ab97595ca5f3">a990c2e7</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/38d2fa3681a5c425089b7c4c37b7902a348c2457">38d2fa36</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/3a998fe2e0bd99360023d1e6200daeb67d4e902e">3a998fe2</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/587bda103d843ae254ef33315e751cce4bf470c6">587bda10</a>)</li>
+<li>Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/e2beec3cc0ddd44d55edaa2cffe35e3c7a103e9b">e2beec3c</a>)</li>
+</ul>
+</li>
+<li><strong>DejaGrid:</strong><ul>
+<li>Improve unit test, replacing timer by spyOn (<a href="https://github.com/DSI-HUG/dejajs-components/commit/cfc6fb1b1768b1e89fafd1dc74a3a5ec23a3bd28">cfc6fb1b</a>)</li>
+<li>Fix travis test timing issue (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c8d7fc7b5c7f1de2d75cd8b9fd8155ad937204fd">c8d7fc7b</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/5721cc8e6ea1f79343976a3ad48920d9cfd21822">5721cc8e</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/06febec870c666d250f3be8df7d63878ebfabbdb">06febec8</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/ffcc0a066fa9e7dbf2049b27eee289c296bc0e98">ffcc0a06</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1e1ae0ceaf43f57436573bf5af8b002b59cc5b94">1e1ae0ce</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/72c6ac49861bd2b5695689439b39c1395f2f12e2">72c6ac49</a>)</li>
+<li>Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/9650633a7fd50beb924ba7d896683f78ce253289">9650633a</a>)</li>
+</ul>
+</li>
+<li><strong>DejaSelect:</strong><ul>
+<li>Improve unit test, replacing timer by spyOn (<a href="https://github.com/DSI-HUG/dejajs-components/commit/21c742d0c4290db0f188943315ed39ca23de8ed9">21c742d0</a>)</li>
+<li>Improve Unit Test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/18263df459b104a9a05c79dee58cc5289ed603c4">18263df4</a>)</li>
+<li>Improve Unit Test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/6eedd9f4506e1dea6d9758182c8f65df2d3f4ca2">6eedd9f4</a>)</li>
+</ul>
+</li>
+<li><strong>DejaTreeList:</strong> Improve unit test, replacing timer by spyOn (<a href="https://github.com/DSI-HUG/dejajs-components/commit/83ede9cffba5d4fd2f5a67a944a8575d69361178">83ede9cf</a>)</li>
+<li><strong>DejaBoldQueryComponent:</strong> add junit test. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/d3f33ae5b3d2d81b4430ff40921605237aaaf719">d3f33ae5</a>)</li>
+<li><strong>DejaViewPort:</strong> Added one test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1ddddfa4e98e17044294906bcc202f147cea1f40">1ddddfa4</a>)</li>
+<li><strong>TimeAgoPipe:</strong> Add unit test for TimeAgo pipe (<a href="https://github.com/DSI-HUG/dejajs-components/commit/f7036292219dfa2c895f4ec7c1c99a493a16e595">f7036292</a>)</li>
+<li><strong>ViewPortTest:</strong><ul>
+<li>fix (<a href="https://github.com/DSI-HUG/dejajs-components/commit/835bc644e80ae5fd8c5f9dadf5d603aa56949968">835bc644</a>)</li>
+<li>fix (<a href="https://github.com/DSI-HUG/dejajs-components/commit/753c95db13c78ba3e68b2f252f6bb9442a5b3906">753c95db</a>)</li>
+</ul>
+</li>
+<li><strong>Global:</strong> Replaced deprecated function to initiate MouseEvent (<a href="https://github.com/DSI-HUG/dejajs-components/commit/e9edb056ec4b535edd7971ceeeaa4965f94acbba">e9edb056</a>)</li>
+<li><strong>DejaEditable:</strong> Add unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/4d9434c378341d3f3abde8cde0de008d795dfd1f">4d9434c3</a>)</li>
+<li><strong>Graphics:</strong><ul>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/99158c83ce9a9bdaca66683c26fbb1f89f83db68">99158c83</a>)</li>
+<li>Add unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c943744b60dd420ab165dded9d81022111832d44">c943744b</a>)</li>
+</ul>
+</li>
+<li><strong>DejaClipboardService:</strong> Add unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/11488b1de61254b2c19bf6dc1cea3555dad1f5a8">11488b1d</a>)</li>
+<li><strong>DejaSelectComponent:</strong><ul>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c645bdb4b3fd6cb20e4a4b4aa5978ff39a8ded83">c645bdb4</a>)</li>
+<li>Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1a6c2e5a37254ce215df1ded01a6ec5238e66767">1a6c2e5a</a>)</li>
+</ul>
+</li>
+</ul>
+<h3 id="2-20-0-2017-12-22-">2.20.0 (2017-12-22)</h3>
+<h5 id="breaking-changes">BREAKING CHANGES</h5>
+<ul>
+<li><strong>DejaTreeList:</strong> Fix limited depth (<a href="https://github.com/DSI-HUG/dejajs-components/commit/7f19da35906d035b617c49492c8afebd7b437a94">7f19da35</a>)
+  =&gt; Fix limited padding depth to 4 and remove background gradient for parent items</li>
+</ul>
+<p>Padding of the parent element can change. There is no more background gradient for
+parent items</p>
+<p>DEJS-221</p>
+<h5 id="new-features">New Features</h5>
+<ul>
+<li><strong>DejaMessageBoxComponent:</strong> add showCloseIcon property in order to display a close icon at the top and on the right of the title bar. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/7867617a4a9fe9323c477cea9c0f33d8a62cdd42">7867617a</a>)</li>
+<li><strong>DejaDatePickerComponent:</strong> Add event onDateChange and onTimeChange (<a href="https://github.com/DSI-HUG/dejajs-components/commit/f3fa96f31c86b1dc4cf12e46891783c53c1305cb">f3fa96f3</a>)</li>
+<li><strong>DejaBoldQueryComponent:</strong> added new properties firstOccurenceOnly, firstOccurencePerWordOnly, atTheBeginningOfWordOnly, highlightClassName. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/3ccf5caa1a8382d1a295c4d9323128b568509b85">3ccf5caa</a>)</li>
+<li><strong>DatePicker:</strong><ul>
+<li>layout as a string (<a href="https://github.com/DSI-HUG/dejajs-components/commit/235e0f376236030b430ddff710ea4be77083828a">235e0f37</a>)</li>
+<li>time picker and time selector (<a href="https://github.com/DSI-HUG/dejajs-components/commit/142b977b5e9a9d3aa041bdc53027eea0a43909df">142b977b</a>)</li>
+</ul>
+</li>
+<li><strong>DejaItem:</strong> Add selected input to deja item DEJS-250 (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c23d0405125f3d0af17a50fcae8901fb73de3f3b">c23d0405</a>)</li>
+</ul>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>DejadatePickerComponent:</strong> Raise change events on keyboard navigation (<a href="https://github.com/DSI-HUG/dejajs-components/commit/d9c43cf960e129d9d6fd5ecdbc4e6eb3d5fc0e6d">d9c43cf9</a>)</li>
+<li><strong>DejaDatePickerComponent:</strong> #94 check mask on blur and make control invalid if mask isn&#39;t ok (<a href="https://github.com/DSI-HUG/dejajs-components/commit/7c25cf70cf9264aa8345270f94e1edb704f2d5c9">7c25cf70</a>)</li>
+<li><strong>DejaDateSelectorComponent:</strong> Hour cursor was displayed on 12 when click on 0 (<a href="https://github.com/DSI-HUG/dejajs-components/commit/bfa740d95bde9463c3e662897716d48a7b7c7ac4">bfa740d9</a>)</li>
+<li><strong>DejaTile:</strong><ul>
+<li>Removed useless this in html (<a href="https://github.com/DSI-HUG/dejajs-components/commit/ef9657ca45856177b81cdfb41319fbcbeda6a25f">ef9657ca</a>)</li>
+<li>Spinner position (Regression due to mateial spinner changes) (<a href="https://github.com/DSI-HUG/dejajs-components/commit/5b773940dc7f0def46ff8997fc51ababb02c879e">5b773940</a>)</li>
+</ul>
+</li>
+<li><strong>ViewPortService:</strong> ViewportService sometimes blocked when the last item is displayed and the scoll button up is pressed (<a href="https://github.com/DSI-HUG/dejajs-components/commit/b5ba5520025c62febb3910142cdc39add74f8c53">b5ba5520</a>)</li>
+<li><strong>DejaGrid:</strong> Header bottom line style (<a href="https://github.com/DSI-HUG/dejajs-components/commit/23fbe33c6604e1db68bc468a49cce612e1164662">23fbe33c</a>)</li>
+<li><strong>DejaSelect:</strong> Ensure SearchCriteria in auto-complete when min search length is set and a value already selected (<a href="https://github.com/DSI-HUG/dejajs-components/commit/e11e666bdfa0b0e8a7bdb369bb1f56f305091b0f">e11e666b</a>)</li>
+<li><strong>DejaTiles:</strong> Remove selection when tiles are empties (<a href="https://github.com/DSI-HUG/dejajs-components/commit/55da6084a9b331e51a4887abe901c8fc1f101c43">55da6084</a>)</li>
+<li><strong>Global:</strong> rxjs imports (<a href="https://github.com/DSI-HUG/dejajs-components/commit/409c78089e43fe06e9b64ac6cf908591d28e6eb4">409c7808</a>)</li>
+<li><strong>DatePicker:</strong><ul>
+<li>conflicts with 2.18.6 (<a href="https://github.com/DSI-HUG/dejajs-components/commit/361de340e0c7eec131f102ceb58187af71209d95">361de340</a>)</li>
+<li>consecutives blank lines (<a href="https://github.com/DSI-HUG/dejajs-components/commit/a7f4190841f84c467af188dfbc41f7fc59693d7a">a7f41908</a>)</li>
+<li>fixed circular dependencies (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1901ec170db4ac834b24da251fc0cbf1aa95f0c4">1901ec17</a>)</li>
+</ul>
+</li>
+<li><strong>ItemListService:</strong> Ensure pre-selection from items object DEJS-256 (<a href="https://github.com/DSI-HUG/dejajs-components/commit/70177209bac03daa97d4a2340b26661dc6b98b7a">70177209</a>)</li>
+</ul>
+<h5 id="refactors">Refactors</h5>
+<ul>
+<li><strong>DatePicker:</strong><ul>
+<li>check removed for layout classname in template (<a href="https://github.com/DSI-HUG/dejajs-components/commit/04ac3db07a6eea318fe3e91d30406dfdaad65e9d">04ac3db0</a>)</li>
+<li>cleanup after time picker (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1c5d7c2d931de27282ca88f531201a14464e2d46">1c5d7c2d</a>)</li>
+</ul>
+</li>
+</ul>
+<h5 id="tests">Tests</h5>
+<ul>
+<li><strong>DejaBoldQueryComponent:</strong> add junit test. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/d3f33ae5b3d2d81b4430ff40921605237aaaf719">d3f33ae5</a>)</li>
+<li><strong>TimeAgoPipe:</strong> Add unit test for TimeAgo pipe (<a href="https://github.com/DSI-HUG/dejajs-components/commit/f7036292219dfa2c895f4ec7c1c99a493a16e595">f7036292</a>)</li>
+</ul>
+<h3 id="2-19-0-2017-12-15-">2.19.0 (2017-12-15)</h3>
+<h5 id="breaking-changes">BREAKING CHANGES</h5>
+<ul>
+<li><strong>DejaTreeList:</strong> Fix limited depth (<a href="https://github.com/DSI-HUG/dejajs-components/commit/7f19da35906d035b617c49492c8afebd7b437a94">7f19da35</a>)
+  =&gt; Fix limited padding depth to 4 and remove background gradient for parent items</li>
+</ul>
+<p>Padding of the parent element can change. There is no more background gradient for
+parent items</p>
+<p>DEJS-221</p>
+<ul>
+<li><strong>DateValidator:</strong> Remove the dateValidator because it makes useless validation (DEJS-264)</li>
+</ul>
+<h5 id="new-features">New Features</h5>
+<ul>
+<li><strong>DatePicker:</strong><ul>
+<li>layout as a string (<a href="https://github.com/DSI-HUG/dejajs-components/commit/235e0f376236030b430ddff710ea4be77083828a">235e0f37</a>)</li>
+<li>time picker and time selector (<a href="https://github.com/DSI-HUG/dejajs-components/commit/142b977b5e9a9d3aa041bdc53027eea0a43909df">142b977b</a>)</li>
+</ul>
+</li>
+<li><strong>DejaItem:</strong> Add selected input to deja item DEJS-250 (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c23d0405125f3d0af17a50fcae8901fb73de3f3b">c23d0405</a>)</li>
+</ul>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>DejaTile:</strong> Removed useless this in html (<a href="https://github.com/DSI-HUG/dejajs-components/commit/ef9657ca45856177b81cdfb41319fbcbeda6a25f">ef9657ca</a>)</li>
+<li><strong>ViewPortService:</strong> ViewportService sometimes blocked when the last item is displayed and the scoll button up is pressed (<a href="https://github.com/DSI-HUG/dejajs-components/commit/b5ba5520025c62febb3910142cdc39add74f8c53">b5ba5520</a>)</li>
+<li><strong>DatePicker:</strong><ul>
+<li>conflicts with 2.18.6 (<a href="https://github.com/DSI-HUG/dejajs-components/commit/361de340e0c7eec131f102ceb58187af71209d95">361de340</a>)</li>
+<li>consecutives blank lines (<a href="https://github.com/DSI-HUG/dejajs-components/commit/a7f4190841f84c467af188dfbc41f7fc59693d7a">a7f41908</a>)</li>
+<li>fixed circular dependencies (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1901ec170db4ac834b24da251fc0cbf1aa95f0c4">1901ec17</a>)</li>
+</ul>
+</li>
+<li><strong>ItemListService:</strong> Ensure pre-selection from items object DEJS-256 (<a href="https://github.com/DSI-HUG/dejajs-components/commit/70177209bac03daa97d4a2340b26661dc6b98b7a">70177209</a>)</li>
+</ul>
+<h5 id="refactors">Refactors</h5>
+<ul>
+<li><strong>DatePicker:</strong><ul>
+<li>check removed for layout classname in template (<a href="https://github.com/DSI-HUG/dejajs-components/commit/04ac3db07a6eea318fe3e91d30406dfdaad65e9d">04ac3db0</a>)</li>
+<li>cleanup after time picker (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1c5d7c2d931de27282ca88f531201a14464e2d46">1c5d7c2d</a>)</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-18-11-2017-12-13-">2.18.11 (2017-12-13)</h4>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>DejaGrid:</strong> Header bottom line style (<a href="https://github.com/DSI-HUG/dejajs-components/commit/23fbe33c6604e1db68bc468a49cce612e1164662">23fbe33c</a>)</li>
+<li><strong>DejaSelect:</strong> Ensure SearchCriteria in auto-complete when min search length is set and a value already selected (<a href="https://github.com/DSI-HUG/dejajs-components/commit/e11e666bdfa0b0e8a7bdb369bb1f56f305091b0f">e11e666b</a>)</li>
+<li><strong>DejaTiles:</strong> Remove selection when tiles are empties (<a href="https://github.com/DSI-HUG/dejajs-components/commit/55da6084a9b331e51a4887abe901c8fc1f101c43">55da6084</a>)</li>
+</ul>
+<h5 id="tests">Tests</h5>
+<ul>
+<li><strong>TimeAgoPipe:</strong> Add unit test for TimeAgo pipe (<a href="https://github.com/DSI-HUG/dejajs-components/commit/f7036292219dfa2c895f4ec7c1c99a493a16e595">f7036292</a>)</li>
+</ul>
+<h4 id="2-18-10-2017-12-07-">2.18.10 (2017-12-07)</h4>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>DejaTile:</strong> Spinner position (Regression due to mateial spinner changes) (<a href="https://github.com/DSI-HUG/dejajs-components/commit/5b773940dc7f0def46ff8997fc51ababb02c879e">5b773940</a>)</li>
+<li><strong>Global:</strong> rxjs imports (<a href="https://github.com/DSI-HUG/dejajs-components/commit/409c78089e43fe06e9b64ac6cf908591d28e6eb4">409c7808</a>)</li>
+<li><strong>DejaNumericStepperComponent:</strong> add possibility to remove value and fix onChangeCallback out of range. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/20376c3dd90597839c1a0bb38c11e99776cf14f7">20376c3d</a>)</li>
+</ul>
+<h4 id="2-18-9-2017-12-07-">2.18.9 (2017-12-07)</h4>
+<h5 id="chores">Chores</h5>
+<ul>
+<li><strong>Dependencies:</strong> Get RXJS from Angular CLI (<a href="https://github.com/DSI-HUG/dejajs-components/commit/fbd0596b2fe0567c22c51bfc19675217aca0150f">fbd0596b</a>)</li>
+</ul>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>DejaNumericStepperComponent:</strong> add possibility to remove value and fix onChangeCallback out of range. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/20376c3dd90597839c1a0bb38c11e99776cf14f7">20376c3d</a>)</li>
+<li><strong>DejaSelect:</strong><ul>
+<li>rxjs imports (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c0ca4ba911bed823fc152d939da889618cb1ce0e">c0ca4ba9</a>)</li>
+<li>Hide when an element is clicked (<a href="https://github.com/DSI-HUG/dejajs-components/commit/6236f108d4fe175dc3ced30e08fbcf53863a64b8">6236f108</a>)</li>
+</ul>
+</li>
+<li><strong>DemoTiles:</strong> Drag cursor is missing (<a href="https://github.com/DSI-HUG/dejajs-components/commit/cfccdeba2c523676bb1c820f5b4244a4c00cb86e">cfccdeba</a>)</li>
+<li><strong>ColorPicker:</strong> Disabled style (<a href="https://github.com/DSI-HUG/dejajs-components/commit/3217117d656dec93eef8c38e82b9e1ee827df23c">3217117d</a>)</li>
+<li><strong>Global:</strong><ul>
+<li>RxJs Imports (<a href="https://github.com/DSI-HUG/dejajs-components/commit/751fbebe16ae2488129c8fcbb1c00e374841cbdc">751fbebe</a>)</li>
+<li>RxJs Imports (<a href="https://github.com/DSI-HUG/dejajs-components/commit/dd445747d8e333428d62e24328f3a10bb0318633">dd445747</a>)</li>
+<li>RxJs Imports (<a href="https://github.com/DSI-HUG/dejajs-components/commit/4047f5d2074b3f608644b1255e47af969cb417a1">4047f5d2</a>)</li>
+</ul>
+</li>
+</ul>
+<h5 id="refactors">Refactors</h5>
+<ul>
+<li><strong>DejaGrid:</strong> Fix Lint errors and change signature observeViewPort$ (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1fad0139a05d9f6aa76b335170818c09bf7ea167">1fad0139</a>)</li>
+</ul>
+<h5 id="tests">Tests</h5>
+<ul>
+<li><strong>ViewPortTest:</strong><ul>
+<li>fix (<a href="https://github.com/DSI-HUG/dejajs-components/commit/835bc644e80ae5fd8c5f9dadf5d603aa56949968">835bc644</a>)</li>
+<li>fix (<a href="https://github.com/DSI-HUG/dejajs-components/commit/753c95db13c78ba3e68b2f252f6bb9442a5b3906">753c95db</a>)</li>
+</ul>
+</li>
+<li><strong>DejaGrid:</strong><ul>
+<li>Fix travis test timing issue (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c8d7fc7b5c7f1de2d75cd8b9fd8155ad937204fd">c8d7fc7b</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/5721cc8e6ea1f79343976a3ad48920d9cfd21822">5721cc8e</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/06febec870c666d250f3be8df7d63878ebfabbdb">06febec8</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/ffcc0a066fa9e7dbf2049b27eee289c296bc0e98">ffcc0a06</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1e1ae0ceaf43f57436573bf5af8b002b59cc5b94">1e1ae0ce</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/72c6ac49861bd2b5695689439b39c1395f2f12e2">72c6ac49</a>)</li>
+<li>Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/9650633a7fd50beb924ba7d896683f78ce253289">9650633a</a>)</li>
+</ul>
+</li>
+<li><strong>Global:</strong> Replaced deprecated function to initiate MouseEvent (<a href="https://github.com/DSI-HUG/dejajs-components/commit/e9edb056ec4b535edd7971ceeeaa4965f94acbba">e9edb056</a>)</li>
+</ul>
+<h4 id="2-18-8-2017-12-06-">2.18.8 (2017-12-06)</h4>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>DejaSelect:</strong> rxjs imports (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c0ca4ba911bed823fc152d939da889618cb1ce0e">c0ca4ba9</a>)</li>
+</ul>
+<h5 id="tests">Tests</h5>
+<ul>
+<li><strong>ViewPortTest:</strong> fix (<a href="https://github.com/DSI-HUG/dejajs-components/commit/835bc644e80ae5fd8c5f9dadf5d603aa56949968">835bc644</a>)</li>
+</ul>
+<h4 id="2-18-7-2017-12-06-">2.18.7 (2017-12-06)</h4>
+<h5 id="chores">Chores</h5>
+<ul>
+<li><strong>Dependencies:</strong> Get RXJS from Angular CLI (<a href="https://github.com/DSI-HUG/dejajs-components/commit/fbd0596b2fe0567c22c51bfc19675217aca0150f">fbd0596b</a>)</li>
+</ul>
+<h5 id="refactors">Refactors</h5>
+<ul>
+<li><strong>DejaGrid:</strong> Fix Lint errors and change signature observeViewPort$ (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1fad0139a05d9f6aa76b335170818c09bf7ea167">1fad0139</a>)</li>
+</ul>
+<h5 id="tests">Tests</h5>
+<ul>
+<li><strong>ViewPortTest:</strong> fix (<a href="https://github.com/DSI-HUG/dejajs-components/commit/753c95db13c78ba3e68b2f252f6bb9442a5b3906">753c95db</a>)</li>
+<li><strong>DejaGrid:</strong><ul>
+<li>Fix travis test timing issue (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c8d7fc7b5c7f1de2d75cd8b9fd8155ad937204fd">c8d7fc7b</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/5721cc8e6ea1f79343976a3ad48920d9cfd21822">5721cc8e</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/06febec870c666d250f3be8df7d63878ebfabbdb">06febec8</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/ffcc0a066fa9e7dbf2049b27eee289c296bc0e98">ffcc0a06</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1e1ae0ceaf43f57436573bf5af8b002b59cc5b94">1e1ae0ce</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/72c6ac49861bd2b5695689439b39c1395f2f12e2">72c6ac49</a>)</li>
+<li>Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/9650633a7fd50beb924ba7d896683f78ce253289">9650633a</a>)</li>
+</ul>
+</li>
+<li><strong>Global:</strong> Replaced deprecated function to initiate MouseEvent (<a href="https://github.com/DSI-HUG/dejajs-components/commit/e9edb056ec4b535edd7971ceeeaa4965f94acbba">e9edb056</a>)</li>
+</ul>
+<h4 id="2-18-6-2017-11-29-">2.18.6 (2017-11-29)</h4>
+<h4 id="2-18-5-2017-11-29-">2.18.5 (2017-11-29)</h4>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>DemoTiles:</strong> Drag cursor is missing (<a href="https://github.com/DSI-HUG/dejajs-components/commit/cfccdeba2c523676bb1c820f5b4244a4c00cb86e">cfccdeba</a>)</li>
+<li><strong>DejaSelect:</strong> Hide when an element is clicked (<a href="https://github.com/DSI-HUG/dejajs-components/commit/6236f108d4fe175dc3ced30e08fbcf53863a64b8">6236f108</a>)</li>
+<li><strong>ColorPicker:</strong> Disabled style (<a href="https://github.com/DSI-HUG/dejajs-components/commit/3217117d656dec93eef8c38e82b9e1ee827df23c">3217117d</a>)</li>
+<li><strong>Global:</strong><ul>
+<li>RxJs Imports (<a href="https://github.com/DSI-HUG/dejajs-components/commit/751fbebe16ae2488129c8fcbb1c00e374841cbdc">751fbebe</a>)</li>
+<li>RxJs Imports (<a href="https://github.com/DSI-HUG/dejajs-components/commit/dd445747d8e333428d62e24328f3a10bb0318633">dd445747</a>)</li>
+<li>RxJs Imports (<a href="https://github.com/DSI-HUG/dejajs-components/commit/4047f5d2074b3f608644b1255e47af969cb417a1">4047f5d2</a>)</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-18-4-2017-11-29-">2.18.4 (2017-11-29)</h4>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>SortingService:</strong> Re-add test to check as a date when type date is specified inside SortInfo. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/8a945be78c5aa00857fffdc1feb69a668f494821">8a945be7</a>)</li>
+<li><strong>DejaSelect:</strong><ul>
+<li>Autocomplete clear model when text is changed DEJS-246 (<a href="https://github.com/DSI-HUG/dejajs-components/commit/14efbbde2140745ea1e62f5163645d908f63255d">14efbbde</a>)</li>
+<li>Width regression from material rc0 migration (<a href="https://github.com/DSI-HUG/dejajs-components/commit/6188733fe54d2913a13b9c5990534ca40dbfcf1a">6188733f</a>)</li>
+</ul>
+</li>
+<li><strong>DejaItemBase:</strong> viewPortRowHeight and viewPortRowMode don&#39;t use coercion (<a href="https://github.com/DSI-HUG/dejajs-components/commit/fc173f00b5e80abbff31ef87c8cad2f20d89c9f5">fc173f00</a>)</li>
+<li><strong>DejaSelectComponent:</strong> Issues fixing find by unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/279f59420783ca4b7c4513aa6860fc4c97157850">279f5942</a>)</li>
+</ul>
+<h5 id="tests">Tests</h5>
+<ul>
+<li><strong>DejaEditable:</strong> Add unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/4d9434c378341d3f3abde8cde0de008d795dfd1f">4d9434c3</a>)</li>
+<li><strong>Graphics:</strong><ul>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/99158c83ce9a9bdaca66683c26fbb1f89f83db68">99158c83</a>)</li>
+<li>Add unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c943744b60dd420ab165dded9d81022111832d44">c943744b</a>)</li>
+</ul>
+</li>
+<li><strong>DejaClipboardService:</strong> Add unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/11488b1de61254b2c19bf6dc1cea3555dad1f5a8">11488b1d</a>)</li>
+<li><strong>DejaSelectComponent:</strong><ul>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c645bdb4b3fd6cb20e4a4b4aa5978ff39a8ded83">c645bdb4</a>)</li>
+<li>Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1a6c2e5a37254ce215df1ded01a6ec5238e66767">1a6c2e5a</a>)</li>
+</ul>
+</li>
+<li><strong>DejaSelect:</strong><ul>
+<li>Improve Unit Test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/18263df459b104a9a05c79dee58cc5289ed603c4">18263df4</a>)</li>
+<li>Improve Unit Test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/6eedd9f4506e1dea6d9758182c8f65df2d3f4ca2">6eedd9f4</a>)</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-18-3-2017-11-28-">2.18.3 (2017-11-28)</h4>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>SortingService:</strong> Re-add test to check as a date when type date is specified inside SortInfo. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/8a945be78c5aa00857fffdc1feb69a668f494821">8a945be7</a>)</li>
+<li><strong>DejaSelect:</strong><ul>
+<li>Autocomplete clear model when text is changed DEJS-246 (<a href="https://github.com/DSI-HUG/dejajs-components/commit/14efbbde2140745ea1e62f5163645d908f63255d">14efbbde</a>)</li>
+<li>Width regression from material rc0 migration (<a href="https://github.com/DSI-HUG/dejajs-components/commit/6188733fe54d2913a13b9c5990534ca40dbfcf1a">6188733f</a>)</li>
+</ul>
+</li>
+<li><strong>DejaItemBase:</strong> viewPortRowHeight and viewPortRowMode don&#39;t use coercion (<a href="https://github.com/DSI-HUG/dejajs-components/commit/fc173f00b5e80abbff31ef87c8cad2f20d89c9f5">fc173f00</a>)</li>
+<li><strong>DejaSelectComponent:</strong> Issues fixing find by unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/279f59420783ca4b7c4513aa6860fc4c97157850">279f5942</a>)</li>
+</ul>
+<h5 id="tests">Tests</h5>
+<ul>
+<li><strong>DejaEditable:</strong> Add unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/4d9434c378341d3f3abde8cde0de008d795dfd1f">4d9434c3</a>)</li>
+<li><strong>Graphics:</strong><ul>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/99158c83ce9a9bdaca66683c26fbb1f89f83db68">99158c83</a>)</li>
+<li>Add unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c943744b60dd420ab165dded9d81022111832d44">c943744b</a>)</li>
+</ul>
+</li>
+<li><strong>DejaClipboardService:</strong> Add unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/11488b1de61254b2c19bf6dc1cea3555dad1f5a8">11488b1d</a>)</li>
+<li><strong>DejaSelectComponent:</strong><ul>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c645bdb4b3fd6cb20e4a4b4aa5978ff39a8ded83">c645bdb4</a>)</li>
+<li>Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1a6c2e5a37254ce215df1ded01a6ec5238e66767">1a6c2e5a</a>)</li>
+</ul>
+</li>
+<li><strong>DejaSelect:</strong><ul>
+<li>Improve Unit Test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/18263df459b104a9a05c79dee58cc5289ed603c4">18263df4</a>)</li>
+<li>Improve Unit Test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/6eedd9f4506e1dea6d9758182c8f65df2d3f4ca2">6eedd9f4</a>)</li>
+</ul>
+</li>
+</ul>
+<h4 id="2-18-2-2017-11-24-">2.18.2 (2017-11-24)</h4>
+<h5 id="breaking-changes">BREAKING CHANGES</h5>
+<ul>
+<li><p><strong>SortingServce:</strong> Change compare method to static (<a href="https://github.com/DSI-HUG/dejajs-components/commit/f7eefb1fad49c960d33a2c80b7f058013f9c5971">f7eefb1f</a>)
+  =&gt; Sorting service compare method is now static</p>
+</li>
+<li><p><strong>CloningService:</strong> Remove deprecated functions (<a href="https://github.com/DSI-HUG/dejajs-components/commit/5eee9b37943a23de89e0a6602155583bc24e1a5a">5eee9b37</a>)
+  =&gt; Deprecated functions removed</p>
+</li>
+<li><p><strong>DejaItemComponent:</strong> Because DejaItem is part of DejaSelect and DejaTreeList, the import must be by a module. DejaItemModule is created. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/0b4eb76dc862d8751957dadc4da84206a2ff23d9">0b4eb76d</a>)
+  =&gt; The one use the component <deja-item></deja-item> must add DejaItemModule of his component import</p>
+</li>
+<li><p><strong>ViewPortComponent:</strong> Property items become models and another property items is added and representing an array of IViewPortItems. That allow to control the size of each items. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/bb11027d2058fe3a33a9b26c5cecad0dd7bceed4">bb11027d</a>)
+  =&gt; previous usage of the items input must be renamed to models</p>
+</li>
+<li><p><strong>Dependencies:</strong> upgrade dependencies (<a href="https://github.com/DSI-HUG/dejajs-components/commit/4aad8a112ffa8c408ce5aeebb563a80badde8826">4aad8a11</a>)
+  =&gt; angular material-beta-12 breaking changes, please check <a href="https://github.com/angular/material2/blob/2.0.0-beta.12/CHANGELOG.md">https://github.com/angular/material2/blob/2.0.0-beta.12/CHANGELOG.md</a></p>
+</li>
+</ul>
+<h5 id="continuous-integration">Continuous Integration</h5>
+<ul>
+<li><strong>Dependencies:</strong><ul>
+<li>upgrade dependencies (<a href="https://github.com/DSI-HUG/dejajs-components/commit/e56e591fcc24148c2ec5600765b5773899e10675">e56e591f</a>)</li>
+<li>upgrade dependencies (<a href="https://github.com/DSI-HUG/dejajs-components/commit/7d9629ca93090689fe6b58046f73287a796155aa">7d9629ca</a>)</li>
+</ul>
+</li>
+<li><strong>Global:</strong> Update to Angular5 (<a href="https://github.com/DSI-HUG/dejajs-components/commit/60f111bc4115e2d206ef4f9626e88787b037854d">60f111bc</a>)</li>
+<li><strong>Test:</strong><ul>
+<li>Added script e2e:watch. Run npm i -g watch before use. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/50411ec48a592728be32fa2288e5729e58caff7e">50411ec4</a>)</li>
+<li>Increase karma timeout for PC with bad perf (<a href="https://github.com/DSI-HUG/dejajs-components/commit/18f1d65aa7a5a111106d2fae47524349d273b050">18f1d65a</a>)</li>
+</ul>
+</li>
+<li><strong>Travis:</strong> Improve build performance (concurrent execution) (<a href="https://github.com/DSI-HUG/dejajs-components/commit/d591582ec5c1ac2334aabc7553c796ef7b732313">d591582e</a>)</li>
+</ul>
+<h5 id="documentation-changes">Documentation Changes</h5>
+<ul>
+<li><strong>DejaOverlayComponent:</strong> ajouter entête licence HUG (<a href="https://github.com/DSI-HUG/dejajs-components/commit/541cc49eccf673d4506414aec2610587039282cc">541cc49e</a>)</li>
+</ul>
+<h5 id="new-features">New Features</h5>
+<ul>
+<li><strong>SideNav:</strong> Add the possibility to specify the header&#39;s icon (<a href="https://github.com/DSI-HUG/dejajs-components/commit/dd2432c55685beab59c82a98e6e976680da4bb0b">dd2432c5</a>)</li>
+<li><strong>DejaSelectComponent:</strong> support external error template (<a href="https://github.com/DSI-HUG/dejajs-components/commit/f62c8cc4c29b2608ae28bd789dae17f61408a67a">f62c8cc4</a>)</li>
+<li><strong>GlobaEventService:</strong> Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/eb4e7b1926cd0f805627e662dc95de03ba37c67d">eb4e7b19</a>)</li>
+<li><strong>SortingService:</strong> Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/b54bd772256de5b26d3100f6c1337e2136470ef9">b54bd772</a>)</li>
+<li><strong>GroupingService:</strong> Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/b5c3e1ccfe56bda0f0c3014cc17834b3312ccb76">b5c3e1cc</a>)</li>
+<li><strong>DejaNumericStepperComponent:</strong> NumericStepper (<a href="https://github.com/DSI-HUG/dejajs-components/commit/030a26cb44a132cc04a5fae72f4ea31794cb61c2">030a26cb</a>)</li>
+<li><strong>DejaAutosizeTextAreaDirective:</strong> Removed temporarily deprecated flag, until the material directive work correctly with reactive forms. (#215) (<a href="https://github.com/DSI-HUG/dejajs-components/commit/0b8838516ca48471194c72ae04bb5595b6b185e1">0b883851</a>)</li>
+<li><strong>DejaTreeListComponent:</strong> Added e2e test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/17541bbdbdfba32b215630401f96e3280a003517">17541bbd</a>)</li>
+<li><strong>ItemListService:</strong> Added default values: defaultChildrenField, defaultTextField and defaultValueField (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1fa39b59f7a0538bede18a66fe2ed7124ff50bdf">1fa39b59</a>)</li>
+<li><strong>DejaTileComponent:</strong> Ability to refresh the tile (<a href="https://github.com/DSI-HUG/dejajs-components/commit/d1d40b5a8ab26ddafa9868fdb713f8e6fdb074b8">d1d40b5a</a>)</li>
+<li><strong>ItemListBase:</strong> Possibility to pass an array of items to RefreshViewPort (<a href="https://github.com/DSI-HUG/dejajs-components/commit/7f71ec38df18744ff9d5dc7930bc816d7005e8e2">7f71ec38</a>)</li>
+<li><strong>RangeComponent:</strong> Add refresh function (<a href="https://github.com/DSI-HUG/dejajs-components/commit/96723d4d24351d8990d74e307f291fb244e6951e">96723d4d</a>)</li>
+</ul>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>DejaSelect:</strong><ul>
+<li>Autocomplete clear model when text is changed DEJS-246 (<a href="https://github.com/DSI-HUG/dejajs-components/commit/14efbbde2140745ea1e62f5163645d908f63255d">14efbbde</a>)</li>
+<li>Width regression from material rc0 migration (<a href="https://github.com/DSI-HUG/dejajs-components/commit/6188733fe54d2913a13b9c5990534ca40dbfcf1a">6188733f</a>)</li>
+<li>Ensure selection when models setted after selected item (mode autocomplete and sele (<a href="https://github.com/DSI-HUG/dejajs-components/commit/d18f9393b3c01bc5dd8d5dc0aa7012ba2eaeb6b1">d18f9393</a>)</li>
+<li>Current item was not displayed in multiselect mode (<a href="https://github.com/DSI-HUG/dejajs-components/commit/dee99746a94f7e469b8f9ac090f54d684a8a4562">dee99746</a>)</li>
+<li>Fix an issue where the render of the ViewPort can be sometimes incomplete. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/8dfc2ea3212398d66c5a1834cd04a9fec957eb9f">8dfc2ea3</a>)</li>
+<li>modelIsValue property initialized to undefined and is determined by the first passed model (<a href="https://github.com/DSI-HUG/dejajs-components/commit/bd7dc3cf9d6559c0ecf1837d2eef65a8330316eb">bd7dc3cf</a>)</li>
+<li>modelIsValue property can be defined for multiselect (<a href="https://github.com/DSI-HUG/dejajs-components/commit/3d9c0673d1e413686d77e28216e258312c763bf0">3d9c0673</a>)</li>
+</ul>
+</li>
+<li><strong>DejaItemBase:</strong> viewPortRowHeight and viewPortRowMode don&#39;t use coercion (<a href="https://github.com/DSI-HUG/dejajs-components/commit/fc173f00b5e80abbff31ef87c8cad2f20d89c9f5">fc173f00</a>)</li>
+<li><strong>Global:</strong><ul>
+<li>Remove private access inside template to fix AOT build (<a href="https://github.com/DSI-HUG/dejajs-components/commit/ccafaec889a1c0d08c2ca6694660603f5b908b50">ccafaec8</a>)</li>
+<li>Disable chromium autocomplete for all controls using an input, except the treelist where the binding is modified to use autocomplete (<a href="https://github.com/DSI-HUG/dejajs-components/commit/718408f3fa4d02d2ef13772902e88b8820af0285">718408f3</a>)</li>
+</ul>
+</li>
+<li><strong>DejaNumericStepperComponent:</strong><ul>
+<li>Updated CSS to fit with material rc0 (<a href="https://github.com/DSI-HUG/dejajs-components/commit/3f621085782de62d05ee66a4b98b1ab15655a2a1">3f621085</a>)</li>
+<li>Fix button type + hide hint when max isn&#39;t set (<a href="https://github.com/DSI-HUG/dejajs-components/commit/f45ec771689b089d178a522c875fced8460d6db3">f45ec771</a>)</li>
+</ul>
+</li>
+<li><strong>CloningService:</strong><ul>
+<li>return a new instance of date if object is a date (<a href="https://github.com/DSI-HUG/dejajs-components/commit/55445526ccd92674fdb533646197726d8c690312">55445526</a>)</li>
+<li>Improve test with new functions (<a href="https://github.com/DSI-HUG/dejajs-components/commit/525e12598c501702c0ccddee46f0cca541c4e746">525e1259</a>)</li>
+<li>Cloning an array with an array instance of target (<a href="https://github.com/DSI-HUG/dejajs-components/commit/e297fe167c72e71567234fb87e1d74a89fb1a489">e297fe16</a>)</li>
+<li>Instance check fail if target is type (<a href="https://github.com/DSI-HUG/dejajs-components/commit/68b5d6b631a3e06f0dac318af2a0e002e8818368">68b5d6b6</a>)</li>
+<li>fixing an issue when cloning array into a target array (<a href="https://github.com/DSI-HUG/dejajs-components/commit/e926e953bef78de41797162a4df08fafc89f9d37">e926e953</a>)</li>
+</ul>
+</li>
+<li><strong>ViewPortService:</strong><ul>
+<li>Fix the ViewPort calculation in autosize mode. The issue can make sometimes that the rendered viewport is too small comparing the size of the container. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/03a3050636d1bda0d1133107e4a0b7136ae1c732">03a30506</a>)</li>
+<li>Fix view port crash if not element. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/40d4e8c5078eb6556e6d21893569c65500281117">40d4e8c5</a>)</li>
+<li>Clear items size when refresh with clearMeasuredSize is invoked (<a href="https://github.com/DSI-HUG/dejajs-components/commit/4a3c9b52533e29470ba6ebf4598cfe87efb273ee">4a3c9b52</a>)</li>
+</ul>
+</li>
+<li><strong>DejaSelectComponent:</strong> Issues fixing find by unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/279f59420783ca4b7c4513aa6860fc4c97157850">279f5942</a>)</li>
+<li><strong>GlobaEventService:</strong> Added unregister function (<a href="https://github.com/DSI-HUG/dejajs-components/commit/9d890a3538f2a2826e1b0f6c56831c53ec95759c">9d890a35</a>)</li>
+<li><strong>SortingService:</strong> Comparison of numbers was inverted. Improve null or undefined comparison. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1e47e055c38e6092f033026f80342aaef5354053">1e47e055</a>)</li>
+<li><strong>DejaGridComponent:</strong> calcColumnLayout on refresh method (<a href="https://github.com/DSI-HUG/dejajs-components/commit/8b6f18c3430364562b9b58ab5eb0fefbfcac54b3">8b6f18c3</a>)</li>
+<li><strong>DejaTreeListComponent:</strong><ul>
+<li>Updated listElement get method to avoid error when getElementById doesn&#39;t work (<a href="https://github.com/DSI-HUG/dejajs-components/commit/07aaee309d0c80bd3726c1d47a6df31b4d12f166">07aaee30</a>)</li>
+<li>Selection on enter key can fail in single select mode. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/eb2c5d306719e20e5bf252c9a8c5f033a703e674">eb2c5d30</a>)</li>
+<li>DejaItemComponent was missing on the import (<a href="https://github.com/DSI-HUG/dejajs-components/commit/f6f80d739e73456d28f5054b7e110e16b966c4d9">f6f80d73</a>)</li>
+<li>Added missing coercion for minSearchlength and pageSize (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c978ddade9defcbfca20e862099adfab8c7a2b17">c978ddad</a>)</li>
+</ul>
+</li>
+<li><strong>DejaViewPort:</strong> Removed debug infos (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c7c7f29dd67adab99d4a162d741b2ff330182a83">c7c7f29d</a>)</li>
+<li><strong>DejaTreeList:</strong><ul>
+<li>Ensure key code (<a href="https://github.com/DSI-HUG/dejajs-components/commit/ed2c13e202169c3571ee2cf6df4513e9e50c317e">ed2c13e2</a>)</li>
+<li>model was not updated on multiselect mode (<a href="https://github.com/DSI-HUG/dejajs-components/commit/611aaea1025e47edde19294a3059d4879ee7e559">611aaea1</a>)</li>
+<li>Missing coercion on pageSize (<a href="https://github.com/DSI-HUG/dejajs-components/commit/2423b86b44f503d33e39622919e0ce398beda5a5">2423b86b</a>)</li>
+<li>modelIsValue property initialized to undefined and is determined by the first passed model (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1facb7ada93baed4693769ceef0e0c28b44f8736">1facb7ad</a>)</li>
+<li>modelIsValue property can be defined for multiselect (<a href="https://github.com/DSI-HUG/dejajs-components/commit/a2b9adec3450a99bd623524f0904250782400c42">a2b9adec</a>)</li>
+</ul>
+</li>
+<li><strong>DejaTreeLIst:</strong><ul>
+<li>Allow 0 as model or item value (<a href="https://github.com/DSI-HUG/dejajs-components/commit/d52e0a5309ed1380703ef814470dd4c16f3b961c">d52e0a53</a>)</li>
+<li>Selection from autocomplete is now pushed on the query model of the treelist (<a href="https://github.com/DSI-HUG/dejajs-components/commit/5778495b6cef8d87c8aff66240984f6db2fa6e6e">5778495b</a>)</li>
+</ul>
+</li>
+<li><strong>DejaViewPortComponent:</strong> Index error on test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/92274e9de6aef97ff7142f911fbb3fe3ad074269">92274e9d</a>)</li>
+<li><strong>DejaOverlay:</strong><ul>
+<li>Avoid right click when overlay is open (<a href="https://github.com/DSI-HUG/dejajs-components/commit/26bfc1f115aeeb7c95e1288263678ce80d65bc75">26bfc1f1</a>)</li>
+<li>For display block for deja-menu-content (<a href="https://github.com/DSI-HUG/dejajs-components/commit/55e8d7c80f23790391e984c066a6f097e3770fff">55e8d7c8</a>)</li>
+<li>Replacing class cdk-overlay-container with deja-overlay-container (<a href="https://github.com/DSI-HUG/dejajs-components/commit/a86f130d11db94da9e9f5e0dd0badb1bf0b19336">a86f130d</a>)</li>
+<li>Menu styling was broken (<a href="https://github.com/DSI-HUG/dejajs-components/commit/bcb24836d872120f0ec0b61b2bcc04ade74d91d4">bcb24836</a>)</li>
+</ul>
+</li>
+<li><strong>DejaViewportComponent:</strong> Improve buttons binding during lifecycle in button scrolling mode (<a href="https://github.com/DSI-HUG/dejajs-components/commit/8949a4c25221b9fc52aeafc8aaa401f15bcccef5">8949a4c2</a>)</li>
+<li><strong>DejaViewportService:</strong> Prevent a possible infinite call of calcViewPort in fixed size mode (<a href="https://github.com/DSI-HUG/dejajs-components/commit/bc3290b79bad13deca332fe17871768cbaa4b16b">bc3290b7</a>)</li>
+<li><strong>DejaMarkdown:</strong> Fix color margin in code sample (<a href="https://github.com/DSI-HUG/dejajs-components/commit/0279527369c8e41694f3ac6b10e5528f7e22beca">02795273</a>)</li>
+<li><strong>DejaOverlayComponent:</strong><ul>
+<li>only throw visibilityChanged if old value is different from new value (<a href="https://github.com/DSI-HUG/dejajs-components/commit/607aa9f045a58393160b2902e2e127f9e5427093">607aa9f0</a>)</li>
+<li>tooltip style conflict with overlay style (<a href="https://github.com/DSI-HUG/dejajs-components/commit/b3f6e3f1e9e6fad1bd91049faf0916cd12005029">b3f6e3f1</a>)</li>
+</ul>
+</li>
+<li><strong>Diacritics:</strong> Remove crash when null or undefined was passed. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/60afeca1fb0483b6ee56499f7bbebf0b3191de24">60afeca1</a>)</li>
+</ul>
+<h5 id="other-changes">Other Changes</h5>
+<ul>
+<li><strong>DejaTreeListComponent:</strong> Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/2f612c73456614364d8d7337cf36217b8c345690">2f612c73</a>)</li>
+</ul>
+<h5 id="refactors">Refactors</h5>
+<ul>
+<li><strong>DejaTextMetricsModule:</strong> Move text-metrics to src/common/core (<a href="https://github.com/DSI-HUG/dejajs-components/commit/44e3f3c85295a18f8577888314c8293578b2599c">44e3f3c8</a>)</li>
+<li><strong>DejaTreeListComponent:</strong> Improve MouseDown and MouseUp functions (<a href="https://github.com/DSI-HUG/dejajs-components/commit/8fccb73e4388beef32f41d6f1617eb927a16bf21">8fccb73e</a>)</li>
+<li><strong>ViewPortService:</strong> Make better element flow (<a href="https://github.com/DSI-HUG/dejajs-components/commit/9174ed3ad4bdbd5b2af6fffdbdfc5511333c180a">9174ed3a</a>)</li>
+<li><strong>DejaViewport:</strong> Refactoring of observables unsubscription (<a href="https://github.com/DSI-HUG/dejajs-components/commit/62df1780ebbbb68a7afa1842577e03754862dc8b">62df1780</a>)</li>
+</ul>
+<h5 id="reverts">Reverts</h5>
+<ul>
+<li><strong>DemoApp:</strong> Revert updates on theme selector (<a href="https://github.com/DSI-HUG/dejajs-components/commit/6e3434a8e22b055a31ef4811daef8ca9d6e294ea">6e3434a8</a>)</li>
+</ul>
+<h5 id="code-style-changes">Code Style Changes</h5>
+<ul>
+<li><strong>Lint:</strong> Remove unnecessary semicolon (<a href="https://github.com/DSI-HUG/dejajs-components/commit/b662121c4f071fc546f6486a2e81ac4ab770806b">b662121c</a>)</li>
+<li><strong>DejaDateSelectorComponent:</strong> TsLint (<a href="https://github.com/DSI-HUG/dejajs-components/commit/7e237bc40273208b0313c7078d931bc9bce8df0f">7e237bc4</a>)</li>
+<li><strong>TSLint:</strong> Fix lint issue (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1038adff260aefbc1bb6f2369d56b710ae522989">1038adff</a>)</li>
+</ul>
+<h5 id="tests">Tests</h5>
+<ul>
+<li><strong>DejaEditable:</strong> Add unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/4d9434c378341d3f3abde8cde0de008d795dfd1f">4d9434c3</a>)</li>
+<li><strong>Graphics:</strong><ul>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/99158c83ce9a9bdaca66683c26fbb1f89f83db68">99158c83</a>)</li>
+<li>Add unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c943744b60dd420ab165dded9d81022111832d44">c943744b</a>)</li>
+</ul>
+</li>
+<li><strong>DejaClipboardService:</strong> Add unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/11488b1de61254b2c19bf6dc1cea3555dad1f5a8">11488b1d</a>)</li>
+<li><strong>DejaSelectComponent:</strong><ul>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c645bdb4b3fd6cb20e4a4b4aa5978ff39a8ded83">c645bdb4</a>)</li>
+<li>Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1a6c2e5a37254ce215df1ded01a6ec5238e66767">1a6c2e5a</a>)</li>
+</ul>
+</li>
+<li><strong>CloningService:</strong> Add array of dates cloning (<a href="https://github.com/DSI-HUG/dejajs-components/commit/bf6b576beefc81b6525540d402a119cc67e86c1e">bf6b576b</a>)</li>
+<li><strong>DejaTreeList:</strong> Corrected test for the new view port item default size. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/01276b8d2f3c0a5a6c71b0426be4f60ed18d28a5">01276b8d</a>)</li>
+<li><strong>DejaViewPortComponent:</strong><ul>
+<li>Corrected test for the new view port item default size. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/04135834b6f1e8d3384e7fcdc512ac3557a4b207">04135834</a>)</li>
+<li>improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/bdfb12941979da00cd7b97ff4fad01d6f772b751">bdfb1294</a>)</li>
+<li>improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/544972426ec7c3a8b18aab0c8f8e9b2b2e988c3b">54497242</a>)</li>
+<li>improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/6ab05a2988d4fc6241d5ff8bcdacfc236354cdb3">6ab05a29</a>)</li>
+<li>improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/180681c3588152f3dd26658a1ba1d8a8049a473a">180681c3</a>)</li>
+<li>added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/b382ecc8272dd0df93ac415143b7e18cfafc71e1">b382ecc8</a>)</li>
+</ul>
+</li>
+<li><strong>DejaSelect:</strong><ul>
+<li>Improve Unit Test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/18263df459b104a9a05c79dee58cc5289ed603c4">18263df4</a>)</li>
+<li>Improve Unit Test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/6eedd9f4506e1dea6d9758182c8f65df2d3f4ca2">6eedd9f4</a>)</li>
+</ul>
+</li>
+<li><strong>cloningService:</strong> Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/499cc576224af737d55b5581d47cf1ca2db7d10f">499cc576</a>)</li>
+<li><strong>DejaTreeListComponent:</strong> Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/b42542f81112161cd63000bda1fe3661151489b2">b42542f8</a>)</li>
+<li><strong>DejaSidenav:</strong> Add e2e test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/6c92482f427e26e8d42b16e3b0e2a307b22050fb">6c92482f</a>)</li>
+<li><strong>DejaOverlayComponent:</strong> added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/622b28aa63d1e2eb5e88eed006decc73f5b762d3">622b28aa</a>)</li>
+<li><strong>Sidenav:</strong> Add sidenav tests (<a href="https://github.com/DSI-HUG/dejajs-components/commit/95928040e70c7e537ce074c8d9645ce66df85b7a">95928040</a>)</li>
+</ul>
+<h4 id="2-18-1-2017-11-20-">2.18.1 (2017-11-20)</h4>
+<h5 id="continuous-integration">Continuous Integration</h5>
+<ul>
+<li><strong>Dependencies:</strong> upgrade dependencies (<a href="https://github.com/DSI-HUG/dejajs-components/commit/e56e591fcc24148c2ec5600765b5773899e10675">e56e591f</a>)</li>
+</ul>
+<h5 id="new-features">New Features</h5>
+<ul>
+<li><strong>SideNav:</strong> Add the possibility to specify the header&#39;s icon (<a href="https://github.com/DSI-HUG/dejajs-components/commit/dd2432c55685beab59c82a98e6e976680da4bb0b">dd2432c5</a>)</li>
+</ul>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>Global:</strong> Remove private access inside template to fix AOT build (<a href="https://github.com/DSI-HUG/dejajs-components/commit/ccafaec889a1c0d08c2ca6694660603f5b908b50">ccafaec8</a>)</li>
+</ul>
+<h3 id="2-18-0-2017-11-16-">2.18.0 (2017-11-16)</h3>
+<h5 id="breaking-changes">BREAKING CHANGES</h5>
+<ul>
+<li><strong>SortingServce:</strong> Change compare method to static (<a href="https://github.com/DSI-HUG/dejajs-components/commit/f7eefb1fad49c960d33a2c80b7f058013f9c5971">f7eefb1f</a>)
+  =&gt; Sorting service compare method is now static</li>
+</ul>
+<h5 id="continuous-integration">Continuous Integration</h5>
+<ul>
+<li><strong>Global:</strong> Update to Angular5 (<a href="https://github.com/DSI-HUG/dejajs-components/commit/60f111bc4115e2d206ef4f9626e88787b037854d">60f111bc</a>)</li>
+</ul>
+<h5 id="new-features">New Features</h5>
+<ul>
+<li><strong>DejaSelectComponent:</strong> support external error template (<a href="https://github.com/DSI-HUG/dejajs-components/commit/f62c8cc4c29b2608ae28bd789dae17f61408a67a">f62c8cc4</a>)</li>
+<li><strong>GlobaEventService:</strong> Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/eb4e7b1926cd0f805627e662dc95de03ba37c67d">eb4e7b19</a>)</li>
+<li><strong>SortingService:</strong> Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/b54bd772256de5b26d3100f6c1337e2136470ef9">b54bd772</a>)</li>
+<li><strong>GroupingService:</strong> Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/b5c3e1ccfe56bda0f0c3014cc17834b3312ccb76">b5c3e1cc</a>)</li>
+</ul>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>DejaNumericStepperComponent:</strong> Updated CSS to fit with material rc0 (<a href="https://github.com/DSI-HUG/dejajs-components/commit/3f621085782de62d05ee66a4b98b1ab15655a2a1">3f621085</a>)</li>
+<li><strong>CloningService:</strong><ul>
+<li>return a new instance of date if object is a date (<a href="https://github.com/DSI-HUG/dejajs-components/commit/55445526ccd92674fdb533646197726d8c690312">55445526</a>)</li>
+<li>Improve test with new functions (<a href="https://github.com/DSI-HUG/dejajs-components/commit/525e12598c501702c0ccddee46f0cca541c4e746">525e1259</a>)</li>
+</ul>
+</li>
+<li><strong>ViewPortService:</strong> Fix the ViewPort calculation in autosize mode. The issue can make sometimes that the rendered viewport is too small comparing the size of the container. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/03a3050636d1bda0d1133107e4a0b7136ae1c732">03a30506</a>)</li>
+<li><strong>DejaSelect:</strong> Ensure selection when models setted after selected item (mode autocomplete and sele (<a href="https://github.com/DSI-HUG/dejajs-components/commit/d18f9393b3c01bc5dd8d5dc0aa7012ba2eaeb6b1">d18f9393</a>)</li>
+<li><strong>GlobaEventService:</strong> Added unregister function (<a href="https://github.com/DSI-HUG/dejajs-components/commit/9d890a3538f2a2826e1b0f6c56831c53ec95759c">9d890a35</a>)</li>
+<li><strong>SortingService:</strong> Comparison of numbers was inverted. Improve null or undefined comparison. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1e47e055c38e6092f033026f80342aaef5354053">1e47e055</a>)</li>
+<li><strong>DejaGridComponent:</strong> calcColumnLayout on refresh method (<a href="https://github.com/DSI-HUG/dejajs-components/commit/8b6f18c3430364562b9b58ab5eb0fefbfcac54b3">8b6f18c3</a>)</li>
+</ul>
+<h5 id="code-style-changes">Code Style Changes</h5>
+<ul>
+<li><strong>Lint:</strong> Remove unnecessary semicolon (<a href="https://github.com/DSI-HUG/dejajs-components/commit/b662121c4f071fc546f6486a2e81ac4ab770806b">b662121c</a>)</li>
+</ul>
+<h5 id="tests">Tests</h5>
+<ul>
+<li><strong>CloningService:</strong> Add array of dates cloning (<a href="https://github.com/DSI-HUG/dejajs-components/commit/bf6b576beefc81b6525540d402a119cc67e86c1e">bf6b576b</a>)</li>
+<li><strong>DejaTreeList:</strong> Corrected test for the new view port item default size. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/01276b8d2f3c0a5a6c71b0426be4f60ed18d28a5">01276b8d</a>)</li>
+<li><strong>DejaViewPortComponent:</strong> Corrected test for the new view port item default size. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/04135834b6f1e8d3384e7fcdc512ac3557a4b207">04135834</a>)</li>
+</ul>
+<h3 id="2-17-0-2017-11-15-">2.17.0 (2017-11-15)</h3>
+<h5 id="breaking-changes">BREAKING CHANGES</h5>
+<ul>
+<li><p><strong>SortingServce:</strong> Change compare method to static (<a href="https://github.com/DSI-HUG/dejajs-components/commit/f7eefb1fad49c960d33a2c80b7f058013f9c5971">f7eefb1f</a>)
+  =&gt; Sorting service compare method is now static</p>
+</li>
+<li><p><strong>CloningService:</strong> Remove deprecated functions (<a href="https://github.com/DSI-HUG/dejajs-components/commit/5eee9b37943a23de89e0a6602155583bc24e1a5a">5eee9b37</a>)
+  =&gt; Deprecated functions removed</p>
+</li>
+<li><p><strong>DejaItemComponent:</strong> Because DejaItem is part of DejaSelect and DejaTreeList, the import must be by a module. DejaItemModule is created. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/0b4eb76dc862d8751957dadc4da84206a2ff23d9">0b4eb76d</a>)
+  =&gt; The one use the component <deja-item></deja-item> must add DejaItemModule of his component import</p>
+</li>
+</ul>
+<h5 id="continuous-integration">Continuous Integration</h5>
+<ul>
+<li><strong>Dependencies:</strong> upgrade dependencies (<a href="https://github.com/DSI-HUG/dejajs-components/commit/7d9629ca93090689fe6b58046f73287a796155aa">7d9629ca</a>)</li>
+<li><strong>Test:</strong> Added script e2e:watch. Run npm i -g watch before use. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/50411ec48a592728be32fa2288e5729e58caff7e">50411ec4</a>)</li>
+</ul>
+<h5 id="new-features">New Features</h5>
+<ul>
+<li><strong>DejaSelectComponent:</strong> support external error template (<a href="https://github.com/DSI-HUG/dejajs-components/commit/f62c8cc4c29b2608ae28bd789dae17f61408a67a">f62c8cc4</a>)</li>
+<li><strong>GlobaEventService:</strong> Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/eb4e7b1926cd0f805627e662dc95de03ba37c67d">eb4e7b19</a>)</li>
+<li><strong>SortingService:</strong> Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/b54bd772256de5b26d3100f6c1337e2136470ef9">b54bd772</a>)</li>
+<li><strong>GroupingService:</strong> Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/b5c3e1ccfe56bda0f0c3014cc17834b3312ccb76">b5c3e1cc</a>)</li>
+<li><strong>DejaNumericStepperComponent:</strong> NumericStepper (<a href="https://github.com/DSI-HUG/dejajs-components/commit/030a26cb44a132cc04a5fae72f4ea31794cb61c2">030a26cb</a>)</li>
+<li><strong>DejaAutosizeTextAreaDirective:</strong> Removed temporarily deprecated flag, until the material directive work correctly with reactive forms. (#215) (<a href="https://github.com/DSI-HUG/dejajs-components/commit/0b8838516ca48471194c72ae04bb5595b6b185e1">0b883851</a>)</li>
+<li><strong>DejaTreeListComponent:</strong> Added e2e test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/17541bbdbdfba32b215630401f96e3280a003517">17541bbd</a>)</li>
+<li><strong>ItemListService:</strong> Added default values: defaultChildrenField, defaultTextField and defaultValueField (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1fa39b59f7a0538bede18a66fe2ed7124ff50bdf">1fa39b59</a>)</li>
+</ul>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>CloningService:</strong><ul>
+<li>return a new instance of date if object is a date (<a href="https://github.com/DSI-HUG/dejajs-components/commit/55445526ccd92674fdb533646197726d8c690312">55445526</a>)</li>
+<li>Improve test with new functions (<a href="https://github.com/DSI-HUG/dejajs-components/commit/525e12598c501702c0ccddee46f0cca541c4e746">525e1259</a>)</li>
+<li>Cloning an array with an array instance of target (<a href="https://github.com/DSI-HUG/dejajs-components/commit/e297fe167c72e71567234fb87e1d74a89fb1a489">e297fe16</a>)</li>
+<li>Instance check fail if target is type (<a href="https://github.com/DSI-HUG/dejajs-components/commit/68b5d6b631a3e06f0dac318af2a0e002e8818368">68b5d6b6</a>)</li>
+<li>fixing an issue when cloning array into a target array (<a href="https://github.com/DSI-HUG/dejajs-components/commit/e926e953bef78de41797162a4df08fafc89f9d37">e926e953</a>)</li>
+</ul>
+</li>
+<li><strong>DejaSelect:</strong><ul>
+<li>Ensure selection when models setted after selected item (mode autocomplete and sele (<a href="https://github.com/DSI-HUG/dejajs-components/commit/d18f9393b3c01bc5dd8d5dc0aa7012ba2eaeb6b1">d18f9393</a>)</li>
+<li>Current item was not displayed in multiselect mode (<a href="https://github.com/DSI-HUG/dejajs-components/commit/dee99746a94f7e469b8f9ac090f54d684a8a4562">dee99746</a>)</li>
+<li>Fix an issue where the render of the ViewPort can be sometimes incomplete. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/8dfc2ea3212398d66c5a1834cd04a9fec957eb9f">8dfc2ea3</a>)</li>
+</ul>
+</li>
+<li><strong>GlobaEventService:</strong> Added unregister function (<a href="https://github.com/DSI-HUG/dejajs-components/commit/9d890a3538f2a2826e1b0f6c56831c53ec95759c">9d890a35</a>)</li>
+<li><strong>SortingService:</strong> Comparison of numbers was inverted. Improve null or undefined comparison. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1e47e055c38e6092f033026f80342aaef5354053">1e47e055</a>)</li>
+<li><strong>DejaGridComponent:</strong> calcColumnLayout on refresh method (<a href="https://github.com/DSI-HUG/dejajs-components/commit/8b6f18c3430364562b9b58ab5eb0fefbfcac54b3">8b6f18c3</a>)</li>
+<li><strong>DejaTreeListComponent:</strong><ul>
+<li>Updated listElement get method to avoid error when getElementById doesn&#39;t work (<a href="https://github.com/DSI-HUG/dejajs-components/commit/07aaee309d0c80bd3726c1d47a6df31b4d12f166">07aaee30</a>)</li>
+<li>Selection on enter key can fail in single select mode. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/eb2c5d306719e20e5bf252c9a8c5f033a703e674">eb2c5d30</a>)</li>
+<li>DejaItemComponent was missing on the import (<a href="https://github.com/DSI-HUG/dejajs-components/commit/f6f80d739e73456d28f5054b7e110e16b966c4d9">f6f80d73</a>)</li>
+<li>Added missing coercion for minSearchlength and pageSize (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c978ddade9defcbfca20e862099adfab8c7a2b17">c978ddad</a>)</li>
+</ul>
+</li>
+<li><strong>DejaNumericStepperComponent:</strong> Fix button type + hide hint when max isn&#39;t set (<a href="https://github.com/DSI-HUG/dejajs-components/commit/f45ec771689b089d178a522c875fced8460d6db3">f45ec771</a>)</li>
+<li><strong>ViewPortService:</strong> Fix view port crash if not element. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/40d4e8c5078eb6556e6d21893569c65500281117">40d4e8c5</a>)</li>
+<li><strong>DejaViewPort:</strong> Removed debug infos (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c7c7f29dd67adab99d4a162d741b2ff330182a83">c7c7f29d</a>)</li>
+<li><strong>DejaTreeList:</strong><ul>
+<li>Ensure key code (<a href="https://github.com/DSI-HUG/dejajs-components/commit/ed2c13e202169c3571ee2cf6df4513e9e50c317e">ed2c13e2</a>)</li>
+<li>Missing coercion on pageSize (<a href="https://github.com/DSI-HUG/dejajs-components/commit/2423b86b44f503d33e39622919e0ce398beda5a5">2423b86b</a>)</li>
+</ul>
+</li>
+<li><strong>DejaTreeLIst:</strong><ul>
+<li>Allow 0 as model or item value (<a href="https://github.com/DSI-HUG/dejajs-components/commit/d52e0a5309ed1380703ef814470dd4c16f3b961c">d52e0a53</a>)</li>
+<li>Selection from autocomplete is now pushed on the query model of the treelist (<a href="https://github.com/DSI-HUG/dejajs-components/commit/5778495b6cef8d87c8aff66240984f6db2fa6e6e">5778495b</a>)</li>
+</ul>
+</li>
+<li><strong>DejaViewPortComponent:</strong> Index error on test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/92274e9de6aef97ff7142f911fbb3fe3ad074269">92274e9d</a>)</li>
+<li><strong>Global:</strong> Disable chromium autocomplete for all controls using an input, except the treelist where the binding is modified to use autocomplete (<a href="https://github.com/DSI-HUG/dejajs-components/commit/718408f3fa4d02d2ef13772902e88b8820af0285">718408f3</a>)</li>
+</ul>
+<h5 id="other-changes">Other Changes</h5>
+<ul>
+<li><strong>DejaTreeListComponent:</strong> Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/2f612c73456614364d8d7337cf36217b8c345690">2f612c73</a>)</li>
+</ul>
+<h5 id="refactors">Refactors</h5>
+<ul>
+<li><strong>DejaTextMetricsModule:</strong> Move text-metrics to src/common/core (<a href="https://github.com/DSI-HUG/dejajs-components/commit/44e3f3c85295a18f8577888314c8293578b2599c">44e3f3c8</a>)</li>
+<li><strong>DejaTreeListComponent:</strong> Improve MouseDown and MouseUp functions (<a href="https://github.com/DSI-HUG/dejajs-components/commit/8fccb73e4388beef32f41d6f1617eb927a16bf21">8fccb73e</a>)</li>
+<li><strong>ViewPortService:</strong> Make better element flow (<a href="https://github.com/DSI-HUG/dejajs-components/commit/9174ed3ad4bdbd5b2af6fffdbdfc5511333c180a">9174ed3a</a>)</li>
+</ul>
+<h5 id="code-style-changes">Code Style Changes</h5>
+<ul>
+<li><strong>Lint:</strong> Remove unnecessary semicolon (<a href="https://github.com/DSI-HUG/dejajs-components/commit/b662121c4f071fc546f6486a2e81ac4ab770806b">b662121c</a>)</li>
+</ul>
+<h5 id="tests">Tests</h5>
+<ul>
+<li><strong>cloningService:</strong> Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/499cc576224af737d55b5581d47cf1ca2db7d10f">499cc576</a>)</li>
+<li><strong>DejaTreeListComponent:</strong> Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/b42542f81112161cd63000bda1fe3661151489b2">b42542f8</a>)</li>
+</ul>
+<h4 id="2-16-3-2017-11-01-">2.16.3 (2017-11-01)</h4>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>DejaTreeListComponent:</strong> Updated listElement get method to avoid error when getElementById doesn&#39;t work (<a href="https://github.com/DSI-HUG/dejajs-components/commit/07aaee309d0c80bd3726c1d47a6df31b4d12f166">07aaee30</a>)</li>
+<li><strong>DejaNumericStepperComponent:</strong> Fix button type + hide hint when max isn&#39;t set (<a href="https://github.com/DSI-HUG/dejajs-components/commit/f45ec771689b089d178a522c875fced8460d6db3">f45ec771</a>)</li>
+<li><strong>ViewPortService:</strong> Fix view port crash if not element. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/40d4e8c5078eb6556e6d21893569c65500281117">40d4e8c5</a>)</li>
+</ul>
+<h4 id="2-16-2-2017-10-30-">2.16.2 (2017-10-30)</h4>
+<h5 id="continuous-integration">Continuous Integration</h5>
+<ul>
+<li><strong>Dependencies:</strong> upgrade dependencies (<a href="https://github.com/DSI-HUG/dejajs-components/commit/7d9629ca93090689fe6b58046f73287a796155aa">7d9629ca</a>)</li>
+</ul>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>DejaViewPort:</strong> Removed debug infos (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c7c7f29dd67adab99d4a162d741b2ff330182a83">c7c7f29d</a>)</li>
+</ul>
 <h4 id="2-16-1-2017-10-30-">2.16.1 (2017-10-30)</h4>
 <h5 id="refactors">Refactors</h5>
 <ul>
@@ -3601,6 +4385,7 @@ Material theming for all components</p>
 <ul>
 <li><strong>ItemListService:</strong> Amélioration de la gestion des caches.</li>
 </ul>
+
 
 
 

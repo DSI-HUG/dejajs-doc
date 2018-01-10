@@ -49,20 +49,20 @@
                                   <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
                                 </li>
                                 <li class="link">
-                                    <a href="./changelog.html"
-                                        >
+                                        <a href="../changelog.html"
+                                    >
                                         <span class="fa fa-file-text-o"></span>CHANGELOG
                                     </a>
                                 </li>
                                 <li class="link">
-                                    <a href="./contributing.html"
-                                        >
+                                        <a href="../contributing.html"
+                                    >
                                         <span class="fa fa-file-text-o"></span>CONTRIBUTING
                                     </a>
                                 </li>
                                 <li class="link">
-                                    <a href="./license.html"
-                                        >
+                                        <a href="../license.html"
+                                    >
                                         <span class="fa fa-file-text-o"></span>LICENSE
                                     </a>
                                 </li>
@@ -364,9 +364,6 @@
                                 id="xs-directives-links"
                             >
                                 <li class="link">
-                                    <a href="../directives/DateValidatorDirective.html" >DateValidatorDirective</a>
-                                </li>
-                                <li class="link">
                                     <a href="../directives/DejaAutosizeTextAreaDirective.html" >DejaAutosizeTextAreaDirective</a>
                                 </li>
                                 <li class="link">
@@ -601,6 +598,7 @@
                         </ul>
                     </li>
             
+            
                     <li class="chapter">
                         <div class="simple menu-toggler" data-toggle="collapse"
                                 data-target="#xs-interfaces-links"
@@ -612,6 +610,9 @@
                         <ul class="links collapse "
                                 id="xs-interfaces-links"
                             >
+                                <li class="link">
+                                    <a href="../interfaces/HSL.html" >HSL</a>
+                                </li>
                                 <li class="link">
                                     <a href="../interfaces/IAnimation.html" >IAnimation</a>
                                 </li>
@@ -879,20 +880,20 @@
                                          <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
                                        </li>
                                        <li class="link">
-                                           <a href="./changelog.html"
-                                               >
+                                               <a href="../changelog.html"
+                                           >
                                                <span class="fa fa-file-text-o"></span>CHANGELOG
                                            </a>
                                        </li>
                                        <li class="link">
-                                           <a href="./contributing.html"
-                                               >
+                                               <a href="../contributing.html"
+                                           >
                                                <span class="fa fa-file-text-o"></span>CONTRIBUTING
                                            </a>
                                        </li>
                                        <li class="link">
-                                           <a href="./license.html"
-                                               >
+                                               <a href="../license.html"
+                                           >
                                                <span class="fa fa-file-text-o"></span>LICENSE
                                            </a>
                                        </li>
@@ -1194,9 +1195,6 @@
                                        id="directives-links"
                    >
                                        <li class="link">
-                                           <a href="../directives/DateValidatorDirective.html" >DateValidatorDirective</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="../directives/DejaAutosizeTextAreaDirective.html" >DejaAutosizeTextAreaDirective</a>
                                        </li>
                                        <li class="link">
@@ -1431,6 +1429,7 @@
                                </ul>
                            </li>
                    
+                   
                            <li class="chapter">
                                <div class="simple menu-toggler" data-toggle="collapse"
                                        data-target="#interfaces-links"
@@ -1442,6 +1441,9 @@
                                <ul class="links collapse "
                                        id="interfaces-links"
                    >
+                                       <li class="link">
+                                           <a href="../interfaces/HSL.html" >HSL</a>
+                                       </li>
                                        <li class="link">
                                            <a href="../interfaces/IAnimation.html" >IAnimation</a>
                                        </li>
@@ -1686,6 +1688,7 @@
 
 
 
+
 <ol class="breadcrumb">
   <li>Interfaces</li>
   <li>IDragDropContext</li>
@@ -1703,7 +1706,7 @@
 </ul>
 
 <div class="tab-content">
-    <div class="tab-pane fade active in" id="info">
+    <div class="tab-pane fade active in" id="c-info">
         <p class="comment">
             <h3>File</h3>
         </p>
@@ -1727,7 +1730,7 @@
                             </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/component/mouse-dragdrop/mouse-dragdrop.service.ts:45</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/component/mouse-dragdrop/mouse-dragdrop.service.ts:47</a></div>
                                         </td>
                                     </tr>
                         </tbody>
@@ -1737,8 +1740,10 @@
     </div>
 
 
-    <div class="tab-pane fade tab-source-code" id="source">
+    <div class="tab-pane fade tab-source-code" id="c-source">
         <pre class="line-numbers"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import &#x27;rxjs/add/operator/do&#x27;;
+import &#x27;rxjs/add/operator/filter&#x27;;
 import { BehaviorSubject } from &#x27;rxjs/BehaviorSubject&#x27;;
 import { Subject } from &#x27;rxjs/Subject&#x27;;
 import { Position } from &#x27;../../common/core/graphics/position&#x27;;

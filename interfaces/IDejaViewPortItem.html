@@ -49,20 +49,20 @@
                                   <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
                                 </li>
                                 <li class="link">
-                                    <a href="./changelog.html"
-                                        >
+                                        <a href="../changelog.html"
+                                    >
                                         <span class="fa fa-file-text-o"></span>CHANGELOG
                                     </a>
                                 </li>
                                 <li class="link">
-                                    <a href="./contributing.html"
-                                        >
+                                        <a href="../contributing.html"
+                                    >
                                         <span class="fa fa-file-text-o"></span>CONTRIBUTING
                                     </a>
                                 </li>
                                 <li class="link">
-                                    <a href="./license.html"
-                                        >
+                                        <a href="../license.html"
+                                    >
                                         <span class="fa fa-file-text-o"></span>LICENSE
                                     </a>
                                 </li>
@@ -364,9 +364,6 @@
                                 id="xs-directives-links"
                             >
                                 <li class="link">
-                                    <a href="../directives/DateValidatorDirective.html" >DateValidatorDirective</a>
-                                </li>
-                                <li class="link">
                                     <a href="../directives/DejaAutosizeTextAreaDirective.html" >DejaAutosizeTextAreaDirective</a>
                                 </li>
                                 <li class="link">
@@ -601,6 +598,7 @@
                         </ul>
                     </li>
             
+            
                     <li class="chapter">
                         <div class="simple menu-toggler" data-toggle="collapse"
                                 data-target="#xs-interfaces-links"
@@ -612,6 +610,9 @@
                         <ul class="links collapse "
                                 id="xs-interfaces-links"
                             >
+                                <li class="link">
+                                    <a href="../interfaces/HSL.html" >HSL</a>
+                                </li>
                                 <li class="link">
                                     <a href="../interfaces/IAnimation.html" >IAnimation</a>
                                 </li>
@@ -879,20 +880,20 @@
                                          <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
                                        </li>
                                        <li class="link">
-                                           <a href="./changelog.html"
-                                               >
+                                               <a href="../changelog.html"
+                                           >
                                                <span class="fa fa-file-text-o"></span>CHANGELOG
                                            </a>
                                        </li>
                                        <li class="link">
-                                           <a href="./contributing.html"
-                                               >
+                                               <a href="../contributing.html"
+                                           >
                                                <span class="fa fa-file-text-o"></span>CONTRIBUTING
                                            </a>
                                        </li>
                                        <li class="link">
-                                           <a href="./license.html"
-                                               >
+                                               <a href="../license.html"
+                                           >
                                                <span class="fa fa-file-text-o"></span>LICENSE
                                            </a>
                                        </li>
@@ -1194,9 +1195,6 @@
                                        id="directives-links"
                    >
                                        <li class="link">
-                                           <a href="../directives/DateValidatorDirective.html" >DateValidatorDirective</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="../directives/DejaAutosizeTextAreaDirective.html" >DejaAutosizeTextAreaDirective</a>
                                        </li>
                                        <li class="link">
@@ -1431,6 +1429,7 @@
                                </ul>
                            </li>
                    
+                   
                            <li class="chapter">
                                <div class="simple menu-toggler" data-toggle="collapse"
                                        data-target="#interfaces-links"
@@ -1442,6 +1441,9 @@
                                <ul class="links collapse "
                                        id="interfaces-links"
                    >
+                                       <li class="link">
+                                           <a href="../interfaces/HSL.html" >HSL</a>
+                                       </li>
                                        <li class="link">
                                            <a href="../interfaces/IAnimation.html" >IAnimation</a>
                                        </li>
@@ -1686,6 +1688,7 @@
 
 
 
+
 <ol class="breadcrumb">
   <li>Interfaces</li>
   <li>IDejaViewPortItem</li>
@@ -1703,7 +1706,7 @@
 </ul>
 
 <div class="tab-content">
-    <div class="tab-pane fade active in" id="info">
+    <div class="tab-pane fade active in" id="c-info">
         <p class="comment">
             <h3>File</h3>
         </p>
@@ -1772,7 +1775,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="411" class="link-to-prism">src/component/viewport/viewport.component.ts:411</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="416" class="link-to-prism">src/component/viewport/viewport.component.ts:416</a></div>
                                         </td>
                                     </tr>
 
@@ -1782,14 +1785,20 @@
     </div>
 
 
-    <div class="tab-pane fade tab-source-code" id="source">
+    <div class="tab-pane fade tab-source-code" id="c-source">
         <pre class="line-numbers"><code class="language-typescript">import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChild, ElementRef, HostBinding, Input, OnDestroy, ViewChild } from &#x27;@angular/core&#x27;;
+import &#x27;rxjs/add/observable/from&#x27;;
 import &#x27;rxjs/add/observable/fromEvent&#x27;;
+import &#x27;rxjs/add/observable/interval&#x27;;
 import &#x27;rxjs/add/observable/interval&#x27;;
 import &#x27;rxjs/add/observable/merge&#x27;;
 import &#x27;rxjs/add/observable/timer&#x27;;
+import &#x27;rxjs/add/operator/debounceTime&#x27;;
 import &#x27;rxjs/add/operator/delay&#x27;;
+import &#x27;rxjs/add/operator/first&#x27;;
+import &#x27;rxjs/add/operator/map&#x27;;
 import &#x27;rxjs/add/operator/takeUntil&#x27;;
+import &#x27;rxjs/add/operator/takeWhile&#x27;;
 import { Observable } from &#x27;rxjs/Observable&#x27;;
 import { Subject } from &#x27;rxjs/Subject&#x27;;
 import { Subscription } from &#x27;rxjs/Subscription&#x27;;
@@ -1837,7 +1846,6 @@ export class DejaViewPortComponent implements OnDestroy {
     private upButton$Sub: Subscription;
     private mouseWheel$Sub: Subscription;
     private scrollPosition &#x3D; 0;
-    private scroll$Sub: Subscription;
 
     /** Permet de définir un template d&#x27;élément par binding */
     @Input() public itemTemplateExternal;
@@ -1910,7 +1918,7 @@ export class DejaViewPortComponent implements OnDestroy {
     private set wrapperElement(element: ElementRef) {
         this.element &#x3D; element.nativeElement as HTMLElement;
         this.viewPort.element$.next(this.element);
-        this.scroll$Sub &#x3D; Observable.fromEvent(this.element, &#x27;scroll&#x27;)
+        Observable.fromEvent(this.element, &#x27;scroll&#x27;)
             .takeWhile(() &#x3D;&gt; this.isAlive)
             .map((event: Event) &#x3D;&gt; event.target as HTMLElement)
             .map((target) &#x3D;&gt; Math.round(this._isHorizontal ? target.scrollLeft : target.scrollTop))

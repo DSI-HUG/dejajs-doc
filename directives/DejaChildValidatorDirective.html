@@ -49,20 +49,20 @@
                                   <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
                                 </li>
                                 <li class="link">
-                                    <a href="./changelog.html"
-                                        >
+                                        <a href="../changelog.html"
+                                    >
                                         <span class="fa fa-file-text-o"></span>CHANGELOG
                                     </a>
                                 </li>
                                 <li class="link">
-                                    <a href="./contributing.html"
-                                        >
+                                        <a href="../contributing.html"
+                                    >
                                         <span class="fa fa-file-text-o"></span>CONTRIBUTING
                                     </a>
                                 </li>
                                 <li class="link">
-                                    <a href="./license.html"
-                                        >
+                                        <a href="../license.html"
+                                    >
                                         <span class="fa fa-file-text-o"></span>LICENSE
                                     </a>
                                 </li>
@@ -364,9 +364,6 @@
                                 id="xs-directives-links"
                             >
                                 <li class="link">
-                                    <a href="../directives/DateValidatorDirective.html" >DateValidatorDirective</a>
-                                </li>
-                                <li class="link">
                                     <a href="../directives/DejaAutosizeTextAreaDirective.html" >DejaAutosizeTextAreaDirective</a>
                                 </li>
                                 <li class="link">
@@ -601,6 +598,7 @@
                         </ul>
                     </li>
             
+            
                     <li class="chapter">
                         <div class="simple menu-toggler" data-toggle="collapse"
                                 data-target="#xs-interfaces-links"
@@ -612,6 +610,9 @@
                         <ul class="links collapse "
                                 id="xs-interfaces-links"
                             >
+                                <li class="link">
+                                    <a href="../interfaces/HSL.html" >HSL</a>
+                                </li>
                                 <li class="link">
                                     <a href="../interfaces/IAnimation.html" >IAnimation</a>
                                 </li>
@@ -879,20 +880,20 @@
                                          <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
                                        </li>
                                        <li class="link">
-                                           <a href="./changelog.html"
-                                               >
+                                               <a href="../changelog.html"
+                                           >
                                                <span class="fa fa-file-text-o"></span>CHANGELOG
                                            </a>
                                        </li>
                                        <li class="link">
-                                           <a href="./contributing.html"
-                                               >
+                                               <a href="../contributing.html"
+                                           >
                                                <span class="fa fa-file-text-o"></span>CONTRIBUTING
                                            </a>
                                        </li>
                                        <li class="link">
-                                           <a href="./license.html"
-                                               >
+                                               <a href="../license.html"
+                                           >
                                                <span class="fa fa-file-text-o"></span>LICENSE
                                            </a>
                                        </li>
@@ -1194,9 +1195,6 @@
                                        id="directives-links"
                    >
                                        <li class="link">
-                                           <a href="../directives/DateValidatorDirective.html" >DateValidatorDirective</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="../directives/DejaAutosizeTextAreaDirective.html" >DejaAutosizeTextAreaDirective</a>
                                        </li>
                                        <li class="link">
@@ -1431,6 +1429,7 @@
                                </ul>
                            </li>
                    
+                   
                            <li class="chapter">
                                <div class="simple menu-toggler" data-toggle="collapse"
                                        data-target="#interfaces-links"
@@ -1442,6 +1441,9 @@
                                <ul class="links collapse "
                                        id="interfaces-links"
                    >
+                                       <li class="link">
+                                           <a href="../interfaces/HSL.html" >HSL</a>
+                                       </li>
                                        <li class="link">
                                            <a href="../interfaces/IAnimation.html" >IAnimation</a>
                                        </li>
@@ -1700,7 +1702,7 @@
 </ul>
 
 <div class="tab-content">
-    <div class="tab-pane fade active in" id="info">
+    <div class="tab-pane fade active in" id="c-info">
         <p class="comment">
             <h3>File</h3>
         </p>
@@ -1713,7 +1715,7 @@
                 <h3>Implements</h3>
             </p>
             <p class="comment">
-                        <code><a href="https://angular.io/docs/ts/latest/api/forms/index/Validator-interface.html" target="_blank" >Validator</a></code>
+                        <code><a href="https://angular.io/api/forms/Validator" target="_blank" >Validator</a></code>
             </p>
 
 
@@ -1725,7 +1727,9 @@
                         <td class="col-md-3">providers</td>
                         <td class="col-md-9">
                             <code>
-                                { provide: NG_VALIDATORS, useExisting: , multi:  }
+                                {
+    : , : (() &#x3D;&gt; ), : true,
+}
                             </code>
                         </td>
                     </tr>
@@ -1752,7 +1756,8 @@
                             <td class="col-md-4">
                                 <ul class="index-list">
                                     <li>
-                                        <span class="modifier">Public</span> <a href="#parentControl">parentControl</a>
+                                            <span class="modifier">Public</span>
+                                        <a href="#parentControl">parentControl</a>
                                     </li>
                                 </ul>
                             </td>
@@ -1766,7 +1771,8 @@
                             <td class="col-md-4">
                                 <ul class="index-list">
                                     <li>
-                                        <span class="modifier">Public</span> <a href="#validate">validate</a>
+                                            <span class="modifier">Public</span>
+                                        <a href="#validate">validate</a>
                                     </li>
                                 </ul>
                             </td>
@@ -1790,7 +1796,13 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="validate"></a>
-                                    <span class="name"><b><span class="modifier">Public</span> validate</b><a href="#validate"><span class="fa fa-link"></span></a></span>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Public</span>
+                                        validate
+                                        </b>
+                                        <a href="#validate"><span class="fa fa-link"></span></a>
+                                    </span>
                                 </td>
                             </tr>
                             <tr>
@@ -1811,7 +1823,7 @@
                                 <td class="col-md-4">
             
                                         <div class="io-description">
-                                            <b>Returns : </b>    <code><a href="https://angular.io/docs/ts/latest/api/forms/index/ValidationErrors-type-alias.html" target="_blank" >ValidationErrors</a></code>
+                                            <b>Returns : </b>    <code><a href="https://angular.io/api/forms/ValidationErrors" target="_blank" >ValidationErrors</a></code>
             
                                         </div>
                                 </td>
@@ -1830,18 +1842,24 @@
                             <tr>
                                 <td class="col-md-4">
                                     <a name="parentControl"></a>
-                                    <span class="name"><b><span class="modifier">Public</span> parentControl</b><a href="#parentControl"><span class="fa fa-link"></span></a></span>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Public</span>
+                                        parentControl
+                                        </b>
+                                        <a href="#parentControl"><span class="fa fa-link"></span></a>
+                                    </span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-reset"></span><code>parentControl:     <code><a href="https://angular.io/docs/ts/latest/api/forms/index/NgControl-class.html" target="_blank" >NgControl</a></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>parentControl:     <code><a href="https://angular.io/api/forms/NgControl" target="_blank" >NgControl</a></code>
             </code>
                                 </td>
                             </tr>
                                 <tr>
                                     <td class="col-md-4">
-                                        <i>Type : </i>    <code><a href="https://angular.io/docs/ts/latest/api/forms/index/NgControl-class.html" target="_blank" >NgControl</a></code>
+                                        <i>Type : </i>    <code><a href="https://angular.io/api/forms/NgControl" target="_blank" >NgControl</a></code>
             
                                     </td>
                                 </tr>
@@ -1856,10 +1874,11 @@
                     </table>
             </section>
 
+
     </div>
 
 
-    <div class="tab-pane fade tab-source-code" id="source">
+    <div class="tab-pane fade tab-source-code" id="c-source">
         <pre class="line-numbers"><code class="language-typescript">import { Directive, forwardRef, } from &#x27;@angular/core&#x27;;
 import { NG_VALIDATORS, NgControl, ValidationErrors, Validator } from &#x27;@angular/forms&#x27;;
 
@@ -1884,6 +1903,7 @@ export class DejaChildValidatorDirective implements Validator {
     </div>
 
 </div>
+
 
 
 

@@ -49,20 +49,20 @@
                                   <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
                                 </li>
                                 <li class="link">
-                                    <a href="./changelog.html"
-                                        >
+                                        <a href="../changelog.html"
+                                    >
                                         <span class="fa fa-file-text-o"></span>CHANGELOG
                                     </a>
                                 </li>
                                 <li class="link">
-                                    <a href="./contributing.html"
-                                        >
+                                        <a href="../contributing.html"
+                                    >
                                         <span class="fa fa-file-text-o"></span>CONTRIBUTING
                                     </a>
                                 </li>
                                 <li class="link">
-                                    <a href="./license.html"
-                                        >
+                                        <a href="../license.html"
+                                    >
                                         <span class="fa fa-file-text-o"></span>LICENSE
                                     </a>
                                 </li>
@@ -364,9 +364,6 @@
                                 id="xs-directives-links"
                             >
                                 <li class="link">
-                                    <a href="../directives/DateValidatorDirective.html" >DateValidatorDirective</a>
-                                </li>
-                                <li class="link">
                                     <a href="../directives/DejaAutosizeTextAreaDirective.html" >DejaAutosizeTextAreaDirective</a>
                                 </li>
                                 <li class="link">
@@ -601,6 +598,7 @@
                         </ul>
                     </li>
             
+            
                     <li class="chapter">
                         <div class="simple menu-toggler" data-toggle="collapse"
                                 data-target="#xs-interfaces-links"
@@ -612,6 +610,9 @@
                         <ul class="links collapse "
                                 id="xs-interfaces-links"
                             >
+                                <li class="link">
+                                    <a href="../interfaces/HSL.html" >HSL</a>
+                                </li>
                                 <li class="link">
                                     <a href="../interfaces/IAnimation.html" >IAnimation</a>
                                 </li>
@@ -879,20 +880,20 @@
                                          <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
                                        </li>
                                        <li class="link">
-                                           <a href="./changelog.html"
-                                               >
+                                               <a href="../changelog.html"
+                                           >
                                                <span class="fa fa-file-text-o"></span>CHANGELOG
                                            </a>
                                        </li>
                                        <li class="link">
-                                           <a href="./contributing.html"
-                                               >
+                                               <a href="../contributing.html"
+                                           >
                                                <span class="fa fa-file-text-o"></span>CONTRIBUTING
                                            </a>
                                        </li>
                                        <li class="link">
-                                           <a href="./license.html"
-                                               >
+                                               <a href="../license.html"
+                                           >
                                                <span class="fa fa-file-text-o"></span>LICENSE
                                            </a>
                                        </li>
@@ -1194,9 +1195,6 @@
                                        id="directives-links"
                    >
                                        <li class="link">
-                                           <a href="../directives/DateValidatorDirective.html" >DateValidatorDirective</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="../directives/DejaAutosizeTextAreaDirective.html" >DejaAutosizeTextAreaDirective</a>
                                        </li>
                                        <li class="link">
@@ -1431,6 +1429,7 @@
                                </ul>
                            </li>
                    
+                   
                            <li class="chapter">
                                <div class="simple menu-toggler" data-toggle="collapse"
                                        data-target="#interfaces-links"
@@ -1442,6 +1441,9 @@
                                <ul class="links collapse "
                                        id="interfaces-links"
                    >
+                                       <li class="link">
+                                           <a href="../interfaces/HSL.html" >HSL</a>
+                                       </li>
                                        <li class="link">
                                            <a href="../interfaces/IAnimation.html" >IAnimation</a>
                                        </li>
@@ -1686,6 +1688,7 @@
 
 
 
+
 <ol class="breadcrumb">
   <li>Interfaces</li>
   <li>IViewPortItem</li>
@@ -1703,7 +1706,7 @@
 </ul>
 
 <div class="tab-content">
-    <div class="tab-pane fade active in" id="info">
+    <div class="tab-pane fade active in" id="c-info">
         <p class="comment">
             <h3>File</h3>
         </p>
@@ -1766,7 +1769,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="652" class="link-to-prism">src/common/core/item-list/viewport.service.ts:652</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="658" class="link-to-prism">src/common/core/item-list/viewport.service.ts:658</a></div>
                                         </td>
                                     </tr>
 
@@ -1776,16 +1779,19 @@
     </div>
 
 
-    <div class="tab-pane fade tab-source-code" id="source">
+    <div class="tab-pane fade tab-source-code" id="c-source">
         <pre class="line-numbers"><code class="language-typescript">import { Injectable, OnDestroy } from &#x27;@angular/core&#x27;;
 import &#x27;rxjs/add/observable/combineLatest&#x27;;
 import &#x27;rxjs/add/observable/from&#x27;;
+import &#x27;rxjs/add/observable/of&#x27;;
 import &#x27;rxjs/add/observable/timer&#x27;;
 import &#x27;rxjs/add/operator/combineLatest&#x27;;
 import &#x27;rxjs/add/operator/debounceTime&#x27;;
 import &#x27;rxjs/add/operator/distinctUntilChanged&#x27;;
 import &#x27;rxjs/add/operator/do&#x27;;
 import &#x27;rxjs/add/operator/filter&#x27;;
+import &#x27;rxjs/add/operator/map&#x27;;
+import &#x27;rxjs/add/operator/switchMap&#x27;;
 import { BehaviorSubject } from &#x27;rxjs/BehaviorSubject&#x27;;
 import { Observable } from &#x27;rxjs/Observable&#x27;;
 import { ReplaySubject } from &#x27;rxjs/ReplaySubject&#x27;;
@@ -1877,9 +1883,9 @@ export class ViewPortService implements OnDestroy {
     constructor() {
         this.viewPort$ &#x3D; Observable.from(this.viewPortResult$);
 
-        const consoleLog &#x3D; (_message: string) &#x3D;&gt; {
-            // console.log(_message);
-        };
+        // const consoleLog &#x3D; (_message: string) &#x3D;&gt; {
+        //     // console.log(_message);
+        // };
 
         const innerSize &#x3D; () &#x3D;&gt; {
             return this._direction &#x3D;&#x3D;&#x3D; ViewportDirection.horizontal ? window.innerWidth : window.innerHeight;
@@ -1890,7 +1896,7 @@ export class ViewPortService implements OnDestroy {
         };
 
         const calcFixedSizeViewPort$ &#x3D; (items: IViewPortItem[], containerSize: number, scrollPos: number, itemDefaultSize: number, ensureParams: IEnsureParams): Observable&lt;IViewPort&gt; &#x3D;&gt; {
-            consoleLog(&#x60;calcFixedSizeViewPort&#x60;);
+            // consoleLog(&#x60;calcFixedSizeViewPort&#x60;);
             const maxCount &#x3D; Math.ceil(containerSize / itemDefaultSize) + 1;
             const startRow &#x3D; Math.floor(scrollPos / itemDefaultSize);
 
@@ -1933,7 +1939,7 @@ export class ViewPortService implements OnDestroy {
         };
 
         const calcVariableSizeViewPort$ &#x3D; (items: IViewPortItem[], containerSize: number, scrollPos: number, itemDefaultSize: number, ensureParams: IEnsureParams): Observable&lt;IViewPort&gt; &#x3D;&gt; {
-            consoleLog(&#x60;calcVariableSizeViewPort&#x60;);
+            // consoleLog(&#x60;calcVariableSizeViewPort&#x60;);
             const visibleList &#x3D; [] as IViewPortItem[];
             let startIndex: number;
             let endIndex;
@@ -1965,7 +1971,7 @@ export class ViewPortService implements OnDestroy {
                     }
 
                     if (endIndex &#x3D;&#x3D;&#x3D; undefined) {
-                        if (beforeSize + viewPortSize &gt; (newScrollPos || scrollPos) + containerSize) {
+                        if ((beforeSize + viewPortSize &gt; (newScrollPos || scrollPos) + containerSize) || index &#x3D;&#x3D;&#x3D; items.length - 1) {
                             endIndex &#x3D; index;
                         }
                     } else {
@@ -1977,7 +1983,7 @@ export class ViewPortService implements OnDestroy {
                 let index &#x3D; items.length;
                 while (--index &gt;&#x3D; 0) {
                     const item &#x3D; items[index];
-                    const itemSize &#x3D; (item.size &amp;&amp; item.size &gt; ViewPortService.itemDefaultSize) ? item.size : itemDefaultSize;
+                    const itemSize &#x3D; item.size || itemDefaultSize;
 
                     if (ensureParams.index &#x3D;&#x3D;&#x3D; index) {
                         endIndex &#x3D; index;
@@ -1988,7 +1994,7 @@ export class ViewPortService implements OnDestroy {
                             viewPortSize +&#x3D; itemSize;
                             visibleList.unshift(item);
 
-                            if (viewPortSize &gt; containerSize) {
+                            if (viewPortSize &gt; containerSize || index &#x3D;&#x3D;&#x3D; 0) {
                                 startIndex &#x3D; index;
                                 newScrollPos &#x3D; viewPortSize - containerSize;
                             }
@@ -2002,7 +2008,7 @@ export class ViewPortService implements OnDestroy {
                 }
             }
 
-            if (ensureParams &amp;&amp; viewPortSize &lt; containerSize &amp;&amp; visibleList.length &lt; items.length) {
+            if (ensureParams &amp;&amp; ensureParams.index !&#x3D;&#x3D; undefined &amp;&amp; viewPortSize &lt; containerSize &amp;&amp; visibleList.length &lt; items.length) {
                 if (ensureParams.atEnd) {
                     return calcVariableSizeViewPort$(items, containerSize, scrollPos, itemDefaultSize, {
                         index: 0,
@@ -2030,9 +2036,9 @@ export class ViewPortService implements OnDestroy {
         };
 
         const calcAutoSizeViewPort$ &#x3D; (items: IViewPortItem[], containerSize: number, scrollPos: number, element: HTMLElement, itemDefaultSize: number, ensureParams: IEnsureParams, isCalculation?: boolean): Observable&lt;IViewPort&gt; &#x3D;&gt; {
-            consoleLog(&#x60;calcAutoSizeViewPort&#x60;);
+            // consoleLog(&#x60;calcAutoSizeViewPort&#x60;);
             return calcVariableSizeViewPort$(items, containerSize, scrollPos, itemDefaultSize, ensureParams)
-                .switchMap((viewPort) &#x3D;&gt; {
+                .switchMap((viewPort: IViewPort) &#x3D;&gt; {
                     const calculationRequired &#x3D; !isCalculation &amp;&amp; viewPort.visibleItems.find((item) &#x3D;&gt; !item.size);
 
                     if (!calculationRequired) {
@@ -2052,6 +2058,8 @@ export class ViewPortService implements OnDestroy {
                                         item.size &#x3D; clientSize(itemElement);
                                     }
                                 }
+                                // Recalc Viewport size
+                                viewPort.viewPortSize &#x3D; viewPort.visibleItems.reduce((size, item) &#x3D;&gt; size +&#x3D; item.size || itemDefaultSize, 0);
                             })
                             .switchMap(() &#x3D;&gt; calcVariableSizeViewPort$(items, containerSize, viewPort.scrollPos || scrollPos, itemDefaultSize, ensureParams));
                     }
@@ -2135,7 +2143,7 @@ export class ViewPortService implements OnDestroy {
 
             startIndex &#x3D; startIndex || 0;
             endIndex &#x3D; endIndex || 0;
-            consoleLog(&#x60;viewPortSize ${viewPortSize}&#x60;);
+            // consoleLog(&#x60;viewPortSize ${viewPortSize}&#x60;);
             viewPort &#x3D; {
                 beforeSize: 0,
                 afterSize: 0,
@@ -2152,7 +2160,7 @@ export class ViewPortService implements OnDestroy {
         };
 
         const calcViewPort$ &#x3D; (items: IViewPortItem[], maxSize: number, scrollPos: number, element: HTMLElement, itemDefaultSize: number, ensureParams: IEnsureParams, fromMeasure?: boolean) &#x3D;&gt; {
-            consoleLog(&#x60;calcViewPort&#x60;);
+            // consoleLog(&#x60;calcViewPort&#x60;);
             if (!items || !items.length) {
                 return Observable.of(this.emptyViewPort);
             }
@@ -2197,7 +2205,7 @@ export class ViewPortService implements OnDestroy {
                                 index: items.length - 1,
                                 atEnd: true,
                             } as IEnsureParams, true);
-                        } else if (this.mode &#x3D;&#x3D;&#x3D; ViewportMode.auto &amp;&amp; viewPort.listSize &lt; listSize) {
+                        } else if (this.mode &#x3D;&#x3D;&#x3D; ViewportMode.auto &amp;&amp; viewPort.viewPortSize &lt; listSize) {
                             // Rendered viewport is to small, render again to complete
                             return calcViewPort$(items, maxSize, 0, element, itemDefaultSize, {
                                 index: items.length - 1,
@@ -2210,13 +2218,13 @@ export class ViewPortService implements OnDestroy {
                     return Observable.of(viewPort);
                 })
                 .do(() &#x3D;&gt; {
-                    consoleLog(&#x60;clear ensureParams ${ensureParams &amp;&amp; ensureParams.index}&#x60;);
+                    // consoleLog(&#x60;clear ensureParams ${ensureParams &amp;&amp; ensureParams.index}&#x60;);
                     ensureParams.index &#x3D; undefined;
                 });
         };
 
-        const items$ &#x3D; Observable.from(this.items$)
-            .do(() &#x3D;&gt; consoleLog(&#x27;items&#x27;));
+        const items$ &#x3D; Observable.from(this.items$);
+        // .do(() &#x3D;&gt; consoleLog(&#x27;items&#x27;));
 
         // Ensure item visible by index or instance
         this.ensureParams$ &#x3D; Observable.combineLatest(this.ensureItem$, items$)
@@ -2241,12 +2249,12 @@ export class ViewPortService implements OnDestroy {
                 }
 
                 return ensureParams;
-            })
-            .do((ensureParams) &#x3D;&gt; consoleLog(&#x60;ensureParams index:${ensureParams &amp;&amp; ensureParams.index} atEnd:${ensureParams &amp;&amp; ensureParams.atEnd}&#x60;));
+            });
+        // .do((ensureParams) &#x3D;&gt; consoleLog(&#x60;ensureParams index:${ensureParams &amp;&amp; ensureParams.index} atEnd:${ensureParams &amp;&amp; ensureParams.atEnd}&#x60;));
 
         const maxSize$ &#x3D; Observable.from(this.maxSize$)
-            .distinctUntilChanged()
-            .do((value) &#x3D;&gt; consoleLog(&#x60;maxSize ${value}&#x60;));
+            .distinctUntilChanged();
+        // .do((value) &#x3D;&gt; consoleLog(&#x60;maxSize ${value}&#x60;));
 
         const refresh$ &#x3D; Observable.from(this.refresh$)
             .switchMap((params: IViewPortRefreshParams) &#x3D;&gt; {
@@ -2266,8 +2274,8 @@ export class ViewPortService implements OnDestroy {
                     }
                 }
                 return Observable.of(params);
-            })
-            .do(() &#x3D;&gt; consoleLog(&#x27;refresh&#x27;));
+            });
+        // .do(() &#x3D;&gt; consoleLog(&#x27;refresh&#x27;));
 
         const scrollPos$ &#x3D; Observable.from(this.scrollPosition$)
             .map((scrollPos) &#x3D;&gt; this._scrollPosition &#x3D; scrollPos || 0)
@@ -2275,35 +2283,35 @@ export class ViewPortService implements OnDestroy {
             .filter(() &#x3D;&gt; {
                 if (this.ignoreScrollCount &gt; 0) {
                     this.ignoreScrollCount--;
-                    consoleLog(&#x60;ignoreScrollCount ${this.ignoreScrollCount}&#x60;);
+                    // consoleLog(&#x60;ignoreScrollCount ${this.ignoreScrollCount}&#x60;);
                     return false;
                 } else {
                     return true;
                 }
             })
-            .distinctUntilChanged()
-            .do((value) &#x3D;&gt; consoleLog(&#x60;scrollPos ${value}&#x60;));
+            .distinctUntilChanged();
+        // .do((value) &#x3D;&gt; consoleLog(&#x60;scrollPos ${value}&#x60;));
 
         const mode$ &#x3D; Observable.from(this.mode$)
             .map((mode) &#x3D;&gt; {
                 this._mode &#x3D; typeof mode &#x3D;&#x3D;&#x3D; &#x27;string&#x27; ? ViewportMode[mode] : mode;
                 return this._mode;
             })
-            .distinctUntilChanged()
-            .do((value) &#x3D;&gt; consoleLog(&#x60;mode ${value}&#x60;));
+            .distinctUntilChanged();
+        // .do((value) &#x3D;&gt; consoleLog(&#x60;mode ${value}&#x60;));
 
         const direction$ &#x3D; Observable.from(this.direction$)
             .map((direction) &#x3D;&gt; {
                 this._direction &#x3D; typeof direction &#x3D;&#x3D;&#x3D; &#x27;string&#x27; ? ViewportDirection[direction] : direction;
                 return this._direction;
             })
-            .distinctUntilChanged()
-            .do((value) &#x3D;&gt; consoleLog(&#x60;direction ${value}&#x60;));
+            .distinctUntilChanged();
+        // .do((value) &#x3D;&gt; consoleLog(&#x60;direction ${value}&#x60;));
 
         const itemsSize$ &#x3D; Observable.from(this.itemsSize$)
             .distinctUntilChanged()
-            .do((value) &#x3D;&gt; this._itemsSize &#x3D; value)
-            .do((value) &#x3D;&gt; consoleLog(&#x60;itemsSize ${value}&#x60;));
+            .do((value) &#x3D;&gt; this._itemsSize &#x3D; value);
+        // .do((value) &#x3D;&gt; consoleLog(&#x60;itemsSize ${value}&#x60;));
 
         const element$ &#x3D; Observable.from(this.element$)
             .do((element) &#x3D;&gt; {
@@ -2312,8 +2320,8 @@ export class ViewPortService implements OnDestroy {
                     this.ignoreScrollCount &#x3D; 0;
                     this.lastCalculatedSize &#x3D; undefined;
                 }
-            })
-            .do(() &#x3D;&gt; consoleLog(&#x60;element&#x60;));
+            });
+        // .do(() &#x3D;&gt; consoleLog(&#x60;element&#x60;));
 
         // Reset items size when direction change in auto mode
         this.subscriptions.push(Observable.combineLatest(direction$, items$, mode$, this.deleteSizeCache$)
@@ -2328,9 +2336,10 @@ export class ViewPortService implements OnDestroy {
             .combineLatest(direction$, mode$, itemsSize$, maxSize$)
             .debounceTime(1)
             .combineLatest(scrollPos$)
-            .do(([[[_element, _items, _refresh, ensureParams], _direction, _mode, _itemDefaultSize, _maxSize], _scrollPos]) &#x3D;&gt; consoleLog(&#x60;combineLatest ${JSON.stringify(ensureParams)}&#x60;))
+            .filter(([[[element]]]) &#x3D;&gt; !!element)
+            // .do(([[[_element, _items, _refresh, ensureParams], _direction, _mode, _itemDefaultSize, _maxSize], _scrollPos]) &#x3D;&gt; consoleLog(&#x60;combineLatest ${JSON.stringify(ensureParams)}&#x60;))
             .switchMap(([[[element, items, _refresh, ensureParams], _direction, _mode, itemDefaultSize, maxSize], _scrollPos]) &#x3D;&gt; {
-                consoleLog(&#x60;combineLatest ${ensureParams &amp;&amp; ensureParams.index}&#x60;);
+                // consoleLog(&#x60;combineLatest ${ensureParams &amp;&amp; ensureParams.index}&#x60;);
                 if (!itemDefaultSize) {
                     itemDefaultSize &#x3D; ViewPortService.itemDefaultSize;
                 }
@@ -2340,7 +2349,7 @@ export class ViewPortService implements OnDestroy {
                 if (items &amp;&amp; items.length &amp;&amp; (listSize &#x3D;&#x3D;&#x3D; &#x27;auto&#x27; || listSize &lt; 2 * ViewPortService.itemDefaultSize)) {
                     // Set the viewlist to the maximum height to measure the real max-height defined in the css
                     // Use a blank div to do that
-                    consoleLog(&#x60;viewPortResult for measure ${JSON.stringify(this.measureViewPort)}&#x60;);
+                    // consoleLog(&#x60;viewPortResult for measure ${JSON.stringify(this.measureViewPort)}&#x60;);
                     this.viewPortResult$.next(this.measureViewPort);
                     // Wait next life cycle for the result
                     return Observable.timer(1)
@@ -2372,7 +2381,7 @@ export class ViewPortService implements OnDestroy {
                 }
             })
             .switchMap(({ element, scrollPos, items, maxSizeValue, itemDefaultSize, ensureParams }) &#x3D;&gt; {
-                consoleLog(&#x60;calcViewPort ${ensureParams &amp;&amp; ensureParams.index}&#x60;);
+                // consoleLog(&#x60;calcViewPort ${ensureParams &amp;&amp; ensureParams.index}&#x60;);
                 return calcViewPort$(items, maxSizeValue, scrollPos, element, itemDefaultSize, ensureParams);
             })
             .subscribe((viewPort: IViewPort) &#x3D;&gt; {
