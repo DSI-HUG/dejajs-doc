@@ -4090,7 +4090,7 @@ est suceptible de contenir beaucoup d&#39;éléments.</p>
                                 <div>
                                 </div>
                                 <div class="io-description">
-                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    <b>Returns : </b>    <code><a href="../interfaces/IViewListResult.html" target="_self" >Observable&lt;IViewListResult&gt;</a></code>
     
                                 </div>
                                     <div class="io-description">
@@ -4830,7 +4830,7 @@ est suceptible de contenir beaucoup d&#39;éléments.</p>
                                 <div>
                                 </div>
                                 <div class="io-description">
-                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    <b>Returns : </b>    <code><a href="../interfaces/IViewListResult.html" target="_self" >Observable&lt;IViewListResult&gt;</a></code>
     
                                 </div>
                                     <div class="io-description">
@@ -4900,7 +4900,7 @@ est suceptible de contenir beaucoup d&#39;éléments.</p>
                                 <div>
                                 </div>
                                 <div class="io-description">
-                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                    <b>Returns : </b>    <code><a href="../interfaces/IViewListResult.html" target="_self" >Observable&lt;IViewListResult&gt;</a></code>
     
                                 </div>
                                     <div class="io-description">
@@ -7480,7 +7480,7 @@ import { DejaClipboardService } from &#x27;../../common/core/clipboard/clipboard
 import { IGroupInfo } from &#x27;../../common/core/grouping/group-infos&#x27;;
 import { GroupingService } from &#x27;../../common/core/grouping/grouping.service&#x27;;
 import { IItemBase } from &#x27;../../common/core/item-list/item-base&#x27;;
-import { ItemListService } from &#x27;../../common/core/item-list/item-list.service&#x27;;
+import { ItemListService, IViewListResult } from &#x27;../../common/core/item-list/item-list.service&#x27;;
 import { IItemTree } from &#x27;../../common/core/item-list/item-tree&#x27;;
 import { IViewPort, ViewportMode } from &#x27;../../common/core/item-list/viewport.service&#x27;;
 import { KeyCodes } from &#x27;../../common/core/keycodes.enum&#x27;;
@@ -8084,7 +8084,7 @@ export class DejaGridComponent implements OnDestroy {
     }
 
     /** Trie la liste par le champs spécifié. */
-    public sort$(name?: string) {
+    public sort$(name?: string): Observable&lt;IViewListResult&gt; {
         return this.treeListComponent.sort$(name);
     }
 
@@ -8092,7 +8092,7 @@ export class DejaGridComponent implements OnDestroy {
      * @param groupInfos Modèle de groupe à appliquer.
      * @return Observable résolu par la fonction.
      */
-    public group$(groups: IGroupInfo[]) {
+    public group$(groups: IGroupInfo[]): Observable&lt;IViewListResult&gt; {
         return this.treeListComponent.group$(groups);
     }
 
@@ -8100,7 +8100,7 @@ export class DejaGridComponent implements OnDestroy {
      * @param groupInfos Modèle de groupe à retirer.
      * @return Observable résolu par la fonction.
      */
-    public ungroup$(groupInfo: IGroupInfo) {
+    public ungroup$(groupInfo: IGroupInfo): Observable&lt;IViewListResult&gt; {
         return this.treeListComponent.ungroup$(groupInfo);
     }
 

@@ -1680,6 +1680,46 @@
                <div class="content getting-started">
                    <div class="content-data">
 
+<h4 id="2-22-1-2018-01-29-">2.22.1 (2018-01-29)</h4>
+<h5 id="breaking-changes">BREAKING CHANGES</h5>
+<ul>
+<li><p><strong>SortingService:</strong> Usage of lodash for the sorting algorithm (<a href="https://github.com/DSI-HUG/dejajs-components/commit/0fc1d971612d93bff0c3a97b2f2723e4ce787f4c">0fc1d971</a>)
+  =&gt; deprecated sort (returned a promise) is now a synchronous function. Compare is removed, use lodash instead.</p>
+</li>
+<li><p><strong>ISortInfos:</strong> Modified to match lodash sorting (<a href="https://github.com/DSI-HUG/dejajs-components/commit/07271772ddf2554f582988fed162e78d06568c69">07271772</a>)
+  =&gt; name is mandatory and only a string and type is removed (Automatic detection of sorting type)</p>
+</li>
+</ul>
+<h5 id="continuous-integration">Continuous Integration</h5>
+<ul>
+<li><strong>Dependencies:</strong> upgrade dependencies (<a href="https://github.com/DSI-HUG/dejajs-components/commit/98ff0d20350f4d21379d9bb4b3a92da8579ad0a9">98ff0d20</a>)</li>
+</ul>
+<h5 id="new-features">New Features</h5>
+<ul>
+<li><strong>DejaGrid:</strong> Add events when grouping or sorting are raised form the component (<a href="https://github.com/DSI-HUG/dejajs-components/commit/d0d1e706dc8212b906e10dac9cc10e8e5a55e647">d0d1e706</a>)</li>
+<li><strong>Global:</strong> Cloning service is deprecated, replaced by lodash._cloneDeep (<a href="https://github.com/DSI-HUG/dejajs-components/commit/9adbe4589c493e1078a564b835485baf48afa2d5">9adbe458</a>)</li>
+</ul>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>DejaGridComponent:</strong> Fix missing returned type for some function (<a href="https://github.com/DSI-HUG/dejajs-components/commit/4cabf658c9cc0fb748c2361a1d0017b1b898a78a">4cabf658</a>)</li>
+<li><strong>DejaSelectComponent:</strong> Selection for empty or null key object in reactiveForm (<a href="https://github.com/DSI-HUG/dejajs-components/commit/baa02debc5e07fe7a7960c9667e130b47e75d373">baa02deb</a>)</li>
+<li><strong>DejaTextMetricsService:</strong><ul>
+<li>improve text height calculation by taking in account white space separator (<a href="https://github.com/DSI-HUG/dejajs-components/commit/41d360a559d19c409df980f1433251111e5fb2e2">41d360a5</a>)</li>
+<li>adjust text width with linux lower font ratio. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/3aa8f485295d574ec8076f85d1d1e542d57402bf">3aa8f485</a>)</li>
+</ul>
+</li>
+<li><strong>DejaGridGroupAreaComponent:</strong> Fix grouping refresh when to chips are inverted in the group area (<a href="https://github.com/DSI-HUG/dejajs-components/commit/5b08c11b16ceecd3dcb2fccf9c0263cb335e5818">5b08c11b</a>)</li>
+</ul>
+<h5 id="code-style-changes">Code Style Changes</h5>
+<ul>
+<li><strong>NumericStepperComponent:</strong> Use change instead of blur + add tabIndex=-1 on buttons to remove tabs focus + use class.off-limits instead of ng-class (<a href="https://github.com/DSI-HUG/dejajs-components/commit/f776987060b093fde2c2ed8dcb1daeb11ad72ec3">f7769870</a>)</li>
+</ul>
+<h5 id="tests">Tests</h5>
+<ul>
+<li><strong>CodeViewer:</strong> Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/684056b4a26960dd0fd80d34da56cdedd5717d01">684056b4</a>)</li>
+<li><strong>DejaTextMetricsService:</strong> test. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/574076de47fbdf9e4454c943eae0a5221a7905f5">574076de</a>)</li>
+<li><strong>CloningService:</strong> Added unit lodash test to compare with the previous cloning service test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/19c88289a25a285852d9239b727f09ec99b9891a">19c88289</a>)</li>
+</ul>
 <h3 id="2-22-0-2018-01-29-">2.22.0 (2018-01-29)</h3>
 <h5 id="breaking-changes">BREAKING CHANGES</h5>
 <ul>

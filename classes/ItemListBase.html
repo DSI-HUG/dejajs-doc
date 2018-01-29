@@ -3836,7 +3836,7 @@
                                         <div>
                                         </div>
                                         <div class="io-description">
-                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                            <b>Returns : </b>    <code><a href="../interfaces/IViewListResult.html" target="_self" >Observable&lt;IViewListResult&gt;</a></code>
             
                                         </div>
                                             <div class="io-description">
@@ -6208,7 +6208,7 @@
                                         <div>
                                         </div>
                                         <div class="io-description">
-                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                            <b>Returns : </b>    <code><a href="../interfaces/IViewListResult.html" target="_self" >Observable&lt;IViewListResult&gt;</a></code>
             
                                         </div>
                                             <div class="io-description">
@@ -6510,7 +6510,7 @@
                                         <div>
                                         </div>
                                         <div class="io-description">
-                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                            <b>Returns : </b>    <code><a href="../interfaces/IViewListResult.html" target="_self" >Observable&lt;IViewListResult&gt;</a></code>
             
                                         </div>
                                             <div class="io-description">
@@ -8302,7 +8302,7 @@ export abstract class ItemListBase implements OnDestroy {
     }
 
     /** Trie la liste par le champs spécifié. */
-    public sort$(name?: string) {
+    public sort$(name?: string): Observable&lt;IViewListResult&gt; {
         const sortField &#x3D; name || this._textField;
 
         if (!this._sortInfos) {
@@ -8325,7 +8325,7 @@ export abstract class ItemListBase implements OnDestroy {
      * @param groupInfos Modèle de groupe à appliquer.
      * @return Observable résolu par la fonction.
      */
-    public group$(groups: IGroupInfo[]) {
+    public group$(groups: IGroupInfo[]): Observable&lt;IViewListResult&gt; {
         return this.getItemListService().group$(groups)
             .switchMap(() &#x3D;&gt; this.calcViewList$().first());
     }
@@ -8334,7 +8334,7 @@ export abstract class ItemListBase implements OnDestroy {
      * @param groupInfos Modèle de groupe à retirer.
      * @return Observable résolu par la fonction.
      */
-    public ungroup$(groupInfo: IGroupInfo) {
+    public ungroup$(groupInfo: IGroupInfo): Observable&lt;IViewListResult&gt; {
         return this.getItemListService().ungroup$(groupInfo)
             .switchMap(() &#x3D;&gt; this.calcViewList$().first());
     }
