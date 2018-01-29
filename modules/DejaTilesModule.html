@@ -1733,9 +1733,6 @@
                     <h3>Providers<a href="https://angular.io/api/core/NgModule#providers" target="_blank" title="Official documentation about module providers"><span class="fa fa-info-circle"></a></h3>
                     <ul class="list-group">
                             <li class="list-group-item">
-                                     <a href="../injectables/CloningService.html" >CloningService</a>
-                            </li>
-                            <li class="list-group-item">
                                      <a href="../injectables/DejaMouseDragDropService.html" >DejaMouseDragDropService</a>
                             </li>
                     </ul>
@@ -1775,7 +1772,6 @@
 import { NgModule } from &#x27;@angular/core&#x27;;
 import { FormsModule } from &#x27;@angular/forms&#x27;;
 import { MatProgressSpinnerModule } from &#x27;@angular/material&#x27;;
-import { CloningService } from &#x27;../../common/core/cloning/cloning.service&#x27;;
 import { DejaEditableModule } from &#x27;../content-editable/index&#x27;;
 import { DejaMouseDragDropModule } from &#x27;./../mouse-dragdrop/index&#x27;;
 import { DejaMouseDragDropService } from &#x27;./../mouse-dragdrop/mouse-dragdrop.service&#x27;;
@@ -1795,7 +1791,6 @@ import { DejaTilesComponent } from &#x27;./tiles.component&#x27;;
         DejaEditableModule,
     ],
     providers: [
-        CloningService,
         DejaMouseDragDropService,
     ]
 })

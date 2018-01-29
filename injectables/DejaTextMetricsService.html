@@ -2473,25 +2473,37 @@ export class DejaTextMetricsService {
         return this.charSize$
             .filter((charSize) &#x3D;&gt; charSize !&#x3D;&#x3D; null)
             .map((charSize) &#x3D;&gt; {
-                const arr &#x3D; text.split(&#x27; &#x27;);
 
                 let tmpSize &#x3D; 0;
+                let tmpStr &#x3D; &#x27;&#x27;;
                 let numberOfLines &#x3D; 1;
-                arr.forEach((txt: string) &#x3D;&gt; {
-                    let w &#x3D; 0;
-                    for (let j &#x3D; 0; j &lt; txt.length; j++) {
-                        const charCode &#x3D; txt.charCodeAt(j);
-                        // Si le caractère fait partie de la table ascii qu&#x27;on a calculé dans this.getAllCharsize() on incrémente la taille du mot de sa taille.
-                        // Sinon, on ajoute la moyenne des tailles calculées (qui correspond théoriquement à la taille moyenne d&#x27;un caractère)
-                        w +&#x3D; (charSize[charCode]) ? charSize[charCode] : charSize.reduce((a, b) &#x3D;&gt; a + b, 0) / charSize.length;
-                    }
-                    if (tmpSize + w &gt; maxWidth) {
-                        tmpSize &#x3D; w;
-                        numberOfLines++;
-                    } else {
-                        tmpSize +&#x3D; w;
-                    }
-                });
+                let averageCharSize &#x3D; 0;
+                if (text.length&gt;0) {
+                    const arr &#x3D; text.split(&#x27; &#x27;);
+                    let spaceWidth &#x3D; 0;
+                    const printableCharSizeArray &#x3D; charSize.filter((size)&#x3D;&gt; size &gt; 0);
+                    averageCharSize &#x3D; printableCharSizeArray.reduce((a, b) &#x3D;&gt; a + b, 0) / printableCharSizeArray.length;
+                    arr.forEach((txt: string) &#x3D;&gt; {
+                        let w &#x3D; 0;
+                        for (let j &#x3D; 0; j &lt; txt.length; j++) {
+                            const charCode &#x3D; txt.charCodeAt(j);
+                            // Si le caractère fait partie de la table ascii qu&#x27;on a calculé dans this.getAllCharsize() on incrémente la taille du mot de sa taille.
+                            // Sinon, on ajoute la moyenne des tailles calculées (qui correspond théoriquement à la taille moyenne d&#x27;un caractère)
+                            w +&#x3D; (charSize[charCode]) ? charSize[charCode] : averageCharSize;
+                        }
+                        if ((tmpSize + w + spaceWidth) &gt; maxWidth) {
+                            tmpStr &#x3D; txt;
+                            tmpSize &#x3D; w;
+                            numberOfLines++;
+                        } else {
+                            tmpStr +&#x3D; (spaceWidth&gt;0? &#x27; &#x27; : &#x27;&#x27;) + txt;
+                            tmpSize +&#x3D; w + spaceWidth;
+                        }
+                        if (spaceWidth &#x3D;&#x3D;&#x3D; 0) {
+                            spaceWidth &#x3D; charSize[32];
+                        }
+                    });
+                }
 
                 return numberOfLines;
             });

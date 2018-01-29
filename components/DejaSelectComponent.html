@@ -3747,7 +3747,7 @@ est suceptible de contenir beaucoup d&#39;éléments.</p>
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="1355" class="link-to-prism">src/component/select/select.component.ts:1355</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="1354" class="link-to-prism">src/component/select/select.component.ts:1354</a></div>
                                 </td>
                             </tr>
     
@@ -4382,7 +4382,7 @@ est suceptible de contenir beaucoup d&#39;éléments.</p>
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="1324" class="link-to-prism">src/component/select/select.component.ts:1324</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="1323" class="link-to-prism">src/component/select/select.component.ts:1323</a></div>
                                 </td>
                             </tr>
     
@@ -4489,7 +4489,7 @@ est suceptible de contenir beaucoup d&#39;éléments.</p>
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="1277" class="link-to-prism">src/component/select/select.component.ts:1277</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="1276" class="link-to-prism">src/component/select/select.component.ts:1276</a></div>
                                 </td>
                             </tr>
     
@@ -4635,7 +4635,7 @@ est suceptible de contenir beaucoup d&#39;éléments.</p>
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="1320" class="link-to-prism">src/component/select/select.component.ts:1320</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="1319" class="link-to-prism">src/component/select/select.component.ts:1319</a></div>
                                 </td>
                             </tr>
     
@@ -4976,7 +4976,7 @@ est suceptible de contenir beaucoup d&#39;éléments.</p>
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="1312" class="link-to-prism">src/component/select/select.component.ts:1312</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="1311" class="link-to-prism">src/component/select/select.component.ts:1311</a></div>
                                 </td>
                             </tr>
     
@@ -10509,7 +10509,6 @@ export class DejaSelectComponent extends ItemListBase implements ControlValueAcc
         let outputEmitter &#x3D; null;
 
         let output &#x3D; null;
-
         if (items) {
             if (Array.isArray(items)) {
                 const models &#x3D; items.map((itm) &#x3D;&gt; itm.model !&#x3D;&#x3D; undefined ? itm.model : itm);
@@ -10521,7 +10520,7 @@ export class DejaSelectComponent extends ItemListBase implements ControlValueAcc
                 if (this.modelIsValue) {
                     const valueField &#x3D; this.getValueField();
                     if (models.find((m) &#x3D;&gt; !!m[valueField])) {
-                        output &#x3D; models.map((m) &#x3D;&gt; m[valueField] || m);
+                        output &#x3D; models.map((m) &#x3D;&gt; m[valueField] !&#x3D;&#x3D; undefined ? m[valueField] : m);
                     }
                 } else {
                     output &#x3D; models;
@@ -10535,7 +10534,7 @@ export class DejaSelectComponent extends ItemListBase implements ControlValueAcc
 
                 if (this.modelIsValue) {
                     const valueField &#x3D; this.getValueField();
-                    output &#x3D; model[valueField] || model;
+                    output &#x3D; model[valueField] !&#x3D;&#x3D; undefined ? model[valueField] : model;
                 } else {
                     output &#x3D; items.model !&#x3D;&#x3D; undefined ? items.model : items;
                 }

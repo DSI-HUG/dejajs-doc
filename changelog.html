@@ -1680,6 +1680,88 @@
                <div class="content getting-started">
                    <div class="content-data">
 
+<h3 id="2-22-0-2018-01-29-">2.22.0 (2018-01-29)</h3>
+<h5 id="breaking-changes">BREAKING CHANGES</h5>
+<ul>
+<li><p><strong>SortingService:</strong> Usage of lodash for the sorting algorithm (<a href="https://github.com/DSI-HUG/dejajs-components/commit/0fc1d971612d93bff0c3a97b2f2723e4ce787f4c">0fc1d971</a>)
+  =&gt; deprecated sort (returned a promise) is now a synchronous function. Compare is removed, use lodash instead.</p>
+</li>
+<li><p><strong>ISortInfos:</strong> Modified to match lodash sorting (<a href="https://github.com/DSI-HUG/dejajs-components/commit/07271772ddf2554f582988fed162e78d06568c69">07271772</a>)
+  =&gt; name is mandatory and only a string and type is removed (Automatic detection of sorting type)</p>
+</li>
+</ul>
+<h5 id="continuous-integration">Continuous Integration</h5>
+<ul>
+<li><strong>Dependencies:</strong><ul>
+<li>upgrade dependencies (<a href="https://github.com/DSI-HUG/dejajs-components/commit/98ff0d20350f4d21379d9bb4b3a92da8579ad0a9">98ff0d20</a>)</li>
+<li>upgrade dependencies (<a href="https://github.com/DSI-HUG/dejajs-components/commit/d89174cbde226068eb06bd266bc974159cd65180">d89174cb</a>)</li>
+</ul>
+</li>
+<li><strong>Travis:</strong><ul>
+<li>Add DSI Slack notifications (<a href="https://github.com/DSI-HUG/dejajs-components/commit/00b649157cff7cc8279ab534b680946d35e8ef40">00b64915</a>)</li>
+<li>Add DSI Slack notifications (<a href="https://github.com/DSI-HUG/dejajs-components/commit/e73a8b689304dab83499104b03af2cbbc9bff144">e73a8b68</a>)</li>
+</ul>
+</li>
+</ul>
+<h5 id="new-features">New Features</h5>
+<ul>
+<li><strong>DejaGrid:</strong> Add events when grouping or sorting are raised form the component (<a href="https://github.com/DSI-HUG/dejajs-components/commit/d0d1e706dc8212b906e10dac9cc10e8e5a55e647">d0d1e706</a>)</li>
+<li><strong>Global:</strong> Cloning service is deprecated, replaced by lodash._cloneDeep (<a href="https://github.com/DSI-HUG/dejajs-components/commit/9adbe4589c493e1078a564b835485baf48afa2d5">9adbe458</a>)</li>
+<li><strong>DejaTiles:</strong> Added event when refresh and binding is done (<a href="https://github.com/DSI-HUG/dejajs-components/commit/6a90d78ed9bb9107e59bcec42ecb062701ba1844">6a90d78e</a>)</li>
+</ul>
+<h5 id="bug-fixes">Bug Fixes</h5>
+<ul>
+<li><strong>DejaSelectComponent:</strong> Selection for empty or null key object in reactiveForm (<a href="https://github.com/DSI-HUG/dejajs-components/commit/baa02debc5e07fe7a7960c9667e130b47e75d373">baa02deb</a>)</li>
+<li><strong>DejaTextMetricsService:</strong><ul>
+<li>improve text height calculation by taking in account white space separator (<a href="https://github.com/DSI-HUG/dejajs-components/commit/41d360a559d19c409df980f1433251111e5fb2e2">41d360a5</a>)</li>
+<li>adjust text width with linux lower font ratio. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/3aa8f485295d574ec8076f85d1d1e542d57402bf">3aa8f485</a>)</li>
+</ul>
+</li>
+<li><strong>DejaGridGroupAreaComponent:</strong> Fix grouping refresh when to chips are inverted in the group area (<a href="https://github.com/DSI-HUG/dejajs-components/commit/5b08c11b16ceecd3dcb2fccf9c0263cb335e5818">5b08c11b</a>)</li>
+<li><strong>DejaTilesComponent:</strong><ul>
+<li>Fix crash if model is not defined (<a href="https://github.com/DSI-HUG/dejajs-components/commit/41e269680996450f4dc6c44c2d66532b588df411">41e26968</a>)</li>
+<li>Fix a synchronization issue between tiles model and associated dictionary (<a href="https://github.com/DSI-HUG/dejajs-components/commit/9712b189872eae6ca5fce4a01e38513b9507e018">9712b189</a>)</li>
+</ul>
+</li>
+<li><strong>GlobalEventService:</strong> Fix test fail due to a missing sendaction.js script (<a href="https://github.com/DSI-HUG/dejajs-components/commit/3fabaa5334435b2d75362299835aa00761ebd1b1">3fabaa53</a>)</li>
+<li><strong>DejaTooltip:</strong> Improve alignment because overlay material can&#39;t fit into body (DEJS-302 Régression UserCard) (<a href="https://github.com/DSI-HUG/dejajs-components/commit/2283414438c6827b986b57be6958b7e4809b8525">22834144</a>)</li>
+<li><strong>DejaTiles:</strong> Improved event and garbage collection to avoid null pointers onDestroy (<a href="https://github.com/DSI-HUG/dejajs-components/commit/902f9cd7d33fb4c6c1a58cb29cb775de4d2ca1cb">902f9cd7</a>)</li>
+</ul>
+<h5 id="code-style-changes">Code Style Changes</h5>
+<ul>
+<li><strong>NumericStepperComponent:</strong> Use change instead of blur + add tabIndex=-1 on buttons to remove tabs focus + use class.off-limits instead of ng-class (<a href="https://github.com/DSI-HUG/dejajs-components/commit/b654df9c1fb0fd2715108567302bf3a438f19cbb">b654df9c</a>)</li>
+</ul>
+<h5 id="tests">Tests</h5>
+<ul>
+<li><strong>CodeViewer:</strong> Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/684056b4a26960dd0fd80d34da56cdedd5717d01">684056b4</a>)</li>
+<li><strong>DejaTextMetricsService:</strong> test. (<a href="https://github.com/DSI-HUG/dejajs-components/commit/574076de47fbdf9e4454c943eae0a5221a7905f5">574076de</a>)</li>
+<li><strong>CloningService:</strong> Added unit lodash test to compare with the previous cloning service test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/19c88289a25a285852d9239b727f09ec99b9891a">19c88289</a>)</li>
+<li><strong>DejaMouseDragDrop:</strong><ul>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/d72348cbeed05eeb56eb690ffbef85c89ecce398">d72348cb</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/44e01b3c24332695c04d613db083f905dcda0db5">44e01b3c</a>)</li>
+<li>Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1255c8e4163c75746be06cc87347b2a1e058e1c3">1255c8e4</a>)</li>
+</ul>
+</li>
+<li><strong>DejaAutoSizeTextArea:</strong><ul>
+<li>Improve unit test when font can differ between linux and windows (<a href="https://github.com/DSI-HUG/dejajs-components/commit/7bbbe6c450d9962afe9ee206d33238f3767b8781">7bbbe6c4</a>)</li>
+<li>Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/30501ca875045596ef43b87eb8563506b5cd7a49">30501ca8</a>)</li>
+</ul>
+</li>
+<li><strong>DejaTiles:</strong><ul>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/af14dee2586be476b33b75daeda2f96c84c6f945">af14dee2</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/d16f313da87a3436e18ce2701e3d1d1ae47fa1ff">d16f313d</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/a990c2e7fabf756572e152d713e6ab97595ca5f3">a990c2e7</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/38d2fa3681a5c425089b7c4c37b7902a348c2457">38d2fa36</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/3a998fe2e0bd99360023d1e6200daeb67d4e902e">3a998fe2</a>)</li>
+<li>Improve unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/587bda103d843ae254ef33315e751cce4bf470c6">587bda10</a>)</li>
+<li>Added unit test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/e2beec3cc0ddd44d55edaa2cffe35e3c7a103e9b">e2beec3c</a>)</li>
+</ul>
+</li>
+<li><strong>DejaGrid:</strong> Improve unit test, replacing timer by spyOn (<a href="https://github.com/DSI-HUG/dejajs-components/commit/cfc6fb1b1768b1e89fafd1dc74a3a5ec23a3bd28">cfc6fb1b</a>)</li>
+<li><strong>DejaSelect:</strong> Improve unit test, replacing timer by spyOn (<a href="https://github.com/DSI-HUG/dejajs-components/commit/21c742d0c4290db0f188943315ed39ca23de8ed9">21c742d0</a>)</li>
+<li><strong>DejaTreeList:</strong> Improve unit test, replacing timer by spyOn (<a href="https://github.com/DSI-HUG/dejajs-components/commit/83ede9cffba5d4fd2f5a67a944a8575d69361178">83ede9cf</a>)</li>
+<li><strong>DejaViewPort:</strong> Added one test (<a href="https://github.com/DSI-HUG/dejajs-components/commit/1ddddfa4e98e17044294906bcc202f147cea1f40">1ddddfa4</a>)</li>
+</ul>
 <h3 id="2-21-0-2018-01-10-">2.21.0 (2018-01-10)</h3>
 <h5 id="breaking-changes">BREAKING CHANGES</h5>
 <ul>

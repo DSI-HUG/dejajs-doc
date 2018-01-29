@@ -1737,20 +1737,12 @@
                             <td class="col-md-4">
                                 <ul class="index-list">
                                     <li>
-                                            <span class="modifier">Static</span>
-                                        <a href="#compare">compare</a>
-                                    </li>
-                                    <li>
                                             <span class="modifier">Public</span>
                                         <a href="#sort">sort</a>
                                     </li>
                                     <li>
                                             <span class="modifier">Public</span>
                                         <a href="#sort$">sort$</a>
-                                    </li>
-                                    <li>
-                                            <span class="modifier">Public</span>
-                                        <a href="#sortTree">sortTree</a>
                                     </li>
                                     <li>
                                             <span class="modifier">Public</span>
@@ -1773,96 +1765,6 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
-                                    <a name="compare"></a>
-                                    <span class="name">
-                                        <b>
-                                            <span class="modifier">Static</span>
-                                        compare
-                                        </b>
-                                        <a href="#compare"><span class="fa fa-link"></span></a>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                        <span class="modifier-icon fa fa-reset"></span>
-                                    <code>compare(a: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, b: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, sortInfo: <a href="../interfaces/ISortInfos.html">ISortInfos</a>)</code>
-                                </td>
-                            </tr>
-            
-            
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/common/core/sorting/sorting.service.ts:26</a></div>
-                                        </td>
-                                    </tr>
-            
-                            <tr>
-                                <td class="col-md-4">
-                                        <div class="io-description"><p>Fonction de comparaison de deux objets</p>
-            </div>
-            
-                                        <div class="io-description">
-                                                <b>Parameters :</b>
-                                                <table class="params">
-                                                    <thead>
-                                                        <tr>
-                                                            <td>Name</td>
-                                                            <td>Type</td>
-                                                            <td>Optional</td>
-                                                            <td>Description</td>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                            <tr>
-                                                              <td>a</td>
-                                                              <td>
-                                                                      <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-                                                              </td>
-                                                              <td>
-                                                              </td>
-                                                              <td><p>Objet 1.</p>
-            </td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td>b</td>
-                                                              <td>
-                                                                      <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-                                                              </td>
-                                                              <td>
-                                                              </td>
-                                                              <td><p>Objet 2.</p>
-            </td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td>sortInfo</td>
-                                                              <td>
-                                                                      <code><a href="../interfaces/ISortInfos.html" target="_self" >ISortInfos</a></code>
-                                                              </td>
-                                                              <td>
-                                                              </td>
-                                                              <td></td>
-                                                            </tr>
-                                                    </tbody>
-                                                </table>
-                                        </div>
-                                        <div>
-                                        </div>
-                                        <div class="io-description">
-                                            <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
-            
-                                        </div>
-                                            <div class="io-description">
-                                                
-                                            </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
                                     <a name="sort"></a>
                                     <span class="name">
                                         <b>
@@ -1876,91 +1778,14 @@
                             <tr>
                                 <td class="col-md-4">
                                         <span class="modifier-icon fa fa-reset"></span>
-                                    <code>sort(list: any[], sortInfo: <a href="../interfaces/ISortInfos.html">ISortInfos | []</a>)</code>
+                                    <code>sort(list: any[], sortInfos: <a href="../interfaces/ISortInfos.html">ISortInfos | []</a>)</code>
                                 </td>
                             </tr>
             
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="138" class="link-to-prism">src/common/core/sorting/sorting.service.ts:138</a></div>
-                                        </td>
-                                    </tr>
-            
-                            <tr>
-                                <td class="col-md-4">
-            
-                                        <div class="io-description">
-                                                <b>Parameters :</b>
-                                                <table class="params">
-                                                    <thead>
-                                                        <tr>
-                                                            <td>Name</td>
-                                                            <td>Type</td>
-                                                            <td>Optional</td>
-                                                            <td>Description</td>
-                                                        </tr>
-                                                    </thead>
-                                                    <tbody>
-                                                            <tr>
-                                                              <td>list</td>
-                                                              <td>
-                                                                      <code>any[]</code>
-                                                              </td>
-                                                              <td>
-                                                              </td>
-                                                              <td></td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td>sortInfo</td>
-                                                              <td>
-                                                                      <code><a href="../interfaces/ISortInfos.html" target="_self" >ISortInfos | []</a></code>
-                                                              </td>
-                                                              <td>
-                                                              </td>
-                                                              <td></td>
-                                                            </tr>
-                                                    </tbody>
-                                                </table>
-                                        </div>
-                                        <div>
-                                        </div>
-                                        <div class="io-description">
-                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
-            
-                                        </div>
-                                            <div class="io-description">
-                                                
-                                            </div>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
-                    <table class="table table-sm table-bordered">
-                        <tbody>
-                            <tr>
-                                <td class="col-md-4">
-                                    <a name="sort$"></a>
-                                    <span class="name">
-                                        <b>
-                                            <span class="modifier">Public</span>
-                                        sort$
-                                        </b>
-                                        <a href="#sort$"><span class="fa fa-link"></span></a>
-                                    </span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                        <span class="modifier-icon fa fa-reset"></span>
-                                    <code>sort$(list: any[], sortInfo: <a href="../interfaces/ISortInfos.html">ISortInfos | []</a>)</code>
-                                </td>
-                            </tr>
-            
-            
-                                    <tr>
-                                        <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="119" class="link-to-prism">src/common/core/sorting/sorting.service.ts:119</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/common/core/sorting/sorting.service.ts:35</a></div>
                                         </td>
                                     </tr>
             
@@ -1992,13 +1817,14 @@
             </td>
                                                             </tr>
                                                             <tr>
-                                                              <td>sortInfo</td>
+                                                              <td>sortInfos</td>
                                                               <td>
                                                                       <code><a href="../interfaces/ISortInfos.html" target="_self" >ISortInfos | []</a></code>
                                                               </td>
                                                               <td>
                                                               </td>
-                                                              <td></td>
+                                                              <td><p>Modèle de tri à appliquer.</p>
+            </td>
                                                             </tr>
                                                     </tbody>
                                                 </table>
@@ -2006,7 +1832,7 @@
                                         <div>
                                         </div>
                                         <div class="io-description">
-                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                            <b>Returns : </b>    <code>{}</code>
             
                                         </div>
                                             <div class="io-description">
@@ -2020,32 +1846,34 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
-                                    <a name="sortTree"></a>
+                                    <a name="sort$"></a>
                                     <span class="name">
                                         <b>
                                             <span class="modifier">Public</span>
-                                        sortTree
+                                        sort$
                                         </b>
-                                        <a href="#sortTree"><span class="fa fa-link"></span></a>
+                                        <a href="#sort$"><span class="fa fa-link"></span></a>
                                     </span>
                                 </td>
                             </tr>
                             <tr>
                                 <td class="col-md-4">
                                         <span class="modifier-icon fa fa-reset"></span>
-                                    <code>sortTree(tree: any[], sortInfo: <a href="../interfaces/ISortInfos.html">ISortInfos | []</a>, childrenField?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                                    <code>sort$(list: any[], sortInfos: <a href="../interfaces/ISortInfos.html">ISortInfos | []</a>)</code>
                                 </td>
                             </tr>
             
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="171" class="link-to-prism">src/common/core/sorting/sorting.service.ts:171</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/common/core/sorting/sorting.service.ts:26</a></div>
                                         </td>
                                     </tr>
             
                             <tr>
                                 <td class="col-md-4">
+                                        <div class="io-description"><p>Trie les éléments de la liste plate spécifiée en fonction du modèle de tri spécifié. Peut être surchargé pour implémenter un tri asynchrone</p>
+            </div>
             
                                         <div class="io-description">
                                                 <b>Parameters :</b>
@@ -2060,32 +1888,24 @@
                                                     </thead>
                                                     <tbody>
                                                             <tr>
-                                                              <td>tree</td>
+                                                              <td>list</td>
                                                               <td>
                                                                       <code>any[]</code>
                                                               </td>
                                                               <td>
                                                               </td>
-                                                              <td></td>
+                                                              <td><p>Liste à trier.</p>
+            </td>
                                                             </tr>
                                                             <tr>
-                                                              <td>sortInfo</td>
+                                                              <td>sortInfos</td>
                                                               <td>
                                                                       <code><a href="../interfaces/ISortInfos.html" target="_self" >ISortInfos | []</a></code>
                                                               </td>
                                                               <td>
                                                               </td>
-                                                              <td></td>
-                                                            </tr>
-                                                            <tr>
-                                                              <td>childrenField</td>
-                                                              <td>
-                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
-                                                              </td>
-                                                              <td>
-                                                                  true
-                                                              </td>
-                                                              <td></td>
+                                                              <td><p>Modèle de tri à appliquer.</p>
+            </td>
                                                             </tr>
                                                     </tbody>
                                                 </table>
@@ -2120,20 +1940,20 @@
                             <tr>
                                 <td class="col-md-4">
                                         <span class="modifier-icon fa fa-reset"></span>
-                                    <code>sortTree$(tree: any[], sortInfo: <a href="../interfaces/ISortInfos.html">ISortInfos | []</a>, childrenField?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                                    <code>sortTree$(tree: any[], sortInfos: <a href="../interfaces/ISortInfos.html">ISortInfos | []</a>, childrenField?: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                                 </td>
                             </tr>
             
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="148" class="link-to-prism">src/common/core/sorting/sorting.service.ts:148</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/common/core/sorting/sorting.service.ts:56</a></div>
                                         </td>
                                     </tr>
             
                             <tr>
                                 <td class="col-md-4">
-                                        <div class="io-description"><p>Trie les éléments de la liste hierarchique spécifiée en fonction du modèle de tri spécifié</p>
+                                        <div class="io-description"><p>Trie les éléments de la liste hierarchique spécifiée en fonction du modèle de tri spécifié.  Peut être surchargé pour implémenter un tri asynchrone</p>
             </div>
             
                                         <div class="io-description">
@@ -2159,13 +1979,14 @@
             </td>
                                                             </tr>
                                                             <tr>
-                                                              <td>sortInfo</td>
+                                                              <td>sortInfos</td>
                                                               <td>
                                                                       <code><a href="../interfaces/ISortInfos.html" target="_self" >ISortInfos | []</a></code>
                                                               </td>
                                                               <td>
                                                               </td>
-                                                              <td></td>
+                                                              <td><p>Modèle de tri à appliquer.</p>
+            </td>
                                                             </tr>
                                                             <tr>
                                                               <td>childrenField</td>
@@ -2202,7 +2023,8 @@
 
 
     <div class="tab-pane fade tab-source-code" id="c-source">
-        <pre class="line-numbers"><code class="language-typescript">import &#x27;rxjs/add/observable/of&#x27;;
+        <pre class="line-numbers"><code class="language-typescript">import * as _ from &#x27;lodash&#x27;;
+import &#x27;rxjs/add/observable/of&#x27;;
 import &#x27;rxjs/add/operator/map&#x27;;
 import &#x27;rxjs/add/operator/reduce&#x27;;
 import &#x27;rxjs/add/operator/switchMap&#x27;;
@@ -2213,143 +2035,50 @@ import { SortOrder } from &#x27;./sort-order.model&#x27;;
 
 /** Classe de tri d&#x27;une liste plate ou hierarchique */
 export class SortingService {
-    /** Fonction de comparaison de deux objets
-     * @param a Objet 1.
-     * @param b Objet 2.
-     * @param sortInfos Modèle de tri à appliquer pour la comparaison.
-     * @return 0 si les objet sont égaux, 1 si b est après a, -1 si a après b
+    /** Trie les éléments de la liste plate spécifiée en fonction du modèle de tri spécifié. Peut être surchargé pour implémenter un tri asynchrone
+     * @param list Liste à trier.
+     * @param sortInfos Modèle de tri à appliquer.
+     * @return Observable résolu par la fonction.
      */
-    public static compare(a: any, b: any, sortInfo: ISortInfos) {
-        const orderfact &#x3D; sortInfo.order &#x3D;&#x3D;&#x3D; SortOrder.ascending ? 1 : -1;
-
-        // tslint:disable-next-line:triple-equals
-        if (a &#x3D;&#x3D; undefined &amp;&amp; b &#x3D;&#x3D; undefined) {
-            return 0;
-        }
-
-        // tslint:disable-next-line:triple-equals
-        if (a &#x3D;&#x3D; undefined) {
-            return -orderfact;
-        }
-
-        // tslint:disable-next-line:triple-equals
-        if (b &#x3D;&#x3D; undefined) {
-            return orderfact;
-        }
-
-        const sortnamea &#x3D; a.sortField || (typeof sortInfo.name &#x3D;&#x3D;&#x3D; &#x27;function&#x27; ? sortInfo.name(a) : sortInfo.name);
-        const sortnameb &#x3D; b.sortField || (typeof sortInfo.name &#x3D;&#x3D;&#x3D; &#x27;function&#x27; ? sortInfo.name(b) : sortInfo.name);
-
-        let flda &#x3D; sortnamea ? a[sortnamea] : a;
-        let fldb &#x3D; sortnameb ? b[sortnameb] : b;
-
-        // tslint:disable-next-line:triple-equals
-        if (flda &#x3D;&#x3D; undefined &amp;&amp; fldb &#x3D;&#x3D; undefined) {
-            return 0;
-        }
-
-        // tslint:disable-next-line:triple-equals
-        if (flda &#x3D;&#x3D; undefined) {
-            return -orderfact;
-        }
-
-        // tslint:disable-next-line:triple-equals
-        if (fldb &#x3D;&#x3D; undefined) {
-            return orderfact;
-        }
-
-        let typea &#x3D; sortInfo.type || typeof flda;
-        let typeb &#x3D; sortInfo.type || typeof fldb;
-
-        if (typea &#x3D;&#x3D;&#x3D; &#x27;function&#x27;) {
-            flda &#x3D; flda();
-            typea &#x3D; typeof flda;
-        }
-
-        if (typeb &#x3D;&#x3D;&#x3D; &#x27;function&#x27;) {
-            fldb &#x3D; fldb();
-            typeb &#x3D; typeof fldb;
-        }
-
-        if (typea &#x3D;&#x3D;&#x3D; typeb) {
-            if (typea &#x3D;&#x3D;&#x3D; &#x27;number&#x27;) {
-                return orderfact * (flda - fldb);
-            } else if (typea &#x3D;&#x3D;&#x3D; &#x27;date&#x27;) {
-                // If the type is specified on the sortInfo
-                return orderfact * (flda.getTime() - fldb.getTime());
-            } else if (typea &#x3D;&#x3D;&#x3D; &#x27;object&#x27;) {
-                typea &#x3D; flda.constructor.name;
-                typeb &#x3D; fldb.constructor.name;
-
-                if (typea &#x3D;&#x3D;&#x3D; typeb) {
-                    switch (typea) {
-                        case &#x27;Date&#x27;:
-                            return orderfact * (flda.getTime() - fldb.getTime());
-                        default:
-                            break;
-                    }
-                }
-            } else {
-                // for other types, write your code here
-            }
-        }
-
-        if (!flda) {
-            flda &#x3D; &#x27;&#x27;;
-        }
-
-        if (!fldb) {
-            fldb &#x3D; &#x27;&#x27;;
-        }
-
-        const stra &#x3D; flda.toString() as string;
-        const strb &#x3D; fldb.toString() as string;
-        return orderfact * stra.localeCompare(strb);
+    public sort$(list: any[], sortInfos: ISortInfos | ISortInfos[]) {
+        return Observable.of(this.sort(list, sortInfos));
     }
 
     /** Trie les éléments de la liste plate spécifiée en fonction du modèle de tri spécifié
      * @param list Liste à trier.
      * @param sortInfos Modèle de tri à appliquer.
-     * @return Observable résolu par la fonction.
+     * @return Liste triée.
      */
-    public sort$(list: any[], sortInfo: ISortInfos | ISortInfos[]) {
-        return Observable.of(sortInfo)
-            .map((si) &#x3D;&gt; sortInfo instanceof Array ? si : [si])
-            .map((sortInfos: ISortInfos[]) &#x3D;&gt; {
-                const compareFn &#x3D; (a: any, b: any) &#x3D;&gt; {
-                    let i &#x3D; -1;
-                    let result &#x3D; 0;
-                    while (++i &lt; sortInfos.length &amp;&amp; result &#x3D;&#x3D;&#x3D; 0) {
-                        result &#x3D; SortingService.compare(a, b, sortInfos[i]);
-                    }
-                    return result;
-                };
-                return list.sort(compareFn);
-            });
+    public sort(list: any[], sortInfos: ISortInfos | ISortInfos[]) {
+        if (list &amp;&amp; list.length) {
+            const sis &#x3D; sortInfos instanceof Array ? sortInfos : [sortInfos];
+            let i &#x3D; sis.length;
+            while (--i &gt;&#x3D; 0) {
+                const si &#x3D; sis[i];
+                list &#x3D; _.sortBy(list, si.name);
+                if (si.order &#x3D;&#x3D;&#x3D; SortOrder.descending) {
+                    list &#x3D; list.reverse();
+                }
+            }
+        }
+        return list;
     }
 
-    /**
-     * @deprecated &gt; 06.11.2017
-     */
-    public sort(list: any[], sortInfo: ISortInfos | ISortInfos[]) {
-        return this.sort$(list, sortInfo).toPromise();
-    }
-
-    /** Trie les éléments de la liste hierarchique spécifiée en fonction du modèle de tri spécifié
+    /** Trie les éléments de la liste hierarchique spécifiée en fonction du modèle de tri spécifié.  Peut être surchargé pour implémenter un tri asynchrone
      * @param tree Liste à trier.
      * @param sortInfos Modèle de tri à appliquer.
      * @param childrenField Champ à utiliser pour la recherche dans les enfants d&#x27;un parent.
      * @return Observable résolue par la fonction.
      */
-    public sortTree$(tree: any[], sortInfo: ISortInfos | ISortInfos[], childrenField?: string) {
+    public sortTree$(tree: any[], sortInfos: ISortInfos | ISortInfos[], childrenField?: string) {
         childrenField &#x3D; childrenField || &#x27;items&#x27;;
-        return this.sort$(tree, sortInfo)
+        return this.sort$(tree, sortInfos)
             .switchMap((child) &#x3D;&gt; child)
             .flatMap((child) &#x3D;&gt; {
                 if (!child || !child[childrenField]) {
                     return Observable.of(child);
                 }
-                return this.sortTree$(child[childrenField], sortInfo, childrenField)
+                return this.sortTree$(child[childrenField], sortInfos, childrenField)
                     .map((sortedList) &#x3D;&gt; {
                         child[childrenField] &#x3D; sortedList;
                         return child;
@@ -2359,13 +2088,6 @@ export class SortingService {
                 acc.push(cur);
                 return acc;
             }, []);
-    }
-
-    /**
-     * @deprecated &gt; 06.11.2017
-     */
-    public sortTree(tree: any[], sortInfo: ISortInfos | ISortInfos[], childrenField?: string) {
-        return this.sortTree$(tree, sortInfo, childrenField).toPromise();
     }
 }
 </code></pre>

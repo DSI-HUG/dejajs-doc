@@ -2134,7 +2134,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="158" class="link-to-prism">src/component/data-grid/data-grid-grouparea/data-grid-grouparea.component.ts:158</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="160" class="link-to-prism">src/component/data-grid/data-grid-grouparea/data-grid-grouparea.component.ts:160</a></div>
                                 </td>
                             </tr>
     
@@ -2202,7 +2202,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="152" class="link-to-prism">src/component/data-grid/data-grid-grouparea/data-grid-grouparea.component.ts:152</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="154" class="link-to-prism">src/component/data-grid/data-grid-grouparea/data-grid-grouparea.component.ts:154</a></div>
                                 </td>
                             </tr>
     
@@ -2465,6 +2465,17 @@ export class DejaGridGroupAreaComponent {
             return null;
         }
 
+        const raiseEvent &#x3D; (group: IDejaGridColumn) &#x3D;&gt; {
+            const e &#x3D; {
+                column: group,
+                columns: this.groups,
+                originalEvent: event,
+            } as IDejaGridGroupsEvent;
+
+            this.groupsChanged.emit(e);
+            event.preventDefault();
+        };
+
         const dragcallback &#x3D; (event: IDejaDropEvent) &#x3D;&gt; {
             if (event.dragInfo.hasOwnProperty(this.columnGroupKey)) {
                 const sourceColumn &#x3D; event.dragInfo[this.columnGroupKey] as IDejaGridColumn;
@@ -2492,6 +2503,8 @@ export class DejaGridGroupAreaComponent {
                 this.groups.splice(sourceIndex, 1);
                 this.groups.splice(targetIndex, 0, sourceColumn);
 
+                raiseEvent(sourceColumn);
+
                 this.changeDetectorRef.markForCheck();
 
                 event.preventDefault();
@@ -2505,17 +2518,6 @@ export class DejaGridGroupAreaComponent {
             dragentercallback: dragcallback,
             dragovercallback: dragcallback,
             dropcallback: (event: IDejaDropEvent) &#x3D;&gt; {
-                const raiseEvent &#x3D; (group: IDejaGridColumn) &#x3D;&gt; {
-                    const e &#x3D; {
-                        column: group,
-                        columns: this.groups,
-                        originalEvent: event,
-                    } as IDejaGridGroupsEvent;
-
-                    this.groupsChanged.emit(e);
-                    event.preventDefault();
-                };
-
                 if (event.dragInfo.hasOwnProperty(this.columnGroupKey)) {
                     const sourceColumn &#x3D; event.dragInfo[this.columnGroupKey] as IDejaGridColumn;
 
