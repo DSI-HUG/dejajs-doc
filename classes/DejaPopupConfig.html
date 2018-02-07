@@ -3480,7 +3480,6 @@ export class DejaPopupConfig extends MatDialogConfig {
 
         config.ariaDescribedBy &#x3D; this.ariaDescribedBy;
         config.backdropClass &#x3D; this.backdropClass;
-        config.data &#x3D; this.data;
         config.direction &#x3D; this.direction;
         config.disableClose &#x3D; this.disableClose;
         config.hasBackdrop &#x3D; this.hasBackdrop;
@@ -3496,6 +3495,7 @@ export class DejaPopupConfig extends MatDialogConfig {
         config.viewContainerRef &#x3D; this.viewContainerRef;
         config.width &#x3D; this.width;
 
+        config.data &#x3D; this;
         return config;
 
     }
