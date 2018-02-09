@@ -117,6 +117,9 @@
                                     <a href="../modules/DejaColorSelectorModule.html" >DejaColorSelectorModule</a>
                                 </li>
                                 <li class="link">
+                                    <a href="../modules/DejaComboListModule.html" >DejaComboListModule</a>
+                                </li>
+                                <li class="link">
                                     <a href="../modules/DejaDatePickerModule.html" >DejaDatePickerModule</a>
                                 </li>
                                 <li class="link">
@@ -264,6 +267,12 @@
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaColorSelectorComponent.html" >DejaColorSelectorComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaComboListChildComponent.html" >DejaComboListChildComponent</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../components/DejaComboListComponent.html" >DejaComboListComponent</a>
                                 </li>
                                 <li class="link">
                                     <a href="../components/DejaDatePickerComponent.html" >DejaDatePickerComponent</a>
@@ -677,6 +686,9 @@
                                 id="xs-interfaces-links"
                             >
                                 <li class="link">
+                                    <a href="../interfaces/DejaPopupContentTemplate.html" >DejaPopupContentTemplate</a>
+                                </li>
+                                <li class="link">
                                     <a href="../interfaces/HSL.html" >HSL</a>
                                 </li>
                                 <li class="link">
@@ -696,6 +708,12 @@
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/IDateSelectorItem.html" >IDateSelectorItem</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaAction.html" >IDejaAction</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../interfaces/IDejaComboListAction.html" >IDejaComboListAction</a>
                                 </li>
                                 <li class="link">
                                     <a href="../interfaces/IDejaDragContext.html" >IDejaDragContext</a>
@@ -1017,6 +1035,9 @@
                                            <a href="../modules/DejaColorSelectorModule.html" >DejaColorSelectorModule</a>
                                        </li>
                                        <li class="link">
+                                           <a href="../modules/DejaComboListModule.html" >DejaComboListModule</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../modules/DejaDatePickerModule.html" >DejaDatePickerModule</a>
                                        </li>
                                        <li class="link">
@@ -1164,6 +1185,12 @@
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaColorSelectorComponent.html" >DejaColorSelectorComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaComboListChildComponent.html" >DejaComboListChildComponent</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../components/DejaComboListComponent.html" >DejaComboListComponent</a>
                                        </li>
                                        <li class="link">
                                            <a href="../components/DejaDatePickerComponent.html" >DejaDatePickerComponent</a>
@@ -1577,6 +1604,9 @@
                                        id="interfaces-links"
                    >
                                        <li class="link">
+                                           <a href="../interfaces/DejaPopupContentTemplate.html" >DejaPopupContentTemplate</a>
+                                       </li>
+                                       <li class="link">
                                            <a href="../interfaces/HSL.html" >HSL</a>
                                        </li>
                                        <li class="link">
@@ -1596,6 +1626,12 @@
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/IDateSelectorItem.html" >IDateSelectorItem</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaAction.html" >IDejaAction</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../interfaces/IDejaComboListAction.html" >IDejaComboListAction</a>
                                        </li>
                                        <li class="link">
                                            <a href="../interfaces/IDejaDragContext.html" >IDejaDragContext</a>
@@ -2899,7 +2935,7 @@ export class DejaTooltipComponent implements OnInit, OnDestroy {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><deja-overlay *ngIf="!isMobile" [overlayOffsetX]="0" [overlayOffsetY]="10" [ownerElement]="ownerElement" [isVisible]="overlayVisible" [positions]="positions">    <ng-template *ngIf="!!tooltipTemplate" [ngTemplateOutlet]="tooltipTemplate" [ngTemplateOutletContext]="{ $implicit: model }"></ng-template>    <ng-container *ngIf="!tooltipTemplate"><ng-content></ng-content></ng-container></deja-overlay><!--<ng-template #overlay cdk-connected-overlay [cdkConnectedOverlayOffsetY]="10" [cdkConnectedOverlayOffsetX]="0" [cdkConnectedOverlayOpen]="overlayVisible" (detach)="overlayVisible=false" [cdkConnectedOverlayOrigin]="overlayOrigin" [cdkConnectedOverlayPositions]="positions"></ng-template>--></div>'
-    var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaCodeViewerComponent', 'selector': 'deja-code-viewer'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaIntervalSelectorBoundaryComponent', 'selector': 'deja-interval-selector-boundary'},{'name': 'DejaIntervalSelectorComponent', 'selector': 'deja-interval-selector'},{'name': 'DejaItemComponent', 'selector': 'deja-item'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMarkdownComponent', 'selector': 'deja-markdown'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaNumericStepperComponent', 'selector': 'deja-numeric-stepper'},{'name': 'DejaOverlayComponent', 'selector': 'deja-overlay'},{'name': 'DejaPopupActionsComponent', 'selector': 'deja-popup-actions'},{'name': 'DejaPopupAdvancedComponent', 'selector': 'deja-popup-advanced'},{'name': 'DejaPopupBoxComponent', 'selector': 'deja-popup-box'},{'name': 'DejaPopupComponent', 'selector': 'deja-popup'},{'name': 'DejaPopupContentComponent', 'selector': 'deja-popup-content'},{'name': 'DejaPopupToolbarComponent', 'selector': 'deja-popup-toolbar'},{'name': 'DejaPopupTrayComponent', 'selector': 'deja-popup-tray'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSidenavComponent', 'selector': 'deja-sidenav'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTagComponent', 'selector': 'deja-tag'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'}];
+    var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaCodeViewerComponent', 'selector': 'deja-code-viewer'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaComboListChildComponent', 'selector': 'deja-combo-list-child'},{'name': 'DejaComboListComponent', 'selector': 'deja-combo-list'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaIntervalSelectorBoundaryComponent', 'selector': 'deja-interval-selector-boundary'},{'name': 'DejaIntervalSelectorComponent', 'selector': 'deja-interval-selector'},{'name': 'DejaItemComponent', 'selector': 'deja-item'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMarkdownComponent', 'selector': 'deja-markdown'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaNumericStepperComponent', 'selector': 'deja-numeric-stepper'},{'name': 'DejaOverlayComponent', 'selector': 'deja-overlay'},{'name': 'DejaPopupActionsComponent', 'selector': 'deja-popup-actions'},{'name': 'DejaPopupAdvancedComponent', 'selector': 'deja-popup-advanced'},{'name': 'DejaPopupBoxComponent', 'selector': 'deja-popup-box'},{'name': 'DejaPopupComponent', 'selector': 'deja-popup'},{'name': 'DejaPopupContentComponent', 'selector': 'deja-popup-content'},{'name': 'DejaPopupToolbarComponent', 'selector': 'deja-popup-toolbar'},{'name': 'DejaPopupTrayComponent', 'selector': 'deja-popup-tray'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSidenavComponent', 'selector': 'deja-sidenav'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTagComponent', 'selector': 'deja-tag'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'}];
     var DIRECTIVES = [{'name': 'DejaAutosizeTextAreaDirective', 'selector': 'textarea[deja-autosize]'},{'name': 'DejaChildValidatorDirective', 'selector': '[deja-child-validator]'},{'name': 'DejaDraggableDirective', 'selector': '[deja-draggable]'},{'name': 'DejaDroppableDirective', 'selector': '[deja-droppable]'},{'name': 'DejaEditableDirective', 'selector': '[deja-editable]'},{'name': 'DejaMouseDraggableDirective', 'selector': '[deja-mouse-draggable]'},{'name': 'DejaMouseDroppableDirective', 'selector': '[deja-mouse-droppable]'},{'name': 'DejaSidenavContentDirective', 'selector': 'deja-sidenav-content, [deja-sidenav-content]'},{'name': 'DejaSidenavHeaderDirective', 'selector': 'deja-sidenav-header, [deja-sidenav-header]'},{'name': 'DejaSidenavMenuDirective', 'selector': 'deja-sidenav-menu, [deja-sidenav-menu]'},{'name': 'DejaSidenavMenuSeparatorDirective', 'selector': 'deja-sidenav-menu-separator, [deja-sidenav-menu-separator]'},{'name': 'DejaSlimScrollDirective', 'selector': '[slimScroll]'},{'name': 'DejaTilePositionDirective', 'selector': '[deja-tile-position]'},{'name': 'DejaTooltipDirective', 'selector': '[deja-tooltip]'},{'name': 'PendingOnFocusDirective', 'selector': '[pending-onfocus]'},{'name': 'SplitAreaDirective', 'selector': 'split-area'},{'name': 'SplitGutterDirective', 'selector': 'split-gutter'},{'name': 'ValidateOnBlurDirective', 'selector': '[validate-onblur]'}];
     var ACTUAL_COMPONENT = {'name': 'DejaTooltipComponent'};
 </script>
