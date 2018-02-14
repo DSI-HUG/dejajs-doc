@@ -2327,7 +2327,7 @@ export class GroupingService {
                 return this.groupChildren$(tree, groupInfo, 0, childrenField);
             }
 
-            const groupTree$ &#x3D; (t: any[], curDepth: number) &#x3D;&gt; {
+            const groupTree$: any &#x3D; (t: any[], curDepth: number) &#x3D;&gt; {
                 return Observable.from(t)
                     .flatMap((treeItem) &#x3D;&gt; {
                         const children &#x3D; treeItem[childrenField];
@@ -2382,10 +2382,10 @@ export class GroupingService {
                         toString: () &#x3D;&gt; groupLabel,
                         $text: groupLabel,
                     } as IItemTree;
-                    parent[childrenField] &#x3D; [];
+                    (&lt;any&gt;parent)[childrenField] &#x3D; [];
                 }
 
-                parent[childrenField].push(item);
+                (&lt;any&gt;parent)[childrenField].push(item);
                 return groups;
             }, {})
             .map((grps: { [groupby: string]: any }) &#x3D;&gt; Object.keys(grps).map((key) &#x3D;&gt; grps[key]))

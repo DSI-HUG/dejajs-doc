@@ -3433,13 +3433,13 @@
 
 
     <div class="tab-pane fade tab-source-code" id="c-source">
-        <pre class="line-numbers"><code class="language-typescript">import {Injectable} from &#x27;@angular/core&#x27;;
-import {Observable} from &#x27;rxjs/Observable&#x27;;
-import {Subject} from &#x27;rxjs/Subject&#x27;;
-import {IntervalBoundary} from &#x27;./interval-selector-boundary.model&#x27;;
-import {ModelCompareFunction} from &#x27;./interval-selector-compare-function.model&#x27;;
-import {IntervalSelectorEventData} from &#x27;./interval-selector-event-data.model&#x27;;
-import {Interval} from &#x27;./interval-selector-interval.model&#x27;;
+        <pre class="line-numbers"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+import { Observable } from &#x27;rxjs/Observable&#x27;;
+import { Subject } from &#x27;rxjs/Subject&#x27;;
+import { IntervalBoundary } from &#x27;./interval-selector-boundary.model&#x27;;
+import { ModelCompareFunction } from &#x27;./interval-selector-compare-function.model&#x27;;
+import { IntervalSelectorEventData } from &#x27;./interval-selector-event-data.model&#x27;;
+import { Interval } from &#x27;./interval-selector-interval.model&#x27;;
 
 @Injectable()
 /**
@@ -3452,17 +3452,17 @@ export class IntervalSelectorService {
     /**
      * boundary selection changes are notified throught this subject.
      */
-    public intervalSelectionChanged$:Subject&lt;IntervalBoundary&gt; &#x3D; new Subject&lt;IntervalBoundary&gt;();
+    public intervalSelectionChanged$: Subject&lt;IntervalBoundary&gt; &#x3D; new Subject&lt;IntervalBoundary&gt;();
 
     /**
      * for internal usage by the DejaIntervalSelectorBoundaryComponent component.
      */
-    public displayModelBoundaries$:Subject&lt;IntervalSelectorEventData&gt; &#x3D; new Subject&lt;IntervalSelectorEventData&gt;();
+    public displayModelBoundaries$: Subject&lt;IntervalSelectorEventData&gt; &#x3D; new Subject&lt;IntervalSelectorEventData&gt;();
 
     /**
      * for internal usage by the DejaIntervalSelectorBoundaryComponent component.
      */
-    public hideModelBoundaries$:Subject&lt;IntervalSelectorEventData&gt; &#x3D; new Subject&lt;IntervalSelectorEventData&gt;();
+    public hideModelBoundaries$: Subject&lt;IntervalSelectorEventData&gt; &#x3D; new Subject&lt;IntervalSelectorEventData&gt;();
 
     private _intervalMap: Map&lt;string, Interval&gt; &#x3D; new Map&lt;string, Interval&gt;();
     private _lastSelectBoundariesCall: Date;
@@ -3540,12 +3540,12 @@ export class IntervalSelectorService {
      */
     public modelClicked(intervalId: string, model: any): void {
         // console.log(&#x27;modelClicked()&#x27;);
-        const timer$:Observable&lt;any&gt; &#x3D; Observable.timer(150);
-        const now:Date &#x3D; new Date();
-        timer$.subscribe(()&#x3D;&gt; {
+        const timer$: Observable&lt;any&gt; &#x3D; Observable.timer(150);
+        const now: Date &#x3D; new Date();
+        timer$.subscribe(() &#x3D;&gt; {
             // console.log(&#x27;modelClicked() after timer&#x27;);
             const _lastSelectBoundariesCall &#x3D; this._lastSelectBoundariesCall;
-            if (_lastSelectBoundariesCall &amp;&amp; _lastSelectBoundariesCall.getTime() &gt; (now.getTime()-300) ) {
+            if (_lastSelectBoundariesCall &amp;&amp; _lastSelectBoundariesCall.getTime() &gt; (now.getTime() - 300)) {
                 // il y a eu un appel à selectBoundaries() moins de 150 ms. On ignore ce click.
                 return;
             }
@@ -3562,7 +3562,7 @@ export class IntervalSelectorService {
             if (openingBoundary &amp;&amp; closingBoundary) {
                 // un interval est déjà sélectionné
                 modelCompareResult &#x3D; interval.compare(openingBoundary.model, model);
-                if (modelCompareResult&lt;0) {
+                if (modelCompareResult &lt; 0) {
                     this.updateIntervalSelection(openingBoundary, false);
                     openingBoundary &#x3D; new IntervalBoundary(intervalId, model, true, true);
                     this.updateIntervalSelection(openingBoundary, true);
@@ -3576,23 +3576,23 @@ export class IntervalSelectorService {
             } else if (openingBoundary &amp;&amp; openingBoundary.model !&#x3D;&#x3D; model) {
                 // seul la borne d&#x27;ouverture est présente
                 modelCompareResult &#x3D; interval.compare(openingBoundary.model, model);
-                if (modelCompareResult&lt;0) {
+                if (modelCompareResult &lt; 0) {
                     this.updateIntervalSelection(openingBoundary, false);
                     closingBoundary &#x3D; new IntervalBoundary(intervalId, openingBoundary.model, false, true);
                     this.updateIntervalSelection(closingBoundary, true);
                     openingBoundary &#x3D; new IntervalBoundary(intervalId, model, true, true);
                     this.updateIntervalSelection(openingBoundary, true);
-                } else if (modelCompareResult&gt;0) {
+                } else if (modelCompareResult &gt; 0) {
                     closingBoundary &#x3D; new IntervalBoundary(intervalId, model, false, true);
                     this.updateIntervalSelection(closingBoundary, true);
                 }
             } else if (closingBoundary &amp;&amp; closingBoundary.model !&#x3D;&#x3D; model) {
                 // seul la borne de fermeture est présente
                 modelCompareResult &#x3D; interval.compare(closingBoundary.model, model);
-                if (modelCompareResult&lt;0) {
+                if (modelCompareResult &lt; 0) {
                     openingBoundary &#x3D; new IntervalBoundary(intervalId, model, true, true);
                     this.updateIntervalSelection(openingBoundary, true);
-                } else if (modelCompareResult&gt;0) {
+                } else if (modelCompareResult &gt; 0) {
                     this.updateIntervalSelection(closingBoundary, false);
                     openingBoundary &#x3D; new IntervalBoundary(intervalId, closingBoundary.model, true, true);
                     this.updateIntervalSelection(openingBoundary, true);
@@ -3760,13 +3760,13 @@ export class IntervalSelectorService {
             }
             if (openingBoundary &amp;&amp; interval.closingBoundary) {
                 modelCompareResult &#x3D; interval.compare(boundary.model, interval.closingBoundary.model);
-                if (modelCompareResult&lt;0) {
+                if (modelCompareResult &lt; 0) {
                     interval.closingBoundary.selected &#x3D; false;
                 }
             }
             if (!openingBoundary &amp;&amp; interval.openingBoundary) {
                 modelCompareResult &#x3D; interval.compare(boundary.model, interval.openingBoundary.model);
-                if (modelCompareResult&gt;0) {
+                if (modelCompareResult &gt; 0) {
                     interval.openingBoundary.selected &#x3D; false;
                 }
             }

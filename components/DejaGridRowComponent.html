@@ -2095,6 +2095,10 @@
                         <td class="col-md-10">
                             <div><p>Template de cellule si définit extérieurement à la grille </p>
 </div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                              </p>
                         </td>
                     </tr>
                             <tr>
@@ -2194,7 +2198,7 @@
                     <tr>
                         <td class="col-md-4">
                                 <span class="modifier-icon fa fa-reset"></span>
-                            <code>getCellText(row: , textField: )</code>
+                            <code>getCellText(row: <a href="../interfaces/IDejaGridRow.html">IDejaGridRow</a>, textField: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                         </td>
                     </tr>
     
@@ -2223,6 +2227,7 @@
                                                     <tr>
                                                       <td>row</td>
                                                       <td>
+                                                              <code><a href="../interfaces/IDejaGridRow.html" target="_self" >IDejaGridRow</a></code>
                                                       </td>
                                                       <td>
                                                       </td>
@@ -2231,6 +2236,7 @@
                                                     <tr>
                                                       <td>textField</td>
                                                       <td>
+                                                              <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
                                                       </td>
                                                       <td>
                                                       </td>
@@ -2348,10 +2354,16 @@
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <span class="modifier-icon fa fa-reset"></span><code>cellTemplateInternal:     <code></code>
+                            <span class="modifier-icon fa fa-reset"></span><code>cellTemplateInternal:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
     </code>
                         </td>
                     </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+    
+                            </td>
+                        </tr>
                         <tr>
                             <td class="col-md-4">
                                 <i>Decorators : </i><code>ContentChild</code>
@@ -2492,13 +2504,13 @@ export class DejaGridRowComponent implements OnDestroy {
     @Input() public row: IDejaGridRow;
 
     /** Template de cellule si définit extérieurement à la grille */
-    @Input() public cellTemplateExternal;
+    @Input() public cellTemplateExternal: any;
 
     /** Index de la ligne sur la liste plate de ItemListService */
     @Input() public flatIndex: number;
 
     /** Template de cellule par defaut  définit dans le HTML de la grille */
-    @ContentChild(&#x27;cellTemplate&#x27;) protected cellTemplateInternal;
+    @ContentChild(&#x27;cellTemplate&#x27;) protected cellTemplateInternal: any;
 
     private _columnLayout &#x3D; {} as IDejaGridColumnLayout;
     private refresh$sub: Subscription;
@@ -2540,7 +2552,7 @@ export class DejaGridRowComponent implements OnDestroy {
         }
     }
 
-    public getCellText(row, textField) {
+    public getCellText(row: IDejaGridRow, textField: string) {
         return ItemListService.getItemText(row, textField);
     }
 }

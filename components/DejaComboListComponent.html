@@ -2222,9 +2222,10 @@
                             <code>sortDirection</code>
                         </td>
                         <td class="col-md-10">
-                            <p>
-                              <em>Default value: </em><code>null</code>
-                            </p>
+                              <p>
+                                <em>Type:</em>    <code>&quot;asc&quot; | &quot;desc&quot;</code>
+
+                              </p>
                         </td>
                     </tr>
                             <tr>
@@ -3139,7 +3140,7 @@ export class DejaComboListComponent&lt;T&gt; implements OnChanges, ControlValueA
     @Input() public disabled &#x3D; false;
     @Input() public disableFastActions &#x3D; false;
     @Input() public labelFieldName &#x3D; &#x27;label&#x27;;
-    @Input() public sortDirection &#x3D; null; // or &#x27;asc&#x27; or &#x27;desc&#x27;
+    @Input() public sortDirection: &#x27;asc&#x27; | &#x27;desc&#x27;;
     @Output() public action &#x3D; new EventEmitter&lt;IDejaComboListAction&lt;T&gt;&gt;();
 
     public onTouchedCallback: () &#x3D;&gt; void &#x3D; noop;
@@ -3246,7 +3247,7 @@ export class DejaComboListComponent&lt;T&gt; implements OnChanges, ControlValueA
         }
         const fieldname &#x3D; this.labelFieldName;
         const coeff &#x3D; this.sortDirection &#x3D;&#x3D;&#x3D; &#x27;asc&#x27; ? 1 : -1;
-        return aItem.sort((a, b) &#x3D;&gt; {
+        return aItem.sort((a: any, b: any) &#x3D;&gt; {
             if (a[fieldname] &lt; b[fieldname]) { return -1 * coeff; }
             if (a[fieldname] &gt; b[fieldname]) { return 1 * coeff; }
             return 0;

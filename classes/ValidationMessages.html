@@ -1993,7 +1993,7 @@
                                         <div>
                                         </div>
                                         <div class="io-description">
-                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                            <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
             
                                         </div>
                                             <div class="io-description">
@@ -2037,7 +2037,7 @@
                     duplicatename: &#x27;Ce nom existe déjà.&#x27;,
                     invalideDate: &#x27;Date invalide&#x27;,
                     required: &#x27;Ce champ est obligatoire.&#x27;,
-                }</code>
+                } as { [key: string]: string }</code>
                                     </td>
                                 </tr>
                                     <tr>
@@ -2060,7 +2060,7 @@
         duplicatename: &#x27;Ce nom existe déjà.&#x27;,
         invalideDate: &#x27;Date invalide&#x27;,
         required: &#x27;Ce champ est obligatoire.&#x27;,
-    };
+    } as { [key: string]: string };
 
     public getMessage(key: string) {
         return this.messages[key];

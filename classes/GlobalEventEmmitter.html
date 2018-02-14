@@ -2005,7 +2005,7 @@
                             </tr>
                                 <tr>
                                     <td class="col-md-4">
-                                        <i>Default value : </i><code>{}</code>
+                                        <i>Default value : </i><code>{} as any</code>
                                     </td>
                                 </tr>
                                     <tr>
@@ -2113,7 +2113,7 @@
                             </tr>
                                 <tr>
                                     <td class="col-md-4">
-                                        <i>Default value : </i><code>(event: string, ...params) &#x3D;&gt; {
+                                        <i>Default value : </i><code>(event: string, ...params: any[]) &#x3D;&gt; {
                     this._callbacks &#x3D; this._callbacks || {};
                     let callbacks &#x3D; this._callbacks[&#x60;$${event}&#x60;];
             
@@ -2160,7 +2160,7 @@
                             </tr>
                                 <tr>
                                     <td class="col-md-4">
-                                        <i>Default value : </i><code>(event) &#x3D;&gt; {
+                                        <i>Default value : </i><code>(event: string) &#x3D;&gt; {
                     return !!this.listeners(event).length;
                 }</code>
                                     </td>
@@ -2196,7 +2196,7 @@
                             </tr>
                                 <tr>
                                     <td class="col-md-4">
-                                        <i>Default value : </i><code>(event) &#x3D;&gt; {
+                                        <i>Default value : </i><code>(event: string) &#x3D;&gt; {
                     this._callbacks &#x3D; this._callbacks || {};
                     return this._callbacks[&#x60;$${event}&#x60;] || [];
                 }</code>
@@ -2233,7 +2233,7 @@
                             </tr>
                                 <tr>
                                     <td class="col-md-4">
-                                        <i>Default value : </i><code>(event, fn) &#x3D;&gt; {
+                                        <i>Default value : </i><code>(event: string, fn: () &#x3D;&gt; void) &#x3D;&gt; {
                     return this.removeEventListener(event, fn);
                 }</code>
                                     </td>
@@ -2406,7 +2406,7 @@
                             </tr>
                                 <tr>
                                     <td class="col-md-4">
-                                        <i>Default value : </i><code>(event, fn) &#x3D;&gt; {
+                                        <i>Default value : </i><code>(event: string, fn: () &#x3D;&gt; void) &#x3D;&gt; {
                     return this.removeEventListener(event, fn);
                 }</code>
                                     </td>
@@ -2463,13 +2463,13 @@
         return this._instance;
     }
 
-    private _callbacks &#x3D; {};
+    private _callbacks &#x3D; {} as any;
 
-    public off &#x3D; (event, fn) &#x3D;&gt; {
+    public off &#x3D; (event: string, fn: () &#x3D;&gt; void) &#x3D;&gt; {
         return this.removeEventListener(event, fn);
     }
 
-    public removeListener &#x3D; (event, fn) &#x3D;&gt; {
+    public removeListener &#x3D; (event: string, fn: () &#x3D;&gt; void) &#x3D;&gt; {
         return this.removeEventListener(event, fn);
     }
 
@@ -2510,7 +2510,7 @@
         return this;
     }
 
-    public emit &#x3D; (event: string, ...params) &#x3D;&gt; {
+    public emit &#x3D; (event: string, ...params: any[]) &#x3D;&gt; {
         this._callbacks &#x3D; this._callbacks || {};
         let callbacks &#x3D; this._callbacks[&#x60;$${event}&#x60;];
 
@@ -2525,12 +2525,12 @@
         return this;
     }
 
-    public listeners &#x3D; (event) &#x3D;&gt; {
+    public listeners &#x3D; (event: string) &#x3D;&gt; {
         this._callbacks &#x3D; this._callbacks || {};
         return this._callbacks[&#x60;$${event}&#x60;] || [];
     }
 
-    public hasListeners &#x3D; (event) &#x3D;&gt; {
+    public hasListeners &#x3D; (event: string) &#x3D;&gt; {
         return !!this.listeners(event).length;
     }
 
@@ -2546,7 +2546,7 @@
 }
 
 // tslint:disable-next-line
-window[&#x27;GlobalEventEmmitter&#x27;] &#x3D; GlobalEventEmmitter;
+(&lt;any&gt;window)[&#x27;GlobalEventEmmitter&#x27;] &#x3D; GlobalEventEmmitter;
 </code></pre>
     </div>
 </div>

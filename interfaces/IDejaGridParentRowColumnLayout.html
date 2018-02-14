@@ -1946,7 +1946,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="87" class="link-to-prism">src/component/data-grid/data-grid-parent-row/data-grid-parent-row.component.ts:87</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="88" class="link-to-prism">src/component/data-grid/data-grid-parent-row/data-grid-parent-row.component.ts:88</a></div>
                                         </td>
                                     </tr>
 
@@ -1979,7 +1979,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="88" class="link-to-prism">src/component/data-grid/data-grid-parent-row/data-grid-parent-row.component.ts:88</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="89" class="link-to-prism">src/component/data-grid/data-grid-parent-row/data-grid-parent-row.component.ts:89</a></div>
                                         </td>
                                     </tr>
 
@@ -1993,6 +1993,7 @@
         <pre class="line-numbers"><code class="language-typescript">import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ContentChild, Input } from &#x27;@angular/core&#x27;;
 import { ItemListService } from &#x27;../../../common/core/item-list/item-list.service&#x27;;
 import { IDejaGridColumn } from &#x27;../data-grid-column/data-grid-column&#x27;;
+import { IDejaGridRow } from &#x27;../data-grid-row/data-grid-row&#x27;;
 import { IDejaGridParentRow } from &#x27;./data-grid-parent-row&#x27;;
 
 /** Composant représentant une ligne parente d&#x27;une structure de ligne hierarchique */
@@ -2007,19 +2008,19 @@ export class DejaGridParentRowComponent {
     @Input() public row: IDejaGridParentRow;
 
     /** Template de cellule si définit extérieurement à la grille */
-    @Input() public cellTemplateExternal;
+    @Input() public cellTemplateExternal: any;
 
     /** Template de titre si définit extérieurement à la grille */
-    @Input() public parentTitleTemplateExternal;
+    @Input() public parentTitleTemplateExternal: any;
 
     /** Index de la ligne sur la liste plate de ItemListService */
     @Input() public flatIndex: number;
 
     /** Template de titre par defaut définit dans le HTML de la grille */
-    @ContentChild(&#x27;parentTitleTemplate&#x27;) protected parentTitleTemplateInternal;
+    @ContentChild(&#x27;parentTitleTemplate&#x27;) protected parentTitleTemplateInternal: any;
 
     /** Template de cellule par defaut  définit dans le HTML de la grille */
-    @ContentChild(&#x27;cellTemplate&#x27;) protected cellTemplateInternal;
+    @ContentChild(&#x27;cellTemplate&#x27;) protected cellTemplateInternal: any;
 
     private _columnLayout &#x3D; {} as IDejaGridParentRowColumnLayout;
 
@@ -2062,7 +2063,7 @@ export class DejaGridParentRowComponent {
 
     constructor(private changeDetectorRef: ChangeDetectorRef) { }
 
-    public getCellText(row, textField) {
+    public getCellText(row: IDejaGridRow, textField: string) {
         return ItemListService.getItemText(row, textField);
     }
 }

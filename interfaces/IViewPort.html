@@ -2404,7 +2404,7 @@ export class ViewPortService implements OnDestroy {
             // consoleLog(&#x60;calcVariableSizeViewPort&#x60;);
             const visibleList &#x3D; [] as IViewPortItem[];
             let startIndex: number;
-            let endIndex;
+            let endIndex: number;
             let beforeSize &#x3D; 0;
             let viewPortSize &#x3D; 0;
             let afterSize &#x3D; 0;
@@ -2621,7 +2621,7 @@ export class ViewPortService implements OnDestroy {
             return Observable.of(viewPort);
         };
 
-        const calcViewPort$ &#x3D; (items: IViewPortItem[], maxSize: number, scrollPos: number, element: HTMLElement, itemDefaultSize: number, ensureParams: IEnsureParams, fromMeasure?: boolean) &#x3D;&gt; {
+        const calcViewPort$: any &#x3D; (items: IViewPortItem[], maxSize: number, scrollPos: number, element: HTMLElement, itemDefaultSize: number, ensureParams: IEnsureParams, fromMeasure?: boolean) &#x3D;&gt; {
             // consoleLog(&#x60;calcViewPort&#x60;);
             if (!items || !items.length) {
                 return Observable.of(this.emptyViewPort);
@@ -2756,7 +2756,7 @@ export class ViewPortService implements OnDestroy {
 
         const mode$ &#x3D; Observable.from(this.mode$)
             .map((mode) &#x3D;&gt; {
-                this._mode &#x3D; typeof mode &#x3D;&#x3D;&#x3D; &#x27;string&#x27; ? ViewportMode[mode] : mode;
+                this._mode &#x3D; typeof mode &#x3D;&#x3D;&#x3D; &#x27;string&#x27; ? (&lt;any&gt;ViewportMode)[mode] : mode;
                 return this._mode;
             })
             .distinctUntilChanged();
@@ -2764,7 +2764,7 @@ export class ViewPortService implements OnDestroy {
 
         const direction$ &#x3D; Observable.from(this.direction$)
             .map((direction) &#x3D;&gt; {
-                this._direction &#x3D; typeof direction &#x3D;&#x3D;&#x3D; &#x27;string&#x27; ? ViewportDirection[direction] : direction;
+                this._direction &#x3D; typeof direction &#x3D;&#x3D;&#x3D; &#x27;string&#x27; ? (&lt;any&gt;ViewportDirection)[direction] : direction;
                 return this._direction;
             })
             .distinctUntilChanged();

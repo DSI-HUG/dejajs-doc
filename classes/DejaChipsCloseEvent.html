@@ -2095,7 +2095,7 @@ export class DejaChipsComponent implements ControlValueAccessor {
     @Input() public textField: string;
 
     /** Template d&#x27;élément si définit extérieurement au composant */
-    @Input() public itemTemplateExternal;
+    @Input() public itemTemplateExternal: any;
 
     /** Lecture seule */
     @Input() public readonly &#x3D; false;
@@ -2105,9 +2105,9 @@ export class DejaChipsComponent implements ControlValueAccessor {
     protected onTouchedCallback: () &#x3D;&gt; void &#x3D; noop;
     protected onChangeCallback: (_: any) &#x3D;&gt; void &#x3D; noop;
 
-    @HostBinding(&#x27;attr.disabled&#x27;) private _disabled &#x3D; null;
+    @HostBinding(&#x27;attr.disabled&#x27;) private _disabled: boolean &#x3D; null;
 
-    @ContentChild(&#x27;itemTemplate&#x27;) private itemTemplateInternal;
+    @ContentChild(&#x27;itemTemplate&#x27;) private itemTemplateInternal: any;
 
     constructor( @Self() @Optional() public _control: NgControl) {
         if (this._control) {
@@ -2159,6 +2159,10 @@ export class DejaChipsComponent implements ControlValueAccessor {
     // From ControlValueAccessor interface
     public registerOnTouched(fn: any) {
         this.onTouchedCallback &#x3D; fn;
+    }
+
+    public setDisabledState(isDisabled: boolean) {
+        this.disabled &#x3D; isDisabled;
     }
     // ************* End of ControlValueAccessor Implementation **************
 

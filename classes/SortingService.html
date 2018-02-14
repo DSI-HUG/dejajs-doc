@@ -2179,7 +2179,7 @@
                                         <div>
                                         </div>
                                         <div class="io-description">
-                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                            <b>Returns : </b>    <code>Observable&lt;any[]&gt;</code>
             
                                         </div>
                                             <div class="io-description">
@@ -2244,7 +2244,7 @@ export class SortingService {
      * @param childrenField Champ à utiliser pour la recherche dans les enfants d&#x27;un parent.
      * @return Observable résolue par la fonction.
      */
-    public sortTree$(tree: any[], sortInfos: ISortInfos | ISortInfos[], childrenField?: string) {
+    public sortTree$(tree: any[], sortInfos: ISortInfos | ISortInfos[], childrenField?: string): Observable&lt;any[]&gt; {
         childrenField &#x3D; childrenField || &#x27;items&#x27;;
         return this.sort$(tree, sortInfos)
             .switchMap((child) &#x3D;&gt; child)

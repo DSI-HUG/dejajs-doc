@@ -2308,6 +2308,10 @@ horizontal: The item are displayed horizontally</p>
                         <td class="col-md-10">
                             <div><p>Permet de définir un template d&#39;élément par binding </p>
 </div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                              </p>
                         </td>
                     </tr>
                             <tr>
@@ -2552,7 +2556,7 @@ auto: Seul les éléments visibles sont rendus. La taille des éléments est cal
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="393" class="link-to-prism">src/component/viewport/viewport.component.ts:393</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="397" class="link-to-prism">src/component/viewport/viewport.component.ts:397</a></div>
                                 </td>
                             </tr>
     
@@ -2620,7 +2624,7 @@ auto: Seul les éléments visibles sont rendus. La taille des éléments est cal
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="397" class="link-to-prism">src/component/viewport/viewport.component.ts:397</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="401" class="link-to-prism">src/component/viewport/viewport.component.ts:401</a></div>
                                 </td>
                             </tr>
     
@@ -2688,7 +2692,7 @@ auto: Seul les éléments visibles sont rendus. La taille des éléments est cal
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="402" class="link-to-prism">src/component/viewport/viewport.component.ts:402</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="406" class="link-to-prism">src/component/viewport/viewport.component.ts:406</a></div>
                                 </td>
                             </tr>
     
@@ -2756,7 +2760,7 @@ auto: Seul les éléments visibles sont rendus. La taille des éléments est cal
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="363" class="link-to-prism">src/component/viewport/viewport.component.ts:363</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="367" class="link-to-prism">src/component/viewport/viewport.component.ts:367</a></div>
                                 </td>
                             </tr>
     
@@ -2795,7 +2799,7 @@ auto: Seul les éléments visibles sont rendus. La taille des éléments est cal
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="376" class="link-to-prism">src/component/viewport/viewport.component.ts:376</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="380" class="link-to-prism">src/component/viewport/viewport.component.ts:380</a></div>
                                 </td>
                             </tr>
     
@@ -2834,7 +2838,7 @@ auto: Seul les éléments visibles sont rendus. La taille des éléments est cal
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="381" class="link-to-prism">src/component/viewport/viewport.component.ts:381</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="385" class="link-to-prism">src/component/viewport/viewport.component.ts:385</a></div>
                                 </td>
                             </tr>
     
@@ -3191,10 +3195,16 @@ auto: Seul les éléments visibles sont rendus. La taille des éléments est cal
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <span class="modifier-icon fa fa-reset"></span><code>itemTemplateInternal:     <code></code>
+                            <span class="modifier-icon fa fa-reset"></span><code>itemTemplateInternal:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
     </code>
                         </td>
                     </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+    
+                            </td>
+                        </tr>
                         <tr>
                             <td class="col-md-4">
                                 <i>Decorators : </i><code>ContentChild</code>
@@ -4124,17 +4134,17 @@ export class DejaViewPortComponent implements OnDestroy {
     private scrollPosition &#x3D; 0;
 
     /** Permet de définir un template d&#x27;élément par binding */
-    @Input() public itemTemplateExternal;
+    @Input() public itemTemplateExternal: any;
 
-    @ContentChild(&#x27;itemTemplate&#x27;) private itemTemplateInternal;
+    @ContentChild(&#x27;itemTemplate&#x27;) private itemTemplateInternal: any;
 
     @ViewChild(&#x27;down&#x27;)
-    private set downButton(element: ElementRef) {
+    public set downButton(element: ElementRef) {
         this.downButton$.next((element &amp;&amp; element.nativeElement) || null);
     }
 
     @ViewChild(&#x27;up&#x27;)
-    private set upButton(element: ElementRef) {
+    public set upButton(element: ElementRef) {
         this.upButton$.next((element &amp;&amp; element.nativeElement) || null);
     }
 
@@ -4162,7 +4172,7 @@ export class DejaViewPortComponent implements OnDestroy {
       */
     @Input()
     public set scrollingStyle(value: DejaViewPortScrollStyle | string) {
-        const scrollingStyle &#x3D; typeof value &#x3D;&#x3D;&#x3D; &#x27;string&#x27; ? DejaViewPortScrollStyle[value] : value;
+        const scrollingStyle &#x3D; typeof value &#x3D;&#x3D;&#x3D; &#x27;string&#x27; ? DejaViewPortScrollStyle[value as any] : value;
         this._hasButtons &#x3D; scrollingStyle &#x3D;&#x3D;&#x3D; DejaViewPortScrollStyle.buttons;
     }
 
@@ -4172,7 +4182,7 @@ export class DejaViewPortComponent implements OnDestroy {
      */
     @Input()
     public set direction(value: ViewportDirection | string) {
-        const direction &#x3D; typeof value &#x3D;&#x3D;&#x3D; &#x27;string&#x27; ? ViewportDirection[value] : value;
+        const direction &#x3D; typeof value &#x3D;&#x3D;&#x3D; &#x27;string&#x27; ? ViewportDirection[value as any] : value;
         this.viewPort.direction$.next(direction);
         this._isHorizontal &#x3D; direction &#x3D;&#x3D;&#x3D; ViewportDirection.horizontal;
         this.changeDetectorRef.markForCheck();
@@ -4191,7 +4201,7 @@ export class DejaViewPortComponent implements OnDestroy {
     }
 
     @ViewChild(&#x27;wrapper&#x27;)
-    private set wrapperElement(element: ElementRef) {
+    public set wrapperElement(element: ElementRef) {
         this.element &#x3D; element.nativeElement as HTMLElement;
         this.viewPort.element$.next(this.element);
         Observable.fromEvent(this.element, &#x27;scroll&#x27;)
@@ -4203,7 +4213,7 @@ export class DejaViewPortComponent implements OnDestroy {
             });
     }
 
-    private get itemTemplate() { return this.itemTemplateExternal || this.itemTemplateInternal; }
+    public get itemTemplate() { return this.itemTemplateExternal || this.itemTemplateInternal; }
 
     private get clientSize() {
         if (!this.element) {
@@ -4293,8 +4303,12 @@ export class DejaViewPortComponent implements OnDestroy {
                 };
 
                 if (viewPortResult.scrollPos !&#x3D;&#x3D; undefined) {
-                    const listItems &#x3D; this.element ? this.element.getElementsByClassName(&#x27;listitem&#x27;) : [];
-                    const rebind &#x3D; listItems.length !&#x3D;&#x3D; viewPortResult.visibleItems.length;
+                    let length &#x3D; 0;
+                    if (this.element) {
+                        const listItems &#x3D; this.element.getElementsByClassName(&#x27;listitem&#x27;);
+                        length &#x3D; listItems.length;
+                    }
+                    const rebind &#x3D; length !&#x3D;&#x3D; viewPortResult.visibleItems.length;
                     if (!rebind) {
                         scroll(viewPortResult);
                     } else {

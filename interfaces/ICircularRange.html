@@ -1955,7 +1955,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="408" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:408</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="413" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:413</a></div>
                                         </td>
                                     </tr>
 
@@ -1988,7 +1988,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="406" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:406</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="411" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:411</a></div>
                                         </td>
                                     </tr>
 
@@ -2021,7 +2021,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="407" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:407</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="412" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:412</a></div>
                                         </td>
                                     </tr>
 
@@ -2054,7 +2054,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="405" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:405</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="410" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:410</a></div>
                                         </td>
                                     </tr>
 
@@ -2087,7 +2087,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="404" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:404</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="409" class="link-to-prism">src/component/circular-picker/circular-picker.component.ts:409</a></div>
                                         </td>
                                     </tr>
 
@@ -2154,14 +2154,15 @@ export class DejaCircularPickerComponent implements OnInit, ControlValueAccessor
     @Input() public ranges: ICircularRange[];
 
     /** Template for labels inside picker. Use it to customize labels */
-    @ContentChild(&#x27;labelTemplate&#x27;) public labelTemplate;
+    @ContentChild(&#x27;labelTemplate&#x27;) public labelTemplate: any;
     /** template for cursor inside picker. Use it to customize labels */
-    @ContentChild(&#x27;cursorTemplate&#x27;) public cursorTemplate;
+    @ContentChild(&#x27;cursorTemplate&#x27;) public cursorTemplate: any;
 
     /** disabled property setter. Can be string or empty so you can use it like : &lt;circular-picker disabled&gt;&lt;/circular-picker&gt; */
     @Input()
     public set disabled(value: boolean | string) {
         this._disabled &#x3D; coerceBooleanProperty(value);
+        this.changeDetectorRef.markForCheck();
     }
 
     /** To get disabled attribute. */
@@ -2364,6 +2365,10 @@ export class DejaCircularPickerComponent implements OnInit, ControlValueAccessor
     /** From ControlValueAccessor interface */
     public registerOnTouched(fn: any) {
         this.onTouchedCallback &#x3D; fn;
+    }
+
+    public setDisabledState(isDisabled: boolean) {
+        this.disabled &#x3D; isDisabled;
     }
     // ************* End of ControlValueAccessor Implementation **************
 

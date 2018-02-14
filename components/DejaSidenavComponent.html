@@ -2343,7 +2343,7 @@
                     <tr>
                         <td class="col-md-4">
                                 <span class="modifier-icon fa fa-reset"></span>
-                            <code>onLargeMediaMatchChange(e: )</code>
+                            <code>onLargeMediaMatchChange(e: MediaQueryList)</code>
                         </td>
                     </tr>
     
@@ -2372,6 +2372,7 @@
                                                     <tr>
                                                       <td>e</td>
                                                       <td>
+                                                              <code>MediaQueryList</code>
                                                       </td>
                                                       <td>
                                                       </td>
@@ -2410,7 +2411,7 @@
                     <tr>
                         <td class="col-md-4">
                                 <span class="modifier-icon fa fa-reset"></span>
-                            <code>onMediumMediaMatchChange(e: )</code>
+                            <code>onMediumMediaMatchChange(e: MediaQueryList)</code>
                         </td>
                     </tr>
     
@@ -2439,6 +2440,7 @@
                                                     <tr>
                                                       <td>e</td>
                                                       <td>
+                                                              <code>MediaQueryList</code>
                                                       </td>
                                                       <td>
                                                       </td>
@@ -2477,7 +2479,7 @@
                     <tr>
                         <td class="col-md-4">
                                 <span class="modifier-icon fa fa-reset"></span>
-                            <code>onSmallMediaMatchChange(e: )</code>
+                            <code>onSmallMediaMatchChange(e: MediaQueryList)</code>
                         </td>
                     </tr>
     
@@ -2506,6 +2508,7 @@
                                                     <tr>
                                                       <td>e</td>
                                                       <td>
+                                                              <code>MediaQueryList</code>
                                                       </td>
                                                       <td>
                                                       </td>
@@ -2893,7 +2896,7 @@ export class DejaSidenavComponent implements AfterViewInit, OnInit, OnDestroy {
         return route;
     }
 
-    private onLargeMediaMatchChange(e) {
+    private onLargeMediaMatchChange(e: MediaQueryList) {
         if (e.matches &amp;&amp; this.sidenav.open) {
             this.zone.run(() &#x3D;&gt; {
                 this.hidden &#x3D; false;
@@ -2904,7 +2907,7 @@ export class DejaSidenavComponent implements AfterViewInit, OnInit, OnDestroy {
         }
     }
 
-    private onMediumMediaMatchChange(e) {
+    private onMediumMediaMatchChange(e: MediaQueryList) {
         if (e.matches &amp;&amp; this.sidenav.close) {
             this.zone.run(() &#x3D;&gt; {
                 this.hidden &#x3D; false;
@@ -2915,7 +2918,7 @@ export class DejaSidenavComponent implements AfterViewInit, OnInit, OnDestroy {
         }
     }
 
-    private onSmallMediaMatchChange(e) {
+    private onSmallMediaMatchChange(e: MediaQueryList) {
         if (e.matches &amp;&amp; this.sidenav.close) {
             this.zone.run(() &#x3D;&gt; {
                 this.hidden &#x3D; true;

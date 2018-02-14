@@ -2158,6 +2158,10 @@
                             <code>query</code>
                         </td>
                         <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                              </p>
                         </td>
                     </tr>
                             <tr>
@@ -2580,7 +2584,7 @@
     
                     <tr>
                         <td class="col-md-4">
-                            <span class="accessor"><b>set</b><code>query(value: )</code></span>
+                            <span class="accessor"><b>set</b><code>query(value: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code></span>
                         </td>
                     </tr>
                                 <tr>
@@ -2767,7 +2771,7 @@ export class DejaBoldQueryComponent {
      * The search term query.
      *
      */
-    set query(value) {
+    public set query(value: string) {
         value &#x3D; Diacritics.remove(value);
         if (this._query !&#x3D;&#x3D; value) {
             this._query &#x3D; value;
@@ -2829,9 +2833,9 @@ export class DejaBoldQueryComponent {
     }
 
     private refresh() {
-        if (this._value &amp;&amp; this._query &amp;&amp; this._query.length&gt;0) {
-            const regexpPattern &#x3D; this._atTheBeginningOfWordOnly?(&#x60;\\b${this._query}&#x60;): this._query;
-            const sc &#x3D;  new RegExp(regexpPattern, this._regexpOptions);
+        if (this._value &amp;&amp; this._query &amp;&amp; this._query.length &gt; 0) {
+            const regexpPattern &#x3D; this._atTheBeginningOfWordOnly ? (&#x60;\\b${this._query}&#x60;) : this._query;
+            const sc &#x3D; new RegExp(regexpPattern, this._regexpOptions);
             const value &#x3D; this._value.toString() as string;
             const search &#x3D; Diacritics.remove(value);
             const splitted &#x3D; search.split(sc);
@@ -2839,7 +2843,6 @@ export class DejaBoldQueryComponent {
             const queryLength &#x3D; this._query.length;
             const contents &#x3D; [] as string[];
             let firstOccurence &#x3D; true;
-            let lastText: string &#x3D; null;
             let nbOccurence &#x3D; 0;
             splitted.forEach((text) &#x3D;&gt; {
                 if (text) {
@@ -2847,24 +2850,23 @@ export class DejaBoldQueryComponent {
                     position +&#x3D; text.length;
                 }
                 if (position + queryLength &lt;&#x3D; value.length) {
-                    nbOccurence+&#x3D;1;
+                    nbOccurence +&#x3D; 1;
                     let skipHighlight &#x3D; false;
-                    if (this._firstOccurencePerWordOnly &amp;&amp; nbOccurence&gt;1) {
+                    if (this._firstOccurencePerWordOnly &amp;&amp; nbOccurence &gt; 1) {
                         const words &#x3D; text.split(/[^a-zA-Z\d]/g);
-                        if (words.length&#x3D;&#x3D;&#x3D;1) {
+                        if (words.length &#x3D;&#x3D;&#x3D; 1) {
                             skipHighlight &#x3D; true;
                         }
                     }
-                    if (!skipHighlight &amp;&amp; ( !this._firstOccurenceOnly || firstOccurence )) {
+                    if (!skipHighlight &amp;&amp; (!this._firstOccurenceOnly || firstOccurence)) {
                         contents.push(&#x60;&lt;span class&#x3D;&quot;${this._highlightClassName}&quot;&gt;&#x60;);
                     }
                     contents.push(value.slice(position, position + queryLength));
-                    if (!skipHighlight &amp;&amp; (!this._firstOccurenceOnly || firstOccurence )) {
+                    if (!skipHighlight &amp;&amp; (!this._firstOccurenceOnly || firstOccurence)) {
                         contents.push(&#x27;&lt;/span&gt;&#x27;);
                     }
                     position +&#x3D; queryLength;
                 }
-                lastText &#x3D; text;
                 firstOccurence &#x3D; false;
             });
             this._content &#x3D; contents.join(&#x27;&#x27;);

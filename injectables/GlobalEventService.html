@@ -2160,7 +2160,7 @@
                             </tr>
                                 <tr>
                                     <td class="col-md-4">
-                                        <i>Default value : </i><code>{}</code>
+                                        <i>Default value : </i><code>{} as {[index: string]: Observable&lt;any&gt;}</code>
                                     </td>
                                 </tr>
                                     <tr>
@@ -2194,7 +2194,7 @@
                             </tr>
                                 <tr>
                                     <td class="col-md-4">
-                                        <i>Default value : </i><code>{}</code>
+                                        <i>Default value : </i><code>{} as { [index: string]: (params?: any[]) &#x3D;&gt; void }</code>
                                     </td>
                                 </tr>
                                     <tr>
@@ -2219,8 +2219,8 @@ import { GlobalEventEmmitter } from &#x27;./global-event-emmitter&#x27;;
 @Injectable()
 export class GlobalEventService {
     private globalEventEmmitter: GlobalEventEmmitter;
-    private listeners$ &#x3D; {};
-    private listenersFn$ &#x3D; {};
+    private listeners$ &#x3D; {} as {[index: string]: Observable&lt;any&gt;};
+    private listenersFn$ &#x3D; {} as { [index: string]: (params?: any[]) &#x3D;&gt; void };
 
     constructor() {
         this.globalEventEmmitter &#x3D; GlobalEventEmmitter.instance;

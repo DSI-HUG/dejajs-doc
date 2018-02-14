@@ -2026,7 +2026,7 @@ interface ILayoutInfo {
 }
 
 interface ILayoutInfos {
-    infos: { [id: string]: ILayoutInfo };
+    [id: string]: any;
     height: number;
     targetBounds: Rect;
     validBounds: Rect;
@@ -2125,7 +2125,7 @@ export class DejaTilesLayoutProvider implements OnDestroy {
                 let width &#x3D; containerBounds.width - 20;
                 const tiles &#x3D; this.tiles || [];
 
-                const selectedTileIds &#x3D; [];
+                const selectedTileIds &#x3D; [] as string[];
 
                 tiles.forEach((tile: DejaTile) &#x3D;&gt; {
                     if (tile.percentBounds &amp;&amp; !tile.percentBounds.isEmpty()) {
@@ -2470,13 +2470,13 @@ export class DejaTilesLayoutProvider implements OnDestroy {
     }
 
     public set selectedTiles(selectedIds: string[]) {
-        const selectedTiles &#x3D; [];
+        const selectedTiles &#x3D; [] as DejaTile[];
         let raiseEvent &#x3D; false;
 
-        const idsDic &#x3D; {};
+        const idsDic &#x3D; {} as { [id: string]: boolean };
         selectedIds.forEach((id) &#x3D;&gt; idsDic[id] &#x3D; true);
 
-        const previousIdsDic &#x3D; {};
+        const previousIdsDic &#x3D; {} as { [id: string]: boolean };
         this.selectedIds.forEach((id) &#x3D;&gt; previousIdsDic[id] &#x3D; true);
 
         if (this.tiles.length) {
@@ -2714,7 +2714,7 @@ export class DejaTilesLayoutProvider implements OnDestroy {
         if (freePlaces.length &gt; 0) {
             // add at the nearest free place
             freePlaces.sort((bounds1, bounds2) &#x3D;&gt; {
-                const calcDistance &#x3D; (bounds) &#x3D;&gt; Math.min(Math.abs(bounds.left - idealBounds.left), Math.abs(bounds.right - idealBounds.right)) + 2 * Math.min(Math.abs(bounds.top - idealBounds.top), Math.abs(bounds.bottom - idealBounds.bottom));
+                const calcDistance &#x3D; (bounds: Rect) &#x3D;&gt; Math.min(Math.abs(bounds.left - idealBounds.left), Math.abs(bounds.right - idealBounds.right)) + 2 * Math.min(Math.abs(bounds.top - idealBounds.top), Math.abs(bounds.bottom - idealBounds.bottom));
                 return calcDistance(bounds1) - calcDistance(bounds2);
             });
 
@@ -3402,20 +3402,22 @@ export class DejaTilesLayoutProvider implements OnDestroy {
     }
 
     private getSizePercentLimit(prop: string): number {
-        const unit &#x3D; this[&#x60;${prop}Unit&#x60;];
+        const self &#x3D; this as { [prop: string]: any };
+        const unit &#x3D; self[&#x60;${prop}Unit&#x60;];
         if (!unit || unit &#x3D;&#x3D;&#x3D; &#x27;px&#x27;) {
-            return this.getPercentSize(this[prop]);
+            return this.getPercentSize(self[prop]);
         } else {
-            return this[prop];
+            return self[prop];
         }
     }
 
     private getSizePixelLimit(prop: string): number {
-        const unit &#x3D; this[&#x60;${prop}Unit&#x60;];
+        const self &#x3D; this as { [prop: string]: any };
+        const unit &#x3D; self[&#x60;${prop}Unit&#x60;];
         if (!unit || unit &#x3D;&#x3D;&#x3D; &#x27;px&#x27;) {
-            return this[prop];
+            return self[prop];
         } else {
-            return this.getPixelSize(this[prop]);
+            return this.getPixelSize(self[prop]);
         }
     }
 
@@ -3491,11 +3493,12 @@ export class DejaTilesLayoutProvider implements OnDestroy {
         const matches &#x3D; regexp.exec(value);
 
         if (matches &amp;&amp; matches.length &gt;&#x3D; 1) {
-            this[prop] &#x3D; parseInt(matches[1], 10);
+            const self &#x3D; this as { [prop: string]: any };
+            self[prop] &#x3D; parseInt(matches[1], 10);
             if (matches.length &gt;&#x3D; 2) {
-                this[&#x60;${prop}Unit&#x60;] &#x3D; matches[2];
+                self[&#x60;${prop}Unit&#x60;] &#x3D; matches[2];
             } else {
-                this[&#x60;${prop}Unit&#x60;] &#x3D; &#x27;px&#x27;;
+                self[&#x60;${prop}Unit&#x60;] &#x3D; &#x27;px&#x27;;
             }
         }
     }
@@ -3507,7 +3510,7 @@ export class DejaTilesLayoutProvider implements OnDestroy {
         });
     }
 
-    private calcHorizontalOverflow(direction: number, tiles: DejaTile[], offset: number, blackList?: Object): number {
+    private calcHorizontalOverflow(direction: number, tiles: DejaTile[], offset: number, blackList?: { [id: string]: string}): number {
         let overflow &#x3D; 0;
         blackList &#x3D; blackList || {};
 
@@ -3539,7 +3542,7 @@ export class DejaTilesLayoutProvider implements OnDestroy {
         return overflow;
     }
 
-    private moveHorizontal(direction: number, tiles: DejaTile[], offset: number, targetBounds: { [id: number]: Rect }) {
+    private moveHorizontal(direction: number, tiles: DejaTile[], offset: number, targetBounds: { [id: string]: Rect }) {
         tiles.forEach((t) &#x3D;&gt; {
             if (!targetBounds[t.id]) {
                 // Offset tile
@@ -3555,7 +3558,7 @@ export class DejaTilesLayoutProvider implements OnDestroy {
 
     private pushHorizontal(bounds: Rect, direction: number, tiles?: DejaTile[], offset?: number): number {
         let overflow &#x3D; 0;
-        const targetBounds &#x3D; {} as { [id: number]: Rect };
+        const targetBounds &#x3D; {} as { [id: string]: Rect };
 
         if (!offset) {
             offset &#x3D; 0;
@@ -3586,7 +3589,7 @@ export class DejaTilesLayoutProvider implements OnDestroy {
         return overflow;
     }
 
-    private calcVerticalOverflow(direction: number, tiles: DejaTile[], offset: number, blackList?: Object): number {
+    private calcVerticalOverflow(direction: number, tiles: DejaTile[], offset: number, blackList?: {[id: string]: string}): number {
         let overflow &#x3D; 0;
         blackList &#x3D; blackList || {};
 
@@ -3619,7 +3622,7 @@ export class DejaTilesLayoutProvider implements OnDestroy {
         return overflow;
     }
 
-    private moveVertical(direction: number, tiles: DejaTile[], offset: number, targetBounds: { [id: number]: Rect }) {
+    private moveVertical(direction: number, tiles: DejaTile[], offset: number, targetBounds: { [id: string]: Rect }) {
         tiles.forEach((t) &#x3D;&gt; {
             if (!targetBounds[t.id]) {
                 // Offset tile
@@ -3635,7 +3638,7 @@ export class DejaTilesLayoutProvider implements OnDestroy {
 
     private pushVertical(bounds: Rect, direction: number, tiles: DejaTile[], offset?: number): number {
         let overflow &#x3D; 0;
-        const targetBounds &#x3D; {} as { [id: number]: Rect };
+        const targetBounds &#x3D; {} as { [id: string]: Rect };
 
         if (!offset) {
             offset &#x3D; 0;

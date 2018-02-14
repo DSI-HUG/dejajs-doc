@@ -2915,7 +2915,7 @@ export class DejaPopupToolbarComponent implements OnInit {
 
     public toggleFullScreenButton() {
         this.isFullScreen &#x3D; !this.isFullScreen;
-        let formerButton;
+        let formerButton: DejaPopupAction;
         let newButton;
         if (this.isFullScreen) {
             formerButton &#x3D; this.buttonFullscreen;

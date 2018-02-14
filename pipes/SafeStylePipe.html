@@ -1936,7 +1936,7 @@
                             <tr>
                                 <td class="col-md-4">
                                         <span class="modifier-icon fa fa-reset"></span>
-                                    <code>transform(style: )</code>
+                                    <code>transform(style: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                                 </td>
                             </tr>
             
@@ -1965,6 +1965,7 @@
                                                             <tr>
                                                               <td>style</td>
                                                               <td>
+                                                                      <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
                                                               </td>
                                                               <td>
                                                               </td>
@@ -2007,7 +2008,7 @@ export class SafeStylePipe implements PipeTransform {
         this.sanitizer &#x3D; sanitizer;
     }
 
-    public transform(style) {
+    public transform(style: string) {
         return this.sanitizer.bypassSecurityTrustStyle(style) as any;
     }
 }

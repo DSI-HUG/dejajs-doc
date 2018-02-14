@@ -1936,7 +1936,7 @@
                             <tr>
                                 <td class="col-md-4">
                                         <span class="modifier-icon fa fa-reset"></span>
-                                    <code>transform(value: )</code>
+                                    <code>transform(value: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
                                 </td>
                             </tr>
             
@@ -1967,6 +1967,7 @@
                                                             <tr>
                                                               <td>value</td>
                                                               <td>
+                                                                      <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
                                                               </td>
                                                               <td>
                                                               </td>
@@ -2009,7 +2010,7 @@ export class KeysPipe implements PipeTransform {
      *
      * @param value Object to itterate
      */
-    public transform(value): any {
+    public transform(value: any): any {
         return Object.keys(value).map((key) &#x3D;&gt; value[key]);
     }
 }

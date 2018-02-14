@@ -2001,7 +2001,7 @@ but per-character walk (improved performance).</p>
                     try {
                         for (let i &#x3D; 0; i &lt; length; i++) {
                             const c &#x3D; str.charCodeAt(i);
-                            const replacement &#x3D; Diacritics.map[c];
+                            const replacement &#x3D; (&lt;any&gt;Diacritics.map)[c];
                             if (replacement) {
                                 newStr.push(replacement);
                                 alter &#x3D; true;
@@ -2044,7 +2044,7 @@ but per-character walk (improved performance).</p>
         try {
             for (let i &#x3D; 0; i &lt; length; i++) {
                 const c &#x3D; str.charCodeAt(i);
-                const replacement &#x3D; Diacritics.map[c];
+                const replacement &#x3D; (&lt;any&gt;Diacritics.map)[c];
                 if (replacement) {
                     newStr.push(replacement);
                     alter &#x3D; true;

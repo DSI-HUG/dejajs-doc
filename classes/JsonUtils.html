@@ -2500,7 +2500,7 @@
 
         Object.keys(jsonObj).forEach((propName) &#x3D;&gt; {
             if (!(jsonObj[propName] instanceof Object)) {
-                obj[propName] &#x3D; jsonObj[propName];
+                (&lt;any&gt;obj)[propName] &#x3D; jsonObj[propName];
             }
         });
 
@@ -2529,9 +2529,9 @@
                 // Boolean managment
                 const value &#x3D; sourceObj[sourcePropName] ;
                 if (value &amp;&amp; !(value instanceof Array) &amp;&amp; value.length &#x3D;&#x3D;&#x3D; 4 &amp;&amp; (value.toLowerCase() &#x3D;&#x3D;&#x3D; &#x27;true&#x27; ||  value.toLowerCase() &#x3D;&#x3D;&#x3D; &#x27;false&#x27;)) {
-                    castedObj[targetPropName] &#x3D; JSON.parse(value.toLowerCase());
+                    (&lt;any&gt;castedObj)[targetPropName] &#x3D; JSON.parse(value.toLowerCase());
                 } else {
-                    castedObj[targetPropName] &#x3D; value;
+                    (&lt;any&gt;castedObj)[targetPropName] &#x3D; value;
                 }
             }
         }

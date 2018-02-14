@@ -1953,7 +1953,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="1369" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1369</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="1371" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1371</a></div>
                                         </td>
                                     </tr>
 
@@ -1986,7 +1986,7 @@
 
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="1370" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1370</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="1372" class="link-to-prism">src/common/core/item-list/item-list.service.ts:1372</a></div>
                                         </td>
                                     </tr>
 
@@ -2081,7 +2081,7 @@ export class ItemListService {
      */
     public static getItemValue(item: any, valueField?: string) {
         // tslint:disable-next-line:triple-equals
-        const isDefined &#x3D; (value) &#x3D;&gt; value !&#x3D; undefined;
+        const isDefined &#x3D; (value: any) &#x3D;&gt; value !&#x3D; undefined;
 
         if (valueField) {
             const fields &#x3D; valueField.split(&#x27;.&#x27;);
@@ -2103,9 +2103,7 @@ export class ItemListService {
      * @return Texte à afficher pour le modèle spécifié.
      */
     public static getItemText(value: any, textField?: string) {
-        if (!value) {
-            return &#x27;&#x27;;
-        } else {
+        if (value) {
             if (textField) {
                 const fields &#x3D; textField.split(&#x27;.&#x27;);
                 let model &#x3D; value.model &amp;&amp; value.model[fields[0]] !&#x3D;&#x3D; undefined ? value.model : value;
@@ -2115,6 +2113,7 @@ export class ItemListService {
                 if (model !&#x3D;&#x3D; undefined) {
                     return typeof model &#x3D;&#x3D;&#x3D; &#x27;function&#x27; ? model() : model;
                 }
+                return &#x27;&#x27;;
             }
 
             if (value.displayName) {
@@ -2123,6 +2122,7 @@ export class ItemListService {
                 return value.toString();
             }
         }
+        return &#x27;&#x27;;
     }
 
     /**
@@ -2783,7 +2783,7 @@ export class ItemListService {
 
         const sortTree$ &#x3D; this.getSortingService()
             .sortTree$(this._cache.groupedList, sortInfos, &#x27;$items&#x27;)
-            .do((sortedList) &#x3D;&gt; {
+            .do((sortedList: IItemTree[]) &#x3D;&gt; {
                 this._cache.groupedList &#x3D; sortedList;
                 this.invalidateViewCache();
             });
@@ -3002,7 +3002,8 @@ export class ItemListService {
      * @return True si l&#x27;élément correspond aux critères de recherche.
      */
     protected itemMatch(item: IItemBase, searchField: string, regExp: RegExp) {
-        const value &#x3D; typeof item[searchField] &#x3D;&#x3D;&#x3D; &#x27;function&#x27; ? item[searchField]() : (item[searchField] ? item[searchField] : this.getTextValue(item, searchField));
+        const field &#x3D; (&lt;any&gt;item)[searchField];
+        const value &#x3D; typeof field &#x3D;&#x3D;&#x3D; &#x27;function&#x27; ? field() : (field ? field : this.getTextValue(item, searchField));
         return value &amp;&amp; regExp.test(Diacritics.remove(value));
     }
 
@@ -3029,7 +3030,7 @@ export class ItemListService {
         }
 
         let visibleList &#x3D; [] as IItemTree[];
-        const selectedList &#x3D; [];
+        const selectedList &#x3D; [] as IItemBase[];
         let odd &#x3D; false;
 
         if (regExp) {
@@ -3128,13 +3129,13 @@ export class ItemListService {
             return Observable.of([]);
         }
 
-        const visibleList &#x3D; [];
-        const selectedList &#x3D; [];
+        const visibleList &#x3D; [] as IItemBase[];
+        const selectedList &#x3D; [] as IItemBase[];
         let depthMax &#x3D; 0;
         let isTree &#x3D; false;
         let odd &#x3D; false;
 
-        const flatList$ &#x3D; (itms: IItemTree[], depth: number, hidden: boolean) &#x3D;&gt; {
+        const flatList$: any &#x3D; (itms: IItemTree[], depth: number, hidden: boolean) &#x3D;&gt; {
             return Observable.from(itms || [])
                 .do((item) &#x3D;&gt; {
                     if (depth &gt; depthMax) {
@@ -3180,7 +3181,7 @@ export class ItemListService {
                 }
                 this._cache.depthMax &#x3D; isTree ? depthMax : 0;
             })
-            .reduce((acc: any[], cur) &#x3D;&gt; {
+            .reduce((acc: any[], cur: IItemBase) &#x3D;&gt; {
                 acc.push(cur);
                 return acc;
             }, []);
@@ -3253,7 +3254,7 @@ export class ItemListService {
 
     private compareItems &#x3D; (item1: IItemBase, item2: IItemBase) &#x3D;&gt; {
         // tslint:disable-next-line:triple-equals
-        const isDefined &#x3D; (value) &#x3D;&gt; value !&#x3D; undefined;
+        const isDefined &#x3D; (value: any) &#x3D;&gt; value !&#x3D; undefined;
 
         if (!isDefined(item1) || !isDefined(item2)) {
             return false;
@@ -3347,8 +3348,9 @@ export class ItemListService {
         }
 
         items.forEach((item) &#x3D;&gt; {
-            if (item[this.childrenField]) {
-                item.$items &#x3D; item[this.childrenField];
+            const field &#x3D; (&lt;any&gt;item)[this.childrenField];
+            if (field) {
+                item.$items &#x3D; field;
                 this.ensureChildrenProperties(item.$items);
             }
         });

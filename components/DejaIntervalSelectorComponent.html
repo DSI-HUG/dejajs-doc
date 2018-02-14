@@ -2116,7 +2116,7 @@
                         </tr>
                     <tr>
                         <td class="col-md-4">
-    <code>click(_event: )</code>
+    <code>click(_event: <a href="https://angular.io/api/router/Event" target="_blank">Event</a>)</code>
                         </td>
                     </tr>
     
@@ -2446,7 +2446,7 @@ export class DejaIntervalSelectorComponent {
     }
 
     @HostListener(&#x27;click&#x27;, [&#x27;$event&#x27;])
-    public clickHandler(_event) {
+    public clickHandler(_event: Event) {
         if (!this._openingBoundary.selected &amp;&amp; !this._closingBoundary.selected) {
             this.intervalSelectorService.modelClicked(this._intervalSelectorData.intervalId, this._intervalSelectorData.model);
         }

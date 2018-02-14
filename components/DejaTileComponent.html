@@ -2110,6 +2110,10 @@
                             <code>designMode</code>
                         </td>
                         <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                              </p>
                         </td>
                     </tr>
                             <tr>
@@ -2127,6 +2131,10 @@
                             <code>template</code>
                         </td>
                         <td class="col-md-10">
+                              <p>
+                                <em>Type:</em>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                              </p>
                         </td>
                     </tr>
                             <tr>
@@ -2490,8 +2498,8 @@ import { DejaTile } from &#x27;./tile.class&#x27;;
     templateUrl: &#x27;./tile.component.html&#x27;,
 })
 export class DejaTileComponent implements OnDestroy {
-    @Input() public template;
-    @Input() public designMode;
+    @Input() public template: any;
+    @Input() public designMode: boolean;
     @Output() public modelChanged &#x3D; new EventEmitter();
     @Output() public close &#x3D; new EventEmitter&lt;Event&gt;();
 
@@ -2550,7 +2558,7 @@ export class DejaTileComponent implements OnDestroy {
                     this.element.style.top &#x3D; &#x60;${bounds.top}px&#x60;;
                     this.element.style.width &#x3D; &#x60;${bounds.width}px&#x60;;
                     this.element.style.height &#x3D; &#x60;${bounds.height}px&#x60;;
-                    this.progressDiameter &#x3D; Math.min(100, Math.round(Math.max(bounds.width * 0.4, bounds.height* 0.4)));
+                    this.progressDiameter &#x3D; Math.min(100, Math.round(Math.max(bounds.width * 0.4, bounds.height * 0.4)));
                     this.changeDetectorRef.markForCheck();
                 });
 

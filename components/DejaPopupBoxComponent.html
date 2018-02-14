@@ -2055,7 +2055,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/component/popup/component/popup-box/popup-box.component.ts:22</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/component/popup/component/popup-box/popup-box.component.ts:43</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -2078,7 +2078,7 @@
                     </tr>
                             <tr>
                                 <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/component/popup/component/popup-box/popup-box.component.ts:23</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/component/popup/component/popup-box/popup-box.component.ts:44</a></div>
                                 </td>
                             </tr>
                 </tbody>
@@ -2109,7 +2109,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/component/popup/component/popup-box/popup-box.component.ts:24</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/component/popup/component/popup-box/popup-box.component.ts:45</a></div>
                                 </td>
                             </tr>
     
@@ -2137,7 +2137,7 @@
     
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/component/popup/component/popup-box/popup-box.component.ts:27</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/component/popup/component/popup-box/popup-box.component.ts:48</a></div>
                                 </td>
                             </tr>
     
@@ -2292,7 +2292,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/component/popup/component/popup-box/popup-box.component.ts:32</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/component/popup/component/popup-box/popup-box.component.ts:23</a></div>
                                 </td>
                             </tr>
     
@@ -2336,7 +2336,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/component/popup/component/popup-box/popup-box.component.ts:34</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="25" class="link-to-prism">src/component/popup/component/popup-box/popup-box.component.ts:25</a></div>
                                 </td>
                             </tr>
     
@@ -2380,7 +2380,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/component/popup/component/popup-box/popup-box.component.ts:40</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/component/popup/component/popup-box/popup-box.component.ts:31</a></div>
                                 </td>
                             </tr>
     
@@ -2424,7 +2424,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/component/popup/component/popup-box/popup-box.component.ts:46</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/component/popup/component/popup-box/popup-box.component.ts:37</a></div>
                                 </td>
                             </tr>
     
@@ -2458,7 +2458,7 @@
                         </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/component/popup/component/popup-box/popup-box.component.ts:31</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/component/popup/component/popup-box/popup-box.component.ts:22</a></div>
                                 </td>
                             </tr>
     
@@ -2485,15 +2485,6 @@ import { DejaPopupBase } from &#x27;../../model/popup-base.class&#x27;;
 })
 export class DejaPopupBoxComponent {
 
-    @Input() public dialog: MatDialogRef&lt;DejaPopupBase&gt;;
-    @Output() public action &#x3D; new EventEmitter();
-    @HostListener(&#x27;mouseenter&#x27;) public onMouseEnter() {
-        this.showActions &#x3D; true;
-    }
-    @HostListener(&#x27;mouseleave&#x27;) public onMouseLeave() {
-        this.showActions &#x3D; false;
-    }
-
     public showActions &#x3D; false;
     public aActions: DejaPopupAction[];
 
@@ -2514,6 +2505,15 @@ export class DejaPopupBoxComponent {
         icon: &#x27;remove&#x27;,
         label: &#x27;Minify&#x27;,
     };
+
+    @Input() public dialog: MatDialogRef&lt;DejaPopupBase&gt;;
+    @Output() public action &#x3D; new EventEmitter();
+    @HostListener(&#x27;mouseenter&#x27;) public onMouseEnter() {
+        this.showActions &#x3D; true;
+    }
+    @HostListener(&#x27;mouseleave&#x27;) public onMouseLeave() {
+        this.showActions &#x3D; false;
+    }
 
     public doEmit(action: DejaPopupAction) {
         action.target &#x3D; &#x27;popup-tray&#x27;;

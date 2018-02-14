@@ -2340,10 +2340,16 @@
                             </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <span class="modifier-icon fa fa-reset"></span><code>canvas:     <code></code>
+                                    <span class="modifier-icon fa fa-reset"></span><code>canvas:     <code>HTMLCanvasElement</code>
             </code>
                                 </td>
                             </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Type : </i>    <code>HTMLCanvasElement</code>
+            
+                                    </td>
+                                </tr>
                                     <tr>
                                         <td class="col-md-4">
                                             <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/common/core/text-metrics/text-metrics.service.ts:24</a></div>
@@ -2546,7 +2552,7 @@ import { Subject } from &#x27;rxjs/Subject&#x27;;
  */
 @Injectable()
 export class DejaTextMetricsService {
-    private canvas;
+    private canvas: HTMLCanvasElement;
     private element$: Subject&lt;HTMLElement&gt; &#x3D; new Subject();
     private computedStyles: CSSStyleDeclaration;
     private charSize$ &#x3D; new BehaviorSubject&lt;number[]&gt;(null);
@@ -2649,13 +2655,12 @@ export class DejaTextMetricsService {
             .map((charSize) &#x3D;&gt; {
 
                 let tmpSize &#x3D; 0;
-                let tmpStr &#x3D; &#x27;&#x27;;
                 let numberOfLines &#x3D; 1;
                 let averageCharSize &#x3D; 0;
-                if (text.length&gt;0) {
+                if (text.length &gt; 0) {
                     const arr &#x3D; text.split(&#x27; &#x27;);
                     let spaceWidth &#x3D; 0;
-                    const printableCharSizeArray &#x3D; charSize.filter((size)&#x3D;&gt; size &gt; 0);
+                    const printableCharSizeArray &#x3D; charSize.filter((size) &#x3D;&gt; size &gt; 0);
                     averageCharSize &#x3D; printableCharSizeArray.reduce((a, b) &#x3D;&gt; a + b, 0) / printableCharSizeArray.length;
                     arr.forEach((txt: string) &#x3D;&gt; {
                         let w &#x3D; 0;
@@ -2666,11 +2671,9 @@ export class DejaTextMetricsService {
                             w +&#x3D; (charSize[charCode]) ? charSize[charCode] : averageCharSize;
                         }
                         if ((tmpSize + w + spaceWidth) &gt; maxWidth) {
-                            tmpStr &#x3D; txt;
                             tmpSize &#x3D; w;
                             numberOfLines++;
                         } else {
-                            tmpStr +&#x3D; (spaceWidth&gt;0? &#x27; &#x27; : &#x27;&#x27;) + txt;
                             tmpSize +&#x3D; w + spaceWidth;
                         }
                         if (spaceWidth &#x3D;&#x3D;&#x3D; 0) {

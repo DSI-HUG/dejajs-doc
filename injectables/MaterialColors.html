@@ -2387,7 +2387,7 @@
                         800: &#x27;#37474f&#x27;,
                         900: &#x27;#263238&#x27;,
                     },
-                }</code>
+                } as { [color: string]:  { [nuance: string]: string }}</code>
                                     </td>
                                 </tr>
                                     <tr>
@@ -2709,7 +2709,7 @@ export class MaterialColors {
             800: &#x27;#37474f&#x27;,
             900: &#x27;#263238&#x27;,
         },
-    };
+    } as { [color: string]:  { [nuance: string]: string }};
 
     public get colors() {
         if (!this._colors) {

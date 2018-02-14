@@ -3900,7 +3900,7 @@
                             <tr>
                                 <td class="col-md-4">
                                         <span class="modifier-icon fa fa-reset"></span>
-                                    <code>getVirtualSelectedEntities(value: )</code>
+                                    <code>getVirtualSelectedEntities(value: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
                                 </td>
                             </tr>
             
@@ -3929,6 +3929,7 @@
                                                             <tr>
                                                               <td>value</td>
                                                               <td>
+                                                                      <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
                                                               </td>
                                                               <td>
                                                               </td>
@@ -8492,7 +8493,7 @@ export abstract class ItemListBase implements OnDestroy {
         }
         return this.getItemListService().sort$(this._sortInfos)
             .first()
-            .switchMap((si) &#x3D;&gt; this.calcViewList$().first().map(() &#x3D;&gt; si));
+            .switchMap((si: any) &#x3D;&gt; this.calcViewList$().first().map(() &#x3D;&gt; si));
     }
 
     /** Groupe les éléments en fonction du modèle de groupe spécifié
@@ -8948,25 +8949,25 @@ export abstract class ItemListBase implements OnDestroy {
             const valueField &#x3D; this.getValueField();
 
             if (typeof model &#x3D;&#x3D;&#x3D; &#x27;string&#x27;) {
-                itemBase[displayField] &#x3D; model;
-                itemBase[valueField] &#x3D; model;
+                (&lt;any&gt;itemBase)[displayField] &#x3D; model;
+                (&lt;any&gt;itemBase)[valueField] &#x3D; model;
 
                 if (this._searchField) {
-                    itemBase[this._searchField] &#x3D; model;
+                    (&lt;any&gt;itemBase)[this._searchField] &#x3D; model;
                 }
 
             } else {
-                itemBase[displayField] &#x3D; this.getTextValue(model);
-                itemBase[valueField] &#x3D; model[this._valueField];
+                (&lt;any&gt;itemBase)[displayField] &#x3D; this.getTextValue(model);
+                (&lt;any&gt;itemBase)[valueField] &#x3D; model[this._valueField];
 
                 if (this._searchField) {
-                    itemBase[this._searchField] &#x3D; model[this._searchField];
+                    (&lt;any&gt;itemBase)[this._searchField] &#x3D; model[this._searchField];
                 }
             }
 
             const childrenField &#x3D; this.getItemListService().childrenField;
             if (model[childrenField]) {
-                itemBase[childrenField] &#x3D; this.mapToIItemBase(model[childrenField], selected);
+                (&lt;any&gt;itemBase)[childrenField] &#x3D; this.mapToIItemBase(model[childrenField], selected);
             } else {
                 itemBase.selected &#x3D; selected || undefined;
             }
@@ -8987,16 +8988,16 @@ export abstract class ItemListBase implements OnDestroy {
         }
     }
 
-    protected getVirtualSelectedEntities(value) {
-        const map &#x3D; (v) &#x3D;&gt; {
+    protected getVirtualSelectedEntities(value: any) {
+        const map &#x3D; (v: any) &#x3D;&gt; {
             if (typeof v &#x3D;&#x3D;&#x3D; &#x27;string&#x27;) {
                 v &#x3D; v.trim();
             }
             const model &#x3D; {};
             const textField &#x3D; this.getTextField();
             const valueField &#x3D; this.getValueField();
-            model[textField] &#x3D; v.toString();
-            model[valueField] &#x3D; v;
+            (&lt;any&gt;model)[textField] &#x3D; v.toString();
+            (&lt;any&gt;model)[valueField] &#x3D; v;
             return model;
         };
 

@@ -2233,7 +2233,7 @@ import { Observable } from &#x27;rxjs/Observable&#x27;;
 import { Subject } from &#x27;rxjs/Subject&#x27;;
 import { Position } from &#x27;../../common/core/graphics/position&#x27;;
 import { Rect } from &#x27;../../common/core/graphics/rect&#x27;;
-import { DejaMouseDragDropService, IDragCursorInfos } from &#x27;./mouse-dragdrop.service&#x27;;
+import { DejaMouseDragDropService, IDragCursorInfos, IDragDropContext } from &#x27;./mouse-dragdrop.service&#x27;;
 
 @Directive({
     selector: &#x27;[deja-mouse-draggable]&#x27;,
@@ -2326,7 +2326,7 @@ export class DejaMouseDraggableDirective implements OnDestroy {
                                         // Observable
                                         dragContext
                                             .first()
-                                            .subscribe((ddctx) &#x3D;&gt; {
+                                            .subscribe((ddctx: IDragDropContext) &#x3D;&gt; {
                                                 dragDropService.context &#x3D; ddctx;
                                                 if (ddctx) {
                                                     startDrag();
@@ -2352,7 +2352,7 @@ export class DejaMouseDraggableDirective implements OnDestroy {
 export interface IDejaMouseDraggableContext {
     target?: string; // Tagname or #id or [attribute]
     className?: string;
-    dragStart?(HTMLElement): any; // Return object or observable&lt;object&gt;
+    dragStart?(element: HTMLElement): any; // Return object or observable&lt;object&gt;
 }
 </code></pre>
     </div>

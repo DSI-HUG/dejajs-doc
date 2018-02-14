@@ -2187,6 +2187,10 @@
                         <td class="col-md-10">
                             <div><p>Template d&#39;entête de colonne si définit extérieurement à la grille </p>
 </div>
+                              <p>
+                                <em>Type:</em>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                              </p>
                         </td>
                     </tr>
                             <tr>
@@ -2976,10 +2980,16 @@ Si une valeur spécifique à une colonne est spécifiée dans le modèle de la c
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <span class="modifier-icon fa fa-reset"></span><code>columnHeaderTemplateInternal:     <code></code>
+                            <span class="modifier-icon fa fa-reset"></span><code>columnHeaderTemplateInternal:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
     </code>
                         </td>
                     </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+    
+                            </td>
+                        </tr>
                         <tr>
                             <td class="col-md-4">
                                 <i>Decorators : </i><code>ContentChild</code>
@@ -3383,7 +3393,7 @@ import { IDejaGridColumnLayout } from &#x27;../data-grid-column/data-grid-column
 })
 export class DejaGridHeaderComponent implements OnDestroy {
     /** Template d&#x27;entête de colonne si définit extérieurement à la grille */
-    @Input() public columnHeaderTemplateExternal;
+    @Input() public columnHeaderTemplateExternal: any;
 
     /** Infos de tri à afficher dans les entêtes */
     @Input() public sortInfos: ISortInfos;
@@ -3401,7 +3411,7 @@ export class DejaGridHeaderComponent implements OnDestroy {
     @Output() public columnDragEnd &#x3D; new EventEmitter();
 
     /** Template d&#x27;entête de colonne par defaut définit dans le HTML de la grille */
-    @ContentChild(&#x27;columnHeaderTemplate&#x27;) protected columnHeaderTemplateInternal;
+    @ContentChild(&#x27;columnHeaderTemplate&#x27;) protected columnHeaderTemplateInternal: any;
 
     protected _sizedColumn: IDejaGridColumn;
     private _columnsDraggable &#x3D; false;

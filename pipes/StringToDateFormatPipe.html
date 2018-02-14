@@ -1936,7 +1936,7 @@
                             <tr>
                                 <td class="col-md-4">
                                         <span class="modifier-icon fa fa-reset"></span>
-                                    <code>transform(dateString: , format: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                                    <code>transform(dateString: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, format: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                                 </td>
                             </tr>
             
@@ -1967,6 +1967,7 @@
                                                             <tr>
                                                               <td>dateString</td>
                                                               <td>
+                                                                      <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
                                                               </td>
                                                               <td>
                                                               </td>
@@ -2022,7 +2023,7 @@ export class StringToDateFormatPipe implements PipeTransform {
      * @param dateString date in string format &#x27;DD.MM.YYYY HH:mm:ss&#x27;
      * @param format format choosen for the date
      */
-    public transform(dateString, format: string): any {
+    public transform(dateString: any, format: string): any {
         return moment(dateString, &#x27;DD.MM.YYYY HH:mm:ss&#x27;).format(format);
     }
 }
