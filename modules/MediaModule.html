@@ -573,9 +573,6 @@
                                     <a href="../classes/MockMediaService.html" >MockMediaService</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../classes/MockObservableMedia.html" >MockObservableMedia</a>
-                                </li>
-                                <li class="link">
                                     <a href="../classes/Position.html" >Position</a>
                                 </li>
                                 <li class="link">
@@ -1480,9 +1477,6 @@
                                            <a href="../classes/MockMediaService.html" >MockMediaService</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../classes/MockObservableMedia.html" >MockObservableMedia</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="../classes/Position.html" >Position</a>
                                        </li>
                                        <li class="link">
@@ -1942,7 +1936,7 @@
 
 
     <div class="tab-pane fade tab-source-code" id="c-source">
-        <pre class="line-numbers"><code class="language-typescript">/*
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">/*
  *  @license
  *  Copyright Hôpitaux Universitaires de Genève. All Rights Reserved.
  *
@@ -1950,17 +1944,13 @@
  *  found in the LICENSE file at https://github.com/DSI-HUG/dejajs-components/blob/master/LICENSE
  */
 
+import { CommonModule } from &#x27;@angular/common&#x27;;
 import { NgModule } from &#x27;@angular/core&#x27;;
-import { FlexLayoutModule } from &#x27;@angular/flex-layout&#x27;;
 import { MediaService } from &#x27;./media.service&#x27;;
 
 @NgModule({
-    providers: [
-        MediaService,
-    ],
-    imports: [
-        FlexLayoutModule,
-    ],
+    imports: [CommonModule],
+    providers: [MediaService],
 })
 export class MediaModule { }
 

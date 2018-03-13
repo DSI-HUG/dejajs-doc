@@ -573,9 +573,6 @@
                                     <a href="../classes/MockMediaService.html" >MockMediaService</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../classes/MockObservableMedia.html" >MockObservableMedia</a>
-                                </li>
-                                <li class="link">
                                     <a href="../classes/Position.html" >Position</a>
                                 </li>
                                 <li class="link">
@@ -1480,9 +1477,6 @@
                                            <a href="../classes/MockMediaService.html" >MockMediaService</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../classes/MockObservableMedia.html" >MockObservableMedia</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="../classes/Position.html" >Position</a>
                                        </li>
                                        <li class="link">
@@ -1883,6 +1877,14 @@
                                             <span class="modifier">Public</span>
                                         <a href="#isMobile$">isMobile$</a>
                                     </li>
+                                    <li>
+                                            <span class="modifier">Public</span>
+                                        <a href="#mediaChanged$">mediaChanged$</a>
+                                    </li>
+                                    <li>
+                                            <span class="modifier">Public</span>
+                                        <a href="#mql">mql</a>
+                                    </li>
                                 </ul>
                             </td>
                         </tr>
@@ -1898,6 +1900,10 @@
                                             <span class="modifier">Public</span>
                                         <a href="#ngOnDestroy">ngOnDestroy</a>
                                     </li>
+                                    <li>
+                                            <span class="modifier">Private</span>
+                                        <a href="#onMQLEvent">onMQLEvent</a>
+                                    </li>
                                 </ul>
                             </td>
                         </tr>
@@ -1911,12 +1917,12 @@
                         <tbody>
                             <tr>
                                 <td class="col-md-4">
-            <code>constructor(media: ObservableMedia)</code>
+            <code>constructor(zone: <a href="https://angular.io/api/core/NgZone" target="_blank">NgZone</a>)</code>
                                 </td>
                             </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/common/core/media/media.service.ts:20</a></div>
+                                            <div class="io-line">Defined in <a href="" data-line="87" class="link-to-prism">src/common/core/media/media.service.ts:87</a></div>
                                         </td>
                                     </tr>
             
@@ -1934,10 +1940,10 @@
                                                     </thead>
                                                     <tbody>
                                                             <tr>
-                                                                <td>media</td>
+                                                                <td>zone</td>
                                                               
                                                                     <td>
-                                                                                <code>ObservableMedia</code>
+                                                                                <code><a href="https://angular.io/api/core/NgZone" target="_blank" >NgZone</a></code>
                                                                     </td>
                                                               
                                                                 <td>
@@ -1983,7 +1989,7 @@
             
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/common/core/media/media.service.ts:29</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="109" class="link-to-prism">src/common/core/media/media.service.ts:109</a></div>
                                         </td>
                                     </tr>
             
@@ -1994,6 +2000,77 @@
                                             <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
             
                                         </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="onMQLEvent"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Private</span>
+                                        onMQLEvent
+                                        </b>
+                                        <a href="#onMQLEvent"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon fa fa-reset"></span>
+                                    <code>onMQLEvent(alias: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                                </td>
+                            </tr>
+            
+            
+                                    <tr>
+                                        <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="117" class="link-to-prism">src/common/core/media/media.service.ts:117</a></div>
+                                        </td>
+                                    </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <table class="params">
+                                                    <thead>
+                                                        <tr>
+                                                            <td>Name</td>
+                                                                <td>Type</td>
+                                                            <td>Optional</td>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                            <tr>
+                                                                <td>alias</td>
+                                                                
+                                                                    <td>
+                                                                                <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                                    </td>
+                                                                
+                                                                <td>
+                                                                        no
+                                                                </td>
+                                                                
+            
+                                                            </tr>
+                                                    </tbody>
+                                                </table>
+                                        </div>
+                                        <div>
+                                        </div>
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+            
+                                        </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
                                 </td>
                             </tr>
                         </tbody>
@@ -2032,7 +2109,7 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/common/core/media/media.service.ts:20</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="84" class="link-to-prism">src/common/core/media/media.service.ts:84</a></div>
                                         </td>
                                     </tr>
             
@@ -2067,7 +2144,76 @@
                                 </tr>
                                     <tr>
                                         <td class="col-md-4">
-                                            <div class="io-line">Defined in <a href="" data-line="19" class="link-to-prism">src/common/core/media/media.service.ts:19</a></div>
+                                                <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/common/core/media/media.service.ts:85</a></div>
+                                        </td>
+                                    </tr>
+            
+            
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="mediaChanged$"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Public</span>
+                                        mediaChanged$
+                                        </b>
+                                        <a href="#mediaChanged$"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <span class="modifier-icon fa fa-reset"></span><code>mediaChanged$:     <code>BehaviorSubject&lt;string&gt;</code>
+            </code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Type : </i>    <code>BehaviorSubject&lt;string&gt;</code>
+            
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="86" class="link-to-prism">src/common/core/media/media.service.ts:86</a></div>
+                                        </td>
+                                    </tr>
+            
+            
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <a name="mql"></a>
+                                    <span class="name">
+                                        <b>
+                                            <span class="modifier">Public</span>
+                                        mql
+                                        </b>
+                                        <a href="#mql"><span class="fa fa-link"></span></a>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <span class="modifier-icon fa fa-reset"></span><code>mql:     <code></code>
+            </code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <i>Default value : </i><code>{} as { [alias: string]: MediaQueryList }</code>
+                                    </td>
+                                </tr>
+                                    <tr>
+                                        <td class="col-md-4">
+                                                <div class="io-line">Defined in <a href="" data-line="87" class="link-to-prism">src/common/core/media/media.service.ts:87</a></div>
                                         </td>
                                     </tr>
             
@@ -2080,28 +2226,53 @@
 
 
     <div class="tab-pane fade tab-source-code" id="c-source">
-        <pre class="line-numbers"><code class="language-typescript">import { Injectable, OnDestroy } from &#x27;@angular/core&#x27;;
-import { ObservableMedia } from &#x27;@angular/flex-layout&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable, NgZone, OnDestroy } from &#x27;@angular/core&#x27;;
+import &#x27;rxjs/add/observable/from&#x27;;
 import &#x27;rxjs/add/operator/distinctUntilChanged&#x27;;
 import &#x27;rxjs/add/operator/map&#x27;;
-import &#x27;rxjs/add/operator/merge&#x27;;
 import &#x27;rxjs/add/operator/takeWhile&#x27;;
+import { BehaviorSubject } from &#x27;rxjs/BehaviorSubject&#x27;;
 import { Observable } from &#x27;rxjs/Observable&#x27;;
 
 @Injectable()
 export class MediaService implements OnDestroy {
-    public isMobile$: Observable&lt;boolean&gt;;
     private isAlive &#x3D; true;
+    public isMobile$: Observable&lt;boolean&gt;;
+    public mediaChanged$: BehaviorSubject&lt;string&gt;;
+    public mql &#x3D; {} as { [alias: string]: MediaQueryList };
 
-    constructor(media: ObservableMedia) {
-        this.isMobile$ &#x3D; Observable.merge(Observable.of(1), media.asObservable())
+    constructor(private zone: NgZone) {
+
+        this.mql.xs &#x3D; window.matchMedia(&#x27;(max-width: 599px)&#x27;);
+        this.mql.sm &#x3D; window.matchMedia(&#x27;(min-width: 600px) and (max-width:959px)&#x27;);
+        this.mql.md &#x3D; window.matchMedia(&#x27;(min-width: 860px) and (max-width:1279px)&#x27;);
+        this.mql.lg &#x3D; window.matchMedia(&#x27;(min-width: 1280px)&#x27;);
+
+        Object.keys(this.mql).forEach((alias) &#x3D;&gt; {
+            this.mql[alias].addListener(this.onMQLEvent.bind(this, alias));
+            if (this.mql[alias].matches) {
+                this.mediaChanged$ &#x3D; new BehaviorSubject(alias);
+            }
+        });
+
+        this.isMobile$ &#x3D; Observable.from(this.mediaChanged$)
             .takeWhile(() &#x3D;&gt; this.isAlive)
-            .map(() &#x3D;&gt; media.isActive(&#x27;xs&#x27;) || media.isActive(&#x27;sm&#x27;))
+            .map(() &#x3D;&gt; this.mql.xs.matches || this.mql.sm.matches)
             .distinctUntilChanged();
     }
 
     public ngOnDestroy() {
+        Object.keys(this.mql).forEach((alias) &#x3D;&gt; {
+            this.mql[alias].removeListener(this.onMQLEvent as any);
+            delete this.mql[alias];
+        });
         this.isAlive &#x3D; false;
+    }
+
+    private onMQLEvent(alias: string) {
+        this.zone.run(() &#x3D;&gt; {
+            this.mediaChanged$.next(alias);
+        });
     }
 }
 </code></pre>

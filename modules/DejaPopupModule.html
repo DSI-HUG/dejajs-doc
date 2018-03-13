@@ -573,9 +573,6 @@
                                     <a href="../classes/MockMediaService.html" >MockMediaService</a>
                                 </li>
                                 <li class="link">
-                                    <a href="../classes/MockObservableMedia.html" >MockObservableMedia</a>
-                                </li>
-                                <li class="link">
                                     <a href="../classes/Position.html" >Position</a>
                                 </li>
                                 <li class="link">
@@ -1480,9 +1477,6 @@
                                            <a href="../classes/MockMediaService.html" >MockMediaService</a>
                                        </li>
                                        <li class="link">
-                                           <a href="../classes/MockObservableMedia.html" >MockObservableMedia</a>
-                                       </li>
-                                       <li class="link">
                                            <a href="../classes/Position.html" >Position</a>
                                        </li>
                                        <li class="link">
@@ -2226,7 +2220,7 @@
 
 
     <div class="tab-pane fade tab-source-code" id="c-source">
-        <pre class="line-numbers"><code class="language-typescript">/*
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">/*
  *  @license
  *  Copyright Hôpitaux Universitaires de Genève. All Rights Reserved.
  *
@@ -2236,7 +2230,6 @@
 import { PortalModule } from &#x27;@angular/cdk/portal&#x27;;
 import { CommonModule } from &#x27;@angular/common&#x27;;
 import { NgModule } from &#x27;@angular/core&#x27;;
-import { FlexLayoutModule } from &#x27;@angular/flex-layout&#x27;;
 import { MatButtonModule, MatDialogModule, MatIconModule, MatToolbarModule } from &#x27;@angular/material&#x27;;
 import { DejaIFrameModule } from &#x27;../iframe/index&#x27;;
 import { DejaOverlayModule } from &#x27;../overlay/index&#x27;;
@@ -2261,11 +2254,7 @@ import { DejaPopupService } from &#x27;./service/popup.service&#x27;;
         DejaPopupBoxComponent,
         DejaPopupActionsComponent,
     ],
-    entryComponents: [
-        DejaPopupComponent,
-        DejaPopupAdvancedComponent,
-        DejaPopupActionsComponent,
-    ],
+    entryComponents: [DejaPopupComponent, DejaPopupAdvancedComponent, DejaPopupActionsComponent],
     exports: [
         DejaPopupComponent,
         DejaPopupToolbarComponent,
@@ -2284,14 +2273,11 @@ import { DejaPopupService } from &#x27;./service/popup.service&#x27;;
         MatDialogModule,
         DejaIFrameModule,
         DejaOverlayModule,
-        FlexLayoutModule,
         PortalModule,
     ],
-    providers: [
-        DejaPopupService,
-    ],
+    providers: [DejaPopupService],
 })
-export class DejaPopupModule { }
+export class DejaPopupModule {}
 
 export * from &#x27;./service/popup.service&#x27;;
 export * from &#x27;./model/popup-action.model&#x27;;
