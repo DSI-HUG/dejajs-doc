@@ -1847,11 +1847,26 @@ Depending on your system, you can install Yarn either from source or as a pre-pa
 <p>Begin by cloning the repository.</p>
 <p>After cloning, you should be able to run the following command to install development tools.
 You will only need to run this command when dependencies change in <a href="package.json">package.json</a>.</p>
-<p><code>yarn install</code></p>
+<p><code>yarn</code> or <code>npm i</code> </p>
 <p>Take a look at the <code>src</code> folder. All components and demo application are placed here. </p>
 <h2 id="running-demo-app">Running demo app</h2>
-<p><code>yarn start</code></p>
+<p><code>yarn start</code> or <code>npm start</code></p>
 <p>and navigate to <code>http://localhost:5100</code>.</p>
+<h2 id="cleaning">Cleaning</h2>
+<p>To clean the directory before making a new fresh install</p>
+<p><code>npm run clean</code></p>
+<h2 id="linking">Linking</h2>
+<p>To link the library to your project, just make the following commands from the root directory of your project</p>
+<p><code>yarn link @deja-js/component</code> or <code>npm link @deja-js/component</code></p>
+<p>and start your project with the --preserve-symlinks flag. For example</p>
+<p><code>ng serve --preserve-symlinks --port 4100 --base-href /&quot;</code></p>
+<h2 id="build">Build</h2>
+<p>To build the library you can use the command <code>npm run build</code> and to build the demo <code>npm run build:demo</code></p>
+<p>A folder dist will be created on the root directory for the library and the demo directory for the demo containing the bundles.
+You can serve directly the dist folder in the demo directory.</p>
+<p>For example with http-server
+ <code>npm i -g http-server</code>
+ <code>http-server demo/dist</code></p>
 <h2 id="feature-status-and-browsers-compatibility-">Feature status and browsers compatibility:</h2>
 <table class="table table-bordered compodoc-table">
 <thead>
@@ -1882,19 +1897,19 @@ You will only need to run this command when dependencies change in <a href="pack
 <td></td>
 </tr>
 <tr>
-<td>Circular Picker</td>
+<td>Chips</td>
+<td>yes</td>
+<td>N/A</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>available</td>
+<td><span style="color:red">@todo</span></td>
 <td></td>
 </tr>
 <tr>
-<td>Color Selector</td>
+<td>Circular Picker</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1918,6 +1933,18 @@ You will only need to run this command when dependencies change in <a href="pack
 <td></td>
 </tr>
 <tr>
+<td>Color Selector</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>available</td>
+<td></td>
+</tr>
+<tr>
 <td>Content Editable</td>
 <td>yes</td>
 <td>yes</td>
@@ -1930,7 +1957,7 @@ You will only need to run this command when dependencies change in <a href="pack
 <td>New line issue on IE11. IE11 add p instead br</td>
 </tr>
 <tr>
-<td>Combo List</td>
+<td>Date Picker</td>
 <td>yes</td>
 <td>yes</td>
 <td>yes</td>
@@ -1954,18 +1981,6 @@ You will only need to run this command when dependencies change in <a href="pack
 <td></td>
 </tr>
 <tr>
-<td>Date Picker</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>available</td>
-<td></td>
-</tr>
-<tr>
 <td>Dialog</td>
 <td>yes</td>
 <td>N/A</td>
@@ -1975,18 +1990,6 @@ You will only need to run this command when dependencies change in <a href="pack
 <td>yes</td>
 <td>yes</td>
 <td>Message Box</td>
-<td></td>
-</tr>
-<tr>
-<td>Events</td>
-<td>yes</td>
-<td>N/A</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td><span style="color:red">@todo</span></td>
 <td></td>
 </tr>
 <tr>
@@ -2014,18 +2017,6 @@ You will only need to run this command when dependencies change in <a href="pack
 <td></td>
 </tr>
 <tr>
-<td>Menu</td>
-<td>yes</td>
-<td>N/A</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td>yes</td>
-<td><span style="color:red">@todo</span></td>
-<td></td>
-</tr>
-<tr>
 <td>Message Box</td>
 <td>yes</td>
 <td>N/A</td>
@@ -2047,6 +2038,30 @@ You will only need to run this command when dependencies change in <a href="pack
 <td>yes</td>
 <td>yes</td>
 <td>available</td>
+<td></td>
+</tr>
+<tr>
+<td>Numeric Stepper</td>
+<td>yes</td>
+<td>N/A</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>available</td>
+<td></td>
+</tr>
+<tr>
+<td>Overlay</td>
+<td>yes</td>
+<td>N/A</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td><span style="color:red">@todo</span></td>
 <td></td>
 </tr>
 <tr>
@@ -2086,6 +2101,18 @@ You will only need to run this command when dependencies change in <a href="pack
 <td>Place Holder placement in FF, Edge and IE11</td>
 </tr>
 <tr>
+<td>Sidenav</td>
+<td>yes</td>
+<td>N/A</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td><span style="color:red">@todo</span></td>
+<td></td>
+</tr>
+<tr>
 <td>Snackbar</td>
 <td>yes</td>
 <td>N/A</td>
@@ -2099,6 +2126,18 @@ You will only need to run this command when dependencies change in <a href="pack
 </tr>
 <tr>
 <td>Splitter</td>
+<td>yes</td>
+<td>N/A</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>yes</td>
+<td>available</td>
+<td></td>
+</tr>
+<tr>
+<td>Tag</td>
 <td>yes</td>
 <td>N/A</td>
 <td>yes</td>
