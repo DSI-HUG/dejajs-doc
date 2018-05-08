@@ -3257,7 +3257,7 @@
 </nav>
                </div>
                <!-- START CONTENT -->
-               <div class="content injectable">
+               <div class="content interface">
                    <div class="content-data">
 
 
@@ -3265,9 +3265,13 @@
 
 
 
+
+
+
+
 <ol class="breadcrumb">
-  <li>Injectables</li>
-  <li>DejaClipboardService</li>
+  <li>Interfaces</li>
+  <li>IGlobalEventEmmitter</li>
 </ol>
 
 <ul class="nav nav-tabs" role="tablist">
@@ -3287,74 +3291,53 @@
             <h3>File</h3>
         </p>
         <p class="comment">
-            <code>src/common/core/clipboard/clipboard.service.ts</code>
+            <code>src/common/global-event/global-event-emmiter.interface.ts</code>
         </p>
 
-            <p class="comment">
-                <h3>Description</h3>
-            </p>
-            <p class="comment">
-                <p>Global property bag for copy paste</p>
-
-            </p>
 
 
-            <section>
-    <h3 id="index">Index</h3>
-    <table class="table table-sm table-bordered index-table">
-        <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <h6><b>Properties</b></h6>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <ul class="index-list">
-                            <li>
-                                    <span class="modifier">Private</span>
-                                <a href="#clipboard">clipboard</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="col-md-4">
-                        <h6><b>Methods</b></h6>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <ul class="index-list">
-                            <li>
-                                    <span class="modifier">Public</span>
-                                <a href="#clear">clear</a>
-                            </li>
-                            <li>
-                                    <span class="modifier">Public</span>
-                                <a href="#get">get</a>
-                            </li>
-                            <li>
-                                    <span class="modifier">Public</span>
-                                <a href="#isAvailable">isAvailable</a>
-                            </li>
-                            <li>
-                                    <span class="modifier">Public</span>
-                                <a href="#set">set</a>
-                            </li>
-                        </ul>
-                    </td>
-                </tr>
-
-
-
-
-
-        </tbody>
-    </table>
-</section>
-
+        <section>
+            <h3 id="index">Index</h3>
+            <table class="table table-sm table-bordered index-table">
+                <tbody>
+                    <tr>
+                        <td class="col-md-4">
+                            <h6><b>Methods</b></h6>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <ul class="index-list">
+                                <li>
+                                    <a href="#addEventListener">addEventListener</a>
+                                </li>
+                                <li>
+                                    <a href="#emit">emit</a>
+                                </li>
+                                <li>
+                                    <a href="#hasListeners">hasListeners</a>
+                                </li>
+                                <li>
+                                    <a href="#listeners">listeners</a>
+                                </li>
+                                <li>
+                                    <a href="#off">off</a>
+                                </li>
+                                <li>
+                                    <a href="#on">on</a>
+                                </li>
+                                <li>
+                                    <a href="#removeAllListeners">removeAllListeners</a>
+                                </li>
+                                <li>
+                                    <a href="#removeListener">removeListener</a>
+                                </li>
+                            </ul>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
 
             <section>
     
@@ -3365,66 +3348,25 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="clear"></a>
+                        <a name="addEventListener"></a>
                         <span class="name">
                             <b>
-                                <span class="modifier">Public</span>
-                            clear
+                            addEventListener
                             </b>
-                            <a href="#clear"><span class="fa fa-link"></span></a>
+                            <a href="#addEventListener"><span class="fa fa-link"></span></a>
                         </span>
                     </td>
                 </tr>
                 <tr>
                     <td class="col-md-4">
-                            <span class="modifier-icon fa fa-reset"></span>
-                        <code>clear()</code>
+<code>addEventListener(event: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, fn: (params: any[]) => void)</code>
                     </td>
                 </tr>
 
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/common/core/clipboard/clipboard.service.ts:30</a></div>
-                            </td>
-                        </tr>
-
-                <tr>
-                    <td class="col-md-4">
-
-                            <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                            </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="get"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Public</span>
-                            get
-                            </b>
-                            <a href="#get"><span class="fa fa-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                            <span class="modifier-icon fa fa-reset"></span>
-                        <code>get(key: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
-                    </td>
-                </tr>
-
-
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="18" class="link-to-prism">src/common/core/clipboard/clipboard.service.ts:18</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="13" class="link-to-prism">src/common/global-event/global-event-emmiter.interface.ts:13</a></div>
                             </td>
                         </tr>
 
@@ -3443,9 +3385,21 @@
                                         </thead>
                                         <tbody>
                                                 <tr>
-                                                        <td>key</td>
+                                                        <td>event</td>
                                                         <td>
                                                                     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                                <tr>
+                                                        <td>fn</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
                                                         </td>
                                                     
                                                     <td>
@@ -3460,7 +3414,7 @@
                             <div>
                             </div>
                             <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                <b>Returns : </b>    <code><a href="../interfaces/IGlobalEventEmmitter.html" target="_self" >IGlobalEventEmmitter</a></code>
 
                             </div>
                                 <div class="io-description">
@@ -3474,32 +3428,32 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="isAvailable"></a>
+                        <a name="emit"></a>
                         <span class="name">
                             <b>
-                                <span class="modifier">Public</span>
-                            isAvailable
+                            emit
                             </b>
-                            <a href="#isAvailable"><span class="fa fa-link"></span></a>
+                            <a href="#emit"><span class="fa fa-link"></span></a>
                         </span>
                     </td>
                 </tr>
                 <tr>
                     <td class="col-md-4">
-                            <span class="modifier-icon fa fa-reset"></span>
-                        <code>isAvailable(key: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+<code>emit(event: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, ...params: any[])</code>
                     </td>
                 </tr>
 
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="26" class="link-to-prism">src/common/core/clipboard/clipboard.service.ts:26</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/common/global-event/global-event-emmiter.interface.ts:51</a></div>
                             </td>
                         </tr>
 
                 <tr>
                     <td class="col-md-4">
+                            <div class="io-description"><p>Emits &#39;event&#39; with the given args</p>
+</div>
 
                             <div class="io-description">
                                     <b>Parameters :</b>
@@ -3509,11 +3463,12 @@
                                                 <td>Name</td>
                                                     <td>Type</td>
                                                 <td>Optional</td>
+                                                    <td>Description</td>
                                             </tr>
                                         </thead>
                                         <tbody>
                                                 <tr>
-                                                        <td>key</td>
+                                                        <td>event</td>
                                                         <td>
                                                                     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
                                                         </td>
@@ -3523,6 +3478,100 @@
                                                     </td>
                                                     
 
+                                                        <td>
+                                                                <code><p>The event that we want to emit</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>params</td>
+                                                        <td>
+                                                                    <code>any[]</code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/IGlobalEventEmmitter.html" target="_self" >IGlobalEventEmmitter</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <p>Emitter</p>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hasListeners"></a>
+                        <span class="name">
+                            <b>
+                            hasListeners
+                            </b>
+                            <a href="#hasListeners"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>hasListeners(event: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/common/global-event/global-event-emmiter.interface.ts:65</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Returns if we have listeners for a particular event</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>event</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The event that we want to check if we&#39;ve listeners for</p>
+</code>
+                                                        </td>
                                                 </tr>
                                         </tbody>
                                     </table>
@@ -3534,7 +3583,8 @@
 
                             </div>
                                 <div class="io-description">
-                                    
+                                    <p>True if we have listeners for this event, false otherwise</p>
+
                                 </div>
                     </td>
                 </tr>
@@ -3544,27 +3594,333 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-                        <a name="set"></a>
+                        <a name="listeners"></a>
                         <span class="name">
                             <b>
-                                <span class="modifier">Public</span>
-                            set
+                            listeners
                             </b>
-                            <a href="#set"><span class="fa fa-link"></span></a>
+                            <a href="#listeners"><span class="fa fa-link"></span></a>
                         </span>
                     </td>
                 </tr>
                 <tr>
                     <td class="col-md-4">
-                            <span class="modifier-icon fa fa-reset"></span>
-                        <code>set(key: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, value: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+<code>listeners(event: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
                     </td>
                 </tr>
 
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="22" class="link-to-prism">src/common/core/clipboard/clipboard.service.ts:22</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/common/global-event/global-event-emmiter.interface.ts:58</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Returns all the callbacks for a particular event</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>event</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The event that we&#39;re looking for the callbacks of</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code>[]</code>
+
+                            </div>
+                                <div class="io-description">
+                                    <p>An array of callback Functions, or an empty array if we don&#39;t have any</p>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="off"></a>
+                        <span class="name">
+                            <b>
+                            off
+                            </b>
+                            <a href="#off"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>off(event: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, fn?: () => void)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/common/global-event/global-event-emmiter.interface.ts:32</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Removes a listener for a particular type of event. This will either
+remove a specific listener, or all listeners for this type of event</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>event</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The event that we want to remove the listener of</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>fn</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            yes
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The function to remove, or null if we want to remove all functions</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/IGlobalEventEmmitter.html" target="_self" >IGlobalEventEmmitter</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <p>This Emitter</p>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="on"></a>
+                        <span class="name">
+                            <b>
+                            on
+                            </b>
+                            <a href="#on"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>on(event: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, fn: (params: any[]) => void)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/common/global-event/global-event-emmiter.interface.ts:23</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Adds a listener for a particular event that will be invoked
+a single time before being automatically removed</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>event</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The event that we&#39;re listening for</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>fn</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The function to call when we get the event. Parameters depend on
+the event in question</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/IGlobalEventEmmitter.html" target="_self" >IGlobalEventEmmitter</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <p>This Emitter</p>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="removeAllListeners"></a>
+                        <span class="name">
+                            <b>
+                            removeAllListeners
+                            </b>
+                            <a href="#removeAllListeners"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>removeAllListeners()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="43" class="link-to-prism">src/common/global-event/global-event-emmiter.interface.ts:43</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Removes all event listeners on this object</p>
+</div>
+
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="../interfaces/IGlobalEventEmmitter.html" target="_self" >IGlobalEventEmmitter</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <p>This Emitter</p>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="removeListener"></a>
+                        <span class="name">
+                            <b>
+                            removeListener
+                            </b>
+                            <a href="#removeListener"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>removeListener(event: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, fn?: () => void)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/common/global-event/global-event-emmiter.interface.ts:37</a></div>
                             </td>
                         </tr>
 
@@ -3583,7 +3939,7 @@
                                         </thead>
                                         <tbody>
                                                 <tr>
-                                                        <td>key</td>
+                                                        <td>event</td>
                                                         <td>
                                                                     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
                                                         </td>
@@ -3595,13 +3951,13 @@
 
                                                 </tr>
                                                 <tr>
-                                                        <td>value</td>
+                                                        <td>fn</td>
                                                         <td>
-                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/function" target="_blank" >function</a></code>
                                                         </td>
                                                     
                                                     <td>
-                                                            no
+                                                            yes
                                                     </td>
                                                     
 
@@ -3612,7 +3968,7 @@
                             <div>
                             </div>
                             <div class="io-description">
-                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+                                <b>Returns : </b>    <code><a href="../interfaces/IGlobalEventEmmitter.html" target="_self" >IGlobalEventEmmitter</a></code>
 
                             </div>
                                 <div class="io-description">
@@ -3624,84 +3980,72 @@
         </table>
 </section>
 
-            <section>
-    
-        <h3 id="inputs">
-            Properties
-        </h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="clipboard"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Private</span>
-                            clipboard
-                            </b>
-                            <a href="#clipboard"><span class="fa fa-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon fa fa-reset"></span><code>clipboard:     <code></code>
-</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Default value : </i><code>{} as { [key: string]: any }</code>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="16" class="link-to-prism">src/common/core/clipboard/clipboard.service.ts:16</a></div>
-                            </td>
-                        </tr>
-
-
-            </tbody>
-        </table>
-</section>
 
     </div>
 
 
     <div class="tab-pane fade tab-source-code" id="c-source">
-        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Injectable } from &#x27;@angular/core&#x27;;
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">export interface IGlobalEventEmmitter {
+    /**
+     * @see on( event, fn )
+     */
+    addEventListener(event: string, fn: (params: any[]) &#x3D;&gt; void): IGlobalEventEmmitter;
 
-/**
- * Global property bag for copy paste
- */
-@Injectable()
-export class DejaClipboardService {
-    private clipboard &#x3D; {} as { [key: string]: any };
+    /**
+     * Adds a listener for a particular event that will be invoked
+     * a single time before being automatically removed
+     * @param event The event that we&#x27;re listening for
+     * @param fn The function to call when we get the event. Parameters depend on
+     * the event in question
+     * @return This Emitter
+     */
+    on(event: string, fn: (params: any[]) &#x3D;&gt; void): IGlobalEventEmmitter;
 
-    public get(key: string) {
-        return this.clipboard[key];
-    }
+    /**
+     * Removes a listener for a particular type of event. This will either
+     * remove a specific listener, or all listeners for this type of event
+     * @param event The event that we want to remove the listener of
+     * @param fn The function to remove, or null if we want to remove all functions
+     * @return This Emitter
+     */
+    off(event: string, fn?: () &#x3D;&gt; void): IGlobalEventEmmitter;
 
-    public set(key: string, value: any) {
-        this.clipboard[key] &#x3D; value;
-    }
+    /**
+     * @see off( event, fn )
+     */
+    removeListener(event: string, fn?: () &#x3D;&gt; void): IGlobalEventEmmitter;
 
-    public isAvailable(key: string) {
-        return !!this.clipboard[key];
-    }
+    /**
+     * Removes all event listeners on this object
+     * @return This Emitter
+     */
+    removeAllListeners(): IGlobalEventEmmitter;
 
-    public clear() {
-        this.clipboard &#x3D; {};
-    }
+    /**
+     * Emits &#x27;event&#x27; with the given args
+     * @param event The event that we want to emit
+     * @param args Optional arguments to emit with the event
+     * @return Emitter
+     */
+    emit(event: string, ...params: any[]): IGlobalEventEmmitter;
+
+    /**
+     * Returns all the callbacks for a particular event
+     * @param event The event that we&#x27;re looking for the callbacks of
+     * @return An array of callback Functions, or an empty array if we don&#x27;t have any
+     */
+    listeners(event: string): Function[];
+
+    /**
+     * Returns if we have listeners for a particular event
+     * @param event The event that we want to check if we&#x27;ve listeners for
+     * @return True if we have listeners for this event, false otherwise
+     */
+    hasListeners(event: string): boolean;
 }
 </code></pre>
     </div>
-
 </div>
-
-
-
-
 
 
 
@@ -3732,7 +4076,7 @@ export class DejaClipboardService {
 
         <script>
             var COMPODOC_CURRENT_PAGE_DEPTH = 1;
-            var COMPODOC_CURRENT_PAGE_URL = 'DejaClipboardService.html';
+            var COMPODOC_CURRENT_PAGE_URL = 'IGlobalEventEmmitter.html';
         </script>
 
        <script src="../js/search/search.js"></script>
