@@ -34,7 +34,7 @@
 </g>
 <g id="clust8" class="cluster">
 <title>cluster_DejaTilesModule_exports</title>
-<polygon fill="none" stroke="#000000" points="467,-208 467,-260 962,-260 962,-208 467,-208"/>
+<polygon fill="none" stroke="#000000" points="469,-208 469,-260 964,-260 964,-208 469,-208"/>
 </g>
 <g id="clust10" class="cluster">
 <title>cluster_DejaTilesModule_providers</title>
@@ -49,110 +49,110 @@
 <!-- DejaTilesModule -->
 <g id="node5" class="node">
 <title>DejaTilesModule</title>
-<polygon fill="#8dd3c7" stroke="#000000" points="788.9692,-187 785.9692,-191 764.9692,-191 761.9692,-187 675.0308,-187 675.0308,-151 788.9692,-151 788.9692,-187"/>
-<text text-anchor="middle" x="732" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaTilesModule</text>
+<polygon fill="#8dd3c7" stroke="#000000" points="775.9692,-187 772.9692,-191 751.9692,-191 748.9692,-187 662.0308,-187 662.0308,-151 775.9692,-151 775.9692,-187"/>
+<text text-anchor="middle" x="719" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaTilesModule</text>
 </g>
 <!-- DejaTileComponent&#45;&gt;DejaTilesModule -->
 <g id="edge1" class="edge">
 <title>DejaTileComponent&#45;&gt;DejaTilesModule</title>
-<path fill="none" stroke="#000000" d="M1235,-122.1289C1235,-142.5724 1235,-173 1235,-173 1235,-173 799.2108,-173 799.2108,-173"/>
-<polygon fill="#000000" stroke="#000000" points="799.2108,-169.5001 789.2108,-173 799.2107,-176.5001 799.2108,-169.5001"/>
-</g>
-<!-- DejaTilesComponent -->
-<g id="node2" class="node">
-<title>DejaTilesComponent</title>
-<polygon fill="#ffffb3" stroke="#000000" points="1151.752,-122 1016.248,-122 1016.248,-86 1151.752,-86 1151.752,-122"/>
-<text text-anchor="middle" x="1084" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaTilesComponent</text>
-</g>
-<!-- DejaTilesComponent&#45;&gt;DejaTilesModule -->
-<g id="edge2" class="edge">
-<title>DejaTilesComponent&#45;&gt;DejaTilesModule</title>
-<path fill="none" stroke="#000000" d="M1084,-122.2667C1084,-140.5552 1084,-166 1084,-166 1084,-166 799.3383,-166 799.3383,-166"/>
-<polygon fill="#000000" stroke="#000000" points="799.3383,-162.5001 789.3383,-166 799.3383,-169.5001 799.3383,-162.5001"/>
+<path fill="none" stroke="#000000" d="M1235,-122.1289C1235,-142.5724 1235,-173 1235,-173 1235,-173 786.1926,-173 786.1926,-173"/>
+<polygon fill="#000000" stroke="#000000" points="786.1926,-169.5001 776.1926,-173 786.1925,-176.5001 786.1926,-169.5001"/>
 </g>
 <!-- DejaTileGroupComponent -->
-<g id="node3" class="node">
+<g id="node2" class="node">
 <title>DejaTileGroupComponent</title>
-<polygon fill="#ffffb3" stroke="#000000" points="998.0744,-122 831.9256,-122 831.9256,-86 998.0744,-86 998.0744,-122"/>
-<text text-anchor="middle" x="915" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaTileGroupComponent</text>
+<polygon fill="#ffffb3" stroke="#000000" points="1152.0744,-122 985.9256,-122 985.9256,-86 1152.0744,-86 1152.0744,-122"/>
+<text text-anchor="middle" x="1069" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaTileGroupComponent</text>
 </g>
 <!-- DejaTileGroupComponent&#45;&gt;DejaTilesModule -->
-<g id="edge3" class="edge">
+<g id="edge2" class="edge">
 <title>DejaTileGroupComponent&#45;&gt;DejaTilesModule</title>
-<path fill="none" stroke="#000000" d="M892.9332,-122.0091C892.9332,-138.0494 892.9332,-159 892.9332,-159 892.9332,-159 799.1922,-159 799.1922,-159"/>
-<polygon fill="#000000" stroke="#000000" points="799.1922,-155.5001 789.1922,-159 799.1921,-162.5001 799.1922,-155.5001"/>
+<path fill="none" stroke="#000000" d="M1069,-122.2667C1069,-140.5552 1069,-166 1069,-166 1069,-166 786.0125,-166 786.0125,-166"/>
+<polygon fill="#000000" stroke="#000000" points="786.0125,-162.5001 776.0125,-166 786.0125,-169.5001 786.0125,-162.5001"/>
 </g>
 <!-- DejaTilePositionDirective -->
-<g id="node4" class="node">
+<g id="node3" class="node">
 <title>DejaTilePositionDirective</title>
-<polygon fill="#ffffb3" stroke="#000000" points="813.4566,-122 650.5434,-122 650.5434,-86 813.4566,-86 813.4566,-122"/>
-<text text-anchor="middle" x="732" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaTilePositionDirective</text>
+<polygon fill="#ffffb3" stroke="#000000" points="967.4566,-122 804.5434,-122 804.5434,-86 967.4566,-86 967.4566,-122"/>
+<text text-anchor="middle" x="886" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaTilePositionDirective</text>
 </g>
 <!-- DejaTilePositionDirective&#45;&gt;DejaTilesModule -->
-<g id="edge4" class="edge">
+<g id="edge3" class="edge">
 <title>DejaTilePositionDirective&#45;&gt;DejaTilesModule</title>
-<path fill="none" stroke="#000000" d="M732,-122.1061C732,-122.1061 732,-140.991 732,-140.991"/>
-<polygon fill="#000000" stroke="#000000" points="728.5001,-140.9909 732,-150.991 735.5001,-140.991 728.5001,-140.9909"/>
+<path fill="none" stroke="#000000" d="M813.3091,-122.0091C813.3091,-138.0494 813.3091,-159 813.3091,-159 813.3091,-159 786.0356,-159 786.0356,-159"/>
+<polygon fill="#000000" stroke="#000000" points="786.0357,-155.5001 776.0356,-159 786.0356,-162.5001 786.0357,-155.5001"/>
+</g>
+<!-- DejaTilesComponent -->
+<g id="node4" class="node">
+<title>DejaTilesComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="786.752,-122 651.248,-122 651.248,-86 786.752,-86 786.752,-122"/>
+<text text-anchor="middle" x="719" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaTilesComponent</text>
+</g>
+<!-- DejaTilesComponent&#45;&gt;DejaTilesModule -->
+<g id="edge4" class="edge">
+<title>DejaTilesComponent&#45;&gt;DejaTilesModule</title>
+<path fill="none" stroke="#000000" d="M719,-122.1061C719,-122.1061 719,-140.991 719,-140.991"/>
+<polygon fill="#000000" stroke="#000000" points="715.5001,-140.9909 719,-150.991 722.5001,-140.991 715.5001,-140.9909"/>
 </g>
 <!-- DejaTileComponent  -->
 <g id="node8" class="node">
 <title>DejaTileComponent </title>
-<polygon fill="#fb8072" stroke="#000000" points="953.8073,-252 820.1927,-252 820.1927,-216 953.8073,-216 953.8073,-252"/>
-<text text-anchor="middle" x="887" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaTileComponent </text>
+<polygon fill="#fb8072" stroke="#000000" points="955.8073,-252 822.1927,-252 822.1927,-216 955.8073,-216 955.8073,-252"/>
+<text text-anchor="middle" x="889" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaTileComponent </text>
 </g>
 <!-- DejaTilesModule&#45;&gt;DejaTileComponent  -->
 <g id="edge7" class="edge">
 <title>DejaTilesModule&#45;&gt;DejaTileComponent </title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M789.1365,-180C808.8263,-180 826.0296,-180 826.0296,-180 826.0296,-180 826.0296,-205.7181 826.0296,-205.7181"/>
-<polygon fill="#000000" stroke="#000000" points="822.5297,-205.718 826.0296,-215.7181 829.5297,-205.7181 822.5297,-205.718"/>
-</g>
-<!-- DejaTilesComponent  -->
-<g id="node9" class="node">
-<title>DejaTilesComponent </title>
-<polygon fill="#fb8072" stroke="#000000" points="801.752,-252 662.248,-252 662.248,-216 801.752,-216 801.752,-252"/>
-<text text-anchor="middle" x="732" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaTilesComponent </text>
-</g>
-<!-- DejaTilesModule&#45;&gt;DejaTilesComponent  -->
-<g id="edge8" class="edge">
-<title>DejaTilesModule&#45;&gt;DejaTilesComponent </title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M732,-187.1061C732,-187.1061 732,-205.991 732,-205.991"/>
-<polygon fill="#000000" stroke="#000000" points="728.5001,-205.9909 732,-215.991 735.5001,-205.991 728.5001,-205.9909"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M776.0805,-180C825.4672,-180 889,-180 889,-180 889,-180 889,-205.7181 889,-205.7181"/>
+<polygon fill="#000000" stroke="#000000" points="885.5001,-205.718 889,-215.7181 892.5001,-205.7181 885.5001,-205.718"/>
 </g>
 <!-- DejaTileGroupComponent  -->
-<g id="node10" class="node">
+<g id="node9" class="node">
 <title>DejaTileGroupComponent </title>
-<polygon fill="#fb8072" stroke="#000000" points="644.5749,-252 475.4251,-252 475.4251,-216 644.5749,-216 644.5749,-252"/>
-<text text-anchor="middle" x="560" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaTileGroupComponent </text>
+<polygon fill="#fb8072" stroke="#000000" points="803.5749,-252 634.4251,-252 634.4251,-216 803.5749,-216 803.5749,-252"/>
+<text text-anchor="middle" x="719" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaTileGroupComponent </text>
 </g>
 <!-- DejaTilesModule&#45;&gt;DejaTileGroupComponent  -->
-<g id="edge9" class="edge">
+<g id="edge8" class="edge">
 <title>DejaTilesModule&#45;&gt;DejaTileGroupComponent </title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M674.8303,-180C654.293,-180 636.1009,-180 636.1009,-180 636.1009,-180 636.1009,-205.7181 636.1009,-205.7181"/>
-<polygon fill="#000000" stroke="#000000" points="632.6009,-205.718 636.1009,-215.7181 639.6009,-205.7181 632.6009,-205.718"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M719,-187.1061C719,-187.1061 719,-205.991 719,-205.991"/>
+<polygon fill="#000000" stroke="#000000" points="715.5001,-205.9909 719,-215.991 722.5001,-205.991 715.5001,-205.9909"/>
 </g>
-<!-- DejaMouseDragDropModule -->
-<g id="node6" class="node">
-<title>DejaMouseDragDropModule</title>
-<polygon fill="#8dd3c7" stroke="#000000" points="627.3291,-122 624.3291,-126 603.3291,-126 600.3291,-122 446.6709,-122 446.6709,-86 627.3291,-86 627.3291,-122"/>
-<text text-anchor="middle" x="537" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaMouseDragDropModule</text>
+<!-- DejaTilesComponent  -->
+<g id="node10" class="node">
+<title>DejaTilesComponent </title>
+<polygon fill="#fb8072" stroke="#000000" points="616.752,-252 477.248,-252 477.248,-216 616.752,-216 616.752,-252"/>
+<text text-anchor="middle" x="547" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaTilesComponent </text>
 </g>
-<!-- DejaMouseDragDropModule&#45;&gt;DejaTilesModule -->
-<g id="edge5" class="edge">
-<title>DejaMouseDragDropModule&#45;&gt;DejaTilesModule</title>
-<path fill="none" stroke="#000000" d="M551.3137,-122.0091C551.3137,-138.0494 551.3137,-159 551.3137,-159 551.3137,-159 664.8297,-159 664.8297,-159"/>
-<polygon fill="#000000" stroke="#000000" points="664.8297,-162.5001 674.8297,-159 664.8297,-155.5001 664.8297,-162.5001"/>
+<!-- DejaTilesModule&#45;&gt;DejaTilesComponent  -->
+<g id="edge9" class="edge">
+<title>DejaTilesModule&#45;&gt;DejaTilesComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M661.87,-180C614.7662,-180 555.6555,-180 555.6555,-180 555.6555,-180 555.6555,-205.7181 555.6555,-205.7181"/>
+<polygon fill="#000000" stroke="#000000" points="552.1556,-205.718 555.6555,-215.7181 559.1556,-205.7181 552.1556,-205.718"/>
 </g>
 <!-- DejaEditableModule -->
-<g id="node7" class="node">
+<g id="node6" class="node">
 <title>DejaEditableModule</title>
-<polygon fill="#8dd3c7" stroke="#000000" points="428.1303,-122 425.1303,-126 404.1303,-126 401.1303,-122 295.8697,-122 295.8697,-86 428.1303,-86 428.1303,-122"/>
-<text text-anchor="middle" x="362" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaEditableModule</text>
+<polygon fill="#8dd3c7" stroke="#000000" points="627.1303,-122 624.1303,-126 603.1303,-126 600.1303,-122 494.8697,-122 494.8697,-86 627.1303,-86 627.1303,-122"/>
+<text text-anchor="middle" x="561" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaEditableModule</text>
 </g>
 <!-- DejaEditableModule&#45;&gt;DejaTilesModule -->
-<g id="edge6" class="edge">
+<g id="edge5" class="edge">
 <title>DejaEditableModule&#45;&gt;DejaTilesModule</title>
-<path fill="none" stroke="#000000" d="M362,-122.2667C362,-140.5552 362,-166 362,-166 362,-166 664.9984,-166 664.9984,-166"/>
-<polygon fill="#000000" stroke="#000000" points="664.9984,-169.5001 674.9984,-166 664.9983,-162.5001 664.9984,-169.5001"/>
+<path fill="none" stroke="#000000" d="M621.9704,-122.0091C621.9704,-138.0494 621.9704,-159 621.9704,-159 621.9704,-159 651.9962,-159 651.9962,-159"/>
+<polygon fill="#000000" stroke="#000000" points="651.9963,-162.5001 661.9962,-159 651.9962,-155.5001 651.9963,-162.5001"/>
+</g>
+<!-- DejaMouseDragDropModule -->
+<g id="node7" class="node">
+<title>DejaMouseDragDropModule</title>
+<polygon fill="#8dd3c7" stroke="#000000" points="476.3291,-122 473.3291,-126 452.3291,-126 449.3291,-122 295.6709,-122 295.6709,-86 476.3291,-86 476.3291,-122"/>
+<text text-anchor="middle" x="386" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaMouseDragDropModule</text>
+</g>
+<!-- DejaMouseDragDropModule&#45;&gt;DejaTilesModule -->
+<g id="edge6" class="edge">
+<title>DejaMouseDragDropModule&#45;&gt;DejaTilesModule</title>
+<path fill="none" stroke="#000000" d="M386,-122.2667C386,-140.5552 386,-166 386,-166 386,-166 651.7553,-166 651.7553,-166"/>
+<polygon fill="#000000" stroke="#000000" points="651.7553,-169.5001 661.7553,-166 651.7552,-162.5001 651.7553,-169.5001"/>
 </g>
 <!-- DejaMouseDragDropService -->
 <g id="node11" class="node">
@@ -163,8 +163,8 @@
 <!-- DejaMouseDragDropService&#45;&gt;DejaTilesModule -->
 <g id="edge10" class="edge">
 <title>DejaMouseDragDropService&#45;&gt;DejaTilesModule</title>
-<path fill="none" stroke="#000000" d="M148,-122.1289C148,-142.5724 148,-173 148,-173 148,-173 664.9403,-173 664.9403,-173"/>
-<polygon fill="#000000" stroke="#000000" points="664.9403,-176.5001 674.9403,-173 664.9403,-169.5001 664.9403,-176.5001"/>
+<path fill="none" stroke="#000000" d="M148,-122.1289C148,-142.5724 148,-173 148,-173 148,-173 651.8996,-173 651.8996,-173"/>
+<polygon fill="#000000" stroke="#000000" points="651.8997,-176.5001 661.8996,-173 651.8996,-169.5001 651.8997,-176.5001"/>
 </g>
 </g>
 </svg>

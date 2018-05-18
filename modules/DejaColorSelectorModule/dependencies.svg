@@ -32,59 +32,59 @@
 <title>cluster_DejaColorSelectorModule_exports</title>
 <polygon fill="none" stroke="#000000" points="54,-208 54,-260 442,-260 442,-208 54,-208"/>
 </g>
-<!-- DejaColorSelectorComponent -->
+<!-- DejaColorFabComponent -->
 <g id="node1" class="node">
-<title>DejaColorSelectorComponent</title>
-<polygon fill="#ffffb3" stroke="#000000" points="429.5154,-122 244.4846,-122 244.4846,-86 429.5154,-86 429.5154,-122"/>
-<text text-anchor="middle" x="337" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaColorSelectorComponent</text>
+<title>DejaColorFabComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="430.1442,-122 269.8558,-122 269.8558,-86 430.1442,-86 430.1442,-122"/>
+<text text-anchor="middle" x="350" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaColorFabComponent</text>
 </g>
 <!-- DejaColorSelectorModule -->
 <g id="node3" class="node">
 <title>DejaColorSelectorModule</title>
-<polygon fill="#8dd3c7" stroke="#000000" points="228.7324,-187 225.7324,-191 204.7324,-191 201.7324,-187 65.2676,-187 65.2676,-151 228.7324,-151 228.7324,-187"/>
-<text text-anchor="middle" x="147" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaColorSelectorModule</text>
-</g>
-<!-- DejaColorSelectorComponent&#45;&gt;DejaColorSelectorModule -->
-<g id="edge1" class="edge">
-<title>DejaColorSelectorComponent&#45;&gt;DejaColorSelectorModule</title>
-<path fill="none" stroke="#000000" d="M368.0025,-122.0225C368.0025,-139.3734 368.0025,-163 368.0025,-163 368.0025,-163 238.9791,-163 238.9791,-163"/>
-<polygon fill="#000000" stroke="#000000" points="238.9791,-159.5001 228.9791,-163 238.9791,-166.5001 238.9791,-159.5001"/>
-</g>
-<!-- DejaColorFabComponent -->
-<g id="node2" class="node">
-<title>DejaColorFabComponent</title>
-<polygon fill="#ffffb3" stroke="#000000" points="226.1442,-122 65.8558,-122 65.8558,-86 226.1442,-86 226.1442,-122"/>
-<text text-anchor="middle" x="146" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaColorFabComponent</text>
+<polygon fill="#8dd3c7" stroke="#000000" points="241.7324,-187 238.7324,-191 217.7324,-191 214.7324,-187 78.2676,-187 78.2676,-151 241.7324,-151 241.7324,-187"/>
+<text text-anchor="middle" x="160" y="-164.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaColorSelectorModule</text>
 </g>
 <!-- DejaColorFabComponent&#45;&gt;DejaColorSelectorModule -->
-<g id="edge2" class="edge">
+<g id="edge1" class="edge">
 <title>DejaColorFabComponent&#45;&gt;DejaColorSelectorModule</title>
-<path fill="none" stroke="#000000" d="M146,-122.1061C146,-122.1061 146,-140.991 146,-140.991"/>
-<polygon fill="#000000" stroke="#000000" points="142.5001,-140.9909 146,-150.991 149.5001,-140.991 142.5001,-140.9909"/>
+<path fill="none" stroke="#000000" d="M376.8573,-122.0225C376.8573,-139.3734 376.8573,-163 376.8573,-163 376.8573,-163 251.9844,-163 251.9844,-163"/>
+<polygon fill="#000000" stroke="#000000" points="251.9845,-159.5001 241.9844,-163 251.9844,-166.5001 251.9845,-159.5001"/>
 </g>
-<!-- DejaColorSelectorComponent  -->
-<g id="node4" class="node">
-<title>DejaColorSelectorComponent </title>
-<polygon fill="#fb8072" stroke="#000000" points="433.5148,-252 244.4852,-252 244.4852,-216 433.5148,-216 433.5148,-252"/>
-<text text-anchor="middle" x="339" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaColorSelectorComponent </text>
+<!-- DejaColorSelectorComponent -->
+<g id="node2" class="node">
+<title>DejaColorSelectorComponent</title>
+<polygon fill="#ffffb3" stroke="#000000" points="251.5154,-122 66.4846,-122 66.4846,-86 251.5154,-86 251.5154,-122"/>
+<text text-anchor="middle" x="159" y="-99.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaColorSelectorComponent</text>
 </g>
-<!-- DejaColorSelectorModule&#45;&gt;DejaColorSelectorComponent  -->
-<g id="edge3" class="edge">
-<title>DejaColorSelectorModule&#45;&gt;DejaColorSelectorComponent </title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M228.9562,-175C267.9756,-175 306.2475,-175 306.2475,-175 306.2475,-175 306.2475,-205.9775 306.2475,-205.9775"/>
-<polygon fill="#000000" stroke="#000000" points="302.7476,-205.9774 306.2475,-215.9775 309.7476,-205.9775 302.7476,-205.9774"/>
+<!-- DejaColorSelectorComponent&#45;&gt;DejaColorSelectorModule -->
+<g id="edge2" class="edge">
+<title>DejaColorSelectorComponent&#45;&gt;DejaColorSelectorModule</title>
+<path fill="none" stroke="#000000" d="M160,-122.1061C160,-122.1061 160,-140.991 160,-140.991"/>
+<polygon fill="#000000" stroke="#000000" points="156.5001,-140.9909 160,-150.991 163.5001,-140.991 156.5001,-140.9909"/>
 </g>
 <!-- DejaColorFabComponent  -->
-<g id="node5" class="node">
+<g id="node4" class="node">
 <title>DejaColorFabComponent </title>
-<polygon fill="#fb8072" stroke="#000000" points="226.1439,-252 61.8561,-252 61.8561,-216 226.1439,-216 226.1439,-252"/>
-<text text-anchor="middle" x="144" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaColorFabComponent </text>
+<polygon fill="#fb8072" stroke="#000000" points="434.1439,-252 269.8561,-252 269.8561,-216 434.1439,-216 434.1439,-252"/>
+<text text-anchor="middle" x="352" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaColorFabComponent </text>
 </g>
 <!-- DejaColorSelectorModule&#45;&gt;DejaColorFabComponent  -->
-<g id="edge4" class="edge">
+<g id="edge3" class="edge">
 <title>DejaColorSelectorModule&#45;&gt;DejaColorFabComponent </title>
-<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M145.6029,-187.1061C145.6029,-187.1061 145.6029,-205.991 145.6029,-205.991"/>
-<polygon fill="#000000" stroke="#000000" points="142.103,-205.9909 145.6029,-215.991 149.103,-205.991 142.103,-205.9909"/>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M242.175,-175C282.863,-175 323.3927,-175 323.3927,-175 323.3927,-175 323.3927,-205.9775 323.3927,-205.9775"/>
+<polygon fill="#000000" stroke="#000000" points="319.8928,-205.9774 323.3927,-215.9775 326.8928,-205.9775 319.8928,-205.9774"/>
+</g>
+<!-- DejaColorSelectorComponent  -->
+<g id="node5" class="node">
+<title>DejaColorSelectorComponent </title>
+<polygon fill="#fb8072" stroke="#000000" points="251.5148,-252 62.4852,-252 62.4852,-216 251.5148,-216 251.5148,-252"/>
+<text text-anchor="middle" x="157" y="-229.8" font-family="Times,serif" font-size="14.00" fill="#000000">DejaColorSelectorComponent </text>
+</g>
+<!-- DejaColorSelectorModule&#45;&gt;DejaColorSelectorComponent  -->
+<g id="edge4" class="edge">
+<title>DejaColorSelectorModule&#45;&gt;DejaColorSelectorComponent </title>
+<path fill="none" stroke="#000000" stroke-dasharray="5,2" d="M160,-187.1061C160,-187.1061 160,-205.991 160,-205.991"/>
+<polygon fill="#000000" stroke="#000000" points="156.5001,-205.9909 160,-215.991 163.5001,-205.991 156.5001,-205.9909"/>
 </g>
 </g>
 </svg>
