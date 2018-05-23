@@ -3591,7 +3591,7 @@ export class DejaColorSelectorComponent implements ControlValueAccessor, OnDestr
             .distinctUntilChanged()
             .do((colorIndex) &#x3D;&gt; {
                 if (this._colorFabs) {
-                    this._colorFabs.forEach((colorFab, index) &#x3D;&gt; colorFab.active$.next(index &#x3D;&#x3D;&#x3D; colorIndex));
+                    this._colorFabs.forEach((colorFab, index) &#x3D;&gt; colorFab.active &#x3D; index &#x3D;&#x3D;&#x3D; colorIndex);
                 }
             })
             .debounceTime(100)
@@ -3624,7 +3624,7 @@ export class DejaColorSelectorComponent implements ControlValueAccessor, OnDestr
             .takeWhile(() &#x3D;&gt; this.isAlive)
             .subscribe((subColorIndex) &#x3D;&gt; {
                 if (this._subColorFabs) {
-                    this._subColorFabs.forEach((colorFab, index) &#x3D;&gt; colorFab.active$.next(index &#x3D;&#x3D;&#x3D; subColorIndex));
+                    this._subColorFabs.forEach((colorFab, index) &#x3D;&gt; colorFab.active &#x3D; index &#x3D;&#x3D;&#x3D; subColorIndex);
                 }
             });
 
@@ -3727,6 +3727,7 @@ export class DejaColorSelectorComponent implements ControlValueAccessor, OnDestr
     // set accessor including call the onchange callback
     public set value(value: Color) {
         if (!Color.equals(value, this._value)) {
+            this._value &#x3D; value;
             this.writeValue(value);
             this.onChangeCallback(value);
         }

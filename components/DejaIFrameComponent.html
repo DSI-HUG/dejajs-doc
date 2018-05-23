@@ -3539,6 +3539,16 @@
                     </td>
                 </tr>
 
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>sourceUrl()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/component/iframe/iframe.component.ts:33</a></div>
+                                </td>
+                            </tr>
 
                 <tr>
                     <td class="col-md-4">
@@ -3616,6 +3626,11 @@ export class DejaIFrameComponent {
         } else {
             iframeElement.removeAttribute(&#x27;src&#x27;);
         }
+    }
+
+    public get sourceUrl() {
+        const iframeElement &#x3D; this.iframe.nativeElement as HTMLElement;
+        return iframeElement.hasAttribute(&#x27;src&#x27;) ? iframeElement.getAttribute(&#x27;src&#x27;) : undefined;
     }
 }
 </code></pre>

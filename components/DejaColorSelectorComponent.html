@@ -3862,7 +3862,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="328" class="link-to-prism">src/component/color-selector/color-selector.component.ts:328</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="329" class="link-to-prism">src/component/color-selector/color-selector.component.ts:329</a></div>
                             </td>
                         </tr>
 
@@ -3902,7 +3902,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="314" class="link-to-prism">src/component/color-selector/color-selector.component.ts:314</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="315" class="link-to-prism">src/component/color-selector/color-selector.component.ts:315</a></div>
                             </td>
                         </tr>
 
@@ -3973,7 +3973,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="319" class="link-to-prism">src/component/color-selector/color-selector.component.ts:319</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="320" class="link-to-prism">src/component/color-selector/color-selector.component.ts:320</a></div>
                             </td>
                         </tr>
 
@@ -4084,7 +4084,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="323" class="link-to-prism">src/component/color-selector/color-selector.component.ts:323</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="324" class="link-to-prism">src/component/color-selector/color-selector.component.ts:324</a></div>
                             </td>
                         </tr>
 
@@ -4155,7 +4155,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="309" class="link-to-prism">src/component/color-selector/color-selector.component.ts:309</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="310" class="link-to-prism">src/component/color-selector/color-selector.component.ts:310</a></div>
                             </td>
                         </tr>
 
@@ -5326,7 +5326,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="304" class="link-to-prism">src/component/color-selector/color-selector.component.ts:304</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="305" class="link-to-prism">src/component/color-selector/color-selector.component.ts:305</a></div>
                                 </td>
                             </tr>
 
@@ -5533,7 +5533,7 @@ export class DejaColorSelectorComponent implements ControlValueAccessor, OnDestr
             .distinctUntilChanged()
             .do((colorIndex) &#x3D;&gt; {
                 if (this._colorFabs) {
-                    this._colorFabs.forEach((colorFab, index) &#x3D;&gt; colorFab.active$.next(index &#x3D;&#x3D;&#x3D; colorIndex));
+                    this._colorFabs.forEach((colorFab, index) &#x3D;&gt; colorFab.active &#x3D; index &#x3D;&#x3D;&#x3D; colorIndex);
                 }
             })
             .debounceTime(100)
@@ -5566,7 +5566,7 @@ export class DejaColorSelectorComponent implements ControlValueAccessor, OnDestr
             .takeWhile(() &#x3D;&gt; this.isAlive)
             .subscribe((subColorIndex) &#x3D;&gt; {
                 if (this._subColorFabs) {
-                    this._subColorFabs.forEach((colorFab, index) &#x3D;&gt; colorFab.active$.next(index &#x3D;&#x3D;&#x3D; subColorIndex));
+                    this._subColorFabs.forEach((colorFab, index) &#x3D;&gt; colorFab.active &#x3D; index &#x3D;&#x3D;&#x3D; subColorIndex);
                 }
             });
 
@@ -5669,6 +5669,7 @@ export class DejaColorSelectorComponent implements ControlValueAccessor, OnDestr
     // set accessor including call the onchange callback
     public set value(value: Color) {
         if (!Color.equals(value, this._value)) {
+            this._value &#x3D; value;
             this.writeValue(value);
             this.onChangeCallback(value);
         }

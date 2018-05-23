@@ -3416,7 +3416,7 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(_color: <a href="../classes/Color.html">Color</a>, _disabled: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>, _active: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+<code>constructor(_color: <a href="../classes/Color.html">Color</a>, _disabled: , _active: )</code>
                     </td>
                 </tr>
                         <tr>
@@ -3454,7 +3454,6 @@
                                                         <td>_disabled</td>
                                                   
                                                         <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -3466,7 +3465,6 @@
                                                         <td>_active</td>
                                                   
                                                         <td>
-                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -3822,14 +3820,14 @@ export class DejaColorFab {
     public active$: Subject&lt;boolean&gt;;
     public disabled$: Subject&lt;boolean&gt;;
 
-    constructor(private _color: Color, private _disabled: boolean, private _active: boolean) {
+    constructor(private _color: Color, private _disabled &#x3D; false, private _active &#x3D; false) {
         this.color$ &#x3D; new BehaviorSubject&lt;Color&gt;(_color);
         this.disabled$ &#x3D; new BehaviorSubject&lt;boolean&gt;(_disabled);
         this.active$ &#x3D; new BehaviorSubject&lt;boolean&gt;(_active);
     }
 
     public set color(value: Color) {
-        this.color$.next(value);
+        this.color$.next(this._color &#x3D; value);
     }
 
     public get color() {
@@ -3837,7 +3835,7 @@ export class DejaColorFab {
     }
 
     public set disabled(value: boolean) {
-        this.disabled$.next(value);
+        this.disabled$.next(this._disabled &#x3D; value);
     }
 
     public get disabled() {
@@ -3845,7 +3843,7 @@ export class DejaColorFab {
     }
 
     public set active(value: boolean) {
-        this.active$.next(value);
+        this.active$.next(this._active &#x3D; value);
     }
 
     public get active() {
