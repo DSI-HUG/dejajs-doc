@@ -5505,7 +5505,7 @@ est suceptible de contenir beaucoup d&#39;éléments.</p>
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="1180" class="link-to-prism">src/component/tree-list/tree-list.component.ts:1180</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="1184" class="link-to-prism">src/component/tree-list/tree-list.component.ts:1184</a></div>
                             </td>
                         </tr>
 
@@ -5587,7 +5587,7 @@ est suceptible de contenir beaucoup d&#39;éléments.</p>
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="1103" class="link-to-prism">src/component/tree-list/tree-list.component.ts:1103</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="1107" class="link-to-prism">src/component/tree-list/tree-list.component.ts:1107</a></div>
                             </td>
                         </tr>
 
@@ -5731,7 +5731,7 @@ est suceptible de contenir beaucoup d&#39;éléments.</p>
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="1029" class="link-to-prism">src/component/tree-list/tree-list.component.ts:1029</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="1033" class="link-to-prism">src/component/tree-list/tree-list.component.ts:1033</a></div>
                             </td>
                         </tr>
 
@@ -5802,7 +5802,7 @@ est suceptible de contenir beaucoup d&#39;éléments.</p>
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="1056" class="link-to-prism">src/component/tree-list/tree-list.component.ts:1056</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="1060" class="link-to-prism">src/component/tree-list/tree-list.component.ts:1060</a></div>
                             </td>
                         </tr>
 
@@ -5842,7 +5842,7 @@ est suceptible de contenir beaucoup d&#39;éléments.</p>
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="1185" class="link-to-prism">src/component/tree-list/tree-list.component.ts:1185</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="1189" class="link-to-prism">src/component/tree-list/tree-list.component.ts:1189</a></div>
                             </td>
                         </tr>
 
@@ -5953,7 +5953,7 @@ est suceptible de contenir beaucoup d&#39;éléments.</p>
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="930" class="link-to-prism">src/component/tree-list/tree-list.component.ts:930</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="934" class="link-to-prism">src/component/tree-list/tree-list.component.ts:934</a></div>
                             </td>
                         </tr>
 
@@ -6104,7 +6104,7 @@ est suceptible de contenir beaucoup d&#39;éléments.</p>
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="1117" class="link-to-prism">src/component/tree-list/tree-list.component.ts:1117</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="1121" class="link-to-prism">src/component/tree-list/tree-list.component.ts:1121</a></div>
                             </td>
                         </tr>
 
@@ -6286,7 +6286,7 @@ est suceptible de contenir beaucoup d&#39;éléments.</p>
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="1158" class="link-to-prism">src/component/tree-list/tree-list.component.ts:1158</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="1162" class="link-to-prism">src/component/tree-list/tree-list.component.ts:1162</a></div>
                             </td>
                         </tr>
 
@@ -6586,7 +6586,7 @@ est suceptible de contenir beaucoup d&#39;éléments.</p>
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="1168" class="link-to-prism">src/component/tree-list/tree-list.component.ts:1168</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="1172" class="link-to-prism">src/component/tree-list/tree-list.component.ts:1172</a></div>
                             </td>
                         </tr>
 
@@ -17529,6 +17529,10 @@ export class DejaTreeListComponent extends ItemListBase implements AfterViewInit
             })
             .switchMap((event) &#x3D;&gt; this.ensureListCaches$().map(() &#x3D;&gt; event))
             .map((event: KeyboardEvent) &#x3D;&gt; {
+                if (!this.rowsCount) {
+                    return true;
+                }
+
                 // Set current item from index for keyboard features only
                 const setCurrentIndex &#x3D; (index: number) &#x3D;&gt; {
                     this.currentItemIndex &#x3D; index;
@@ -17932,7 +17936,7 @@ export class DejaTreeListComponent extends ItemListBase implements AfterViewInit
                 output &#x3D; models;
             }
         } else {
-            const model &#x3D; this.selectedItems[0] &amp;&amp; this.selectedItems[0].model;
+            const model &#x3D; this.selectedModel;
 
             outputEmitter &#x3D; {
                 item: this.selectedItems[0],

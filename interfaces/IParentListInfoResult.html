@@ -4447,6 +4447,12 @@ export class ItemListService {
         ignoreCache &#x3D; ignoreCache || queryChanged || !this.items || !this.items.length;
         this._lastQuery &#x3D; query;
 
+        const escapeChars &#x3D; (text: string) &#x3D;&gt; {
+            const specialChars &#x3D; [&#x27;\\&#x27;, &#x27;/&#x27;, &#x27;|&#x27;, &#x27;&amp;&#x27;, &#x27;;&#x27;, &#x27;$&#x27;, &#x27;%&#x27;, &#x27;@&#x27;, &#x27;&quot;&#x27;, &#x27;&lt;&#x27;, &#x27;&gt;&#x27;, &#x27;(&#x27;, &#x27;)&#x27;, &#x27;+&#x27;];
+            specialChars.forEach((c) &#x3D;&gt; text &#x3D; text.replace(c, &#x60;\\${c}&#x60;));
+            return text;
+        };
+
         // Check regexp validity
         // regExp.test(this.getTextValue(item));
         let regExp: RegExp;
@@ -4454,9 +4460,10 @@ export class ItemListService {
             if (typeof query &#x3D;&#x3D;&#x3D; &#x27;string&#x27;) {
                 try {
                     query &#x3D; Diacritics.remove(query);
-                    regExp &#x3D; new RegExp(query, &#x27;i&#x27;);
+                    const escapedQuery &#x3D; escapeChars(query);
+                    regExp &#x3D; new RegExp(escapedQuery, &#x27;i&#x27;);
                 } catch (exc) {
-                    throw new Error(&#x27;Invalid search parameters&#x27;);
+                    console.log(&#x27;Invalid search parameters&#x27;);
                 }
             } else {
                 regExp &#x3D; query as RegExp;
