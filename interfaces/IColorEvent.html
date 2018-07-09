@@ -3700,12 +3700,12 @@ export class DejaColorSelectorComponent implements ControlValueAccessor, OnDestr
             .takeWhile(() &#x3D;&gt; this.isAlive)
             .filter((_event) &#x3D;&gt; !this._disabled)
             .subscribe((event: Event) &#x3D;&gt; {
-                const { id, attributes } &#x3D; event.target as HTMLElement;
-                const targetIndex &#x3D; (&lt;any&gt;attributes)[DejaColorSelectorComponent.indexAttribute];
-                if (id &#x3D;&#x3D;&#x3D; &#x27;basecolor&#x27;) {
+                const target &#x3D; event.target as HTMLElement;
+                const targetIndex &#x3D; (&lt;any&gt;target.attributes)[DejaColorSelectorComponent.indexAttribute];
+                if (target.hasAttribute(&#x27;basecolor&#x27;)) {
                     this.hilightedBaseIndex$.next(+targetIndex.value);
                     this.hilightedSubIndex$.next(this.hilightedSubIndex);
-                } else if (id &#x3D;&#x3D;&#x3D; &#x27;subcolor&#x27;) {
+                } else if (target.hasAttribute(&#x27;subcolor&#x27;)) {
                     this.hilightedBaseIndex$.next(this.hilightedBaseIndex);
                     this.hilightedSubIndex$.next(+targetIndex.value);
                 } else {
@@ -3719,7 +3719,7 @@ export class DejaColorSelectorComponent implements ControlValueAccessor, OnDestr
             .filter((_event) &#x3D;&gt; !this._disabled)
             .subscribe((event: Event) &#x3D;&gt; {
                 const target &#x3D; event.target as HTMLElement;
-                if (target.id &#x3D;&#x3D;&#x3D; &#x27;basecolor&#x27; || target.id &#x3D;&#x3D;&#x3D; &#x27;subcolor&#x27;) {
+                if (target.hasAttribute(&#x27;basecolor&#x27;) || target.hasAttribute(&#x27;subcolor&#x27;)) {
                     this.value &#x3D; Color.parse(target.style.backgroundColor);
                 }
             });
