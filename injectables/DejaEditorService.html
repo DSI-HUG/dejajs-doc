@@ -1367,9 +1367,6 @@
                         <a href="classes/ItemListService.html" data-type="entity-link">ItemListService</a>
                     </li>
                     <li class="link">
-                        <a href="classes/JsonUtils.html" data-type="entity-link">JsonUtils</a>
-                    </li>
-                    <li class="link">
                         <a href="classes/MaterialColor.html" data-type="entity-link">MaterialColor</a>
                     </li>
                     <li class="link">
@@ -3061,9 +3058,6 @@
                         <a href="classes/ItemListService.html" data-type="entity-link">ItemListService</a>
                     </li>
                     <li class="link">
-                        <a href="classes/JsonUtils.html" data-type="entity-link">JsonUtils</a>
-                    </li>
-                    <li class="link">
                         <a href="classes/MaterialColor.html" data-type="entity-link">MaterialColor</a>
                     </li>
                     <li class="link">
@@ -3496,30 +3490,6 @@
     </table>
 </section>
 
-            <section>
-    <h3 id="constructor">Constructor</h3>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-<code>constructor()</code>
-                    </td>
-                </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="20" class="link-to-prism">src/component/editor/deja-editor.service.ts:20</a></div>
-                            </td>
-                        </tr>
-
-                <tr>
-                    <td class="col-md-4">
-                            <div class="io-description"><p>Constructor</p>
-</div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-</section>
 
             <section>
     
@@ -3550,7 +3520,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/component/editor/deja-editor.service.ts:42</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/component/editor/deja-editor.service.ts:35</a></div>
                             </td>
                         </tr>
 
@@ -3590,14 +3560,14 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/component/editor/deja-editor.service.ts:34</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/component/editor/deja-editor.service.ts:27</a></div>
                             </td>
                         </tr>
 
 
                 <tr>
                     <td class="col-md-4">
-                            <div class="io-description"><p>Load the Monaco Editor Library</p>
+                            <div class="io-description"><p>Load the CKEditor Editor Library</p>
 </div>
 
                             <div>
@@ -3711,14 +3681,7 @@ export class DejaEditorService {
     private _loader: Promise&lt;any&gt;;
 
     /**
-     * Constructor
-     */
-    constructor() {
-        // (&lt;any&gt;window).CKEDITOR_BASEPATH &#x3D; &#x27;/assets/ckeditor/&#x27;;
-    }
-
-    /**
-     * Load the Monaco Editor Library
+     * Load the CKEditor Editor Library
      *
      * @return Resolved promise when the library is loaded
      */
@@ -3736,10 +3699,11 @@ export class DejaEditorService {
 
             // Load AMD loader if necessary
             if (!(&lt;any&gt;window).ckeditor) {
+                const basePath &#x3D; (&lt;any&gt;window).CKEDITOR_BASEPATH || &#x27;/assets/ckeditor/&#x27;;
                 const loaderScript &#x3D; document.createElement(&#x27;script&#x27;);
                 document.head.appendChild(loaderScript);
                 loaderScript.type &#x3D; &#x27;text/javascript&#x27;;
-                loaderScript.src &#x3D; &#x27;assets/ckeditor/ckeditor.js&#x27;;
+                loaderScript.src &#x3D; &#x60;${basePath}ckeditor.js&#x60;;
                 loaderScript.addEventListener(&#x27;load&#x27;, resolve);
             }
         });

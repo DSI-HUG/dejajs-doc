@@ -1367,9 +1367,6 @@
                         <a href="classes/ItemListService.html" data-type="entity-link">ItemListService</a>
                     </li>
                     <li class="link">
-                        <a href="classes/JsonUtils.html" data-type="entity-link">JsonUtils</a>
-                    </li>
-                    <li class="link">
                         <a href="classes/MaterialColor.html" data-type="entity-link">MaterialColor</a>
                     </li>
                     <li class="link">
@@ -3061,9 +3058,6 @@
                         <a href="classes/ItemListService.html" data-type="entity-link">ItemListService</a>
                     </li>
                     <li class="link">
-                        <a href="classes/JsonUtils.html" data-type="entity-link">JsonUtils</a>
-                    </li>
-                    <li class="link">
                         <a href="classes/MaterialColor.html" data-type="entity-link">MaterialColor</a>
                     </li>
                     <li class="link">
@@ -3454,7 +3448,9 @@
                         <td class="col-md-3">providers</td>
                         <td class="col-md-9">
                             <code>
-                                { : , :  }
+                                {
+    : , : 
+}
                             </code>
                         </td>
                     </tr>
@@ -3487,6 +3483,10 @@
                             <li>
                                     <span class="modifier">Protected</span>
                                 <a href="#_id">_id</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_placeholder">_placeholder</a>
                             </li>
                             <li>
                                     <span class="modifier">Protected</span>
@@ -3537,6 +3537,18 @@
                 <tr>
                     <td class="col-md-4">
                         <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_attachPlaceholder">_attachPlaceholder</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_detachPlaceholder">_detachPlaceholder</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_generatePlaceholder">_generatePlaceholder</a>
+                            </li>
                             <li>
                                     <span class="modifier">Public</span>
                                 <a href="#ngDoCheck">ngDoCheck</a>
@@ -3612,12 +3624,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(_editor: <a href="../components/DejaEditorComponent.html">DejaEditorComponent</a>, ngControl: <a href="https://angular.io/api/forms/NgControl" target="_blank">NgControl</a>, _parentForm: <a href="https://angular.io/api/forms/NgForm" target="_blank">NgForm</a>, _parentFormGroup: <a href="https://angular.io/api/forms/FormGroupDirective" target="_blank">FormGroupDirective</a>, _defaultErrorStateMatcher: ErrorStateMatcher)</code>
+<code>constructor(_editor: <a href="../components/DejaEditorComponent.html">DejaEditorComponent</a>, ngControl: <a href="https://angular.io/api/forms/NgControl" target="_blank">NgControl</a>, _parentForm: <a href="https://angular.io/api/forms/NgForm" target="_blank">NgForm</a>, _parentFormGroup: <a href="https://angular.io/api/forms/FormGroupDirective" target="_blank">FormGroupDirective</a>, _defaultErrorStateMatcher: ErrorStateMatcher, _hostElement: <a href="https://angular.io/api/core/ElementRef" target="_blank">ElementRef</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="90" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:90</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="96" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:96</a></div>
                             </td>
                         </tr>
 
@@ -3694,6 +3706,18 @@
                                                     </td>
                                                     
                                                 </tr>
+                                                <tr>
+                                                        <td>_hostElement</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+                                                </tr>
                                         </tbody>
                                     </table>
                             </div>
@@ -3721,7 +3745,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:69</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="75" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:75</a></div>
                             </td>
                         </tr>
             </tbody>
@@ -3742,7 +3766,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:51</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:57</a></div>
                             </td>
                         </tr>
             </tbody>
@@ -3763,7 +3787,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="58" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:58</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:64</a></div>
                             </td>
                         </tr>
             </tbody>
@@ -3784,7 +3808,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:61</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:67</a></div>
                             </td>
                         </tr>
             </tbody>
@@ -3818,7 +3842,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="86" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:86</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="92" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:92</a></div>
                             </td>
                         </tr>
 
@@ -3833,6 +3857,126 @@
         <h3 id="methods">
             Methods
         </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_attachPlaceholder"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _attachPlaceholder
+                            </b>
+                            <a href="#_attachPlaceholder"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>_attachPlaceholder()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="164" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:164</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_detachPlaceholder"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _detachPlaceholder
+                            </b>
+                            <a href="#_detachPlaceholder"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>_detachPlaceholder()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="170" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:170</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_generatePlaceholder"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _generatePlaceholder
+                            </b>
+                            <a href="#_generatePlaceholder"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>_generatePlaceholder()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="176" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:176</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
@@ -3857,7 +4001,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="128" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:128</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="136" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:136</a></div>
                             </td>
                         </tr>
 
@@ -3897,7 +4041,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="134" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:134</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="142" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:142</a></div>
                             </td>
                         </tr>
 
@@ -3937,7 +4081,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="113" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:113</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="120" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:120</a></div>
                             </td>
                         </tr>
 
@@ -3977,7 +4121,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="88" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:88</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="94" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:94</a></div>
                             </td>
                         </tr>
 
@@ -4017,7 +4161,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="109" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:109</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="116" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:116</a></div>
                             </td>
                         </tr>
 
@@ -4098,7 +4242,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="85" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:85</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="91" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:91</a></div>
                             </td>
                         </tr>
 
@@ -4133,7 +4277,42 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="57" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:57</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:63</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_placeholder"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _placeholder
+                            </b>
+                            <a href="#_placeholder"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon fa fa-reset"></span><code>_placeholder:     <code>HTMLDivElement</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>HTMLDivElement</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:53</a></div>
                             </td>
                         </tr>
 
@@ -4167,7 +4346,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:67</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="73" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:73</a></div>
                             </td>
                         </tr>
 
@@ -4201,7 +4380,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="47" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:47</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:52</a></div>
                             </td>
                         </tr>
 
@@ -4237,7 +4416,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="46" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:46</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:51</a></div>
                             </td>
                         </tr>
 
@@ -4277,7 +4456,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="87" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:87</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="93" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:93</a></div>
                             </td>
                         </tr>
 
@@ -4312,7 +4491,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:45</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:50</a></div>
                             </td>
                         </tr>
 
@@ -4347,7 +4526,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:59</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:65</a></div>
                             </td>
                         </tr>
 
@@ -4387,7 +4566,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="96" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:96</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="102" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:102</a></div>
                             </td>
                         </tr>
 
@@ -4427,7 +4606,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:49</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:55</a></div>
                             </td>
                         </tr>
 
@@ -4462,7 +4641,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:48</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:54</a></div>
                             </td>
                         </tr>
 
@@ -4492,7 +4671,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:54</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="60" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:60</a></div>
                                 </td>
                             </tr>
                     <tr>
@@ -4551,7 +4730,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:64</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:70</a></div>
                                 </td>
                             </tr>
                     <tr>
@@ -4610,7 +4789,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="75" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:75</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:81</a></div>
                                 </td>
                             </tr>
                     <tr>
@@ -4668,7 +4847,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="138" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:138</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="146" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:146</a></div>
                                 </td>
                             </tr>
 
@@ -4690,7 +4869,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="142" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:142</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="150" class="link-to-prism">src/component/editor/material-field-wrapper/deja-editor-selector.directive.ts:150</a></div>
                                 </td>
                             </tr>
 
@@ -4706,6 +4885,8 @@
 import {
     Directive,
     DoCheck,
+    ElementRef,
+    Host,
     HostBinding,
     Input,
     OnDestroy,
@@ -4728,7 +4909,10 @@ let nextUniqueId &#x3D; 0;
 @Directive({
     selector: &#x27;deja-editor&#x27;,
     providers: [
-        { provide: MatFormFieldControl, useExisting: DejaEditorSelectorDirective }
+        {
+            provide: MatFormFieldControl,
+            useExisting: DejaEditorSelectorDirective
+        }
     ]
 })
 export class DejaEditorSelectorDirective extends _MatInputMixinBase
@@ -4741,6 +4925,7 @@ export class DejaEditorSelectorDirective extends _MatInputMixinBase
     public errorState: boolean;
     public autofilled?: boolean;
     protected _uid &#x3D; &#x60;mat-input-${nextUniqueId++}&#x60;;
+    private _placeholder: HTMLDivElement;
     public value: any;
     public stateChanges: Subject&lt;void&gt; &#x3D; new Subject&lt;void&gt;();
     @Input()
@@ -4792,7 +4977,8 @@ export class DejaEditorSelectorDirective extends _MatInputMixinBase
         public ngControl: NgControl,
         @Optional() _parentForm: NgForm,
         @Optional() _parentFormGroup: FormGroupDirective,
-        _defaultErrorStateMatcher: ErrorStateMatcher
+        _defaultErrorStateMatcher: ErrorStateMatcher,
+        @Host() private _hostElement: ElementRef
     ) {
         super(
             _defaultErrorStateMatcher,
@@ -4819,6 +5005,7 @@ export class DejaEditorSelectorDirective extends _MatInputMixinBase
         this._editor.change.subscribe(() &#x3D;&gt; {
             this.stateChanges.next();
         });
+        this._generatePlaceholder();
     }
 
     public ngDoCheck() {
@@ -4836,7 +5023,52 @@ export class DejaEditorSelectorDirective extends _MatInputMixinBase
     }
 
     get shouldLabelFloat(): boolean {
-        return this.focused || !this.empty;
+        if (this.focused || !this.empty) {
+            if (this.empty) {
+                this._attachPlaceholder();
+            } else {
+                this._detachPlaceholder();
+            }
+            return true;
+        } else {
+            this._detachPlaceholder();
+            return false;
+        }
+    }
+
+    private _attachPlaceholder() {
+        if (this._placeholder &amp;&amp; !this._placeholder.parentElement) {
+            this._hostElement.nativeElement.appendChild(this._placeholder);
+        }
+    }
+
+    private _detachPlaceholder() {
+        if (this._placeholder &amp;&amp; this._placeholder.parentElement) {
+            this._placeholder.remove();
+        }
+    }
+
+    private _generatePlaceholder() {
+        if (this.placeholder) {
+            this._placeholder &#x3D; document.createElement(&#x27;div&#x27;);
+            this._placeholder.style.position &#x3D; &#x27;absolute&#x27;;
+            this._placeholder.style.position &#x3D; &#x27;absolute&#x27;;
+            this._placeholder.style.left &#x3D; &#x27;0&#x27;;
+            this._placeholder.style.boxSizing &#x3D; &#x27;content-box&#x27;;
+            this._placeholder.style.width &#x3D; &#x27;100%&#x27;;
+            this._placeholder.style.height &#x3D; &#x27;100%&#x27;;
+            this._placeholder.style.overflow &#x3D; &#x27;hidden&#x27;;
+            this._placeholder.style.pointerEvents &#x3D; &#x27;none&#x27;;
+            this._placeholder.style.top &#x3D; &#x27;-0.84375em&#x27;;
+            this._placeholder.style.paddingTop &#x3D; &#x27;0.84375em&#x27;;
+            const placeholderChildren &#x3D; document.createElement(&#x27;div&#x27;);
+            placeholderChildren.style.color &#x3D; &#x27;rgba(0,0,0,0.54)&#x27;;
+            placeholderChildren.style.top &#x3D; &#x27;1.28125em&#x27;;
+            placeholderChildren.style.position &#x3D; &#x27;absolute&#x27;;
+            const placeholderText &#x3D; document.createTextNode(this.placeholder);
+            placeholderChildren.appendChild(placeholderText);
+            this._placeholder.appendChild(placeholderChildren);
+        }
     }
 }
 </code></pre>
