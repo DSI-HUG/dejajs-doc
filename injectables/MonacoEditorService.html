@@ -651,14 +651,14 @@
                         <a href="modules/DejaMonacoEditorModule.html" data-type="entity-link">DejaMonacoEditorModule</a>
                             <li class="chapter inner">
                                 <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#xs-components-links-module-DejaMonacoEditorModule-68c0013ee8e1ddbe6c321124fd137e96"
+                                        data-target="#xs-components-links-module-DejaMonacoEditorModule-e4b75884807074b10890a404cd826855"
                                     >
                                     <span class="fa fa-fw fa-cogs"></span>
                                     <span>Components</span>
                                     <span class="fa fa-angle-down"></span>
                                 </div>
                                 <ul class="links collapse"
-                                        id="xs-components-links-module-DejaMonacoEditorModule-68c0013ee8e1ddbe6c321124fd137e96"
+                                        id="xs-components-links-module-DejaMonacoEditorModule-e4b75884807074b10890a404cd826855"
                                     >
                                         <li class="link">
                                             <a href="components/DejaMonacoEditorComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">DejaMonacoEditorComponent</a>
@@ -667,14 +667,14 @@
                             </li>
                             <li class="chapter inner">
                                 <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#xs-injectables-links-module-DejaMonacoEditorModule-68c0013ee8e1ddbe6c321124fd137e96"
+                                        data-target="#xs-injectables-links-module-DejaMonacoEditorModule-e4b75884807074b10890a404cd826855"
                                     >
                                     <span class="fa fa-fw fa-long-arrow-down"></span>
                                     <span>Injectables</span>
                                     <span class="fa fa-angle-down"></span>
                                 </div>
                                 <ul class="links collapse"
-                                        id="xs-injectables-links-module-DejaMonacoEditorModule-68c0013ee8e1ddbe6c321124fd137e96"
+                                        id="xs-injectables-links-module-DejaMonacoEditorModule-e4b75884807074b10890a404cd826855"
                                     >
                                         <li class="link">
                                             <a href="injectables/MonacoEditorService.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules"}>MonacoEditorService</a>
@@ -1383,6 +1383,9 @@
                     </li>
                     <li class="link">
                         <a href="classes/Rect.html" data-type="entity-link">Rect</a>
+                    </li>
+                    <li class="link">
+                        <a href="classes/RegExpUtils.html" data-type="entity-link">RegExpUtils</a>
                     </li>
                     <li class="link">
                         <a href="classes/Size.html" data-type="entity-link">Size</a>
@@ -2342,14 +2345,14 @@
                         <a href="modules/DejaMonacoEditorModule.html" data-type="entity-link">DejaMonacoEditorModule</a>
                             <li class="chapter inner">
                                 <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#components-links-module-DejaMonacoEditorModule-68c0013ee8e1ddbe6c321124fd137e96"
+                                        data-target="#components-links-module-DejaMonacoEditorModule-e4b75884807074b10890a404cd826855"
 >
                                     <span class="fa fa-fw fa-cogs"></span>
                                     <span>Components</span>
                                     <span class="fa fa-angle-down"></span>
                                 </div>
                                 <ul class="links collapse"
-                                        id="components-links-module-DejaMonacoEditorModule-68c0013ee8e1ddbe6c321124fd137e96"
+                                        id="components-links-module-DejaMonacoEditorModule-e4b75884807074b10890a404cd826855"
 >
                                         <li class="link">
                                             <a href="components/DejaMonacoEditorComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">DejaMonacoEditorComponent</a>
@@ -2358,14 +2361,14 @@
                             </li>
                             <li class="chapter inner">
                                 <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#injectables-links-module-DejaMonacoEditorModule-68c0013ee8e1ddbe6c321124fd137e96"
+                                        data-target="#injectables-links-module-DejaMonacoEditorModule-e4b75884807074b10890a404cd826855"
 >
                                     <span class="fa fa-fw fa-long-arrow-down"></span>
                                     <span>Injectables</span>
                                     <span class="fa fa-angle-down"></span>
                                 </div>
                                 <ul class="links collapse"
-                                        id="injectables-links-module-DejaMonacoEditorModule-68c0013ee8e1ddbe6c321124fd137e96"
+                                        id="injectables-links-module-DejaMonacoEditorModule-e4b75884807074b10890a404cd826855"
 >
                                         <li class="link">
                                             <a href="injectables/MonacoEditorService.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules"}>MonacoEditorService</a>
@@ -3076,6 +3079,9 @@
                         <a href="classes/Rect.html" data-type="entity-link">Rect</a>
                     </li>
                     <li class="link">
+                        <a href="classes/RegExpUtils.html" data-type="entity-link">RegExpUtils</a>
+                    </li>
+                    <li class="link">
                         <a href="classes/Size.html" data-type="entity-link">Size</a>
                     </li>
                     <li class="link">
@@ -3725,10 +3731,11 @@ export class MonacoEditorService {
     private init() {
         this._loader &#x3D; new Promise((resolve) &#x3D;&gt; {
             this._loading &#x3D; true;
+            const basePath &#x3D; (&lt;any&gt;window).MONACOEDITOR_BASEPATH || &#x27;/assets/monaco/vs&#x27;;
 
             const onGotAmdLoader &#x3D; () &#x3D;&gt; {
                 // Load monaco
-                (&lt;any&gt;window).require.config({ paths: { &#x27;vs&#x27;: &#x27;assets/monaco/vs&#x27; } });
+                (&lt;any&gt;window).require.config({ paths: { &#x27;vs&#x27;: basePath } });
                 (&lt;any&gt;window).require([&#x27;vs/editor/editor.main&#x27;], () &#x3D;&gt; {
                     resolve();
                 });
@@ -3738,7 +3745,7 @@ export class MonacoEditorService {
             if (!(&lt;any&gt;window).require &amp;&amp; !(&lt;any&gt;window).monaco) {
                 const loaderScript &#x3D; document.createElement(&#x27;script&#x27;);
                 loaderScript.type &#x3D; &#x27;text/javascript&#x27;;
-                loaderScript.src &#x3D; &#x27;assets/monaco/vs/loader.js&#x27;;
+                loaderScript.src &#x3D; &#x60;${basePath}/loader.js&#x60;;
                 loaderScript.addEventListener(&#x27;load&#x27;, onGotAmdLoader);
                 document.body.appendChild(loaderScript);
             } else {
