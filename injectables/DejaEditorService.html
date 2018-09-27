@@ -333,7 +333,9 @@ export class DejaEditorService {
 
             // Load AMD loader if necessary
             if (!(&lt;any&gt;window).ckeditor) {
-                const basePath &#x3D; (&lt;any&gt;window).CKEDITOR_BASEPATH || &#x27;/assets/ckeditor/&#x27;;
+                const baseElement &#x3D; document.getElementsByTagName(&#x27;base&#x27;)[0] || {} as HTMLBaseElement;
+                const baseHref &#x3D; baseElement.href;
+                const basePath &#x3D; (&lt;any&gt;window).CKEDITOR_BASEPATH || &#x60;${baseHref}assets/ckeditor/&#x60;;
                 const loaderScript &#x3D; document.createElement(&#x27;script&#x27;);
                 document.head.appendChild(loaderScript);
                 loaderScript.type &#x3D; &#x27;text/javascript&#x27;;

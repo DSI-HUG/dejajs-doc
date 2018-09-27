@@ -359,7 +359,9 @@ export class MonacoEditorService {
     private init() {
         this._loader &#x3D; new Promise((resolve) &#x3D;&gt; {
             this._loading &#x3D; true;
-            const basePath &#x3D; (&lt;any&gt;window).MONACOEDITOR_BASEPATH || &#x27;/assets/monaco/vs&#x27;;
+            const baseElement &#x3D; document.getElementsByTagName(&#x27;base&#x27;)[0] || {} as HTMLBaseElement;
+            const baseHref &#x3D; baseElement.href;
+            const basePath &#x3D; (&lt;any&gt;window).MONACOEDITOR_BASEPATH || &#x60;${baseHref}assets/monaco/vs&#x60;;
 
             const onGotAmdLoader &#x3D; () &#x3D;&gt; {
                 // Load monaco
