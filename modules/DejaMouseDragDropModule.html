@@ -235,14 +235,26 @@
  */
 
 import { ModuleWithProviders, NgModule } from &#x27;@angular/core&#x27;;
+import { MatIconModule } from &#x27;@angular/material&#x27;;
 import { DejaMouseDragDropCursorComponent } from &#x27;./mouse-dragdrop-cursor.component&#x27;;
 import { DejaMouseDragDropService } from &#x27;./mouse-dragdrop.service&#x27;;
 import { DejaMouseDraggableDirective } from &#x27;./mouse-draggable.directive&#x27;;
 import { DejaMouseDroppableDirective } from &#x27;./mouse-droppable.directive&#x27;;
 
 @NgModule({
-    declarations: [DejaMouseDraggableDirective, DejaMouseDroppableDirective, DejaMouseDragDropCursorComponent],
-    exports: [DejaMouseDraggableDirective, DejaMouseDroppableDirective, DejaMouseDragDropCursorComponent],
+    declarations: [
+        DejaMouseDraggableDirective,
+        DejaMouseDroppableDirective,
+        DejaMouseDragDropCursorComponent
+    ],
+    imports: [
+        MatIconModule,
+    ],
+    exports: [
+        DejaMouseDraggableDirective,
+        DejaMouseDroppableDirective,
+        DejaMouseDragDropCursorComponent
+    ],
     providers: [],
 })
 export class DejaMouseDragDropModule {

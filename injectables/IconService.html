@@ -81,6 +81,10 @@
                                     <span class="modifier">Public</span>
                                 <a href="#addSvgIcon">addSvgIcon</a>
                             </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#useMaterialIcons">useMaterialIcons</a>
+                            </li>
                         </ul>
                     </td>
                 </tr>
@@ -245,6 +249,77 @@
                 </tr>
             </tbody>
         </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="useMaterialIcons"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            useMaterialIcons
+                            </b>
+                            <a href="#useMaterialIcons"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>useMaterialIcons(value: )</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/common/core/icon-service/icon.service.ts:32</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                <td>Optional</td>
+                                                    <td>Default value</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>value</td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code>true</code>
+                                                        </td>
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 </section>
 
 
@@ -273,6 +348,10 @@ export class IconService {
     public addSvgIcon(iconName: string, iconUrl: string) {
         this.iconRegistry.addSvgIcon(iconName,
             this.sanitizer.bypassSecurityTrustResourceUrl(iconUrl));
+    }
+
+    public useMaterialIcons(value &#x3D; true) {
+        this.iconRegistry.registerFontClassAlias(&#x27;deja-icons&#x27;, value ? &#x27;material-icons&#x27; : null);
     }
 }
 </code></pre>
