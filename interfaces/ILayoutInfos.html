@@ -892,17 +892,14 @@ export class DejaTilesLayoutProvider implements OnDestroy {
                 }
             });
 
-        // Remove immediately
-        observableTimer(10).pipe(
-            first(),
-            filter(() &#x3D;&gt; !event.defaultPrevented))
-            .subscribe(() &#x3D;&gt; {
-                cancelSubscription.unsubscribe();
-                this.deleteTiles(tilesToRemove);
-            });
-
         // Forward event
         this.contentRemoving.next(event);
+
+        // Remove immediately
+        if (!event.defaultPrevented) {
+            cancelSubscription.unsubscribe();
+            this.deleteTiles(tilesToRemove);
+        }
     }
 
     public createTiles(tiles: IDejaTile[]) {
@@ -1220,7 +1217,7 @@ export class DejaTilesLayoutProvider implements OnDestroy {
             }
         });
 
-        const event &#x3D; new CustomEvent(&#x27;DejaTilesAddEvent&#x27;, { cancelable: false }) as IDejaTilesAddEvent;
+        const event &#x3D; new CustomEvent(&#x27;DejaTilesAddEvent&#x27;, { cancelable: true }) as IDejaTilesAddEvent;
         event.tiles &#x3D; this.tiles.map((tile) &#x3D;&gt; tile.toTileModel());
         event.added &#x3D; newTiles.map((tile) &#x3D;&gt; tile.toTileModel());
         event.cancel$ &#x3D; new Subject();
@@ -1285,15 +1282,6 @@ export class DejaTilesLayoutProvider implements OnDestroy {
                 }
             });
 
-        // Add immediately
-        observableTimer(10).pipe(
-            first(),
-            filter(() &#x3D;&gt; !event.defaultPrevented))
-            .subscribe(() &#x3D;&gt; {
-                cancelSubscription.unsubscribe();
-                validateNewTiles(newTiles);
-            });
-
         // Get total rectangle
         let bounds: Rect;
         newTiles.forEach((tile) &#x3D;&gt; {
@@ -1303,6 +1291,12 @@ export class DejaTilesLayoutProvider implements OnDestroy {
         this.refreshTiles$.next({ ensureBounds: bounds });
 
         this.contentAdding.next(event);
+
+        if (!event.defaultPrevented) {
+            // Add immediately
+            cancelSubscription.unsubscribe();
+            validateNewTiles(newTiles);
+        }
     }
 
     private size(tile: DejaTile, pixelPos: Position, directions: Directions) {

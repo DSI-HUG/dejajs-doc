@@ -275,7 +275,7 @@ export class DejaDroppableDirective implements OnDestroy {
                 } else {
                     // console.log(&#x27;DejaDragLeave&#x27;);
                     if (this.context.dragleavecallback) {
-                        const e &#x3D; new CustomEvent(&#x27;DejaDragLeave&#x27;, { cancelable: false });
+                        const e &#x3D; new CustomEvent(&#x27;DejaDragLeave&#x27;, { cancelable: true });
                         this.context.dragleavecallback(e);
                         if (e.defaultPrevented) {
                             dragEvent.preventDefault();
