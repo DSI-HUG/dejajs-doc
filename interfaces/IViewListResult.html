@@ -1173,6 +1173,10 @@ export class ItemListService {
      * @return True si l&#x27;élément correspond aux critères de recherche.
      */
     protected itemMatch(item: IItemBase, searchField: string, regExp: RegExp) {
+        const itmTree &#x3D; (item as IItemTree);
+        if (itmTree.$items) {
+            return true;
+        }
         const field &#x3D; (&lt;any&gt;item)[searchField];
         const value &#x3D; typeof field &#x3D;&#x3D;&#x3D; &#x27;function&#x27; ? field() : (field ? field : this.getTextValue(item, searchField));
         return value &amp;&amp; regExp.test(Diacritics.remove(value));
@@ -1212,15 +1216,17 @@ export class ItemListService {
                     treeList.forEach((itm) &#x3D;&gt; {
                         const itmTree &#x3D; (itm as IItemTree);
                         if (itmTree.$items) {
-                            odd &#x3D; false;
-                            const filteredChildren &#x3D; getFilteredList(itmTree.$items, depth + 1, hidden || itm.visible &#x3D;&#x3D;&#x3D; false);
-                            if (filteredChildren) {
-                                if (itmTree.collapsed &amp;&amp; expandTree) {
-                                    itmTree.collapsed &#x3D; false;
-                                }
-                                filteredItems &#x3D; !filteredItems ? (itmTree.collapsed ? [itmTree] : [itmTree, ...filteredChildren]) : (itmTree.collapsed ? [...filteredItems, itmTree] : [...filteredItems, itmTree, ...filteredChildren]);
-                                if (itmTree.selected) {
-                                    selectedList.push(itmTree);
+                            if (itmTree.visible !&#x3D;&#x3D; false &amp;&amp; this.itemMatch(itmTree, searchField, regExp)) {
+                                odd &#x3D; false;
+                                const filteredChildren &#x3D; getFilteredList(itmTree.$items, depth + 1, hidden);
+                                if (filteredChildren) {
+                                    if (itmTree.collapsed &amp;&amp; expandTree) {
+                                        itmTree.collapsed &#x3D; false;
+                                    }
+                                    filteredItems &#x3D; !filteredItems ? (itmTree.collapsed ? [itmTree] : [itmTree, ...filteredChildren]) : (itmTree.collapsed ? [...filteredItems, itmTree] : [...filteredItems, itmTree, ...filteredChildren]);
+                                    if (itmTree.selected) {
+                                        selectedList.push(itmTree);
+                                    }
                                 }
                             }
 
