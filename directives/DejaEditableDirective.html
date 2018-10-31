@@ -68,6 +68,7 @@
             <p class="comment">
                         <code><a href="../classes/ValueAccessor.html" target="_self" >ControlValueAccessor</a></code>
                         <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
+                        <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
             </p>
 
 
@@ -168,6 +169,10 @@
                             <li>
                                     <span class="modifier">Public</span>
                                 <a href="#ngOnDestroy">ngOnDestroy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngOnInit">ngOnInit</a>
                             </li>
                             <li>
                                     <span class="modifier">Private</span>
@@ -506,7 +511,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="236" class="link-to-prism">src/component/content-editable/content-editable.directive.ts:236</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="240" class="link-to-prism">src/component/content-editable/content-editable.directive.ts:240</a></div>
                             </td>
                         </tr>
 
@@ -579,7 +584,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="222" class="link-to-prism">src/component/content-editable/content-editable.directive.ts:222</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="226" class="link-to-prism">src/component/content-editable/content-editable.directive.ts:226</a></div>
                             </td>
                         </tr>
 
@@ -621,7 +626,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="240" class="link-to-prism">src/component/content-editable/content-editable.directive.ts:240</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="244" class="link-to-prism">src/component/content-editable/content-editable.directive.ts:244</a></div>
                             </td>
                         </tr>
 
@@ -692,6 +697,46 @@
 
                         <tr>
                             <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="221" class="link-to-prism">src/component/content-editable/content-editable.directive.ts:221</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnInit"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            ngOnInit
+                            </b>
+                            <a href="#ngOnInit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>ngOnInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
                                     <div class="io-line">Defined in <a href="" data-line="217" class="link-to-prism">src/component/content-editable/content-editable.directive.ts:217</a></div>
                             </td>
                         </tr>
@@ -732,7 +777,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="250" class="link-to-prism">src/component/content-editable/content-editable.directive.ts:250</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="254" class="link-to-prism">src/component/content-editable/content-editable.directive.ts:254</a></div>
                             </td>
                         </tr>
 
@@ -914,7 +959,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="227" class="link-to-prism">src/component/content-editable/content-editable.directive.ts:227</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="231" class="link-to-prism">src/component/content-editable/content-editable.directive.ts:231</a></div>
                             </td>
                         </tr>
 
@@ -1920,7 +1965,7 @@
 
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { coerceBooleanProperty } from &#x27;@angular/cdk/coercion&#x27;;
-import { Directive, ElementRef, HostBinding, Input, OnDestroy, Optional, Self } from &#x27;@angular/core&#x27;;
+import { Directive, ElementRef, HostBinding, Input, OnDestroy, OnInit, Optional, Self } from &#x27;@angular/core&#x27;;
 import { ControlValueAccessor, NgControl } from &#x27;@angular/forms&#x27;;
 import { BehaviorSubject, from as observableFrom, fromEvent as observableFromEvent, timer as observableTimer } from &#x27;rxjs&#x27;;
 import { filter, first, map, takeUntil, takeWhile, tap } from &#x27;rxjs/operators&#x27;;
@@ -1931,7 +1976,7 @@ const noop &#x3D; () &#x3D;&gt; { };
 @Directive({
     selector: &#x27;[deja-editable]&#x27;,
 })
-export class DejaEditableDirective implements ControlValueAccessor, OnDestroy {
+export class DejaEditableDirective implements ControlValueAccessor, OnDestroy, OnInit {
     public onTouchedCallback: () &#x3D;&gt; void &#x3D; noop;
     public onChangeCallback: (_: any) &#x3D;&gt; void &#x3D; noop;
     private model: string;
@@ -1966,6 +2011,7 @@ export class DejaEditableDirective implements ControlValueAccessor, OnDestroy {
             });
 
         const inEdition$ &#x3D; observableFrom(this.edit$).pipe(
+            filter(([value]) &#x3D;&gt; value !&#x3D;&#x3D; this._inEdition),
             map(([value, selectOnFocus]) &#x3D;&gt; {
                 if (selectOnFocus !&#x3D;&#x3D; false) {
                     observableTimer(10).pipe(
@@ -1984,6 +2030,7 @@ export class DejaEditableDirective implements ControlValueAccessor, OnDestroy {
                 } else {
                     this.element.removeAttribute(&#x27;contenteditable&#x27;);
                 }
+                this.refreshView();
             }));
 
         const kill$ &#x3D; inEdition$.pipe(
@@ -1993,21 +2040,21 @@ export class DejaEditableDirective implements ControlValueAccessor, OnDestroy {
             filter((value) &#x3D;&gt; value))
             .subscribe(() &#x3D;&gt; {
                 observableFromEvent(this.element.ownerDocument, &#x27;mousedown&#x27;).pipe(
+                    first(),
                     takeUntil(kill$),
                     filter((event: MouseEvent) &#x3D;&gt; !this.isChildElement(event.target as HTMLElement)))
                     .subscribe(() &#x3D;&gt; {
-                        const text &#x3D; this.element.innerText;
+                        const text &#x3D; this.element.innerText.replace(/\n/g, &#x27;&lt;br /&gt;&#x27;);
                         this.onTouchedCallback();
                         if (text || !this.mandatory) {
                             this.value &#x3D; text;
-                        } else {
-                            this.refreshView();
                         }
 
                         this.inEdition &#x3D; false;
                     });
 
                 observableFromEvent(this.element, &#x27;keydown&#x27;).pipe(
+                    first(),
                     takeUntil(kill$))
                     .subscribe((e: KeyboardEvent) &#x3D;&gt; {
                         e.cancelBubble &#x3D; true;
@@ -2016,13 +2063,11 @@ export class DejaEditableDirective implements ControlValueAccessor, OnDestroy {
                             const text &#x3D; this.element.innerText;
                             if (text || !this.mandatory) {
                                 this.value &#x3D; text;
-                            } else {
-                                this.refreshView();
                             }
                             this.inEdition &#x3D; false;
                             return false;
+
                         } else if (e.keyCode &#x3D;&#x3D;&#x3D; KeyCodes.Escape) {
-                            this.refreshView();
                             this.inEdition &#x3D; false;
                             return false;
                         }
@@ -2127,6 +2172,10 @@ export class DejaEditableDirective implements ControlValueAccessor, OnDestroy {
     }
     // ************* End of ControlValueAccessor Implementation **************
 
+    public ngOnInit() {
+        this.model &#x3D; this.element.innerHTML;
+    }
+
     public ngOnDestroy() {
         this.isAlive &#x3D; false;
     }
@@ -2164,7 +2213,12 @@ export class DejaEditableDirective implements ControlValueAccessor, OnDestroy {
         if (!this.model) {
             return;
         }
-        this.element.innerText &#x3D; this.model;
+
+        if (this.inEdition) {
+            this.element.innerText &#x3D; this.model.replace(/&lt;br\s*[\/]?&gt;/gi, &#x27;\n&#x27;);
+        } else {
+            this.element.innerHTML &#x3D; this.model;
+        }
     }
 }
 </code></pre>

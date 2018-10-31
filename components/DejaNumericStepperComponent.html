@@ -65,11 +65,19 @@
 </p>
 
 
+    <p class="comment">
+        <h3>Extends</h3>
+    </p>
+    <p class="comment">
+            <code>_MatInputMixinBase</code>
+    </p>
 
     <p class="comment">
         <h3>Implements</h3>
     </p>
     <p class="comment">
+                <code>CanUpdateErrorState</code>
+                <code><a href="https://angular.io/api/core/DoCheck" target="_blank" >DoCheck</a></code>
                 <code><a href="https://angular.io/api/core/OnChanges" target="_blank" >OnChanges</a></code>
                 <code><a href="https://angular.io/api/core/OnDestroy" target="_blank" >OnDestroy</a></code>
                 <code><a href="../classes/ValueAccessor.html" target="_self" >ControlValueAccessor</a></code>
@@ -216,6 +224,10 @@
                             <li>
                                     <span class="modifier">Public</span>
                                 <a href="#checkSize">checkSize</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#ngDoCheck">ngDoCheck</a>
                             </li>
                             <li>
                                     <span class="modifier">Public</span>
@@ -375,7 +387,7 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(dejaTextMetricsService: <a href="../injectables/DejaTextMetricsService.html">DejaTextMetricsService</a>, elementRef: <a href="https://angular.io/api/core/ElementRef" target="_blank">ElementRef</a>, changeDetectorRef: <a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank">ChangeDetectorRef</a>, ngControl: <a href="https://angular.io/api/forms/NgControl" target="_blank">NgControl</a>, fm: FocusMonitor)</code>
+<code>constructor(dejaTextMetricsService: <a href="../injectables/DejaTextMetricsService.html">DejaTextMetricsService</a>, elementRef: <a href="https://angular.io/api/core/ElementRef" target="_blank">ElementRef</a>, changeDetectorRef: <a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank">ChangeDetectorRef</a>, ngControl: <a href="https://angular.io/api/forms/NgControl" target="_blank">NgControl</a>, fm: FocusMonitor, _parentForm: <a href="https://angular.io/api/forms/NgForm" target="_blank">NgForm</a>, _parentFormGroup: <a href="https://angular.io/api/forms/FormGroupDirective" target="_blank">FormGroupDirective</a>, _defaultErrorStateMatcher: ErrorStateMatcher)</code>
                     </td>
                 </tr>
                         <tr>
@@ -450,6 +462,42 @@
                                                   
                                                         <td>
                                                                     <code>FocusMonitor</code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_parentForm</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/forms/NgForm" target="_blank" >NgForm</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_parentFormGroup</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="https://angular.io/api/forms/FormGroupDirective" target="_blank" >FormGroupDirective</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>_defaultErrorStateMatcher</td>
+                                                  
+                                                        <td>
+                                                                    <code>ErrorStateMatcher</code>
                                                         </td>
                                                   
                                                     <td>
@@ -824,7 +872,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="211" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:211</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="227" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:227</a></div>
                             </td>
                         </tr>
 
@@ -875,6 +923,46 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
+                        <a name="ngDoCheck"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            ngDoCheck
+                            </b>
+                            <a href="#ngDoCheck"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>ngDoCheck()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="167" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:167</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
                         <a name="ngOnChanges"></a>
                         <span class="name">
                             <b>
@@ -895,7 +983,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="151" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:151</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="158" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:158</a></div>
                             </td>
                         </tr>
 
@@ -966,7 +1054,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="164" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:164</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="180" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:180</a></div>
                             </td>
                         </tr>
 
@@ -1006,7 +1094,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="173" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:173</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="189" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:189</a></div>
                             </td>
                         </tr>
 
@@ -1077,7 +1165,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="198" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:198</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="214" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:214</a></div>
                             </td>
                         </tr>
 
@@ -1148,7 +1236,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="202" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:202</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="218" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:218</a></div>
                             </td>
                         </tr>
 
@@ -1219,7 +1307,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="169" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:169</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="185" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:185</a></div>
                             </td>
                         </tr>
 
@@ -1290,7 +1378,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="206" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:206</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="222" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:222</a></div>
                             </td>
                         </tr>
 
@@ -1361,7 +1449,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="160" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:160</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="176" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:176</a></div>
                             </td>
                         </tr>
 
@@ -1432,7 +1520,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="191" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:191</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="207" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:207</a></div>
                             </td>
                         </tr>
 
@@ -2421,7 +2509,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="180" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:180</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="196" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:196</a></div>
                                 </td>
                             </tr>
 
@@ -2432,7 +2520,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="184" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:184</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="200" class="link-to-prism">src/component/numeric-stepper/numeric-stepper.component.ts:200</a></div>
                                 </td>
                             </tr>
                     <tr>
@@ -2481,9 +2569,9 @@
     <div class="tab-pane fade  tab-source-code" id="c-source">
         <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { FocusMonitor } from &#x27;@angular/cdk/a11y&#x27;;
 import { coerceBooleanProperty } from &#x27;@angular/cdk/coercion&#x27;;
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, EventEmitter, HostBinding, Input, OnChanges, OnDestroy, Optional, Output, Self, ViewChild } from &#x27;@angular/core&#x27;;
-import { ControlValueAccessor, FormControl, NgControl, ValidationErrors, Validator, ValidatorFn } from &#x27;@angular/forms&#x27;;
-import { MatFormFieldControl } from &#x27;@angular/material&#x27;;
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, DoCheck, ElementRef, EventEmitter, HostBinding, Input, OnChanges, OnDestroy, Optional, Output, Self, ViewChild } from &#x27;@angular/core&#x27;;
+import { ControlValueAccessor, FormControl, FormGroupDirective, NgControl, NgForm, ValidationErrors, Validator, ValidatorFn } from &#x27;@angular/forms&#x27;;
+import { _MatInputMixinBase, CanUpdateErrorState, ErrorStateMatcher, MatFormFieldControl } from &#x27;@angular/material&#x27;;
 import { Subject } from &#x27;rxjs&#x27;;
 
 import { DejaTextMetricsService } from &#x27;../../common/core/text-metrics/text-metrics.service&#x27;;
@@ -2510,7 +2598,7 @@ export const createCounterRangeValidator &#x3D; (maxValue: number, minValue: num
     styleUrls: [&#x27;numeric-stepper.component.scss&#x27;],
     templateUrl: &#x27;numeric-stepper.component.html&#x27;
 })
-export class DejaNumericStepperComponent implements OnChanges, OnDestroy, ControlValueAccessor, MatFormFieldControl&lt;number&gt;, Validator {
+export class DejaNumericStepperComponent extends _MatInputMixinBase implements CanUpdateErrorState, DoCheck, OnChanges, OnDestroy, ControlValueAccessor, MatFormFieldControl&lt;number&gt;, Validator {
     public static nextId &#x3D; 0;
     @HostBinding() public id &#x3D; &#x60;deja-numeric-stepper-${DejaNumericStepperComponent.nextId++}&#x60;;
     @HostBinding(&#x27;class.floating&#x27;) public get shouldLabelFloat() {
@@ -2610,13 +2698,20 @@ export class DejaNumericStepperComponent implements OnChanges, OnDestroy, Contro
         private changeDetectorRef: ChangeDetectorRef,
         @Self() @Optional() public ngControl: NgControl,
         private fm: FocusMonitor,
+        @Optional() _parentForm: NgForm,
+        @Optional() _parentFormGroup: FormGroupDirective,
+        _defaultErrorStateMatcher: ErrorStateMatcher,
     ) {
+        super(_defaultErrorStateMatcher, _parentForm, _parentFormGroup, ngControl);
         if (this.ngControl) {
             this.ngControl.valueAccessor &#x3D; this;
         }
 
         this.fm.monitor(elementRef.nativeElement, true).subscribe((origin) &#x3D;&gt; {
             this.focused &#x3D; !!origin;
+            if (!this.focused) {
+                this.onTouchedCallback();
+            }
             this.stateChanges.next();
         });
     }
@@ -2627,6 +2722,15 @@ export class DejaNumericStepperComponent implements OnChanges, OnDestroy, Contro
             if (this.ngControl &amp;&amp; this.ngControl.control) {
                 this.ngControl.control.setValidators(this.validateFn);
             }
+        }
+    }
+
+    public ngDoCheck() {
+        if (this.ngControl) {
+            // We need to re-evaluate this on every change detection cycle, because there are some
+            // error triggers that we can&#x27;t subscribe to (e.g. parent form submissions). This means
+            // that whatever logic is in here has to be super lean or we risk destroying the performance.
+            this.updateErrorState();
         }
     }
 
