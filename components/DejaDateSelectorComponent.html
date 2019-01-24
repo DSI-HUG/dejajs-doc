@@ -18,10 +18,7 @@
         </div>
 
         <div class="xs-menu menu" id="mobile-menu">
-                <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search">
-</div>
-            <compodoc-menu></compodoc-menu>
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
         </div>
 
         <div class="container-fluid main">
@@ -50,6 +47,9 @@
         </li>
         <li >
             <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
         </li>
         <li >
             <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
@@ -106,7 +106,7 @@
 
             <tr>
                 <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>date-selector.scss</code></td>
+                <td class="col-md-9"><code>./date-selector.scss</code></td>
             </tr>
 
 
@@ -115,6 +115,12 @@
                 <td class="col-md-3">templateUrl</td>
                 <td class="col-md-9"><code>./date-selector.component.html</code></td>
             </tr>
+
+
+
+
+
+
 
 
         </tbody>
@@ -2018,7 +2024,11 @@ se rappelle pour séléctionner le jour suivant (ou précédent)</p>
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Decorators : </i><code>SelfOptional</code>
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Self()<br />@Optional()<br />
+                            </code>
                         </td>
                     </tr>
                         <tr>
@@ -2797,7 +2807,7 @@ se rappelle pour séléctionner le jour suivant (ou précédent)</p>
 
                 <tr>
                     <td class="col-md-4">
-                        <span class="accessor"><b>set</b><code>layout(value: )</code></span>
+                        <span class="accessor"><b>set</b><code>layout(value)</code></span>
                     </td>
                 </tr>
                             <tr>
@@ -2871,7 +2881,7 @@ se rappelle pour séléctionner le jour suivant (ou précédent)</p>
 
                 <tr>
                     <td class="col-md-4">
-                        <span class="accessor"><b>set</b><code>time(value: )</code></span>
+                        <span class="accessor"><b>set</b><code>time(value)</code></span>
                     </td>
                 </tr>
                             <tr>
@@ -3034,7 +3044,7 @@ Used to add time selector next to calendar</p>
 
                 <tr>
                     <td class="col-md-4">
-                        <span class="accessor"><b>set</b><code>disabled(value: )</code></span>
+                        <span class="accessor"><b>set</b><code>disabled(value)</code></span>
                     </td>
                 </tr>
                             <tr>
@@ -3101,7 +3111,7 @@ Used to add time selector next to calendar</p>
 
                 <tr>
                     <td class="col-md-4">
-                        <span class="accessor"><b>set</b><code>value(v: )</code></span>
+                        <span class="accessor"><b>set</b><code>value(v)</code></span>
                     </td>
                 </tr>
                             <tr>
@@ -3366,7 +3376,7 @@ export class DejaDateSelectorComponent implements OnInit, ControlValueAccessor, 
 
     // ************* ControlValueAccessor Implementation **************
     // set accessor including call the onchange callback
-    set value(v: Date) {
+    public set value(v: Date) {
         if (v !&#x3D;&#x3D; this.selectedDate) {
             this.writeValue(v);
             this.onChangeCallback(v);
@@ -3374,7 +3384,7 @@ export class DejaDateSelectorComponent implements OnInit, ControlValueAccessor, 
     }
 
     // get accessor
-    get value(): Date {
+    public get value(): Date {
         return this.selectedDate;
     }
 
@@ -3765,6 +3775,171 @@ export class DejaDateSelectorComponent implements OnInit, ControlValueAccessor, 
 </code></pre>
     </div>
 
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./date-selector.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">deja-date-time-selector {
+    #date-time-selector {
+        display: flex;
+        margin: 0 auto;
+        width: 310px;
+        outline: none;
+        &amp;[with-time] {
+            width: 663px;
+        }
+        &amp;.datetime {
+            width: 663px;
+        }
+        &amp;.timeonly {
+            width: 361px;
+            height: 452px;
+        }
+        #time-header,
+        #date-header {
+            align-items: center;
+            display: flex;
+            flex: 1 100%;
+            font-size: 2rem;
+            height: 94px;
+            justify-content: center;
+            padding: 0;
+            position: relative;
+        }
+        #time-selector {
+            position: relative;
+            width: 361px;
+            #time-body {
+                height: calc(100% - 94px);
+                position: relative;
+            }
+            deja-circular-picker {
+                left: 50%;
+                position: absolute;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                .circular-picker {
+                    left: 50%;
+                    position: absolute !important;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                &amp;.hours .circular-picker {
+                    border: none;
+                    &amp;:before {
+                        border-radius: 50%;
+                        content: &#x27;&#x27;;
+                        height: 1rem;
+                        left: 50%;
+                        margin-left: -0.5rem;
+                        margin-top: -0.5rem;
+                        position: absolute;
+                        top: 50%;
+                        width: 1rem;
+                    }
+                }
+            }
+        }
+        #date-selector {
+            margin: 0 auto;
+            width: 310px;
+            #date-header {
+                flex-direction: column;
+                [current] {
+                    font-size: 2rem;
+                }
+                .year {
+                    align-items: center;
+                    display: flex;
+                    font-size: 1rem;
+                    justify-content: center;
+                    width: 50%;
+                    [fontIcon] {
+                        flex: 0 0 auto;
+                        cursor: pointer;
+                    }
+                    div {
+                        flex: 1 1 auto;
+                        text-align: center;
+                    }
+                }
+            }
+            #sub-header {
+                .month {
+                    align-items: center;
+                    display: flex;
+                    justify-content: center;
+                    padding: 1rem;
+                    text-align: center;
+                    span {
+                        flex: 1 1 auto;
+                        font-size: 1rem;
+                        text-transform: capitalize;
+                    }
+                    button[mat-mini-fab] {
+                        flex: 0 0 auto;
+                        box-shadow: none;
+                    }
+                }
+                .days {
+                    align-items: center;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    margin-bottom: 0.5rem;
+                    text-align: center;
+                    span {
+                        flex: 0 0 14%;
+                        position: relative;
+                    }
+                }
+            }
+            #date-body {
+                align-items: center;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                text-align: center;
+                &amp;:focus {
+                    outline: none;
+                }
+                .date {
+                    flex: 0 0 14%;
+                    position: relative;
+                    &amp;:before {
+                        content: &#x27;&#x27;;
+                        float: left;
+                        padding-top: 100%;
+                    }
+                    .day {
+                        align-items: center;
+                        border-radius: 50%;
+                        bottom: 0;
+                        display: flex;
+                        justify-content: center;
+                        left: 0;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
+                        transition: all 450ms cubic-bezier(0.23, 1, 0.32, 1) 0ms;
+                        &amp;.disabled {
+                            &amp;:hover {
+                                cursor: not-allowed;
+                            }
+                        }
+                        &amp;:hover,
+                        &amp;[selected] {
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+</code></pre>
+    </div>
+
     <div class="tab-pane fade " id="c-tree">
         <div id="tree-container"></div>
         <div class="tree-legend">
@@ -3791,7 +3966,7 @@ export class DejaDateSelectorComponent implements OnInit, ControlValueAccessor, 
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><div id="date-time-selector" [ngClass]="layoutClass" tabindex="-1">    <div id="date-selector" *ngIf="layoutId < 3">        <div id="date-header">            <div class="year">                <button mat-mini-fab type="button" (click)="changeYear(-1)" [disabled]="disabled">                    <mat-icon fontSet="deja-icons" fontIcon="keyboard_arrow_left"></mat-icon>                </button>                <div>{{displayedDate.getFullYear()}}</div>                <button mat-mini-fab type="button" (click)="changeYear(1)" [disabled]="disabled">                    <mat-icon fontSet="deja-icons" fontIcon="keyboard_arrow_right"></mat-icon>                </button>            </div>            <div current>                {{displayedDate && (format ? (displayedDate | dejaDate : format) : displayedDate.toLocaleDateString())}}            </div>        </div>        <div id="sub-header">            <div class="month">                <div class="previous">                    <button mat-mini-fab type="button" (click)="changeMonth(-1)" [disabled]="disabled">                        <mat-icon fontSet="deja-icons" fontIcon="keyboard_arrow_left"></mat-icon>                    </button>                </div>                <span>{{displayedDate.toLocaleString(local, { month: \'long\' })}} {{displayedDate.getFullYear()}}</span>                <div class="next">                    <button mat-mini-fab type="button" (click)="changeMonth(1)" [disabled]="disabled">                        <mat-icon fontSet="deja-icons" fontIcon="keyboard_arrow_right"></mat-icon>                    </button>                </div>            </div>            <div class="days">                <span *ngFor="let day of days">{{day}}</span>            </div>        </div>        <div id="date-body" (keydown)="keyDown($event)" tabindex="0" [attr.keyboardNavigation]="keyboardNavigation">            <div class="date" *ngFor="let dateSelectorItem of currentDays; let index=index">                <div class="day" [attr.dateindex]="index" [class.background]="dateSelectorItem.background" [class.disabled]="dateSelectorItem.disabled"                    [attr.current]="dateSelectorItem.currentDate || null" [attr.selected]="dateSelectorItem.selected || null">                    {{dateSelectorItem.date.getDate()}}                </div>            </div>            <div class="date" *ngFor="let emptyDay of emptyDays"></div>        </div>    </div>    <div id="time-selector" *ngIf="layoutId > 1">        <div id="time-header">            {{(\'0\'+displayedDate.getHours()).slice(-2)}}:{{(\'0\'+displayedDate.getMinutes()).slice(-2)}}        </div>        <div id="time-body">            <deja-circular-picker [ngModel]="(this.displayedDate) ? this.displayedDate.getMinutes() : 0" (ngModelChange)="updateMinutes($event)"                [ranges]="clocks.minutes.ranges" [outerLabels]="true" class="minutes" [disabled]="disabled"></deja-circular-picker>            <deja-circular-picker [ngModel]="(this.displayedDate && this.displayedDate.getHours() != 0) ? this.displayedDate.getHours() : 24" (ngModelChange)="updateHours($event)"                [ranges]="clocks.hours.ranges" class="hours" [disabled]="disabled">                <ng-template #cursorTemplate #labelTemplate let-value>                    {{ value === 24 ? 0 : value }}                </ng-template>            </deja-circular-picker>        </div>    </div></div></div>'
-    var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaComboListActionbarComponent', 'selector': 'deja-combo-list-actionbar'},{'name': 'DejaComboListChildComponent', 'selector': 'deja-combo-list-child'},{'name': 'DejaComboListComponent', 'selector': 'deja-combo-list'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaEditorComponent', 'selector': 'deja-editor'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaItemComponent', 'selector': 'deja-item'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaNumericStepperComponent', 'selector': 'deja-numeric-stepper'},{'name': 'DejaOverlayComponent', 'selector': 'deja-overlay'},{'name': 'DejaPopupActionsComponent', 'selector': 'deja-popup-actions'},{'name': 'DejaPopupAdvancedComponent', 'selector': 'deja-popup-advanced'},{'name': 'DejaPopupBoxComponent', 'selector': 'deja-popup-box'},{'name': 'DejaPopupComponent', 'selector': 'deja-popup'},{'name': 'DejaPopupContentComponent', 'selector': 'deja-popup-content'},{'name': 'DejaPopupToolbarComponent', 'selector': 'deja-popup-toolbar'},{'name': 'DejaPopupTrayComponent', 'selector': 'deja-popup-tray'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSidenavComponent', 'selector': 'deja-sidenav'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTagComponent', 'selector': 'deja-tag'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'}];
+    var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaComboListActionbarComponent', 'selector': 'deja-combo-list-actionbar'},{'name': 'DejaComboListChildComponent', 'selector': 'deja-combo-list-child'},{'name': 'DejaComboListComponent', 'selector': 'deja-combo-list'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaEditorComponent', 'selector': 'deja-editor'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaItemComponent', 'selector': 'deja-item'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaNumericStepperComponent', 'selector': 'deja-numeric-stepper'},{'name': 'DejaOverlayComponent', 'selector': 'deja-overlay'},{'name': 'DejaPopupActionsComponent', 'selector': 'deja-popup-actions'},{'name': 'DejaPopupAdvancedComponent', 'selector': 'deja-popup-advanced'},{'name': 'DejaPopupBoxComponent', 'selector': 'deja-popup-box'},{'name': 'DejaPopupComponent', 'selector': 'deja-popup'},{'name': 'DejaPopupContentComponent', 'selector': 'deja-popup-content'},{'name': 'DejaPopupToolbarComponent', 'selector': 'deja-popup-toolbar'},{'name': 'DejaPopupTrayComponent', 'selector': 'deja-popup-tray'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSidenavComponent', 'selector': 'deja-sidenav'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTagComponent', 'selector': 'deja-tag'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'},{'name': 'TileGroupStyleEditorComponent', 'selector': 'deja-tile-group-style-editor'}];
     var DIRECTIVES = [{'name': 'DejaAutosizeTextAreaDirective', 'selector': 'textarea[deja-autosize]'},{'name': 'DejaChildValidatorDirective', 'selector': '[deja-child-validator]'},{'name': 'DejaDraggableDirective', 'selector': '[deja-draggable]'},{'name': 'DejaDroppableDirective', 'selector': '[deja-droppable]'},{'name': 'DejaEditableDirective', 'selector': '[deja-editable]'},{'name': 'DejaEditorSelectorDirective', 'selector': 'deja-editor'},{'name': 'DejaMouseDraggableDirective', 'selector': '[deja-mouse-draggable]'},{'name': 'DejaMouseDroppableDirective', 'selector': '[deja-mouse-droppable]'},{'name': 'DejaResizeListenerDirective', 'selector': '[resize-listener]'},{'name': 'DejaSidenavContentDirective', 'selector': 'deja-sidenav-content, [deja-sidenav-content]'},{'name': 'DejaSidenavHeaderDirective', 'selector': 'deja-sidenav-header, [deja-sidenav-header]'},{'name': 'DejaSidenavMenuDirective', 'selector': 'deja-sidenav-menu, [deja-sidenav-menu]'},{'name': 'DejaSidenavMenuSeparatorDirective', 'selector': 'deja-sidenav-menu-separator, [deja-sidenav-menu-separator]'},{'name': 'DejaSlimScrollDirective', 'selector': '[slimScroll]'},{'name': 'DejaTilePositionDirective', 'selector': '[deja-tile-position]'},{'name': 'DejaTooltipDirective', 'selector': '[deja-tooltip]'},{'name': 'PendingOnFocusDirective', 'selector': '[pending-onfocus]'},{'name': 'SplitAreaDirective', 'selector': 'split-area'},{'name': 'SplitGutterDirective', 'selector': 'split-gutter'},{'name': 'ValidateOnBlurDirective', 'selector': '[validate-onblur]'}];
     var ACTUAL_COMPONENT = {'name': 'DejaDateSelectorComponent'};
 </script>
@@ -3832,7 +4007,9 @@ export class DejaDateSelectorComponent implements OnInit, ControlValueAccessor, 
 
        <script src="../js/libs/custom-elements.min.js"></script>
        <script src="../js/libs/lit-html.js"></script>
-       <script src="../js/menu-wc.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
 
        <script src="../js/libs/bootstrap-native.js"></script>
 

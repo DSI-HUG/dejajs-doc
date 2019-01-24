@@ -18,10 +18,7 @@
         </div>
 
         <div class="xs-menu menu" id="mobile-menu">
-                <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search">
-</div>
-            <compodoc-menu></compodoc-menu>
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
         </div>
 
         <div class="container-fluid main">
@@ -1221,7 +1218,11 @@
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Decorators : </i><code>OptionalSelf</code>
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Optional()<br />@Self()<br />
+                            </code>
                         </td>
                     </tr>
                         <tr>
@@ -1589,31 +1590,31 @@ export class DejaEditorSelectorDirective extends _MatInputMixinBase
     public value: any;
     public stateChanges: Subject&lt;void&gt; &#x3D; new Subject&lt;void&gt;();
     @Input()
-    get id(): string {
+    public get id(): string {
         return this._id;
     }
-    set id(value: string) {
+    public set id(value: string) {
         this._id &#x3D; value || this._uid;
     }
     protected _id: string;
     @Input() public placeholder: string;
     public focused: boolean;
     @Input()
-    get required(): boolean {
+    public get required(): boolean {
         return this._required;
     }
-    set required(value: boolean) {
+    public set required(value: boolean) {
         this._required &#x3D; coerceBooleanProperty(value);
     }
     protected _required &#x3D; false;
     @Input()
-    get disabled(): boolean {
+    public get disabled(): boolean {
         if (this.ngControl &amp;&amp; this.ngControl.disabled !&#x3D;&#x3D; null) {
             return this.ngControl.disabled;
         }
         return this._disabled;
     }
-    set disabled(value: boolean) {
+    public set disabled(value: boolean) {
         this._disabled &#x3D; coerceBooleanProperty(value);
 
         // Browsers may not fire the blur event if the input is disabled too quickly.
@@ -1682,7 +1683,7 @@ export class DejaEditorSelectorDirective extends _MatInputMixinBase
         return !this._editor.value;
     }
 
-    get shouldLabelFloat(): boolean {
+    public get shouldLabelFloat(): boolean {
         if (this.focused || !this.empty) {
             if (this.empty) {
                 this._attachPlaceholder();
@@ -1769,7 +1770,9 @@ export class DejaEditorSelectorDirective extends _MatInputMixinBase
 
        <script src="../js/libs/custom-elements.min.js"></script>
        <script src="../js/libs/lit-html.js"></script>
-       <script src="../js/menu-wc.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
 
        <script src="../js/libs/bootstrap-native.js"></script>
 

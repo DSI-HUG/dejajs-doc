@@ -18,10 +18,7 @@
         </div>
 
         <div class="xs-menu menu" id="mobile-menu">
-                <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search">
-</div>
-            <compodoc-menu></compodoc-menu>
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
         </div>
 
         <div class="container-fluid main">
@@ -607,6 +604,7 @@ export class DejaTilesLayoutProvider implements OnDestroy {
 
                     const mouseDown$ &#x3D; observableFromEvent(container, &#x27;mousedown&#x27;).pipe(
                         filter((event: MouseEvent) &#x3D;&gt; event.buttons &#x3D;&#x3D;&#x3D; 1),
+                        filter((event: MouseEvent) &#x3D;&gt; !this.isElementInsideDejaEditor(event.target as HTMLElement)),
                         map((event: MouseEvent) &#x3D;&gt; ({ event: event, target: event.target as HTMLElement, clickedTile: this.getTileComponentFromHTMLElement(event.target as HTMLElement) })));
 
                     // Pressed and selected tile observers
@@ -844,6 +842,19 @@ export class DejaTilesLayoutProvider implements OnDestroy {
         }
 
         return tileElement;
+    }
+
+    public isElementInsideDejaEditor(element: HTMLElement) {
+        let tileElement &#x3D; element;
+
+        while (tileElement &amp;&amp; tileElement !&#x3D;&#x3D; this.container) {
+            if (tileElement.tagName &#x3D;&#x3D;&#x3D; &#x27;DEJA-EDITOR&#x27;) {
+                return true;
+            }
+            tileElement &#x3D; tileElement.parentElement;
+        }
+
+        return false;
     }
 
     public getTileComponentFromHTMLElement(element: HTMLElement): DejaTile {
@@ -1965,7 +1976,9 @@ export class DejaTilesLayoutProvider implements OnDestroy {
 
        <script src="../js/libs/custom-elements.min.js"></script>
        <script src="../js/libs/lit-html.js"></script>
-       <script src="../js/menu-wc.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
 
        <script src="../js/libs/bootstrap-native.js"></script>
 

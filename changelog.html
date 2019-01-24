@@ -18,10 +18,7 @@
         </div>
 
         <div class="xs-menu menu" id="mobile-menu">
-                <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search">
-</div>
-            <compodoc-menu></compodoc-menu>
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
         </div>
 
         <div class="container-fluid main">
@@ -33,6 +30,37 @@
                <div class="content getting-started">
                    <div class="content-data">
 
+<p><a name="4.1.2"></a></p>
+<h2 id="4-1-2-2019-01-24-"><a href="https://github.com/DSI-HUG/dejajs-components/compare/v4.1.1...v4.1.2">4.1.2</a> (2019-01-24)</h2>
+<p><a name="4.1.1"></a></p>
+<h2 id="4-1-1-2019-01-24-"><a href="https://github.com/DSI-HUG/dejajs-components/compare/v4.1.0...v4.1.1">4.1.1</a> (2019-01-24)</h2>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li><strong>DejaTileGroup:</strong> fix wrong imports (<a href="https://github.com/DSI-HUG/dejajs-components/commit/97b2b2d">97b2b2d</a>)</li>
+</ul>
+<p><a name="4.1.0"></a></p>
+<h1 id="4-1-0-2019-01-23-"><a href="https://github.com/DSI-HUG/dejajs-components/compare/v4.0.5...v4.1.0">4.1.0</a> (2019-01-23)</h1>
+<h3 id="bug-fixes">Bug Fixes</h3>
+<ul>
+<li>package.json to reduce vulnerabilities (<a href="https://github.com/DSI-HUG/dejajs-components/commit/4b7a492">4b7a492</a>)</li>
+<li>package.json to reduce vulnerabilities (<a href="https://github.com/DSI-HUG/dejajs-components/commit/611671b">611671b</a>)</li>
+<li><strong>DatePickerComponent:</strong> Component change detection is OnPush, so we must force the view to refresh when the disable state changes (<a href="https://github.com/DSI-HUG/dejajs-components/commit/a0fb9d1">a0fb9d1</a>)</li>
+<li><strong>NumericStepperComponent:</strong> Label should float is value is 0. Convert value to number if it&#39;s a number, set to null otherwise (<a href="https://github.com/DSI-HUG/dejajs-components/commit/bb2f264">bb2f264</a>)</li>
+<li><strong>TileGroup:</strong> fix imports (<a href="https://github.com/DSI-HUG/dejajs-components/commit/ee405d6">ee405d6</a>)</li>
+<li><strong>TileGroup:</strong> Selected border and flex issues (<a href="https://github.com/DSI-HUG/dejajs-components/commit/c349c61">c349c61</a>)</li>
+<li><strong>yarn:</strong> EventStream version issue (<a href="https://github.com/DSI-HUG/dejajs-components/commit/776064b">776064b</a>)</li>
+<li><strong>Yarn:</strong> Regenerate yarn lock (<a href="https://github.com/DSI-HUG/dejajs-components/commit/2d24776">2d24776</a>)</li>
+<li><strong>Yarn:</strong> Update yarn lock (<a href="https://github.com/DSI-HUG/dejajs-components/commit/88d9e9b">88d9e9b</a>)</li>
+</ul>
+<h3 id="features">Features</h3>
+<ul>
+<li><strong>TileGroup:</strong> add border customization (<a href="https://github.com/DSI-HUG/dejajs-components/commit/8d37930">8d37930</a>)</li>
+<li><strong>TileGroup:</strong> add border positions selection (<a href="https://github.com/DSI-HUG/dejajs-components/commit/11543b6">11543b6</a>)</li>
+<li><strong>TileGroup:</strong> border customization + fix ckeditor bug (<a href="https://github.com/DSI-HUG/dejajs-components/commit/0e74b40">0e74b40</a>)</li>
+<li><strong>TileGroup:</strong> html edition (<a href="https://github.com/DSI-HUG/dejajs-components/commit/5761268">5761268</a>)</li>
+<li><strong>TileGroup:</strong> small refactoring tileGroupComponent (<a href="https://github.com/DSI-HUG/dejajs-components/commit/17ea9b7">17ea9b7</a>)</li>
+<li><strong>TileGroup:</strong> use inline deja-editor for html edition (<a href="https://github.com/DSI-HUG/dejajs-components/commit/eb1b421">eb1b421</a>)</li>
+</ul>
 <p><a name="4.0.5"></a></p>
 <h2 id="4-0-5-2018-11-20-"><a href="https://github.com/DSI-HUG/dejajs-components/compare/v4.0.4...v4.0.5">4.0.5</a> (2018-11-20)</h2>
 <h3 id="bug-fixes">Bug Fixes</h3>
@@ -4161,7 +4189,9 @@ Material theming for all components</p>
 
        <script src="./js/libs/custom-elements.min.js"></script>
        <script src="./js/libs/lit-html.js"></script>
-       <script src="./js/menu-wc.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="./js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="./js/menu-wc.js" defer></script>
 
        <script src="./js/libs/bootstrap-native.js"></script>
 

@@ -18,10 +18,7 @@
         </div>
 
         <div class="xs-menu menu" id="mobile-menu">
-                <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search">
-</div>
-            <compodoc-menu></compodoc-menu>
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
         </div>
 
         <div class="container-fluid main">
@@ -50,6 +47,9 @@
         </li>
         <li >
             <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
         </li>
         <li >
             <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
@@ -104,7 +104,7 @@
 
             <tr>
                 <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>tile-group.component.scss</code></td>
+                <td class="col-md-9"><code>./tile-group.component.scss</code></td>
             </tr>
 
 
@@ -113,6 +113,12 @@
                 <td class="col-md-3">templateUrl</td>
                 <td class="col-md-9"><code>./tile-group.component.html</code></td>
             </tr>
+
+
+
+
+
+
 
 
         </tbody>
@@ -132,6 +138,22 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_model">_model</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#backgroundColor">backgroundColor</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#borderColor">borderColor</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#borderWidth">borderWidth</a>
+                            </li>
+                            <li>
                                     <span class="modifier">Static</span>
                                 <a href="#defaultColor">defaultColor</a>
                             </li>
@@ -140,12 +162,20 @@
                                 <a href="#edit$">edit$</a>
                             </li>
                             <li>
-                                    <span class="modifier">Private</span>
-                                <a href="#isAlive">isAlive</a>
+                                    <span class="modifier">Public</span>
+                                <a href="#editing">editing</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#editor">editor</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#editorConfig">editorConfig</a>
                             </li>
                             <li>
                                     <span class="modifier">Private</span>
-                                <a href="#title">title</a>
+                                <a href="#isAlive">isAlive</a>
                             </li>
                         </ul>
                     </td>
@@ -160,8 +190,37 @@
                     <td class="col-md-4">
                         <ul class="index-list">
                             <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Static</span>
+                                <a href="#buildEditorConfig">buildEditorConfig</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#deleteBorder">deleteBorder</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#edit">edit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#editStyle">editStyle</a>
+                            </li>
+                            <li>
                                     <span class="modifier">Public</span>
                                 <a href="#ngOnDestroy">ngOnDestroy</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#onEditorBlur">onEditorBlur</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#updateBorderColor">updateBorderColor</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#updateBorderWidth">updateBorderWidth</a>
                             </li>
                         </ul>
                     </td>
@@ -200,7 +259,7 @@
                                 <a href="#close">close</a>
                             </li>
                             <li>
-                                <a href="#titleChanged">titleChanged</a>
+                                <a href="#modelChanged">modelChanged</a>
                             </li>
                         </ul>
                     </td>
@@ -223,6 +282,9 @@
                             <li>
                                 <a href="#style.color">style.color</a>
                             </li>
+                            <li>
+                                <a href="#style.padding">style.padding</a>
+                            </li>
                         </ul>
                     </td>
                 </tr>
@@ -237,10 +299,13 @@
                         <td class="col-md-4">
                             <ul class="index-list">
                                 <li>
-                                    <a href="#color">color</a>
+                                    <a href="#model">model</a>
                                 </li>
                                 <li>
                                     <a href="#designMode">designMode</a>
+                                </li>
+                                <li>
+                                    <a href="#color">color</a>
                                 </li>
                             </ul>
                         </td>
@@ -255,12 +320,12 @@
             <tbody>
                 <tr>
                     <td class="col-md-4">
-<code>constructor(changeDetectorRef: <a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank">ChangeDetectorRef</a>)</code>
+<code>constructor(changeDetectorRef: <a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank">ChangeDetectorRef</a>, dejaPopupService: <a href="../injectables/DejaPopupService.html">DejaPopupService</a>)</code>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-4">
-                                <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/component/tiles/tile-group.component.ts:38</a></div>
+                                <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/component/tiles/tile-group.component.ts:42</a></div>
                             </td>
                         </tr>
 
@@ -282,6 +347,18 @@
                                                   
                                                         <td>
                                                                     <code><a href="https://angular.io/api/core/ChangeDetectorRef" target="_blank" >ChangeDetectorRef</a></code>
+                                                        </td>
+                                                  
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                        <td>dejaPopupService</td>
+                                                  
+                                                        <td>
+                                                                    <code><a href="../injectables/DejaPopupService.html" target="_self" >DejaPopupService</a></code>
                                                         </td>
                                                   
                                                     <td>
@@ -316,7 +393,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/component/tiles/tile-group.component.ts:49</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/component/tiles/tile-group.component.ts:81</a></div>
                             </td>
                         </tr>
             </tbody>
@@ -333,7 +410,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/component/tiles/tile-group.component.ts:56</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/component/tiles/tile-group.component.ts:74</a></div>
                             </td>
                         </tr>
             </tbody>
@@ -346,15 +423,11 @@
                         <code>model</code>
                     </td>
                     <td class="col-md-10">
-                            <p>
-                            <em>Type :</em>    <code><a href="../interfaces/IDejaTile.html" target="_self" >IDejaTile</a></code>
-
-                            </p>
                     </td>
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="28" class="link-to-prism">src/component/tiles/tile-group.component.ts:28</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/component/tiles/tile-group.component.ts:59</a></div>
                             </td>
                         </tr>
             </tbody>
@@ -376,7 +449,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/component/tiles/tile-group.component.ts:29</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/component/tiles/tile-group.component.ts:32</a></div>
                             </td>
                         </tr>
             </tbody>
@@ -385,8 +458,8 @@
             <tbody>
                 <tr>
                     <td class="col-md-2">
-                        <a name="titleChanged"></a>
-                        <code>titleChanged</code>
+                        <a name="modelChanged"></a>
+                        <code>modelChanged</code>
                     </td>
                     <td class="col-md-10">
                         <em><code>$event</code> Type:</em>    <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
@@ -395,7 +468,7 @@
                 </tr>
                         <tr>
                             <td class="col-md-2" colspan="2">
-                                    <div class="io-line">Defined in <a href="" data-line="30" class="link-to-prism">src/component/tiles/tile-group.component.ts:30</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/component/tiles/tile-group.component.ts:33</a></div>
                             </td>
                         </tr>
             </tbody>
@@ -428,7 +501,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/component/tiles/tile-group.component.ts:38</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/component/tiles/tile-group.component.ts:67</a></div>
                             </td>
                         </tr>
 
@@ -450,18 +523,19 @@
                 </tr>
                 <tr>
                     <td class="col-md-4">
-                        <code>style.background-color:     <code></code>
+                        <code>style.background-color:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
 </code>
                     </td>
                 </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Default value : </i><code>DejaTileGroupComponent.defaultColor</code>
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
                         </td>
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/component/tiles/tile-group.component.ts:32</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="117" class="link-to-prism">src/component/tiles/tile-group.component.ts:117</a></div>
                             </td>
                         </tr>
 
@@ -500,7 +574,41 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="33" class="link-to-prism">src/component/tiles/tile-group.component.ts:33</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="38" class="link-to-prism">src/component/tiles/tile-group.component.ts:38</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="style.padding"></a>
+                        <span class="name">
+                            <b>
+                            style.padding
+                            </b>
+                            <a href="#style.padding"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>style.padding:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="112" class="link-to-prism">src/component/tiles/tile-group.component.ts:112</a></div>
                             </td>
                         </tr>
 
@@ -515,6 +623,167 @@
         <h3 id="methods">
             Methods
         </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="buildEditorConfig"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                                <span class="modifier">Static</span>
+                            buildEditorConfig
+                            </b>
+                            <a href="#buildEditorConfig"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>buildEditorConfig()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="87" class="link-to-prism">src/component/tiles/tile-group.component.ts:87</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code>{ coreStyles_bold: { element: string; overrides: string; }; coreStyles_italic: { element: string;...</code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="deleteBorder"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            deleteBorder
+                            </b>
+                            <a href="#deleteBorder"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>deleteBorder()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="165" class="link-to-prism">src/component/tiles/tile-group.component.ts:165</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="edit"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            edit
+                            </b>
+                            <a href="#edit"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>edit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="125" class="link-to-prism">src/component/tiles/tile-group.component.ts:125</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="editStyle"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            editStyle
+                            </b>
+                            <a href="#editStyle"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>editStyle()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="139" class="link-to-prism">src/component/tiles/tile-group.component.ts:139</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
@@ -539,7 +808,7 @@
 
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="65" class="link-to-prism">src/component/tiles/tile-group.component.ts:65</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="121" class="link-to-prism">src/component/tiles/tile-group.component.ts:121</a></div>
                             </td>
                         </tr>
 
@@ -555,6 +824,188 @@
                 </tr>
             </tbody>
         </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="onEditorBlur"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            onEditorBlur
+                            </b>
+                            <a href="#onEditorBlur"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>onEditorBlur()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="134" class="link-to-prism">src/component/tiles/tile-group.component.ts:134</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="updateBorderColor"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            updateBorderColor
+                            </b>
+                            <a href="#updateBorderColor"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>updateBorderColor(color: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="172" class="link-to-prism">src/component/tiles/tile-group.component.ts:172</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>color</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="updateBorderWidth"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            updateBorderWidth
+                            </b>
+                            <a href="#updateBorderWidth"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon icon ion-ios-reset"></span>
+                        <code>updateBorderWidth(width: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="179" class="link-to-prism">src/component/tiles/tile-group.component.ts:179</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>width</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            No
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 </section>
 
     <section>
@@ -562,6 +1013,146 @@
         <h3 id="inputs">
             Properties
         </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_model"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _model
+                            </b>
+                            <a href="#_model"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>_model:     <code><a href="../interfaces/IDejaTile.html" target="_self" >IDejaTile</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../interfaces/IDejaTile.html" target="_self" >IDejaTile</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="52" class="link-to-prism">src/component/tiles/tile-group.component.ts:52</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="backgroundColor"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            backgroundColor
+                            </b>
+                            <a href="#backgroundColor"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>backgroundColor:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/component/tiles/tile-group.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="borderColor"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            borderColor
+                            </b>
+                            <a href="#borderColor"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>borderColor:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/component/tiles/tile-group.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="borderWidth"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            borderWidth
+                            </b>
+                            <a href="#borderWidth"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>borderWidth:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="40" class="link-to-prism">src/component/tiles/tile-group.component.ts:40</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
@@ -595,7 +1186,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/component/tiles/tile-group.component.ts:27</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="31" class="link-to-prism">src/component/tiles/tile-group.component.ts:31</a></div>
                             </td>
                         </tr>
 
@@ -625,6 +1216,118 @@
                     <tr>
                         <td class="col-md-4">
                             <i>Default value : </i><code>new Subject&lt;void&gt;()</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/component/tiles/tile-group.component.ts:34</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="editing"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            editing
+                            </b>
+                            <a href="#editing"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>editing:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>false</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/component/tiles/tile-group.component.ts:39</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="editor"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            editor
+                            </b>
+                            <a href="#editor"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>editor:     <code><a href="../components/DejaEditorComponent.html" target="_self" >DejaEditorComponent</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="../components/DejaEditorComponent.html" target="_self" >DejaEditorComponent</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(DejaEditorComponent)<br />
+                            </code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/component/tiles/tile-group.component.ts:36</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="editorConfig"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            editorConfig
+                            </b>
+                            <a href="#editorConfig"><span class="icon ion-ios-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon icon ion-ios-reset"></span><code>editorConfig:     <code></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>DejaTileGroupComponent.buildEditorConfig()</code>
                         </td>
                     </tr>
                         <tr>
@@ -663,47 +1366,7 @@
                     </tr>
                         <tr>
                             <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/component/tiles/tile-group.component.ts:36</a></div>
-                            </td>
-                        </tr>
-
-
-            </tbody>
-        </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="title"></a>
-                        <span class="name">
-                            <b>
-                                <span class="modifier">Private</span>
-                            title
-                            </b>
-                            <a href="#title"><span class="icon ion-ios-link"></span></a>
-                        </span>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="col-md-4">
-                        <span class="modifier-icon icon ion-ios-reset"></span><code>title:     <code>DejaEditableDirective</code>
-</code>
-                    </td>
-                </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Type : </i>    <code>DejaEditableDirective</code>
-
-                        </td>
-                    </tr>
-                    <tr>
-                        <td class="col-md-4">
-                            <i>Decorators : </i><code>ViewChild</code>
-                        </td>
-                    </tr>
-                        <tr>
-                            <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/component/tiles/tile-group.component.ts:37</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/component/tiles/tile-group.component.ts:42</a></div>
                             </td>
                         </tr>
 
@@ -716,6 +1379,136 @@
     <h3 id="accessors">
         Accessors
     </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="model"></a>
+                        <span class="name"><b>model</b><a href="#model"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>model()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="54" class="link-to-prism">src/component/tiles/tile-group.component.ts:54</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>model(value)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="59" class="link-to-prism">src/component/tiles/tile-group.component.ts:59</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>value</td>
+                                                    
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="designMode"></a>
+                        <span class="name"><b>designMode</b><a href="#designMode"><span class="icon ion-ios-link"></span></a></span>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>get</b><code>designMode()</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="69" class="link-to-prism">src/component/tiles/tile-group.component.ts:69</a></div>
+                                </td>
+                            </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <span class="accessor"><b>set</b><code>designMode(value)</code></span>
+                    </td>
+                </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/component/tiles/tile-group.component.ts:74</a></div>
+                                </td>
+                            </tr>
+                    <tr>
+                        <td class="col-md-4">
+
+                                <div class="io-description">
+                                        <b>Parameters :</b>
+                                        <table class="params">
+                                            <thead>
+                                                <tr>
+                                                    <td>Name</td>
+                                                    <td>Optional</td>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                    <tr>
+                                                            <td>value</td>
+                                                    
+                                                    
+                                                        <td>
+                                                                No
+                                                        </td>
+                                                        
+                                                    </tr>
+                                            </tbody>
+                                        </table>
+                                </div>
+                                <div>
+                                </div>
+                                <div class="io-description">
+                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                                </div>
+                        </td>
+                    </tr>
+            </tbody>
+        </table>
         <table class="table table-sm table-bordered">
             <tbody>
                 <tr>
@@ -733,7 +1526,7 @@
                 </tr>
                             <tr>
                                 <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="49" class="link-to-prism">src/component/tiles/tile-group.component.ts:49</a></div>
+                                    <div class="io-line">Defined in <a href="" data-line="81" class="link-to-prism">src/component/tiles/tile-group.component.ts:81</a></div>
                                 </td>
                             </tr>
                     <tr>
@@ -775,71 +1568,6 @@
                     </tr>
             </tbody>
         </table>
-        <table class="table table-sm table-bordered">
-            <tbody>
-                <tr>
-                    <td class="col-md-4">
-                        <a name="designMode"></a>
-                        <span class="name"><b>designMode</b><a href="#designMode"><span class="icon ion-ios-link"></span></a></span>
-                    </td>
-                </tr>
-
-                <tr>
-                    <td class="col-md-4">
-                        <span class="accessor"><b>get</b><code>designMode()</code></span>
-                    </td>
-                </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/component/tiles/tile-group.component.ts:61</a></div>
-                                </td>
-                            </tr>
-
-                <tr>
-                    <td class="col-md-4">
-                        <span class="accessor"><b>set</b><code>designMode(value: )</code></span>
-                    </td>
-                </tr>
-                            <tr>
-                                <td class="col-md-4">
-                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/component/tiles/tile-group.component.ts:56</a></div>
-                                </td>
-                            </tr>
-                    <tr>
-                        <td class="col-md-4">
-
-                                <div class="io-description">
-                                        <b>Parameters :</b>
-                                        <table class="params">
-                                            <thead>
-                                                <tr>
-                                                    <td>Name</td>
-                                                    <td>Optional</td>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                    <tr>
-                                                            <td>value</td>
-                                                    
-                                                    
-                                                        <td>
-                                                                No
-                                                        </td>
-                                                        
-                                                    </tr>
-                                            </tbody>
-                                        </table>
-                                </div>
-                                <div>
-                                </div>
-                                <div class="io-description">
-                                    <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
-
-                                </div>
-                        </td>
-                    </tr>
-            </tbody>
-        </table>
 </section>
 </div>
 
@@ -850,7 +1578,11 @@ import { ChangeDetectionStrategy, ChangeDetectorRef, Component, EventEmitter, Ho
 import { from as observableFrom, Subject } from &#x27;rxjs&#x27;;
 import { debounceTime, filter, takeWhile } from &#x27;rxjs/operators&#x27;;
 import { Color } from &#x27;../../common/core/graphics/color&#x27;;
-import { DejaEditableDirective } from &#x27;../content-editable/content-editable.directive&#x27;;
+import { DejaEditorComponent } from &#x27;../editor/deja-editor.component&#x27;;
+import { DejaPopupButton } from &#x27;../popup/model/popup-action.model&#x27;;
+import { DejaPopupConfig } from &#x27;../popup/model/popup-config.model&#x27;;
+import { DejaPopupService } from &#x27;../popup/service/popup.service&#x27;;
+import { TileGroupStyleEditorComponent } from &#x27;./tile-group-style-editor.component&#x27;;
 import { IDejaTile } from &#x27;./tile.interface&#x27;;
 
 @Component({
@@ -864,24 +1596,52 @@ import { IDejaTile } from &#x27;./tile.interface&#x27;;
 })
 export class DejaTileGroupComponent implements OnDestroy {
     public static defaultColor &#x3D; &#x27;rgb(38, 50, 56)&#x27;;
-    @Input() public model: IDejaTile;
     @Output() public close &#x3D; new EventEmitter&lt;void&gt;();
-    @Output() public titleChanged &#x3D; new EventEmitter&lt;string&gt;();
-
-    @HostBinding(&#x27;style.background-color&#x27;) protected backgroundColor &#x3D; DejaTileGroupComponent.defaultColor;
-    @HostBinding(&#x27;style.color&#x27;) protected foregroundColor: string &#x3D; null;
-
+    @Output() public modelChanged &#x3D; new EventEmitter&lt;string&gt;();
     public edit$ &#x3D; new Subject&lt;void&gt;();
+    public editorConfig &#x3D; DejaTileGroupComponent.buildEditorConfig();
+    @ViewChild(DejaEditorComponent) public editor: DejaEditorComponent;
+    public backgroundColor: string;
+    @HostBinding(&#x27;style.color&#x27;) public foregroundColor: string &#x3D; null;
+    public editing &#x3D; false;
+    public borderWidth: string;
+    public borderColor: string;
     private isAlive &#x3D; true;
-    @ViewChild(DejaEditableDirective) private title: DejaEditableDirective;
-    @HostBinding(&#x27;attr.designMode&#x27;) private _designMode &#x3D; false;
 
-    constructor(private changeDetectorRef: ChangeDetectorRef) {
+    constructor(private changeDetectorRef: ChangeDetectorRef, private dejaPopupService: DejaPopupService) {
         observableFrom(this.edit$).pipe(
             takeWhile(() &#x3D;&gt; this.isAlive),
             filter(() &#x3D;&gt; this._designMode),
-            debounceTime(100))
-            .subscribe(() &#x3D;&gt; this.title.edit(true));
+            debounceTime(100)
+        ).subscribe(() &#x3D;&gt; this.editor.setFocus());
+    }
+
+    private _model: IDejaTile;
+
+    public get model(): IDejaTile {
+        return this._model;
+    }
+
+    @Input()
+    public set model(value: IDejaTile) {
+        this._model &#x3D; value;
+        if (this._model) {
+            this.borderColor &#x3D; this._model.templateModel.borderColor || this.backgroundColor;
+            this.borderWidth &#x3D; this._model.templateModel.borderWidth;
+        }
+    }
+
+    @HostBinding(&#x27;attr.designMode&#x27;) private _designMode &#x3D; false;
+
+    public get designMode() {
+        return this._designMode;
+    }
+
+    @Input()
+    public set designMode(value: boolean | string) {
+        this._designMode &#x3D; coerceBooleanProperty(value);
+        this.editing &#x3D; false;
+        this.changeDetectorRef.markForCheck();
     }
 
     @Input()
@@ -891,27 +1651,248 @@ export class DejaTileGroupComponent implements OnDestroy {
         this.changeDetectorRef.markForCheck();
     }
 
-    @Input()
-    public set designMode(value: boolean | string) {
-        this._designMode &#x3D; coerceBooleanProperty(value);
-        this.changeDetectorRef.markForCheck();
+    private static buildEditorConfig() {
+        return {
+            coreStyles_bold: { element: &#x27;b&#x27;, overrides: &#x27;strong&#x27; },
+            coreStyles_italic: { element: &#x27;i&#x27;, overrides: &#x27;em&#x27; },
+            enterMode: 3, // CKEDITOR.ENTER_DIV,
+            extraPlugins: &#x27;colorbutton,justify,autogrow&#x27;,
+            language: &#x27;fr&#x27;,
+            format_tags: &#x27;p;h1;h2&#x27;,
+            removeButtons: &#x27;Styles,Subscript,Superscript,Strike&#x27;,
+            removePlugins: &#x27;magicline&#x27;,
+            toolbarGroups: [
+                { name: &#x27;undo&#x27; },
+                { name: &#x27;align&#x27; },
+                { name: &#x27;colors&#x27; },
+                { name: &#x27;font&#x27; },
+                &#x27;/&#x27;,
+                { name: &#x27;others&#x27; },
+                { name: &#x27;basicstyles&#x27;, groups: [&#x27;basicstyles&#x27;, &#x27;cleanup&#x27;] },
+                { name: &#x27;styles&#x27;, groups: [&#x27;format&#x27;, &#x27;formats&#x27;] },
+                { name: &#x27;paragraph&#x27;, groups: [&#x27;list&#x27;] },
+            ]
+        };
     }
 
-    public get designMode() {
-        return this._designMode;
+    @HostBinding(&#x27;style.padding&#x27;)
+    public get borderWidthStyle(): string {
+        return this._model.templateModel.borderWidth;
+    }
+
+    @HostBinding(&#x27;style.background-color&#x27;)
+    public get borderColorStyle(): string {
+        return this._model.templateModel.borderColor || this.backgroundColor;
     }
 
     public ngOnDestroy() {
         this.isAlive &#x3D; false;
+    }
+
+    public edit(): void {
+        if (this.designMode) {
+            this.editing &#x3D; true;
+            this.changeDetectorRef.markForCheck();
+            // Put this action on the browser queue to execute it after the editor became visible
+            setTimeout(() &#x3D;&gt; this.editor.setFocus(), 0);
+        }
+    }
+
+    public onEditorBlur() {
+        this.editing &#x3D; false;
+        this.changeDetectorRef.markForCheck();
+    }
+
+    public editStyle() {
+        const config &#x3D; new DejaPopupConfig();
+        config.toolbarType &#x3D; &#x27;window&#x27;;
+        config.title &#x3D; &#x27;Modifier l\&#x27;apparence du groupe&#x27;;
+        config.data &#x3D; this;
+        config.actions &#x3D; [
+            new DejaPopupButton(&#x27;confirm&#x27;, &#x27;Confirmer&#x27;, &#x27;done&#x27;),
+            new DejaPopupButton(&#x27;cancel&#x27;, &#x27;Annuler&#x27;, &#x27;cancel&#x27;),
+        ];
+        config.fullscreen &#x3D; false;
+        config.hasBackdrop &#x3D; true;
+        config.contentComponentRef &#x3D; TileGroupStyleEditorComponent;
+
+        const backup &#x3D; {
+            borderColor: this.borderColor,
+            borderWidth: this.borderWidth
+        };
+
+        this.dejaPopupService.openAdvanced$(config).pipe(
+            filter(res &#x3D;&gt; !res.accepted)
+        ).subscribe(() &#x3D;&gt; {
+            this.updateBorderColor(backup.borderColor);
+            this.updateBorderWidth(backup.borderWidth);
+        });
+    }
+
+    public deleteBorder() {
+        this.updateBorderWidth(null);
+        this.updateBorderColor(null);
+        this.modelChanged.emit();
+        this.changeDetectorRef.markForCheck();
+    }
+
+    public updateBorderColor(color: string) {
+        this.borderColor &#x3D; color;
+        this._model.templateModel.borderColor &#x3D; color;
+        this.modelChanged.emit();
+        this.changeDetectorRef.markForCheck();
+    }
+
+    public updateBorderWidth(width: string) {
+        this.borderWidth &#x3D; width;
+        this._model.templateModel.borderWidth &#x3D; width;
+        this.modelChanged.emit();
+        this.changeDetectorRef.markForCheck();
     }
 }
 </code></pre>
     </div>
 
     <div class="tab-pane fade " id="c-templateData">
-        <pre class="line-numbers"><code class="language-html">&lt;span [deja-editable] id&#x3D;&quot;title&quot; multiline&#x3D;&quot;true&quot; [(ngModel)]&#x3D;&quot;model.templateModel.title&quot; (ngModelChange)&#x3D;&quot;titleChanged.emit($event)&quot; [mandatory]&#x3D;&quot;true&quot;&gt;&lt;/span&gt;
-&lt;mat-icon *ngIf&#x3D;&quot;designMode&quot; id&#x3D;&quot;edit-button&quot; (click)&#x3D;&quot;edit$.next()&quot; fontSet&#x3D;&quot;deja-icons&quot; fontIcon&#x3D;&quot;edit&quot;&gt;&lt;/mat-icon&gt;
-&lt;mat-icon *ngIf&#x3D;&quot;designMode&quot; id&#x3D;&quot;close-button&quot; (click)&#x3D;&quot;close.emit($event)&quot; fontSet&#x3D;&quot;deja-icons&quot; fontIcon&#x3D;&quot;close&quot;&gt;&lt;/mat-icon&gt;
+        <pre class="line-numbers"><code class="language-html">&lt;div class&#x3D;&quot;tile-group-content&quot; [style.backgroundColor]&#x3D;&quot;backgroundColor&quot;&gt;
+    &lt;deja-editor *ngIf&#x3D;&quot;designMode&quot; [class.hidden]&#x3D;&quot;!editing&quot; [(ngModel)]&#x3D;&quot;model.templateModel.title&quot; (ngModelChange)&#x3D;&quot;modelChanged.emit($event)&quot; [config]&#x3D;&quot;editorConfig&quot; (blur)&#x3D;&quot;onEditorBlur()&quot;&gt;&lt;/deja-editor&gt;
+    &lt;div *ngIf&#x3D;&quot;!designMode || !editing&quot; class&#x3D;&quot;not-editing-container&quot; (dblclick)&#x3D;&quot;edit()&quot;&gt;
+        &lt;span class&#x3D;&quot;not-editing&quot; [innerHtml]&#x3D;&quot;model.templateModel.title | safeHTML&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+    &lt;div class&#x3D;&quot;button-container&quot;&gt;
+        &lt;button *ngIf&#x3D;&quot;designMode&quot; mat-icon-button (click)&#x3D;&quot;actions.show($event)&quot;&gt;
+            &lt;mat-icon&gt;more_vert&lt;/mat-icon&gt;
+        &lt;/button&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;deja-overlay #actions&gt;
+    &lt;div class&#x3D;&quot;deja-menu-content&quot;&gt;
+        &lt;ul&gt;
+            &lt;li class&#x3D;&quot;menu-item&quot; (click)&#x3D;&quot;actions.close();close.emit($event)&quot;&gt;
+                &lt;mat-icon&gt;close&lt;/mat-icon&gt; Supprimer
+            &lt;/li&gt;
+            &lt;li class&#x3D;&quot;menu-item&quot; (click)&#x3D;&quot;actions.close();edit()&quot;&gt;
+                &lt;mat-icon&gt;edit&lt;/mat-icon&gt; Éditer
+            &lt;/li&gt;
+            &lt;li class&#x3D;&quot;menu-item&quot; (click)&#x3D;&quot;actions.close();editStyle()&quot;&gt;
+                &lt;mat-icon&gt;border_style&lt;/mat-icon&gt; {{ !!borderWidth ? &#x27;Modifier la bordure&#x27; : &#x27;Ajouter une bordure&#x27; }}
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/deja-overlay&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./tile-group.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">deja-tile {
+	deja-tile-group {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		box-sizing: border-box;
+
+		.tile-group-content {
+			flex-grow: 1;
+			display: flex;
+			height: 100%;
+			overflow: hidden;
+
+			deja-editor,
+			.not-editing-container {
+				padding: .8rem;
+				width: 100%;
+
+				p {
+					margin: 0;
+				}
+			}
+
+			deja-editor {
+				&amp;.hidden {
+					display: none;
+				}
+
+				div.cke_editable {
+					height: 100%;
+					width: 100%;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+				}
+			}
+
+			.not-editing-container {
+				display: flex;
+				align-items: center;
+				flex: 1 1 auto;
+				overflow: hidden;
+
+				.not-editing {
+					display: flex;
+					flex-direction: column;
+					width: 100%;
+				}
+			}
+
+			.button-container {
+				display: flex;
+				align-items: center;
+				flex: 0 0 auto;
+			}
+		}
+
+		#title {
+			text-overflow: ellipsis;
+			white-space: nowrap;
+			overflow: hidden;
+			flex-grow: 1;
+			flex-basis: auto;
+			outline: none;
+
+			a {
+				color: inherit !important;
+			}
+
+			&amp;[contenteditable&#x3D;&quot;true&quot;] {
+				cursor: text;
+			}
+		}
+
+		[fontIcon] {
+			font-size: 1rem;
+			z-index: 3;
+			cursor: pointer;
+			flex-basis: 1rem;
+			flex-grow: 0;
+			flex-shrink: 0;
+
+			path {
+				fill: #777777 !important;
+			}
+
+			&amp;:hover {
+				background-color: rgba(255, 255, 255, 0.2);
+				color: #222;
+			}
+		}
+
+		#edit-button,
+		#close-button {
+			margin: 0.3rem;
+			flex: 0 0 auto;
+		}
+	}
+
+	&amp;[selected&#x3D;&quot;true&quot;] {
+		deja-tile-group {
+			box-shadow: 0px 0px 1px 3px rgba(0, 0, 0, 0.6);
+		}
+	}
+}
 </code></pre>
     </div>
 
@@ -940,8 +1921,8 @@ export class DejaTileGroupComponent implements OnDestroy {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><span [deja-editable] id="title" multiline="true" [(ngModel)]="model.templateModel.title" (ngModelChange)="titleChanged.emit($event)" [mandatory]="true"></span><mat-icon *ngIf="designMode" id="edit-button" (click)="edit$.next()" fontSet="deja-icons" fontIcon="edit"></mat-icon><mat-icon *ngIf="designMode" id="close-button" (click)="close.emit($event)" fontSet="deja-icons" fontIcon="close"></mat-icon></div>'
-    var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaComboListActionbarComponent', 'selector': 'deja-combo-list-actionbar'},{'name': 'DejaComboListChildComponent', 'selector': 'deja-combo-list-child'},{'name': 'DejaComboListComponent', 'selector': 'deja-combo-list'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaEditorComponent', 'selector': 'deja-editor'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaItemComponent', 'selector': 'deja-item'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaNumericStepperComponent', 'selector': 'deja-numeric-stepper'},{'name': 'DejaOverlayComponent', 'selector': 'deja-overlay'},{'name': 'DejaPopupActionsComponent', 'selector': 'deja-popup-actions'},{'name': 'DejaPopupAdvancedComponent', 'selector': 'deja-popup-advanced'},{'name': 'DejaPopupBoxComponent', 'selector': 'deja-popup-box'},{'name': 'DejaPopupComponent', 'selector': 'deja-popup'},{'name': 'DejaPopupContentComponent', 'selector': 'deja-popup-content'},{'name': 'DejaPopupToolbarComponent', 'selector': 'deja-popup-toolbar'},{'name': 'DejaPopupTrayComponent', 'selector': 'deja-popup-tray'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSidenavComponent', 'selector': 'deja-sidenav'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTagComponent', 'selector': 'deja-tag'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'}];
+        var COMPONENT_TEMPLATE = '<div><div class="tile-group-content" [style.backgroundColor]="backgroundColor">    <deja-editor *ngIf="designMode" [class.hidden]="!editing" [(ngModel)]="model.templateModel.title" (ngModelChange)="modelChanged.emit($event)" [config]="editorConfig" (blur)="onEditorBlur()"></deja-editor>    <div *ngIf="!designMode || !editing" class="not-editing-container" (dblclick)="edit()">        <span class="not-editing" [innerHtml]="model.templateModel.title | safeHTML"></span>    </div>    <div class="button-container">        <button *ngIf="designMode" mat-icon-button (click)="actions.show($event)">            <mat-icon>more_vert</mat-icon>        </button>    </div></div><deja-overlay #actions>    <div class="deja-menu-content">        <ul>            <li class="menu-item" (click)="actions.close();close.emit($event)">                <mat-icon>close</mat-icon> Supprimer            </li>            <li class="menu-item" (click)="actions.close();edit()">                <mat-icon>edit</mat-icon> Éditer            </li>            <li class="menu-item" (click)="actions.close();editStyle()">                <mat-icon>border_style</mat-icon> {{ !!borderWidth ? \'Modifier la bordure\' : \'Ajouter une bordure\' }}            </li>        </ul>    </div></deja-overlay></div>'
+    var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaComboListActionbarComponent', 'selector': 'deja-combo-list-actionbar'},{'name': 'DejaComboListChildComponent', 'selector': 'deja-combo-list-child'},{'name': 'DejaComboListComponent', 'selector': 'deja-combo-list'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaEditorComponent', 'selector': 'deja-editor'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaItemComponent', 'selector': 'deja-item'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaNumericStepperComponent', 'selector': 'deja-numeric-stepper'},{'name': 'DejaOverlayComponent', 'selector': 'deja-overlay'},{'name': 'DejaPopupActionsComponent', 'selector': 'deja-popup-actions'},{'name': 'DejaPopupAdvancedComponent', 'selector': 'deja-popup-advanced'},{'name': 'DejaPopupBoxComponent', 'selector': 'deja-popup-box'},{'name': 'DejaPopupComponent', 'selector': 'deja-popup'},{'name': 'DejaPopupContentComponent', 'selector': 'deja-popup-content'},{'name': 'DejaPopupToolbarComponent', 'selector': 'deja-popup-toolbar'},{'name': 'DejaPopupTrayComponent', 'selector': 'deja-popup-tray'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSidenavComponent', 'selector': 'deja-sidenav'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTagComponent', 'selector': 'deja-tag'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'},{'name': 'TileGroupStyleEditorComponent', 'selector': 'deja-tile-group-style-editor'}];
     var DIRECTIVES = [{'name': 'DejaAutosizeTextAreaDirective', 'selector': 'textarea[deja-autosize]'},{'name': 'DejaChildValidatorDirective', 'selector': '[deja-child-validator]'},{'name': 'DejaDraggableDirective', 'selector': '[deja-draggable]'},{'name': 'DejaDroppableDirective', 'selector': '[deja-droppable]'},{'name': 'DejaEditableDirective', 'selector': '[deja-editable]'},{'name': 'DejaEditorSelectorDirective', 'selector': 'deja-editor'},{'name': 'DejaMouseDraggableDirective', 'selector': '[deja-mouse-draggable]'},{'name': 'DejaMouseDroppableDirective', 'selector': '[deja-mouse-droppable]'},{'name': 'DejaResizeListenerDirective', 'selector': '[resize-listener]'},{'name': 'DejaSidenavContentDirective', 'selector': 'deja-sidenav-content, [deja-sidenav-content]'},{'name': 'DejaSidenavHeaderDirective', 'selector': 'deja-sidenav-header, [deja-sidenav-header]'},{'name': 'DejaSidenavMenuDirective', 'selector': 'deja-sidenav-menu, [deja-sidenav-menu]'},{'name': 'DejaSidenavMenuSeparatorDirective', 'selector': 'deja-sidenav-menu-separator, [deja-sidenav-menu-separator]'},{'name': 'DejaSlimScrollDirective', 'selector': '[slimScroll]'},{'name': 'DejaTilePositionDirective', 'selector': '[deja-tile-position]'},{'name': 'DejaTooltipDirective', 'selector': '[deja-tooltip]'},{'name': 'PendingOnFocusDirective', 'selector': '[pending-onfocus]'},{'name': 'SplitAreaDirective', 'selector': 'split-area'},{'name': 'SplitGutterDirective', 'selector': 'split-gutter'},{'name': 'ValidateOnBlurDirective', 'selector': '[validate-onblur]'}];
     var ACTUAL_COMPONENT = {'name': 'DejaTileGroupComponent'};
 </script>
@@ -982,7 +1963,9 @@ export class DejaTileGroupComponent implements OnDestroy {
 
        <script src="../js/libs/custom-elements.min.js"></script>
        <script src="../js/libs/lit-html.js"></script>
-       <script src="../js/menu-wc.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
 
        <script src="../js/libs/bootstrap-native.js"></script>
 

@@ -18,10 +18,7 @@
         </div>
 
         <div class="xs-menu menu" id="mobile-menu">
-                <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search">
-</div>
-            <compodoc-menu></compodoc-menu>
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
         </div>
 
         <div class="container-fluid main">
@@ -50,6 +47,9 @@
         </li>
         <li >
             <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
         </li>
         <li >
             <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
@@ -100,7 +100,7 @@
 
             <tr>
                 <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>message-box.component.scss</code></td>
+                <td class="col-md-9"><code>./message-box.component.scss</code></td>
             </tr>
 
 
@@ -109,6 +109,12 @@
                 <td class="col-md-3">templateUrl</td>
                 <td class="col-md-9"><code>./message-box.component.html</code></td>
             </tr>
+
+
+
+
+
+
 
 
         </tbody>
@@ -661,7 +667,11 @@
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Decorators : </i><code>ContentChild</code>
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ContentChild(&#x27;actionsTemplate&#x27;)<br />
+                            </code>
                         </td>
                     </tr>
                         <tr>
@@ -701,7 +711,7 @@
 
                 <tr>
                     <td class="col-md-4">
-                        <span class="accessor"><b>set</b><code>horizontal(value: )</code></span>
+                        <span class="accessor"><b>set</b><code>horizontal(value)</code></span>
                     </td>
                 </tr>
                             <tr>
@@ -766,7 +776,7 @@
 
                 <tr>
                     <td class="col-md-4">
-                        <span class="accessor"><b>set</b><code>showCloseIcon(value: )</code></span>
+                        <span class="accessor"><b>set</b><code>showCloseIcon(value)</code></span>
                     </td>
                 </tr>
                             <tr>
@@ -928,6 +938,130 @@ export class DejaMessageBoxComponent implements OnInit {
 </code></pre>
     </div>
 
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./message-box.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">deja-message-box {
+    display: block;
+	#msgbox {
+		border-style: solid;
+		border-width: 1px;
+		margin: 0;
+		padding: 0;
+		display: block;
+
+		.mat-card-title {
+			align-items: center;
+			box-shadow: 0px 1px 4px 0px rgba(0, 0, 0, 0.2);
+			display: flex;
+			margin: 0;
+			padding: 0.8rem;
+			#icon {
+				margin-right: 0.5rem;
+			}
+            .header-actions {
+                margin-left: auto;
+                button.mat-mini-fab {
+                    background: none;
+                    border: none;
+                    box-shadow: none;
+                }
+            }
+		}
+		.mat-card-content {
+			margin: 0;
+			padding: 0.75rem;
+			overflow: hidden;
+			h2 {
+				font-size: 1.3rem;
+				margin: 0;
+				font-weight: 300;
+				line-height: 2rem;
+				text-overflow: ellipsis;
+				overflow: hidden;
+				white-space: nowrap;
+			}
+		}
+		.mat-card-actions {
+			align-items: center;
+			display: flex;
+			justify-content: flex-end;
+			margin: 0;
+			padding: 0.2rem;
+
+			button {
+				margin-left: 0.2rem;
+
+				&amp;.mat-blank[mat-raised-button],
+				&amp;.mat-blank[mat-fab],
+				&amp;.mat-blank[mat-mini-fab] {
+					&amp;:not([disabled]) {
+						box-shadow: none;
+					}
+					&amp;.action-button {
+						align-items: stretch;
+						display: flex;
+						height: 1rem;
+						margin: 0;
+						padding: 0;
+						right: 0;
+						width: 1rem;
+						.mat-button-wrapper {
+							height: 1rem;
+							width: 1rem;
+							.mat-icon {
+								font-size: 1rem;
+								height: 1rem;
+								line-height: 1rem;
+								padding: 0;
+								position: absolute;
+								right: 0;
+								top: 0;
+								width: 1rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	&amp;[horizontal] {
+		#msgbox {
+			align-items: stretch;
+			display: flex;
+			flex-direction: row;
+			padding: 0;
+            position: relative;
+			.mat-card-title {
+				align-items: center;
+				display: flex;
+				flex: 0 0 auto;
+				justify-content: center;
+				margin: 0;
+				text-align: center;
+				#icon {
+					margin: 0;
+				}
+			}
+			.mat-card-content {
+				align-self: center;
+				flex: 1 1 auto;
+				padding: 0.75rem;
+			}
+			.mat-card-actions {
+				margin: 0;
+				padding: 0;
+				position: absolute;
+				right: 0.2rem;
+    			top: 0.3rem;
+			}
+		}
+	}
+}
+</code></pre>
+    </div>
+
     <div class="tab-pane fade " id="c-tree">
         <div id="tree-container"></div>
         <div class="tree-legend">
@@ -954,7 +1088,7 @@ export class DejaMessageBoxComponent implements OnInit {
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><mat-card id="msgbox" class="{{type}}">    <mat-card-title *ngIf="icon || showCloseIcon">        <mat-icon id="icon" *ngIf="icon">{{icon}}</mat-icon>        <span id="title" *ngIf="!horizontal">{{title}}</span>        <div class="header-actions">            <button *ngIf="showCloseIcon" mat-mini-fab type="button" class="close" (click)="onClose()">                <mat-icon fontSet="deja-icons" fontIcon="close"></mat-icon>            </button>        </div>    </mat-card-title>    <mat-card-content>        <h2 id="title" *ngIf="horizontal && title">{{title}}</h2>        <ng-content></ng-content>    </mat-card-content>    <mat-card-actions *ngIf="actions">        <span *ngFor="let action of actions">            <button mat-raised-button type="button" *ngIf="action.icon && action.text" (click)="action.action()" class="with-icon" [attr.data-icon]="action.icon" [color]="action.type">                {{action.text}}            </button>            <button mat-raised-button type="button" *ngIf="!action.icon && action.text" (click)="action.action()" [color]="action.type">                {{action.text}}            </button>            <button mat-mini-fab type="button" *ngIf="action.icon && !action.text" [color]="action.type || \'blank\'" [class.action-button]="!action.type" (click)="action.action()">                <mat-icon *ngIf="action.icon" fontSet="deja-icons" [fontIcon]="action.icon"></mat-icon>            </button>        </span>    </mat-card-actions>    <mat-card-actions *ngIf="!actions && actionsTemplate">		<ng-template [ngTemplateOutlet]="actionsTemplate"></ng-template>	</mat-card-actions></mat-card></div>'
-    var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaComboListActionbarComponent', 'selector': 'deja-combo-list-actionbar'},{'name': 'DejaComboListChildComponent', 'selector': 'deja-combo-list-child'},{'name': 'DejaComboListComponent', 'selector': 'deja-combo-list'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaEditorComponent', 'selector': 'deja-editor'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaItemComponent', 'selector': 'deja-item'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaNumericStepperComponent', 'selector': 'deja-numeric-stepper'},{'name': 'DejaOverlayComponent', 'selector': 'deja-overlay'},{'name': 'DejaPopupActionsComponent', 'selector': 'deja-popup-actions'},{'name': 'DejaPopupAdvancedComponent', 'selector': 'deja-popup-advanced'},{'name': 'DejaPopupBoxComponent', 'selector': 'deja-popup-box'},{'name': 'DejaPopupComponent', 'selector': 'deja-popup'},{'name': 'DejaPopupContentComponent', 'selector': 'deja-popup-content'},{'name': 'DejaPopupToolbarComponent', 'selector': 'deja-popup-toolbar'},{'name': 'DejaPopupTrayComponent', 'selector': 'deja-popup-tray'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSidenavComponent', 'selector': 'deja-sidenav'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTagComponent', 'selector': 'deja-tag'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'}];
+    var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaComboListActionbarComponent', 'selector': 'deja-combo-list-actionbar'},{'name': 'DejaComboListChildComponent', 'selector': 'deja-combo-list-child'},{'name': 'DejaComboListComponent', 'selector': 'deja-combo-list'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaEditorComponent', 'selector': 'deja-editor'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaItemComponent', 'selector': 'deja-item'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaNumericStepperComponent', 'selector': 'deja-numeric-stepper'},{'name': 'DejaOverlayComponent', 'selector': 'deja-overlay'},{'name': 'DejaPopupActionsComponent', 'selector': 'deja-popup-actions'},{'name': 'DejaPopupAdvancedComponent', 'selector': 'deja-popup-advanced'},{'name': 'DejaPopupBoxComponent', 'selector': 'deja-popup-box'},{'name': 'DejaPopupComponent', 'selector': 'deja-popup'},{'name': 'DejaPopupContentComponent', 'selector': 'deja-popup-content'},{'name': 'DejaPopupToolbarComponent', 'selector': 'deja-popup-toolbar'},{'name': 'DejaPopupTrayComponent', 'selector': 'deja-popup-tray'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSidenavComponent', 'selector': 'deja-sidenav'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTagComponent', 'selector': 'deja-tag'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'},{'name': 'TileGroupStyleEditorComponent', 'selector': 'deja-tile-group-style-editor'}];
     var DIRECTIVES = [{'name': 'DejaAutosizeTextAreaDirective', 'selector': 'textarea[deja-autosize]'},{'name': 'DejaChildValidatorDirective', 'selector': '[deja-child-validator]'},{'name': 'DejaDraggableDirective', 'selector': '[deja-draggable]'},{'name': 'DejaDroppableDirective', 'selector': '[deja-droppable]'},{'name': 'DejaEditableDirective', 'selector': '[deja-editable]'},{'name': 'DejaEditorSelectorDirective', 'selector': 'deja-editor'},{'name': 'DejaMouseDraggableDirective', 'selector': '[deja-mouse-draggable]'},{'name': 'DejaMouseDroppableDirective', 'selector': '[deja-mouse-droppable]'},{'name': 'DejaResizeListenerDirective', 'selector': '[resize-listener]'},{'name': 'DejaSidenavContentDirective', 'selector': 'deja-sidenav-content, [deja-sidenav-content]'},{'name': 'DejaSidenavHeaderDirective', 'selector': 'deja-sidenav-header, [deja-sidenav-header]'},{'name': 'DejaSidenavMenuDirective', 'selector': 'deja-sidenav-menu, [deja-sidenav-menu]'},{'name': 'DejaSidenavMenuSeparatorDirective', 'selector': 'deja-sidenav-menu-separator, [deja-sidenav-menu-separator]'},{'name': 'DejaSlimScrollDirective', 'selector': '[slimScroll]'},{'name': 'DejaTilePositionDirective', 'selector': '[deja-tile-position]'},{'name': 'DejaTooltipDirective', 'selector': '[deja-tooltip]'},{'name': 'PendingOnFocusDirective', 'selector': '[pending-onfocus]'},{'name': 'SplitAreaDirective', 'selector': 'split-area'},{'name': 'SplitGutterDirective', 'selector': 'split-gutter'},{'name': 'ValidateOnBlurDirective', 'selector': '[validate-onblur]'}];
     var ACTUAL_COMPONENT = {'name': 'DejaMessageBoxComponent'};
 </script>
@@ -995,7 +1129,9 @@ export class DejaMessageBoxComponent implements OnInit {
 
        <script src="../js/libs/custom-elements.min.js"></script>
        <script src="../js/libs/lit-html.js"></script>
-       <script src="../js/menu-wc.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
 
        <script src="../js/libs/bootstrap-native.js"></script>
 

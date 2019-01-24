@@ -18,10 +18,7 @@
         </div>
 
         <div class="xs-menu menu" id="mobile-menu">
-                <div id="book-search-input" role="search">
-    <input type="text" placeholder="Type to search">
-</div>
-            <compodoc-menu></compodoc-menu>
+                <div id="book-search-input" role="search"><input type="text" placeholder="Type to search"></div>            <compodoc-menu></compodoc-menu>
         </div>
 
         <div class="container-fluid main">
@@ -50,6 +47,9 @@
         </li>
         <li >
             <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#styleData" role="tab" id="styleData-tab" data-toggle="tab" data-link="style">Styles</a>
         </li>
         <li >
             <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
@@ -108,7 +108,7 @@
 
             <tr>
                 <td class="col-md-3">styleUrls</td>
-                <td class="col-md-9"><code>tiles.component.scss</code></td>
+                <td class="col-md-9"><code>./tiles.component.scss</code></td>
             </tr>
 
 
@@ -117,6 +117,12 @@
                 <td class="col-md-3">templateUrl</td>
                 <td class="col-md-9"><code>./tiles.component.html</code></td>
             </tr>
+
+
+
+
+
+
 
 
         </tbody>
@@ -2348,7 +2354,11 @@
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Decorators : </i><code>SelfOptional</code>
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @Self()<br />@Optional()<br />
+                            </code>
                         </td>
                     </tr>
                         <tr>
@@ -2745,7 +2755,11 @@
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Decorators : </i><code>ViewChild</code>
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ViewChild(&#x27;tilesContainer&#x27;)<br />
+                            </code>
                         </td>
                     </tr>
                         <tr>
@@ -2785,7 +2799,11 @@
                     </tr>
                     <tr>
                         <td class="col-md-4">
-                            <i>Decorators : </i><code>ContentChild</code>
+                            <b>Decorators : </b>
+                            <br />
+                            <code>
+                                @ContentChild(&#x27;tileTemplate&#x27;)<br />
+                            </code>
                         </td>
                     </tr>
                         <tr>
@@ -3164,7 +3182,7 @@
 
                 <tr>
                     <td class="col-md-4">
-                        <span class="accessor"><b>set</b><code>designMode(value: )</code></span>
+                        <span class="accessor"><b>set</b><code>designMode(value)</code></span>
                     </td>
                 </tr>
                             <tr>
@@ -3514,7 +3532,7 @@
 
                 <tr>
                     <td class="col-md-4">
-                        <span class="accessor"><b>set</b><code>selectedTiles(selectedTiles: )</code></span>
+                        <span class="accessor"><b>set</b><code>selectedTiles(selectedTiles)</code></span>
                     </td>
                 </tr>
                             <tr>
@@ -3980,6 +3998,43 @@ export class DejaTilesComponent implements AfterViewInit, ControlValueAccessor, 
 &lt;/div&gt;</code></pre>
     </div>
 
+    <div class="tab-pane fade " id="c-styleData">
+                <p class="comment">
+                    <code>./tiles.component.scss</code>
+                </p>
+                <pre class="line-numbers"><code class="language-scss">:host {
+	position: relative;
+	overflow: auto;
+	margin: 0 !important;
+	#tiles {
+		display: block;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		padding: 0 !important;
+		margin: 0 !important;
+		#tile:hover {
+			z-index: 200;
+		}
+	}
+	[deja-tile-position] {
+		position: absolute;
+		z-index: 11;
+		background-color: rgba(0, 0, 0, 0.25);
+	}
+	&amp;[drag] {
+		background-color: rgba(0, 0, 0, 0.15);
+		[deja-tile-position] {
+			transition-property: left, top, width, height;
+			transition-duration: .35s;
+			transition-timing-function: ease;
+		}
+	}
+}</code></pre>
+    </div>
+
     <div class="tab-pane fade " id="c-tree">
         <div id="tree-container"></div>
         <div class="tree-legend">
@@ -4006,7 +4061,7 @@ export class DejaTilesComponent implements AfterViewInit, ControlValueAccessor, 
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
         var COMPONENT_TEMPLATE = '<div><div #tilesContainer id="tiles" [class.design]="designMode" [deja-mouse-droppable]="getDropContext()" [attr.tabindex]="tabIndex" (focus)="onFocus()" (blur)="onBlur()">    <deja-tile *ngFor="let tile of tiles; let index = index;" [id]="tile.id" [tile]="tile" [designMode]="designMode" [attr.tile-index]="index" [template]="tileTemplate" (close)="onTileClosed(tile)" (modelChanged)="onTileModelChanged(tile)"></deja-tile>    <div deja-tile-position [bounds]="selectionRect$ | async"></div></div></div>'
-    var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaComboListActionbarComponent', 'selector': 'deja-combo-list-actionbar'},{'name': 'DejaComboListChildComponent', 'selector': 'deja-combo-list-child'},{'name': 'DejaComboListComponent', 'selector': 'deja-combo-list'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaEditorComponent', 'selector': 'deja-editor'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaItemComponent', 'selector': 'deja-item'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaNumericStepperComponent', 'selector': 'deja-numeric-stepper'},{'name': 'DejaOverlayComponent', 'selector': 'deja-overlay'},{'name': 'DejaPopupActionsComponent', 'selector': 'deja-popup-actions'},{'name': 'DejaPopupAdvancedComponent', 'selector': 'deja-popup-advanced'},{'name': 'DejaPopupBoxComponent', 'selector': 'deja-popup-box'},{'name': 'DejaPopupComponent', 'selector': 'deja-popup'},{'name': 'DejaPopupContentComponent', 'selector': 'deja-popup-content'},{'name': 'DejaPopupToolbarComponent', 'selector': 'deja-popup-toolbar'},{'name': 'DejaPopupTrayComponent', 'selector': 'deja-popup-tray'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSidenavComponent', 'selector': 'deja-sidenav'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTagComponent', 'selector': 'deja-tag'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'}];
+    var COMPONENTS = [{'name': 'DejaAccordionBodyComponent', 'selector': 'deja-accordion-body'},{'name': 'DejaAccordionComponent', 'selector': 'deja-accordion'},{'name': 'DejaAccordionGroupComponent', 'selector': 'deja-accordion-group'},{'name': 'DejaAccordionHeaderComponent', 'selector': 'deja-accordion-header'},{'name': 'DejaBoldQueryComponent', 'selector': 'deja-bold-query'},{'name': 'DejaChipsComponent', 'selector': 'deja-chips'},{'name': 'DejaCircularPickerComponent', 'selector': 'deja-circular-picker'},{'name': 'DejaColorFabComponent', 'selector': 'deja-color-fab'},{'name': 'DejaColorPickerComponent', 'selector': 'deja-color-picker'},{'name': 'DejaColorSelectorComponent', 'selector': 'deja-color-selector'},{'name': 'DejaComboListActionbarComponent', 'selector': 'deja-combo-list-actionbar'},{'name': 'DejaComboListChildComponent', 'selector': 'deja-combo-list-child'},{'name': 'DejaComboListComponent', 'selector': 'deja-combo-list'},{'name': 'DejaDatePickerComponent', 'selector': 'deja-date-picker'},{'name': 'DejaDateSelectorComponent', 'selector': 'deja-date-time-selector'},{'name': 'DejaDialogComponent', 'selector': 'deja-dialog'},{'name': 'DejaEditorComponent', 'selector': 'deja-editor'},{'name': 'DejaGridComponent', 'selector': 'deja-grid'},{'name': 'DejaGridGroupAreaComponent', 'selector': 'deja-grid-grouparea'},{'name': 'DejaGridHeaderComponent', 'selector': 'deja-grid-header'},{'name': 'DejaGridParentRowComponent', 'selector': 'deja-grid-parent-row'},{'name': 'DejaGridRowComponent', 'selector': 'deja-grid-row'},{'name': 'DejaIFrameComponent', 'selector': 'deja-iframe'},{'name': 'DejaItemComponent', 'selector': 'deja-item'},{'name': 'DejaListLoaderComponent', 'selector': 'deja-list-loader'},{'name': 'DejaMessageBoxComponent', 'selector': 'deja-message-box'},{'name': 'DejaMonacoEditorComponent', 'selector': 'deja-monaco-editor'},{'name': 'DejaMouseDragDropCursorComponent', 'selector': 'deja-mouse-dragdrop-cursor'},{'name': 'DejaNumericStepperComponent', 'selector': 'deja-numeric-stepper'},{'name': 'DejaOverlayComponent', 'selector': 'deja-overlay'},{'name': 'DejaPopupActionsComponent', 'selector': 'deja-popup-actions'},{'name': 'DejaPopupAdvancedComponent', 'selector': 'deja-popup-advanced'},{'name': 'DejaPopupBoxComponent', 'selector': 'deja-popup-box'},{'name': 'DejaPopupComponent', 'selector': 'deja-popup'},{'name': 'DejaPopupContentComponent', 'selector': 'deja-popup-content'},{'name': 'DejaPopupToolbarComponent', 'selector': 'deja-popup-toolbar'},{'name': 'DejaPopupTrayComponent', 'selector': 'deja-popup-tray'},{'name': 'DejaRangeComponent', 'selector': 'deja-range'},{'name': 'DejaSelectComponent', 'selector': 'deja-select'},{'name': 'DejaSidenavComponent', 'selector': 'deja-sidenav'},{'name': 'DejaSnackbarComponent', 'selector': 'deja-snackbar'},{'name': 'DejaSortIndicatorComponent', 'selector': 'deja-sort-indicator'},{'name': 'DejaSplitterComponent', 'selector': 'deja-splitter'},{'name': 'DejaTagComponent', 'selector': 'deja-tag'},{'name': 'DejaTileComponent', 'selector': 'deja-tile'},{'name': 'DejaTileGroupComponent', 'selector': 'deja-tile-group'},{'name': 'DejaTilesComponent', 'selector': 'deja-tiles'},{'name': 'DejaTooltipComponent', 'selector': 'deja-tooltip'},{'name': 'DejaTreeListComponent', 'selector': 'deja-tree-list'},{'name': 'DejaViewPortComponent', 'selector': 'deja-viewport'},{'name': 'TileGroupStyleEditorComponent', 'selector': 'deja-tile-group-style-editor'}];
     var DIRECTIVES = [{'name': 'DejaAutosizeTextAreaDirective', 'selector': 'textarea[deja-autosize]'},{'name': 'DejaChildValidatorDirective', 'selector': '[deja-child-validator]'},{'name': 'DejaDraggableDirective', 'selector': '[deja-draggable]'},{'name': 'DejaDroppableDirective', 'selector': '[deja-droppable]'},{'name': 'DejaEditableDirective', 'selector': '[deja-editable]'},{'name': 'DejaEditorSelectorDirective', 'selector': 'deja-editor'},{'name': 'DejaMouseDraggableDirective', 'selector': '[deja-mouse-draggable]'},{'name': 'DejaMouseDroppableDirective', 'selector': '[deja-mouse-droppable]'},{'name': 'DejaResizeListenerDirective', 'selector': '[resize-listener]'},{'name': 'DejaSidenavContentDirective', 'selector': 'deja-sidenav-content, [deja-sidenav-content]'},{'name': 'DejaSidenavHeaderDirective', 'selector': 'deja-sidenav-header, [deja-sidenav-header]'},{'name': 'DejaSidenavMenuDirective', 'selector': 'deja-sidenav-menu, [deja-sidenav-menu]'},{'name': 'DejaSidenavMenuSeparatorDirective', 'selector': 'deja-sidenav-menu-separator, [deja-sidenav-menu-separator]'},{'name': 'DejaSlimScrollDirective', 'selector': '[slimScroll]'},{'name': 'DejaTilePositionDirective', 'selector': '[deja-tile-position]'},{'name': 'DejaTooltipDirective', 'selector': '[deja-tooltip]'},{'name': 'PendingOnFocusDirective', 'selector': '[pending-onfocus]'},{'name': 'SplitAreaDirective', 'selector': 'split-area'},{'name': 'SplitGutterDirective', 'selector': 'split-gutter'},{'name': 'ValidateOnBlurDirective', 'selector': '[validate-onblur]'}];
     var ACTUAL_COMPONENT = {'name': 'DejaTilesComponent'};
 </script>
@@ -4047,7 +4102,9 @@ export class DejaTilesComponent implements AfterViewInit, ControlValueAccessor, 
 
        <script src="../js/libs/custom-elements.min.js"></script>
        <script src="../js/libs/lit-html.js"></script>
-       <script src="../js/menu-wc.js"></script>
+       <!-- Required to polyfill modern browsers as code is ES5 for IE... -->
+       <script src="../js/libs/custom-elements-es5-adapter.js" charset="utf-8" defer></script>
+       <script src="../js/menu-wc.js" defer></script>
 
        <script src="../js/libs/bootstrap-native.js"></script>
 
